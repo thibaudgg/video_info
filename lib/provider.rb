@@ -33,7 +33,7 @@ private
   
   def vimeo_get_info
     # http://vimeo.com/2199239
-    @id = @url.gsub(/.*\.com\/([^?]*).*$/i, '\1')
+    @id = @url.gsub(/.*\.com\/([0-9]*).*$/i, '\1')
     doc = Hpricot(open("http://vimeo.com/api/clip/#{@id}.xml"))
     @provider         = "Vimeo"
     @title            = doc.search("title").inner_text
