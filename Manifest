@@ -1,0 +1,7 @@
+init.rb
+lib/provider/vimeo.rb
+lib/provider/youtube.rb
+lib/video_info.rb
+Rakefile
+README.rdoc
+Manifest
