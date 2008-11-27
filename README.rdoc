@@ -18,7 +18,8 @@ Small Ruby Gem to get video info from youtube and vimeo url.
   video.duration         => "175" (in seconds)
   video.date             => Sat Apr 12 22:25:35 UTC 2008
   video.thumbnail_url    => "http://i.ytimg.com/vi/mZqGqE0D0n4/2.jpg"
-  video.thumbnail_width  => 160
+  video.thumbnail_width  => 130
+  video.thumbnail_height => 97
   
   video = VideoInfo.new("http://vimeo.com/898029")
   
@@ -30,7 +31,6 @@ Small Ruby Gem to get video info from youtube and vimeo url.
   video.duration         => "175" (in seconds)
   video.date             => Mon Apr 14 13:10:39 +0200 2008
   video.thumbnail_url    => "http://10.media.vimeo.com/d1/5/53/09/19/thumbnail-53091921.jpg"
-  video.thumbnail_height => 175
   video.thumbnail_width  => 160
 
 == Rake Task
