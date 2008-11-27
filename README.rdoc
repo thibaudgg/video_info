@@ -1,6 +1,6 @@
 = VideoInfo
   
-  Small Ruby Gem to get video info from youtube and vimeo url.
+Small Ruby Gem to get video info from youtube and vimeo url.
   
 == Install
   
@@ -35,7 +35,7 @@
 
 == Rake Task
   
-  There's a litte rake task to test an url:
+There's a litte rake task to test an url:
   
   rake get_info URL=http://vimeo.com/898029
   
