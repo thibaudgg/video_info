@@ -17,7 +17,7 @@ private
   
   def youtube_get_info
     # http://www.youtube.com/watch?v=mZqGqE0D0n4
-    @id = @url.gsub(/.*v=([^&]*).*$/i, '\1')
+    @id = @url.gsub(/.*v=([^&]+).*$/i, '\1')
     doc = Hpricot(open("http://gdata.youtube.com/feeds/api/videos/#{@id}"))
     @provider         = "YouTube"
     @title            = doc.search("media:title").inner_text
@@ -33,7 +33,7 @@ private
   
   def vimeo_get_info
     # http://vimeo.com/2199239
-    @id = @url.gsub(/.*\.com\/([0-9]*).*$/i, '\1')
+    @id = @url.gsub(/.*\.com\/([0-9]+).*$/i, '\1')
     doc = Hpricot(open("http://vimeo.com/api/clip/#{@id}.xml"))
     @provider         = "Vimeo"
     @title            = doc.search("title").inner_text
