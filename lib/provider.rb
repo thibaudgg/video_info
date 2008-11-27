@@ -24,7 +24,7 @@ private
     @description      = doc.search("media:description").inner_text
     @keywords         = doc.search("media:keywords").inner_text
     @duration         = doc.search("media:content").first[:duration] # seconds
-    @date             = Time.parse(doc.search("published").inner_text)
+    @date             = Time.parse(doc.search("published").inner_text, Time.now.utc)
     @thumbnail_url    = doc.search("media:thumbnail").first[:url]
     @thumbnail_height = doc.search("media:thumbnail").first[:height]
     @thumbnail_width  = doc.search("media:thumbnail").first[:width]
