@@ -14,4 +14,8 @@ class VideoInfo
     get_info
   end
   
+  def valid?
+    !["", nil].include? title
+  end
+  
 end
