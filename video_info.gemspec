@@ -9,8 +9,8 @@ Gem::Specification.new do |s|
   s.date = %q{2008-11-27}
   s.description = %q{Get video info from youtube and vimeo url.}
   s.email = %q{guillaumegentil@gmail.com}
-  s.extra_rdoc_files = ["lib/provider/vimeo.rb", "lib/provider/youtube.rb", "lib/video_info.rb", "README.rdoc"]
-  s.files = ["init.rb", "lib/provider/vimeo.rb", "lib/provider/youtube.rb", "lib/video_info.rb", "Rakefile", "README.rdoc", "Manifest", "video_info.gemspec"]
+  s.extra_rdoc_files = ["lib/provider.rb", "lib/video_info.rb", "README.rdoc", "tasks/video.rake"]
+  s.files = ["lib/provider.rb", "lib/video_info.rb", "Manifest", "Rakefile", "README.rdoc", "tasks/video.rake", "video_info.gemspec"]
   s.has_rdoc = true
   s.homepage = %q{ttp://github.com/guillaumegentil/video_info}
   s.rdoc_options = ["--line-numbers", "--inline-source", "--title", "Video_info", "--main", "README.rdoc"]

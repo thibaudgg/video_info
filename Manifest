@@ -1,7 +1,7 @@
-init.rb
-lib/provider/vimeo.rb
-lib/provider/youtube.rb
+lib/provider.rb
 lib/video_info.rb
+Manifest
 Rakefile
 README.rdoc
-Manifest
+tasks/video.rake
+video_info.gemspec

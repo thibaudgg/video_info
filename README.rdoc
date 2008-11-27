@@ -1,0 +1,63 @@
+= VideoInfo
+  
+  Small Ruby Gem to get video info from youtube and vimeo url.
+  
+== Install
+  
+  gem install guillaumegentil-video_info --source http://gems.github.com
+  
+== Usage
+  
+  video = VideoInfo.new("http://www.youtube.com/watch?v=mZqGqE0D0n4")
+  
+  video.id               => "mZqGqE0D0n4"
+  video.provider         => "YouTube"
+  video.title            => "Cherry Bloom - King Of The Knife"
+  video.description      => "The first video from the upcoming album Secret Sounds, to download in-stores April 14. Checkout http://www.cherrybloom.net"
+  video.keywords         => "alternative, bloom, cherry, clip, drum, guitar, king, knife, of, Paris-Forum, rock, the, tremplin"
+  video.duration         => "175" (in seconds)
+  video.date             => Sat Apr 12 22:25:35 UTC 2008
+  video.thumbnail_url    => "http://i.ytimg.com/vi/mZqGqE0D0n4/2.jpg"
+  video.thumbnail_width  => 160
+  
+  video = VideoInfo.new("http://vimeo.com/898029")
+  
+  video.id               => "898029"
+  video.provider         => "Vimeo"
+  video.title            => "Cherry Bloom - King Of The Knife"
+  video.description      => "The first video from the upcoming album Secret Sounds, to download in-stores April 14. Checkout http://www.cherrybloom.net"
+  video.keywords         => "alternative, bloom, cherry, clip, drum, guitar, king, knife, of, Paris-Forum, rock, the, tremplin"
+  video.duration         => "175" (in seconds)
+  video.date             => Mon Apr 14 13:10:39 +0200 2008
+  video.thumbnail_url    => "http://10.media.vimeo.com/d1/5/53/09/19/thumbnail-53091921.jpg"
+  video.thumbnail_height => 175
+  video.thumbnail_width  => 160
+
+== Rake Task
+  
+  There's a litte rake task to test an url:
+  
+  rake get_info URL=http://vimeo.com/898029
+  
+== License
+
+Copyright (c) 2008 Thibaud Guillaume-Gentil
+ 
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of this software and associated documentation files (the
+"Software"), to deal in the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish,
+distribute, sublicense, and/or sell copies of the Software, and to
+permit persons to whom the Software is furnished to do so, subject to
+the following conditions:
+ 
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+ 
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
+LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
