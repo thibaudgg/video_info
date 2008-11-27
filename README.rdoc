@@ -32,7 +32,11 @@ Small Ruby Gem to get video info from youtube and vimeo url.
   video.date             => Mon Apr 14 13:10:39 +0200 2008
   video.thumbnail_url    => "http://10.media.vimeo.com/d1/5/53/09/19/thumbnail-53091921.jpg"
   video.thumbnail_width  => 160
-
+  
+  video = VideoInfo.new("http://badurl.com/898029")
+  
+  video.valid? => false
+  
 == Rake Task
   
 There's a litte rake task to test an url:
