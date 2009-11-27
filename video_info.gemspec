@@ -23,7 +23,6 @@ Gem::Specification.new do |s|
      "Rakefile",
      "VERSION",
      "init.rb",
-     "lib/video.rb",
      "lib/video/vimeo.rb",
      "lib/video/youtube.rb",
      "lib/video_info.rb",

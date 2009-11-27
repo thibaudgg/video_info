@@ -1,7 +1,10 @@
 require 'hpricot'
 require 'open-uri'
 
-class Youtube < Video
+class Youtube
+  attr_accessor :url, :id, :provider, :title, :description, :keywords,
+                :duration, :date, :width, :height,
+                :thumbnail_small, :thumbnail_large
   
   def initialize(url)
     @id = url.gsub(/.*v=([^&]+).*$/i, '\1')

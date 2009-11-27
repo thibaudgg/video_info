@@ -1,7 +1,10 @@
 require 'hpricot'
 require 'open-uri'
 
-class Vimeo < Video
+class Vimeo
+  attr_accessor :url, :id, :provider, :title, :description, :keywords,
+                :duration, :date, :width, :height,
+                :thumbnail_small, :thumbnail_large
   
   def initialize(url)
     @id = url.gsub(/.*\.com\/([0-9]+).*$/i, '\1')
