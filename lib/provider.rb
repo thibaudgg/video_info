@@ -25,24 +25,22 @@ private
     @title            = doc.search("media:title").inner_text
     @description      = doc.search("media:description").inner_text
     @keywords         = doc.search("media:keywords").inner_text
-    @duration         = doc.search("media:content").first[:duration] # seconds
+    @duration         = doc.search("media:content").first[:duration].to_i # seconds
     @date             = Time.parse(doc.search("published").inner_text, Time.now.utc)
-    @thumbnail_url    = doc.search("media:thumbnail").first[:url]
-    @thumbnail_height = doc.search("media:thumbnail").first[:height]
-    @thumbnail_width  = doc.search("media:thumbnail").first[:width]
-    @thumbnail_time   = doc.search("media:thumbnail").first[:time]
+    @thumbnail_small  = doc.search("media:thumbnail").first[:url]
+    @thumbnail_large  = doc.search("media:thumbnail").last[:url]
   end
   
   def vimeo_get_info
-    doc = Hpricot(open("http://vimeo.com/api/clip/#{@id}.xml"))
+    doc = Hpricot(open("http://vimeo.com/api/v2/video/#{@id}.xml"))
     @provider         = "Vimeo"
     @title            = doc.search("title").inner_text
-    @description      = doc.search("caption").inner_text
+    @description      = doc.search("description").inner_text
     @keywords         = doc.search("tags").inner_text
-    @duration         = doc.search("duration").inner_text # seconds
+    @duration         = doc.search("duration").inner_text.to_i # seconds
     @date             = Time.parse(doc.search("upload_date").inner_text, Time.now.utc)
-    @thumbnail_url    = doc.search("thumbnail_large").inner_text
-    @thumbnail_width  = 160
+    @thumbnail_small  = doc.search("thumbnail_small").inner_text
+    @thumbnail_large  = doc.search("thumbnail_large").inner_text
   end
   
 end
