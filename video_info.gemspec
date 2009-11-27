@@ -18,11 +18,14 @@ Gem::Specification.new do |s|
   ]
   s.files = [
     ".gitignore",
+     "LICENSE",
      "README.rdoc",
      "Rakefile",
      "VERSION",
-     "lib/provider.rb",
      "lib/video_info.rb",
+     "spec/spec.opts",
+     "spec/spec_helper.rb",
+     "spec/video_info_spec.rb",
      "video_info.gemspec"
   ]
   s.homepage = %q{http://github.com/guillaumegentil/video_info}
@@ -41,11 +44,14 @@ Gem::Specification.new do |s|
 
     if Gem::Version.new(Gem::RubyGemsVersion) >= Gem::Version.new('1.2.0') then
       s.add_development_dependency(%q<rspec>, [">= 1.2.9"])
+      s.add_runtime_dependency(%q<hpricot>, [">= 0.8.1"])
     else
       s.add_dependency(%q<rspec>, [">= 1.2.9"])
+      s.add_dependency(%q<hpricot>, [">= 0.8.1"])
     end
   else
     s.add_dependency(%q<rspec>, [">= 1.2.9"])
+    s.add_dependency(%q<hpricot>, [">= 0.8.1"])
   end
 end
 

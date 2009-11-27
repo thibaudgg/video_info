@@ -15,11 +15,10 @@ Small Ruby Gem to get video info from youtube and vimeo url.
   video.title            => "Cherry Bloom - King Of The Knife"
   video.description      => "The first video from the upcoming album Secret Sounds, to download in-stores April 14. Checkout http://www.cherrybloom.net"
   video.keywords         => "alternative, bloom, cherry, clip, drum, guitar, king, knife, of, Paris-Forum, rock, the, tremplin"
-  video.duration         => "175" (in seconds)
+  video.duration         => 175 (in seconds)
   video.date             => Sat Apr 12 22:25:35 UTC 2008
-  video.thumbnail_url    => "http://i.ytimg.com/vi/mZqGqE0D0n4/2.jpg"
-  video.thumbnail_width  => 130
-  video.thumbnail_height => 97
+  video.thumbnail_small  => "http://i.ytimg.com/vi/mZqGqE0D0n4/2.jpg"
+  video.thumbnail_large  => "http://i.ytimg.com/vi/mZqGqE0D0n4/0.jpg"
   
   video = VideoInfo.new("http://vimeo.com/898029")
   
@@ -28,10 +27,12 @@ Small Ruby Gem to get video info from youtube and vimeo url.
   video.title            => "Cherry Bloom - King Of The Knife"
   video.description      => "The first video from the upcoming album Secret Sounds, to download in-stores April 14. Checkout http://www.cherrybloom.net"
   video.keywords         => "alternative, bloom, cherry, clip, drum, guitar, king, knife, of, Paris-Forum, rock, the, tremplin"
-  video.duration         => "175" (in seconds)
+  video.duration         => 175 (in seconds)
   video.date             => Mon Apr 14 13:10:39 +0200 2008
-  video.thumbnail_url    => "http://10.media.vimeo.com/d1/5/53/09/19/thumbnail-53091921.jpg"
-  video.thumbnail_width  => 160
+  video.width            => 640
+  video.height           => 360
+  video.thumbnail_small  => "http://ts.vimeo.com.s3.amazonaws.com/343/731/34373130_100.jpg"
+  video.thumbnail_large  => "http://ts.vimeo.com.s3.amazonaws.com/343/731/34373130_640.jpg"
   
   video = VideoInfo.new("http://badurl.com/898029")
   

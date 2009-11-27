@@ -11,6 +11,7 @@ begin
     gem.homepage = "http://github.com/guillaumegentil/video_info"
     gem.authors = ["Thibaud Guillaume-Gentil"]
     gem.add_development_dependency "rspec", ">= 1.2.9"
+    gem.add_dependency "hpricot", ">= 0.8.1"
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
   Jeweler::GemcutterTasks.new
