@@ -1,7 +1,0 @@
-lib/provider.rb
-lib/video_info.rb
-Manifest
-Rakefile
-README.rdoc
-tasks/video.rake
-video_info.gemspec

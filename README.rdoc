@@ -4,7 +4,7 @@ Small Ruby Gem to get video info from youtube and vimeo url.
   
 == Install
   
-  gem install guillaumegentil-video_info --source http://gems.github.com
+  gem install video_info --source http://gemcutter.org
   
 == Usage
   
@@ -36,12 +36,6 @@ Small Ruby Gem to get video info from youtube and vimeo url.
   video = VideoInfo.new("http://badurl.com/898029")
   
   video.valid? => false
-  
-== Rake Task
-  
-There's a litte rake task to test an url:
-  
-  rake get_info URL=http://vimeo.com/898029
   
 == License
 

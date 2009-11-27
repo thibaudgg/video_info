@@ -1,14 +1,45 @@
 require 'rubygems'
 require 'rake'
-require 'echoe'
 
-Echoe.new('video_info', '0.1.3') do |p|
-  p.description    = "Get video info from youtube and vimeo url."
-  p.url            = "ttp://github.com/guillaumegentil/video_info"
-  p.author         = "Thibaud Guillaume-Gentil"
-  p.email          = "guillaumegentil@gmail.com"
-  p.ignore_pattern = ["tmp/*", "script/*"]
-  p.development_dependencies = ["hpricot >=0.6"]
+begin
+  require 'jeweler'
+  Jeweler::Tasks.new do |gem|
+    gem.name = "video_info"
+    gem.summary = "Vimeo & Youtube parser"
+    gem.description = "Get video info from youtube and vimeo url."
+    gem.email = "thibaud@thibaud.me"
+    gem.homepage = "http://github.com/guillaumegentil/video_info"
+    gem.authors = ["Thibaud Guillaume-Gentil"]
+    gem.add_development_dependency "rspec", ">= 1.2.9"
+    # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
+  end
+  Jeweler::GemcutterTasks.new
+rescue LoadError
+  puts "Jeweler (or a dependency) not available. Install it with: gem install jeweler"
 end
 
-Dir["#{File.dirname(__FILE__)}/tasks/*.rake"].sort.each { |ext| load ext }
+require 'spec/rake/spectask'
+Spec::Rake::SpecTask.new(:spec) do |spec|
+  spec.libs << 'lib' << 'spec'
+  spec.spec_files = FileList['spec/**/*_spec.rb']
+end
+
+Spec::Rake::SpecTask.new(:rcov) do |spec|
+  spec.libs << 'lib' << 'spec'
+  spec.pattern = 'spec/**/*_spec.rb'
+  spec.rcov = true
+end
+
+task :spec => :check_dependencies
+
+task :default => :spec
+
+require 'rake/rdoctask'
+Rake::RDocTask.new do |rdoc|
+  version = File.exist?('VERSION') ? File.read('VERSION') : ""
+
+  rdoc.rdoc_dir = 'rdoc'
+  rdoc.title = "video_info #{version}"
+  rdoc.rdoc_files.include('README*')
+  rdoc.rdoc_files.include('lib/**/*.rb')
+end
