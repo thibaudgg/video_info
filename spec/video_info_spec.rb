@@ -6,6 +6,7 @@ describe "VideoInfo" do
     subject { VideoInfo.new('http://www.youtube.com/watch?v=mZqGqE0D0n4') }
     
     its(:provider)         { should == 'YouTube' }
+    its(:video_id)         { should == 'mZqGqE0D0n4' }
     its(:url)              { should == 'http://www.youtube.com/watch?v=mZqGqE0D0n4' }
     its(:title)            { should == 'Cherry Bloom - King Of The Knife' }
     its(:description)      { should == 'The first video from the upcoming album Secret Sounds, to download in-stores April 14. Checkout http://www.cherrybloom.net' }
@@ -23,6 +24,7 @@ describe "VideoInfo" do
     subject { VideoInfo.new('http://www.vimeo.com/898029') }
     
     its(:provider)         { should == 'Vimeo' }
+    its(:video_id)         { should == '898029' }
     its(:url)              { should == 'http://vimeo.com/898029' }
     its(:title)            { should == 'Cherry Bloom - King Of The Knife' }
     its(:description)      { should == 'The first video from the upcoming album Secret Sounds, to download in-stores April 14. Checkout http://www.cherrybloom.net' }

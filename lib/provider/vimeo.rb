@@ -2,19 +2,19 @@ require 'hpricot'
 require 'open-uri'
 
 class Vimeo
-  attr_accessor :url, :id, :provider, :title, :description, :keywords,
+  attr_accessor :video_id, :url, :provider, :title, :description, :keywords,
                 :duration, :date, :width, :height,
                 :thumbnail_small, :thumbnail_large
   
   def initialize(url)
-    @id = url.gsub(/.*\.com\/([0-9]+).*$/i, '\1')
-    get_info unless @id == url
+    @video_id = url.gsub(/.*\.com\/([0-9]+).*$/i, '\1')
+    get_info unless @video_id == url
   end
   
 private
   
   def get_info
-    doc = Hpricot(open("http://vimeo.com/api/v2/video/#{@id}.xml"))
+    doc = Hpricot(open("http://vimeo.com/api/v2/video/#{@video_id}.xml"))
     @provider         = "Vimeo"
     @url              = doc.search("url").inner_text
     @title            = doc.search("title").inner_text
