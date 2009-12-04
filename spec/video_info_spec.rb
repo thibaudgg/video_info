@@ -20,6 +20,14 @@ describe "VideoInfo" do
     it { should be_valid }
   end
   
+  describe "from Youtube" do
+    subject { VideoInfo.new('http://www.youtube.com/watch?v=JM9NgvjjVng') }
+    
+    its(:provider)         { should == 'YouTube' }
+    its(:duration)         { should == 217 }
+    it { should be_valid }
+  end
+  
   describe "from Vimeo" do
     subject { VideoInfo.new('http://www.vimeo.com/898029') }
     
