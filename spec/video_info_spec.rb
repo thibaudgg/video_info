@@ -17,6 +17,7 @@ describe "VideoInfo" do
     its(:date)             { should == Time.parse('Sat Apr 12 22:25:35 UTC 2008') }
     its(:thumbnail_small)  { should == 'http://i.ytimg.com/vi/mZqGqE0D0n4/2.jpg' }
     its(:thumbnail_large)  { should == 'http://i.ytimg.com/vi/mZqGqE0D0n4/0.jpg' }
+    its(:view_count)       { should be > 4000 }
     it { should be_valid }
   end
   
@@ -40,9 +41,10 @@ describe "VideoInfo" do
     its(:duration)         { should == 175 }
     its(:width)            { should == 640 }
     its(:height)           { should == 360 }
-    its(:date)             { should == Time.parse('Mon Apr 14 13:10:39 +0200 2008') }
-    its(:thumbnail_small)  { should == 'http://ts.vimeo.com.s3.amazonaws.com/343/731/34373130_100.jpg' }
-    its(:thumbnail_large)  { should == 'http://ts.vimeo.com.s3.amazonaws.com/343/731/34373130_640.jpg' }
+    its(:date)             { should == Time.parse(' Mon Apr 14 13:10:39 -0400 2008') }
+    its(:thumbnail_small)  { should == 'http://b.vimeocdn.com/ts/343/731/34373130_100.jpg' }
+    its(:thumbnail_large)  { should == 'http://b.vimeocdn.com/ts/343/731/34373130_640.jpg' }
+    its(:view_count)       { should be > 4000 }
     it { should be_valid }
   end
   

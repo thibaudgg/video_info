@@ -4,7 +4,8 @@ require 'open-uri'
 class Vimeo
   attr_accessor :video_id, :url, :provider, :title, :description, :keywords,
                 :duration, :date, :width, :height,
-                :thumbnail_small, :thumbnail_large
+                :thumbnail_small, :thumbnail_large,
+                :view_count
   
   def initialize(url)
     @video_id = url.gsub(/.*\.com\/([0-9]+).*$/i, '\1')
@@ -26,6 +27,7 @@ private
     @date             = Time.parse(doc.search("upload_date").inner_text, Time.now.utc)
     @thumbnail_small  = doc.search("thumbnail_small").inner_text
     @thumbnail_large  = doc.search("thumbnail_large").inner_text
+    @view_count       = doc.search("stats_number_of_plays").inner_text.to_i
   end
   
 end
