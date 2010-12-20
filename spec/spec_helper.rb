@@ -1,10 +1,10 @@
-$LOAD_PATH.unshift(File.dirname(__FILE__))
-$LOAD_PATH.unshift(File.join(File.dirname(__FILE__), '..', 'lib'))
 require 'rubygems'
+require 'rspec'
 require 'video_info'
-require 'spec'
-require 'spec/autorun'
 
-Spec::Runner.configure do |config|
+RSpec.configure do |config|
+  config.color_enabled = true
   
+  config.filter_run :focus => true
+  config.run_all_when_everything_filtered = true
 end
