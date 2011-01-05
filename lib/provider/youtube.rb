@@ -25,7 +25,13 @@ private
     @date             = Time.parse(doc.search("published").inner_text, Time.now.utc)
     @thumbnail_small  = doc.search("media:thumbnail").first[:url]
     @thumbnail_large  = doc.search("media:thumbnail").last[:url]
-    @view_count       = doc.search("yt:statistics").first[:viewcount].to_i
+    # when your video still has no view, yt:statistics is not returned by Youtube
+    # see: https://github.com/thibaudgg/video_info/issues#issue/2
+    if doc.search("yt:statistics").first
+      @view_count     = doc.search("yt:statistics").first[:viewcount].to_i
+    else
+      @view_count     = 0 
+    end
   end
   
 end
