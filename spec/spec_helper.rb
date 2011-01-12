@@ -1,8 +1,11 @@
 require 'rubygems'
 require 'rspec'
 require 'video_info'
+require 'vcr'
 
 RSpec.configure do |config|
+  config.extend VCR::RSpec::Macros
+    
   config.color_enabled = true
   
   config.filter_run :focus => true

@@ -17,6 +17,8 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'bundler',     '~> 1.0.7'
   s.add_development_dependency 'rspec',       '~> 2.3.0'
   s.add_development_dependency 'guard-rspec', '~> 0.1.9'
+  s.add_development_dependency 'vcr',         '~> 1.4.0'
+  s.add_development_dependency 'webmock',     '~> 1.6.1'
   
   s.add_dependency 'hpricot', '~> 0.8.3'
   

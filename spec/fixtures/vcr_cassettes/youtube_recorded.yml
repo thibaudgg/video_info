@@ -1,0 +1,40 @@
+--- 
+- !ruby/struct:VCR::HTTPInteraction 
+  request: !ruby/struct:VCR::Request 
+    method: :get
+    uri: http://gdata.youtube.com:80/feeds/api/videos/oQ49W_xKzKA
+    body: 
+    headers: 
+  response: !ruby/struct:VCR::Response 
+    status: !ruby/struct:VCR::ResponseStatus 
+      code: 200
+      message: OK
+    headers: 
+      x-content-type-options: 
+      - nosniff
+      x-frame-options: 
+      - SAMEORIGIN
+      expires: 
+      - Wed, 12 Jan 2011 20:49:06 GMT
+      last-modified: 
+      - Wed, 05 Jan 2011 21:29:03 GMT
+      content-type: 
+      - application/atom+xml; charset=UTF-8
+      server: 
+      - GSE
+      date: 
+      - Wed, 12 Jan 2011 20:49:06 GMT
+      x-xss-protection: 
+      - 1; mode=block
+      gdata-version: 
+      - "1.0"
+      x-gdata-user-country: 
+      - CA
+      cache-control: 
+      - private, max-age=300, no-transform
+      vary: 
+      - "*"
+      transfer-encoding: 
+      - chunked
+    body: <?xml version='1.0' encoding='UTF-8'?><entry xmlns='http://www.w3.org/2005/Atom' xmlns:app='http://purl.org/atom/app#' xmlns:media='http://search.yahoo.com/mrss/' xmlns:gd='http://schemas.google.com/g/2005' xmlns:yt='http://gdata.youtube.com/schemas/2007'><id>http://gdata.youtube.com/feeds/api/videos/oQ49W_xKzKA</id><published>2011-01-05T21:24:39.000Z</published><updated>2011-01-05T21:29:03.000Z</updated><app:control><app:draft>yes</app:draft></app:control><category scheme='http://schemas.google.com/g/2005#kind' term='http://gdata.youtube.com/schemas/2007#video'/><category scheme='http://gdata.youtube.com/schemas/2007/categories.cat' term='People' label='People &amp; Blogs'/><category scheme='http://gdata.youtube.com/schemas/2007/keywords.cat' term='test3'/><title type='text'>test3</title><content type='text'/><link rel='alternate' type='text/html' href='http://www.youtube.com/watch?v=oQ49W_xKzKA&amp;feature=youtube_gdata'/><link rel='http://gdata.youtube.com/schemas/2007#video.responses' type='application/atom+xml' href='http://gdata.youtube.com/feeds/api/videos/oQ49W_xKzKA/responses'/><link rel='http://gdata.youtube.com/schemas/2007#video.related' type='application/atom+xml' href='http://gdata.youtube.com/feeds/api/videos/oQ49W_xKzKA/related'/><link rel='http://gdata.youtube.com/schemas/2007#mobile' type='text/html' href='http://m.youtube.com/details?v=oQ49W_xKzKA'/><link rel='self' type='application/atom+xml' href='http://gdata.youtube.com/feeds/api/videos/oQ49W_xKzKA'/><author><name>juliend2</name><uri>http://gdata.youtube.com/feeds/api/users/juliend2</uri></author><gd:comments><gd:feedLink href='http://gdata.youtube.com/feeds/api/videos/oQ49W_xKzKA/comments' countHint='0'/></gd:comments><media:group><media:category label='People &amp; Blogs' scheme='http://gdata.youtube.com/schemas/2007/categories.cat'>People</media:category><media:content url='http://www.youtube.com/v/oQ49W_xKzKA?f=videos&amp;app=youtube_gdata' type='application/x-shockwave-flash' medium='video' isDefault='true' expression='full' duration='2' yt:format='5'/><media:content url='rtsp://v3.cache7.c.youtube.com/CiILENy73wIaGQmgzEr8Wz0OoRMYDSANFEgGUgZ2aWRlb3MM/0/0/0/video.3gp' type='video/3gpp' medium='video' expression='full' duration='2' yt:format='1'/><media:content url='rtsp://v3.cache2.c.youtube.com/CiILENy73wIaGQmgzEr8Wz0OoRMYESARFEgGUgZ2aWRlb3MM/0/0/0/video.3gp' type='video/3gpp' medium='video' expression='full' duration='2' yt:format='6'/><media:description type='plain'/><media:keywords>test3</media:keywords><media:player url='http://www.youtube.com/watch?v=oQ49W_xKzKA&amp;feature=youtube_gdata_player'/><media:thumbnail url='http://i.ytimg.com/vi/oQ49W_xKzKA/2.jpg' height='90' width='120' time='00:00:01'/><media:thumbnail url='http://i.ytimg.com/vi/oQ49W_xKzKA/1.jpg' height='90' width='120' time='00:00:00.500'/><media:thumbnail url='http://i.ytimg.com/vi/oQ49W_xKzKA/3.jpg' height='90' width='120' time='00:00:01.500'/><media:thumbnail url='http://i.ytimg.com/vi/oQ49W_xKzKA/0.jpg' height='240' width='320' time='00:00:01'/><media:title type='plain'>test3</media:title><yt:duration seconds='2'/></media:group></entry>
+    http_version: "1.1"

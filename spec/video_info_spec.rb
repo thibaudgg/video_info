@@ -68,8 +68,19 @@ describe "VideoInfo" do
     video.should_not be_valid
   end
   
-  it "should have no views to it" do
-    video = VideoInfo.new('http://www.youtube.com/watch?v=oQ49W_xKzKA') # Video with no views (DON'T LOOK AT IT!)
-    video.view_count.should == 0
+  context "vcr recorded request" do
+    before(:each) do
+      VCR.config do |config|
+        config.stub_with :webmock
+        config.cassette_library_dir = 'fixtures/vcr_cassettes'
+        config.default_cassette_options = {:record=>:new_episodes}
+      end
+    end
+    use_vcr_cassette "youtube_recorded", :record => :new_episodes
+    
+    it "should have no views to it" do
+      video = VideoInfo.new('http://www.youtube.com/watch?v=oQ49W_xKzKA')
+      video.view_count.should == 0
+    end
   end
 end
