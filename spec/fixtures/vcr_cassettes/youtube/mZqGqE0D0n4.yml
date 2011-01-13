@@ -1,0 +1,40 @@
+--- 
+- !ruby/struct:VCR::HTTPInteraction 
+  request: !ruby/struct:VCR::Request 
+    method: :get
+    uri: http://gdata.youtube.com:80/feeds/api/videos/mZqGqE0D0n4
+    body: 
+    headers: 
+  response: !ruby/struct:VCR::Response 
+    status: !ruby/struct:VCR::ResponseStatus 
+      code: 200
+      message: OK
+    headers: 
+      x-content-type-options: 
+      - nosniff
+      x-frame-options: 
+      - SAMEORIGIN
+      expires: 
+      - Thu, 13 Jan 2011 08:05:47 GMT
+      last-modified: 
+      - Thu, 06 Jan 2011 20:35:33 GMT
+      content-type: 
+      - application/atom+xml; charset=UTF-8
+      server: 
+      - GSE
+      date: 
+      - Thu, 13 Jan 2011 08:05:47 GMT
+      x-xss-protection: 
+      - 1; mode=block
+      gdata-version: 
+      - "1.0"
+      x-gdata-user-country: 
+      - CH
+      cache-control: 
+      - private, max-age=300, no-transform
+      vary: 
+      - "*"
+      transfer-encoding: 
+      - chunked
+    body: <?xml version='1.0' encoding='UTF-8'?><entry xmlns='http://www.w3.org/2005/Atom' xmlns:media='http://search.yahoo.com/mrss/' xmlns:gd='http://schemas.google.com/g/2005' xmlns:yt='http://gdata.youtube.com/schemas/2007'><id>http://gdata.youtube.com/feeds/api/videos/mZqGqE0D0n4</id><published>2008-04-12T22:25:35.000Z</published><updated>2011-01-06T20:35:33.000Z</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://gdata.youtube.com/schemas/2007#video'/><category scheme='http://gdata.youtube.com/schemas/2007/categories.cat' term='Music' label='Music'/><category scheme='http://gdata.youtube.com/schemas/2007/keywords.cat' term='cherry'/><category scheme='http://gdata.youtube.com/schemas/2007/keywords.cat' term='bloom'/><category scheme='http://gdata.youtube.com/schemas/2007/keywords.cat' term='king'/><category scheme='http://gdata.youtube.com/schemas/2007/keywords.cat' term='of'/><category scheme='http://gdata.youtube.com/schemas/2007/keywords.cat' term='the'/><category scheme='http://gdata.youtube.com/schemas/2007/keywords.cat' term='knife'/><category scheme='http://gdata.youtube.com/schemas/2007/keywords.cat' term='guitar'/><category scheme='http://gdata.youtube.com/schemas/2007/keywords.cat' term='drum'/><category scheme='http://gdata.youtube.com/schemas/2007/keywords.cat' term='clip'/><category scheme='http://gdata.youtube.com/schemas/2007/keywords.cat' term='rock'/><category scheme='http://gdata.youtube.com/schemas/2007/keywords.cat' term='alternative'/><category scheme='http://gdata.youtube.com/schemas/2007/keywords.cat' term='tremplin'/><category scheme='http://gdata.youtube.com/schemas/2007/keywords.cat' term='Paris-Forum'/><title type='text'>Cherry Bloom - King Of The Knife</title><content type='text'>The first video from the upcoming album Secret Sounds, to download in-stores April 14. Checkout http://www.cherrybloom.net</content><link rel='alternate' type='text/html' href='http://www.youtube.com/watch?v=mZqGqE0D0n4&amp;feature=youtube_gdata'/><link rel='http://gdata.youtube.com/schemas/2007#video.responses' type='application/atom+xml' href='http://gdata.youtube.com/feeds/api/videos/mZqGqE0D0n4/responses'/><link rel='http://gdata.youtube.com/schemas/2007#video.related' type='application/atom+xml' href='http://gdata.youtube.com/feeds/api/videos/mZqGqE0D0n4/related'/><link rel='self' type='application/atom+xml' href='http://gdata.youtube.com/feeds/api/videos/mZqGqE0D0n4'/><author><name>cherrybloomband</name><uri>http://gdata.youtube.com/feeds/api/users/cherrybloomband</uri></author><gd:comments><gd:feedLink href='http://gdata.youtube.com/feeds/api/videos/mZqGqE0D0n4/comments' countHint='13'/></gd:comments><media:group><media:category label='Music' scheme='http://gdata.youtube.com/schemas/2007/categories.cat'>Music</media:category><media:content url='http://www.youtube.com/v/mZqGqE0D0n4?f=videos&amp;app=youtube_gdata' type='application/x-shockwave-flash' medium='video' isDefault='true' expression='full' duration='175' yt:format='5'/><media:content url='rtsp://v1.cache6.c.youtube.com/CiILENy73wIaGQl-0gNNqIaamRMYDSANFEgGUgZ2aWRlb3MM/0/0/0/video.3gp' type='video/3gpp' medium='video' expression='full' duration='175' yt:format='1'/><media:content url='rtsp://v3.cache7.c.youtube.com/CiILENy73wIaGQl-0gNNqIaamRMYESARFEgGUgZ2aWRlb3MM/0/0/0/video.3gp' type='video/3gpp' medium='video' expression='full' duration='175' yt:format='6'/><media:description type='plain'>The first video from the upcoming album Secret Sounds, to download in-stores April 14. Checkout http://www.cherrybloom.net</media:description><media:keywords>cherry, bloom, king, of, the, knife, guitar, drum, clip, rock, alternative, tremplin, Paris-Forum</media:keywords><media:player url='http://www.youtube.com/watch?v=mZqGqE0D0n4&amp;feature=youtube_gdata_player'/><media:thumbnail url='http://i.ytimg.com/vi/mZqGqE0D0n4/2.jpg' height='90' width='120' time='00:01:27.500'/><media:thumbnail url='http://i.ytimg.com/vi/mZqGqE0D0n4/1.jpg' height='90' width='120' time='00:00:43.750'/><media:thumbnail url='http://i.ytimg.com/vi/mZqGqE0D0n4/3.jpg' height='90' width='120' time='00:02:11.250'/><media:thumbnail url='http://i.ytimg.com/vi/mZqGqE0D0n4/0.jpg' height='240' width='320' time='00:01:27.500'/><media:title type='plain'>Cherry Bloom - King Of The Knife</media:title><yt:duration seconds='175'/></media:group><gd:rating average='4.733333' max='5' min='1' numRaters='30' rel='http://schemas.google.com/g/2005#overall'/><yt:statistics favoriteCount='38' viewCount='4152'/></entry>
+    http_version: "1.1"

@@ -1,0 +1,40 @@
+--- 
+- !ruby/struct:VCR::HTTPInteraction 
+  request: !ruby/struct:VCR::Request 
+    method: :get
+    uri: http://gdata.youtube.com:80/feeds/api/videos/JM9NgvjjVng
+    body: 
+    headers: 
+  response: !ruby/struct:VCR::Response 
+    status: !ruby/struct:VCR::ResponseStatus 
+      code: 200
+      message: OK
+    headers: 
+      x-content-type-options: 
+      - nosniff
+      x-frame-options: 
+      - SAMEORIGIN
+      expires: 
+      - Thu, 13 Jan 2011 08:05:47 GMT
+      last-modified: 
+      - Wed, 12 Jan 2011 21:43:53 GMT
+      content-type: 
+      - application/atom+xml; charset=UTF-8
+      server: 
+      - GSE
+      date: 
+      - Thu, 13 Jan 2011 08:05:47 GMT
+      x-xss-protection: 
+      - 1; mode=block
+      gdata-version: 
+      - "1.0"
+      x-gdata-user-country: 
+      - CH
+      cache-control: 
+      - private, max-age=300, no-transform
+      vary: 
+      - "*"
+      transfer-encoding: 
+      - chunked
+    body: <?xml version='1.0' encoding='UTF-8'?><entry xmlns='http://www.w3.org/2005/Atom' xmlns:app='http://purl.org/atom/app#' xmlns:media='http://search.yahoo.com/mrss/' xmlns:gd='http://schemas.google.com/g/2005' xmlns:yt='http://gdata.youtube.com/schemas/2007'><id>http://gdata.youtube.com/feeds/api/videos/JM9NgvjjVng</id><published>2008-04-21T15:34:35.000Z</published><updated>2011-01-12T21:43:53.000Z</updated><app:control><yt:state name='restricted' reasonCode='limitedSyndication'>Syndication of this video was restricted by its owner.</yt:state></app:control><category scheme='http://schemas.google.com/g/2005#kind' term='http://gdata.youtube.com/schemas/2007#video'/><category scheme='http://gdata.youtube.com/schemas/2007/categories.cat' term='Music' label='Music'/><category scheme='http://gdata.youtube.com/schemas/2007/keywords.cat' term='amy'/><category scheme='http://gdata.youtube.com/schemas/2007/keywords.cat' term='macdonald'/><category scheme='http://gdata.youtube.com/schemas/2007/keywords.cat' term='rock'/><category scheme='http://gdata.youtube.com/schemas/2007/keywords.cat' term='roll'/><category scheme='http://gdata.youtube.com/schemas/2007/keywords.cat' term='poison'/><category scheme='http://gdata.youtube.com/schemas/2007/keywords.cat' term='prince'/><title type='text'>Amy Macdonald - Poison Prince - 2008 Version</title><content type='text'>See the brand new video to Amy's new single 'Poison Prince' out May 19th 2008...</content><link rel='alternate' type='text/html' href='http://www.youtube.com/watch?v=JM9NgvjjVng&amp;feature=youtube_gdata'/><link rel='http://gdata.youtube.com/schemas/2007#video.responses' type='application/atom+xml' href='http://gdata.youtube.com/feeds/api/videos/JM9NgvjjVng/responses'/><link rel='http://gdata.youtube.com/schemas/2007#video.related' type='application/atom+xml' href='http://gdata.youtube.com/feeds/api/videos/JM9NgvjjVng/related'/><link rel='self' type='application/atom+xml' href='http://gdata.youtube.com/feeds/api/videos/JM9NgvjjVng'/><author><name>amymacdonaldofficial</name><uri>http://gdata.youtube.com/feeds/api/users/amymacdonaldofficial</uri></author><gd:comments><gd:feedLink href='http://gdata.youtube.com/feeds/api/videos/JM9NgvjjVng/comments' countHint='456'/></gd:comments><media:group><media:category label='Music' scheme='http://gdata.youtube.com/schemas/2007/categories.cat'>Music</media:category><media:description type='plain'>See the brand new video to Amy's new single 'Poison Prince' out May 19th 2008...</media:description><media:keywords>amy, macdonald, rock, roll, poison, prince</media:keywords><media:player url='http://www.youtube.com/watch?v=JM9NgvjjVng&amp;feature=youtube_gdata_player'/><media:restriction type='country' relationship='deny'>DE</media:restriction><media:thumbnail url='http://i.ytimg.com/vi/JM9NgvjjVng/2.jpg' height='90' width='120' time='00:01:48.500'/><media:thumbnail url='http://i.ytimg.com/vi/JM9NgvjjVng/1.jpg' height='90' width='120' time='00:00:54.250'/><media:thumbnail url='http://i.ytimg.com/vi/JM9NgvjjVng/3.jpg' height='90' width='120' time='00:02:42.750'/><media:thumbnail url='http://i.ytimg.com/vi/JM9NgvjjVng/0.jpg' height='240' width='320' time='00:01:48.500'/><media:title type='plain'>Amy Macdonald - Poison Prince - 2008 Version</media:title><yt:duration seconds='217'/></media:group><yt:noembed/><gd:rating average='4.880075' max='5' min='1' numRaters='1601' rel='http://schemas.google.com/g/2005#overall'/><yt:statistics favoriteCount='3057' viewCount='1528580'/></entry>
+    http_version: "1.1"
