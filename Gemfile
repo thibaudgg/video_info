@@ -3,8 +3,6 @@ source "http://rubygems.org"
 # Specify your gem's dependencies in video_info.gemspec
 gemspec
 
-gem 'guard',              :git => "git://github.com/guard/guard.git"
-
 require 'rbconfig'
 
 if Config::CONFIG['target_os'] =~ /darwin/i
