@@ -22,6 +22,6 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'webmock'
   s.add_development_dependency 'vcr'
 
-  s.files        = Dir.glob('{lib}/**/*') + %w[LICENSE README.rdoc]
+  s.files        = Dir.glob('{lib}/**/*') + %w[LICENSE README.md]
   s.require_paths = ["lib"]
 end
