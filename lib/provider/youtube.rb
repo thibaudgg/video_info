@@ -8,8 +8,18 @@ class Youtube
                 :view_count
 
   def initialize(url)
-    @video_id = url.gsub(/.*v=([^&]+).*$/i, '\1')
+    video_id_for(url)
     get_info unless @video_id == url
+  end
+
+  def regex
+    /http:\/\/(www.)?youtube\.com\/watch\?v=([A-Za-z0-9._%-]*)(\&\S+)?|http:\/\/(www.)?youtu\.be\/([A-Za-z0-9._%-]*)?/ 
+  end
+
+  def video_id_for(url)
+    url.gsub(regex) do
+      @video_id = $2 || $5
+    end
   end
 
 private
