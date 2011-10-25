@@ -38,6 +38,12 @@ describe "VideoInfo" do
 
       its(:view_count) { should == 2 }
     end
+
+    describe "youtu.be url" do
+      use_vcr_cassette "youtube/JM9NgvjjVng"
+      subject { VideoInfo.new('http://youtu.be/JM9NgvjjVng') }
+      its(:provider) { should == 'YouTube' }
+    end
   end
 
   context "from Vimeo" do
