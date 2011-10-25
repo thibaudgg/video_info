@@ -1,7 +1,7 @@
 = VideoInfo
   
 Small Ruby Gem to get video info from youtube and vimeo url.
-Tested on Ruby 1.8.6, 1.8.7 & 1.9.2
+Tested against Ruby 1.8.7, 1.9.2, REE and the latest versions of JRuby & Rubinius.
   
 == Install
   
