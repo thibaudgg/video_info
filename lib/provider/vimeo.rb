@@ -24,7 +24,7 @@ private
     @duration         = doc.search("duration").inner_text.to_i # seconds
     @width            = doc.search("width").inner_text.to_i
     @height           = doc.search("height").inner_text.to_i
-    @date             = Time.parse(doc.search("upload_date").inner_text, Time.now.utc)
+    @date             = Time.parse(doc.search("upload_date").inner_text)
     @thumbnail_small  = doc.search("thumbnail_small").inner_text
     @thumbnail_large  = doc.search("thumbnail_large").inner_text
     @view_count       = doc.search("stats_number_of_plays").inner_text.to_i
