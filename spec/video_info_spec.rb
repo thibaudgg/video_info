@@ -60,7 +60,7 @@ describe "VideoInfo" do
       its(:duration)         { should == 175 }
       its(:width)            { should == 640 }
       its(:height)           { should == 360 }
-      its(:date)             { should == Time.parse('Mon Apr 14 11:10:39 UTC 2008', Time.now.utc) }
+      its(:date)             { should == Time.parse('2008-04-14 13:10:39', Time.now.utc) }
       its(:thumbnail_small)  { should == 'http://b.vimeocdn.com/ts/343/731/34373130_100.jpg' }
       its(:thumbnail_large)  { should == 'http://b.vimeocdn.com/ts/343/731/34373130_640.jpg' }
       its(:view_count)       { should be > 4000 }
