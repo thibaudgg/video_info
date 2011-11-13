@@ -8,7 +8,7 @@ class Vimeo
                 :view_count
 
   def initialize(url)
-    @video_id = url.gsub(/.*\.com\/([0-9]+).*$/i, '\1')
+    @video_id = url.gsub(/.*\.com\/(?:groups\/[^\/]+\/videos\/)?([0-9]+).*$/i, '\1')
     get_info unless @video_id == url
   end
 
