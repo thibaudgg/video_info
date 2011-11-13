@@ -66,6 +66,18 @@ describe "VideoInfo" do
       its(:view_count)       { should be > 4000 }
       it { should be_valid }
     end
+
+    describe "/group/ url" do
+      use_vcr_cassette "vimeo/898029"
+      subject { VideoInfo.new('http://vimeo.com/groups/1234/videos/898029') }
+      its(:provider) { should == 'Vimeo' }
+    end
+     
+    describe "bad vimeo url" do
+      subject { VideoInfo.new('http://www.vimeo.com/groups/898029') }
+
+      it { should_not be_valid }
+    end
   end
 
   context "from" do
