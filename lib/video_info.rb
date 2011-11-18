@@ -1,3 +1,5 @@
+require 'open-uri'
+require 'hpricot'
 require 'provider/vimeo'
 require 'provider/youtube'
 
@@ -7,9 +9,11 @@ class VideoInfo
 
     options = {"User-Agent" => "VideoInfo/#{VideoInfoVersion::VERSION}"}.merge options
     options.each do |key,value|
-      if key.is_a? Symbol
-        options[key.to_s.split(/[^a-z]/i).map(&:capitalize).join('-')] = value
-        options.delete key
+      unless OpenURI::Options.keys.include? key
+        if key.is_a? Symbol
+          options[key.to_s.split(/[^a-z]/i).map(&:capitalize).join('-')] = value
+          options.delete key
+        end
       end
     end
 

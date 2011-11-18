@@ -1,6 +1,3 @@
-require 'hpricot'
-require 'open-uri'
-
 class Vimeo
   attr_accessor :video_id, :url, :provider, :title, :description, :keywords,
                 :duration, :date, :width, :height,
