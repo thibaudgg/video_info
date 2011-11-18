@@ -103,4 +103,31 @@ describe "VideoInfo" do
     end
   end
 
+  context "options" do
+    let!(:default_user_agent) { "VideoInfo/#{VideoInfoVersion::VERSION}" }
+    let!(:custom_user_agent)  { "Test User Agent / 1.0" }
+    let!(:custom_referer)     { "http://google.com" }
+
+    describe "no options specified" do
+        use_vcr_cassette "vimeo/898029"
+        subject { VideoInfo.new('http://vimeo.com/groups/1234/videos/898029') }
+
+        its(:openURI_options) { should == { "User-Agent" => default_user_agent } }
+    end
+
+    describe "symbols used" do
+      use_vcr_cassette "vimeo/898029"
+      subject { VideoInfo.new('http://vimeo.com/groups/1234/videos/898029', :user_agent => custom_user_agent, :referer => custom_referer ) }
+
+      its(:openURI_options) { should == { "User-Agent" => custom_user_agent, "Referer" => custom_referer } }
+    end
+
+    describe "strings used" do
+      use_vcr_cassette "vimeo/898029"
+      subject { VideoInfo.new('http://vimeo.com/groups/1234/videos/898029', "User-Agent" => custom_user_agent, "Referer" => custom_referer) }
+
+      its(:openURI_options) { should == { "User-Agent" => custom_user_agent, "Referer" => custom_referer } }
+    end
+  end
+
 end

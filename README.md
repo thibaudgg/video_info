@@ -55,9 +55,17 @@ Options
   video = VideoInfo.new("http://www.youtube.com/watch?v=mZqGqE0D0n4", "Referer"    => "http://my-youtube-mashup.com/",
                                                                       "User-Agent" => "My Youtube Mashup Robot/1.0")
 ```
+You can also use **symbols** instead of strings (any non-word (`/[^a-z]/i`) character would be converted to hyphen).
+
+``` ruby
+  video = VideoInfo.new("http://www.youtube.com/watch?v=mZqGqE0D0n4", :referer    => "http://my-youtube-mashup.com/",
+                                                                      :user_agent => "My Youtube Mashup Robot/1.0")
+```
+
 User-Agent when empty defaults to "VideoInfo/VERSION" - where version is current VideoInfo version, e.g. **"VideoInfo/0.2.7"**.
 
-Supports all openURI header fields (options), for more information see: [openURI DOCS](http://www.ruby-doc.org/stdlib-1.9.3/libdoc/open-uri/rdoc/OpenURI.html)
+It supports all openURI header fields (options), for more information see: [openURI DOCS](http://www.ruby-doc.org/stdlib-1.9.3/libdoc/open-uri/rdoc/OpenURI.html)
+
 
 Author
 ------

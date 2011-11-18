@@ -6,11 +6,11 @@ class Youtube
   attr_accessor :video_id, :url, :provider, :title, :description, :keywords,
                 :duration, :date, :width, :height,
                 :thumbnail_small, :thumbnail_large,
-                :view_count
+                :view_count,
+                :openURI_options
 
   def initialize(url, options = {})
-    @openURI_options = {"User-Agent" => "VideoInfo/#{VideoInfoVersion::VERSION}"}
-    @openURI_options.merge! options
+    @openURI_options = options
     video_id_for(url)
     get_info unless @video_id == url
   end
