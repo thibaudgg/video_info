@@ -1,5 +1,6 @@
 require 'hpricot'
 require 'open-uri'
+require 'video_info/version'
 
 class Vimeo
   attr_accessor :video_id, :url, :provider, :title, :description, :keywords,
@@ -7,7 +8,9 @@ class Vimeo
                 :thumbnail_small, :thumbnail_large,
                 :view_count
 
-  def initialize(url)
+  def initialize(url, options = {})
+    @openURI_options = {"User-Agent" => "VideoInfo/#{VideoInfoVersion::VERSION}"}
+    @openURI_options.merge! options
     @video_id = url.gsub(/.*\.com\/(?:groups\/[^\/]+\/videos\/)?([0-9]+).*$/i, '\1')
     get_info unless @video_id == url
   end
@@ -15,7 +18,7 @@ class Vimeo
 private
 
   def get_info
-    doc = Hpricot(open("http://vimeo.com/api/v2/video/#{@video_id}.xml"))
+    doc = Hpricot(open("http://vimeo.com/api/v2/video/#{@video_id}.xml", @openURI_options))
     @provider         = "Vimeo"
     @url              = doc.search("url").inner_text
     @title            = doc.search("title").inner_text

@@ -3,14 +3,14 @@ require 'provider/youtube'
 
 class VideoInfo
 
-  def initialize(url)
+  def initialize(url, options = {})
     case url
     when /vimeo\.com/
-      @video = Vimeo.new(url)
+      @video = Vimeo.new(url, options)
     when /youtube\.com/
-      @video = Youtube.new(url)
+      @video = Youtube.new(url, options)
     when /youtu\.be/
-      @video = Youtube.new(url)
+      @video = Youtube.new(url, options)
     end
   end
 
