@@ -124,7 +124,7 @@ describe "VideoInfo" do
 
     describe "strings used" do
       use_vcr_cassette "vimeo/898029"
-      subject { VideoInfo.new('http://vimeo.com/groups/1234/videos/898029', "User-Agent" => custom_user_agent, "Referer" => custom_referer) }
+      subject { VideoInfo.new('http://vimeo.com/groups/1234/videos/898029', "User-Agent" => custom_user_agent, "Referer" => custom_referer ) }
 
       its(:openURI_options) { should == { "User-Agent" => custom_user_agent, "Referer" => custom_referer } }
     end

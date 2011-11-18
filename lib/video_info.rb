@@ -7,7 +7,7 @@ class VideoInfo
 
   def initialize(url, options = {})
 
-    options = {"User-Agent" => "VideoInfo/#{VideoInfoVersion::VERSION}"}.merge options
+    options = { "User-Agent" => "VideoInfo/#{VideoInfoVersion::VERSION}" }.merge options
     options.each do |key,value|
       unless OpenURI::Options.keys.include? key
         if key.is_a? Symbol
