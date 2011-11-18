@@ -109,10 +109,10 @@ describe "VideoInfo" do
     let!(:custom_referer)     { "http://google.com" }
 
     describe "no options specified" do
-        use_vcr_cassette "vimeo/898029"
-        subject { VideoInfo.new('http://vimeo.com/groups/1234/videos/898029') }
+      use_vcr_cassette "vimeo/898029"
+      subject { VideoInfo.new('http://vimeo.com/groups/1234/videos/898029') }
 
-        its(:openURI_options) { should == { "User-Agent" => default_user_agent } }
+      its(:openURI_options) { should == { "User-Agent" => default_user_agent } }
     end
 
     describe "symbols used" do
@@ -129,8 +129,8 @@ describe "VideoInfo" do
       its(:openURI_options) { should == { "User-Agent" => custom_user_agent, "Referer" => custom_referer } }
     end
 
-    describe "reserved openURI option keys not coverted to string" do
-      # Depending on Ruby version, there may exist more reserved keys, see: OpenURI::Options.keys
+    describe "reserved openURI option-keys as symbols" do
+      # Depending on Ruby version, the size of reserved-keys list may vary, see: OpenURI::Options.keys
       use_vcr_cassette "vimeo/898029"
       subject { VideoInfo.new('http://vimeo.com/groups/1234/videos/898029', :proxy => nil, :http_basic_authentication => true) }
 
