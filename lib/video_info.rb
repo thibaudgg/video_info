@@ -9,7 +9,7 @@ class VideoInfo
   def initialize(url, options = {})
 
     options = { "User-Agent" => "VideoInfo/#{VideoInfoVersion::VERSION}" }.merge options
-    options.each do |key,value|
+    options.dup.each do |key,value|
       unless OpenURI::Options.keys.include? key
         if key.is_a? Symbol
           options[key.to_s.split(/[^a-z]/i).map(&:capitalize).join('-')] = value

@@ -129,7 +129,7 @@ describe "VideoInfo" do
       its(:openURI_options) { should == { "User-Agent" => custom_user_agent, "Referer" => custom_referer } }
     end
 
-    describe "reserved openURI option-keys as symbols" do
+    describe "reserved openURI option-keys used" do
       # Depending on Ruby version, the size of reserved-keys list may vary, see: OpenURI::Options.keys
       use_vcr_cassette "vimeo/898029"
       subject { VideoInfo.new('http://vimeo.com/groups/1234/videos/898029', :proxy => nil, :http_basic_authentication => true) }
