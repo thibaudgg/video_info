@@ -1,5 +1,6 @@
 require 'open-uri'
 require 'hpricot'
+require 'video_info/version'
 require 'provider/vimeo'
 require 'provider/youtube'
 
