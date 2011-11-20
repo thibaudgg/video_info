@@ -1,13 +1,12 @@
-require 'hpricot'
-require 'open-uri'
-
 class Youtube
   attr_accessor :video_id, :url, :provider, :title, :description, :keywords,
                 :duration, :date, :width, :height,
                 :thumbnail_small, :thumbnail_large,
-                :view_count
+                :view_count,
+                :openURI_options
 
-  def initialize(url)
+  def initialize(url, options = {})
+    @openURI_options = options
     video_id_for(url)
     get_info unless @video_id == url
   end
@@ -25,7 +24,7 @@ class Youtube
 private
 
   def get_info
-    doc = Hpricot(open("http://gdata.youtube.com/feeds/api/videos/#{@video_id}"))
+    doc = Hpricot(open("http://gdata.youtube.com/feeds/api/videos/#{@video_id}", @openURI_options))
     @provider         = "YouTube"
     @url              = "http://www.youtube.com/watch?v=#{@video_id}"
     @title            = doc.search("media:title").inner_text
