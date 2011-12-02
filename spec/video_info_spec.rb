@@ -44,6 +44,12 @@ describe "VideoInfo" do
       subject { VideoInfo.new('http://youtu.be/JM9NgvjjVng') }
       its(:provider) { should == 'YouTube' }
     end
+
+    context 'without http or www' do
+      use_vcr_cassette "youtube/JM9NgvjjVng"
+      subject { VideoInfo.new('youtu.be/JM9NgvjjVng') }
+      its(:provider) { should == 'YouTube' }
+    end
   end
 
   context "from Vimeo" do
