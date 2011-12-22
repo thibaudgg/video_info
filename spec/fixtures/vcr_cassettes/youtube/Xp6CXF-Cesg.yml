@@ -1,0 +1,119 @@
+---
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: http://gdata.youtube.com:80/feeds/api/videos/Xp6CXF-
+    body: !!null 
+    headers:
+      user-agent:
+      - VideoInfo/0.2.9
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 400
+      message: Bad Request
+    headers:
+      x-gdata-user-country:
+      - ES
+      content-type:
+      - text/html; charset=UTF-8
+      transfer-encoding:
+      - chunked
+      date:
+      - Thu, 22 Dec 2011 18:40:53 GMT
+      expires:
+      - Thu, 22 Dec 2011 18:40:53 GMT
+      cache-control:
+      - private, max-age=0
+      x-content-type-options:
+      - nosniff
+      x-frame-options:
+      - SAMEORIGIN
+      x-xss-protection:
+      - 1; mode=block
+      server:
+      - GSE
+    body: Invalid id
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: http://gdata.youtube.com:80/feeds/api/videos/Xp6CXF-Cesg
+    body: !!null 
+    headers:
+      user-agent:
+      - VideoInfo/0.2.9
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      x-gdata-user-country:
+      - ES
+      content-type:
+      - application/atom+xml; charset=UTF-8
+      expires:
+      - Thu, 22 Dec 2011 18:41:22 GMT
+      date:
+      - Thu, 22 Dec 2011 18:41:22 GMT
+      cache-control:
+      - private, max-age=300, no-transform
+      vary:
+      - ! '*'
+      gdata-version:
+      - '1.0'
+      last-modified:
+      - Thu, 22 Dec 2011 05:22:15 GMT
+      transfer-encoding:
+      - chunked
+      x-content-type-options:
+      - nosniff
+      x-frame-options:
+      - SAMEORIGIN
+      x-xss-protection:
+      - 1; mode=block
+      server:
+      - GSE
+    body: <?xml version='1.0' encoding='UTF-8'?><entry xmlns='http://www.w3.org/2005/Atom'
+      xmlns:media='http://search.yahoo.com/mrss/' xmlns:gd='http://schemas.google.com/g/2005'
+      xmlns:yt='http://gdata.youtube.com/schemas/2007'><id>http://gdata.youtube.com/feeds/api/videos/Xp6CXF-Cesg</id><published>2006-08-19T04:21:07.000Z</published><updated>2011-12-22T05:22:15.000Z</updated><category
+      scheme='http://schemas.google.com/g/2005#kind' term='http://gdata.youtube.com/schemas/2007#video'/><category
+      scheme='http://gdata.youtube.com/schemas/2007/categories.cat' term='Entertainment'
+      label='Entertainment'/><category scheme='http://gdata.youtube.com/schemas/2007/keywords.cat'
+      term='Pop'/><category scheme='http://gdata.youtube.com/schemas/2007/keywords.cat'
+      term='Locking'/><category scheme='http://gdata.youtube.com/schemas/2007/keywords.cat'
+      term='Dance'/><category scheme='http://gdata.youtube.com/schemas/2007/keywords.cat'
+      term='Cool'/><category scheme='http://gdata.youtube.com/schemas/2007/keywords.cat'
+      term='Crazy'/><category scheme='http://gdata.youtube.com/schemas/2007/keywords.cat'
+      term='Battle'/><category scheme='http://gdata.youtube.com/schemas/2007/keywords.cat'
+      term='Of'/><category scheme='http://gdata.youtube.com/schemas/2007/keywords.cat'
+      term='The'/><category scheme='http://gdata.youtube.com/schemas/2007/keywords.cat'
+      term='Sexes'/><title type='text'>Poppin..Battle Of The Sexes</title><content
+      type='text'>Guys Vs Girls Pop Locking The Battle of The Sexes Salah(Name Of
+      Song Petey Pablo - Club Banger remix)</content><link rel='alternate' type='text/html'
+      href='http://www.youtube.com/watch?v=Xp6CXF-Cesg&amp;feature=youtube_gdata'/><link
+      rel='http://gdata.youtube.com/schemas/2007#video.responses' type='application/atom+xml'
+      href='http://gdata.youtube.com/feeds/api/videos/Xp6CXF-Cesg/responses'/><link
+      rel='http://gdata.youtube.com/schemas/2007#video.related' type='application/atom+xml'
+      href='http://gdata.youtube.com/feeds/api/videos/Xp6CXF-Cesg/related'/><link
+      rel='http://gdata.youtube.com/schemas/2007#mobile' type='text/html' href='http://m.youtube.com/details?v=Xp6CXF-Cesg'/><link
+      rel='self' type='application/atom+xml' href='http://gdata.youtube.com/feeds/api/videos/Xp6CXF-Cesg'/><author><name>chewylue</name><uri>http://gdata.youtube.com/feeds/api/users/chewylue</uri></author><gd:comments><gd:feedLink
+      href='http://gdata.youtube.com/feeds/api/videos/Xp6CXF-Cesg/comments' countHint='1156'/></gd:comments><media:group><media:category
+      label='Entertainment' scheme='http://gdata.youtube.com/schemas/2007/categories.cat'>Entertainment</media:category><media:content
+      url='http://www.youtube.com/v/Xp6CXF-Cesg?version=3&amp;f=videos&amp;app=youtube_gdata'
+      type='application/x-shockwave-flash' medium='video' isDefault='true' expression='full'
+      duration='452' yt:format='5'/><media:content url='rtsp://v2.cache4.c.youtube.com/CiILENy73wIaGQnIeoJfXIKeXhMYDSANFEgGUgZ2aWRlb3MM/0/0/0/video.3gp'
+      type='video/3gpp' medium='video' expression='full' duration='452' yt:format='1'/><media:content
+      url='rtsp://v2.cache4.c.youtube.com/CiILENy73wIaGQnIeoJfXIKeXhMYESARFEgGUgZ2aWRlb3MM/0/0/0/video.3gp'
+      type='video/3gpp' medium='video' expression='full' duration='452' yt:format='6'/><media:description
+      type='plain'>Guys Vs Girls Pop Locking The Battle of The Sexes Salah(Name Of
+      Song Petey Pablo - Club Banger remix)</media:description><media:keywords>Pop,
+      Locking, Dance, Cool, Crazy, Battle, Of, The, Sexes</media:keywords><media:player
+      url='http://www.youtube.com/watch?v=Xp6CXF-Cesg&amp;feature=youtube_gdata_player'/><media:thumbnail
+      url='http://i.ytimg.com/vi/Xp6CXF-Cesg/0.jpg' height='360' width='480' time='00:03:46'/><media:thumbnail
+      url='http://i.ytimg.com/vi/Xp6CXF-Cesg/1.jpg' height='90' width='120' time='00:01:53'/><media:thumbnail
+      url='http://i.ytimg.com/vi/Xp6CXF-Cesg/2.jpg' height='90' width='120' time='00:03:46'/><media:thumbnail
+      url='http://i.ytimg.com/vi/Xp6CXF-Cesg/3.jpg' height='90' width='120' time='00:05:39'/><media:title
+      type='plain'>Poppin..Battle Of The Sexes</media:title><yt:duration seconds='452'/></media:group><gd:rating
+      average='4.808128' max='5' min='1' numRaters='1501' rel='http://schemas.google.com/g/2005#overall'/><yt:recorded>2006-08-16</yt:recorded><yt:statistics
+      favoriteCount='5305' viewCount='893735'/></entry>
+    http_version: '1.1'

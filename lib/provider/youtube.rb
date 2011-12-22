@@ -12,7 +12,7 @@ class Youtube
   end
 
   def regex
-    /youtu(.be)?(be.com)?.*(?:\/|v=)(\w+)/
+    /youtu(.be)?(be.com)?.*(?:\/|v=)([\w-]+)/
   end
 
   def video_id_for(url)

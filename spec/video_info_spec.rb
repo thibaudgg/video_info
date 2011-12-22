@@ -38,6 +38,13 @@ describe "VideoInfo" do
 
       its(:view_count) { should == 2 }
     end
+    
+    describe "Video Xp6CXF-Cesg" do
+      use_vcr_cassette "youtube/Xp6CXF-Cesg"
+      subject { VideoInfo.new('http://www.youtube.com/watch?v=Xp6CXF-Cesg') }
+
+      its(:view_count) { should == 893735 }
+    end
 
     describe "youtu.be url" do
       use_vcr_cassette "youtube/JM9NgvjjVng"
