@@ -27,6 +27,7 @@ private
     doc = Hpricot(open("http://gdata.youtube.com/feeds/api/videos/#{@video_id}", @openURI_options))
     @provider         = "YouTube"
     @url              = "http://www.youtube.com/watch?v=#{@video_id}"
+    @embed_url        = "http://www.youtube.com/v/#{@video_id}?version=3"
     @title            = doc.search("media:title").inner_text
     @description      = doc.search("media:description").inner_text
     @keywords         = doc.search("media:keywords").inner_text
