@@ -17,10 +17,10 @@ Gem::Specification.new do |s|
   s.add_dependency 'hpricot', '~> 0.8.4'
 
   s.add_development_dependency 'bundler'
-  s.add_development_dependency 'rspec',       '>= 2.7.0'
+  s.add_development_dependency 'rspec', '~> 2.8'
   s.add_development_dependency 'guard-rspec'
   s.add_development_dependency 'webmock'
-  s.add_development_dependency 'vcr'
+  s.add_development_dependency 'vcr', '~> 1.11'
 
   s.files        = Dir.glob('{lib}/**/*') + %w[LICENSE README.md]
   s.require_paths = ["lib"]
