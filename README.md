@@ -69,8 +69,12 @@ User-Agent when empty defaults to "VideoInfo/VERSION" - where version is current
 It supports all openURI header fields (options), for more information see: [openURI DOCS](http://www.ruby-doc.org/stdlib-1.9.3/libdoc/open-uri/rdoc/OpenURI.html)
 
 
-Authors
+Author
 ------
 
 [Thibaud Guillaume-Gentil](https://github.com/thibaudgg) ([@thibaudgg](http://twitter.com/thibaudgg))
-This fork by [Florian L.](https://github.com/Florian95) ([@florian_elam](http://twitter.com/florian_elam))
+
+Contributor
+-----------
+
+[Florian L.](https://github.com/Florian95) ([@florian_elam](http://twitter.com/florian_elam))
