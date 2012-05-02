@@ -3,14 +3,14 @@ $:.push File.expand_path("../lib", __FILE__)
 require "video_info/version"
 
 Gem::Specification.new do |s|
-  s.name        = "video_info"
-  s.version     = VideoInfoVersion::VERSION
-  s.platform    = Gem::Platform::RUBY
-  s.authors     = ['Thibaud Guillaume-Gentil']
-  s.email       = ['thibaud@thibaud.me']
-  s.homepage    = 'http://rubygems.org/gems/video_info'
-  s.summary     = 'Vimeo & Youtube parser'
-  s.description = 'Get video info from youtube and vimeo url.'
+  s.name         = "video_info"
+  s.version      = VideoInfoVersion::VERSION
+  s.platform     = Gem::Platform::RUBY
+  s.authors      = ['Thibaud Guillaume-Gentil']
+  s.email        = ['thibaud@thibaud.me']
+  s.homepage     = 'http://rubygems.org/gems/video_info'
+  s.summary      = 'Vimeo & Youtube parser'
+  s.description  = 'Get video info from youtube and vimeo url.'
 
   s.rubyforge_project = "video_info"
 

@@ -1,4 +1,4 @@
-VideoInfo [![Build Status](https://secure.travis-ci.org/thibaudgg/video_info.png?branch=master)](http://travis-ci.org/thibaudgg/video_info)
+VideoInfo [![Build Status](https://secure.travis-ci.org/Florian95/video_info.png?branch=master)](http://travis-ci.org/Florian95/video_info)
 =========
   
 Small Ruby Gem to get video info from youtube and vimeo url.
@@ -26,6 +26,7 @@ Usage
   # video.date             => Sat Apr 12 22:25:35 UTC 2008
   # video.thumbnail_small  => "http://i.ytimg.com/vi/mZqGqE0D0n4/2.jpg"
   # video.thumbnail_large  => "http://i.ytimg.com/vi/mZqGqE0D0n4/0.jpg"
+  # video.embed_url        => "http://www.youtube.com/embed/mZqGqE0D0n4"
   
   video = VideoInfo.new("http://vimeo.com/898029")
   
@@ -40,6 +41,7 @@ Usage
   # video.height           => 360
   # video.thumbnail_small  => "http://ts.vimeo.com.s3.amazonaws.com/343/731/34373130_100.jpg"
   # video.thumbnail_large  => "http://ts.vimeo.com.s3.amazonaws.com/343/731/34373130_640.jpg"
+  # video.embed_url        => "http://player.vimeo.com/video/898029"
   
   video = VideoInfo.new("http://badurl.com/898029")
   
@@ -71,3 +73,8 @@ Author
 ------
 
 [Thibaud Guillaume-Gentil](https://github.com/thibaudgg) ([@thibaudgg](http://twitter.com/thibaudgg))
+
+Contributor
+-----------
+
+[Florian L.](https://github.com/Florian95) ([@florian_elam](http://twitter.com/florian_elam))
