@@ -1,6 +1,6 @@
 class Vimeo
   attr_accessor :video_id, :url, :provider, :title, :description, :keywords,
-                :duration, :date, :width, :height,
+                :duration, :date, :width, :height, :embed_url,
                 :thumbnail_small, :thumbnail_large,
                 :view_count,
                 :openURI_options
@@ -19,6 +19,7 @@ private
     @url              = doc.search("url").inner_text
     @title            = doc.search("title").inner_text
     @description      = doc.search("description").inner_text
+    @embed_url        = "http://player.vimeo.com/video/#{@video_id}"
     @keywords         = doc.search("tags").inner_text
     @duration         = doc.search("duration").inner_text.to_i # seconds
     @width            = doc.search("width").inner_text.to_i

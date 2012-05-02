@@ -10,7 +10,7 @@ describe "VideoInfo" do
       its(:provider)         { should == 'YouTube' }
       its(:video_id)         { should == 'mZqGqE0D0n4' }
       its(:url)              { should == 'http://www.youtube.com/watch?v=mZqGqE0D0n4' }
-      its(:embed_url)        { should == 'http://www.youtube.com/v/mZqGqE0D0n4' }
+      its(:embed_url)        { should == 'http://www.youtube.com/embed/mZqGqE0D0n4' }
       its(:title)            { should == 'Cherry Bloom - King Of The Knife' }
       its(:description)      { should == 'The first video from the upcoming album Secret Sounds, to download in-stores April 14. Checkout http://www.cherrybloom.net' }
       its(:keywords)         { should == 'cherry, bloom, king, of, the, knife, guitar, drum, clip, rock, alternative, tremplin, Paris-Forum' }
@@ -39,7 +39,7 @@ describe "VideoInfo" do
 
       its(:view_count) { should == 2 }
     end
-    
+
     describe "Video Xp6CXF-Cesg" do
       use_vcr_cassette "youtube/Xp6CXF-Cesg"
       subject { VideoInfo.new('http://www.youtube.com/watch?v=Xp6CXF-Cesg') }
@@ -74,6 +74,7 @@ describe "VideoInfo" do
       its(:duration)         { should == 175 }
       its(:width)            { should == 640 }
       its(:height)           { should == 360 }
+      its(:embed_url)        { should == "http://player.vimeo.com/video/898029" }
       its(:date)             { should == Time.parse('2008-04-14 13:10:39', Time.now.utc) }
       its(:thumbnail_small)  { should == 'http://b.vimeocdn.com/ts/343/731/34373130_100.jpg' }
       its(:thumbnail_large)  { should == 'http://b.vimeocdn.com/ts/343/731/34373130_640.jpg' }
@@ -86,7 +87,7 @@ describe "VideoInfo" do
       subject { VideoInfo.new('http://vimeo.com/groups/1234/videos/898029') }
       its(:provider) { should == 'Vimeo' }
     end
-     
+
     describe "bad vimeo url" do
       subject { VideoInfo.new('http://www.vimeo.com/groups/898029') }
 
