@@ -7,7 +7,6 @@ Gem::Specification.new do |s|
   s.version      = VideoInfoVersion::VERSION
   s.platform     = Gem::Platform::RUBY
   s.authors      = ['Thibaud Guillaume-Gentil']
-  s.contributors = ['Florian L.']
   s.email        = ['thibaud@thibaud.me']
   s.homepage     = 'http://rubygems.org/gems/video_info'
   s.summary      = 'Vimeo & Youtube parser'
