@@ -10,7 +10,8 @@ describe "VideoInfo" do
       its(:provider)         { should == 'YouTube' }
       its(:video_id)         { should == 'mZqGqE0D0n4' }
       its(:url)              { should == 'http://www.youtube.com/watch?v=mZqGqE0D0n4' }
-      its(:embed_url)        { should == 'http://www.youtube.com/v/mZqGqE0D0n4' }
+      its(:embed_url)        { should == 'http://www.youtube.com/embed/mZqGqE0D0n4' }
+      its(:embed_code)       { should == '<iframe src="http://www.youtube.com/embed/mZqGqE0D0n4" frameborder="0" allowfullscreen="allowfullscreen"></iframe>' }
       its(:title)            { should == 'Cherry Bloom - King Of The Knife' }
       its(:description)      { should == 'The first video from the upcoming album Secret Sounds, to download in-stores April 14. Checkout http://www.cherrybloom.net' }
       its(:keywords)         { should == 'cherry, bloom, king, of, the, knife, guitar, drum, clip, rock, alternative, tremplin, Paris-Forum' }
@@ -39,7 +40,7 @@ describe "VideoInfo" do
 
       its(:view_count) { should == 2 }
     end
-    
+
     describe "Video Xp6CXF-Cesg" do
       use_vcr_cassette "youtube/Xp6CXF-Cesg"
       subject { VideoInfo.new('http://www.youtube.com/watch?v=Xp6CXF-Cesg') }
@@ -68,6 +69,8 @@ describe "VideoInfo" do
       its(:provider)         { should == 'Vimeo' }
       its(:video_id)         { should == '898029' }
       its(:url)              { should == 'http://vimeo.com/898029' }
+      its(:embed_url)        { should == 'http://player.vimeo.com/video/898029' }
+      its(:embed_code)       { should == '<iframe src="http://player.vimeo.com/video/898029?title=0&amp;byline=0&amp;portrait=0&amp;autoplay=0" frameborder="0"></iframe>' }
       its(:title)            { should == 'Cherry Bloom - King Of The Knife' }
       its(:description)      { should == 'The first video from the upcoming album Secret Sounds, to download in-stores April 14. Checkout http://www.cherrybloom.net' }
       its(:keywords)         { should == 'cherry bloom, secret sounds, king of the knife, rock, alternative' }
@@ -86,7 +89,7 @@ describe "VideoInfo" do
       subject { VideoInfo.new('http://vimeo.com/groups/1234/videos/898029') }
       its(:provider) { should == 'Vimeo' }
     end
-     
+
     describe "bad vimeo url" do
       subject { VideoInfo.new('http://www.vimeo.com/groups/898029') }
 
