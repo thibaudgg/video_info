@@ -10,7 +10,7 @@ describe "VideoInfo" do
       its(:provider)         { should == 'YouTube' }
       its(:video_id)         { should == 'mZqGqE0D0n4' }
       its(:url)              { should == 'http://www.youtube.com/watch?v=mZqGqE0D0n4' }
-      its(:embed_url)        { should == 'http://www.youtube.com/v/mZqGqE0D0n4' }
+      its(:embed_url)        { should == 'http://www.youtube.com/embed/mZqGqE0D0n4' }
       its(:title)            { should == 'Cherry Bloom - King Of The Knife' }
       its(:description)      { should == 'The first video from the upcoming album Secret Sounds, to download in-stores April 14. Checkout http://www.cherrybloom.net' }
       its(:keywords)         { should == 'cherry, bloom, king, of, the, knife, guitar, drum, clip, rock, alternative, tremplin, Paris-Forum' }
