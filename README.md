@@ -1,22 +1,22 @@
 VideoInfo [![Build Status](https://secure.travis-ci.org/thibaudgg/video_info.png?branch=master)](http://travis-ci.org/thibaudgg/video_info)
 =========
-  
+
 Small Ruby Gem to get video info from youtube and vimeo url.
 Tested against Ruby 1.8.7, 1.9.2, REE and the latest versions of JRuby & Rubinius.
-  
+
 Install
 --------
 
 ``` bash
   gem install video_info
 ```
-  
+
 Usage
 -----
-  
+
 ``` ruby
   video = VideoInfo.new("http://www.youtube.com/watch?v=mZqGqE0D0n4")
-  
+
   # video.video_id         => "mZqGqE0D0n4"
   # video.provider         => "YouTube"
   # video.title            => "Cherry Bloom - King Of The Knife"
@@ -26,9 +26,11 @@ Usage
   # video.date             => Sat Apr 12 22:25:35 UTC 2008
   # video.thumbnail_small  => "http://i.ytimg.com/vi/mZqGqE0D0n4/2.jpg"
   # video.thumbnail_large  => "http://i.ytimg.com/vi/mZqGqE0D0n4/0.jpg"
-  
+  # video.embed_url        => "http://www.youtube.com/embed/mZqGqE0D0n4"
+  # video.embed_code       => "'<iframe src="http://www.youtube.com/embed/mZqGqE0D0n4" frameborder="0" allowfullscreen="allowfullscreen"></iframe>'"
+
   video = VideoInfo.new("http://vimeo.com/898029")
-  
+
   # video.video_id         => "898029"
   # video.provider         => "Vimeo"
   # video.title            => "Cherry Bloom - King Of The Knife"
@@ -40,9 +42,11 @@ Usage
   # video.height           => 360
   # video.thumbnail_small  => "http://ts.vimeo.com.s3.amazonaws.com/343/731/34373130_100.jpg"
   # video.thumbnail_large  => "http://ts.vimeo.com.s3.amazonaws.com/343/731/34373130_640.jpg"
-  
+  # video.embed_url        => "http://player.vimeo.com/video/898029"
+  # video.embed_code       => "'<iframe src="http://player.vimeo.com/video/898029?title=0&amp;byline=0&amp;portrait=0&amp;autoplay=0" frameborder="0"></iframe>'"
+
   video = VideoInfo.new("http://badurl.com/898029")
-  
+
   # video.valid? => false
 ```
 
@@ -71,3 +75,9 @@ Author
 ------
 
 [Thibaud Guillaume-Gentil](https://github.com/thibaudgg) ([@thibaudgg](http://twitter.com/thibaudgg))
+
+Contributors
+------------
+
+[https://github.com/thibaudgg/video_info/contributors](https://github.com/thibaudgg/video_info/contributors)
+
