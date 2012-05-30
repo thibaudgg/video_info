@@ -1,5 +1,5 @@
 class Vimeo
-  attr_accessor :video_id, :url, :provider, :title, :description, :keywords,
+  attr_accessor :video_id, :embed_url, :url, :provider, :title, :description, :keywords,
                 :duration, :date, :width, :height,
                 :thumbnail_small, :thumbnail_large,
                 :view_count,
@@ -17,6 +17,7 @@ private
     doc = Hpricot(open("http://vimeo.com/api/v2/video/#{@video_id}.xml", @openURI_options))
     @provider         = "Vimeo"
     @url              = doc.search("url").inner_text
+    @embed_url        = "http://player.vimeo.com/video/#{@video_id}"
     @title            = doc.search("title").inner_text
     @description      = doc.search("description").inner_text
     @keywords         = doc.search("tags").inner_text

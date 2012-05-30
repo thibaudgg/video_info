@@ -68,6 +68,7 @@ describe "VideoInfo" do
       its(:provider)         { should == 'Vimeo' }
       its(:video_id)         { should == '898029' }
       its(:url)              { should == 'http://vimeo.com/898029' }
+      its(:embed_url)        { should == 'http://player.vimeo.com/video/898029' }
       its(:title)            { should == 'Cherry Bloom - King Of The Knife' }
       its(:description)      { should == 'The first video from the upcoming album Secret Sounds, to download in-stores April 14. Checkout http://www.cherrybloom.net' }
       its(:keywords)         { should == 'cherry bloom, secret sounds, king of the knife, rock, alternative' }
