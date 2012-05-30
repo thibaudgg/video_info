@@ -39,7 +39,7 @@ describe "VideoInfo" do
 
       its(:view_count) { should == 2 }
     end
-    
+
     describe "Video Xp6CXF-Cesg" do
       use_vcr_cassette "youtube/Xp6CXF-Cesg"
       subject { VideoInfo.new('http://www.youtube.com/watch?v=Xp6CXF-Cesg') }
@@ -87,7 +87,7 @@ describe "VideoInfo" do
       subject { VideoInfo.new('http://vimeo.com/groups/1234/videos/898029') }
       its(:provider) { should == 'Vimeo' }
     end
-     
+
     describe "bad vimeo url" do
       subject { VideoInfo.new('http://www.vimeo.com/groups/898029') }
 
