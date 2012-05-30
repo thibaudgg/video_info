@@ -1,5 +1,5 @@
 class Youtube
-  attr_accessor :video_id, :embed_url, :url, :provider, :title, :description, :keywords,
+  attr_accessor :video_id, :embed_url, :embed_code, :url, :provider, :title, :description, :keywords,
                 :duration, :date, :width, :height,
                 :thumbnail_small, :thumbnail_large,
                 :view_count,
@@ -28,6 +28,7 @@ private
     @provider         = "YouTube"
     @url              = "http://www.youtube.com/watch?v=#{@video_id}"
     @embed_url        = "http://www.youtube.com/embed/#{@video_id}"
+    @embed_code       = "<iframe src=\"#{@embed_url}\" frameborder=\"0\" allowfullscreen=\"allowfullscreen\"></iframe>"
     @title            = doc.search("media:title").inner_text
     @description      = doc.search("media:description").inner_text
     @keywords         = doc.search("media:keywords").inner_text

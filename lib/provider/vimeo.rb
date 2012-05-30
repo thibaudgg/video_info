@@ -1,5 +1,5 @@
 class Vimeo
-  attr_accessor :video_id, :embed_url, :url, :provider, :title, :description, :keywords,
+  attr_accessor :video_id, :embed_url, :embed_code, :url, :provider, :title, :description, :keywords,
                 :duration, :date, :width, :height,
                 :thumbnail_small, :thumbnail_large,
                 :view_count,
@@ -18,6 +18,7 @@ private
     @provider         = "Vimeo"
     @url              = doc.search("url").inner_text
     @embed_url        = "http://player.vimeo.com/video/#{@video_id}"
+    @embed_code       = "<iframe src=\"#{@embed_url}?title=0&amp;byline=0&amp;portrait=0&amp;autoplay=0\" frameborder=\"0\"></iframe>"
     @title            = doc.search("title").inner_text
     @description      = doc.search("description").inner_text
     @keywords         = doc.search("tags").inner_text
