@@ -10,7 +10,7 @@ class VideoInfo
 
     options = { "User-Agent" => "VideoInfo/#{VideoInfoVersion::VERSION}" }.merge options
     options.dup.each do |key,value|
-      unless OpenURI::Options.keys.include? key
+      unless OpenURI::Options.keys.include?(key) || options[:iframe_attributes]
         if key.is_a? Symbol
           options[key.to_s.split(/[^a-z]/i).map(&:capitalize).join('-')] = value
           options.delete key
@@ -34,6 +34,11 @@ class VideoInfo
 
   def method_missing(sym, *args, &block)
     @video.send sym, *args, &block
+  end
+
+  def self.hash_to_attributes(hash)
+    s = hash.map{|k,v| "#{k}=\"#{v}\""}.join(' ')
+    " #{s}"
   end
 
 end

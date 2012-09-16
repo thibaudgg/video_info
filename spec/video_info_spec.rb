@@ -153,6 +153,27 @@ describe "VideoInfo" do
 
       its(:openURI_options) { should == { "User-Agent" => default_user_agent, :proxy => nil, :http_basic_authentication => true } }
     end
+
+    describe "iframe attributes vimeo" do
+      use_vcr_cassette "vimeo/898029"
+      subject { VideoInfo.new('http://vimeo.com/groups/1234/videos/898029', :iframe_attributes => { :width => 800, :height => 600 } ) }
+
+      its(:embed_code)       { should == '<iframe src="http://player.vimeo.com/video/898029?title=0&amp;byline=0&amp;portrait=0&amp;autoplay=0" frameborder="0" width="800" height="600"></iframe>' }
+    end
+
+    describe "iframe attributes youtube" do
+      use_vcr_cassette "youtube/mZqGqE0D0n4"
+      subject { VideoInfo.new('http://www.youtube.com/watch?v=mZqGqE0D0n4', :iframe_attributes => { :width => 800, :height => 600 }) }
+
+      its(:embed_code)       { should == '<iframe src="http://www.youtube.com/embed/mZqGqE0D0n4" frameborder="0" allowfullscreen="allowfullscreen" width="800" height="600"></iframe>' }
+    end
+
+    describe "iframe attributes arbitrary" do
+      use_vcr_cassette "youtube/mZqGqE0D0n4"
+      subject { VideoInfo.new('http://www.youtube.com/watch?v=mZqGqE0D0n4', :iframe_attributes => { "data-colorbox" => "true" } ) }
+
+      its(:embed_code)       { should == '<iframe src="http://www.youtube.com/embed/mZqGqE0D0n4" frameborder="0" allowfullscreen="allowfullscreen" data-colorbox="true"></iframe>' }
+    end        
   end
 
 end
