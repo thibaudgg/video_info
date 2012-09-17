@@ -153,6 +153,29 @@ describe "VideoInfo" do
 
       its(:openURI_options) { should == { "User-Agent" => default_user_agent, :proxy => nil, :http_basic_authentication => true } }
     end
+
+    describe "iframe attributes vimeo" do
+      use_vcr_cassette "vimeo/898029"
+      subject { VideoInfo.new('http://vimeo.com/groups/1234/videos/898029', :iframe_attributes => { :width => 800, :height => 600 } ) }
+
+      its(:embed_code)       { should match(/width="800"/) }
+      its(:embed_code)       { should match(/height="600"/) }
+    end
+
+    describe "iframe attributes youtube" do
+      use_vcr_cassette "youtube/mZqGqE0D0n4"
+      subject { VideoInfo.new('http://www.youtube.com/watch?v=mZqGqE0D0n4', :iframe_attributes => { :width => 800, :height => 600 }) }
+
+      its(:embed_code)       { should match(/width="800"/) }
+      its(:embed_code)       { should match(/height="600"/) }
+    end
+
+    describe "iframe attributes arbitrary" do
+      use_vcr_cassette "youtube/mZqGqE0D0n4"
+      subject { VideoInfo.new('http://www.youtube.com/watch?v=mZqGqE0D0n4', :iframe_attributes => { "data-colorbox" => "true" } ) }
+
+      its(:embed_code)       { should match(/data-colorbox="true"/) }
+    end        
   end
 
 end
