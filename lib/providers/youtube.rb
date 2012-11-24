@@ -6,7 +6,10 @@ class Youtube
                 :openURI_options
 
   def initialize(url, options = {})
-    @iframe_attributes = VideoInfo.hash_to_attributes options.delete(:iframe_attributes) if options[:iframe_attributes]    
+    if iframe_attributes = options.delete(:iframe_attributes)
+      @iframe_attributes = VideoInfo.hash_to_attributes iframe_attributes
+    end
+
     @openURI_options = options
     video_id_for(url)
     get_info unless @video_id == url || @video_id.nil? || @video_id.empty?
@@ -22,7 +25,7 @@ class Youtube
     end
   end
 
-private
+  private
 
   def get_info
     begin
@@ -39,7 +42,7 @@ private
       @thumbnail_small  = doc.search("media:thumbnail").min { |a,b| a[:height].to_i * a[:width].to_i <=> b[:height].to_i * b[:width].to_i }[:url]
       @thumbnail_large  = doc.search("media:thumbnail").max { |a,b| a[:height].to_i * a[:width].to_i <=> b[:height].to_i * b[:width].to_i }[:url]
       # when your video still has no view, yt:statistics is not returned by Youtube
-      # see: https://github.com/thibaudgg/video_info/issues#issue/2
+      # see: https://github.com/thibaudgg/video_info/issues/2
       if doc.search("yt:statistics").first
         @view_count     = doc.search("yt:statistics").first[:viewcount].to_i
       else
@@ -49,5 +52,4 @@ private
       nil
     end
   end
-
 end

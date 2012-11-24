@@ -6,13 +6,16 @@ class Vimeo
                 :openURI_options
 
   def initialize(url, options = {})
-    @iframe_attributes = VideoInfo.hash_to_attributes options.delete(:iframe_attributes) if options[:iframe_attributes]
+    if iframe_attributes = options.delete(:iframe_attributes)
+      @iframe_attributes = VideoInfo.hash_to_attributes iframe_attributes
+    end
+
     @openURI_options = options
     @video_id = url.gsub(/.*\.com\/(?:groups\/[^\/]+\/videos\/)?([0-9]+).*$/i, '\1')
     get_info unless @video_id == url || @video_id.nil? || @video_id.empty?
   end
 
-private
+  private
 
   def get_info
     begin
@@ -35,5 +38,4 @@ private
       nil
     end
   end
-
 end
