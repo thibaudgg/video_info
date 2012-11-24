@@ -1,40 +1,48 @@
---- 
-- !ruby/struct:VCR::HTTPInteraction 
-  request: !ruby/struct:VCR::Request 
+---
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
     method: :get
-    uri: http://gdata.youtube.com:80/feeds/api/videos/oQ49W_xKzKA
+    uri: http://gdata.youtube.com:80/feeds/api/videos/oQ49W_xKzKA?alt=json&v=2
     body: 
-    headers: 
-  response: !ruby/struct:VCR::Response 
-    status: !ruby/struct:VCR::ResponseStatus 
+    headers:
+      user-agent:
+      - VideoInfo/0.4.0
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
       code: 200
       message: OK
-    headers: 
-      x-content-type-options: 
-      - nosniff
-      x-frame-options: 
-      - SAMEORIGIN
-      expires: 
-      - Sun, 17 Apr 2011 11:26:16 GMT
-      last-modified: 
-      - Wed, 05 Jan 2011 21:29:03 GMT
-      content-type: 
-      - application/atom+xml; charset=UTF-8
-      server: 
-      - GSE
-      date: 
-      - Sun, 17 Apr 2011 11:26:16 GMT
-      x-xss-protection: 
-      - 1; mode=block
-      gdata-version: 
-      - "1.0"
-      x-gdata-user-country: 
-      - CH
-      cache-control: 
+    headers:
+      x-gdata-user-country:
+      - AZ
+      content-type:
+      - application/json; charset=UTF-8
+      access-control-allow-origin:
+      - ! '*'
+      expires:
+      - Sat, 24 Nov 2012 15:29:58 GMT
+      date:
+      - Sat, 24 Nov 2012 15:29:58 GMT
+      cache-control:
       - private, max-age=300, no-transform
-      vary: 
-      - "*"
-      transfer-encoding: 
+      vary:
+      - ! '*'
+      gdata-version:
+      - '2.1'
+      etag:
+      - W/"CE4AQn47eCp7I2A9Wx9XEks."
+      last-modified:
+      - Wed, 05 Jan 2011 21:29:03 GMT
+      transfer-encoding:
       - chunked
-    body: <?xml version='1.0' encoding='UTF-8'?><entry xmlns='http://www.w3.org/2005/Atom' xmlns:app='http://purl.org/atom/app#' xmlns:media='http://search.yahoo.com/mrss/' xmlns:gd='http://schemas.google.com/g/2005' xmlns:yt='http://gdata.youtube.com/schemas/2007'><id>http://gdata.youtube.com/feeds/api/videos/oQ49W_xKzKA</id><published>2011-01-05T21:24:39.000Z</published><updated>2011-01-05T21:29:03.000Z</updated><app:control><app:draft>yes</app:draft></app:control><category scheme='http://schemas.google.com/g/2005#kind' term='http://gdata.youtube.com/schemas/2007#video'/><category scheme='http://gdata.youtube.com/schemas/2007/categories.cat' term='People' label='People &amp; Blogs'/><category scheme='http://gdata.youtube.com/schemas/2007/keywords.cat' term='test3'/><title type='text'>test3</title><content type='text'/><link rel='alternate' type='text/html' href='http://www.youtube.com/watch?v=oQ49W_xKzKA&amp;feature=youtube_gdata'/><link rel='http://gdata.youtube.com/schemas/2007#video.responses' type='application/atom+xml' href='http://gdata.youtube.com/feeds/api/videos/oQ49W_xKzKA/responses'/><link rel='http://gdata.youtube.com/schemas/2007#video.related' type='application/atom+xml' href='http://gdata.youtube.com/feeds/api/videos/oQ49W_xKzKA/related'/><link rel='http://gdata.youtube.com/schemas/2007#mobile' type='text/html' href='http://m.youtube.com/details?v=oQ49W_xKzKA'/><link rel='self' type='application/atom+xml' href='http://gdata.youtube.com/feeds/api/videos/oQ49W_xKzKA'/><author><name>juliend2</name><uri>http://gdata.youtube.com/feeds/api/users/juliend2</uri></author><gd:comments><gd:feedLink href='http://gdata.youtube.com/feeds/api/videos/oQ49W_xKzKA/comments' countHint='0'/></gd:comments><media:group><media:category label='People &amp; Blogs' scheme='http://gdata.youtube.com/schemas/2007/categories.cat'>People</media:category><media:content url='http://www.youtube.com/v/oQ49W_xKzKA?f=videos&amp;app=youtube_gdata' type='application/x-shockwave-flash' medium='video' isDefault='true' expression='full' duration='2' yt:format='5'/><media:content url='rtsp://v3.cache7.c.youtube.com/CiILENy73wIaGQmgzEr8Wz0OoRMYDSANFEgGUgZ2aWRlb3MM/0/0/0/video.3gp' type='video/3gpp' medium='video' expression='full' duration='2' yt:format='1'/><media:content url='rtsp://v3.cache2.c.youtube.com/CiILENy73wIaGQmgzEr8Wz0OoRMYESARFEgGUgZ2aWRlb3MM/0/0/0/video.3gp' type='video/3gpp' medium='video' expression='full' duration='2' yt:format='6'/><media:description type='plain'/><media:keywords>test3</media:keywords><media:player url='http://www.youtube.com/watch?v=oQ49W_xKzKA&amp;feature=youtube_gdata_player'/><media:thumbnail url='http://i.ytimg.com/vi/oQ49W_xKzKA/0.jpg' height='240' width='320' time='00:00:01'/><media:thumbnail url='http://i.ytimg.com/vi/oQ49W_xKzKA/1.jpg' height='90' width='120' time='00:00:00.500'/><media:thumbnail url='http://i.ytimg.com/vi/oQ49W_xKzKA/2.jpg' height='90' width='120' time='00:00:01'/><media:thumbnail url='http://i.ytimg.com/vi/oQ49W_xKzKA/3.jpg' height='90' width='120' time='00:00:01.500'/><media:title type='plain'>test3</media:title><yt:duration seconds='2'/></media:group><yt:statistics favoriteCount='0' viewCount='2'/></entry>
-    http_version: "1.1"
+      x-content-type-options:
+      - nosniff
+      x-frame-options:
+      - SAMEORIGIN
+      x-xss-protection:
+      - 1; mode=block
+      server:
+      - GSE
+    body: ! '{"version":"1.0","encoding":"UTF-8","entry":{"xmlns$app":"http://www.w3.org/2007/app","xmlns":"http://www.w3.org/2005/Atom","xmlns$media":"http://search.yahoo.com/mrss/","xmlns$gd":"http://schemas.google.com/g/2005","xmlns$yt":"http://gdata.youtube.com/schemas/2007","gd$etag":"W/\"CE4AQn47eCp7I2A9Wx9XEks.\"","id":{"$t":"tag:youtube.com,2008:video:oQ49W_xKzKA"},"published":{"$t":"2011-01-05T21:24:39.000Z"},"updated":{"$t":"2011-01-05T21:29:03.000Z"},"app$control":{"app$draft":{"$t":"yes"},"yt$incomplete":{}},"category":[{"scheme":"http://schemas.google.com/g/2005#kind","term":"http://gdata.youtube.com/schemas/2007#video"},{"scheme":"http://gdata.youtube.com/schemas/2007/categories.cat","term":"People","label":"People
+      & Blogs"}],"title":{"$t":"test3"},"content":{"type":"application/x-shockwave-flash","src":"http://www.youtube.com/v/oQ49W_xKzKA?version=3&f=videos&app=youtube_gdata"},"link":[{"rel":"alternate","type":"text/html","href":"http://www.youtube.com/watch?v=oQ49W_xKzKA&feature=youtube_gdata"},{"rel":"http://gdata.youtube.com/schemas/2007#video.responses","type":"application/atom+xml","href":"http://gdata.youtube.com/feeds/api/videos/oQ49W_xKzKA/responses?v=2"},{"rel":"http://gdata.youtube.com/schemas/2007#video.related","type":"application/atom+xml","href":"http://gdata.youtube.com/feeds/api/videos/oQ49W_xKzKA/related?v=2"},{"rel":"http://gdata.youtube.com/schemas/2007#mobile","type":"text/html","href":"http://m.youtube.com/details?v=oQ49W_xKzKA"},{"rel":"http://gdata.youtube.com/schemas/2007#uploader","type":"application/atom+xml","href":"http://gdata.youtube.com/feeds/api/users/D3uCEQGGRDKDXONecXCx9g?v=2"},{"rel":"self","type":"application/atom+xml","href":"http://gdata.youtube.com/feeds/api/videos/oQ49W_xKzKA?v=2"}],"author":[{"name":{"$t":"juliend2"},"uri":{"$t":"http://gdata.youtube.com/feeds/api/users/juliend2"},"yt$userId":{"$t":"D3uCEQGGRDKDXONecXCx9g"}}],"yt$accessControl":[{"action":"comment","permission":"allowed"},{"action":"commentVote","permission":"allowed"},{"action":"videoRespond","permission":"moderated"},{"action":"rate","permission":"allowed"},{"action":"embed","permission":"allowed"},{"action":"list","permission":"allowed"},{"action":"autoPlay","permission":"allowed"},{"action":"syndicate","permission":"allowed"}],"gd$comments":{"gd$feedLink":{"rel":"http://gdata.youtube.com/schemas/2007#comments","href":"http://gdata.youtube.com/feeds/api/videos/oQ49W_xKzKA/comments?v=2","countHint":0}},"media$group":{"media$category":[{"$t":"People","label":"People
+      & Blogs","scheme":"http://gdata.youtube.com/schemas/2007/categories.cat"}],"media$content":[{"url":"http://www.youtube.com/v/oQ49W_xKzKA?version=3&f=videos&app=youtube_gdata","type":"application/x-shockwave-flash","medium":"video","isDefault":"true","expression":"full","duration":2,"yt$format":5},{"url":"rtsp://v3.cache7.c.youtube.com/CiILENy73wIaGQmgzEr8Wz0OoRMYDSANFEgGUgZ2aWRlb3MM/0/0/0/video.3gp","type":"video/3gpp","medium":"video","expression":"full","duration":2,"yt$format":1},{"url":"rtsp://v3.cache2.c.youtube.com/CiILENy73wIaGQmgzEr8Wz0OoRMYESARFEgGUgZ2aWRlb3MM/0/0/0/video.3gp","type":"video/3gpp","medium":"video","expression":"full","duration":2,"yt$format":6}],"media$credit":[{"$t":"juliend2","role":"uploader","scheme":"urn:youtube","yt$display":"juliend2"}],"media$description":{"$t":"","type":"plain"},"media$keywords":{},"media$license":{"$t":"youtube","type":"text/html","href":"http://www.youtube.com/t/terms"},"media$player":{"url":"http://www.youtube.com/watch?v=oQ49W_xKzKA&feature=youtube_gdata_player"},"media$thumbnail":[{"url":"http://i.ytimg.com/vi/oQ49W_xKzKA/default.jpg","height":90,"width":120,"time":"00:00:01","yt$name":"default"},{"url":"http://i.ytimg.com/vi/oQ49W_xKzKA/mqdefault.jpg","height":180,"width":320,"yt$name":"mqdefault"},{"url":"http://i.ytimg.com/vi/oQ49W_xKzKA/hqdefault.jpg","height":360,"width":480,"yt$name":"hqdefault"},{"url":"http://i.ytimg.com/vi/oQ49W_xKzKA/1.jpg","height":90,"width":120,"time":"00:00:00.500","yt$name":"start"},{"url":"http://i.ytimg.com/vi/oQ49W_xKzKA/2.jpg","height":90,"width":120,"time":"00:00:01","yt$name":"middle"},{"url":"http://i.ytimg.com/vi/oQ49W_xKzKA/3.jpg","height":90,"width":120,"time":"00:00:01.500","yt$name":"end"}],"media$title":{"$t":"test3","type":"plain"},"yt$duration":{"seconds":"2"},"yt$uploaded":{"$t":"2011-01-05T21:24:39.000Z"},"yt$uploaderId":{"$t":"UCD3uCEQGGRDKDXONecXCx9g"},"yt$videoid":{"$t":"oQ49W_xKzKA"}},"yt$statistics":{"favoriteCount":"0","viewCount":"6"}}}'
+    http_version: '1.1'

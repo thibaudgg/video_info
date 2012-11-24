@@ -19,21 +19,22 @@ class Vimeo
 
   def get_info
     begin
-      doc = Hpricot(open("http://vimeo.com/api/v2/video/#{@video_id}.xml", @openURI_options))
+      uri   = open("http://vimeo.com/api/v2/video/#{@video_id}.json", @openURI_options)
+      video = JSON.parse(uri.read).first
       @provider         = "Vimeo"
-      @url              = doc.search("url").inner_text
+      @url              = video['url']
       @embed_url        = "http://player.vimeo.com/video/#{@video_id}"
       @embed_code       = "<iframe src=\"#{@embed_url}?title=0&amp;byline=0&amp;portrait=0&amp;autoplay=0\" frameborder=\"0\"#{@iframe_attributes}></iframe>"
-      @title            = doc.search("title").inner_text
-      @description      = doc.search("description").inner_text
-      @keywords         = doc.search("tags").inner_text
-      @duration         = doc.search("duration").inner_text.to_i # seconds
-      @width            = doc.search("width").inner_text.to_i
-      @height           = doc.search("height").inner_text.to_i
-      @date             = Time.parse(doc.search("upload_date").inner_text, Time.now.utc).utc
-      @thumbnail_small  = doc.search("thumbnail_small").inner_text
-      @thumbnail_large  = doc.search("thumbnail_large").inner_text
-      @view_count       = doc.search("stats_number_of_plays").inner_text.to_i
+      @title            = video['title']
+      @description      = video['description']
+      @keywords         = video['tags']
+      @duration         = video['duration'].to_i # seconds
+      @width            = video['width'].to_i
+      @height           = video['height'].to_i
+      @date             = Time.parse(video['upload_date'], Time.now.utc).utc
+      @thumbnail_small  = video['thumbnail_small']
+      @thumbnail_large  = video['thumbnail_large']
+      @view_count       = video['stats_number_of_plays'].to_i
     rescue
       nil
     end
