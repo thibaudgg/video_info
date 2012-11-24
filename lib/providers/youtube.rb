@@ -1,7 +1,7 @@
 class Youtube
   attr_accessor :video_id, :embed_url, :embed_code, :url, :provider, :title, :description, :keywords,
                 :duration, :date, :width, :height,
-                :thumbnail_small, :thumbnail_large,
+                :thumbnail_small, :thumbnail_medium, :thumbnail_large,
                 :view_count,
                 :openURI_options
 
@@ -41,6 +41,7 @@ class Youtube
       @duration         = video['entry']['media$group']['yt$duration']['seconds'].to_i
       @date             = Time.parse(video['entry']['published']['$t'], Time.now.utc)
       @thumbnail_small  = video['entry']['media$group']['media$thumbnail'][0]['url']
+      @thumbnail_medium = video['entry']['media$group']['media$thumbnail'][1]['url']
       @thumbnail_large  = video['entry']['media$group']['media$thumbnail'][2]['url']
       # when your video still has no view, yt:statistics is not returned by Youtube
       # see: https://github.com/thibaudgg/video_info/issues/2

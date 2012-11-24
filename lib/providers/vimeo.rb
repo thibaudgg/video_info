@@ -1,7 +1,7 @@
 class Vimeo
   attr_accessor :video_id, :embed_url, :embed_code, :url, :provider, :title, :description, :keywords,
                 :duration, :date, :width, :height,
-                :thumbnail_small, :thumbnail_large,
+                :thumbnail_small, :thumbnail_medium, :thumbnail_large,
                 :view_count,
                 :openURI_options
 
@@ -33,6 +33,7 @@ class Vimeo
       @height           = video['height'].to_i
       @date             = Time.parse(video['upload_date'], Time.now.utc).utc
       @thumbnail_small  = video['thumbnail_small']
+      @thumbnail_medium = video['thumbnail_medium']
       @thumbnail_large  = video['thumbnail_large']
       @view_count       = video['stats_number_of_plays'].to_i
     rescue
