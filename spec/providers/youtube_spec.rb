@@ -1,8 +1,7 @@
 require 'spec_helper'
 
 describe VideoInfo::Youtube do
-  describe "info" do
-    use_vcr_cassette "youtube/mZqGqE0D0n4"
+  describe "info", :vcr do
     subject { VideoInfo::Youtube.new('http://www.youtube.com/watch?v=mZqGqE0D0n4') }
 
     it                     { should be_valid }
@@ -24,8 +23,7 @@ describe VideoInfo::Youtube do
     its(:view_count)       { should be > 4000 }
   end
 
-  describe "Video JM9NgvjjVng" do
-    use_vcr_cassette "youtube/JM9NgvjjVng"
+  describe "Video JM9NgvjjVng", :vcr do
     subject { VideoInfo::Youtube.new('http://www.youtube.com/watch?v=JM9NgvjjVng') }
 
     it             { should be_valid }
@@ -33,44 +31,38 @@ describe VideoInfo::Youtube do
     its(:duration) { should == 217 }
   end
 
-  describe "Video oQ49W_xKzKA" do
-    use_vcr_cassette "youtube/oQ49W_xKzKA"
+  describe "Video oQ49W_xKzKA", :vcr do
     subject { VideoInfo::Youtube.new('http://www.youtube.com/watch?v=oQ49W_xKzKA') }
 
     its(:view_count) { should be > 2 }
   end
 
-  describe "Video Xp6CXF-Cesg" do
-    use_vcr_cassette "youtube/Xp6CXF-Cesg"
+  describe "Video Xp6CXF-Cesg", :vcr do
     subject { VideoInfo::Youtube.new('http://www.youtube.com/watch?v=Xp6CXF-Cesg') }
 
     its(:view_count) { should be > 893735 }
   end
 
-  describe "youtu.be url" do
-    use_vcr_cassette "youtube/JM9NgvjjVng"
+  describe "youtu.be url", :vcr do
     subject { VideoInfo::Youtube.new('http://youtu.be/JM9NgvjjVng') }
 
     its(:provider) { should == 'YouTube' }
   end
 
-  context 'without http or www' do
-    use_vcr_cassette "youtube/JM9NgvjjVng"
+  context 'without http or www', :vcr do
     subject { VideoInfo::Youtube.new('youtu.be/JM9NgvjjVng') }
 
     its(:provider) { should == 'YouTube' }
   end
 
-  describe "iframe attributes youtube" do
-    use_vcr_cassette "youtube/mZqGqE0D0n4"
+  describe "iframe attributes youtube", :vcr do
     subject { VideoInfo::Youtube.new('http://www.youtube.com/watch?v=mZqGqE0D0n4', :iframe_attributes => { :width => 800, :height => 600 }) }
 
     its(:embed_code) { should match(/width="800"/) }
     its(:embed_code) { should match(/height="600"/) }
   end
 
-  describe "iframe attributes arbitrary" do
-    use_vcr_cassette "youtube/mZqGqE0D0n4"
+  describe "iframe attributes arbitrary", :vcr do
     subject { VideoInfo::Youtube.new('http://www.youtube.com/watch?v=mZqGqE0D0n4', :iframe_attributes => { "data-colorbox" => "true" } ) }
 
     its(:embed_code) { should match(/data-colorbox="true"/) }

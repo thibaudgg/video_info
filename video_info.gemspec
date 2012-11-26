@@ -17,10 +17,10 @@ Gem::Specification.new do |s|
   s.add_dependency 'multi_json'
 
   s.add_development_dependency 'bundler'
-  s.add_development_dependency 'rspec', '~> 2.10'
+  s.add_development_dependency 'rspec'
   s.add_development_dependency 'guard-rspec'
-  s.add_development_dependency 'webmock'
-  s.add_development_dependency 'vcr', '~> 1.11'
+  s.add_development_dependency 'fakeweb'
+  s.add_development_dependency 'vcr'
 
   s.files         = Dir.glob('{lib}/**/*') + %w[LICENSE README.md]
   s.require_paths = ["lib"]

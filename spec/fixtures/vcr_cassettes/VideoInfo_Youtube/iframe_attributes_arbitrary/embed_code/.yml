@@ -1,0 +1,58 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://gdata.youtube.com/feeds/api/videos/mZqGqE0D0n4?v=2&alt=json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      accept:
+      - ! '*/*'
+      user-agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      x-gdata-user-country:
+      - CH
+      content-type:
+      - application/json;charset=UTF-8
+      access-control-allow-origin:
+      - ! '*'
+      expires:
+      - Mon, 26 Nov 2012 11:28:54 GMT
+      date:
+      - Mon, 26 Nov 2012 11:28:54 GMT
+      cache-control:
+      - private, max-age=300, no-transform
+      vary:
+      - ! '*'
+      gdata-version:
+      - '2.1'
+      etag:
+      - W/"AkQNQn47eCp7I2A9WhNTFkU."
+      last-modified:
+      - Fri, 19 Oct 2012 23:13:13 GMT
+      x-content-type-options:
+      - nosniff
+      x-frame-options:
+      - SAMEORIGIN
+      x-xss-protection:
+      - 1; mode=block
+      content-length:
+      - '4638'
+      server:
+      - GSE
+    body:
+      encoding: US-ASCII
+      string: ! '{"version":"1.0","encoding":"UTF-8","entry":{"xmlns":"http://www.w3.org/2005/Atom","xmlns$media":"http://search.yahoo.com/mrss/","xmlns$gd":"http://schemas.google.com/g/2005","xmlns$yt":"http://gdata.youtube.com/schemas/2007","gd$etag":"W/\"AkQNQn47eCp7I2A9WhNTFkU.\"","id":{"$t":"tag:youtube.com,2008:video:mZqGqE0D0n4"},"published":{"$t":"2008-04-12T22:25:35.000Z"},"updated":{"$t":"2012-10-19T23:13:13.000Z"},"category":[{"scheme":"http://schemas.google.com/g/2005#kind","term":"http://gdata.youtube.com/schemas/2007#video"},{"scheme":"http://gdata.youtube.com/schemas/2007/categories.cat","term":"Music","label":"Music"}],"title":{"$t":"Cherry
+        Bloom - King Of The Knife"},"content":{"type":"application/x-shockwave-flash","src":"http://www.youtube.com/v/mZqGqE0D0n4?version=3&f=videos&app=youtube_gdata"},"link":[{"rel":"alternate","type":"text/html","href":"http://www.youtube.com/watch?v=mZqGqE0D0n4&feature=youtube_gdata"},{"rel":"http://gdata.youtube.com/schemas/2007#video.responses","type":"application/atom+xml","href":"http://gdata.youtube.com/feeds/api/videos/mZqGqE0D0n4/responses?v=2"},{"rel":"http://gdata.youtube.com/schemas/2007#video.related","type":"application/atom+xml","href":"http://gdata.youtube.com/feeds/api/videos/mZqGqE0D0n4/related?v=2"},{"rel":"http://gdata.youtube.com/schemas/2007#uploader","type":"application/atom+xml","href":"http://gdata.youtube.com/feeds/api/users/zxQk-rZGowoqMBKxGD5jSA?v=2"},{"rel":"self","type":"application/atom+xml","href":"http://gdata.youtube.com/feeds/api/videos/mZqGqE0D0n4?v=2"}],"author":[{"name":{"$t":"cherrybloomband"},"uri":{"$t":"http://gdata.youtube.com/feeds/api/users/cherrybloomband"},"yt$userId":{"$t":"zxQk-rZGowoqMBKxGD5jSA"}}],"yt$accessControl":[{"action":"comment","permission":"allowed"},{"action":"commentVote","permission":"allowed"},{"action":"videoRespond","permission":"allowed"},{"action":"rate","permission":"allowed"},{"action":"embed","permission":"allowed"},{"action":"list","permission":"allowed"},{"action":"autoPlay","permission":"allowed"},{"action":"syndicate","permission":"allowed"}],"gd$comments":{"gd$feedLink":{"rel":"http://gdata.youtube.com/schemas/2007#comments","href":"http://gdata.youtube.com/feeds/api/videos/mZqGqE0D0n4/comments?v=2","countHint":15}},"media$group":{"media$category":[{"$t":"Music","label":"Music","scheme":"http://gdata.youtube.com/schemas/2007/categories.cat"}],"media$content":[{"url":"http://www.youtube.com/v/mZqGqE0D0n4?version=3&f=videos&app=youtube_gdata","type":"application/x-shockwave-flash","medium":"video","isDefault":"true","expression":"full","duration":175,"yt$format":5},{"url":"rtsp://v1.cache6.c.youtube.com/CiILENy73wIaGQl-0gNNqIaamRMYDSANFEgGUgZ2aWRlb3MM/0/0/0/video.3gp","type":"video/3gpp","medium":"video","expression":"full","duration":175,"yt$format":1},{"url":"rtsp://v3.cache7.c.youtube.com/CiILENy73wIaGQl-0gNNqIaamRMYESARFEgGUgZ2aWRlb3MM/0/0/0/video.3gp","type":"video/3gpp","medium":"video","expression":"full","duration":175,"yt$format":6}],"media$credit":[{"$t":"cherrybloomband","role":"uploader","scheme":"urn:youtube","yt$display":"cherrybloomband"}],"media$description":{"$t":"The
+        first video from the upcoming album Secret Sounds, to download in-stores April
+        14. Checkout http://www.cherrybloom.net","type":"plain"},"media$keywords":{},"media$license":{"$t":"youtube","type":"text/html","href":"http://www.youtube.com/t/terms"},"media$player":{"url":"http://www.youtube.com/watch?v=mZqGqE0D0n4&feature=youtube_gdata_player"},"media$thumbnail":[{"url":"http://i.ytimg.com/vi/mZqGqE0D0n4/default.jpg","height":90,"width":120,"time":"00:01:27.500","yt$name":"default"},{"url":"http://i.ytimg.com/vi/mZqGqE0D0n4/mqdefault.jpg","height":180,"width":320,"yt$name":"mqdefault"},{"url":"http://i.ytimg.com/vi/mZqGqE0D0n4/hqdefault.jpg","height":360,"width":480,"yt$name":"hqdefault"},{"url":"http://i.ytimg.com/vi/mZqGqE0D0n4/1.jpg","height":90,"width":120,"time":"00:00:43.750","yt$name":"start"},{"url":"http://i.ytimg.com/vi/mZqGqE0D0n4/2.jpg","height":90,"width":120,"time":"00:01:27.500","yt$name":"middle"},{"url":"http://i.ytimg.com/vi/mZqGqE0D0n4/3.jpg","height":90,"width":120,"time":"00:02:11.250","yt$name":"end"}],"media$title":{"$t":"Cherry
+        Bloom - King Of The Knife","type":"plain"},"yt$duration":{"seconds":"175"},"yt$uploaded":{"$t":"2008-04-12T22:25:35.000Z"},"yt$uploaderId":{"$t":"UCzxQk-rZGowoqMBKxGD5jSA"},"yt$videoid":{"$t":"mZqGqE0D0n4"}},"gd$rating":{"average":4.818182,"max":5,"min":1,"numRaters":44,"rel":"http://schemas.google.com/g/2005#overall"},"yt$statistics":{"favoriteCount":"0","viewCount":"5891"},"yt$rating":{"numDislikes":"2","numLikes":"42"}}}'
+    http_version: '1.1'
+  recorded_at: Mon, 26 Nov 2012 11:31:48 GMT
+recorded_with: VCR 2.3.0
