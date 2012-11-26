@@ -20,7 +20,7 @@ class Vimeo
   def get_info
     begin
       uri   = open("http://vimeo.com/api/v2/video/#{@video_id}.json", @openURI_options)
-      video = JSON.parse(uri.read).first
+      video = MultiJson.load(uri.read).first
       @provider         = "Vimeo"
       @url              = video['url']
       @embed_url        = "http://player.vimeo.com/video/#{@video_id}"

@@ -1,5 +1,5 @@
 require 'open-uri'
-require 'json'
+require 'multi_json'
 require 'video_info/version'
 require 'providers/vimeo'
 require 'providers/youtube'
