@@ -4,9 +4,9 @@ require 'video_info/version'
 require 'providers/vimeo'
 require 'providers/youtube'
 
-class VideoInfo
-  def initialize(url, options = {})
-    options = { "User-Agent" => "VideoInfo/#{VideoInfoVersion::VERSION}" }.merge options
+module VideoInfo
+  def self.get(url, options = {})
+    options = { "User-Agent" => "VideoInfo/#{VideoInfo::VERSION}" }.merge options
     options.dup.each do |key, value|
       unless OpenURI::Options.keys.include?(key) || options[:iframe_attributes]
         if key.is_a? Symbol
@@ -24,11 +24,7 @@ class VideoInfo
     end
   end
 
-  def valid?
-    !@video.nil? && !["", nil].include?(title)
-  end
-
-  def method_missing(sym, *args, &block)
+  def self.method_missing(sym, *args, &block)
     @video.send sym, *args, &block
   end
 

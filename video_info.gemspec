@@ -4,7 +4,7 @@ require "video_info/version"
 
 Gem::Specification.new do |s|
   s.name        = "video_info"
-  s.version     = VideoInfoVersion::VERSION
+  s.version     = VideoInfo::VERSION
   s.platform    = Gem::Platform::RUBY
   s.authors     = ['Thibaud Guillaume-Gentil']
   s.email       = ['thibaud@thibaud.me']

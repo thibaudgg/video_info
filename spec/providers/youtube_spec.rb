@@ -1,9 +1,9 @@
 require 'spec_helper'
 
-describe "YouTube" do
-  describe "video info" do
+describe VideoInfo::Youtube do
+  describe "info" do
     use_vcr_cassette "youtube/mZqGqE0D0n4"
-    subject { VideoInfo.new('http://www.youtube.com/watch?v=mZqGqE0D0n4') }
+    subject { VideoInfo::Youtube.new('http://www.youtube.com/watch?v=mZqGqE0D0n4') }
 
     it                     { should be_valid }
     its(:provider)         { should == 'YouTube' }
@@ -26,7 +26,7 @@ describe "YouTube" do
 
   describe "Video JM9NgvjjVng" do
     use_vcr_cassette "youtube/JM9NgvjjVng"
-    subject { VideoInfo.new('http://www.youtube.com/watch?v=JM9NgvjjVng') }
+    subject { VideoInfo::Youtube.new('http://www.youtube.com/watch?v=JM9NgvjjVng') }
 
     it             { should be_valid }
     its(:provider) { should == 'YouTube' }
@@ -35,35 +35,35 @@ describe "YouTube" do
 
   describe "Video oQ49W_xKzKA" do
     use_vcr_cassette "youtube/oQ49W_xKzKA"
-    subject { VideoInfo.new('http://www.youtube.com/watch?v=oQ49W_xKzKA') }
+    subject { VideoInfo::Youtube.new('http://www.youtube.com/watch?v=oQ49W_xKzKA') }
 
     its(:view_count) { should be > 2 }
   end
 
   describe "Video Xp6CXF-Cesg" do
     use_vcr_cassette "youtube/Xp6CXF-Cesg"
-    subject { VideoInfo.new('http://www.youtube.com/watch?v=Xp6CXF-Cesg') }
+    subject { VideoInfo::Youtube.new('http://www.youtube.com/watch?v=Xp6CXF-Cesg') }
 
     its(:view_count) { should be > 893735 }
   end
 
   describe "youtu.be url" do
     use_vcr_cassette "youtube/JM9NgvjjVng"
-    subject { VideoInfo.new('http://youtu.be/JM9NgvjjVng') }
+    subject { VideoInfo::Youtube.new('http://youtu.be/JM9NgvjjVng') }
 
     its(:provider) { should == 'YouTube' }
   end
 
   context 'without http or www' do
     use_vcr_cassette "youtube/JM9NgvjjVng"
-    subject { VideoInfo.new('youtu.be/JM9NgvjjVng') }
+    subject { VideoInfo::Youtube.new('youtu.be/JM9NgvjjVng') }
 
     its(:provider) { should == 'YouTube' }
   end
 
   describe "iframe attributes youtube" do
     use_vcr_cassette "youtube/mZqGqE0D0n4"
-    subject { VideoInfo.new('http://www.youtube.com/watch?v=mZqGqE0D0n4', :iframe_attributes => { :width => 800, :height => 600 }) }
+    subject { VideoInfo::Youtube.new('http://www.youtube.com/watch?v=mZqGqE0D0n4', :iframe_attributes => { :width => 800, :height => 600 }) }
 
     its(:embed_code) { should match(/width="800"/) }
     its(:embed_code) { should match(/height="600"/) }
@@ -71,7 +71,7 @@ describe "YouTube" do
 
   describe "iframe attributes arbitrary" do
     use_vcr_cassette "youtube/mZqGqE0D0n4"
-    subject { VideoInfo.new('http://www.youtube.com/watch?v=mZqGqE0D0n4', :iframe_attributes => { "data-colorbox" => "true" } ) }
+    subject { VideoInfo::Youtube.new('http://www.youtube.com/watch?v=mZqGqE0D0n4', :iframe_attributes => { "data-colorbox" => "true" } ) }
 
     its(:embed_code) { should match(/data-colorbox="true"/) }
   end

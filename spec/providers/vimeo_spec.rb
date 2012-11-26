@@ -1,9 +1,9 @@
 require 'spec_helper'
 
-describe "Vimeo" do
-  describe "video info" do
+describe VideoInfo::Vimeo do
+  describe "info" do
     use_vcr_cassette "vimeo/898029"
-    subject { VideoInfo.new('http://www.vimeo.com/898029') }
+    subject { VideoInfo::Vimeo.new('http://www.vimeo.com/898029') }
 
     it                     { should be_valid }
     its(:provider)         { should == 'Vimeo' }
@@ -26,20 +26,20 @@ describe "Vimeo" do
 
   describe "/group/ url" do
     use_vcr_cassette "vimeo/898029"
-    subject { VideoInfo.new('http://vimeo.com/groups/1234/videos/898029') }
+    subject { VideoInfo::Vimeo.new('http://vimeo.com/groups/1234/videos/898029') }
 
     its(:provider) { should == 'Vimeo' }
   end
 
   describe "bad vimeo url" do
-    subject { VideoInfo.new('http://www.vimeo.com/groups/898029') }
+    subject { VideoInfo::Vimeo.new('http://www.vimeo.com/groups/898029') }
 
     it { should_not be_valid }
   end
 
   describe "iframe attributes vimeo" do
     use_vcr_cassette "vimeo/898029"
-    subject { VideoInfo.new('http://vimeo.com/groups/1234/videos/898029', :iframe_attributes => { :width => 800, :height => 600 } ) }
+    subject { VideoInfo::Vimeo.new('http://vimeo.com/groups/1234/videos/898029', :iframe_attributes => { :width => 800, :height => 600 } ) }
 
     its(:embed_code) { should match(/width="800"/) }
     its(:embed_code) { should match(/height="600"/) }
