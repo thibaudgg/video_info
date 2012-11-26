@@ -1,116 +1,113 @@
---- 
-- !ruby/struct:VCR::HTTPInteraction 
-  request: !ruby/struct:VCR::Request 
+---
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
     method: :get
-    uri: http://vimeo.com:80/api/v2/video/898029.xml
+    uri: http://vimeo.com:80/api/v2/video/898029.json
     body: 
-    headers: 
-  response: !ruby/struct:VCR::Response 
-    status: !ruby/struct:VCR::ResponseStatus 
+    headers:
+      user-agent:
+      - VideoInfo/0.4.0
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
       code: 200
       message: OK
-    headers: 
-      x-powered-by: 
-      - PHP/5.3.3
-      expires: 
-      - Sat, 16 Apr 2011 23:26:17 GMT
-      content-type: 
-      - text/xml;charset=UTF-8
-      date: 
-      - Sun, 17 Apr 2011 11:26:17 GMT
-      server: 
+    headers:
+      server:
       - Apache
-      content-length: 
-      - "1462"
-      vary: 
+      x-ratelimit-limit:
+      - '3600'
+      x-ratelimit-remaining:
+      - '3597'
+      x-ratelimit-reset:
+      - '1353773556'
+      expires:
+      - Sat, 24 Nov 2012 15:30:57 GMT
+      last-modified:
+      - Sun, 09 Sep 2012 01:09:40 GMT
+      etag:
+      - ! '"30fd7c1a85437f4654554ea865f61bc9"'
+      x-ua-compatible:
+      - IE=edge,chrome=1
+      vary:
       - Accept-Encoding
-      cache-control: 
-      - no-store, no-cache, must-revalidate
-      - post-check=0, pre-check=0
-    body: |-
-      <?xml version="1.0" encoding="utf-8"?>
-      <videos>
-        <video>
-          <id>898029</id>
-          <title>Cherry Bloom - King Of The Knife</title>
-          <description>The first video from the upcoming album Secret Sounds, to download in-stores April 14. Checkout http://www.cherrybloom.net</description>
-          <url>http://vimeo.com/898029</url>
-          <upload_date>2008-04-14 13:10:39</upload_date>
-          <thumbnail_small>http://b.vimeocdn.com/ts/343/731/34373130_100.jpg</thumbnail_small>
-          <thumbnail_medium>http://b.vimeocdn.com/ts/343/731/34373130_200.jpg</thumbnail_medium>
-          <thumbnail_large>http://b.vimeocdn.com/ts/343/731/34373130_640.jpg</thumbnail_large>
-          <user_name>Octave Zangs</user_name>
-          <user_url>http://vimeo.com/octave</user_url>
-          <user_portrait_small>http://b.vimeocdn.com/ps/146/987/1469877_30.jpg</user_portrait_small>
-          <user_portrait_medium>http://b.vimeocdn.com/ps/146/987/1469877_75.jpg</user_portrait_medium>
-          <user_portrait_large>http://b.vimeocdn.com/ps/146/987/1469877_100.jpg</user_portrait_large>
-          <user_portrait_huge>http://b.vimeocdn.com/ps/146/987/1469877_300.jpg</user_portrait_huge>
-          <stats_number_of_likes>8</stats_number_of_likes>
-          <stats_number_of_plays>4244</stats_number_of_plays>
-          <stats_number_of_comments>4</stats_number_of_comments>
-          <duration>175</duration>
-          <width>640</width>
-          <height>360</height>
-          <tags>cherry bloom, secret sounds, king of the knife, rock, alternative</tags>
-        </video>
-      </videos>
-    http_version: "1.1"
-- !ruby/struct:VCR::HTTPInteraction 
-  request: !ruby/struct:VCR::Request 
+      content-type:
+      - application/json
+      transfer-encoding:
+      - chunked
+      date:
+      - Sat, 24 Nov 2012 15:29:57 GMT
+      x-varnish:
+      - '1083753814'
+      age:
+      - '0'
+      via:
+      - 1.1 varnish
+      x-varnish-cache:
+      - '0'
+      x-vserver:
+      - 10.90.128.197
+      cache-control:
+      - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+    body: ! '[{"id":898029,"title":"Cherry Bloom - King Of The Knife","description":"The
+      first video from the upcoming album Secret Sounds, to download in-stores April
+      14. Checkout http:\/\/www.cherrybloom.net","url":"http:\/\/vimeo.com\/898029","upload_date":"2008-04-14
+      13:10:39","thumbnail_small":"http:\/\/b.vimeocdn.com\/ts\/343\/731\/34373130_100.jpg","thumbnail_medium":"http:\/\/b.vimeocdn.com\/ts\/343\/731\/34373130_200.jpg","thumbnail_large":"http:\/\/b.vimeocdn.com\/ts\/343\/731\/34373130_640.jpg","user_id":206215,"user_name":"Octave
+      Zangs","user_url":"http:\/\/vimeo.com\/octave","user_portrait_small":"http:\/\/b.vimeocdn.com\/ps\/257\/715\/2577152_30.jpg","user_portrait_medium":"http:\/\/b.vimeocdn.com\/ps\/257\/715\/2577152_75.jpg","user_portrait_large":"http:\/\/b.vimeocdn.com\/ps\/257\/715\/2577152_100.jpg","user_portrait_huge":"http:\/\/b.vimeocdn.com\/ps\/257\/715\/2577152_300.jpg","stats_number_of_likes":10,"stats_number_of_plays":4526,"stats_number_of_comments":4,"duration":175,"width":640,"height":360,"tags":"cherry
+      bloom, secret sounds, king of the knife, rock, alternative","embed_privacy":"anywhere"}]'
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
     method: :get
-    uri: http://true:@vimeo.com:80/api/v2/video/898029.xml
+    uri: http://true:@vimeo.com:80/api/v2/video/898029.json
     body: 
-    headers: 
-      user-agent: 
-      - VideoInfo/0.2.7
-  response: !ruby/struct:VCR::Response 
-    status: !ruby/struct:VCR::ResponseStatus 
+    headers:
+      user-agent:
+      - VideoInfo/0.4.0
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
       code: 200
       message: OK
-    headers: 
-      x-powered-by: 
-      - PHP/5.3.5-0.dotdeb.0
-      expires: 
-      - Fri, 18 Nov 2011 10:21:18 GMT
-      content-type: 
-      - text/xml;charset=UTF-8
-      server: 
+    headers:
+      server:
       - Apache
-      date: 
-      - Fri, 18 Nov 2011 22:21:18 GMT
-      content-length: 
-      - "1507"
-      cache-control: 
-      - no-store, no-cache, must-revalidate
-      - post-check=0, pre-check=0
-      vary: 
+      x-ratelimit-limit:
+      - '3600'
+      x-ratelimit-remaining:
+      - '3596'
+      x-ratelimit-reset:
+      - '1353773556'
+      expires:
+      - Sat, 24 Nov 2012 15:30:59 GMT
+      last-modified:
+      - Sun, 09 Sep 2012 01:09:40 GMT
+      etag:
+      - ! '"30fd7c1a85437f4654554ea865f61bc9"'
+      x-ua-compatible:
+      - IE=edge,chrome=1
+      vary:
       - Accept-Encoding
-    body: |-
-      <?xml version="1.0" encoding="utf-8"?>
-      <videos>
-        <video>
-          <id>898029</id>
-          <title>Cherry Bloom - King Of The Knife</title>
-          <description>The first video from the upcoming album Secret Sounds, to download in-stores April 14. Checkout http://www.cherrybloom.net</description>
-          <url>http://vimeo.com/898029</url>
-          <upload_date>2008-04-14 13:10:39</upload_date>
-          <thumbnail_small>http://b.vimeocdn.com/ts/343/731/34373130_100.jpg</thumbnail_small>
-          <thumbnail_medium>http://b.vimeocdn.com/ts/343/731/34373130_200.jpg</thumbnail_medium>
-          <thumbnail_large>http://b.vimeocdn.com/ts/343/731/34373130_640.jpg</thumbnail_large>
-          <user_name>Octave Zangs</user_name>
-          <user_url>http://vimeo.com/octave</user_url>
-          <user_portrait_small>http://b.vimeocdn.com/ps/257/715/2577152_30.jpg</user_portrait_small>
-          <user_portrait_medium>http://b.vimeocdn.com/ps/257/715/2577152_75.jpg</user_portrait_medium>
-          <user_portrait_large>http://b.vimeocdn.com/ps/257/715/2577152_100.jpg</user_portrait_large>
-          <user_portrait_huge>http://b.vimeocdn.com/ps/257/715/2577152_300.jpg</user_portrait_huge>
-          <stats_number_of_likes>10</stats_number_of_likes>
-          <stats_number_of_plays>4434</stats_number_of_plays>
-          <stats_number_of_comments>4</stats_number_of_comments>
-          <duration>175</duration>
-          <width>640</width>
-          <height>360</height>
-          <tags>cherry bloom, secret sounds, king of the knife, rock, alternative</tags>
-          <embed_privacy>anywhere</embed_privacy>
-        </video>
-      </videos>
-    http_version: "1.1"
+      content-type:
+      - application/json
+      transfer-encoding:
+      - chunked
+      date:
+      - Sat, 24 Nov 2012 15:29:59 GMT
+      x-varnish:
+      - '1130487886'
+      age:
+      - '0'
+      via:
+      - 1.1 varnish
+      x-varnish-cache:
+      - '0'
+      x-vserver:
+      - 10.90.128.196
+      cache-control:
+      - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+    body: ! '[{"id":898029,"title":"Cherry Bloom - King Of The Knife","description":"The
+      first video from the upcoming album Secret Sounds, to download in-stores April
+      14. Checkout http:\/\/www.cherrybloom.net","url":"http:\/\/vimeo.com\/898029","upload_date":"2008-04-14
+      13:10:39","thumbnail_small":"http:\/\/b.vimeocdn.com\/ts\/343\/731\/34373130_100.jpg","thumbnail_medium":"http:\/\/b.vimeocdn.com\/ts\/343\/731\/34373130_200.jpg","thumbnail_large":"http:\/\/b.vimeocdn.com\/ts\/343\/731\/34373130_640.jpg","user_id":206215,"user_name":"Octave
+      Zangs","user_url":"http:\/\/vimeo.com\/octave","user_portrait_small":"http:\/\/b.vimeocdn.com\/ps\/257\/715\/2577152_30.jpg","user_portrait_medium":"http:\/\/b.vimeocdn.com\/ps\/257\/715\/2577152_75.jpg","user_portrait_large":"http:\/\/b.vimeocdn.com\/ps\/257\/715\/2577152_100.jpg","user_portrait_huge":"http:\/\/b.vimeocdn.com\/ps\/257\/715\/2577152_300.jpg","stats_number_of_likes":10,"stats_number_of_plays":4526,"stats_number_of_comments":4,"duration":175,"width":640,"height":360,"tags":"cherry
+      bloom, secret sounds, king of the knife, rock, alternative","embed_privacy":"anywhere"}]'
+    http_version: '1.1'

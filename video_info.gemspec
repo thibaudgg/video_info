@@ -4,7 +4,7 @@ require "video_info/version"
 
 Gem::Specification.new do |s|
   s.name        = "video_info"
-  s.version     = VideoInfoVersion::VERSION
+  s.version     = VideoInfo::VERSION
   s.platform    = Gem::Platform::RUBY
   s.authors     = ['Thibaud Guillaume-Gentil']
   s.email       = ['thibaud@thibaud.me']
@@ -14,7 +14,7 @@ Gem::Specification.new do |s|
 
   s.rubyforge_project = "video_info"
 
-  s.add_dependency 'hpricot', '~> 0.8.4'
+  s.add_dependency 'multi_json'
 
   s.add_development_dependency 'bundler'
   s.add_development_dependency 'rspec', '~> 2.10'
@@ -22,6 +22,6 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'webmock'
   s.add_development_dependency 'vcr', '~> 1.11'
 
-  s.files        = Dir.glob('{lib}/**/*') + %w[LICENSE README.md]
+  s.files         = Dir.glob('{lib}/**/*') + %w[LICENSE README.md]
   s.require_paths = ["lib"]
 end

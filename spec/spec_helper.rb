@@ -1,7 +1,5 @@
-require 'rubygems'
 require 'rspec'
 require 'video_info'
-require 'video_info/version'
 require 'vcr'
 
 VCR.config do |config|
