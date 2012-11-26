@@ -15,21 +15,21 @@ Usage
 -----
 
 ``` ruby
-  video = VideoInfo.new("http://www.youtube.com/watch?v=mZqGqE0D0n4")
+  video = VideoInfo.get("http://www.youtube.com/watch?v=mZqGqE0D0n4")
 
   # video.video_id         => "mZqGqE0D0n4"
   # video.provider         => "YouTube"
   # video.title            => "Cherry Bloom - King Of The Knife"
   # video.description      => "The first video from the upcoming album Secret Sounds, to download in-stores April 14. Checkout http://www.cherrybloom.net"
-  # video.keywords         => "alternative, bloom, cherry, clip, drum, guitar, king, knife, of, Paris-Forum, rock, the, tremplin"
   # video.duration         => 175 (in seconds)
   # video.date             => Sat Apr 12 22:25:35 UTC 2008
-  # video.thumbnail_small  => "http://i.ytimg.com/vi/mZqGqE0D0n4/2.jpg"
-  # video.thumbnail_large  => "http://i.ytimg.com/vi/mZqGqE0D0n4/0.jpg"
+  # video.thumbnail_small  => "http://i.ytimg.com/vi/mZqGqE0D0n4/default.jpg"
+  # video.thumbnail_medium => "http://i.ytimg.com/vi/mZqGqE0D0n4/mqdefault.jpg"
+  # video.thumbnail_large  => "http://i.ytimg.com/vi/mZqGqE0D0n4/hqdefault.jpg"
   # video.embed_url        => "http://www.youtube.com/embed/mZqGqE0D0n4"
   # video.embed_code       => "'<iframe src="http://www.youtube.com/embed/mZqGqE0D0n4" frameborder="0" allowfullscreen="allowfullscreen"></iframe>'"
 
-  video = VideoInfo.new("http://vimeo.com/898029")
+  video = VideoInfo.get("http://vimeo.com/898029")
 
   # video.video_id         => "898029"
   # video.provider         => "Vimeo"
@@ -40,29 +40,26 @@ Usage
   # video.date             => Mon Apr 14 13:10:39 +0200 2008
   # video.width            => 640
   # video.height           => 360
-  # video.thumbnail_small  => "http://ts.vimeo.com.s3.amazonaws.com/343/731/34373130_100.jpg"
-  # video.thumbnail_large  => "http://ts.vimeo.com.s3.amazonaws.com/343/731/34373130_640.jpg"
+  # video.thumbnail_small  => "http://b.vimeocdn.com/ts/343/731/34373130_100.jpg"
+  # video.thumbnail_medium => "http://b.vimeocdn.com/ts/343/731/34373130_200.jpg"
+  # video.thumbnail_large  => "http://b.vimeocdn.com/ts/343/731/34373130_640.jpg"
   # video.embed_url        => "http://player.vimeo.com/video/898029"
   # video.embed_code       => "'<iframe src="http://player.vimeo.com/video/898029?title=0&amp;byline=0&amp;portrait=0&amp;autoplay=0" frameborder="0"></iframe>'"
-
-  video = VideoInfo.new("http://badurl.com/898029")
-
-  # video.valid? => false
 ```
 
 Options
 -------
 
 ``` ruby
-  video = VideoInfo.new("http://www.youtube.com/watch?v=mZqGqE0D0n4", "User-Agent" => "My Youtube Mashup Robot/1.0")
-  video = VideoInfo.new("http://www.youtube.com/watch?v=mZqGqE0D0n4", "Referer"    => "http://my-youtube-mashup.com/")
-  video = VideoInfo.new("http://www.youtube.com/watch?v=mZqGqE0D0n4", "Referer"    => "http://my-youtube-mashup.com/",
+  video = VideoInfo.get("http://www.youtube.com/watch?v=mZqGqE0D0n4", "User-Agent" => "My Youtube Mashup Robot/1.0")
+  video = VideoInfo.get("http://www.youtube.com/watch?v=mZqGqE0D0n4", "Referer"    => "http://my-youtube-mashup.com/")
+  video = VideoInfo.get("http://www.youtube.com/watch?v=mZqGqE0D0n4", "Referer"    => "http://my-youtube-mashup.com/",
                                                                       "User-Agent" => "My Youtube Mashup Robot/1.0")
 ```
 You can also use **symbols** instead of strings (any non-word (`/[^a-z]/i`) character would be converted to hyphen).
 
 ``` ruby
-  video = VideoInfo.new("http://www.youtube.com/watch?v=mZqGqE0D0n4", :referer    => "http://my-youtube-mashup.com/",
+  video = VideoInfo.get("http://www.youtube.com/watch?v=mZqGqE0D0n4", :referer    => "http://my-youtube-mashup.com/",
                                                                       :user_agent => "My Youtube Mashup Robot/1.0")
 ```
 
@@ -73,7 +70,7 @@ It supports all openURI header fields (options), for more information see: [open
 You can also include an `iframe_attributes` hash to include arbitrary attributes in the iframe embed code:
 
 ``` ruby
-VideoInfo.new("http://www.youtube.com/watch?v=mZqGqE0D0n4", :iframe_attributes => { :width => 800, :height => 600, "data-key" => "value" } ).embed_code
+VideoInfo.get("http://www.youtube.com/watch?v=mZqGqE0D0n4", :iframe_attributes => { :width => 800, :height => 600, "data-key" => "value" } ).embed_code
 => '<iframe src="http://www.youtube.com/embed/mZqGqE0D0n4" frameborder="0" allowfullscreen="allowfullscreen" width="800" height="600" data-key="value"></iframe>'
 ```
 
