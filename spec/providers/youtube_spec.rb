@@ -67,4 +67,12 @@ describe VideoInfo::Youtube do
 
     its(:embed_code) { should match(/data-colorbox="true"/) }
   end
+
+  describe "url in text", :vcr do
+    let(:text) { '<a href="http://www.youtube.com/watch?v=mZqGqE0D0n4">http://www.youtube.com/watch?v=mZqGqE0D0n4</a>' }
+    subject { VideoInfo::Youtube.new(text) }
+
+    it { should be_valid }
+    its(:video_id) { should == 'mZqGqE0D0n4' }
+  end
 end

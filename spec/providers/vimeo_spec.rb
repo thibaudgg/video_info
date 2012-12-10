@@ -42,5 +42,13 @@ describe VideoInfo::Vimeo do
       its(:embed_code) { should match(/width="800"/) }
       its(:embed_code) { should match(/height="600"/) }
     end
+
+    describe "url in text", :vcr do
+      let(:text) { '<a href="http://www.vimeo.com/898029">http://www.vimeo.com/898029</a>' }
+      subject { VideoInfo::Vimeo.new(text) }
+
+      it { should be_valid }
+      its(:video_id) { should == '898029' }
+    end
   end
 end

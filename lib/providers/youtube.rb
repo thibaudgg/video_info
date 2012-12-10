@@ -17,12 +17,12 @@ module VideoInfo
     end
 
     def regex
-      /youtu(.be)?(be.com)?.*(?:\/|v=)([\w-]+)/
+      /youtube\.com\/watch\?v=([A-Za-z0-9._%-]*)?|youtu\.be\/([A-Za-z0-9._%-]*)?/
     end
 
     def video_id_for(url)
       url.gsub(regex) do
-        @video_id = $3
+        @video_id = $1 || $2
       end
     end
 
