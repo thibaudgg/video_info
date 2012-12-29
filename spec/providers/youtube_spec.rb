@@ -4,7 +4,6 @@ describe VideoInfo::Youtube do
   describe "info", :vcr do
     subject { VideoInfo::Youtube.new('http://www.youtube.com/watch?v=mZqGqE0D0n4') }
 
-    it                     { should be_valid }
     its(:provider)         { should == 'YouTube' }
     its(:video_id)         { should == 'mZqGqE0D0n4' }
     its(:url)              { should == 'http://www.youtube.com/watch?v=mZqGqE0D0n4' }
@@ -26,7 +25,6 @@ describe VideoInfo::Youtube do
   describe "Video JM9NgvjjVng", :vcr do
     subject { VideoInfo::Youtube.new('http://www.youtube.com/watch?v=JM9NgvjjVng') }
 
-    it             { should be_valid }
     its(:provider) { should == 'YouTube' }
     its(:duration) { should == 217 }
   end
@@ -72,7 +70,6 @@ describe VideoInfo::Youtube do
     let(:text) { '<a href="http://www.youtube.com/watch?v=mZqGqE0D0n4">http://www.youtube.com/watch?v=mZqGqE0D0n4</a>' }
     subject { VideoInfo::Youtube.new(text) }
 
-    it { should be_valid }
     its(:video_id) { should == 'mZqGqE0D0n4' }
   end
 end

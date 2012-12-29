@@ -20,6 +20,12 @@ describe VideoInfo do
       it { should be_nil }
     end
 
+    describe "not valid id url", :vcr do
+      subject { VideoInfo.get('http://www.vimeo.com/000000000') }
+
+      it { should be_nil }
+    end
+
     describe "nil url" do
       subject { VideoInfo.get(nil) }
 

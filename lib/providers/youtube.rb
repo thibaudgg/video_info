@@ -26,10 +26,6 @@ module VideoInfo
       end
     end
 
-    def valid?
-      !@video_id.nil? && !['', nil].include?(@title)
-    end
-
     private
 
     def get_info

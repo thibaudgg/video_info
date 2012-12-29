@@ -5,7 +5,6 @@ describe VideoInfo::Vimeo do
     describe "info" do
       subject { VideoInfo::Vimeo.new('http://www.vimeo.com/898029') }
 
-      it                     { should be_valid }
       its(:provider)         { should == 'Vimeo' }
       its(:video_id)         { should == '898029' }
       its(:url)              { should == 'http://vimeo.com/898029' }
@@ -30,12 +29,6 @@ describe VideoInfo::Vimeo do
       its(:provider) { should == 'Vimeo' }
     end
 
-    describe "bad vimeo url" do
-      subject { VideoInfo::Vimeo.new('http://www.vimeo.com/groups/898029') }
-
-      it { should_not be_valid }
-    end
-
     describe "iframe attributes vimeo" do
       subject { VideoInfo::Vimeo.new('http://vimeo.com/groups/1234/videos/898029', :iframe_attributes => { :width => 800, :height => 600 } ) }
 
@@ -47,7 +40,6 @@ describe VideoInfo::Vimeo do
       let(:text) { '<a href="http://www.vimeo.com/898029">http://www.vimeo.com/898029</a>' }
       subject { VideoInfo::Vimeo.new(text) }
 
-      it { should be_valid }
       its(:video_id) { should == '898029' }
     end
   end

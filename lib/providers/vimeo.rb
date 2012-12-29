@@ -16,10 +16,6 @@ module VideoInfo
       get_info unless @video_id == url || @video_id.nil? || @video_id.empty?
     end
 
-    def valid?
-      !@video_id.nil? && !['', nil].include?(@title)
-    end
-
     private
 
     def get_info

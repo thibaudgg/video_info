@@ -1,11 +1,32 @@
 require 'open-uri'
 require 'multi_json'
-require 'video_info/version'
 require 'providers/vimeo'
 require 'providers/youtube'
 
 module VideoInfo
+
   def self.get(url, options = {})
+    options = clean_options(options)
+    video = get_video(url, options)
+    valid?(video) ? video : nil
+  end
+
+private
+
+  def self.get_video(url, options)
+    case url
+    when /vimeo\.com/
+      Vimeo.new(url, options)
+    when /(youtube\.com)|(youtu\.be)/
+      Youtube.new(url, options)
+    end
+  end
+
+  def self.valid?(video)
+    !video.nil? && !video.video_id.nil? && !['', nil].include?(video.title)
+  end
+
+  def self.clean_options(options)
     options = { "User-Agent" => "VideoInfo/#{VideoInfo::VERSION}" }.merge options
     options.dup.each do |key, value|
       unless OpenURI::Options.keys.include?(key) || options[:iframe_attributes]
@@ -15,17 +36,7 @@ module VideoInfo
         end
       end
     end
-
-    case url
-    when /vimeo\.com/
-      @video = Vimeo.new(url, options)
-    when /(youtube\.com)|(youtu\.be)/
-      @video = Youtube.new(url, options)
-    end
-  end
-
-  def self.method_missing(sym, *args, &block)
-    @video.send sym, *args, &block
+    options
   end
 
   def self.hash_to_attributes(hash)

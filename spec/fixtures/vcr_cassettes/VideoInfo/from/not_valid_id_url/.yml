@@ -1,0 +1,58 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://vimeo.com/api/v2/video/000000000.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      user-agent:
+      - VideoInfo/1.0.1
+      accept:
+      - ! '*/*'
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      server:
+      - Apache
+      x-ratelimit-limit:
+      - '3600'
+      x-ratelimit-remaining:
+      - '3599'
+      x-ratelimit-reset:
+      - '1356813808'
+      expires:
+      - Sat, 29 Dec 2012 19:48:28 GMT
+      x-ua-compatible:
+      - IE=EmulateIE9,chrome=1
+      vary:
+      - Accept-Encoding
+      content-type:
+      - text/html; charset=UTF-8
+      transfer-encoding:
+      - chunked
+      date:
+      - Sat, 29 Dec 2012 19:43:28 GMT
+      x-varnish:
+      - '1996413364'
+      age:
+      - '0'
+      via:
+      - 1.1 varnish
+      x-varnish-cache:
+      - '0'
+      connection:
+      - close
+      x-vserver:
+      - 10.90.128.196
+      cache-control:
+      - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+    body:
+      encoding: US-ASCII
+      string: 000000000 not found.
+    http_version: '1.1'
+  recorded_at: Sat, 29 Dec 2012 19:43:32 GMT
+recorded_with: VCR 2.3.0
