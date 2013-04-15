@@ -2,57 +2,59 @@
 http_interactions:
 - request:
     method: get
-    uri: http://gdata.youtube.com/feeds/api/videos/Xp6CXF-Cesg?v=2&alt=json
+    uri: http://gdata.youtube.com/feeds/api/videos/Xp6CXF-Cesg?alt=json&v=2
     body:
       encoding: US-ASCII
       string: ''
     headers:
-      accept:
-      - ! '*/*'
-      user-agent:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+      User-Agent:
       - Ruby
   response:
     status:
       code: 200
       message: OK
     headers:
-      x-gdata-user-country:
+      X-Gdata-User-Country:
       - CH
-      content-type:
+      Content-Type:
       - application/json; charset=UTF-8
-      access-control-allow-origin:
-      - ! '*'
-      expires:
-      - Mon, 26 Nov 2012 11:31:45 GMT
-      date:
-      - Mon, 26 Nov 2012 11:31:45 GMT
-      cache-control:
+      Access-Control-Allow-Origin:
+      - '*'
+      Expires:
+      - Mon, 15 Apr 2013 06:05:26 GMT
+      Date:
+      - Mon, 15 Apr 2013 06:05:26 GMT
+      Cache-Control:
       - private, max-age=300, no-transform
-      vary:
-      - ! '*'
-      gdata-version:
+      Vary:
+      - '*'
+      Gdata-Version:
       - '2.1'
-      etag:
-      - W/"C0AAQH47eCp7I2A9WhNQGE0."
-      last-modified:
-      - Sun, 25 Nov 2012 00:02:21 GMT
-      transfer-encoding:
+      Etag:
+      - W/"Dk8ESH47eCp7I2A9WhBXF04."
+      Last-Modified:
+      - Sun, 31 Mar 2013 13:00:09 GMT
+      Transfer-Encoding:
       - chunked
-      x-content-type-options:
+      X-Content-Type-Options:
       - nosniff
-      x-frame-options:
+      X-Frame-Options:
       - SAMEORIGIN
-      x-xss-protection:
+      X-Xss-Protection:
       - 1; mode=block
-      server:
+      Server:
       - GSE
     body:
-      encoding: US-ASCII
-      string: ! '{"version":"1.0","encoding":"UTF-8","entry":{"xmlns":"http://www.w3.org/2005/Atom","xmlns$media":"http://search.yahoo.com/mrss/","xmlns$gd":"http://schemas.google.com/g/2005","xmlns$yt":"http://gdata.youtube.com/schemas/2007","gd$etag":"W/\"C0AAQH47eCp7I2A9WhNQGE0.\"","id":{"$t":"tag:youtube.com,2008:video:Xp6CXF-Cesg"},"published":{"$t":"2006-08-19T04:21:07.000Z"},"updated":{"$t":"2012-11-25T00:02:21.000Z"},"category":[{"scheme":"http://schemas.google.com/g/2005#kind","term":"http://gdata.youtube.com/schemas/2007#video"},{"scheme":"http://gdata.youtube.com/schemas/2007/categories.cat","term":"Entertainment","label":"Entertainment"}],"title":{"$t":"Poppin..Battle
-        Of The Sexes"},"content":{"type":"application/x-shockwave-flash","src":"http://www.youtube.com/v/Xp6CXF-Cesg?version=3&f=videos&app=youtube_gdata"},"link":[{"rel":"alternate","type":"text/html","href":"http://www.youtube.com/watch?v=Xp6CXF-Cesg&feature=youtube_gdata"},{"rel":"http://gdata.youtube.com/schemas/2007#video.responses","type":"application/atom+xml","href":"http://gdata.youtube.com/feeds/api/videos/Xp6CXF-Cesg/responses?v=2"},{"rel":"http://gdata.youtube.com/schemas/2007#video.related","type":"application/atom+xml","href":"http://gdata.youtube.com/feeds/api/videos/Xp6CXF-Cesg/related?v=2"},{"rel":"http://gdata.youtube.com/schemas/2007#mobile","type":"text/html","href":"http://m.youtube.com/details?v=Xp6CXF-Cesg"},{"rel":"http://gdata.youtube.com/schemas/2007#uploader","type":"application/atom+xml","href":"http://gdata.youtube.com/feeds/api/users/AmWPusDzaONbeJwdfwXLOA?v=2"},{"rel":"self","type":"application/atom+xml","href":"http://gdata.youtube.com/feeds/api/videos/Xp6CXF-Cesg?v=2"}],"author":[{"name":{"$t":"chewylue"},"uri":{"$t":"http://gdata.youtube.com/feeds/api/users/chewylue"},"yt$userId":{"$t":"AmWPusDzaONbeJwdfwXLOA"}}],"yt$accessControl":[{"action":"comment","permission":"allowed"},{"action":"commentVote","permission":"allowed"},{"action":"videoRespond","permission":"moderated"},{"action":"rate","permission":"allowed"},{"action":"embed","permission":"allowed"},{"action":"list","permission":"allowed"},{"action":"autoPlay","permission":"allowed"},{"action":"syndicate","permission":"allowed"}],"gd$comments":{"gd$feedLink":{"rel":"http://gdata.youtube.com/schemas/2007#comments","href":"http://gdata.youtube.com/feeds/api/videos/Xp6CXF-Cesg/comments?v=2","countHint":1194}},"media$group":{"media$category":[{"$t":"Entertainment","label":"Entertainment","scheme":"http://gdata.youtube.com/schemas/2007/categories.cat"}],"media$content":[{"url":"http://www.youtube.com/v/Xp6CXF-Cesg?version=3&f=videos&app=youtube_gdata","type":"application/x-shockwave-flash","medium":"video","isDefault":"true","expression":"full","duration":452,"yt$format":5},{"url":"rtsp://v2.cache4.c.youtube.com/CiILENy73wIaGQnIeoJfXIKeXhMYDSANFEgGUgZ2aWRlb3MM/0/0/0/video.3gp","type":"video/3gpp","medium":"video","expression":"full","duration":452,"yt$format":1},{"url":"rtsp://v2.cache4.c.youtube.com/CiILENy73wIaGQnIeoJfXIKeXhMYESARFEgGUgZ2aWRlb3MM/0/0/0/video.3gp","type":"video/3gpp","medium":"video","expression":"full","duration":452,"yt$format":6}],"media$credit":[{"$t":"chewylue","role":"uploader","scheme":"urn:youtube","yt$display":"chewylue"}],"media$description":{"$t":"Guys
+      encoding: UTF-8
+      string: '{"version":"1.0","encoding":"UTF-8","entry":{"xmlns":"http://www.w3.org/2005/Atom","xmlns$media":"http://search.yahoo.com/mrss/","xmlns$gd":"http://schemas.google.com/g/2005","xmlns$yt":"http://gdata.youtube.com/schemas/2007","gd$etag":"W/\"Dk8ESH47eCp7I2A9WhBXF04.\"","id":{"$t":"tag:youtube.com,2008:video:Xp6CXF-Cesg"},"published":{"$t":"2006-08-19T04:21:07.000Z"},"updated":{"$t":"2013-03-31T13:00:09.000Z"},"category":[{"scheme":"http://schemas.google.com/g/2005#kind","term":"http://gdata.youtube.com/schemas/2007#video"},{"scheme":"http://gdata.youtube.com/schemas/2007/categories.cat","term":"Entertainment","label":"Entertainment"}],"title":{"$t":"Poppin..Battle
+        Of The Sexes"},"content":{"type":"application/x-shockwave-flash","src":"http://www.youtube.com/v/Xp6CXF-Cesg?version=3&f=videos&app=youtube_gdata"},"link":[{"rel":"alternate","type":"text/html","href":"http://www.youtube.com/watch?v=Xp6CXF-Cesg&feature=youtube_gdata"},{"rel":"http://gdata.youtube.com/schemas/2007#video.responses","type":"application/atom+xml","href":"http://gdata.youtube.com/feeds/api/videos/Xp6CXF-Cesg/responses?v=2"},{"rel":"http://gdata.youtube.com/schemas/2007#video.related","type":"application/atom+xml","href":"http://gdata.youtube.com/feeds/api/videos/Xp6CXF-Cesg/related?v=2"},{"rel":"http://gdata.youtube.com/schemas/2007#mobile","type":"text/html","href":"http://m.youtube.com/details?v=Xp6CXF-Cesg"},{"rel":"http://gdata.youtube.com/schemas/2007#uploader","type":"application/atom+xml","href":"http://gdata.youtube.com/feeds/api/users/AmWPusDzaONbeJwdfwXLOA?v=2"},{"rel":"self","type":"application/atom+xml","href":"http://gdata.youtube.com/feeds/api/videos/Xp6CXF-Cesg?v=2"}],"author":[{"name":{"$t":"chewylue"},"uri":{"$t":"http://gdata.youtube.com/feeds/api/users/chewylue"},"yt$userId":{"$t":"AmWPusDzaONbeJwdfwXLOA"}}],"yt$accessControl":[{"action":"comment","permission":"allowed"},{"action":"commentVote","permission":"allowed"},{"action":"videoRespond","permission":"moderated"},{"action":"rate","permission":"allowed"},{"action":"embed","permission":"allowed"},{"action":"list","permission":"allowed"},{"action":"autoPlay","permission":"allowed"},{"action":"syndicate","permission":"allowed"}],"gd$comments":{"gd$feedLink":{"rel":"http://gdata.youtube.com/schemas/2007#comments","href":"http://gdata.youtube.com/feeds/api/videos/Xp6CXF-Cesg/comments?v=2","countHint":1214}},"media$group":{"media$category":[{"$t":"Entertainment","label":"Entertainment","scheme":"http://gdata.youtube.com/schemas/2007/categories.cat"}],"media$content":[{"url":"http://www.youtube.com/v/Xp6CXF-Cesg?version=3&f=videos&app=youtube_gdata","type":"application/x-shockwave-flash","medium":"video","isDefault":"true","expression":"full","duration":452,"yt$format":5},{"url":"rtsp://v7.cache5.c.youtube.com/CiILENy73wIaGQnIeoJfXIKeXhMYDSANFEgGUgZ2aWRlb3MM/0/0/0/video.3gp","type":"video/3gpp","medium":"video","expression":"full","duration":452,"yt$format":1},{"url":"rtsp://v7.cache5.c.youtube.com/CiILENy73wIaGQnIeoJfXIKeXhMYESARFEgGUgZ2aWRlb3MM/0/0/0/video.3gp","type":"video/3gpp","medium":"video","expression":"full","duration":452,"yt$format":6}],"media$credit":[{"$t":"chewylue","role":"uploader","scheme":"urn:youtube","yt$display":"chewylue"}],"media$description":{"$t":"Guys
         Vs Girls Pop Locking The Battle of The Sexes Salah(Name Of Song Petey Pablo
         - Club Banger remix)","type":"plain"},"media$keywords":{},"media$license":{"$t":"youtube","type":"text/html","href":"http://www.youtube.com/t/terms"},"media$player":{"url":"http://www.youtube.com/watch?v=Xp6CXF-Cesg&feature=youtube_gdata_player"},"media$thumbnail":[{"url":"http://i.ytimg.com/vi/Xp6CXF-Cesg/default.jpg","height":90,"width":120,"time":"00:03:46","yt$name":"default"},{"url":"http://i.ytimg.com/vi/Xp6CXF-Cesg/mqdefault.jpg","height":180,"width":320,"yt$name":"mqdefault"},{"url":"http://i.ytimg.com/vi/Xp6CXF-Cesg/hqdefault.jpg","height":360,"width":480,"yt$name":"hqdefault"},{"url":"http://i.ytimg.com/vi/Xp6CXF-Cesg/1.jpg","height":90,"width":120,"time":"00:01:53","yt$name":"start"},{"url":"http://i.ytimg.com/vi/Xp6CXF-Cesg/2.jpg","height":90,"width":120,"time":"00:03:46","yt$name":"middle"},{"url":"http://i.ytimg.com/vi/Xp6CXF-Cesg/3.jpg","height":90,"width":120,"time":"00:05:39","yt$name":"end"}],"media$title":{"$t":"Poppin..Battle
-        Of The Sexes","type":"plain"},"yt$duration":{"seconds":"452"},"yt$uploaded":{"$t":"2006-08-19T04:21:07.000Z"},"yt$uploaderId":{"$t":"UCAmWPusDzaONbeJwdfwXLOA"},"yt$videoid":{"$t":"Xp6CXF-Cesg"}},"gd$rating":{"average":4.805,"max":5,"min":1,"numRaters":1600,"rel":"http://schemas.google.com/g/2005#overall"},"yt$recorded":{"$t":"2006-08-16"},"yt$statistics":{"favoriteCount":"0","viewCount":"937764"},"yt$rating":{"numDislikes":"78","numLikes":"1522"}}}'
-    http_version: '1.1'
-  recorded_at: Mon, 26 Nov 2012 11:31:48 GMT
-recorded_with: VCR 2.3.0
+        Of The Sexes","type":"plain"},"yt$duration":{"seconds":"452"},"yt$uploaded":{"$t":"2006-08-19T04:21:07.000Z"},"yt$uploaderId":{"$t":"UCAmWPusDzaONbeJwdfwXLOA"},"yt$videoid":{"$t":"Xp6CXF-Cesg"}},"gd$rating":{"average":4.8071995,"max":5,"min":1,"numRaters":1639,"rel":"http://schemas.google.com/g/2005#overall"},"yt$recorded":{"$t":"2006-08-16"},"yt$statistics":{"favoriteCount":"0","viewCount":"950024"},"yt$rating":{"numDislikes":"79","numLikes":"1560"}}}'
+    http_version: 
+  recorded_at: Mon, 15 Apr 2013 06:05:26 GMT
+recorded_with: VCR 2.4.0
