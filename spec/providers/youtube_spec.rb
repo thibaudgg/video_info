@@ -41,6 +41,12 @@ describe VideoInfo::Youtube do
     its(:view_count) { should be > 893735 }
   end
 
+  describe "youtube embed url", :vcr do
+    subject { VideoInfo::Youtube.new('http://youtube.com/embed/JM9NgvjjVng') }
+
+    its(:provider) { should == 'YouTube' }
+  end
+
   describe "youtu.be url", :vcr do
     subject { VideoInfo::Youtube.new('http://youtu.be/JM9NgvjjVng') }
 

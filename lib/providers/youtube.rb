@@ -17,12 +17,12 @@ module VideoInfo
     end
 
     def regex
-      /youtube\.com\/watch\?v=([A-Za-z0-9._%-]*)?|youtu\.be\/([A-Za-z0-9._%-]*)?/
+      /youtube\.com\/watch\?v=([A-Za-z0-9._%-]*)?|youtu\.be\/([A-Za-z0-9._%-]*)?|youtube\.com\/embed\/([A-Za-z0-9._%-]*)?/
     end
 
     def video_id_for(url)
       url.gsub(regex) do
-        @video_id = $1 || $2
+        @video_id = $1 || $2 || $3
       end
     end
 
