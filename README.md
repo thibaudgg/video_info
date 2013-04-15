@@ -1,7 +1,6 @@
-VideoInfo [![Build Status](https://secure.travis-ci.org/thibaudgg/video_info.png?branch=master)](http://travis-ci.org/thibaudgg/video_info)
-=========
+# VideoInfo [![Gem Version](https://badge.fury.io/rb/video_info.png)](http://badge.fury.io/rb/video_info) [![Build Status](https://secure.travis-ci.org/thibaudgg/video_info.png?branch=master)](http://travis-ci.org/thibaudgg/video_info) [![Dependency Status](https://gemnasium.com/thibaudgg/video_info.png)](https://gemnasium.com/thibaudgg/video_info) [![Code Climate](https://codeclimate.com/github/thibaudgg/video_info.png)](https://codeclimate.com/github/thibaudgg/video_info) [![Coverage Status](https://coveralls.io/repos/thibaudgg/video_info/badge.png?branch=master)](https://coveralls.io/r/thibaudgg/video_info)
 
-Small Ruby Gem to get video info from youtube and vimeo url.
+Simple Ruby Gem to get video info from youtube and vimeo url.
 Tested against Ruby 1.8.7, 1.9.2, REE and the latest versions of JRuby & Rubinius.
 
 Install
