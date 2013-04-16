@@ -1,0 +1,71 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://vimeo.com/api/v2/video/898029.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - VideoInfo/1.2.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Tue, 16 Apr 2013 09:38:37 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '504'
+      Connection:
+      - keep-alive
+      X-Ratelimit-Limit:
+      - '3600'
+      X-Ratelimit-Remaining:
+      - '3588'
+      X-Ratelimit-Reset:
+      - '1366107385'
+      Expires:
+      - Tue, 16 Apr 2013 09:39:26 GMT
+      Last-Modified:
+      - Sat, 06 Apr 2013 12:44:47 GMT
+      Etag:
+      - '"3ad3f9769c0e86e3e1183eea27aba3a6"'
+      X-Ua-Compatible:
+      - IE=EmulateIE9,chrome=1
+      X-Dns-Prefetch-Control:
+      - 'on'
+      Vary:
+      - Accept-Encoding
+      Accept-Ranges:
+      - bytes
+      X-Varnish:
+      - 275310516 275308448
+      Age:
+      - '11'
+      Via:
+      - 1.1 varnish
+      X-Varnish-Cache:
+      - '1'
+      X-Vserver:
+      - 10.90.128.197
+    body:
+      encoding: UTF-8
+      string: '[{"id":898029,"title":"Cherry Bloom - King Of The Knife","description":"The
+        first video from the upcoming album Secret Sounds, to download in-stores April
+        14. Checkout http:\/\/www.cherrybloom.net","url":"http:\/\/vimeo.com\/898029","upload_date":"2008-04-14
+        13:10:39","thumbnail_small":"http:\/\/b.vimeocdn.com\/ts\/343\/731\/34373130_100.jpg","thumbnail_medium":"http:\/\/b.vimeocdn.com\/ts\/343\/731\/34373130_200.jpg","thumbnail_large":"http:\/\/b.vimeocdn.com\/ts\/343\/731\/34373130_640.jpg","user_id":206215,"user_name":"Octave
+        Zangs","user_url":"http:\/\/vimeo.com\/octave","user_portrait_small":"http:\/\/b.vimeocdn.com\/ps\/257\/715\/2577152_30.jpg","user_portrait_medium":"http:\/\/b.vimeocdn.com\/ps\/257\/715\/2577152_75.jpg","user_portrait_large":"http:\/\/b.vimeocdn.com\/ps\/257\/715\/2577152_100.jpg","user_portrait_huge":"http:\/\/b.vimeocdn.com\/ps\/257\/715\/2577152_300.jpg","stats_number_of_likes":11,"stats_number_of_plays":4538,"stats_number_of_comments":4,"duration":175,"width":640,"height":360,"tags":"cherry
+        bloom, secret sounds, king of the knife, rock, alternative","embed_privacy":"anywhere"}]'
+    http_version: 
+  recorded_at: Tue, 16 Apr 2013 09:38:37 GMT
+recorded_with: VCR 2.4.0
