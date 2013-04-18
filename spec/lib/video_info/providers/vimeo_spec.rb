@@ -51,6 +51,13 @@ describe VideoInfo::Providers::Vimeo do
     its(:video_id) { should eq '898029' }
   end
 
+  context "with video 898029 in /group/ url", :vcr do
+    subject { VideoInfo.get('http://player.vimeo.com/video/898029') }
+
+    its(:provider) { should eq 'Vimeo' }
+    its(:video_id) { should eq '898029' }
+  end
+
   context "with video 898029 in text", :vcr do
     subject { VideoInfo.get('<a href="http://www.vimeo.com/898029">http://www.vimeo.com/898029</a>') }
 
