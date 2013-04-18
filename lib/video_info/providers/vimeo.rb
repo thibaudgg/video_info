@@ -12,7 +12,7 @@ module VideoInfo
       private
 
       def _url_regex
-        /.*\.com\/(?:groups\/[^\/]+\/videos\/)?([0-9]+).*$/i
+        /.*\.com\/(?:(?:groups\/[^\/]+\/videos\/)|(?:video\/))?([0-9]+).*$/i
       end
 
       def _set_info_from_api
