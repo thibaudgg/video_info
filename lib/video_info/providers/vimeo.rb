@@ -9,6 +9,19 @@ module VideoInfo
         url =~ /vimeo\.com/
       end
 
+      def default_iframe_attributes
+        {}
+      end
+
+      def default_url_attributes
+        {
+          :title => 0,
+          :byline => 0,
+          :portrait => 0,
+          :autoplay => 0
+        }
+      end
+
       private
 
       def _url_regex
@@ -18,10 +31,10 @@ module VideoInfo
       def _set_info_from_api
         uri   = open("http://vimeo.com/api/v2/video/#{video_id}.json", options)
         video = MultiJson.load(uri.read).first
+
         @provider         = "Vimeo"
         @url              = video['url']
         @embed_url        = "http://player.vimeo.com/video/#{video_id}"
-        @embed_code       = "<iframe src=\"#{embed_url}?title=0&amp;byline=0&amp;portrait=0&amp;autoplay=0\" frameborder=\"0\"#{iframe_attributes}></iframe>"
         @title            = video['title']
         @description      = video['description']
         @keywords         = video['tags']

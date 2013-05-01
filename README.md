@@ -66,12 +66,17 @@ User-Agent when empty defaults to "VideoInfo/VERSION" - where version is current
 
 It supports all openURI header fields (options), for more information see: [openURI DOCS](http://www.ruby-doc.org/stdlib-1.9.3/libdoc/open-uri/rdoc/OpenURI.html)
 
-You can also include an `iframe_attributes` hash to include arbitrary attributes in the iframe embed code:
+You can also include an `iframe_attributes` or `url_attributes` hash to the `embed_code` method to include arbitrary attributes in the iframe embed code or as additional URL params:
 
 ``` ruby
-VideoInfo.get("http://www.youtube.com/watch?v=mZqGqE0D0n4", :iframe_attributes => { :width => 800, :height => 600, "data-key" => "value" } ).embed_code
-=> '<iframe src="http://www.youtube.com/embed/mZqGqE0D0n4" frameborder="0" allowfullscreen="allowfullscreen" width="800" height="600" data-key="value"></iframe>'
+VideoInfo.get("http://www.youtube.com/watch?v=mZqGqE0D0n4").embed_code(:iframe_attributes => { :width => 800, :height => 600, "data-key" => "value" })
+=> '<iframe src="http://www.youtube.com/embed/mZqGqE0D0n4" frameborder="0" allowfullscreen="allowfullscreen" width="800" height="600" data-key="value"></iframe>
+
+'VideoInfo.get("http://www.youtube.com/watch?v=mZqGqE0D0n4").embed_code(:url_attributes => { :autoplay => 1 })
+=> '<iframe src="http://www.youtube.com/embed/mZqGqE0D0n4?autoplay=1" frameborder="0" allowfullscreen="allowfullscreen"></iframe>'
 ```
+
+
 
 Author
 ------
