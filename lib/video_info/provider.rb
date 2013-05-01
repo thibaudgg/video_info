@@ -1,14 +1,15 @@
+require "addressable/uri"
+
 module VideoInfo
   class Provider
 
     attr_accessor :url, :options, :iframe_attributes, :video_id
-    attr_accessor :embed_url, :embed_code, :provider, :title, :description, :keywords,
-                  :duration, :date, :width, :height,
-                  :thumbnail_small, :thumbnail_medium, :thumbnail_large,
-                  :view_count
+    attr_accessor :embed_url, :provider, :title, :description, :keywords,
+      :duration, :date, :width, :height,
+      :thumbnail_small, :thumbnail_medium, :thumbnail_large,
+      :view_count
 
-    def initialize(url, options = {}, iframe_attributes = nil)
-      @iframe_attributes = _hash_to_attributes(options.delete(:iframe_attributes))
+    def initialize(url, options = {})
       @options = _clean_options(options)
       @url = url
       _set_video_id_from_url
@@ -17,6 +18,22 @@ module VideoInfo
 
     def self.usable?(url)
       raise NotImplementedError.new('Provider class must implement .usable? public method')
+    end
+
+    def embed_code(options = {})
+      url_attributes = options[:url_attributes] || {}
+      url_attrs = default_url_attributes.merge(url_attributes)
+
+      url = embed_url
+      url += "?#{_hash_to_params(url_attrs)}" unless url_attrs.empty?
+      
+      iframe_attrs = ["src=\"#{url}\""]
+      iframe_attrs << "frameborder=\"0\""
+      
+      iframe_attributes = options[:iframe_attributes] || {}
+      iframe_attrs << _hash_to_attributes(default_iframe_attributes.merge(iframe_attributes))
+
+      "<iframe #{iframe_attrs.reject(&:empty?).join(" ")}></iframe>"
     end
 
     private
@@ -49,10 +66,14 @@ module VideoInfo
     end
 
     def _hash_to_attributes(hash)
-      if hash.is_a?(Hash)
-        s = hash.map{|k,v| "#{k}=\"#{v}\""}.join(' ')
-        " #{s}"
-      end
+      return unless hash.is_a?(Hash)
+      hash.map{|k,v| "#{k}=\"#{v}\""}.join(' ')
+    end
+
+    def _hash_to_params(hash)
+      uri = Addressable::URI.new
+      uri.query_values = hash
+      uri.query
     end
   end
 end
