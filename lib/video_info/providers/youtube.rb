@@ -9,6 +9,14 @@ module VideoInfo
         url =~ /(youtube\.com)|(youtu\.be)/
       end
 
+      def default_iframe_attributes
+        { :allowfullscreen => "allowfullscreen" }
+      end
+
+      def default_url_attributes
+        {}
+      end
+
       private
 
       def _url_regex
@@ -21,7 +29,6 @@ module VideoInfo
         @provider         = "YouTube"
         @url              = url
         @embed_url        = "http://www.youtube.com/embed/#{video_id}"
-        @embed_code       = "<iframe src=\"#{embed_url}\" frameborder=\"0\" allowfullscreen=\"allowfullscreen\"#{iframe_attributes}></iframe>"
         video['entry'].tap do |entry|
           @title            = entry['title']['$t']
           @description      = entry['media$group']['media$description']['$t']

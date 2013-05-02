@@ -45,6 +45,12 @@ describe VideoInfo::Providers::Youtube do
   context "with video oQ49W_xKzKA", :vcr do
     subject { VideoInfo.get('http://www.youtube.com/watch?v=oQ49W_xKzKA') }
 
+    it { subject.embed_code(:url_attributes => { :autoplay => 1 }).should match(/autoplay=1/) }
+  end
+
+  context "with video oQ49W_xKzKA", :vcr do
+    subject { VideoInfo.get('http://www.youtube.com/watch?v=oQ49W_xKzKA') }
+
     its(:provider) { should eq 'YouTube' }
     its(:video_id) { should eq 'oQ49W_xKzKA' }
   end
@@ -94,18 +100,18 @@ describe VideoInfo::Providers::Youtube do
   end
 
   context "with iframe attributes", :vcr do
-    subject { VideoInfo.get('http://www.youtube.com/watch?v=mZqGqE0D0n4', :iframe_attributes => { :width => 800, :height => 600 }) }
+    subject { VideoInfo.get('http://www.youtube.com/watch?v=mZqGqE0D0n4') }
 
-    its(:provider)   { should == 'YouTube' }
-    its(:embed_code) { should match(/width="800"/) }
-    its(:embed_code) { should match(/height="600"/) }
+    its(:provider) { should == 'YouTube' }
+    it { subject.embed_code(:iframe_attributes => { :width => 800, :height => 600 }).should match(/width="800"/) }
+    it { subject.embed_code(:iframe_attributes => { :width => 800, :height => 600 }).should match(/height="600"/) }
   end
 
   context "with arbitrary iframe_attributes", :vcr do
-    subject { VideoInfo.get('http://www.youtube.com/watch?v=mZqGqE0D0n4', :iframe_attributes => { "data-colorbox" => "true" } ) }
+    subject { VideoInfo.get('http://www.youtube.com/watch?v=mZqGqE0D0n4') }
 
     its(:provider)   { should == 'YouTube' }
-    its(:embed_code) { should match(/data-colorbox="true"/) }
+    it { subject.embed_code(:iframe_attributes => { :'data-colorbox' => true }).should match(/data-colorbox="true"/) }
   end
 
 end
