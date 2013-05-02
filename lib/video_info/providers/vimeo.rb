@@ -14,12 +14,10 @@ module VideoInfo
       end
 
       def default_url_attributes
-        {
-          :title => 0,
+        { :title => 0,
           :byline => 0,
           :portrait => 0,
-          :autoplay => 0
-        }
+          :autoplay => 0 }
       end
 
       private

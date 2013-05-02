@@ -70,7 +70,7 @@ describe VideoInfo::Providers::Youtube do
     its(:url)      { should eq 'http://www.youtube.com/user/EducatorVids3?v=VeasFckfMHY' }
   end
 
-  context "with video VeasFckfMHY after params", :vcr, :focus do
+  context "with video VeasFckfMHY after params", :vcr do
     subject { VideoInfo.get('http://www.youtube.com/watch?feature=player_profilepage&v=VeasFckfMHY') }
 
     its(:provider) { should eq 'YouTube' }

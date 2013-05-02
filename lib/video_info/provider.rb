@@ -21,16 +21,15 @@ module VideoInfo
     end
 
     def embed_code(options = {})
-      url_attributes = options[:url_attributes] || {}
+      url_attributes = options.fetch(:url_attributes, {})
       url_attrs = default_url_attributes.merge(url_attributes)
 
       url = embed_url
       url += "?#{_hash_to_params(url_attrs)}" unless url_attrs.empty?
-      
-      iframe_attrs = ["src=\"#{url}\""]
-      iframe_attrs << "frameborder=\"0\""
-      
-      iframe_attributes = options[:iframe_attributes] || {}
+
+      iframe_attrs = ["src=\"#{url}\"", "frameborder=\"0\""]
+
+      iframe_attributes = options.fetch(:iframe_attributes, {})
       iframe_attrs << _hash_to_attributes(default_iframe_attributes.merge(iframe_attributes))
 
       "<iframe #{iframe_attrs.reject(&:empty?).join(" ")}></iframe>"
