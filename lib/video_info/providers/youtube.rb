@@ -20,7 +20,7 @@ module VideoInfo
       private
 
       def _url_regex
-        /youtube\.com\/.*v=([A-Za-z0-9._%-]*)?|youtube\.com\/.*v\/([A-Za-z0-9._%-]*)?|youtu\.be\/([A-Za-z0-9._%-]*)?|youtube\.com\/embed\/([A-Za-z0-9._%-]*)?/
+        /(?:youtube(?:-nocookie)?\.com\/(?:[^\/]+\/.+\/|(?:v|e(?:mbed)?)\/|.*[?&]v=)|youtu\.be\/)([^"&?\/ ]{11})/i
       end
 
       def _set_info_from_api
