@@ -78,6 +78,14 @@ describe VideoInfo::Providers::Youtube do
     its(:url)      { should eq 'http://www.youtube.com/watch?feature=player_profilepage&v=VeasFckfMHY' }
   end
 
+  context "with video VeasFckfMHY in path", :vcr do
+    subject { VideoInfo.get('http://www.youtube.com/v/VeasFckfMHY') }
+
+    its(:provider) { should eq 'YouTube' }
+    its(:video_id) { should eq 'VeasFckfMHY' }
+    its(:url)      { should eq 'http://www.youtube.com/v/VeasFckfMHY' }
+  end
+
   context "with video JM9NgvjjVng in youtu.be url", :vcr do
     subject { VideoInfo.get('http://youtu.be/JM9NgvjjVng') }
 
