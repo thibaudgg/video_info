@@ -11,6 +11,10 @@ module VideoInfo
     end
   end
 
+  def self.usable?(url)
+    !!_providers_const.detect { |p| p.usable?(url) }
+  end
+
   private
 
   def self._providers_const
