@@ -1,0 +1,66 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://gdata.youtube.com/feeds/api/videos/VeasFckfMHY?alt=json&v=2
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - VideoInfo/1.4.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Gdata-User-Country:
+      - US
+      Content-Type:
+      - application/json;charset=UTF-8
+      Access-Control-Allow-Origin:
+      - '*'
+      Expires:
+      - Wed, 11 Sep 2013 16:41:49 GMT
+      Date:
+      - Wed, 11 Sep 2013 16:41:49 GMT
+      Cache-Control:
+      - private, max-age=300, no-transform
+      Vary:
+      - '*'
+      Gdata-Version:
+      - '2.1'
+      Etag:
+      - W/"D0YGQ347eCp7I2A9WhFbEE8."
+      Last-Modified:
+      - Sun, 01 Sep 2013 08:45:22 GMT
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '5228'
+      Server:
+      - GSE
+      Alternate-Protocol:
+      - 80:quic
+    body:
+      encoding: UTF-8
+      string: '{"version":"1.0","encoding":"UTF-8","entry":{"xmlns":"http://www.w3.org/2005/Atom","xmlns$media":"http://search.yahoo.com/mrss/","xmlns$gd":"http://schemas.google.com/g/2005","xmlns$yt":"http://gdata.youtube.com/schemas/2007","gd$etag":"W/\"D0YGQ347eCp7I2A9WhFbEE8.\"","id":{"$t":"tag:youtube.com,2008:video:VeasFckfMHY"},"published":{"$t":"2012-12-01T21:09:05.000Z"},"updated":{"$t":"2013-09-01T08:45:22.000Z"},"category":[{"scheme":"http://schemas.google.com/g/2005#kind","term":"http://gdata.youtube.com/schemas/2007#video"},{"scheme":"http://gdata.youtube.com/schemas/2007/categories.cat","term":"Education","label":"Education"}],"title":{"$t":"Introduction
+        to Ruby"},"content":{"type":"application/x-shockwave-flash","src":"http://www.youtube.com/v/VeasFckfMHY?version=3&f=videos&app=youtube_gdata"},"link":[{"rel":"alternate","type":"text/html","href":"http://www.youtube.com/watch?v=VeasFckfMHY&feature=youtube_gdata"},{"rel":"http://gdata.youtube.com/schemas/2007#video.responses","type":"application/atom+xml","href":"http://gdata.youtube.com/feeds/api/videos/VeasFckfMHY/responses?v=2"},{"rel":"http://gdata.youtube.com/schemas/2007#video.related","type":"application/atom+xml","href":"http://gdata.youtube.com/feeds/api/videos/VeasFckfMHY/related?v=2"},{"rel":"http://gdata.youtube.com/schemas/2007#mobile","type":"text/html","href":"http://m.youtube.com/details?v=VeasFckfMHY"},{"rel":"http://gdata.youtube.com/schemas/2007#uploader","type":"application/atom+xml","href":"http://gdata.youtube.com/feeds/api/users/t73F73YFgh1jsggSdjbPVA?v=2"},{"rel":"self","type":"application/atom+xml","href":"http://gdata.youtube.com/feeds/api/videos/VeasFckfMHY?v=2"}],"author":[{"name":{"$t":"Educator.com"},"uri":{"$t":"http://gdata.youtube.com/feeds/api/users/EducatorVids3"},"yt$userId":{"$t":"t73F73YFgh1jsggSdjbPVA"}}],"yt$accessControl":[{"action":"comment","permission":"allowed"},{"action":"commentVote","permission":"allowed"},{"action":"videoRespond","permission":"moderated"},{"action":"rate","permission":"allowed"},{"action":"embed","permission":"allowed"},{"action":"list","permission":"allowed"},{"action":"autoPlay","permission":"allowed"},{"action":"syndicate","permission":"allowed"}],"gd$comments":{"gd$feedLink":{"rel":"http://gdata.youtube.com/schemas/2007#comments","href":"http://gdata.youtube.com/feeds/api/videos/VeasFckfMHY/comments?v=2","countHint":0}},"yt$hd":{},"media$group":{"media$category":[{"$t":"Education","label":"Education","scheme":"http://gdata.youtube.com/schemas/2007/categories.cat"}],"media$content":[{"url":"http://www.youtube.com/v/VeasFckfMHY?version=3&f=videos&app=youtube_gdata","type":"application/x-shockwave-flash","medium":"video","isDefault":"true","expression":"full","duration":249,"yt$format":5},{"url":"rtsp://r8---sn-p5qlsu7e.c.youtube.com/CiILENy73wIaGQl2MB_JFazmVRMYDSANFEgGUgZ2aWRlb3MM/0/0/0/video.3gp","type":"video/3gpp","medium":"video","expression":"full","duration":249,"yt$format":1},{"url":"rtsp://r8---sn-p5qlsu7e.c.youtube.com/CiILENy73wIaGQl2MB_JFazmVRMYESARFEgGUgZ2aWRlb3MM/0/0/0/video.3gp","type":"video/3gpp","medium":"video","expression":"full","duration":249,"yt$format":6}],"media$credit":[{"$t":"educatorvids3","role":"uploader","scheme":"urn:youtube","yt$display":"Educator.com"}],"media$description":{"$t":"Watch
+        more at http://www.educator.com/learn/computer-science/introduction-to-ruby/mui/
+        Other Computer Science subjects include PHP, Java, HTML 5, JavaScript, CSS,
+        WordPress, and XML, with more coming soon. We also offer math/science help
+        from middle school through high school all the way to college level courses.\n\n-All
+        lectures are broken down by individual topics\n-No more wasted time\n-Just
+        search and jump directly to the answer","type":"plain"},"media$keywords":{},"media$license":{"$t":"youtube","type":"text/html","href":"http://www.youtube.com/t/terms"},"media$player":{"url":"http://www.youtube.com/watch?v=VeasFckfMHY&feature=youtube_gdata_player"},"media$thumbnail":[{"url":"http://i1.ytimg.com/vi/VeasFckfMHY/default.jpg","height":90,"width":120,"time":"00:02:04.500","yt$name":"default"},{"url":"http://i1.ytimg.com/vi/VeasFckfMHY/mqdefault.jpg","height":180,"width":320,"yt$name":"mqdefault"},{"url":"http://i1.ytimg.com/vi/VeasFckfMHY/hqdefault.jpg","height":360,"width":480,"yt$name":"hqdefault"},{"url":"http://i1.ytimg.com/vi/VeasFckfMHY/sddefault.jpg","height":480,"width":640,"yt$name":"sddefault"},{"url":"http://i1.ytimg.com/vi/VeasFckfMHY/1.jpg","height":90,"width":120,"time":"00:01:02.250","yt$name":"start"},{"url":"http://i1.ytimg.com/vi/VeasFckfMHY/2.jpg","height":90,"width":120,"time":"00:02:04.500","yt$name":"middle"},{"url":"http://i1.ytimg.com/vi/VeasFckfMHY/3.jpg","height":90,"width":120,"time":"00:03:06.750","yt$name":"end"}],"media$title":{"$t":"Introduction
+        to Ruby","type":"plain"},"yt$aspectRatio":{"$t":"widescreen"},"yt$duration":{"seconds":"249"},"yt$uploaded":{"$t":"2012-12-01T21:09:05.000Z"},"yt$uploaderId":{"$t":"UCt73F73YFgh1jsggSdjbPVA"},"yt$videoid":{"$t":"VeasFckfMHY"}},"gd$rating":{"average":5.0,"max":5,"min":1,"numRaters":3,"rel":"http://schemas.google.com/g/2005#overall"},"yt$statistics":{"favoriteCount":"0","viewCount":"1222"},"yt$rating":{"numDislikes":"0","numLikes":"3"}}}'
+    http_version: 
+  recorded_at: Wed, 11 Sep 2013 16:43:08 GMT
+recorded_with: VCR 2.5.0
