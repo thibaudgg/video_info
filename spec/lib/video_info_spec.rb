@@ -23,4 +23,24 @@ describe VideoInfo do
     end
   end
 
+  describe ".usable?" do
+    let(:url) { 'url' }
+    let(:options) { { :foo => :bar } }
+    let(:provider) { mock('provider') }
+
+    it "returns true when a provider is usable" do
+      VideoInfo::Providers::Vimeo.should_receive(:usable?).with(url) { false }
+      VideoInfo::Providers::Youtube.should_receive(:usable?).with(url) { true }
+
+      VideoInfo.usable?(url).should be_true
+    end
+
+    it "returns false when no providers are usable" do
+      VideoInfo::Providers::Vimeo.should_receive(:usable?).with(url) { false }
+      VideoInfo::Providers::Youtube.should_receive(:usable?).with(url) { false }
+
+      VideoInfo.usable?(url).should be_false
+    end
+  end
+
 end
