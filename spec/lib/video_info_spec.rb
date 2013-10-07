@@ -5,7 +5,7 @@ describe VideoInfo do
   describe ".get" do
     let(:url) { 'url' }
     let(:options) { { :foo => :bar } }
-    let(:provider) { mock('provider') }
+    let(:provider) { double('provider') }
 
     it "uses the first usable provider" do
       VideoInfo::Providers::Vimeo.should_receive(:usable?).with(url) { false }
@@ -26,7 +26,7 @@ describe VideoInfo do
   describe ".usable?" do
     let(:url) { 'url' }
     let(:options) { { :foo => :bar } }
-    let(:provider) { mock('provider') }
+    let(:provider) { double('provider') }
 
     it "returns true when a provider is usable" do
       VideoInfo::Providers::Vimeo.should_receive(:usable?).with(url) { false }
