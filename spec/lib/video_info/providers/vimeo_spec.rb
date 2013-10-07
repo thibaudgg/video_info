@@ -22,7 +22,7 @@ describe VideoInfo::Providers::Vimeo do
     its(:provider)         { should eq 'Vimeo' }
     its(:video_id)         { should eq '898029' }
     its(:url)              { should eq 'http://vimeo.com/898029' }
-    its(:embed_url)        { should eq 'http://player.vimeo.com/video/898029' }
+    its(:embed_url)        { should eq 'http://player.vimeo.com/video/898029?autoplay=0&byline=0&portrait=0&title=0' }
     its(:embed_code)       { should eq '<iframe src="http://player.vimeo.com/video/898029?autoplay=0&byline=0&portrait=0&title=0" frameborder="0"></iframe>' }
     its(:title)            { should eq 'Cherry Bloom - King Of The Knife' }
     its(:description)      { should eq 'The first video from the upcoming album Secret Sounds, to download in-stores April 14. Checkout http://www.cherrybloom.net' }
@@ -37,9 +37,17 @@ describe VideoInfo::Providers::Vimeo do
     its(:view_count)       { should be > 4000 }
   end
 
+  context "with video 898029 and url_protocol", :vcr do
+    subject { VideoInfo.get('http://www.vimeo.com/898029') }
+
+    it { subject.embed_url(:url_protocol => :https).should match(/https:\/\//) }
+    it { subject.embed_code(:url_protocol => :https).should match(/https:\/\//) }
+  end
+
   context "with video 898029 and url_attributes", :vcr do
     subject { VideoInfo.get('http://www.vimeo.com/898029') }
 
+    it { subject.embed_url(:url_attributes => { :autoplay => 1 }).should match(/autoplay=1/) }
     it { subject.embed_code(:url_attributes => { :autoplay => 1 }).should match(/autoplay=1/) }
   end
 

@@ -23,7 +23,7 @@ module VideoInfo
       private
 
       def _url_regex
-        /.*\.com\/(?:(?:groups\/[^\/]+\/videos\/)|(?:video\/))?([0-9]+).*$/i
+        /vimeo\.com\/(?:(?:groups\/[^\/]+\/videos\/)|(?:video\/))?([0-9]+).*$/i
       end
 
       def _set_info_from_api
@@ -32,7 +32,7 @@ module VideoInfo
 
         @provider         = "Vimeo"
         @url              = video['url']
-        @embed_url        = "http://player.vimeo.com/video/#{video_id}"
+        @embed_url        = "player.vimeo.com/video/#{video_id}"
         @title            = video['title']
         @description      = video['description']
         @keywords         = video['tags']

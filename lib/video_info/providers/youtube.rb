@@ -6,7 +6,7 @@ module VideoInfo
     class Youtube < Provider
 
       def self.usable?(url)
-        url =~ /(youtube\.com)|(youtu\.be)/
+        url =~ /(youtube\.com)|(youtu\.be)|(youtube-nocookie\.com)/
       end
 
       def default_iframe_attributes
@@ -28,7 +28,7 @@ module VideoInfo
         video = MultiJson.load(uri.read)
         @provider         = "YouTube"
         @url              = url
-        @embed_url        = "http://www.youtube.com/embed/#{video_id}"
+        @embed_url        = "www.youtube.com/embed/#{video_id}"
         video['entry'].tap do |entry|
           @title            = entry['title']['$t']
           @description      = entry['media$group']['media$description']['$t']
