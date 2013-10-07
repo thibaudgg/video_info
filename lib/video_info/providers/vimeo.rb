@@ -9,15 +9,40 @@ module VideoInfo
         url =~ /vimeo\.com/
       end
 
-      def default_iframe_attributes
-        {}
+      def provider
+        'Vimeo'
       end
 
-      def default_url_attributes
-        { :title => 0,
-          :byline => 0,
-          :portrait => 0,
-          :autoplay => 0 }
+      def url
+        video ? video['url'] : @url
+      end
+
+      %w[title description thumbnail_small thumbnail_medium thumbnail_large].each do |method|
+        define_method(method) { video[method] }
+      end
+
+      %w[duration width height].each do |method|
+        define_method(method) { video[method].to_i }
+      end
+
+      def keywords
+        video['tags']
+      end
+
+      def embed_url
+        "http://player.vimeo.com/video/#{video_id}"
+      end
+
+      def date
+        Time.parse(video['upload_date'], Time.now.utc).utc
+      end
+
+      def view_count
+        video['stats_number_of_plays'].to_i
+      end
+
+      def video
+        @video && @video.first
       end
 
       private
@@ -26,26 +51,19 @@ module VideoInfo
         /.*\.com\/(?:(?:groups\/[^\/]+\/videos\/)|(?:video\/))?([0-9]+).*$/i
       end
 
-      def _set_info_from_api
-        uri   = open("http://vimeo.com/api/v2/video/#{video_id}.json", options)
-        video = MultiJson.load(uri.read).first
+      def _api_url
+        "http://vimeo.com/api/v2/video/#{video_id}.json"
+      end
 
-        @provider         = "Vimeo"
-        @url              = video['url']
-        @embed_url        = "http://player.vimeo.com/video/#{video_id}"
-        @title            = video['title']
-        @description      = video['description']
-        @keywords         = video['tags']
-        @duration         = video['duration'].to_i # seconds
-        @width            = video['width'].to_i
-        @height           = video['height'].to_i
-        @date             = Time.parse(video['upload_date'], Time.now.utc).utc
-        @thumbnail_small  = video['thumbnail_small']
-        @thumbnail_medium = video['thumbnail_medium']
-        @thumbnail_large  = video['thumbnail_large']
-        @view_count       = video['stats_number_of_plays'].to_i
-      rescue
-        nil
+      def _default_iframe_attributes
+        {}
+      end
+
+      def _default_url_attributes
+        { :title => 0,
+          :byline => 0,
+          :portrait => 0,
+          :autoplay => 0 }
       end
 
     end

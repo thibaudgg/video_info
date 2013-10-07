@@ -36,9 +36,9 @@ describe VideoInfo::Providers::Youtube do
     its(:width)            { should be_nil }
     its(:height)           { should be_nil }
     its(:date)             { should eq Time.parse('Sat Apr 12 22:25:35 UTC 2008', Time.now.utc) }
-    its(:thumbnail_small)  { should eq 'http://i.ytimg.com/vi/mZqGqE0D0n4/default.jpg' }
-    its(:thumbnail_medium) { should eq 'http://i.ytimg.com/vi/mZqGqE0D0n4/mqdefault.jpg' }
-    its(:thumbnail_large)  { should eq 'http://i.ytimg.com/vi/mZqGqE0D0n4/hqdefault.jpg' }
+    its(:thumbnail_small)  { should eq 'http://i1.ytimg.com/vi/mZqGqE0D0n4/default.jpg' }
+    its(:thumbnail_medium) { should eq 'http://i1.ytimg.com/vi/mZqGqE0D0n4/mqdefault.jpg' }
+    its(:thumbnail_large)  { should eq 'http://i1.ytimg.com/vi/mZqGqE0D0n4/hqdefault.jpg' }
     its(:view_count)       { should be > 4000 }
   end
 

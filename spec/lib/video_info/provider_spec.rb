@@ -14,7 +14,7 @@ describe VideoInfo::Provider do
     let(:provider) { ProviderFu.new(url, options) }
 
     it { expect { VideoInfo::Provider.new(url) }.to raise_error(NotImplementedError, 'Provider class must implement #_url_regex private method') }
-    it { expect { ProviderFu.new('foo/1') }.to raise_error(NotImplementedError, 'Provider class must implement #_set_info_from_api private method') }
+    it { expect { ProviderFu.new('foo/1') }.to raise_error(NotImplementedError, 'Provider class must implement #_api_url private method') }
 
     it "sets default user_agent options" do
       provider.options.should eq({ 'User-Agent' => "VideoInfo/#{VideoInfo::VERSION}" })

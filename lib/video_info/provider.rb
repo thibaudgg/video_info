@@ -2,12 +2,7 @@ require "addressable/uri"
 
 module VideoInfo
   class Provider
-
-    attr_accessor :url, :options, :iframe_attributes, :video_id
-    attr_accessor :embed_url, :provider, :title, :description, :keywords,
-      :duration, :date, :width, :height,
-      :thumbnail_small, :thumbnail_medium, :thumbnail_large,
-      :view_count
+    attr_accessor :url, :options, :iframe_attributes, :video_id, :video
 
     def initialize(url, options = {})
       @options = _clean_options(options)
@@ -21,21 +16,38 @@ module VideoInfo
     end
 
     def embed_code(options = {})
-      url_attributes = options.fetch(:url_attributes, {})
-      url_attrs = default_url_attributes.merge(url_attributes)
-
-      url = embed_url
-      url += "?#{_hash_to_params(url_attrs)}" unless url_attrs.empty?
-
-      iframe_attrs = ["src=\"#{url}\"", "frameborder=\"0\""]
-
       iframe_attributes = options.fetch(:iframe_attributes, {})
-      iframe_attrs << _hash_to_attributes(default_iframe_attributes.merge(iframe_attributes))
+      iframe_attrs = ["src=\"#{_embed_url(options)}\"", "frameborder=\"0\""]
+      iframe_attrs << _hash_to_attributes(_default_iframe_attributes.merge(iframe_attributes))
 
       "<iframe #{iframe_attrs.reject(&:empty?).join(" ")}></iframe>"
     end
 
     private
+
+    def _clean_options(options)
+      options = { 'User-Agent' => "VideoInfo/#{VideoInfo::VERSION}" }.merge(options)
+      options.dup.each do |key, value|
+        if _not_openuri_option_symbol?(key)
+          options[_http_header_field(key)] = value
+          options.delete key
+        end
+      end
+      options
+    end
+
+    def _set_info_from_api
+      uri = open(_api_url, options)
+      @video = MultiJson.load(uri.read)
+    end
+
+    def _not_openuri_option_symbol?(key)
+      key.is_a?(Symbol) && !OpenURI::Options.keys.include?(key)
+    end
+
+    def _http_header_field(key)
+      key.to_s.split(/[^a-z]/i).map(&:capitalize).join('-')
+    end
 
     def _set_video_id_from_url
       url.gsub(_url_regex) { @video_id = $1 || $2 || $3 }
@@ -49,19 +61,17 @@ module VideoInfo
       raise NotImplementedError.new('Provider class must implement #_url_regex private method')
     end
 
-    def _set_info_from_api
-      raise NotImplementedError.new('Provider class must implement #_set_info_from_api private method')
+    def _api_url
+      raise NotImplementedError.new('Provider class must implement #_api_url private method')
     end
 
-    def _clean_options(options)
-      options = { 'User-Agent' => "VideoInfo/#{VideoInfo::VERSION}" }.merge(options)
-      options.dup.each do |key, value|
-        if key.is_a?(Symbol) && !OpenURI::Options.keys.include?(key)
-          options[key.to_s.split(/[^a-z]/i).map(&:capitalize).join('-')] = value
-          options.delete key
-        end
-      end
-      options
+    def _embed_url(options)
+      url_attrs = options.fetch(:url_attributes, {})
+      url_attrs = _default_url_attributes.merge(url_attrs)
+
+      url = embed_url
+      url += "?#{_hash_to_params(url_attrs)}" unless url_attrs.empty?
+      url
     end
 
     def _hash_to_attributes(hash)
