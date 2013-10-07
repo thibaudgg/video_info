@@ -4,9 +4,8 @@ module VideoInfo
   class Provider
 
     attr_accessor :url, :options, :iframe_attributes, :video_id
-    attr_accessor :embed_url, :provider, :title, :description, :keywords,
-      :duration, :date, :width, :height,
-      :thumbnail_small, :thumbnail_medium, :thumbnail_large,
+    attr_accessor :provider, :title, :description, :keywords, :duration, :date,
+      :width, :height, :thumbnail_small, :thumbnail_medium, :thumbnail_large,
       :view_count
 
     def initialize(url, options = {})
@@ -20,12 +19,20 @@ module VideoInfo
       raise NotImplementedError.new('Provider class must implement .usable? public method')
     end
 
-    def embed_code(options = {})
+    def embed_url(options = {})
+      url_protocol = options.fetch(:url_protocol, 'http')
+
       url_attributes = options.fetch(:url_attributes, {})
       url_attrs = default_url_attributes.merge(url_attributes)
 
-      url = embed_url
+      url = "#{url_protocol}://#{@embed_url}"
       url += "?#{_hash_to_params(url_attrs)}" unless url_attrs.empty?
+
+      url
+    end
+
+    def embed_code(options = {})
+      url = embed_url(options)
 
       iframe_attrs = ["src=\"#{url}\"", "frameborder=\"0\""]
 
