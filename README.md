@@ -18,7 +18,6 @@ Usage
 
 ``` ruby
 video = VideoInfo.get("http://www.youtube.com/watch?v=mZqGqE0D0n4")
-
 # video.video_id         => "mZqGqE0D0n4"
 # video.provider         => "YouTube"
 # video.title            => "Cherry Bloom - King Of The Knife"
@@ -32,7 +31,6 @@ video = VideoInfo.get("http://www.youtube.com/watch?v=mZqGqE0D0n4")
 # video.embed_code       => "'<iframe src="http://www.youtube.com/embed/mZqGqE0D0n4" frameborder="0" allowfullscreen="allowfullscreen"></iframe>'"
 
 video = VideoInfo.get("http://vimeo.com/898029")
-
 # video.video_id         => "898029"
 # video.provider         => "Vimeo"
 # video.title            => "Cherry Bloom - King Of The Knife"
