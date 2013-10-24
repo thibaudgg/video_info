@@ -3,6 +3,7 @@
 require 'open-uri'
 require 'multi_json'
 require 'htmlentities'
+require 'iconv'
 
 module VideoInfo
   module Providers
@@ -79,7 +80,7 @@ module VideoInfo
 
       def _set_info_from_api
         uri = open(_api_url, options)
-        @html = uri.read.encode("utf-8", "cp1251")
+        @html = Iconv.conv("UTF8", "CP1251", uri.read).force_encoding('utf-8')
         @video = {
           :hash => _parse_hash,
           :view_count => _parse_view_count,
