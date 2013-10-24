@@ -21,28 +21,20 @@ module VideoInfo
         'Vkontakte'
       end
 
-      def title
-        @video[:title]
-      end
-
       %w[description keywords].each do |method|
-        define_method(method) { HTMLEntities.new.decode(@video[:description]) }
+        define_method(method) { HTMLEntities.new.decode(video[:description]) }
       end
 
-      %w[width height].each do |method|
-        define_method(method) { @video[method.to_sym].to_i }
+      %w[width height duration view_count].each do |method|
+        define_method(method) { video[method.to_sym].to_i }
       end
 
-      def duration
-        @video[:duration]
+      def title
+        video[:title]
       end
 
       def embed_url
-        "http://vk.com/video_ext.php?oid=#{video_owner}&id=#{video_id}&hash=#{@video[:hash]}"
-      end
-
-      def view_count
-        @video[:view_count]
+        "http://vk.com/video_ext.php?oid=#{video_owner}&id=#{video_id}&hash=#{video[:hash]}"
       end
 
       private
@@ -68,13 +60,11 @@ module VideoInfo
       end
 
       def _get_width(height)
-        video_widths = {
-          240 => 320,
+        { 240 => 320,
           360 => 480,
           480 => 640,
           720 => 1280
-        }
-        video_widths[height]
+        }[height]
       end
 
       def _parse_description
