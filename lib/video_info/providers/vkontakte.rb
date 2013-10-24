@@ -3,7 +3,10 @@
 require 'open-uri'
 require 'multi_json'
 require 'htmlentities'
-require 'iconv'
+
+if RUBY_VERSION.to_i < 2
+  require 'iconv'
+end
 
 module VideoInfo
   module Providers
@@ -45,11 +48,11 @@ module VideoInfo
       private
 
       def _parse_hash
-        @html[/hash2\\":\\\"(\w+)/,1]
+        @html[/hash2\\":\\"(\w+)/,1]
       end
 
       def _parse_view_count
-        @html[/mv_num_views\\\"><b>(\d+)/,1].to_i
+        @html[/mv_num_views\\"><b>(\d+)/,1].to_i
       end
 
       def _parse_title
@@ -57,7 +60,7 @@ module VideoInfo
       end
 
       def _parse_duration
-        @html[/\"duration\":(\d+)/,1].to_i
+        @html[/"duration":(\d+)/,1].to_i
       end
 
       def _parse_height
@@ -75,12 +78,16 @@ module VideoInfo
       end
 
       def _parse_description
-        @html[/<meta name=\"description\" content=\"(.*)\" \/>/,1]
+        @html[/<meta name="description" content="(.*)" \/>/,1]
       end
 
       def _set_info_from_api
         uri = open(_api_url, options)
-        @html = Iconv.conv("UTF8", "CP1251", uri.read).force_encoding('utf-8')
+        if RUBY_VERSION.to_i < 2
+          @html = Iconv.iconv('utf-8', 'cp1251', uri.read)[0]
+        else
+          @html = uri.read.encode("UTF-8")
+        end
         @video = {
           :hash => _parse_hash,
           :view_count => _parse_view_count,

@@ -4,8 +4,6 @@ source "http://rubygems.org"
 gemspec
 
 gem 'coveralls', :require => false
-gem 'htmlentities', :require => false
-gem 'iconv', :require => false
 
 group :tool do
   gem 'ruby_gntp'
