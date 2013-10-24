@@ -2,7 +2,7 @@ require 'video_info/version'
 require 'video_info/provider'
 
 module VideoInfo
-  PROVIDERS = %w[Vimeo Youtube]
+  PROVIDERS = %w[Vimeo Vkontakte Youtube]
   PROVIDERS.each { |p| require "video_info/providers/#{p.downcase}" }
 
   def self.get(url, options = {})
