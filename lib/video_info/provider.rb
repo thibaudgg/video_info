@@ -8,7 +8,7 @@ module VideoInfo
       @options = _clean_options(options)
       @url = url
       _set_video_id_from_url
-      _set_info_from_api if _valid_video_id?
+      _set_info_from_api if _valid_video_id? and !options[:skip_api_call]
     end
 
     def self.usable?(url)
