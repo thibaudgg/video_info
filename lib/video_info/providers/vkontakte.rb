@@ -43,30 +43,51 @@ module VideoInfo
 
       private
 
-      def _set_info_from_api
-        uri = open(_api_url, options)
-        html = uri.read.encode("utf-8", "cp1251")
-        hash = html[/hash2\\":\\\"(\w+)/,1]
-        view_count = html[/mv_num_views\\\"><b>(\d+)/,1].to_i
-        title = html[/<title>(.*)<\/title>/,1].gsub(" | ВКонтакте", "")
-        duration = html[/\"duration\":(\d+)/,1].to_i
+      def _parse_hash
+        @html[/hash2\\":\\\"(\w+)/,1]
+      end
+
+      def _parse_view_count
+        @html[/mv_num_views\\\"><b>(\d+)/,1].to_i
+      end
+
+      def _parse_title
+        @html[/<title>(.*)<\/title>/,1].gsub(" | ВКонтакте", "")
+      end
+
+      def _parse_duration
+        @html[/\"duration\":(\d+)/,1].to_i
+      end
+
+      def _parse_height
+        @html[/url(\d+)/,1].to_i
+      end
+
+      def _get_width(height)
         video_widths = {
           240 => 320,
           360 => 480,
           480 => 640,
           720 => 1280
         }
-        height = html[/url(\d+)/,1].to_i
-        width = video_widths[height]
-        description = html[/<meta name=\"description\" content=\"(.*)\" \/>/,1]
+        video_widths[height]
+      end
+
+      def _parse_description
+        @html[/<meta name=\"description\" content=\"(.*)\" \/>/,1]
+      end
+
+      def _set_info_from_api
+        uri = open(_api_url, options)
+        @html = uri.read.encode("utf-8", "cp1251")
         @video = {
-          :hash => hash,
-          :view_count => view_count,
-          :title => title,
-          :duration => duration,
-          :width => width,
-          :height => height,
-          :description => description
+          :hash => _parse_hash,
+          :view_count => _parse_view_count,
+          :title => _parse_title,
+          :duration => _parse_duration,
+          :width => _get_width(_parse_height),
+          :height => _parse_height,
+          :description => _parse_description
         }
       end
 
