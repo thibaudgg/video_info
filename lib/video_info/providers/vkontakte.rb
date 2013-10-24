@@ -1,3 +1,5 @@
+# encoding: UTF-8
+
 require 'open-uri'
 require 'multi_json'
 require 'htmlentities'
