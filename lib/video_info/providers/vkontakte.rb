@@ -60,13 +60,13 @@ module VideoInfo
         width = video_widths[height]
         description = html[/<meta name=\"description\" content=\"(.*)\" \/>/,1]
         @video = {
-          hash: hash,
-          view_count: view_count,
-          title: title,
-          duration: duration,
-          width: width,
-          height: height,
-          description: description
+          :hash => hash,
+          :view_count => view_count,
+          :title => title,
+          :duration => duration,
+          :width => width,
+          :height => height,
+          :description => description
         }
       end
 
