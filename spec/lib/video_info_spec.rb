@@ -9,6 +9,7 @@ describe VideoInfo do
 
     it "uses the first usable provider" do
       VideoInfo::Providers::Vimeo.should_receive(:usable?).with(url) { false }
+      VideoInfo::Providers::Vkontakte.should_receive(:usable?).with(url) { false }
       VideoInfo::Providers::Youtube.should_receive(:usable?).with(url) { true }
       VideoInfo::Providers::Youtube.should_receive(:new).with(url, options) { provider }
 
@@ -17,6 +18,7 @@ describe VideoInfo do
 
     it "returns nil when no providers are usable" do
       VideoInfo::Providers::Vimeo.should_receive(:usable?).with(url) { false }
+      VideoInfo::Providers::Vkontakte.should_receive(:usable?).with(url) { false }
       VideoInfo::Providers::Youtube.should_receive(:usable?).with(url) { false }
 
       VideoInfo.get(url, options).should be_nil
@@ -30,6 +32,7 @@ describe VideoInfo do
 
     it "returns true when a provider is usable" do
       VideoInfo::Providers::Vimeo.should_receive(:usable?).with(url) { false }
+      VideoInfo::Providers::Vkontakte.should_receive(:usable?).with(url) { false }
       VideoInfo::Providers::Youtube.should_receive(:usable?).with(url) { true }
 
       VideoInfo.usable?(url).should be_true
@@ -37,6 +40,7 @@ describe VideoInfo do
 
     it "returns false when no providers are usable" do
       VideoInfo::Providers::Vimeo.should_receive(:usable?).with(url) { false }
+      VideoInfo::Providers::Vkontakte.should_receive(:usable?).with(url) { false }
       VideoInfo::Providers::Youtube.should_receive(:usable?).with(url) { false }
 
       VideoInfo.usable?(url).should be_false
