@@ -1,17 +1,23 @@
 require 'spec_helper'
 
 describe VideoInfo::Provider do
-
   class ProviderFu < VideoInfo::Provider
     def _url_regex
       /foo\/(\d)/
     end
+
+    def embed_url
+      "foo.com"
+    end
+
+    def _default_url_attributes; {} end
+    def _default_iframe_attributes; {} end
   end
+  let(:url) { 'url' }
+  let(:options) { { } }
+  let(:provider) { ProviderFu.new('foo/1', options) }
 
   describe "initialize" do
-    let(:url) { 'url' }
-    let(:options) { { } }
-    let(:provider) { ProviderFu.new('foo/1', options) }
 
     it { expect { VideoInfo::Provider.new(url) }.to raise_error(NotImplementedError, 'Provider class must implement #_url_regex private method') }
     it { expect { provider.data }.to raise_error(NotImplementedError, 'Provider class must implement #_api_url private method') }
@@ -34,6 +40,20 @@ describe VideoInfo::Provider do
       it "sets the option" do
         expect(provider.options).to include({ 'Referer' => 'http://google.com' })
       end
+    end
+  end
+
+  describe "embed_code" do
+    it "supports url_scheme option" do
+      expect(provider.embed_code(url_scheme: 'https')).to eq '<iframe src="https://foo.com" frameborder="0"></iframe>'
+    end
+
+    it "supports url_attributes option" do
+      expect(provider.embed_code(url_attributes: { foo: 'bar' })).to eq '<iframe src="http://foo.com?foo=bar" frameborder="0"></iframe>'
+    end
+
+    it "supports url_attributes option" do
+      expect(provider.embed_code(iframe_attributes: { foo: 'bar' })).to eq '<iframe src="http://foo.com" frameborder="0" foo="bar"></iframe>'
     end
   end
 

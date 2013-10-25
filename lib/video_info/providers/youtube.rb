@@ -30,7 +30,7 @@ class VideoInfo
       end
 
       def embed_url
-        "http://www.youtube.com/embed/#{video_id}"
+        "www.youtube.com/embed/#{video_id}"
       end
 
       def date
