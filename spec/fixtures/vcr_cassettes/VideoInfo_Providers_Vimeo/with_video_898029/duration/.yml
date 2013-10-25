@@ -8,7 +8,7 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - VideoInfo/1.6.0
+      - VideoInfo/2.0.0
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -20,14 +20,16 @@ http_interactions:
     headers:
       Server:
       - Apache
+      Access-Control-Allow-Origin:
+      - '*'
       X-Ratelimit-Limit:
       - '3600'
       X-Ratelimit-Remaining:
-      - '3596'
+      - '3597'
       X-Ratelimit-Reset:
-      - '1382701011'
+      - '1382736836'
       Expires:
-      - Fri, 25 Oct 2013 10:37:52 GMT
+      - Fri, 25 Oct 2013 20:34:57 GMT
       Last-Modified:
       - Sun, 20 Oct 2013 01:45:34 GMT
       Etag:
@@ -43,9 +45,9 @@ http_interactions:
       Accept-Ranges:
       - bytes
       Date:
-      - Fri, 25 Oct 2013 10:36:52 GMT
+      - Fri, 25 Oct 2013 20:33:57 GMT
       X-Varnish:
-      - '188606017'
+      - '789221273'
       Age:
       - '0'
       Via:
@@ -55,7 +57,7 @@ http_interactions:
       Connection:
       - close
       X-Vserver:
-      - 10.90.128.188
+      - 10.90.128.196
     body:
       encoding: UTF-8
       string: '[{"id":898029,"title":"Cherry Bloom - King Of The Knife","description":"The
@@ -65,5 +67,5 @@ http_interactions:
         Zangs","user_url":"http:\/\/vimeo.com\/octave","user_portrait_small":"http:\/\/b.vimeocdn.com\/ps\/257\/715\/2577152_30.jpg","user_portrait_medium":"http:\/\/b.vimeocdn.com\/ps\/257\/715\/2577152_75.jpg","user_portrait_large":"http:\/\/b.vimeocdn.com\/ps\/257\/715\/2577152_100.jpg","user_portrait_huge":"http:\/\/b.vimeocdn.com\/ps\/257\/715\/2577152_300.jpg","stats_number_of_likes":11,"stats_number_of_plays":4557,"stats_number_of_comments":4,"duration":175,"width":640,"height":360,"tags":"cherry
         bloom, secret sounds, king of the knife, rock, alternative","embed_privacy":"anywhere"}]'
     http_version: 
-  recorded_at: Fri, 25 Oct 2013 10:36:52 GMT
+  recorded_at: Fri, 25 Oct 2013 20:33:57 GMT
 recorded_with: VCR 2.6.0
