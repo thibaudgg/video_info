@@ -18,9 +18,12 @@ Gem::Specification.new do |s|
   s.test_files   = s.files.grep(%r{^spec/})
   s.require_path = 'lib'
 
+  s.required_ruby_version = '>= 1.9.2'
+
   s.add_dependency 'addressable'
   s.add_dependency 'multi_json'
   s.add_dependency 'htmlentities'
+
   s.add_development_dependency 'bundler', '>= 1.3.5'
   s.add_development_dependency 'rake'
   s.add_development_dependency 'rspec'

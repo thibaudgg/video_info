@@ -4,7 +4,7 @@
 
 Simple Ruby Gem to get video info from YouTube, Vimeo and VK url.
 
-Tested against Ruby 1.8.7, 1.9.3, 2.0.0 and the latest versions of JRuby & Rubinius.
+Tested against Ruby 1.9.3, 2.0.0 and the latest versions of JRuby & Rubinius.
 
 Install
 --------
