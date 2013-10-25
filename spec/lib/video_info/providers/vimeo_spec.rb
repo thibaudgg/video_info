@@ -40,14 +40,14 @@ describe VideoInfo::Providers::Vimeo do
   context "with video 898029 and url_attributes", :vcr do
     subject { VideoInfo.new('http://www.vimeo.com/898029') }
 
-    it { expect(subject.embed_code(:url_attributes => { :autoplay => 1 })).to match(/autoplay=1/) }
+    it { expect(subject.embed_code(url_attributes: { autoplay: 1 })).to match(/autoplay=1/) }
   end
 
   context "with video 898029 and iframe_attributes", :vcr do
     subject { VideoInfo.new('http://www.vimeo.com/898029') }
 
-    it { expect(subject.embed_code(:iframe_attributes => { :width => 800, :height => 600 })).to match(/width="800"/) }
-    it { expect(subject.embed_code(:iframe_attributes => { :width => 800, :height => 600 })).to match(/height="600"/) }
+    it { expect(subject.embed_code(iframe_attributes: { width: 800, height: 600 })).to match(/width="800"/) }
+    it { expect(subject.embed_code(iframe_attributes: { width: 800, height: 600 })).to match(/height="600"/) }
   end
 
   context "with video 898029 in /group/ url", :vcr do

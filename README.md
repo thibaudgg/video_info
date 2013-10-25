@@ -60,7 +60,7 @@ You can also use **symbols** instead of strings (any non-word (`/[^a-z]/i`) char
 
 ``` ruby
 video = VideoInfo.new("http://www.youtube.com/watch?v=mZqGqE0D0n4", :referer    => "http://my-youtube-mashup.com/",
-                                                                      :user_agent => "My YouTube Mashup Robot/1.0")
+                                                                      user_agent: "My YouTube Mashup Robot/1.0")
 ```
 
 User-Agent when empty defaults to "VideoInfo/VERSION" - where version is current VideoInfo version, e.g. **"VideoInfo/0.2.7"**.
@@ -70,10 +70,10 @@ It supports all openURI header fields (options), for more information see: [open
 You can also include an `iframe_attributes` or `url_attributes` hash to the `embed_code` method to include arbitrary attributes in the iframe embed code or as additional URL params:
 
 ``` ruby
-VideoInfo.new("http://www.youtube.com/watch?v=mZqGqE0D0n4").embed_code(:iframe_attributes => { :width => 800, :height => 600, "data-key" => "value" })
+VideoInfo.new("http://www.youtube.com/watch?v=mZqGqE0D0n4").embed_code(iframe_attributes: { width: 800, height: 600, "data-key" => "value" })
 => '<iframe src="http://www.youtube.com/embed/mZqGqE0D0n4" frameborder="0" allowfullscreen="allowfullscreen" width="800" height="600" data-key="value"></iframe>
 
-'VideoInfo.new("http://www.youtube.com/watch?v=mZqGqE0D0n4").embed_code(:url_attributes => { :autoplay => 1 })
+'VideoInfo.new("http://www.youtube.com/watch?v=mZqGqE0D0n4").embed_code(url_attributes: { autoplay: 1 })
 => '<iframe src="http://www.youtube.com/embed/mZqGqE0D0n4?autoplay=1" frameborder="0" allowfullscreen="allowfullscreen"></iframe>'
 ```
 

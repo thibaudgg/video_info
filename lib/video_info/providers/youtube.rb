@@ -64,7 +64,7 @@ class VideoInfo
       end
 
       def _default_iframe_attributes
-        { :allowfullscreen => "allowfullscreen" }
+        { allowfullscreen: "allowfullscreen" }
       end
 
       def _default_url_attributes

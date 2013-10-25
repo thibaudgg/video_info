@@ -1,4 +1,4 @@
-require "addressable/uri"
+require 'addressable/uri'
 
 class VideoInfo
   class Provider

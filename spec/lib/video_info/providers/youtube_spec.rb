@@ -45,7 +45,7 @@ describe VideoInfo::Providers::Youtube do
   context "with video oQ49W_xKzKA", :vcr do
     subject { VideoInfo.new('http://www.youtube.com/watch?v=oQ49W_xKzKA') }
 
-    it { expect(subject.embed_code(:url_attributes => { :autoplay => 1 })).to match(/autoplay=1/) }
+    it { expect(subject.embed_code(url_attributes: { autoplay: 1 })).to match(/autoplay=1/) }
   end
 
   context "with video oQ49W_xKzKA", :vcr do
@@ -124,15 +124,15 @@ describe VideoInfo::Providers::Youtube do
     subject { VideoInfo.new('http://www.youtube.com/watch?v=mZqGqE0D0n4') }
 
     its(:provider) { should == 'YouTube' }
-    it { expect(subject.embed_code(:iframe_attributes => { :width => 800, :height => 600 })).to match(/width="800"/) }
-    it { expect(subject.embed_code(:iframe_attributes => { :width => 800, :height => 600 })).to match(/height="600"/) }
+    it { expect(subject.embed_code(iframe_attributes: { width: 800, height: 600 })).to match(/width="800"/) }
+    it { expect(subject.embed_code(iframe_attributes: { width: 800, height: 600 })).to match(/height="600"/) }
   end
 
   context "with arbitrary iframe_attributes", :vcr do
     subject { VideoInfo.new('http://www.youtube.com/watch?v=mZqGqE0D0n4') }
 
     its(:provider)   { should == 'YouTube' }
-    it { expect(subject.embed_code(:iframe_attributes => { :'data-colorbox' => true })).to match(/data-colorbox="true"/) }
+    it { expect(subject.embed_code(iframe_attributes: { :'data-colorbox' => true })).to match(/data-colorbox="true"/) }
   end
 
 end

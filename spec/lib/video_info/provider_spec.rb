@@ -29,7 +29,7 @@ describe VideoInfo::Provider do
     end
 
     context "with Referer options" do
-      let(:options) { { :referer => 'http://google.com' } }
+      let(:options) { { referer: 'http://google.com' } }
 
       it "sets the option" do
         expect(provider.options).to include({ 'Referer' => 'http://google.com' })

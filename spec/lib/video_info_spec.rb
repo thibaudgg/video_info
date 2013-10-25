@@ -4,7 +4,7 @@ describe VideoInfo do
 
   describe "#initialize" do
     let(:url) { 'url' }
-    let(:options) { { :foo => :bar } }
+    let(:options) { { foo: :bar } }
     let(:provider) { double('provider', provider: 'Provider') }
 
     it "uses the first usable provider" do
