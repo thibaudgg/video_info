@@ -22,7 +22,7 @@ describe VideoInfo::Providers::Youtube do
   end
 
   context "with video mZqGqE0D0n4", :vcr do
-    subject { VideoInfo.get('http://www.youtube.com/watch?v=mZqGqE0D0n4') }
+    subject { VideoInfo.new('http://www.youtube.com/watch?v=mZqGqE0D0n4') }
 
     its(:provider)         { should eq 'YouTube' }
     its(:video_id)         { should eq 'mZqGqE0D0n4' }
@@ -43,27 +43,27 @@ describe VideoInfo::Providers::Youtube do
   end
 
   context "with video oQ49W_xKzKA", :vcr do
-    subject { VideoInfo.get('http://www.youtube.com/watch?v=oQ49W_xKzKA') }
+    subject { VideoInfo.new('http://www.youtube.com/watch?v=oQ49W_xKzKA') }
 
-    it { subject.embed_code(:url_attributes => { :autoplay => 1 }).should match(/autoplay=1/) }
+    it { expect(subject.embed_code(:url_attributes => { :autoplay => 1 })).to match(/autoplay=1/) }
   end
 
   context "with video oQ49W_xKzKA", :vcr do
-    subject { VideoInfo.get('http://www.youtube.com/watch?v=oQ49W_xKzKA') }
+    subject { VideoInfo.new('http://www.youtube.com/watch?v=oQ49W_xKzKA') }
 
     its(:provider) { should eq 'YouTube' }
     its(:video_id) { should eq 'oQ49W_xKzKA' }
   end
 
   context "with video Xp6CXF-Cesg", :vcr do
-    subject { VideoInfo.get('http://www.youtube.com/watch?v=Xp6CXF-Cesg') }
+    subject { VideoInfo.new('http://www.youtube.com/watch?v=Xp6CXF-Cesg') }
 
     its(:provider) { should eq 'YouTube' }
     its(:video_id) { should eq 'Xp6CXF-Cesg' }
   end
 
   context "with video VeasFckfMHY in user url", :vcr do
-    subject { VideoInfo.get('http://www.youtube.com/user/EducatorVids3?v=VeasFckfMHY') }
+    subject { VideoInfo.new('http://www.youtube.com/user/EducatorVids3?v=VeasFckfMHY') }
 
     its(:provider) { should eq 'YouTube' }
     its(:video_id) { should eq 'VeasFckfMHY' }
@@ -71,7 +71,7 @@ describe VideoInfo::Providers::Youtube do
   end
 
   context "with video VeasFckfMHY after params", :vcr do
-    subject { VideoInfo.get('http://www.youtube.com/watch?feature=player_profilepage&v=VeasFckfMHY') }
+    subject { VideoInfo.new('http://www.youtube.com/watch?feature=player_profilepage&v=VeasFckfMHY') }
 
     its(:provider) { should eq 'YouTube' }
     its(:video_id) { should eq 'VeasFckfMHY' }
@@ -79,60 +79,60 @@ describe VideoInfo::Providers::Youtube do
   end
 
   context "with video VeasFckfMHY in path", :vcr do
-    subject { VideoInfo.get('http://www.youtube.com/v/VeasFckfMHY') }
+    subject { VideoInfo.new('http://www.youtube.com/v/VeasFckfMHY') }
 
     its(:provider) { should eq 'YouTube' }
     its(:video_id) { should eq 'VeasFckfMHY' }
   end
 
   context "with video VeasFckfMHY in e path", :vcr do
-    subject { VideoInfo.get('http://www.youtube.com/e/VeasFckfMHY') }
+    subject { VideoInfo.new('http://www.youtube.com/e/VeasFckfMHY') }
 
     its(:provider) { should eq 'YouTube' }
     its(:video_id) { should eq 'VeasFckfMHY' }
   end
 
   context "with video VeasFckfMHY in embed path", :vcr do
-    subject { VideoInfo.get('http://www.youtube.com/embed/VeasFckfMHY') }
+    subject { VideoInfo.new('http://www.youtube.com/embed/VeasFckfMHY') }
 
     its(:provider) { should eq 'YouTube' }
     its(:video_id) { should eq 'VeasFckfMHY' }
   end
 
   context "with video JM9NgvjjVng in youtu.be url", :vcr do
-    subject { VideoInfo.get('http://youtu.be/JM9NgvjjVng') }
+    subject { VideoInfo.new('http://youtu.be/JM9NgvjjVng') }
 
     its(:provider) { should eq 'YouTube' }
     its(:video_id) { should eq 'JM9NgvjjVng' }
   end
 
   context 'without http or www', :vcr do
-    subject { VideoInfo.get('youtu.be/JM9NgvjjVng') }
+    subject { VideoInfo.new('youtu.be/JM9NgvjjVng') }
 
     its(:provider) { should == 'YouTube' }
     its(:video_id) { should eq 'JM9NgvjjVng' }
   end
 
   context "with video url in text", :vcr do
-    subject { VideoInfo.get('<a href="http://www.youtube.com/watch?v=mZqGqE0D0n4">http://www.youtube.com/watch?v=mZqGqE0D0n4</a>') }
+    subject { VideoInfo.new('<a href="http://www.youtube.com/watch?v=mZqGqE0D0n4">http://www.youtube.com/watch?v=mZqGqE0D0n4</a>') }
 
     its(:provider) { should == 'YouTube' }
     its(:video_id) { should == 'mZqGqE0D0n4' }
   end
 
   context "with iframe attributes", :vcr do
-    subject { VideoInfo.get('http://www.youtube.com/watch?v=mZqGqE0D0n4') }
+    subject { VideoInfo.new('http://www.youtube.com/watch?v=mZqGqE0D0n4') }
 
     its(:provider) { should == 'YouTube' }
-    it { subject.embed_code(:iframe_attributes => { :width => 800, :height => 600 }).should match(/width="800"/) }
-    it { subject.embed_code(:iframe_attributes => { :width => 800, :height => 600 }).should match(/height="600"/) }
+    it { expect(subject.embed_code(:iframe_attributes => { :width => 800, :height => 600 })).to match(/width="800"/) }
+    it { expect(subject.embed_code(:iframe_attributes => { :width => 800, :height => 600 })).to match(/height="600"/) }
   end
 
   context "with arbitrary iframe_attributes", :vcr do
-    subject { VideoInfo.get('http://www.youtube.com/watch?v=mZqGqE0D0n4') }
+    subject { VideoInfo.new('http://www.youtube.com/watch?v=mZqGqE0D0n4') }
 
     its(:provider)   { should == 'YouTube' }
-    it { subject.embed_code(:iframe_attributes => { :'data-colorbox' => true }).should match(/data-colorbox="true"/) }
+    it { expect(subject.embed_code(:iframe_attributes => { :'data-colorbox' => true })).to match(/data-colorbox="true"/) }
   end
 
 end

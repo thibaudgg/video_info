@@ -1,14 +1,13 @@
 require "addressable/uri"
 
-module VideoInfo
+class VideoInfo
   class Provider
-    attr_accessor :url, :options, :iframe_attributes, :video_id, :video
+    attr_accessor :url, :options, :iframe_attributes, :video_id, :data
 
     def initialize(url, options = {})
       @options = _clean_options(options)
       @url = url
       _set_video_id_from_url
-      _set_info_from_api if _valid_video_id?
     end
 
     def self.usable?(url)
@@ -21,6 +20,10 @@ module VideoInfo
       iframe_attrs << _hash_to_attributes(_default_iframe_attributes.merge(iframe_attributes))
 
       "<iframe #{iframe_attrs.reject(&:empty?).join(" ")}></iframe>"
+    end
+
+    def data
+      @data ||= _set_data_from_api
     end
 
     private
@@ -36,9 +39,9 @@ module VideoInfo
       options
     end
 
-    def _set_info_from_api
+    def _set_data_from_api
       uri = open(_api_url, options)
-      @video = MultiJson.load(uri.read)
+      MultiJson.load(uri.read)
     end
 
     def _not_openuri_option_symbol?(key)
@@ -50,7 +53,10 @@ module VideoInfo
     end
 
     def _set_video_id_from_url
-      url.gsub(_url_regex) { @video_id = $1 || $2 || $3 }
+      @url.gsub(_url_regex) { @video_id = $1 || $2 || $3 }
+      unless _valid_video_id?
+        raise UrlError, "Url is not valid, video_id is not found: #{url}"
+      end
     end
 
     def _valid_video_id?

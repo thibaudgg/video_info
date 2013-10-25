@@ -2,48 +2,48 @@ require 'spec_helper'
 
 describe VideoInfo do
 
-  describe ".get" do
+  describe "#initialize" do
     let(:url) { 'url' }
     let(:options) { { :foo => :bar } }
-    let(:provider) { double('provider') }
+    let(:provider) { double('provider', provider: 'Provider') }
 
     it "uses the first usable provider" do
-      VideoInfo::Providers::Vimeo.should_receive(:usable?).with(url) { false }
-      VideoInfo::Providers::Vkontakte.should_receive(:usable?).with(url) { false }
-      VideoInfo::Providers::Youtube.should_receive(:usable?).with(url) { true }
-      VideoInfo::Providers::Youtube.should_receive(:new).with(url, options) { provider }
+      VideoInfo::Providers::Vimeo.stub(:usable?) { false }
+      VideoInfo::Providers::Vkontakte.stub(:usable?) { false }
+      VideoInfo::Providers::Youtube.stub(:usable?) { true }
+      VideoInfo::Providers::Youtube.stub(:new) { provider }
 
-      VideoInfo.get(url, options).should eq provider
+      expect(VideoInfo.new(url, options).provider).to eq 'Provider'
     end
 
-    it "returns nil when no providers are usable" do
-      VideoInfo::Providers::Vimeo.should_receive(:usable?).with(url) { false }
-      VideoInfo::Providers::Vkontakte.should_receive(:usable?).with(url) { false }
-      VideoInfo::Providers::Youtube.should_receive(:usable?).with(url) { false }
+    it "raise when no providers are usable" do
+      VideoInfo::Providers::Vimeo.stub(:usable?) { false }
+      VideoInfo::Providers::Vkontakte.stub(:usable?) { false }
+      VideoInfo::Providers::Youtube.stub(:usable?) { false }
 
-      VideoInfo.get(url, options).should be_nil
+      expect { VideoInfo.new(url, options) }.to raise_error(VideoInfo::UrlError)
     end
   end
 
   describe ".usable?" do
     let(:url) { 'url' }
-    let(:options) { { :foo => :bar } }
-    let(:provider) { double('provider') }
+    let(:provider) { double('provider', new: true) }
 
     it "returns true when a provider is usable" do
-      VideoInfo::Providers::Vimeo.should_receive(:usable?).with(url) { false }
-      VideoInfo::Providers::Vkontakte.should_receive(:usable?).with(url) { false }
-      VideoInfo::Providers::Youtube.should_receive(:usable?).with(url) { true }
+      VideoInfo::Providers::Vimeo.stub(:usable?) { false }
+      VideoInfo::Providers::Vkontakte.stub(:usable?) { false }
+      VideoInfo::Providers::Youtube.stub(:usable?) { true }
+      VideoInfo::Providers::Youtube.stub(:new) { true }
 
-      VideoInfo.usable?(url).should be_true
+      expect(VideoInfo.usable?(url)).to be_true
     end
 
     it "returns false when no providers are usable" do
-      VideoInfo::Providers::Vimeo.should_receive(:usable?).with(url) { false }
-      VideoInfo::Providers::Vkontakte.should_receive(:usable?).with(url) { false }
-      VideoInfo::Providers::Youtube.should_receive(:usable?).with(url) { false }
+      VideoInfo::Providers::Vimeo.stub(:usable?) { false }
+      VideoInfo::Providers::Vkontakte.stub(:usable?) { false }
+      VideoInfo::Providers::Youtube.stub(:usable?) { false }
 
-      VideoInfo.usable?(url).should be_false
+      expect(VideoInfo.usable?(url)).to be_false
     end
   end
 

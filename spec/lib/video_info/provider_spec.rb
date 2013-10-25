@@ -11,20 +11,20 @@ describe VideoInfo::Provider do
   describe "initialize" do
     let(:url) { 'url' }
     let(:options) { { } }
-    let(:provider) { ProviderFu.new(url, options) }
+    let(:provider) { ProviderFu.new('foo/1', options) }
 
     it { expect { VideoInfo::Provider.new(url) }.to raise_error(NotImplementedError, 'Provider class must implement #_url_regex private method') }
-    it { expect { ProviderFu.new('foo/1') }.to raise_error(NotImplementedError, 'Provider class must implement #_api_url private method') }
+    it { expect { provider.data }.to raise_error(NotImplementedError, 'Provider class must implement #_api_url private method') }
 
     it "sets default user_agent options" do
-      provider.options.should eq({ 'User-Agent' => "VideoInfo/#{VideoInfo::VERSION}" })
+      expect(provider.options).to eq({ 'User-Agent' => "VideoInfo/#{VideoInfo::VERSION}" })
     end
 
     context "with custom User-Agent options" do
       let(:options) { { 'User-Agent' => 'Test User Agent / 1.0' } }
 
       it "sets the option" do
-        provider.options.should eq({ 'User-Agent' => 'Test User Agent / 1.0' })
+        expect(provider.options).to eq({ 'User-Agent' => 'Test User Agent / 1.0' })
       end
     end
 
@@ -32,7 +32,7 @@ describe VideoInfo::Provider do
       let(:options) { { :referer => 'http://google.com' } }
 
       it "sets the option" do
-        provider.options.should include({ 'Referer' => 'http://google.com' })
+        expect(provider.options).to include({ 'Referer' => 'http://google.com' })
       end
     end
   end

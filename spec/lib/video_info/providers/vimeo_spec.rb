@@ -17,11 +17,11 @@ describe VideoInfo::Providers::Vimeo do
   end
 
   context "with video 898029", :vcr do
-    subject { VideoInfo.get('http://www.vimeo.com/898029') }
+    subject { VideoInfo.new('http://www.vimeo.com/898029') }
 
     its(:provider)         { should eq 'Vimeo' }
     its(:video_id)         { should eq '898029' }
-    its(:url)              { should eq 'http://vimeo.com/898029' }
+    its(:url)              { should eq 'http://www.vimeo.com/898029' }
     its(:embed_url)        { should eq 'http://player.vimeo.com/video/898029' }
     its(:embed_code)       { should eq '<iframe src="http://player.vimeo.com/video/898029?autoplay=0&byline=0&portrait=0&title=0" frameborder="0"></iframe>' }
     its(:title)            { should eq 'Cherry Bloom - King Of The Knife' }
@@ -38,34 +38,34 @@ describe VideoInfo::Providers::Vimeo do
   end
 
   context "with video 898029 and url_attributes", :vcr do
-    subject { VideoInfo.get('http://www.vimeo.com/898029') }
+    subject { VideoInfo.new('http://www.vimeo.com/898029') }
 
-    it { subject.embed_code(:url_attributes => { :autoplay => 1 }).should match(/autoplay=1/) }
+    it { expect(subject.embed_code(:url_attributes => { :autoplay => 1 })).to match(/autoplay=1/) }
   end
 
   context "with video 898029 and iframe_attributes", :vcr do
-    subject { VideoInfo.get('http://www.vimeo.com/898029') }
+    subject { VideoInfo.new('http://www.vimeo.com/898029') }
 
-    it { subject.embed_code(:iframe_attributes => { :width => 800, :height => 600 }).should match(/width="800"/) }
-    it { subject.embed_code(:iframe_attributes => { :width => 800, :height => 600 }).should match(/height="600"/) }
+    it { expect(subject.embed_code(:iframe_attributes => { :width => 800, :height => 600 })).to match(/width="800"/) }
+    it { expect(subject.embed_code(:iframe_attributes => { :width => 800, :height => 600 })).to match(/height="600"/) }
   end
 
   context "with video 898029 in /group/ url", :vcr do
-    subject { VideoInfo.get('http://vimeo.com/groups/1234/videos/898029') }
+    subject { VideoInfo.new('http://vimeo.com/groups/1234/videos/898029') }
 
     its(:provider) { should eq 'Vimeo' }
     its(:video_id) { should eq '898029' }
   end
 
   context "with video 898029 in /group/ url", :vcr do
-    subject { VideoInfo.get('http://player.vimeo.com/video/898029') }
+    subject { VideoInfo.new('http://player.vimeo.com/video/898029') }
 
     its(:provider) { should eq 'Vimeo' }
     its(:video_id) { should eq '898029' }
   end
 
   context "with video 898029 in text", :vcr do
-    subject { VideoInfo.get('<a href="http://www.vimeo.com/898029">http://www.vimeo.com/898029</a>') }
+    subject { VideoInfo.new('<a href="http://www.vimeo.com/898029">http://www.vimeo.com/898029</a>') }
 
     its(:provider) { should eq 'Vimeo' }
     its(:video_id) { should eq '898029' }

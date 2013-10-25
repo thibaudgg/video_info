@@ -1,7 +1,7 @@
 require 'open-uri'
 require 'multi_json'
 
-module VideoInfo
+class VideoInfo
   module Providers
     class Vimeo < Provider
 
@@ -11,10 +11,6 @@ module VideoInfo
 
       def provider
         'Vimeo'
-      end
-
-      def url
-        video ? video['url'] : @url
       end
 
       %w[title description thumbnail_small thumbnail_medium thumbnail_large].each do |method|
@@ -42,7 +38,7 @@ module VideoInfo
       end
 
       def video
-        @video && @video.first
+        data && data.first
       end
 
       private

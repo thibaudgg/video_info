@@ -21,17 +21,17 @@ http_interactions:
       Server:
       - nginx/1.2.4
       Date:
-      - Fri, 25 Oct 2013 10:39:44 GMT
+      - Fri, 25 Oct 2013 10:39:45 GMT
       Content-Type:
       - text/html; charset=windows-1251
       Content-Length:
-      - '13000'
+      - '13001'
       Connection:
       - keep-alive
       X-Powered-By:
       - PHP/3.2907
       Set-Cookie:
-      - remixlang=3; expires=Thu, 30-Oct-2014 13:23:03 GMT; path=/; domain=.vk.com
+      - remixlang=3; expires=Wed, 29-Oct-2014 13:56:26 GMT; path=/; domain=.vk.com
       Pragma:
       - no-cache
       Cache-Control:
@@ -62,8 +62,8 @@ http_interactions:
         LAogIGlwX2g6ICdjMzk5OTZhMzA1NGUxMDFmZTUnLAogIHZjX2g6ICc2ZmJl
         MmVkZGMxMThkNzEwY2NiMjQwODI4MzZjNTIxYicsCiAgbmF2UHJlZml4OiAn
         LycsCiAgZHQ6IHBhcnNlSW50KCcwJykgfHwgMCwKICBmczogcGFyc2VJbnQo
-        JzExJykgfHwgMTEsCiAgdHM6IDEzODI2OTc1ODQsCiAgcGQ6IDAsCiAgcGFk
-        czogMSwKICB0aW1lOiBbMjAxMywgMTAsIDI1LCAxNCwgMzksIDQ0XQp9Cgp3
+        JzExJykgfHwgMTEsCiAgdHM6IDEzODI2OTc1ODUsCiAgcGQ6IDAsCiAgcGFk
+        czogMSwKICB0aW1lOiBbMjAxMywgMTAsIDI1LCAxNCwgMzksIDQ1XQp9Cgp3
         aW5kb3cubG9jRG9tYWluID0gdmsuaG9zdC5tYXRjaCgvW2EtekEtWl0rXC5b
         YS16QS1aXStcLj8kLylbMF07CnZhciBfdWEgPSBuYXZpZ2F0b3IudXNlckFn
         ZW50LnRvTG93ZXJDYXNlKCk7CmlmICgvb3BlcmEvaS50ZXN0KF91YSkgfHwg
@@ -1094,5 +1094,5 @@ http_interactions:
         ZGVvIjoiMzk1NzYyMjNfMTA4MzcwNTE1In19KTsKICAgIH0KICA8L3Njcmlw
         dD4KPC9ib2R5PgoKPC9odG1sPg==
     http_version: 
-  recorded_at: Fri, 25 Oct 2013 10:39:44 GMT
+  recorded_at: Fri, 25 Oct 2013 10:39:45 GMT
 recorded_with: VCR 2.6.0

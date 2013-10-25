@@ -1,7 +1,7 @@
 require 'open-uri'
 require 'multi_json'
 
-module VideoInfo
+class VideoInfo
   module Providers
     class Youtube < Provider
 
@@ -72,11 +72,11 @@ module VideoInfo
       end
 
       def _video_entry
-        video['entry']
+        data['entry']
       end
 
       def _video_media_group
-        video['entry']['media$group']
+        data['entry']['media$group']
       end
 
       def _video_thumbnail(id)

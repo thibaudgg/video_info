@@ -17,7 +17,7 @@ Usage
 -----
 
 ``` ruby
-video = VideoInfo.get("http://www.youtube.com/watch?v=mZqGqE0D0n4")
+video = VideoInfo.new("http://www.youtube.com/watch?v=mZqGqE0D0n4")
 # video.video_id         => "mZqGqE0D0n4"
 # video.provider         => "YouTube"
 # video.title            => "Cherry Bloom - King Of The Knife"
@@ -30,7 +30,7 @@ video = VideoInfo.get("http://www.youtube.com/watch?v=mZqGqE0D0n4")
 # video.embed_url        => "http://www.youtube.com/embed/mZqGqE0D0n4"
 # video.embed_code       => "'<iframe src="http://www.youtube.com/embed/mZqGqE0D0n4" frameborder="0" allowfullscreen="allowfullscreen"></iframe>'"
 
-video = VideoInfo.get("http://vimeo.com/898029")
+video = VideoInfo.new("http://vimeo.com/898029")
 # video.video_id         => "898029"
 # video.provider         => "Vimeo"
 # video.title            => "Cherry Bloom - King Of The Knife"
@@ -51,15 +51,15 @@ Options
 -------
 
 ``` ruby
-video = VideoInfo.get("http://www.youtube.com/watch?v=mZqGqE0D0n4", "User-Agent" => "My YouTube Mashup Robot/1.0")
-video = VideoInfo.get("http://www.youtube.com/watch?v=mZqGqE0D0n4", "Referer"    => "http://my-youtube-mashup.com/")
-video = VideoInfo.get("http://www.youtube.com/watch?v=mZqGqE0D0n4", "Referer"    => "http://my-youtube-mashup.com/",
+video = VideoInfo.new("http://www.youtube.com/watch?v=mZqGqE0D0n4", "User-Agent" => "My YouTube Mashup Robot/1.0")
+video = VideoInfo.new("http://www.youtube.com/watch?v=mZqGqE0D0n4", "Referer"    => "http://my-youtube-mashup.com/")
+video = VideoInfo.new("http://www.youtube.com/watch?v=mZqGqE0D0n4", "Referer"    => "http://my-youtube-mashup.com/",
                                                                     "User-Agent" => "My YouTube Mashup Robot/1.0")
 ```
 You can also use **symbols** instead of strings (any non-word (`/[^a-z]/i`) character would be converted to hyphen).
 
 ``` ruby
-video = VideoInfo.get("http://www.youtube.com/watch?v=mZqGqE0D0n4", :referer    => "http://my-youtube-mashup.com/",
+video = VideoInfo.new("http://www.youtube.com/watch?v=mZqGqE0D0n4", :referer    => "http://my-youtube-mashup.com/",
                                                                       :user_agent => "My YouTube Mashup Robot/1.0")
 ```
 
@@ -70,10 +70,10 @@ It supports all openURI header fields (options), for more information see: [open
 You can also include an `iframe_attributes` or `url_attributes` hash to the `embed_code` method to include arbitrary attributes in the iframe embed code or as additional URL params:
 
 ``` ruby
-VideoInfo.get("http://www.youtube.com/watch?v=mZqGqE0D0n4").embed_code(:iframe_attributes => { :width => 800, :height => 600, "data-key" => "value" })
+VideoInfo.new("http://www.youtube.com/watch?v=mZqGqE0D0n4").embed_code(:iframe_attributes => { :width => 800, :height => 600, "data-key" => "value" })
 => '<iframe src="http://www.youtube.com/embed/mZqGqE0D0n4" frameborder="0" allowfullscreen="allowfullscreen" width="800" height="600" data-key="value"></iframe>
 
-'VideoInfo.get("http://www.youtube.com/watch?v=mZqGqE0D0n4").embed_code(:url_attributes => { :autoplay => 1 })
+'VideoInfo.new("http://www.youtube.com/watch?v=mZqGqE0D0n4").embed_code(:url_attributes => { :autoplay => 1 })
 => '<iframe src="http://www.youtube.com/embed/mZqGqE0D0n4?autoplay=1" frameborder="0" allowfullscreen="allowfullscreen"></iframe>'
 ```
 
