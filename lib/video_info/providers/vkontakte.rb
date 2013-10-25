@@ -1,6 +1,12 @@
+# encoding: UTF-8
+
 require 'open-uri'
 require 'multi_json'
 require 'htmlentities'
+
+if RUBY_VERSION.to_i < 2
+  require 'iconv'
+end
 
 class VideoInfo
   module Providers
@@ -53,7 +59,11 @@ class VideoInfo
 
       def _set_data_from_api
         uri = open(_api_url, options)
-        uri.read.encode("UTF-8")
+        if RUBY_VERSION.to_i < 2
+          Iconv.iconv('utf-8', 'cp1251', uri.read)[0]
+        else
+          uri.read.encode("UTF-8")
+        end
       end
 
       def _data_hash
