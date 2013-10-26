@@ -1095,4 +1095,45 @@ http_interactions:
         c2NyaXB0Pgo8L2JvZHk+Cgo8L2h0bWw+
     http_version: 
   recorded_at: Fri, 25 Oct 2013 20:34:00 GMT
+- request:
+    method: get
+    uri: http://vk.com/video_
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - VideoInfo/2.0.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Server:
+      - nginx/1.2.4
+      Date:
+      - Sat, 26 Oct 2013 11:12:56 GMT
+      Content-Type:
+      - text/html
+      Content-Length:
+      - '397'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: |
+        <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+        <html><head>
+        <title>404 Not Found</title>
+        </head>
+          <body style="background: #3f5d81 url(http://vk.me/images/error404.png) no-repeat 50% 50%; width: 100%; height: 100%; overflow: hidden;">
+            <a style="position: absolute; left: 50%; top: 50%; margin: -265px -345px 0px; height: 530px; width: 690px;" href="http://vk.com/"></a>
+          </body>
+        </html>
+    http_version: 
+  recorded_at: Sat, 26 Oct 2013 11:12:56 GMT
 recorded_with: VCR 2.6.0
