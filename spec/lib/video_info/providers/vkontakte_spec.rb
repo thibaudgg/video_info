@@ -40,7 +40,7 @@ describe VideoInfo::Providers::Vkontakte do
     subject { VideoInfo.new('http://vk.com/video-54799401_165822734') }
 
     its(:provider)         { should eq 'Vkontakte' }
-    its(:video_owner)      { should eq '54799401' }
+    its(:video_owner)      { should eq '-54799401' }
     its(:video_id)         { should eq '165822734' }
     its(:title)            { should eq 'SpaceGlasses are the future of computing' }
   end

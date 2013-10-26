@@ -70,11 +70,11 @@ class VideoInfo
       end
 
       def _set_video_id_from_url
-        url.gsub(_url_regex) { @video_owner, @video_id = $2.split('_') }
+        url.gsub(_url_regex) { @video_owner, @video_id = $1.split('_') }
       end
 
       def _url_regex
-        /(?:vkontakte\.ru\/video|vk\.com\/video)(-?)(\d+_\d+)/i
+        /(?:vkontakte\.ru\/video|vk\.com\/video)(-?\d+_\d+)/i
       end
 
       def _default_iframe_attributes
