@@ -1,11 +1,5 @@
-# encoding: UTF-8
-
-require 'open-uri'
 require 'htmlentities'
-
-if RUBY_VERSION.to_i < 2
-  require 'iconv'
-end
+require 'iconv' if RUBY_VERSION.to_i < 2
 
 class VideoInfo
   module Providers

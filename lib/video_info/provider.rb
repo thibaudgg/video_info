@@ -1,3 +1,5 @@
+require 'open-uri'
+require 'multi_json'
 require 'addressable/uri'
 
 class VideoInfo

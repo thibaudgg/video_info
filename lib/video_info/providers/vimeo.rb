@@ -1,6 +1,3 @@
-require 'open-uri'
-require 'multi_json'
-
 class VideoInfo
   module Providers
     class Vimeo < Provider
