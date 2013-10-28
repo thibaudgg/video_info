@@ -1,7 +1,6 @@
 # encoding: UTF-8
 
 require 'open-uri'
-require 'multi_json'
 require 'htmlentities'
 
 if RUBY_VERSION.to_i < 2
@@ -44,7 +43,7 @@ class VideoInfo
       end
 
       def view_count
-        data[/mv_num_views\\">(\d+)/,1].to_i
+        data[/mv_num_views\\">.*?(\d+)/,1].to_i
       end
 
       def embed_url
@@ -58,7 +57,7 @@ class VideoInfo
       private
 
       def _set_data_from_api
-        uri = open(_api_url, options)
+        uri = open(url, options)
         if RUBY_VERSION.to_i < 2
           Iconv.iconv('utf-8', 'cp1251', uri.read)[0]
         else
@@ -71,15 +70,11 @@ class VideoInfo
       end
 
       def _set_video_id_from_url
-        url.gsub(_url_regex) { @video_owner, @video_id = ($1 || $2 || $3).split('_') }
+        url.gsub(_url_regex) { @video_owner, @video_id = $1.split('_') }
       end
 
       def _url_regex
-        /(?:vkontakte\.ru\/video|vk\.com\/video)(\d+_\d+)/i
-      end
-
-      def _api_url
-        "http://vk.com/video#{video_owner}_#{video_id}"
+        /(?:vkontakte\.ru\/video|vk\.com\/video)(-?\d+_\d+)/i
       end
 
       def _default_iframe_attributes
