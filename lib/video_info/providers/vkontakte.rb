@@ -1,3 +1,4 @@
+# encoding: UTF-8
 require 'htmlentities'
 require 'iconv' if RUBY_VERSION.to_i < 2
 
