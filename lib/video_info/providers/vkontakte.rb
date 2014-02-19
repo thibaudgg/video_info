@@ -60,6 +60,22 @@ class VideoInfo
         end
       end
 
+      def _response_code
+        response = nil
+        Net::HTTP.start(_api_base, 80) {|http|
+          response = http.get(_api_path)
+        }
+        response.code
+      end
+
+      def _api_base
+        URI::parse(url).host
+      end
+
+      def _api_path
+        URI::parse(url).path
+      end
+
       def _data_hash
         data[/hash2\\":\\"(\w+)/,1]
       end
