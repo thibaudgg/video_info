@@ -49,7 +49,7 @@ describe VideoInfo::Providers::Youtube do
     its(:title)            { should eq 'Cherry Bloom - King Of The Knife' }
     its(:description)      { should eq 'The first video from the upcoming album Secret Sounds, to download in-stores April 14. Checkout http://www.cherrybloom.net' }
     its(:keywords)         { should be_nil }
-    its(:duration)         { should eq 175 }
+    its(:duration)         { should eq 176 }
     its(:width)            { should be_nil }
     its(:height)           { should be_nil }
     its(:date)             { should eq Time.parse('Sat Apr 12 22:25:35 UTC 2008', Time.now.utc) }
