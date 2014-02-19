@@ -21,6 +21,23 @@ describe VideoInfo::Providers::Youtube do
     end
   end
 
+  describe "#available?" do
+    context "with valid video", :vcr do
+      subject { VideoInfo.new('http://www.youtube.com/watch?v=mZqGqE0D0n4') }
+      its(:available?)       { should be_true }
+    end
+
+    context "with 'video is unavailable' video", :vcr do
+      subject { VideoInfo.new('http://www.youtube.com/watch?v=SUkXvWn1m7Q') }
+      its(:available?)       { should be_false }
+    end
+
+    context "with 'video no longer available due to a copyright claim' video", :vcr do
+      subject { VideoInfo.new('http://www.youtube.com/watch?v=ffClNhwx0KU') }
+      its(:available?)       { should be_false }
+    end
+  end
+
   context "with video mZqGqE0D0n4", :vcr do
     subject { VideoInfo.new('http://www.youtube.com/watch?v=mZqGqE0D0n4') }
 

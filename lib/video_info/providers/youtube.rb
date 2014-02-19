@@ -10,6 +10,10 @@ class VideoInfo
         'YouTube'
       end
 
+      def available?
+        !%w[403 404].include?(response_code)
+      end
+
       def title
         _video_entry['title']['$t']
       end
@@ -56,8 +60,16 @@ class VideoInfo
         /(?:youtube(?:-nocookie)?\.com\/(?:[^\/]+\/.+\/|(?:v|e(?:mbed)?)\/|.*[?&]v=)|youtu\.be\/)([^"&?\/ ]{11})/i
       end
 
+      def _api_base
+        "gdata.youtube.com"
+      end
+
+      def _api_path
+        "/feeds/api/videos/#{video_id}?v=2&alt=json"
+      end
+
       def _api_url
-        "http://gdata.youtube.com/feeds/api/videos/#{video_id}?v=2&alt=json"
+        "http://#{_api_base}#{_api_path}"
       end
 
       def _default_iframe_attributes

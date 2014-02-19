@@ -14,6 +14,7 @@ class VideoInfo
   def_delegators :@provider, :date, :duration, :width, :height
   def_delegators :@provider, :thumbnail_small, :thumbnail_medium, :thumbnail_large
   def_delegators :@provider, :embed_code, :embed_url
+  def_delegators :@provider, :available?
 
   def initialize(url, options = {})
     @provider = _select_provider(url, options)

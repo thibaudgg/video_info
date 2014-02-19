@@ -28,6 +28,14 @@ class VideoInfo
       @data ||= _set_data_from_api
     end
 
+    def response_code
+      response = nil
+      Net::HTTP.start(_api_base, 80) {|http|
+        response = http.head(_api_path)
+      }
+      response.code
+    end
+
     private
 
     def _clean_options(options)
