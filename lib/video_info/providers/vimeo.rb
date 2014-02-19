@@ -10,10 +10,6 @@ class VideoInfo
         'Vimeo'
       end
 
-      def available?
-        !%w[403 404].include?(response_code)
-      end
-
       %w[title description thumbnail_small thumbnail_medium thumbnail_large].each do |method|
         define_method(method) { video[method] }
       end

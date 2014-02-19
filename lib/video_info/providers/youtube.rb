@@ -10,10 +10,6 @@ class VideoInfo
         'YouTube'
       end
 
-      def available?
-        !%w[403 404].include?(response_code)
-      end
-
       def title
         _video_entry['title']['$t']
       end
