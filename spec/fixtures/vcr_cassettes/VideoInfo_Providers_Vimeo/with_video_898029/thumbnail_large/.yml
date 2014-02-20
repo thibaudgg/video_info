@@ -8,32 +8,43 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - VideoInfo/2.0.0
+      - VideoInfo/2.0.2
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
-      - '*/*'
+      - "*/*"
   response:
     status:
       code: 200
       message: OK
     headers:
+      Age:
+      - '4'
+      Date:
+      - Thu, 20 Feb 2014 12:43:21 GMT
+      Expires:
+      - Thu, 20 Feb 2014 12:44:21 GMT
+      Connection:
+      - Keep-Alive
+      Via:
+      - 1.1 varnish
+      - dnet-dca
+      Etag:
+      - "\"6dfa4929546eb170df1cf6c24e6b93e8\""
       Server:
       - Apache
       Access-Control-Allow-Origin:
-      - '*'
+      - "*"
       X-Ratelimit-Limit:
       - '3600'
       X-Ratelimit-Remaining:
       - '3598'
       X-Ratelimit-Reset:
-      - '1382736836'
-      Expires:
-      - Fri, 25 Oct 2013 20:34:57 GMT
+      - '1392892121'
       Last-Modified:
-      - Sun, 20 Oct 2013 01:45:34 GMT
-      Etag:
-      - '"c632ac4e6ac3e1fcd30be3046eb936b0"'
+      - Fri, 14 Feb 2014 05:07:12 GMT
+      X-Ua-Compatible:
+      - IE=edge
       X-Dns-Prefetch-Control:
       - 'on'
       Vary:
@@ -44,28 +55,22 @@ http_interactions:
       - '498'
       Accept-Ranges:
       - bytes
-      Date:
-      - Fri, 25 Oct 2013 20:33:58 GMT
       X-Varnish:
-      - 2263931728 2263930921
-      Age:
-      - '2'
-      Via:
-      - 1.1 varnish
+      - '1744118388'
       X-Varnish-Cache:
-      - '1'
-      Connection:
+      - '0'
+      Nncoection:
       - close
       X-Vserver:
       - 10.90.128.146
     body:
       encoding: UTF-8
-      string: '[{"id":898029,"title":"Cherry Bloom - King Of The Knife","description":"The
+      string: "[{\"id\":898029,\"title\":\"Cherry Bloom - King Of The Knife\",\"description\":\"The
         first video from the upcoming album Secret Sounds, to download in-stores April
-        14. Checkout http:\/\/www.cherrybloom.net","url":"http:\/\/vimeo.com\/898029","upload_date":"2008-04-14
-        13:10:39","thumbnail_small":"http:\/\/b.vimeocdn.com\/ts\/343\/731\/34373130_100.jpg","thumbnail_medium":"http:\/\/b.vimeocdn.com\/ts\/343\/731\/34373130_200.jpg","thumbnail_large":"http:\/\/b.vimeocdn.com\/ts\/343\/731\/34373130_640.jpg","user_id":206215,"user_name":"Octave
-        Zangs","user_url":"http:\/\/vimeo.com\/octave","user_portrait_small":"http:\/\/b.vimeocdn.com\/ps\/257\/715\/2577152_30.jpg","user_portrait_medium":"http:\/\/b.vimeocdn.com\/ps\/257\/715\/2577152_75.jpg","user_portrait_large":"http:\/\/b.vimeocdn.com\/ps\/257\/715\/2577152_100.jpg","user_portrait_huge":"http:\/\/b.vimeocdn.com\/ps\/257\/715\/2577152_300.jpg","stats_number_of_likes":11,"stats_number_of_plays":4557,"stats_number_of_comments":4,"duration":175,"width":640,"height":360,"tags":"cherry
-        bloom, secret sounds, king of the knife, rock, alternative","embed_privacy":"anywhere"}]'
+        14. Checkout http:\\/\\/www.cherrybloom.net\",\"url\":\"http:\\/\\/vimeo.com\\/898029\",\"upload_date\":\"2008-04-14
+        13:10:39\",\"thumbnail_small\":\"http:\\/\\/b.vimeocdn.com\\/ts\\/343\\/731\\/34373130_100.jpg\",\"thumbnail_medium\":\"http:\\/\\/b.vimeocdn.com\\/ts\\/343\\/731\\/34373130_200.jpg\",\"thumbnail_large\":\"http:\\/\\/b.vimeocdn.com\\/ts\\/343\\/731\\/34373130_640.jpg\",\"user_id\":206215,\"user_name\":\"Octave
+        Zangs\",\"user_url\":\"http:\\/\\/vimeo.com\\/octave\",\"user_portrait_small\":\"http:\\/\\/b.vimeocdn.com\\/ps\\/257\\/715\\/2577152_30.jpg\",\"user_portrait_medium\":\"http:\\/\\/b.vimeocdn.com\\/ps\\/257\\/715\\/2577152_75.jpg\",\"user_portrait_large\":\"http:\\/\\/b.vimeocdn.com\\/ps\\/257\\/715\\/2577152_100.jpg\",\"user_portrait_huge\":\"http:\\/\\/b.vimeocdn.com\\/ps\\/257\\/715\\/2577152_300.jpg\",\"stats_number_of_likes\":11,\"stats_number_of_plays\":4563,\"stats_number_of_comments\":4,\"duration\":175,\"width\":640,\"height\":360,\"tags\":\"cherry
+        bloom, secret sounds, king of the knife, rock, alternative\",\"embed_privacy\":\"anywhere\"}]"
     http_version: 
-  recorded_at: Fri, 25 Oct 2013 20:33:58 GMT
-recorded_with: VCR 2.6.0
+  recorded_at: Thu, 20 Feb 2014 12:43:23 GMT
+recorded_with: VCR 2.8.0
