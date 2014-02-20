@@ -1,6 +1,7 @@
 require 'video_info/version'
 require 'video_info/provider'
 require 'forwardable'
+require 'net/http'
 
 class VideoInfo
   class UrlError < StandardError; end
