@@ -16,6 +16,23 @@ describe VideoInfo::Providers::Vimeo do
     end
   end
 
+  describe "#available?" do
+    context "with valid video", :vcr do
+      subject { VideoInfo.new('http://www.vimeo.com/898029') }
+      its(:available?)       { should be_true }
+    end
+
+    context "with 'this video does not exist' video", :vcr do
+      subject { VideoInfo.new('http://vimeo.com/59312311') }
+      its(:available?)       { should be_false }
+    end
+
+    context "with 'password required' video", :vcr do
+      subject { VideoInfo.new('http://vimeo.com/54189727') }
+      its(:available?)       { should be_false }
+    end
+  end
+
   context "with video 898029", :vcr do
     subject { VideoInfo.new('http://www.vimeo.com/898029') }
 

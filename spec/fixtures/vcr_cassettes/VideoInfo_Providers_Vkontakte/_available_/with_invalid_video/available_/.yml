@@ -1,0 +1,147 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://vk.com/video39576223_invalid
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - VideoInfo/2.0.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Server:
+      - nginx/1.2.4
+      Date:
+      - Wed, 19 Feb 2014 16:11:08 GMT
+      Content-Type:
+      - text/html
+      Content-Length:
+      - '397'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: |
+        <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+        <html><head>
+        <title>404 Not Found</title>
+        </head>
+          <body style="background: #3f5d81 url(http://vk.me/images/error404.png) no-repeat 50% 50%; width: 100%; height: 100%; overflow: hidden;">
+            <a style="position: absolute; left: 50%; top: 50%; margin: -265px -345px 0px; height: 530px; width: 690px;" href="http://vk.com/"></a>
+          </body>
+        </html>
+    http_version: 
+  recorded_at: Wed, 19 Feb 2014 16:11:09 GMT
+- request:
+    method: get
+    uri: http://vk.com/video39576223_invalid
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - VideoInfo/2.0.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Server:
+      - nginx/1.2.4
+      Date:
+      - Wed, 19 Feb 2014 16:14:50 GMT
+      Content-Type:
+      - text/html
+      Content-Length:
+      - '403'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: |
+        <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+        <html><head>
+        <title>404 Not Found</title>
+        </head>
+          <body style="background: #3f5d81 url(http://userapi.com/images/error404.png) no-repeat 50% 50%; width: 100%; height: 100%; overflow: hidden;">
+            <a style="position: absolute; left: 50%; top: 50%; margin: -265px -345px 0px; height: 530px; width: 690px;" href="http://vk.com/"></a>
+          </body>
+        </html>
+    http_version: 
+  recorded_at: Wed, 19 Feb 2014 16:14:50 GMT
+- request:
+    method: head
+    uri: http://vk.com/video39576223_invalid
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 501
+      message: Not Implemented
+    headers:
+      Server:
+      - nginx/1.2.4
+      Date:
+      - Wed, 19 Feb 2014 16:15:42 GMT
+      Content-Type:
+      - text/html
+      Content-Length:
+      - '181'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Wed, 19 Feb 2014 16:15:43 GMT
+- request:
+    method: head
+    uri: http://vk.com/video39576223_invalid
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 501
+      message: Not Implemented
+    headers:
+      Server:
+      - nginx/1.2.4
+      Date:
+      - Wed, 19 Feb 2014 16:16:56 GMT
+      Content-Type:
+      - text/html
+      Content-Length:
+      - '181'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Wed, 19 Feb 2014 16:16:56 GMT
+recorded_with: VCR 2.8.0

@@ -44,8 +44,16 @@ class VideoInfo
         /.*\.com\/(?:(?:groups\/[^\/]+\/videos\/)|(?:video\/))?([0-9]+).*$/i
       end
 
+      def _api_base
+        "vimeo.com"
+      end
+
+      def _api_path
+        "/api/v2/video/#{video_id}.json"
+      end
+
       def _api_url
-        "http://vimeo.com/api/v2/video/#{video_id}.json"
+        "http://#{_api_base}#{_api_path}"
       end
 
       def _default_iframe_attributes

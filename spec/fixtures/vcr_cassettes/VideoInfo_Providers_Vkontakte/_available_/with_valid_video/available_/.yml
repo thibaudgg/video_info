@@ -21,17 +21,17 @@ http_interactions:
       Server:
       - nginx/1.2.4
       Date:
-      - Thu, 20 Feb 2014 11:38:16 GMT
+      - Wed, 19 Feb 2014 16:10:50 GMT
       Content-Type:
       - text/html; charset=windows-1251
       Content-Length:
-      - '12888'
+      - '12884'
       Connection:
       - keep-alive
       X-Powered-By:
-      - PHP/3.4649
+      - PHP/3.4643
       Set-Cookie:
-      - remixlang=3; expires=Sun, 01 Mar 2015 04:59:26 GMT; path=/; domain=.vk.com
+      - remixlang=3; expires=Wed, 18 Feb 2015 17:16:07 GMT; path=/; domain=.vk.com
       Pragma:
       - no-cache
       Cache-Control:
@@ -59,13 +59,13 @@ http_interactions:
         aW50ZXJ2YWw6IDEyMDAwMCwKICBhbDogcGFyc2VJbnQoJzQnKSB8fCA0LAog
         IGlkOiAwLAogIGludG5hdDogJzEnID8gdHJ1ZSA6IGZhbHNlLAogIGhvc3Q6
         ICd2ay5jb20nLAogIGxhbmc6IDMsCiAgcnRsOiBwYXJzZUludCgnJykgfHwg
-        MCwKICB2ZXJzaW9uOiAxNDc0OCwKICBzdERvbWFpbnM6IDMsCiAgemVybzog
+        MCwKICB2ZXJzaW9uOiAxNDc0NCwKICBzdERvbWFpbnM6IDMsCiAgemVybzog
         ZmFsc2UsCiAgY29udGxlbjogMTYwNzQsCiAgbG9naW5zY2hlbWU6ICdodHRw
         cycsCiAgaXBfaDogJzFhYzA4ZGU5OGUyMjgyODdmZCcsCiAgdmNfaDogJzIx
         OTMzNjk4NTZmOTU3YzEwMjRlNjYxYzAzNGRjZGVmJywKICBuYXZQcmVmaXg6
         ICcvJywKICBkdDogcGFyc2VJbnQoJzAnKSB8fCAwLAogIGZzOiBwYXJzZUlu
-        dCgnMTEnKSB8fCAxMSwKICB0czogMTM5Mjg5NjI5NiwKICBwZDogMCwKICBw
-        YWRzOiAxLAogIHRpbWU6IFsyMDE0LCAyLCAyMCwgMTUsIDM4LCAxNl0KfQoK
+        dCgnMTEnKSB8fCAxMSwKICB0czogMTM5MjgyNjI1MCwKICBwZDogMCwKICBw
+        YWRzOiAxLAogIHRpbWU6IFsyMDE0LCAyLCAxOSwgMjAsIDEwLCA1MF0KfQoK
         d2luZG93LmxvY0RvbWFpbiA9IHZrLmhvc3QubWF0Y2goL1thLXpBLVpdK1wu
         W2EtekEtWl0rXC4/JC8pWzBdOwp2YXIgX3VhID0gbmF2aWdhdG9yLnVzZXJB
         Z2VudC50b0xvd2VyQ2FzZSgpOwppZiAoL29wZXJhL2kudGVzdChfdWEpIHx8
@@ -122,7 +122,7 @@ http_interactions:
         aG9ja3dhdmUtZmxhc2giIC8+CjxtZXRhIHByb3BlcnR5PSJvZzp2aWRlbzp3
         aWR0aCIgY29udGVudD0iNzIwIiAvPgo8bWV0YSBwcm9wZXJ0eT0ib2c6dmlk
         ZW86aGVpZ2h0IiBjb250ZW50PSI0MTAiIC8+CjxzY3JpcHQgdHlwZT0idGV4
-        dC9qYXZhc2NyaXB0IiBzcmM9Ii9qcy9sb2FkZXJfbmF2MTQ3NDhfMy5qcyI+
+        dC9qYXZhc2NyaXB0IiBzcmM9Ii9qcy9sb2FkZXJfbmF2MTQ3NDRfMy5qcyI+
         PC9zY3JpcHQ+PHNjcmlwdCB0eXBlPSJ0ZXh0L2phdmFzY3JpcHQiIHNyYz0i
         aHR0cDovL3N0My52ay5tZS9qcy9hbC9jb21tb24uanM/MTA5OV80OCI+PC9z
         Y3JpcHQ+PHNjcmlwdCB0eXBlPSJ0ZXh0L2phdmFzY3JpcHQiIHNyYz0iL2pz
@@ -1080,5 +1080,36 @@ http_interactions:
         dyIsInZpZGVvIjoiMzk1NzYyMjNfMTA4MzcwNTE1In19KTsKICAgIH0KICA8
         L3NjcmlwdD4KPC9ib2R5PgoKPC9odG1sPg==
     http_version: 
-  recorded_at: Thu, 20 Feb 2014 11:38:16 GMT
+  recorded_at: Wed, 19 Feb 2014 16:10:51 GMT
+- request:
+    method: head
+    uri: http://vk.com/video39576223_108370515
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 501
+      message: Not Implemented
+    headers:
+      Server:
+      - nginx/1.2.4
+      Date:
+      - Wed, 19 Feb 2014 16:15:42 GMT
+      Content-Type:
+      - text/html
+      Content-Length:
+      - '181'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Wed, 19 Feb 2014 16:15:43 GMT
 recorded_with: VCR 2.8.0

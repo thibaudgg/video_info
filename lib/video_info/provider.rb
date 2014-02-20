@@ -28,7 +28,20 @@ class VideoInfo
       @data ||= _set_data_from_api
     end
 
+
+    def available?
+      !%w[403 404].include?(_response_code)
+    end
+
     private
+
+    def _response_code
+      response = nil
+      Net::HTTP.start(_api_base, 80) {|http|
+        response = http.head(_api_path)
+      }
+      response.code
+    end
 
     def _clean_options(options)
       options = { 'User-Agent' => "VideoInfo/#{VideoInfo::VERSION}" }.merge(options)

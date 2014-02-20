@@ -21,6 +21,23 @@ describe VideoInfo::Providers::Youtube do
     end
   end
 
+  describe "#available?" do
+    context "with valid video", :vcr do
+      subject { VideoInfo.new('http://www.youtube.com/watch?v=mZqGqE0D0n4') }
+      its(:available?)       { should be_true }
+    end
+
+    context "with 'video is unavailable' video", :vcr do
+      subject { VideoInfo.new('http://www.youtube.com/watch?v=SUkXvWn1m7Q') }
+      its(:available?)       { should be_false }
+    end
+
+    context "with 'video no longer available due to a copyright claim' video", :vcr do
+      subject { VideoInfo.new('http://www.youtube.com/watch?v=ffClNhwx0KU') }
+      its(:available?)       { should be_false }
+    end
+  end
+
   context "with video mZqGqE0D0n4", :vcr do
     subject { VideoInfo.new('http://www.youtube.com/watch?v=mZqGqE0D0n4') }
 
@@ -32,7 +49,7 @@ describe VideoInfo::Providers::Youtube do
     its(:title)            { should eq 'Cherry Bloom - King Of The Knife' }
     its(:description)      { should eq 'The first video from the upcoming album Secret Sounds, to download in-stores April 14. Checkout http://www.cherrybloom.net' }
     its(:keywords)         { should be_nil }
-    its(:duration)         { should eq 175 }
+    its(:duration)         { should eq 176 }
     its(:width)            { should be_nil }
     its(:height)           { should be_nil }
     its(:date)             { should eq Time.parse('Sat Apr 12 22:25:35 UTC 2008', Time.now.utc) }

@@ -17,6 +17,19 @@ describe VideoInfo::Providers::Vkontakte do
     end
   end
 
+  describe "#available?" do
+    context "with valid video", :vcr do
+      subject { VideoInfo.new('http://vk.com/video39576223_108370515') }
+      its(:available?)       { should be_true }
+    end
+
+    context "with invalid video", :vcr do
+      subject { VideoInfo.new('http://vk.com/video39576223_invalid') }
+      its(:available?)       { should be_false }
+    end
+
+  end
+
   context "with video video39576223_108370515", :vcr do
     subject { VideoInfo.new('http://vk.com/video39576223_108370515') }
 
@@ -26,7 +39,7 @@ describe VideoInfo::Providers::Vkontakte do
     its(:url)              { should eq 'http://vk.com/video39576223_108370515' }
     its(:embed_url)        { should eq 'vk.com/video_ext.php?oid=39576223&id=108370515&hash=15184dbd085c47af' }
     its(:embed_code)       { should eq '<iframe src="http://vk.com/video_ext.php?oid=39576223&id=108370515&hash=15184dbd085c47af" frameborder="0" allowfullscreen="allowfullscreen"></iframe>' }
-    its(:title)            { should eq 'Я уточка)))))' }
+    its(:title)            { should eq 'Я уточка))))) | VK' }
     its(:description)      { should eq 'это ВЗРЫВ МОЗГА!!! Просто отвал башки...' }
     its(:keywords)         { should eq 'это ВЗРЫВ МОЗГА!!! Просто отвал башки...' }
     its(:duration)         { should eq 183 }
@@ -41,7 +54,7 @@ describe VideoInfo::Providers::Vkontakte do
     its(:provider)         { should eq 'Vkontakte' }
     its(:video_owner)      { should eq '-54799401' }
     its(:video_id)         { should eq '165822734' }
-    its(:title)            { should eq 'SpaceGlasses are the future of computing' }
+    its(:title)            { should eq 'SpaceGlasses are the future of computing | VK' }
   end
 
 end

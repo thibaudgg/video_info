@@ -1,0 +1,50 @@
+---
+http_interactions:
+- request:
+    method: head
+    uri: http://vimeo.com/api/v2/video/54189727.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Date:
+      - Wed, 19 Feb 2014 14:59:45 GMT
+      Server:
+      - Apache
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Limit:
+      - '3600'
+      X-Ratelimit-Remaining:
+      - '3594'
+      X-Ratelimit-Reset:
+      - '1392825334'
+      Cache-Control:
+      - max-age=300, must-revalidate
+      Expires:
+      - Wed, 19 Feb 2014 15:04:45 GMT
+      X-Ua-Compatible:
+      - IE=edge
+      X-Dns-Prefetch-Control:
+      - 'on'
+      Vary:
+      - Accept-Encoding
+      Nncoection:
+      - close
+      Content-Type:
+      - text/html; charset=UTF-8
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Wed, 19 Feb 2014 14:59:45 GMT
+recorded_with: VCR 2.8.0
