@@ -1,0 +1,46 @@
+---
+http_interactions:
+- request:
+    method: head
+    uri: http://gdata.youtube.com/feeds/api/videos/ffClNhwx0KU?alt=json&v=2
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 403
+      message: Forbidden
+    headers:
+      X-Gdata-User-Country:
+      - FR
+      Content-Type:
+      - application/vnd.google.gdata.error+xml
+      Content-Length:
+      - '179'
+      Date:
+      - Fri, 21 Feb 2014 15:53:18 GMT
+      Expires:
+      - Fri, 21 Feb 2014 15:53:18 GMT
+      Cache-Control:
+      - private, max-age=0
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      Server:
+      - GSE
+      Alternate-Protocol:
+      - 80:quic
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Fri, 21 Feb 2014 15:53:18 GMT
+recorded_with: VCR 2.8.0
