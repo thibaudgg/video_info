@@ -45,7 +45,7 @@ describe VideoInfo::Providers::YoutubePlaylist do
     }
     subject { VideoInfo.new('http://www.youtube.com/playlist?p=PL9hW1uS6HUftLdHI6RIsaf-iXTm09qnEr') }
 
-    its(:provider)         { should eq 'YouTubePlaylist' }
+    its(:provider)         { should eq 'YouTube' }
     its(:playlist_id)      { should eq 'PL9hW1uS6HUftLdHI6RIsaf-iXTm09qnEr' }
     its(:url)              { should eq 'http://www.youtube.com/playlist?p=PL9hW1uS6HUftLdHI6RIsaf-iXTm09qnEr' }
     its(:embed_url)        { should eq 'www.youtube.com/embed/videoseries?list=PL9hW1uS6HUftLdHI6RIsaf-iXTm09qnEr' }
