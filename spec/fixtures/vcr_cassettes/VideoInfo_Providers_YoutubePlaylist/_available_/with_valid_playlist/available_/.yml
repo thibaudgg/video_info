@@ -1,0 +1,56 @@
+---
+http_interactions:
+- request:
+    method: head
+    uri: http://gdata.youtube.com/feeds/api/playlists/PLA575C81A1FBC04CF?alt=json&v=2
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Gdata-User-Country:
+      - GB
+      Content-Type:
+      - application/json; charset=UTF-8
+      Access-Control-Allow-Origin:
+      - "*"
+      Expires:
+      - Fri, 21 Feb 2014 12:17:18 GMT
+      Date:
+      - Fri, 21 Feb 2014 12:12:18 GMT
+      Cache-Control:
+      - public, max-age=300, no-transform
+      Vary:
+      - Accept, X-GData-Authorization, GData-Version
+      Gdata-Version:
+      - '2.1'
+      Etag:
+      - W/"DE8ARH47eCp7I2A9WxBVE0o."
+      Last-Modified:
+      - Wed, 17 Feb 2010 03:20:45 GMT
+      Content-Length:
+      - '52996'
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      Server:
+      - GSE
+      Alternate-Protocol:
+      - 80:quic
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Fri, 21 Feb 2014 12:12:17 GMT
+recorded_with: VCR 2.8.0
