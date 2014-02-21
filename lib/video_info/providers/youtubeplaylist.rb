@@ -18,6 +18,14 @@ class VideoInfo
         "www.youtube.com/embed/videoseries?list=#{playlist_id}"
       end
 
+      def description
+        _playlist_entry['subtitle']['$t']
+      end
+
+      %w[date keywords duration view_count].each do |method|
+        define_method(method) { nil }
+      end
+
       private
 
       def _playlist_entry

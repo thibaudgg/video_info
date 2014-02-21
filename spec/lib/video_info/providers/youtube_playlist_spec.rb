@@ -51,9 +51,16 @@ describe VideoInfo::Providers::YoutubePlaylist do
     its(:embed_url)        { should eq 'www.youtube.com/embed/videoseries?list=PL9hW1uS6HUftLdHI6RIsaf-iXTm09qnEr' }
     its(:embed_code)       { should eq '<iframe src="http://www.youtube.com/embed/videoseries?list=PL9hW1uS6HUftLdHI6RIsaf-iXTm09qnEr" frameborder="0" allowfullscreen="allowfullscreen"></iframe>' }
     its(:title)            { should eq 'YouTube Policy and Copyright' }
+    its(:description)      { should eq 'Learn more about copyright basics, flagging, and the YouTube community.' }
+    its(:keywords)         { should be_nil }
+    its(:duration)         { should be_nil }
+    its(:width)            { should be_nil }
+    its(:height)           { should be_nil }
+    its(:date)             { should be_nil }
     its(:thumbnail_small)  { should eq 'http://i.ytimg.com/vi/8b0aEoxqqC0/default.jpg' }
     its(:thumbnail_medium) { should eq 'http://i.ytimg.com/vi/8b0aEoxqqC0/mqdefault.jpg' }
     its(:thumbnail_large)  { should eq 'http://i.ytimg.com/vi/8b0aEoxqqC0/hqdefault.jpg' }
     its(:videos)           { should match_array(videos) }
+    its(:view_count)       { should be_nil }
   end
 end
