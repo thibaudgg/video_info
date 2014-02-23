@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.license      = 'MIT'
 
   s.author       = 'Thibaud Guillaume-Gentil'
-  s.email        = 'thibaud@thibaud.me'
+  s.email        = 'thibaud@thibaud.gg'
   s.homepage     = 'https://rubygems.org/gems/video_info'
   s.summary      = 'Dailymotion, Vimeo, VK and YouTube info parser.'
   s.description  = 'Get video info from Dailymotion, Vimeo, VK and YouTube url.'
