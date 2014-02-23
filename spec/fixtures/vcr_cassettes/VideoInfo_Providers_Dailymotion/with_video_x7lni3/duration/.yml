@@ -1,0 +1,63 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.dailymotion.com/video/x7lni3?fields=id,title,description,duration,created_time,url,views_total,tags,thumbnail_url,thumbnail_720_url,thumbnail_240_url,thumbnail_60_url
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - VideoInfo/2.1.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - DMS/1.0.42
+      X-Dm-Backnode:
+      - web-075.adm.dailymotion.com:80
+      Vary:
+      - Authorization,Accept-Encoding
+      Cache-Control:
+      - private, max-age=900, no-transform, no-cache="set-cookie"
+      Content-Type:
+      - application/json
+      P3p:
+      - policyref="http://www.dailymotion.com/w3c/p3p.xml", CP="IDC DSP CURa ADMa
+        DEVa TAIa OUR BUS IND UNI COM NAV INT"
+      Date:
+      - Fri, 21 Feb 2014 15:33:31 GMT
+      Keep-Alive:
+      - timeout=60, max=4999
+      X-Dm-Lb:
+      - 195.8.215.129
+      Access-Control-Allow-Origin:
+      - '*'
+      Etag:
+      - W/"O1DJzTYSf9K1Wvn1OkaB4Q"
+      Connection:
+      - Keep-Alive
+      Set-Cookie:
+      - ts=329367; expires=Wed, 21-Feb-2024 15:33:31 GMT; Max-Age=315532800; path=/;
+        domain=.dailymotion.com
+      Last-Modified:
+      - Sat, 06 Jul 2013 19:32:30 GMT
+      X-Dm-Page:
+      - fr.rest.rest_api
+      Content-Length:
+      - '441'
+    body:
+      encoding: UTF-8
+      string: '{"id":"x7lni3","title":"Mario Kart (R\u00e9mi Gaillard)","description":"Super
+        R\u00e9mi Kart est un jeu vid\u00e9o de course d\u00e9velopp\u00e9 et \u00e9dit\u00e9
+        par N''Importe Quoi TV. Sa principale originalit\u00e9 vient de sa r\u00e9alit\u00e9...<br
+        \/>L''aventure continue sur www.nimportequi.com","duration":136,"created_time":1228321771,"url":"http:\/\/www.dailymotion.com\/video\/x7lni3_mario-kart-remi-gaillard_fun","views_total":10159320,"tags":["r\u00e9mi","remi","gaillard","imposteur","imposture","mario","bros","kart","nintendo","jeux"],"thumbnail_url":"http:\/\/s2.dmcdn.net\/BgWxI.jpg","thumbnail_720_url":"http:\/\/s2.dmcdn.net\/BgWxI\/x720-YcV.jpg","thumbnail_240_url":"http:\/\/s2.dmcdn.net\/BgWxI\/x240-b83.jpg","thumbnail_60_url":"http:\/\/s2.dmcdn.net\/BgWxI\/x60-kbf.jpg"}'
+    http_version: 
+  recorded_at: Fri, 21 Feb 2014 15:33:31 GMT
+recorded_with: VCR 2.8.0

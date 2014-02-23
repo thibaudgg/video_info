@@ -7,7 +7,7 @@ class VideoInfo
   class UrlError < StandardError; end
   extend Forwardable
 
-  PROVIDERS = %w[Vimeo Vkontakte Youtube YoutubePlaylist]
+  PROVIDERS = %w[Vimeo Vkontakte Youtube YoutubePlaylist Dailymotion]
   PROVIDERS.each { |p| require "video_info/providers/#{p.downcase}" }
 
   def_delegators :@provider, :provider, :video_id, :video_owner, :url, :data
