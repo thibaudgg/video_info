@@ -1,0 +1,46 @@
+---
+http_interactions:
+- request:
+    method: head
+    uri: http://gdata.youtube.com/feeds/api/playlists/PLA575C81A1FBC04CF_invalid?alt=json&v=2
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      X-Gdata-User-Country:
+      - GB
+      Content-Type:
+      - application/vnd.google.gdata.error+xml
+      Content-Length:
+      - '184'
+      Date:
+      - Fri, 21 Feb 2014 12:12:19 GMT
+      Expires:
+      - Fri, 21 Feb 2014 12:12:19 GMT
+      Cache-Control:
+      - private, max-age=0
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      Server:
+      - GSE
+      Alternate-Protocol:
+      - 80:quic
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Fri, 21 Feb 2014 12:12:18 GMT
+recorded_with: VCR 2.8.0
