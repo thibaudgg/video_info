@@ -2,9 +2,9 @@
 
 [![Gem Version](https://badge.fury.io/rb/video_info.png)](http://badge.fury.io/rb/video_info) [![Build Status](https://travis-ci.org/thibaudgg/video_info.png?branch=master)](https://travis-ci.org/thibaudgg/video_info) [![Dependency Status](https://gemnasium.com/thibaudgg/video_info.png)](https://gemnasium.com/thibaudgg/video_info) [![Code Climate](https://codeclimate.com/github/thibaudgg/video_info.png)](https://codeclimate.com/github/thibaudgg/video_info) [![Coverage Status](https://coveralls.io/repos/thibaudgg/video_info/badge.png?branch=master)](https://coveralls.io/r/thibaudgg/video_info)
 
-Simple Ruby Gem to get video info from YouTube, Vimeo, Dailymotion and VK url.
+Simple Ruby Gem to get video info from Dailymotion, Vimeo, VK and YouTube (with playlist support).
 
-Tested against Ruby 1.9.3, 2.0.0 and the latest versions of JRuby & Rubinius.
+Tested against Ruby 1.9.3, 2.0.0, 2.1.0 and the latest versions of JRuby & Rubinius.
 
 Install
 --------
@@ -17,19 +17,19 @@ Usage
 -----
 
 ``` ruby
-video = VideoInfo.new("http://www.youtube.com/watch?v=mZqGqE0D0n4")
+video = VideoInfo.new("http://www.dailymotion.com/video/x7lni3")
 # video.available?       => true
-# video.video_id         => "mZqGqE0D0n4"
-# video.provider         => "YouTube"
-# video.title            => "Cherry Bloom - King Of The Knife"
-# video.description      => "The first video from the upcoming album Secret Sounds, to download in-stores April 14. Checkout http://www.cherrybloom.net"
-# video.duration         => 175 (in seconds)
-# video.date             => Sat Apr 12 22:25:35 UTC 2008
-# video.thumbnail_small  => "http://i.ytimg.com/vi/mZqGqE0D0n4/default.jpg"
-# video.thumbnail_medium => "http://i.ytimg.com/vi/mZqGqE0D0n4/mqdefault.jpg"
-# video.thumbnail_large  => "http://i.ytimg.com/vi/mZqGqE0D0n4/hqdefault.jpg"
-# video.embed_url        => "http://www.youtube.com/embed/mZqGqE0D0n4"
-# video.embed_code       => "'<iframe src="http://www.youtube.com/embed/mZqGqE0D0n4" frameborder="0" allowfullscreen="allowfullscreen"></iframe>'"
+# video.video_id         => "x7lni3"
+# video.provider         => "Dailymotion"
+# video.title            => "Mario Kart (Rémi Gaillard)"
+# video.description      => "Super Rémi Kart est un jeu vidéo de course développé et édité par N'Importe Quoi TV."
+# video.duration         => 136 (in seconds)
+# video.date             => Mon Mar 03 16:29:31 UTC 2008
+# video.thumbnail_small  => "http://s2.dmcdn.net/BgWxI/x60-kbf.jpg"
+# video.thumbnail_medium => "http://s2.dmcdn.net/BgWxI/x240-b83.jpg"
+# video.thumbnail_large  => "http://s2.dmcdn.net/BgWxI/x720-YcV.jpg"
+# video.embed_url        => "http://www.dailymotion.com/embed/video/x7lni3"
+# video.embed_code       => "'<iframe src="http://www.dailymotion.com/embed/video/x7lni3" frameborder="0" allowfullscreen="allowfullscreen"></iframe>'"
 
 video = VideoInfo.new("http://vimeo.com/898029")
 # video.available?       => true
@@ -48,19 +48,19 @@ video = VideoInfo.new("http://vimeo.com/898029")
 # video.embed_url        => "http://player.vimeo.com/video/898029"
 # video.embed_code       => "'<iframe src="http://player.vimeo.com/video/898029?title=0&amp;byline=0&amp;portrait=0&amp;autoplay=0" frameborder="0"></iframe>'"
 
-video = VideoInfo.new("http://www.dailymotion.com/video/x7lni3")
+video = VideoInfo.new("http://www.youtube.com/watch?v=mZqGqE0D0n4")
 # video.available?       => true
-# video.video_id         => "x7lni3"
-# video.provider         => "Dailymotion"
-# video.title            => "Mario Kart (Rémi Gaillard)"
-# video.description      => "Super Rémi Kart est un jeu vidéo de course développé et édité par N'Importe Quoi TV."
-# video.duration         => 136 (in seconds)
-# video.date             => Mon Mar 03 16:29:31 UTC 2008
-# video.thumbnail_small  => "http://s2.dmcdn.net/BgWxI/x60-kbf.jpg"
-# video.thumbnail_medium => "http://s2.dmcdn.net/BgWxI/x240-b83.jpg"
-# video.thumbnail_large  => "http://s2.dmcdn.net/BgWxI/x720-YcV.jpg"
-# video.embed_url        => "http://www.dailymotion.com/embed/video/x7lni3"
-# video.embed_code       => "'<iframe src="http://www.dailymotion.com/embed/video/x7lni3" frameborder="0" allowfullscreen="allowfullscreen"></iframe>'"
+# video.video_id         => "mZqGqE0D0n4"
+# video.provider         => "YouTube"
+# video.title            => "Cherry Bloom - King Of The Knife"
+# video.description      => "The first video from the upcoming album Secret Sounds, to download in-stores April 14. Checkout http://www.cherrybloom.net"
+# video.duration         => 175 (in seconds)
+# video.date             => Sat Apr 12 22:25:35 UTC 2008
+# video.thumbnail_small  => "http://i.ytimg.com/vi/mZqGqE0D0n4/default.jpg"
+# video.thumbnail_medium => "http://i.ytimg.com/vi/mZqGqE0D0n4/mqdefault.jpg"
+# video.thumbnail_large  => "http://i.ytimg.com/vi/mZqGqE0D0n4/hqdefault.jpg"
+# video.embed_url        => "http://www.youtube.com/embed/mZqGqE0D0n4"
+# video.embed_code       => "'<iframe src="http://www.youtube.com/embed/mZqGqE0D0n4" frameborder="0" allowfullscreen="allowfullscreen"></iframe>'"
 
 playlist = VideoInfo.new("http://www.youtube.com/playlist?p=PL9hW1uS6HUftLdHI6RIsaf-iXTm09qnEr")
 # playlist.available?          => true
