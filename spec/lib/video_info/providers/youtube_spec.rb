@@ -19,6 +19,11 @@ describe VideoInfo::Providers::Youtube do
       let(:url) { 'http://google.com/video1' }
       it { should be_false }
     end
+
+    context "with playlist url" do
+      let(:url) { 'http://www.youtube.com/playlist?p=PLA575C81A1FBC04CF' }
+      it { should be_false }
+    end
   end
 
   describe "#available?" do

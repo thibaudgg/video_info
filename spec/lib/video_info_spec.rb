@@ -47,4 +47,24 @@ describe VideoInfo do
     end
   end
 
+  describe "#==" do
+    let(:vi_a) { VideoInfo.new('http://www.youtube.com/watch?v=AT_5xOGh6Ko') }
+    let(:vi_b) { VideoInfo.new('http://www.youtube.com/watch?v=AT_5xOGh6Ko') }
+    let(:vi_c) { VideoInfo.new('http://vimeo.com/86701482') }
+
+    context "matching" do
+      it "returns true" do
+        expect(vi_a == vi_a).to be_true
+        expect(vi_a == vi_b).to be_true
+      end
+    end
+
+    context "not matching" do
+      it "returns false" do
+        expect(vi_a == vi_c).to be_false
+        expect(vi_b == vi_c).to be_false
+      end
+    end
+  end
+
 end

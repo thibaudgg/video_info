@@ -47,6 +47,18 @@ video = VideoInfo.new("http://vimeo.com/898029")
 # video.thumbnail_large  => "http://b.vimeocdn.com/ts/343/731/34373130_640.jpg"
 # video.embed_url        => "http://player.vimeo.com/video/898029"
 # video.embed_code       => "'<iframe src="http://player.vimeo.com/video/898029?title=0&amp;byline=0&amp;portrait=0&amp;autoplay=0" frameborder="0"></iframe>'"
+
+playlist = VideoInfo.new("http://www.youtube.com/playlist?p=PL9hW1uS6HUftLdHI6RIsaf-iXTm09qnEr")
+# playlist.available?          => true
+# playlist.playlist_id         => "PL9hW1uS6HUftLdHI6RIsaf"
+# playlist.provider            => "YouTube"
+# playlist.title               => "YouTube Policy and Copyright"
+# playlist.thumbnail_small     => "http://i.ytimg.com/vi/8b0aEoxqqC0/default.jpg"
+# playlist.thumbnail_medium    => "http://i.ytimg.com/vi/8b0aEoxqqC0/mqdefault.jpg"
+# playlist.thumbnail_large     => "http://i.ytimg.com/vi/8b0aEoxqqC0/hqdefault.jpg"
+# playlist.embed_url           => "http://www.youtube.com/embed/videoseries?list=PL9hW1uS6HUftLdHI6RIsaf-iXTm09qnEr"
+# playlist.embed_code          => "'<iframe src="http://www.youtube.com/embed/videoseries?list=PL9hW1uS6HUftLdHI6RIsaf-iXTm09qnEr" frameborder="0" allowfullscreen="allowfullscreen"></iframe>'"
+# playlist.videos              => [VideoInfo.new('http://www.youtube.com/watch?v=_Bt3-WsHfB0'), VideoInfo.new('http://www.youtube.com/watch?v=9g2U12SsRns'), VideoInfo.new('http://www.youtube.com/watch?v=8b0aEoxqqC0'), VideoInfo.new('http://www.youtube.com/watch?v=6c3mHikRz0I'), VideoInfo.new('http://www.youtube.com/watch?v=OQVHWsTHcoc')]
 ```
 
 Options
