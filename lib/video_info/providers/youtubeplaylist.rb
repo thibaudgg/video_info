@@ -5,7 +5,7 @@ class VideoInfo
       alias_method :playlist_id, :video_id
 
       def self.usable?(url)
-        url =~ /(youtube\.com)\/playlist/
+        url =~ /((youtube\.com)\/playlist)|((youtube\.com)\/embed\/videoseries)/
       end
 
       def videos
@@ -37,7 +37,7 @@ class VideoInfo
       end
 
       def _url_regex
-        /youtube.com\/playlist\?p=(\S*)/
+        /youtube.com\/playlist\?p=(\S*)|youtube.com\/embed\/videoseries\?list=([a-zA-Z0-9-]*)/
       end
 
       def _api_path
