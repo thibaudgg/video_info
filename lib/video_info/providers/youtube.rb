@@ -3,7 +3,7 @@ class VideoInfo
     class Youtube < Provider
 
       def self.usable?(url)
-        url =~ /(youtube\.com\/(?!playlist).*)|(youtu\.be)/
+        url =~ /(youtube\.com\/(?!playlist|embed\/videoseries).*)|(youtu\.be)/
       end
 
       def provider

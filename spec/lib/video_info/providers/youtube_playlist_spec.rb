@@ -63,4 +63,18 @@ describe VideoInfo::Providers::YoutubePlaylist do
     its(:videos)           { should match_array(videos) }
     its(:view_count)       { should be_nil }
   end
+
+  context "with playlist PL0E8117603D70E10A in embed path", :vcr do
+    subject { VideoInfo.new('http://www.youtube.com/embed/videoseries?list=PL0E8117603D70E10A') }
+
+    its(:playlist_id) { should eq 'PL0E8117603D70E10A' }
+  end
+
+  context "with playlist PL9hW1uS6HUftLdHI6RIsaf-iXTm09qnEr in embed path", :vcr do
+    subject { VideoInfo.new('http://www.youtube.com/embed/videoseries?list=PL9hW1uS6HUftLdHI6RIsaf-iXTm09qnEr') }
+
+    its(:playlist_id) { should eq 'PL9hW1uS6HUftLdHI6RIsaf-iXTm09qnEr' }
+  end
+
+
 end
