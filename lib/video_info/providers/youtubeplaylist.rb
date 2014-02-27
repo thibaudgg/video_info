@@ -45,6 +45,7 @@ class VideoInfo
       end
 
       def _playlist_video_ids
+        return [] unless _playlist_entry['entry']
         _playlist_entry['entry'].map do |entry|
           entry['media$group']['yt$videoid']['$t']
         end
