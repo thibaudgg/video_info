@@ -68,6 +68,7 @@ describe VideoInfo::Providers::YoutubePlaylist do
     subject { VideoInfo.new('http://www.youtube.com/embed/videoseries?list=PL0E8117603D70E10A') }
 
     its(:playlist_id) { should eq 'PL0E8117603D70E10A' }
+    its(:videos) { should eq [] }
   end
 
   context "with playlist PL9hW1uS6HUftLdHI6RIsaf-iXTm09qnEr in embed path", :vcr do
