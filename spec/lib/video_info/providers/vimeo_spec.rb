@@ -10,6 +10,16 @@ describe VideoInfo::Providers::Vimeo do
       it { should be_true }
     end
 
+    context "with vimeo album url" do
+      let(:url) { 'http://vimeo.com/album/2755718' }
+      it { should be_false }
+    end
+
+    context "with vimeo hubnub embed url" do
+      let(:url) { 'http://player.vimeo.com/hubnut/album/2755718' }
+      it { should be_false }
+    end
+
     context "with other url" do
       let(:url) { 'http://www.youtube.com/898029' }
       it { should be_false }

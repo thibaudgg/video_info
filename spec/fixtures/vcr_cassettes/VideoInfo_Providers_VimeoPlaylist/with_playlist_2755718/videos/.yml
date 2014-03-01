@@ -1,0 +1,202 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://vimeo.com/api/v2/album/2755718/videos.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - VideoInfo/2.2.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Age:
+      - '1'
+      Date:
+      - Sat, 01 Mar 2014 00:28:23 GMT
+      Expires:
+      - Sat, 01 Mar 2014 00:29:23 GMT
+      Content-Length:
+      - '13346'
+      Connection:
+      - Keep-Alive
+      Via:
+      - 1.1 varnish
+      - dnet-dca
+      Etag:
+      - '"4c410bb57e9ae247e718c7c73a475786"'
+      Server:
+      - Apache
+      Access-Control-Allow-Origin:
+      - '*'
+      X-Ratelimit-Limit:
+      - '3600'
+      X-Ratelimit-Remaining:
+      - '3581'
+      X-Ratelimit-Reset:
+      - '1393635073'
+      Last-Modified:
+      - Fri, 28 Feb 2014 23:19:45 GMT
+      X-Ua-Compatible:
+      - IE=edge
+      X-Dns-Prefetch-Control:
+      - 'on'
+      Vary:
+      - Accept-Encoding
+      Content-Type:
+      - application/json
+      X-Varnish:
+      - '1960274180'
+      X-Varnish-Cache:
+      - '0'
+      X-Vserver:
+      - 10.90.128.197
+    body:
+      encoding: UTF-8
+      string: '[{"id":67977038,"title":"The Century Of Self:  Happiness Machines (Episode1)","description":"The
+        Century of the Self is an award-winning British television documentary series
+        by Adam Curtis. It focuses on how the work of Sigmund Freud, Anna Freud, and
+        Edward Bernays influenced the way corporations and governments have analyzed,\u202d
+        dealt with, and controlled \u202cpeople. This series is banned on YouTube
+        because of the secrets it contains.<br \/>\r\n<br \/>\r\n\"This series is
+        about how those in power have used Freud''s theories to try and control the
+        dangerous crowd in an age of mass democracy.\" \u2014Adam Curtis'' introduction
+        to the first episode.<br \/>\r\n<br \/>\r\nSigmund Freud, the founder of psychoanalysis,
+        changed the perception of the human mind and its workings. The series describes
+        the propaganda that Western governments and corporations have utilized stemming
+        from Freud''s theories.<br \/>\r\n<br \/>\r\nFreud himself and his nephew
+        Edward Bernays, who was the first to use psychological techniques in public
+        relations, are discussed. Freud''s daughter Anna Freud, a pioneer of child
+        psychology, is mentioned in the second part, as is one of the main opponents
+        of Freud''s theories, Wilhelm Reich, in the third part.<br \/>\r\n<br \/>\r\nAlong
+        these general themes, The Century of the Self asks deeper questions about
+        the roots and methods of modern consumerism, representative democracy, commodification
+        and its implications. It also questions the modern way we see ourselves, the
+        attitudes to fashion and superficiality.<br \/>\r\n<br \/>\r\nThe business
+        and political world uses psychological techniques to read, create and fulfill
+        our desires, to make their products or speeches as pleasing as possible to
+        us. Curtis raises the question of the intentions and roots of this fact. Where
+        once the political process was about engaging people''s rational, conscious
+        minds, as well as facilitating their needs as a society, the documentary shows
+        how by employing the tactics of psychoanalysis, politicians appeal to irrational,
+        primitive impulses that have little apparent bearing on issues outside of
+        the narrow self-interest of a consumer population.<br \/>\r\n<br \/>\r\nPaul
+        Mazur, a leading Wall Street banker working for Lehman Brothers, is cited
+        as declaring: \"We must shift America from a needs- to a desires-culture.
+        People must be trained to desire, to want new things, even before the old
+        have been entirely consumed. [...] Man''s desires must overshadow his needs\".<br
+        \/>\r\n<br \/>\r\nIn Episode 4 the main subjects are Philip Gould and Matthew
+        Freud, the great-grandson of Sigmund, a PR consultant. They were part of the
+        efforts during the nineties to bring the Democrats in the US and New Labour
+        in the United Kingdom back into power. Adam Curtis explores the psychological
+        methods they have now massively introduced into politics. He also argues that
+        the eventual outcome strongly resembles Edward Bernays vision for the \"Democracity\"
+        during the 1939 New York World''s Fair.<br \/>\r\n<br \/>\r\nIt is widely
+        believed that the series was inspired and informed by a book written by the
+        American historian, Stuart Ewen, \"PR! A Social History of Spin\".","url":"http:\/\/vimeo.com\/67977038","upload_date":"2013-06-09
+        03:50:08","thumbnail_small":"http:\/\/b.vimeocdn.com\/ts\/440\/289\/440289906_100.jpg","thumbnail_medium":"http:\/\/b.vimeocdn.com\/ts\/440\/289\/440289906_200.jpg","thumbnail_large":"http:\/\/b.vimeocdn.com\/ts\/440\/289\/440289906_640.jpg","user_id":4246041,"user_name":"Roses
+        of Time","user_url":"http:\/\/vimeo.com\/rosesoftime","user_portrait_small":"http:\/\/b.vimeocdn.com\/ps\/612\/203\/6122037_30.jpg","user_portrait_medium":"http:\/\/b.vimeocdn.com\/ps\/612\/203\/6122037_75.jpg","user_portrait_large":"http:\/\/b.vimeocdn.com\/ps\/612\/203\/6122037_100.jpg","user_portrait_huge":"http:\/\/b.vimeocdn.com\/ps\/612\/203\/6122037_300.jpg","stats_number_of_likes":83,"stats_number_of_plays":22945,"stats_number_of_comments":2,"duration":3497,"width":640,"height":360,"tags":"Freud,
+        Bernays, Century of self, BBC, spin, politics, society, Adam Curtis, psychoanalysis,
+        consumerism, democracy","embed_privacy":"anywhere"},{"id":68843810,"title":"The
+        Century Of Self: Engineering Of Consent (Episode2)","description":"The Century
+        of the Self is an award-winning British television documentary series by Adam
+        Curtis. It focuses on how the work of Sigmund Freud, Anna Freud, and Edward
+        Bernays influenced the way corporations and governments have analyzed,\u202d
+        dealt with, and controlled \u202cpeople.<br \/>\r\n<br \/>\r\n\"This series
+        is about how those in power have used Freud''s theories to try and control
+        the dangerous crowd in an age of mass democracy.\" \u2014Adam Curtis'' introduction
+        to the first episode.<br \/>\r\n<br \/>\r\nSigmund Freud, the founder of psychoanalysis,
+        changed the perception of the human mind and its workings. The series describes
+        the propaganda that Western governments and corporations have utilized stemming
+        from Freud''s theories.<br \/>\r\n<br \/>\r\nFreud himself and his nephew
+        Edward Bernays, who was the first to use psychological techniques in public
+        relations, are discussed. Freud''s daughter Anna Freud, a pioneer of child
+        psychology, is mentioned in the second part, as is one of the main opponents
+        of Freud''s theories, Wilhelm Reich, in the third part.<br \/>\r\n<br \/>\r\nAlong
+        these general themes, The Century of the Self asks deeper questions about
+        the roots and methods of modern consumerism, representative democracy, commodification
+        and its implications. It also questions the modern way we see ourselves, the
+        attitudes to fashion and superficiality.<br \/>\r\n<br \/>\r\nThe business
+        and political world uses psychological techniques to read, create and fulfill
+        our desires, to make their products or speeches as pleasing as possible to
+        us. Curtis raises the question of the intentions and roots of this fact. Where
+        once the political process was about engaging people''s rational, conscious
+        minds, as well as facilitating their needs as a society, the documentary shows
+        how by employing the tactics of psychoanalysis, politicians appeal to irrational,
+        primitive impulses that have little apparent bearing on issues outside of
+        the narrow self-interest of a consumer population.<br \/>\r\n<br \/>\r\nPaul
+        Mazur, a leading Wall Street banker working for Lehman Brothers, is cited
+        as declaring: \"We must shift America from a needs- to a desires-culture.
+        People must be trained to desire, to want new things, even before the old
+        have been entirely consumed. [...] Man''s desires must overshadow his needs\".<br
+        \/>\r\n<br \/>\r\nIn Episode 4 the main subjects are Philip Gould and Matthew
+        Freud, the great-grandson of Sigmund, a PR consultant. They were part of the
+        efforts during the nineties to bring the Democrats in the US and New Labour
+        in the United Kingdom back into power. Adam Curtis explores the psychological
+        methods they have now massively introduced into politics. He also argues that
+        the eventual outcome strongly resembles Edward Bernays vision for the \"Democracity\"
+        during the 1939 New York World''s Fair.<br \/>\r\n<br \/>\r\nIt is widely
+        believed that the series was inspired and informed by a book written by the
+        American historian, Stuart Ewen, \"PR! A Social History of Spin\".","url":"http:\/\/vimeo.com\/68843810","upload_date":"2013-06-21
+        07:36:31","thumbnail_small":"http:\/\/b.vimeocdn.com\/ts\/441\/348\/441348049_100.jpg","thumbnail_medium":"http:\/\/b.vimeocdn.com\/ts\/441\/348\/441348049_200.jpg","thumbnail_large":"http:\/\/b.vimeocdn.com\/ts\/441\/348\/441348049_640.jpg","user_id":4246041,"user_name":"Roses
+        of Time","user_url":"http:\/\/vimeo.com\/rosesoftime","user_portrait_small":"http:\/\/b.vimeocdn.com\/ps\/612\/203\/6122037_30.jpg","user_portrait_medium":"http:\/\/b.vimeocdn.com\/ps\/612\/203\/6122037_75.jpg","user_portrait_large":"http:\/\/b.vimeocdn.com\/ps\/612\/203\/6122037_100.jpg","user_portrait_huge":"http:\/\/b.vimeocdn.com\/ps\/612\/203\/6122037_300.jpg","stats_number_of_likes":22,"stats_number_of_plays":4964,"stats_number_of_comments":0,"duration":3517,"width":640,"height":360,"tags":"The
+        Century Of Self, Engineering Of Consent, Episode 2, Part 2, Series, Adam Curtis,
+        BBC, Bernys, Freud, Spin, Consumerism, Democracy, Psychoanalysis, Politics,
+        Society","embed_privacy":"anywhere"},{"id":69949597,"title":"The Century Of
+        Self: There is a Policeman Inside All Our Heads (episode 3)","description":"","url":"http:\/\/vimeo.com\/69949597","upload_date":"2013-07-09
+        05:38:09","thumbnail_small":"http:\/\/b.vimeocdn.com\/ts\/442\/965\/442965473_100.jpg","thumbnail_medium":"http:\/\/b.vimeocdn.com\/ts\/442\/965\/442965473_200.jpg","thumbnail_large":"http:\/\/b.vimeocdn.com\/ts\/442\/965\/442965473_640.jpg","user_id":4246041,"user_name":"Roses
+        of Time","user_url":"http:\/\/vimeo.com\/rosesoftime","user_portrait_small":"http:\/\/b.vimeocdn.com\/ps\/612\/203\/6122037_30.jpg","user_portrait_medium":"http:\/\/b.vimeocdn.com\/ps\/612\/203\/6122037_75.jpg","user_portrait_large":"http:\/\/b.vimeocdn.com\/ps\/612\/203\/6122037_100.jpg","user_portrait_huge":"http:\/\/b.vimeocdn.com\/ps\/612\/203\/6122037_300.jpg","stats_number_of_likes":26,"stats_number_of_plays":4110,"stats_number_of_comments":0,"duration":3514,"width":640,"height":360,"tags":"","embed_privacy":"anywhere"},{"id":70388245,"title":"The
+        Century Of Self: Eight People Sipping Wine in Kettering (Episode 4)","description":"The
+        Century of the Self is an award-winning British television documentary series
+        by Adam Curtis. It focuses on how the work of Sigmund Freud, Anna Freud, and
+        Edward Bernays influenced the way corporations and governments have analyzed,\u202d
+        dealt with, and controlled \u202cpeople.<br \/>\n<br \/>\n\"This series is
+        about how those in power have used Freud''s theories to try and control the
+        dangerous crowd in an age of mass democracy.\" \u2014Adam Curtis'' introduction
+        to the first episode.<br \/>\n<br \/>\nSigmund Freud, the founder of psychoanalysis,
+        changed the perception of the human mind and its workings. The series describes
+        the propaganda that Western governments and corporations have utilized stemming
+        from Freud''s theories.<br \/>\n<br \/>\nFreud himself and his nephew Edward
+        Bernays, who was the first to use psychological techniques in public relations,
+        are discussed. Freud''s daughter Anna Freud, a pioneer of child psychology,
+        is mentioned in the second part, as is one of the main opponents of Freud''s
+        theories, Wilhelm Reich, in the third part.<br \/>\n<br \/>\nAlong these general
+        themes, The Century of the Self asks deeper questions about the roots and
+        methods of modern consumerism, representative democracy, commodification and
+        its implications. It also questions the modern way we see ourselves, the attitudes
+        to fashion and superficiality.<br \/>\n<br \/>\nThe business and political
+        world uses psychological techniques to read, create and fulfill our desires,
+        to make their products or speeches as pleasing as possible to us. Curtis raises
+        the question of the intentions and roots of this fact. Where once the political
+        process was about engaging people''s rational, conscious minds, as well as
+        facilitating their needs as a society, the documentary shows how by employing
+        the tactics of psychoanalysis, politicians appeal to irrational, primitive
+        impulses that have little apparent bearing on issues outside of the narrow
+        self-interest of a consumer population.<br \/>\n<br \/>\nPaul Mazur, a leading
+        Wall Street banker working for Lehman Brothers, is cited as declaring: \"We
+        must shift America from a needs- to a desires-culture. People must be trained
+        to desire, to want new things, even before the old have been entirely consumed.
+        [...] Man''s desires must overshadow his needs\".<br \/>\n<br \/>\nIn Episode
+        4 the main subjects are Philip Gould and Matthew Freud, the great-grandson
+        of Sigmund, a PR consultant. They were part of the efforts during the nineties
+        to bring the Democrats in the US and New Labour in the United Kingdom back
+        into power. Adam Curtis explores the psychological methods they have now massively
+        introduced into politics. He also argues that the eventual outcome strongly
+        resembles Edward Bernays vision for the \"Democracity\" during the 1939 New
+        York World''s Fair. It is widely believed that the series was inspired and
+        informed by a book written by the American historian, Stuart Ewen, \"PR! A
+        Social History of Spin\"","url":"http:\/\/vimeo.com\/70388245","upload_date":"2013-07-16
+        02:08:10","thumbnail_small":"http:\/\/b.vimeocdn.com\/ts\/443\/595\/443595474_100.jpg","thumbnail_medium":"http:\/\/b.vimeocdn.com\/ts\/443\/595\/443595474_200.jpg","thumbnail_large":"http:\/\/b.vimeocdn.com\/ts\/443\/595\/443595474_640.jpg","user_id":4246041,"user_name":"Roses
+        of Time","user_url":"http:\/\/vimeo.com\/rosesoftime","user_portrait_small":"http:\/\/b.vimeocdn.com\/ps\/612\/203\/6122037_30.jpg","user_portrait_medium":"http:\/\/b.vimeocdn.com\/ps\/612\/203\/6122037_75.jpg","user_portrait_large":"http:\/\/b.vimeocdn.com\/ps\/612\/203\/6122037_100.jpg","user_portrait_huge":"http:\/\/b.vimeocdn.com\/ps\/612\/203\/6122037_300.jpg","stats_number_of_likes":23,"stats_number_of_plays":3236,"stats_number_of_comments":1,"duration":3540,"width":640,"height":360,"tags":"Freud,
+        Century of Self, Adam Curtis","embed_privacy":"anywhere"}]'
+    http_version: 
+  recorded_at: Sat, 01 Mar 2014 00:28:25 GMT
+recorded_with: VCR 2.8.0

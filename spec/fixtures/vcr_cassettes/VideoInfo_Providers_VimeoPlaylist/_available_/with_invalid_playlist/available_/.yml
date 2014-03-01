@@ -1,0 +1,152 @@
+---
+http_interactions:
+- request:
+    method: head
+    uri: http://vimeo.com/api/v2/video/2755718.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 28 Feb 2014 23:49:05 GMT
+      Server:
+      - Apache
+      Access-Control-Allow-Origin:
+      - '*'
+      X-Ratelimit-Limit:
+      - '3600'
+      X-Ratelimit-Remaining:
+      - '3595'
+      X-Ratelimit-Reset:
+      - '1393634120'
+      Cache-Control:
+      - max-age=60
+      Expires:
+      - Fri, 28 Feb 2014 23:50:05 GMT
+      Last-Modified:
+      - Fri, 21 Feb 2014 06:05:40 GMT
+      Etag:
+      - '"0ad6ab03cab8ef64f7f7261e3c1b374c"'
+      X-Ua-Compatible:
+      - IE=edge
+      X-Dns-Prefetch-Control:
+      - 'on'
+      Vary:
+      - Accept-Encoding
+      Cneonction:
+      - close
+      Content-Type:
+      - application/json
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Fri, 28 Feb 2014 23:49:07 GMT
+- request:
+    method: head
+    uri: http://vimeo.com/api/v2/album/2755718/info.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 28 Feb 2014 23:53:57 GMT
+      Server:
+      - Apache
+      Access-Control-Allow-Origin:
+      - '*'
+      X-Ratelimit-Limit:
+      - '3600'
+      X-Ratelimit-Remaining:
+      - '3593'
+      X-Ratelimit-Reset:
+      - '1393634120'
+      Cache-Control:
+      - max-age=60
+      Expires:
+      - Fri, 28 Feb 2014 23:54:57 GMT
+      Last-Modified:
+      - Fri, 28 Feb 2014 23:19:45 GMT
+      Etag:
+      - '"066770d7b5e5c4a8ac2e5d2178671420"'
+      X-Ua-Compatible:
+      - IE=edge
+      X-Dns-Prefetch-Control:
+      - 'on'
+      Vary:
+      - Accept-Encoding
+      Cneonction:
+      - close
+      Content-Type:
+      - application/json
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Fri, 28 Feb 2014 23:53:59 GMT
+- request:
+    method: head
+    uri: http://vimeo.com/api/v2/album/2/info.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Date:
+      - Fri, 28 Feb 2014 23:56:09 GMT
+      Server:
+      - Apache
+      Access-Control-Allow-Origin:
+      - '*'
+      X-Ratelimit-Limit:
+      - '3600'
+      X-Ratelimit-Remaining:
+      - '3592'
+      X-Ratelimit-Reset:
+      - '1393634120'
+      Cache-Control:
+      - max-age=300, must-revalidate
+      Expires:
+      - Sat, 01 Mar 2014 00:01:09 GMT
+      X-Ua-Compatible:
+      - IE=edge
+      X-Dns-Prefetch-Control:
+      - 'on'
+      Vary:
+      - Accept-Encoding
+      Nncoection:
+      - close
+      Content-Type:
+      - text/html; charset=UTF-8
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Fri, 28 Feb 2014 23:56:11 GMT
+recorded_with: VCR 2.8.0
