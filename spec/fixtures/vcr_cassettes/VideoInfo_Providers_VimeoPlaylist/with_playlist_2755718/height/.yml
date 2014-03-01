@@ -1,0 +1,71 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://vimeo.com/api/v2/album/2755718/info.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - VideoInfo/2.2.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Age:
+      - '2'
+      Date:
+      - Sat, 01 Mar 2014 00:10:31 GMT
+      Expires:
+      - Sat, 01 Mar 2014 00:11:31 GMT
+      Content-Length:
+      - '641'
+      Connection:
+      - Keep-Alive
+      Via:
+      - 1.1 varnish
+      - dnet-dca
+      Etag:
+      - '"f9075c16b5f1158ce5ea0e7c4f82dad0"'
+      Server:
+      - Apache
+      Access-Control-Allow-Origin:
+      - '*'
+      X-Ratelimit-Limit:
+      - '3600'
+      X-Ratelimit-Remaining:
+      - '3583'
+      X-Ratelimit-Reset:
+      - '1393635073'
+      Last-Modified:
+      - Sat, 01 Mar 2014 00:07:48 GMT
+      X-Ua-Compatible:
+      - IE=edge
+      X-Dns-Prefetch-Control:
+      - 'on'
+      Vary:
+      - Accept-Encoding
+      Content-Type:
+      - application/json
+      X-Varnish:
+      - '1775290544'
+      X-Varnish-Cache:
+      - '0'
+      X-Vserver:
+      - 10.90.128.196
+    body:
+      encoding: UTF-8
+      string: '{"id":2755718,"created_on":"2014-02-28 18:18:21","last_modified":"2014-02-28
+        19:07:48","title":"The Century Of Self","description":"The Century of the
+        Self is an award-winning British television documentary series by Adam Curtis,
+        released in 2002.","url":"http:\/\/vimeo.com\/album\/2755718","thumbnail_small":"http:\/\/b.vimeocdn.com\/ts\/443\/595\/443595474_100.jpg","thumbnail_medium":"http:\/\/b.vimeocdn.com\/ts\/443\/595\/443595474_200.jpg","thumbnail_large":"http:\/\/b.vimeocdn.com\/ts\/443\/595\/443595474_640.jpg","total_videos":4,"user_id":2618747,"user_display_name":"Karl
+        Entwistle","user_url":"http:\/\/vimeo.com\/user2618747"}'
+    http_version: 
+  recorded_at: Sat, 01 Mar 2014 00:10:35 GMT
+recorded_with: VCR 2.8.0

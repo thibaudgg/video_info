@@ -3,7 +3,7 @@ class VideoInfo
     class Vimeo < Provider
 
       def self.usable?(url)
-        url =~ /vimeo\.com/
+        url =~ /(vimeo\.com\/(?!album|hubnut\/album).*)/
       end
 
       def provider
@@ -11,15 +11,15 @@ class VideoInfo
       end
 
       %w[title description thumbnail_small thumbnail_medium thumbnail_large].each do |method|
-        define_method(method) { video[method] }
+        define_method(method) { _video[method] }
       end
 
       %w[duration width height].each do |method|
-        define_method(method) { video[method].to_i }
+        define_method(method) { _video[method].to_i }
       end
 
       def keywords
-        video['tags']
+        _video['tags']
       end
 
       def embed_url
@@ -27,18 +27,18 @@ class VideoInfo
       end
 
       def date
-        Time.parse(video['upload_date'], Time.now.utc).utc
+        Time.parse(_video['upload_date'], Time.now.utc).utc
       end
 
       def view_count
-        video['stats_number_of_plays'].to_i
-      end
-
-      def video
-        data && data.first
+        _video['stats_number_of_plays'].to_i
       end
 
       private
+
+      def _video
+        data && data.first
+      end
 
       def _url_regex
         /.*\.com\/(?:(?:groups\/[^\/]+\/videos\/)|(?:video\/))?([0-9]+).*$/i

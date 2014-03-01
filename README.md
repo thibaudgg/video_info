@@ -2,7 +2,7 @@
 
 [![Gem Version](https://badge.fury.io/rb/video_info.png)](http://badge.fury.io/rb/video_info) [![Build Status](https://travis-ci.org/thibaudgg/video_info.png?branch=master)](https://travis-ci.org/thibaudgg/video_info) [![Dependency Status](https://gemnasium.com/thibaudgg/video_info.png)](https://gemnasium.com/thibaudgg/video_info) [![Code Climate](https://codeclimate.com/github/thibaudgg/video_info.png)](https://codeclimate.com/github/thibaudgg/video_info) [![Coverage Status](https://coveralls.io/repos/thibaudgg/video_info/badge.png?branch=master)](https://coveralls.io/r/thibaudgg/video_info)
 
-Simple Ruby Gem to get video info from Dailymotion, Vimeo, VK and YouTube (with playlist support).
+Simple Ruby Gem to get video info from Dailymotion, Vimeo (with playlist support), VK and YouTube (with playlist support).
 
 Tested against Ruby 1.9.3, 2.0.0, 2.1.0 and the latest versions of JRuby & Rubinius.
 
@@ -71,8 +71,20 @@ playlist = VideoInfo.new("http://www.youtube.com/playlist?p=PL9hW1uS6HUftLdHI6RI
 # playlist.thumbnail_medium    => "http://i.ytimg.com/vi/8b0aEoxqqC0/mqdefault.jpg"
 # playlist.thumbnail_large     => "http://i.ytimg.com/vi/8b0aEoxqqC0/hqdefault.jpg"
 # playlist.embed_url           => "http://www.youtube.com/embed/videoseries?list=PL9hW1uS6HUftLdHI6RIsaf-iXTm09qnEr"
-# playlist.embed_code          => "'<iframe src="http://www.youtube.com/embed/videoseries?list=PL9hW1uS6HUftLdHI6RIsaf-iXTm09qnEr" frameborder="0" allowfullscreen="allowfullscreen"></iframe>'"
+# playlist.embed_code          => "<iframe src="http://www.youtube.com/embed/videoseries?list=PL9hW1uS6HUftLdHI6RIsaf-iXTm09qnEr" frameborder="0" allowfullscreen="allowfullscreen"></iframe>"
 # playlist.videos              => [VideoInfo.new('http://www.youtube.com/watch?v=_Bt3-WsHfB0'), VideoInfo.new('http://www.youtube.com/watch?v=9g2U12SsRns'), VideoInfo.new('http://www.youtube.com/watch?v=8b0aEoxqqC0'), VideoInfo.new('http://www.youtube.com/watch?v=6c3mHikRz0I'), VideoInfo.new('http://www.youtube.com/watch?v=OQVHWsTHcoc')]
+
+playlist = VideoInfo.new("http://vimeo.com/album/2755718")
+# playlist.available?          => true
+# playlist.playlist_id         => "2755718"
+# playlist.provider            => "Vimeo"
+# playlist.title               => "The Century Of Self"
+# playlist.thumbnail_small     => "http://b.vimeocdn.com/ts/443/595/443595474_100.jpg"
+# playlist.thumbnail_medium    => "http://b.vimeocdn.com/ts/443/595/443595474_200.jpg"
+# playlist.thumbnail_large     => "http://b.vimeocdn.com/ts/443/595/443595474_640.jpg"
+# playlist.embed_url           => "player.vimeo.com/hubnut/album/2755718"
+# playlist.embed_code          => "<iframe src="http://player.vimeo.com/hubnut/album/2755718?autoplay=0&byline=0&portrait=0&title=0" frameborder="0"></iframe>"
+# playlist.videos              => [VideoInfo.new('http://vimeo.com/67977038'), VideoInfo.new('http://vimeo.com/68843810'), VideoInfo.new('http://vimeo.com/69949597'), VideoInfo.new('http://vimeo.com/70388245')]
 ```
 
 Options
