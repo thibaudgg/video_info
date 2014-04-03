@@ -40,8 +40,8 @@ describe VideoInfo::Providers::Dailymotion do
     its(:provider)         { should eq 'Dailymotion' }
     its(:video_id)         { should eq 'x7lni3' }
     its(:url)              { should eq 'http://www.dailymotion.com/video/x7lni3' }
-    its(:embed_url)        { should eq 'www.dailymotion.com/embed/video/x7lni3' }
-    its(:embed_code)       { should eq '<iframe src="http://www.dailymotion.com/embed/video/x7lni3?autoplay=0" frameborder="0"></iframe>' }
+    its(:embed_url)        { should eq '//www.dailymotion.com/embed/video/x7lni3' }
+    its(:embed_code)       { should eq '<iframe src="//www.dailymotion.com/embed/video/x7lni3?autoplay=0" frameborder="0"></iframe>' }
     its(:title)            { should eq 'Mario Kart (Rémi Gaillard)' }
     its(:description)      { should eq 'Super Rémi Kart est un jeu vidéo de course développé et édité par N\'Importe Quoi TV. Sa principale originalité vient de sa réalité...<br />L\'aventure continue sur www.nimportequi.com' }
     its(:keywords)         { should eq ["rémi","remi","gaillard","imposteur","imposture","mario","bros","kart","nintendo","jeux"] }

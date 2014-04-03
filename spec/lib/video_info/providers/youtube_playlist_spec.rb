@@ -48,8 +48,8 @@ describe VideoInfo::Providers::YoutubePlaylist do
     its(:provider)         { should eq 'YouTube' }
     its(:playlist_id)      { should eq 'PL9hW1uS6HUftLdHI6RIsaf-iXTm09qnEr' }
     its(:url)              { should eq 'http://www.youtube.com/playlist?p=PL9hW1uS6HUftLdHI6RIsaf-iXTm09qnEr' }
-    its(:embed_url)        { should eq 'www.youtube.com/embed/videoseries?list=PL9hW1uS6HUftLdHI6RIsaf-iXTm09qnEr' }
-    its(:embed_code)       { should eq '<iframe src="http://www.youtube.com/embed/videoseries?list=PL9hW1uS6HUftLdHI6RIsaf-iXTm09qnEr" frameborder="0" allowfullscreen="allowfullscreen"></iframe>' }
+    its(:embed_url)        { should eq '//www.youtube.com/embed/videoseries?list=PL9hW1uS6HUftLdHI6RIsaf-iXTm09qnEr' }
+    its(:embed_code)       { should eq '<iframe src="//www.youtube.com/embed/videoseries?list=PL9hW1uS6HUftLdHI6RIsaf-iXTm09qnEr" frameborder="0" allowfullscreen="allowfullscreen"></iframe>' }
     its(:title)            { should eq 'YouTube Policy and Copyright' }
     its(:description)      { should eq 'Learn more about copyright basics, flagging, and the YouTube community.' }
     its(:keywords)         { should be_nil }

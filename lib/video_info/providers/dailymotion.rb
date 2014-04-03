@@ -23,7 +23,7 @@ class VideoInfo
       end
 
       def embed_url
-        "www.dailymotion.com/embed/video/#{video_id}"
+        "//www.dailymotion.com/embed/video/#{video_id}"
       end
 
       def date

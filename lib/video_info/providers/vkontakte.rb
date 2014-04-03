@@ -42,7 +42,7 @@ class VideoInfo
       end
 
       def embed_url
-        "vk.com/video_ext.php?oid=#{video_owner}&id=#{video_id}&hash=#{_data_hash}"
+        "//vk.com/video_ext.php?oid=#{video_owner}&id=#{video_id}&hash=#{_data_hash}"
       end
 
       def duration

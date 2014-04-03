@@ -15,7 +15,7 @@ class VideoInfo
       end
 
       def embed_url
-        "www.youtube.com/embed/videoseries?list=#{playlist_id}"
+        "//www.youtube.com/embed/videoseries?list=#{playlist_id}"
       end
 
       def description
