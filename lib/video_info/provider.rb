@@ -91,7 +91,7 @@ class VideoInfo
       url_attrs = options.fetch(:url_attributes, {})
       url_attrs = _default_url_attributes.merge(url_attrs)
 
-      url = "#{url_scheme}://#{embed_url}"
+      url = embed_url
       url += "?#{_hash_to_params(url_attrs)}" unless url_attrs.empty?
       url
     end

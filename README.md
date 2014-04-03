@@ -29,7 +29,7 @@ video = VideoInfo.new("http://www.dailymotion.com/video/x7lni3")
 # video.thumbnail_medium => "http://s2.dmcdn.net/BgWxI/x240-b83.jpg"
 # video.thumbnail_large  => "http://s2.dmcdn.net/BgWxI/x720-YcV.jpg"
 # video.embed_url        => "http://www.dailymotion.com/embed/video/x7lni3"
-# video.embed_code       => "'<iframe src="http://www.dailymotion.com/embed/video/x7lni3" frameborder="0" allowfullscreen="allowfullscreen"></iframe>'"
+# video.embed_code       => "'<iframe src="//www.dailymotion.com/embed/video/x7lni3" frameborder="0" allowfullscreen="allowfullscreen"></iframe>'"
 
 video = VideoInfo.new("http://vimeo.com/898029")
 # video.available?       => true
@@ -46,7 +46,7 @@ video = VideoInfo.new("http://vimeo.com/898029")
 # video.thumbnail_medium => "http://b.vimeocdn.com/ts/343/731/34373130_200.jpg"
 # video.thumbnail_large  => "http://b.vimeocdn.com/ts/343/731/34373130_640.jpg"
 # video.embed_url        => "http://player.vimeo.com/video/898029"
-# video.embed_code       => "'<iframe src="http://player.vimeo.com/video/898029?title=0&amp;byline=0&amp;portrait=0&amp;autoplay=0" frameborder="0"></iframe>'"
+# video.embed_code       => "'<iframe src="//player.vimeo.com/video/898029?title=0&amp;byline=0&amp;portrait=0&amp;autoplay=0" frameborder="0"></iframe>'"
 
 video = VideoInfo.new("http://www.youtube.com/watch?v=mZqGqE0D0n4")
 # video.available?       => true
@@ -60,7 +60,7 @@ video = VideoInfo.new("http://www.youtube.com/watch?v=mZqGqE0D0n4")
 # video.thumbnail_medium => "http://i.ytimg.com/vi/mZqGqE0D0n4/mqdefault.jpg"
 # video.thumbnail_large  => "http://i.ytimg.com/vi/mZqGqE0D0n4/hqdefault.jpg"
 # video.embed_url        => "http://www.youtube.com/embed/mZqGqE0D0n4"
-# video.embed_code       => "'<iframe src="http://www.youtube.com/embed/mZqGqE0D0n4" frameborder="0" allowfullscreen="allowfullscreen"></iframe>'"
+# video.embed_code       => "'<iframe src="//www.youtube.com/embed/mZqGqE0D0n4" frameborder="0" allowfullscreen="allowfullscreen"></iframe>'"
 
 playlist = VideoInfo.new("http://www.youtube.com/playlist?p=PL9hW1uS6HUftLdHI6RIsaf-iXTm09qnEr")
 # playlist.available?          => true
@@ -71,7 +71,7 @@ playlist = VideoInfo.new("http://www.youtube.com/playlist?p=PL9hW1uS6HUftLdHI6RI
 # playlist.thumbnail_medium    => "http://i.ytimg.com/vi/8b0aEoxqqC0/mqdefault.jpg"
 # playlist.thumbnail_large     => "http://i.ytimg.com/vi/8b0aEoxqqC0/hqdefault.jpg"
 # playlist.embed_url           => "http://www.youtube.com/embed/videoseries?list=PL9hW1uS6HUftLdHI6RIsaf-iXTm09qnEr"
-# playlist.embed_code          => "<iframe src="http://www.youtube.com/embed/videoseries?list=PL9hW1uS6HUftLdHI6RIsaf-iXTm09qnEr" frameborder="0" allowfullscreen="allowfullscreen"></iframe>"
+# playlist.embed_code          => "<iframe src="//www.youtube.com/embed/videoseries?list=PL9hW1uS6HUftLdHI6RIsaf-iXTm09qnEr" frameborder="0" allowfullscreen="allowfullscreen"></iframe>"
 # playlist.videos              => [VideoInfo.new('http://www.youtube.com/watch?v=_Bt3-WsHfB0'), VideoInfo.new('http://www.youtube.com/watch?v=9g2U12SsRns'), VideoInfo.new('http://www.youtube.com/watch?v=8b0aEoxqqC0'), VideoInfo.new('http://www.youtube.com/watch?v=6c3mHikRz0I'), VideoInfo.new('http://www.youtube.com/watch?v=OQVHWsTHcoc')]
 
 playlist = VideoInfo.new("http://vimeo.com/album/2755718")
@@ -83,7 +83,7 @@ playlist = VideoInfo.new("http://vimeo.com/album/2755718")
 # playlist.thumbnail_medium    => "http://b.vimeocdn.com/ts/443/595/443595474_200.jpg"
 # playlist.thumbnail_large     => "http://b.vimeocdn.com/ts/443/595/443595474_640.jpg"
 # playlist.embed_url           => "player.vimeo.com/hubnut/album/2755718"
-# playlist.embed_code          => "<iframe src="http://player.vimeo.com/hubnut/album/2755718?autoplay=0&byline=0&portrait=0&title=0" frameborder="0"></iframe>"
+# playlist.embed_code          => "<iframe src="//player.vimeo.com/hubnut/album/2755718?autoplay=0&byline=0&portrait=0&title=0" frameborder="0"></iframe>"
 # playlist.videos              => [VideoInfo.new('http://vimeo.com/67977038'), VideoInfo.new('http://vimeo.com/68843810'), VideoInfo.new('http://vimeo.com/69949597'), VideoInfo.new('http://vimeo.com/70388245')]
 ```
 
@@ -111,10 +111,10 @@ You can also include an `iframe_attributes` or `url_attributes` hash to the `emb
 
 ``` ruby
 VideoInfo.new("http://www.youtube.com/watch?v=mZqGqE0D0n4").embed_code(iframe_attributes: { width: 800, height: 600, "data-key" => "value" })
-=> '<iframe src="http://www.youtube.com/embed/mZqGqE0D0n4" frameborder="0" allowfullscreen="allowfullscreen" width="800" height="600" data-key="value"></iframe>
+=> '<iframe src="//www.youtube.com/embed/mZqGqE0D0n4" frameborder="0" allowfullscreen="allowfullscreen" width="800" height="600" data-key="value"></iframe>
 
 'VideoInfo.new("http://www.youtube.com/watch?v=mZqGqE0D0n4").embed_code(url_attributes: { autoplay: 1 })
-=> '<iframe src="http://www.youtube.com/embed/mZqGqE0D0n4?autoplay=1" frameborder="0" allowfullscreen="allowfullscreen"></iframe>'
+=> '<iframe src="//www.youtube.com/embed/mZqGqE0D0n4?autoplay=1" frameborder="0" allowfullscreen="allowfullscreen"></iframe>'
 ```
 
 Author

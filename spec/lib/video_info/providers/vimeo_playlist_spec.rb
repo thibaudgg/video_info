@@ -53,8 +53,8 @@ describe VideoInfo::Providers::VimeoPlaylist do
     its(:provider)         { should eq 'Vimeo' }
     its(:playlist_id)      { should eq '2755718' }
     its(:url)              { should eq 'http://vimeo.com/album/2755718' }
-    its(:embed_url)        { should eq 'player.vimeo.com/hubnut/album/2755718' }
-    its(:embed_code)       { should eq '<iframe src="http://player.vimeo.com/hubnut/album/2755718?autoplay=0&byline=0&portrait=0&title=0" frameborder="0"></iframe>' }
+    its(:embed_url)        { should eq '//player.vimeo.com/hubnut/album/2755718' }
+    its(:embed_code)       { should eq '<iframe src="//player.vimeo.com/hubnut/album/2755718?autoplay=0&byline=0&portrait=0&title=0" frameborder="0"></iframe>' }
     its(:title)            { should eq 'The Century Of Self' }
     its(:description)      { should eq 'The Century of the Self is an award-winning British television documentary series by Adam Curtis, released in 2002.' }
     its(:keywords)         { should be_nil }

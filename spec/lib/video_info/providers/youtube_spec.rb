@@ -49,8 +49,8 @@ describe VideoInfo::Providers::Youtube do
     its(:provider)         { should eq 'YouTube' }
     its(:video_id)         { should eq 'mZqGqE0D0n4' }
     its(:url)              { should eq 'http://www.youtube.com/watch?v=mZqGqE0D0n4' }
-    its(:embed_url)        { should eq 'www.youtube.com/embed/mZqGqE0D0n4' }
-    its(:embed_code)       { should eq '<iframe src="http://www.youtube.com/embed/mZqGqE0D0n4" frameborder="0" allowfullscreen="allowfullscreen"></iframe>' }
+    its(:embed_url)        { should eq '//www.youtube.com/embed/mZqGqE0D0n4' }
+    its(:embed_code)       { should eq '<iframe src="//www.youtube.com/embed/mZqGqE0D0n4" frameborder="0" allowfullscreen="allowfullscreen"></iframe>' }
     its(:title)            { should eq 'Cherry Bloom - King Of The Knife' }
     its(:description)      { should eq 'The first video from the upcoming album Secret Sounds, to download in-stores April 14. Checkout http://www.cherrybloom.net' }
     its(:keywords)         { should be_nil }

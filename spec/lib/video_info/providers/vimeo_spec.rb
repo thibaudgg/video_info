@@ -49,8 +49,8 @@ describe VideoInfo::Providers::Vimeo do
     its(:provider)         { should eq 'Vimeo' }
     its(:video_id)         { should eq '898029' }
     its(:url)              { should eq 'http://www.vimeo.com/898029' }
-    its(:embed_url)        { should eq 'player.vimeo.com/video/898029' }
-    its(:embed_code)       { should eq '<iframe src="http://player.vimeo.com/video/898029?autoplay=0&byline=0&portrait=0&title=0" frameborder="0"></iframe>' }
+    its(:embed_url)        { should eq '//player.vimeo.com/video/898029' }
+    its(:embed_code)       { should eq '<iframe src="//player.vimeo.com/video/898029?autoplay=0&byline=0&portrait=0&title=0" frameborder="0"></iframe>' }
     its(:title)            { should eq 'Cherry Bloom - King Of The Knife' }
     its(:description)      { should eq 'The first video from the upcoming album Secret Sounds, to download in-stores April 14. Checkout http://www.cherrybloom.net' }
     its(:keywords)         { should eq 'cherry bloom, secret sounds, king of the knife, rock, alternative' }
