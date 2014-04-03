@@ -87,7 +87,6 @@ class VideoInfo
     end
 
     def _embed_url(options)
-      url_scheme = options.fetch(:url_scheme, 'http')
       url_attrs = options.fetch(:url_attributes, {})
       url_attrs = _default_url_attributes.merge(url_attrs)
 

@@ -44,10 +44,6 @@ describe VideoInfo::Provider do
   end
 
   describe "embed_code" do
-    it "supports url_scheme option" do
-      expect(provider.embed_code(url_scheme: 'https')).to eq '<iframe src="//foo.com" frameborder="0"></iframe>'
-    end
-
     it "supports url_attributes option" do
       expect(provider.embed_code(url_attributes: { foo: 'bar' })).to eq '<iframe src="//foo.com?foo=bar" frameborder="0"></iframe>'
     end
