@@ -15,7 +15,7 @@ class VideoInfo
       end
 
       def embed_url
-        "player.vimeo.com/hubnut/album/#{playlist_id}"
+        "//player.vimeo.com/hubnut/album/#{playlist_id}"
       end
 
       %w[width height date keywords duration view_count].each do |method|
