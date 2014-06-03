@@ -17,7 +17,7 @@ class VideoInfo
       end
 
       def description
-        content = data[/<meta name="description" content="(.*)" \/>/,1] ||
+        content = data[/<meta name="description" content="(.*)" \/>/, 1] ||
                   data[/<div class="mv_description">(.*)<\/div>/, 1]
         HTMLEntities.new.decode(content)
       end
@@ -45,11 +45,15 @@ class VideoInfo
       end
 
       def embed_url
-        youtube = data[/iframe id=\\"video_player\\".*src=\\"(.*)\\"\ frameborder=/, 1]
+        regexp = /iframe id=\\"video_player\\".*src=\\"(.*)\\"\ frameborder=/
+        youtube = data[regexp, 1]
         if youtube
-          VideoInfo::Providers::Youtube.new(URI.unescape(youtube.gsub(/\\/, ''))).embed_url
+          VideoInfo::Providers::Youtube.new(
+            URI.unescape(youtube.gsub(/\\/, ''))
+          ).embed_url
         else
-          "//vk.com/video_ext.php?oid=#{video_owner}&id=#{video_id}&hash=#{_data_hash}"
+          base_url = "//vk.com/video_ext.php"
+          "#{base_url}?oid=#{video_owner}&id=#{video_id}&hash=#{_data_hash}"
         end
       end
 
@@ -64,7 +68,7 @@ class VideoInfo
         if RUBY_VERSION.to_i < 2
           data = Iconv.iconv('utf-8', 'cp1251', uri.read)[0]
         else
-          data = uri.read.encode("UTF-8")
+          data = uri.read.encode('UTF-8')
         end
         if data[/meta name="HandheldFriendly" content="True"/]
           url = "http://vk.com/video#{@video_owner}_#{@video_id}"
@@ -72,7 +76,7 @@ class VideoInfo
           if RUBY_VERSION.to_i < 2
             data = Iconv.iconv('utf-8', 'cp1251', uri.read)[0]
           else
-            data = uri.read.encode("UTF-8")
+            data = uri.read.encode('UTF-8')
           end
         else
           data
@@ -104,7 +108,12 @@ class VideoInfo
       end
 
       def _url_regex
-        /(?:vkontakte\.ru\/video|vk\.com\/video|vk\.com\/[a-zA-Z\.].*\?z=video)(-?\d+_\d+)/i
+        /
+          (?:vkontakte\.ru\/video|
+           vk\.com\/video|
+           vk\.com\/[a-zA-Z\.].*\?z=video)
+          (-?\d+_\d+)
+        /xi
       end
 
       def _default_iframe_attributes
