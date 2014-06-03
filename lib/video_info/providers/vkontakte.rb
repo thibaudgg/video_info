@@ -37,11 +37,11 @@ class VideoInfo
 
       def title
         data[/vv_summary">(.*)<\/div>/, 1] ||
-        data[/<title>(.*)<\/title>/,1].gsub(' | ВКонтакте', '')
+        data[/<title>(.*)<\/title>/, 1].gsub(' | ВКонтакте', '')
       end
 
       def view_count
-        data[/mv_num_views\\">.*?(\d+)/,1].to_i
+        data[/mv_num_views\\">.*?(\d+)/, 1].to_i
       end
 
       def embed_url
@@ -58,7 +58,7 @@ class VideoInfo
       end
 
       def duration
-        data[/"duration":(\d+)/,1].to_i
+        data[/"duration":(\d+)/, 1].to_i
       end
 
       private
@@ -100,7 +100,7 @@ class VideoInfo
       end
 
       def _data_hash
-        data[/hash2\\":\\"(\w+)/,1]
+        data[/hash2\\":\\"(\w+)/, 1]
       end
 
       def _set_video_id_from_url
