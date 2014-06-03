@@ -13,11 +13,11 @@ http_interactions:
       - Ruby
   response:
     status:
-      code: 404
-      message: Not Found
+      code: 200
+      message: OK
     headers:
       Date:
-      - Wed, 19 Feb 2014 14:59:45 GMT
+      - Tue, 03 Jun 2014 14:17:35 GMT
       Server:
       - Apache
       Access-Control-Allow-Origin:
@@ -25,26 +25,26 @@ http_interactions:
       X-Ratelimit-Limit:
       - '3600'
       X-Ratelimit-Remaining:
-      - '3594'
+      - '3580'
       X-Ratelimit-Reset:
-      - '1392825334'
+      - '1401807400'
       Cache-Control:
-      - max-age=300, must-revalidate
+      - max-age=60
       Expires:
-      - Wed, 19 Feb 2014 15:04:45 GMT
-      X-Ua-Compatible:
-      - IE=edge
-      X-Dns-Prefetch-Control:
-      - 'on'
+      - Tue, 03 Jun 2014 14:18:35 GMT
+      Last-Modified:
+      - Tue, 03 Jun 2014 13:19:27 GMT
+      Etag:
+      - '"7d853e0d1845d5e94ac89333dcf9346c"'
       Vary:
       - Accept-Encoding
-      Nncoection:
+      Cneonction:
       - close
       Content-Type:
-      - text/html; charset=UTF-8
+      - application/json
     body:
       encoding: UTF-8
       string: ''
     http_version: 
-  recorded_at: Wed, 19 Feb 2014 14:59:45 GMT
-recorded_with: VCR 2.8.0
+  recorded_at: Tue, 03 Jun 2014 14:17:36 GMT
+recorded_with: VCR 2.6.0

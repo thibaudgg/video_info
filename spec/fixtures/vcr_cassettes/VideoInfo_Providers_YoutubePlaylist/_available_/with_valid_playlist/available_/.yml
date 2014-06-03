@@ -17,15 +17,15 @@ http_interactions:
       message: OK
     headers:
       X-Gdata-User-Country:
-      - GB
+      - RU
       Content-Type:
       - application/json; charset=UTF-8
       Access-Control-Allow-Origin:
       - "*"
       Expires:
-      - Fri, 21 Feb 2014 12:17:18 GMT
+      - Tue, 03 Jun 2014 14:22:53 GMT
       Date:
-      - Fri, 21 Feb 2014 12:12:18 GMT
+      - Tue, 03 Jun 2014 14:17:53 GMT
       Cache-Control:
       - public, max-age=300, no-transform
       Vary:
@@ -33,11 +33,11 @@ http_interactions:
       Gdata-Version:
       - '2.1'
       Etag:
-      - W/"DE8ARH47eCp7I2A9WxBVE0o."
+      - W/"CUIERX47eCp7I2A9Wh9QFEg."
       Last-Modified:
-      - Wed, 17 Feb 2010 03:20:45 GMT
+      - Wed, 26 Feb 2014 22:25:04 GMT
       Content-Length:
-      - '52996'
+      - '52784'
       X-Content-Type-Options:
       - nosniff
       X-Frame-Options:
@@ -52,5 +52,5 @@ http_interactions:
       encoding: UTF-8
       string: ''
     http_version: 
-  recorded_at: Fri, 21 Feb 2014 12:12:17 GMT
-recorded_with: VCR 2.8.0
+  recorded_at: Tue, 03 Jun 2014 14:17:54 GMT
+recorded_with: VCR 2.6.0

@@ -17,15 +17,15 @@ http_interactions:
       message: Not Found
     headers:
       X-Gdata-User-Country:
-      - GB
+      - RU
       Content-Type:
       - application/vnd.google.gdata.error+xml
       Content-Length:
       - '184'
       Date:
-      - Fri, 21 Feb 2014 12:12:19 GMT
+      - Tue, 03 Jun 2014 14:17:54 GMT
       Expires:
-      - Fri, 21 Feb 2014 12:12:19 GMT
+      - Tue, 03 Jun 2014 14:17:54 GMT
       Cache-Control:
       - private, max-age=0
       X-Content-Type-Options:
@@ -42,5 +42,5 @@ http_interactions:
       encoding: UTF-8
       string: ''
     http_version: 
-  recorded_at: Fri, 21 Feb 2014 12:12:18 GMT
-recorded_with: VCR 2.8.0
+  recorded_at: Tue, 03 Jun 2014 14:17:54 GMT
+recorded_with: VCR 2.6.0

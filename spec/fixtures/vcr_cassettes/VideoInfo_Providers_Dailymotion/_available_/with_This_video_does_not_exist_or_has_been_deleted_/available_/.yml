@@ -10,7 +10,7 @@ http_interactions:
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
-      - '*/*'
+      - "*/*"
       User-Agent:
       - Ruby
   response:
@@ -21,11 +21,11 @@ http_interactions:
       Server:
       - DMS/1.0.42
       X-Dm-Backnode:
-      - web-104.adm.dailymotion.com:80
+      - web-038.adm.dailymotion.com:80
       Vary:
       - Authorization,Accept-Encoding
       Cache-Control:
-      - private, max-age=900, no-transform, no-cache="set-cookie"
+      - private, max-age=900
       Content-Type:
       - application/json
       X-Api-Error:
@@ -34,24 +34,22 @@ http_interactions:
       - policyref="http://www.dailymotion.com/w3c/p3p.xml", CP="IDC DSP CURa ADMa
         DEVa TAIa OUR BUS IND UNI COM NAV INT"
       Date:
-      - Sat, 22 Feb 2014 12:37:47 GMT
-      Keep-Alive:
-      - timeout=60, max=4984
+      - Tue, 03 Jun 2014 14:17:24 GMT
       X-Dm-Lb:
       - 195.8.215.129
       Access-Control-Allow-Origin:
-      - '*'
+      - "*"
       Etag:
-      - W/"CcU5dNT05vkow2VzLcDLDA"
-      Connection:
-      - Keep-Alive
+      - W/"6xQVi9bg5ZGCnXY-RFSVyg"
+      X-Response-Time:
+      - 0.035247 seconds
       Set-Cookie:
-      - ts=332925; expires=Thu, 22-Feb-2024 12:37:47 GMT; Max-Age=315532800; path=/;
+      - ts=272001; expires=Mon, 03-Jun-2024 14:17:24 GMT; Max-Age=315619200; path=/;
         domain=.dailymotion.com
       Last-Modified:
-      - Wed, 29 Jan 2014 19:37:41 GMT
+      - Fri, 25 Apr 2014 08:52:02 GMT
       X-Dm-Page:
-      - fr.rest.rest_api
+      - ru.rest.rest_api
       Content-Length:
       - '110'
     body:
@@ -59,5 +57,5 @@ http_interactions:
       string: '{"error":{"code":404,"message":"This video does not exist or has been
         deleted.","type":"not_found"}}'
     http_version: 
-  recorded_at: Sat, 22 Feb 2014 12:37:47 GMT
-recorded_with: VCR 2.8.0
+  recorded_at: Tue, 03 Jun 2014 14:17:25 GMT
+recorded_with: VCR 2.6.0

@@ -8,7 +8,7 @@ http_interactions:
       string: ''
     headers:
       Accept:
-      - '*/*'
+      - "*/*"
       User-Agent:
       - Ruby
   response:
@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - Apache
       Access-Control-Allow-Origin:
-      - '*'
+      - "*"
       X-Ratelimit-Limit:
       - '3600'
       X-Ratelimit-Remaining:
@@ -59,7 +59,7 @@ http_interactions:
       string: ''
     headers:
       Accept:
-      - '*/*'
+      - "*/*"
       User-Agent:
       - Ruby
   response:
@@ -68,29 +68,25 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Fri, 28 Feb 2014 23:53:56 GMT
+      - Tue, 03 Jun 2014 14:17:31 GMT
       Server:
       - Apache
       Access-Control-Allow-Origin:
-      - '*'
+      - "*"
       X-Ratelimit-Limit:
       - '3600'
       X-Ratelimit-Remaining:
-      - '3594'
+      - '3584'
       X-Ratelimit-Reset:
-      - '1393634120'
+      - '1401807400'
       Cache-Control:
       - max-age=60
       Expires:
-      - Fri, 28 Feb 2014 23:54:56 GMT
+      - Tue, 03 Jun 2014 14:18:31 GMT
       Last-Modified:
-      - Fri, 28 Feb 2014 23:19:45 GMT
+      - Sat, 01 Mar 2014 00:07:48 GMT
       Etag:
-      - '"066770d7b5e5c4a8ac2e5d2178671420"'
-      X-Ua-Compatible:
-      - IE=edge
-      X-Dns-Prefetch-Control:
-      - 'on'
+      - '"b3ea8461135edf4a3801aefe1b64a796"'
       Vary:
       - Accept-Encoding
       Cneonction:
@@ -101,5 +97,5 @@ http_interactions:
       encoding: UTF-8
       string: ''
     http_version: 
-  recorded_at: Fri, 28 Feb 2014 23:53:59 GMT
-recorded_with: VCR 2.8.0
+  recorded_at: Tue, 03 Jun 2014 14:17:32 GMT
+recorded_with: VCR 2.6.0

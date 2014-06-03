@@ -37,7 +37,7 @@ class VideoInfo
 
       def title
         data[/vv_summary">(.*)<\/div>/, 1] ||
-        data[/<title>(.*)<\/title>/,1].gsub(" | ВКонтакте", "")
+        data[/<title>(.*)<\/title>/,1].gsub(' | ВКонтакте', '')
       end
 
       def view_count
@@ -52,7 +52,7 @@ class VideoInfo
             URI.unescape(youtube.gsub(/\\/, ''))
           ).embed_url
         else
-          base_url = "//vk.com/video_ext.php"
+          base_url = '//vk.com/video_ext.php'
           "#{base_url}?oid=#{video_owner}&id=#{video_id}&hash=#{_data_hash}"
         end
       end
@@ -117,7 +117,7 @@ class VideoInfo
       end
 
       def _default_iframe_attributes
-        { allowfullscreen: "allowfullscreen" }
+        { allowfullscreen: 'allowfullscreen' }
       end
 
       def _default_url_attributes
