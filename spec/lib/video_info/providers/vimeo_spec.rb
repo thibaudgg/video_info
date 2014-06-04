@@ -7,61 +7,133 @@ describe VideoInfo::Providers::Vimeo do
 
     context "with vimeo url" do
       let(:url) { 'http://www.vimeo.com/898029' }
-      it { should be_true }
+      it { is_expected.to be_truthy }
     end
 
     context "with vimeo album url" do
       let(:url) { 'http://vimeo.com/album/2755718' }
-      it { should be_false }
+      it { is_expected.to be_falsey }
     end
 
     context "with vimeo hubnub embed url" do
       let(:url) { 'http://player.vimeo.com/hubnut/album/2755718' }
-      it { should be_false }
+      it { is_expected.to be_falsey }
     end
 
     context "with other url" do
       let(:url) { 'http://www.youtube.com/898029' }
-      it { should be_false }
+      it { is_expected.to be_falsey }
     end
   end
 
   describe "#available?" do
     context "with valid video", :vcr do
       subject { VideoInfo.new('http://www.vimeo.com/898029') }
-      its(:available?)       { should be_true }
+
+      describe '#available?' do
+        it { is_expected.to be_available }
+      end
     end
 
     context "with 'this video does not exist' video", :vcr do
       subject { VideoInfo.new('http://vimeo.com/59312311') }
-      its(:available?)       { should be_false }
+
+      describe '#available?' do
+        it { is_expected.to_not be_available }
+      end
     end
 
     context "with 'password required' video", :vcr do
-      subject { VideoInfo.new('http://vimeo.com/54189727') }
-      its(:available?)       { should be_false }
+      subject { VideoInfo.new('http://vimeo.com/74636562') }
+
+      describe '#available?' do
+        it { is_expected.to_not be_available }
+      end
     end
   end
 
   context "with video 898029", :vcr do
     subject { VideoInfo.new('http://www.vimeo.com/898029') }
 
-    its(:provider)         { should eq 'Vimeo' }
-    its(:video_id)         { should eq '898029' }
-    its(:url)              { should eq 'http://www.vimeo.com/898029' }
-    its(:embed_url)        { should eq '//player.vimeo.com/video/898029' }
-    its(:embed_code)       { should eq '<iframe src="//player.vimeo.com/video/898029?autoplay=0&byline=0&portrait=0&title=0" frameborder="0"></iframe>' }
-    its(:title)            { should eq 'Cherry Bloom - King Of The Knife' }
-    its(:description)      { should eq 'The first video from the upcoming album Secret Sounds, to download in-stores April 14. Checkout http://www.cherrybloom.net' }
-    its(:keywords)         { should eq 'cherry bloom, secret sounds, king of the knife, rock, alternative' }
-    its(:duration)         { should eq 175 }
-    its(:width)            { should eq 640 }
-    its(:height)           { should eq 360 }
-    its(:date)             { should eq Time.parse('2008-04-14 13:10:39', Time.now.utc) }
-    its(:thumbnail_small)  { should eq 'http://b.vimeocdn.com/ts/343/731/34373130_100.jpg' }
-    its(:thumbnail_medium) { should eq 'http://b.vimeocdn.com/ts/343/731/34373130_200.jpg' }
-    its(:thumbnail_large)  { should eq 'http://b.vimeocdn.com/ts/343/731/34373130_640.jpg' }
-    its(:view_count)       { should be > 4000 }
+    describe '#provider' do
+      subject { super().provider }
+      it { is_expected.to eq 'Vimeo' }
+    end
+
+    describe '#video_id' do
+      subject { super().video_id }
+      it { is_expected.to eq '898029' }
+    end
+
+    describe '#url' do
+      subject { super().url }
+      it { is_expected.to eq 'http://www.vimeo.com/898029' }
+    end
+
+    describe '#embed_url' do
+      subject { super().embed_url }
+      it { is_expected.to eq '//player.vimeo.com/video/898029' }
+    end
+
+    describe '#embed_code' do
+      subject { super().embed_code }
+      it { is_expected.to eq '<iframe src="//player.vimeo.com/video/898029?autoplay=0&byline=0&portrait=0&title=0" frameborder="0"></iframe>' }
+    end
+
+    describe '#title' do
+      subject { super().title }
+      it { is_expected.to eq 'Cherry Bloom - King Of The Knife' }
+    end
+
+    describe '#description' do
+      subject { super().description }
+      it { is_expected.to eq 'The first video from the upcoming album Secret Sounds, to download in-stores April 14. Checkout http://www.cherrybloom.net' }
+    end
+
+    describe '#keywords' do
+      subject { super().keywords }
+      it { is_expected.to eq 'cherry bloom, secret sounds, king of the knife, rock, alternative' }
+    end
+
+    describe '#duration' do
+      subject { super().duration }
+      it { is_expected.to eq 175 }
+    end
+
+    describe '#width' do
+      subject { super().width }
+      it { is_expected.to eq 640 }
+    end
+
+    describe '#height' do
+      subject { super().height }
+      it { is_expected.to eq 360 }
+    end
+
+    describe '#date' do
+      subject { super().date }
+      it { is_expected.to eq Time.parse('2008-04-14 13:10:39', Time.now.utc) }
+    end
+
+    describe '#thumbnail_small' do
+      subject { super().thumbnail_small }
+      it { is_expected.to eq 'http://i.vimeocdn.com/video/34373130_100x75.jpg' }
+    end
+
+    describe '#thumbnail_medium' do
+      subject { super().thumbnail_medium }
+      it { is_expected.to eq 'http://i.vimeocdn.com/video/34373130_200x150.jpg' }
+    end
+
+    describe '#thumbnail_large' do
+      subject { super().thumbnail_large }
+      it { is_expected.to eq 'http://i.vimeocdn.com/video/34373130_640.jpg' }
+    end
+
+    describe '#view_count' do
+      subject { super().view_count }
+      it { is_expected.to be > 4000 }
+    end
   end
 
   context "with video 898029 and url_attributes", :vcr do
@@ -80,22 +152,43 @@ describe VideoInfo::Providers::Vimeo do
   context "with video 898029 in /group/ url", :vcr do
     subject { VideoInfo.new('http://vimeo.com/groups/1234/videos/898029') }
 
-    its(:provider) { should eq 'Vimeo' }
-    its(:video_id) { should eq '898029' }
+    describe '#provider' do
+      subject { super().provider }
+      it { is_expected.to eq 'Vimeo' }
+    end
+
+    describe '#video_id' do
+      subject { super().video_id }
+      it { is_expected.to eq '898029' }
+    end
   end
 
   context "with video 898029 in /group/ url", :vcr do
     subject { VideoInfo.new('http://player.vimeo.com/video/898029') }
 
-    its(:provider) { should eq 'Vimeo' }
-    its(:video_id) { should eq '898029' }
+    describe '#provider' do
+      subject { super().provider }
+      it { is_expected.to eq 'Vimeo' }
+    end
+
+    describe '#video_id' do
+      subject { super().video_id }
+      it { is_expected.to eq '898029' }
+    end
   end
 
   context "with video 898029 in text", :vcr do
     subject { VideoInfo.new('<a href="http://www.vimeo.com/898029">http://www.vimeo.com/898029</a>') }
 
-    its(:provider) { should eq 'Vimeo' }
-    its(:video_id) { should eq '898029' }
+    describe '#provider' do
+      subject { super().provider }
+      it { is_expected.to eq 'Vimeo' }
+    end
+
+    describe '#video_id' do
+      subject { super().video_id }
+      it { is_expected.to eq '898029' }
+    end
   end
 
 end

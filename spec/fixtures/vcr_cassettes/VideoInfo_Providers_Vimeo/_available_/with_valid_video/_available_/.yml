@@ -1,0 +1,50 @@
+---
+http_interactions:
+- request:
+    method: head
+    uri: http://vimeo.com/api/v2/video/898029.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 04 Jun 2014 20:08:06 GMT
+      Server:
+      - Apache
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Limit:
+      - '3600'
+      X-Ratelimit-Remaining:
+      - '3592'
+      X-Ratelimit-Reset:
+      - '1401915849'
+      Cache-Control:
+      - max-age=60
+      Expires:
+      - Wed, 04 Jun 2014 20:09:06 GMT
+      Last-Modified:
+      - Mon, 12 May 2014 22:15:06 GMT
+      Etag:
+      - '"416d0ac2f989eb42ba1919b2142a0419"'
+      Vary:
+      - Accept-Encoding
+      Cneonction:
+      - close
+      Content-Type:
+      - application/json
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Wed, 04 Jun 2014 20:08:05 GMT
+recorded_with: VCR 2.9.2
