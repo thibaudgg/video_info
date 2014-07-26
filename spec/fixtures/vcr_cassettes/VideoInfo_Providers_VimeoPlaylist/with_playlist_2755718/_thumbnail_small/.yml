@@ -21,9 +21,9 @@ http_interactions:
       Age:
       - '1'
       Date:
-      - Wed, 04 Jun 2014 20:08:04 GMT
+      - Sat, 26 Jul 2014 11:51:09 GMT
       Expires:
-      - Wed, 04 Jun 2014 20:09:04 GMT
+      - Sat, 26 Jul 2014 11:52:09 GMT
       Connection:
       - Keep-Alive
       Via:
@@ -35,12 +35,16 @@ http_interactions:
       - Apache
       Access-Control-Allow-Origin:
       - "*"
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - deny
       X-Ratelimit-Limit:
       - '3600'
       X-Ratelimit-Remaining:
-      - '3598'
+      - '3599'
       X-Ratelimit-Reset:
-      - '1401915849'
+      - '1406377465'
       Last-Modified:
       - Sat, 01 Mar 2014 00:07:48 GMT
       Vary:
@@ -52,13 +56,13 @@ http_interactions:
       Accept-Ranges:
       - bytes
       X-Varnish:
-      - '1195403453'
+      - '1273343396'
       X-Varnish-Cache:
       - '0'
       Nncoection:
       - close
       X-Vserver:
-      - dfvimeowebproxy5
+      - dfvimeowebproxy4
     body:
       encoding: UTF-8
       string: '{"id":2755718,"created_on":"2014-02-28 18:18:21","last_modified":"2014-02-28
@@ -67,5 +71,5 @@ http_interactions:
         released in 2002.","url":"http:\/\/vimeo.com\/album\/2755718","thumbnail_small":"http:\/\/i.vimeocdn.com\/video\/443595474_100x75.jpg","thumbnail_medium":"http:\/\/i.vimeocdn.com\/video\/443595474_200x150.jpg","thumbnail_large":"http:\/\/i.vimeocdn.com\/video\/443595474_640.jpg","total_videos":4,"user_id":2618747,"user_display_name":"Karl
         Entwistle","user_url":"http:\/\/vimeo.com\/user2618747"}'
     http_version: 
-  recorded_at: Wed, 04 Jun 2014 20:08:04 GMT
-recorded_with: VCR 2.9.2
+  recorded_at: Sat, 26 Jul 2014 11:51:10 GMT
+recorded_with: VCR 2.6.0

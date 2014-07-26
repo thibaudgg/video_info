@@ -17,21 +17,25 @@ http_interactions:
       message: Not Found
     headers:
       Date:
-      - Wed, 04 Jun 2014 20:08:06 GMT
+      - Sat, 26 Jul 2014 11:51:12 GMT
       Server:
       - Apache
       Access-Control-Allow-Origin:
       - "*"
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - deny
       X-Ratelimit-Limit:
       - '3600'
       X-Ratelimit-Remaining:
       - '3591'
       X-Ratelimit-Reset:
-      - '1401915849'
+      - '1406377464'
       Cache-Control:
       - max-age=300, must-revalidate
       Expires:
-      - Wed, 04 Jun 2014 20:13:06 GMT
+      - Sat, 26 Jul 2014 11:56:12 GMT
       Vary:
       - Accept-Encoding
       Nncoection:
@@ -42,5 +46,5 @@ http_interactions:
       encoding: UTF-8
       string: ''
     http_version: 
-  recorded_at: Wed, 04 Jun 2014 20:08:06 GMT
-recorded_with: VCR 2.9.2
+  recorded_at: Sat, 26 Jul 2014 11:51:12 GMT
+recorded_with: VCR 2.6.0

@@ -9,12 +9,12 @@ describe VideoInfo::Providers::Vkontakte do
     context "with vkontakte url" do
       context "old style", :vcr do
         let(:url) { 'http://vk.com/video39576223_108370515' }
-        it { should be_true }
+        it { should be_truthy }
       end
 
       context "new style", :vcr do
         let(:url) { 'https://vk.com/kirill.lyanoi?z=video2152699_168591741%2F56fd229a9dfe2dcdbe' }
-        it { should be_true }
+        it { should be_truthy }
       end
     end
 
@@ -90,4 +90,27 @@ describe VideoInfo::Providers::Vkontakte do
     its(:title)            { should eq 'SpaceGlasses are the future of computing' }
   end
 
+end
+require 'rspec'
+require 'video_info'
+require 'vcr'
+
+if ENV['CI']
+  require 'coveralls'
+  Coveralls.wear!
+end
+
+VCR.configure do |config|
+  config.cassette_library_dir = 'spec/fixtures/vcr_cassettes'
+  config.default_cassette_options = {
+    record: :new_episodes,
+    re_record_interval: 7 * 24 * 60 * 60
+  }
+  config.hook_into :webmock
+  config.configure_rspec_metadata!
+end
+
+RSpec.configure do |config|
+  config.filter_run focus: true
+  config.run_all_when_everything_filtered = true
 end
