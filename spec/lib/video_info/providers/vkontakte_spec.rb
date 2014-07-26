@@ -20,19 +20,27 @@ describe VideoInfo::Providers::Vkontakte do
 
     context "with other url" do
       let(:url) { 'http://www.youtube.com/898029' }
-      it { should be_false }
+      it { is_expected.to be_falsey }
     end
   end
 
   describe "#available?" do
     context "with valid video", :vcr do
       subject { VideoInfo.new('http://vk.com/video39576223_108370515') }
-      its(:available?)       { should be_true }
+
+      describe '#available?' do
+        subject { super().available? }
+        it { is_expected.to be_truthy }
+      end
     end
 
     context "with invalid video", :vcr do
       subject { VideoInfo.new('http://vk.com/video39576223_invalid') }
-      its(:available?)       { should be_false }
+
+      describe '#available?' do
+        subject { super().available? }
+        it { is_expected.to be_falsey }
+      end
     end
 
   end

@@ -22,3 +22,6 @@ Gemfile.lock
 ## PROJECT::SPECIFIC
 .bundle/config
 vendor/bundle/
+
+.ruby-version
+bin
