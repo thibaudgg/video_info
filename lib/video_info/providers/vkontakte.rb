@@ -66,7 +66,7 @@ class VideoInfo
       def _set_data_from_api
         uri = open(url, options)
         if RUBY_VERSION.to_i < 2
-          data = Iconv.iconv('utf-8', 'cp1251', uri.read)[0]
+          data = Iconv.iconv('UTF-8//TRANSLIT//IGNORE', 'cp1251', uri.read)[0]
         else
           data = uri.read.encode('UTF-8')
         end
