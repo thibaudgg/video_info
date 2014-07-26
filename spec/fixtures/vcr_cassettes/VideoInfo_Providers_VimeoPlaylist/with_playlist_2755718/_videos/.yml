@@ -21,38 +21,42 @@ http_interactions:
       Age:
       - '1'
       Date:
-      - Wed, 04 Jun 2014 20:08:05 GMT
+      - Sat, 26 Jul 2014 11:51:11 GMT
       Expires:
-      - Wed, 04 Jun 2014 20:09:05 GMT
+      - Sat, 26 Jul 2014 11:52:11 GMT
       Connection:
       - Keep-Alive
       Via:
       - 1.1 varnish
       - dnet-dca
       Etag:
-      - '"eb3fcfdd7ccf44cc970772aa237fd352"'
+      - '"a3cdb46c9cdc7271db76602275cfa7a8"'
       Server:
       - Apache
       Access-Control-Allow-Origin:
       - "*"
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - deny
       X-Ratelimit-Limit:
       - '3600'
       X-Ratelimit-Remaining:
-      - '3597'
+      - '3593'
       X-Ratelimit-Reset:
-      - '1401915849'
+      - '1406377465'
       Last-Modified:
-      - Wed, 04 Jun 2014 20:04:09 GMT
+      - Sat, 26 Jul 2014 11:24:24 GMT
       Vary:
       - Accept-Encoding
       Content-Type:
       - application/json
       Content-Length:
-      - '2417'
+      - '2422'
       Accept-Ranges:
       - bytes
       X-Varnish:
-      - '1349745882'
+      - '1765842614'
       X-Varnish-Cache:
       - '0'
       Cneonction:
@@ -103,11 +107,11 @@ http_interactions:
         informed by a book written by the American historian, Stuart Ewen, \"PR! A
         Social History of Spin\"","url":"http:\/\/vimeo.com\/70388245","upload_date":"2013-07-16
         02:08:10","thumbnail_small":"http:\/\/i.vimeocdn.com\/video\/443595474_100x75.jpg","thumbnail_medium":"http:\/\/i.vimeocdn.com\/video\/443595474_200x150.jpg","thumbnail_large":"http:\/\/i.vimeocdn.com\/video\/443595474_640.jpg","user_id":4246041,"user_name":"Roses
-        of Time","user_url":"http:\/\/vimeo.com\/rosesoftime","user_portrait_small":"http:\/\/i.vimeocdn.com\/portrait\/6122037_30x30.jpg","user_portrait_medium":"http:\/\/i.vimeocdn.com\/portrait\/6122037_75x75.jpg","user_portrait_large":"http:\/\/i.vimeocdn.com\/portrait\/6122037_100x100.jpg","user_portrait_huge":"http:\/\/i.vimeocdn.com\/portrait\/6122037_300x300.jpg","stats_number_of_likes":62,"stats_number_of_plays":10598,"stats_number_of_comments":4,"duration":3540,"width":640,"height":360,"tags":"Freud,
+        of Time","user_url":"http:\/\/vimeo.com\/rosesoftime","user_portrait_small":"http:\/\/i.vimeocdn.com\/portrait\/6122037_30x30.jpg","user_portrait_medium":"http:\/\/i.vimeocdn.com\/portrait\/6122037_75x75.jpg","user_portrait_large":"http:\/\/i.vimeocdn.com\/portrait\/6122037_100x100.jpg","user_portrait_huge":"http:\/\/i.vimeocdn.com\/portrait\/6122037_300x300.jpg","stats_number_of_likes":81,"stats_number_of_plays":14565,"stats_number_of_comments":7,"duration":3540,"width":640,"height":360,"tags":"Freud,
         Century of Self, Adam Curtis","embed_privacy":"anywhere"},{"id":69949597,"title":"The
         Century Of Self: There is a Policeman Inside All Our Heads (episode 3)","description":"","url":"http:\/\/vimeo.com\/69949597","upload_date":"2013-07-09
         05:38:09","thumbnail_small":"http:\/\/i.vimeocdn.com\/video\/442965473_100x75.jpg","thumbnail_medium":"http:\/\/i.vimeocdn.com\/video\/442965473_200x150.jpg","thumbnail_large":"http:\/\/i.vimeocdn.com\/video\/442965473_640.jpg","user_id":4246041,"user_name":"Roses
-        of Time","user_url":"http:\/\/vimeo.com\/rosesoftime","user_portrait_small":"http:\/\/i.vimeocdn.com\/portrait\/6122037_30x30.jpg","user_portrait_medium":"http:\/\/i.vimeocdn.com\/portrait\/6122037_75x75.jpg","user_portrait_large":"http:\/\/i.vimeocdn.com\/portrait\/6122037_100x100.jpg","user_portrait_huge":"http:\/\/i.vimeocdn.com\/portrait\/6122037_300x300.jpg","stats_number_of_likes":74,"stats_number_of_plays":13397,"stats_number_of_comments":1,"duration":3514,"width":640,"height":360,"tags":"","embed_privacy":"anywhere"},{"id":68843810,"title":"The
+        of Time","user_url":"http:\/\/vimeo.com\/rosesoftime","user_portrait_small":"http:\/\/i.vimeocdn.com\/portrait\/6122037_30x30.jpg","user_portrait_medium":"http:\/\/i.vimeocdn.com\/portrait\/6122037_75x75.jpg","user_portrait_large":"http:\/\/i.vimeocdn.com\/portrait\/6122037_100x100.jpg","user_portrait_huge":"http:\/\/i.vimeocdn.com\/portrait\/6122037_300x300.jpg","stats_number_of_likes":95,"stats_number_of_plays":18127,"stats_number_of_comments":1,"duration":3514,"width":640,"height":360,"tags":"","embed_privacy":"anywhere"},{"id":68843810,"title":"The
         Century Of Self: Engineering Of Consent (Episode2)","description":"The Century
         of the Self is an award-winning British television documentary series by Adam
         Curtis. It focuses on how the work of Sigmund Freud, Anna Freud, and Edward
@@ -149,7 +153,7 @@ http_interactions:
         believed that the series was inspired and informed by a book written by the
         American historian, Stuart Ewen, \"PR! A Social History of Spin\".","url":"http:\/\/vimeo.com\/68843810","upload_date":"2013-06-21
         07:36:31","thumbnail_small":"http:\/\/i.vimeocdn.com\/video\/441348049_100x75.jpg","thumbnail_medium":"http:\/\/i.vimeocdn.com\/video\/441348049_200x150.jpg","thumbnail_large":"http:\/\/i.vimeocdn.com\/video\/441348049_640.jpg","user_id":4246041,"user_name":"Roses
-        of Time","user_url":"http:\/\/vimeo.com\/rosesoftime","user_portrait_small":"http:\/\/i.vimeocdn.com\/portrait\/6122037_30x30.jpg","user_portrait_medium":"http:\/\/i.vimeocdn.com\/portrait\/6122037_75x75.jpg","user_portrait_large":"http:\/\/i.vimeocdn.com\/portrait\/6122037_100x100.jpg","user_portrait_huge":"http:\/\/i.vimeocdn.com\/portrait\/6122037_300x300.jpg","stats_number_of_likes":80,"stats_number_of_plays":18392,"stats_number_of_comments":0,"duration":3517,"width":640,"height":360,"tags":"The
+        of Time","user_url":"http:\/\/vimeo.com\/rosesoftime","user_portrait_small":"http:\/\/i.vimeocdn.com\/portrait\/6122037_30x30.jpg","user_portrait_medium":"http:\/\/i.vimeocdn.com\/portrait\/6122037_75x75.jpg","user_portrait_large":"http:\/\/i.vimeocdn.com\/portrait\/6122037_100x100.jpg","user_portrait_huge":"http:\/\/i.vimeocdn.com\/portrait\/6122037_300x300.jpg","stats_number_of_likes":101,"stats_number_of_plays":25200,"stats_number_of_comments":0,"duration":3517,"width":640,"height":360,"tags":"The
         Century Of Self, Engineering Of Consent, Episode 2, Part 2, Series, Adam Curtis,
         BBC, Bernys, Freud, Spin, Consumerism, Democracy, Psychoanalysis, Politics,
         Society","embed_privacy":"anywhere"},{"id":67977038,"title":"The Century Of
@@ -195,9 +199,9 @@ http_interactions:
         believed that the series was inspired and informed by a book written by the
         American historian, Stuart Ewen, \"PR! A Social History of Spin\".","url":"http:\/\/vimeo.com\/67977038","upload_date":"2013-06-09
         03:50:08","thumbnail_small":"http:\/\/i.vimeocdn.com\/video\/440289906_100x75.jpg","thumbnail_medium":"http:\/\/i.vimeocdn.com\/video\/440289906_200x150.jpg","thumbnail_large":"http:\/\/i.vimeocdn.com\/video\/440289906_640.jpg","user_id":4246041,"user_name":"Roses
-        of Time","user_url":"http:\/\/vimeo.com\/rosesoftime","user_portrait_small":"http:\/\/i.vimeocdn.com\/portrait\/6122037_30x30.jpg","user_portrait_medium":"http:\/\/i.vimeocdn.com\/portrait\/6122037_75x75.jpg","user_portrait_large":"http:\/\/i.vimeocdn.com\/portrait\/6122037_100x100.jpg","user_portrait_huge":"http:\/\/i.vimeocdn.com\/portrait\/6122037_300x300.jpg","stats_number_of_likes":223,"stats_number_of_plays":70856,"stats_number_of_comments":12,"duration":3497,"width":640,"height":360,"tags":"Freud,
+        of Time","user_url":"http:\/\/vimeo.com\/rosesoftime","user_portrait_small":"http:\/\/i.vimeocdn.com\/portrait\/6122037_30x30.jpg","user_portrait_medium":"http:\/\/i.vimeocdn.com\/portrait\/6122037_75x75.jpg","user_portrait_large":"http:\/\/i.vimeocdn.com\/portrait\/6122037_100x100.jpg","user_portrait_huge":"http:\/\/i.vimeocdn.com\/portrait\/6122037_300x300.jpg","stats_number_of_likes":292,"stats_number_of_plays":95161,"stats_number_of_comments":16,"duration":3497,"width":640,"height":360,"tags":"Freud,
         Bernays, Century of self, BBC, spin, politics, society, Adam Curtis, psychoanalysis,
         consumerism, democracy","embed_privacy":"anywhere"}]'
     http_version: 
-  recorded_at: Wed, 04 Jun 2014 20:08:05 GMT
-recorded_with: VCR 2.9.2
+  recorded_at: Sat, 26 Jul 2014 11:51:11 GMT
+recorded_with: VCR 2.6.0
