@@ -41,7 +41,7 @@ class VideoInfo
       end
 
       def _url_regex
-        /.*\.com\/(?:(?:groups\/[^\/]+\/videos\/)|(?:video\/))?([0-9]+).*$/i
+        /.*\.com\/(?:(?:groups\/[^\/]+\/videos\/)|(?:ondemand\/less\/)|(?:video\/))?([0-9]+).*$/
       end
 
       def _api_base

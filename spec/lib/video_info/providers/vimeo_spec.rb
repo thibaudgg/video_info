@@ -10,6 +10,11 @@ describe VideoInfo::Providers::Vimeo do
       it { is_expected.to be_truthy }
     end
 
+    context "with Vimeo OnDemand url" do
+      let(:url) { 'https://vimeo.com/ondemand/less/101677664' }
+      it { should be_true }
+    end
+
     context "with vimeo album url" do
       let(:url) { 'http://vimeo.com/album/2755718' }
       it { is_expected.to be_falsey }
@@ -189,6 +194,13 @@ describe VideoInfo::Providers::Vimeo do
       subject { super().video_id }
       it { is_expected.to eq '898029' }
     end
+  end
+
+  context "with video 101677664 in /ondemand/ url", :vcr do
+    subject { VideoInfo.new('https://vimeo.com/ondemand/less/101677664') }
+
+    its(:provider) { should eq 'Vimeo' }
+    its(:video_id) { should eq '101677664' }
   end
 
 end
