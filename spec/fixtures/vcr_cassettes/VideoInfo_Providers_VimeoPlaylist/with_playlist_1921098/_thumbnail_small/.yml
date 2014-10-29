@@ -1,0 +1,71 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://vimeo.com/api/v2/album/1921098/info.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - VideoInfo/2.3.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Apache
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - deny
+      X-Ratelimit-Limit:
+      - '3600'
+      X-Ratelimit-Remaining:
+      - '3591'
+      X-Ratelimit-Reset:
+      - '1414618567'
+      Expires:
+      - Wed, 29 Oct 2014 20:46:38 GMT
+      Last-Modified:
+      - Thu, 31 May 2012 15:34:36 GMT
+      Etag:
+      - '"cb685fcd5e0ebd0106b21d7c9f2439a7"'
+      Vary:
+      - Accept-Encoding
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '314'
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Wed, 29 Oct 2014 20:45:39 GMT
+      X-Varnish:
+      - 3888131210 3888130824
+      Age:
+      - '0'
+      Via:
+      - 1.1 varnish
+      X-Varnish-Cache:
+      - '1'
+      Connection:
+      - close
+      X-Vserver:
+      - dfvimeowebproxy1
+    body:
+      encoding: UTF-8
+      string: '{"id":1921098,"created_on":"2012-04-30 11:00:53","last_modified":"2012-05-31
+        11:34:36","title":"Get To Know The New Vimeo","description":"Tutorials to
+        get you started in the brand new Vimeo!","url":"http:\/\/vimeo.com\/album\/1921098","thumbnail_small":"http:\/\/i.vimeocdn.com\/video\/299773432_100x75.jpg","thumbnail_medium":"http:\/\/i.vimeocdn.com\/video\/299773432_200x150.jpg","thumbnail_large":"http:\/\/i.vimeocdn.com\/video\/299773432_640.jpg","total_videos":9,"user_id":152184,"user_display_name":"Vimeo
+        Staff","user_url":"http:\/\/vimeo.com\/staff"}'
+    http_version: 
+  recorded_at: Wed, 29 Oct 2014 20:45:39 GMT
+recorded_with: VCR 2.9.3

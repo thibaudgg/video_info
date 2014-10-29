@@ -120,17 +120,17 @@ describe VideoInfo::Providers::Youtube do
 
     describe '#thumbnail_small' do
       subject { super().thumbnail_small }
-      it { is_expected.to eq 'http://i1.ytimg.com/vi/mZqGqE0D0n4/default.jpg' }
+      it { is_expected.to eq 'http://i.ytimg.com/vi/mZqGqE0D0n4/default.jpg' }
     end
 
     describe '#thumbnail_medium' do
       subject { super().thumbnail_medium }
-      it { is_expected.to eq 'http://i1.ytimg.com/vi/mZqGqE0D0n4/mqdefault.jpg' }
+      it { is_expected.to eq 'http://i.ytimg.com/vi/mZqGqE0D0n4/mqdefault.jpg' }
     end
 
     describe '#thumbnail_large' do
       subject { super().thumbnail_large }
-      it { is_expected.to eq 'http://i1.ytimg.com/vi/mZqGqE0D0n4/hqdefault.jpg' }
+      it { is_expected.to eq 'http://i.ytimg.com/vi/mZqGqE0D0n4/hqdefault.jpg' }
     end
 
     describe '#view_count' do

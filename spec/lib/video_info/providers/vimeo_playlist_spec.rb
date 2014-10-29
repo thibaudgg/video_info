@@ -47,16 +47,16 @@ describe VideoInfo::Providers::VimeoPlaylist do
   end
 
 
-  context "with playlist 2755718", :vcr do
+  context "with playlist 1921098", :vcr do
     let(:videos) {
       [
-        VideoInfo.new('http://vimeo.com/67977038'),
-        VideoInfo.new('http://vimeo.com/68843810'),
-        VideoInfo.new('http://vimeo.com/69949597'),
-        VideoInfo.new('http://vimeo.com/70388245')
-      ]
+        39837353, 40170418, 38809325, 38445453,
+        38445381, 38445243, 38394965, 42647970
+      ].map do |video_id|
+        VideoInfo.new("http://vimeo.com/#{video_id}")
+      end
     }
-    subject { VideoInfo.new('http://vimeo.com/album/2755718') }
+    subject { VideoInfo.new('http://vimeo.com/album/1921098') }
 
     describe '#provider' do
       subject { super().provider }
@@ -65,32 +65,32 @@ describe VideoInfo::Providers::VimeoPlaylist do
 
     describe '#playlist_id' do
       subject { super().playlist_id }
-      it { is_expected.to eq '2755718' }
+      it { is_expected.to eq '1921098' }
     end
 
     describe '#url' do
       subject { super().url }
-      it { is_expected.to eq 'http://vimeo.com/album/2755718' }
+      it { is_expected.to eq 'http://vimeo.com/album/1921098' }
     end
 
     describe '#embed_url' do
       subject { super().embed_url }
-      it { is_expected.to eq '//player.vimeo.com/hubnut/album/2755718' }
+      it { is_expected.to eq '//player.vimeo.com/hubnut/album/1921098' }
     end
 
     describe '#embed_code' do
       subject { super().embed_code }
-      it { is_expected.to eq '<iframe src="//player.vimeo.com/hubnut/album/2755718?autoplay=0&byline=0&portrait=0&title=0" frameborder="0"></iframe>' }
+      it { is_expected.to eq "<iframe src=\"//player.vimeo.com/hubnut/album/1921098?autoplay=0&byline=0&portrait=0&title=0\" frameborder=\"0\"></iframe>" }
     end
 
     describe '#title' do
       subject { super().title }
-      it { is_expected.to eq 'The Century Of Self' }
+      it { is_expected.to eq 'Get To Know The New Vimeo' }
     end
 
     describe '#description' do
       subject { super().description }
-      it { is_expected.to eq 'The Century of the Self is an award-winning British television documentary series by Adam Curtis, released in 2002.' }
+      it { is_expected.to eq 'Tutorials to get you started in the brand new Vimeo!' }
     end
 
     describe '#keywords' do
@@ -120,17 +120,17 @@ describe VideoInfo::Providers::VimeoPlaylist do
 
     describe '#thumbnail_small' do
       subject { super().thumbnail_small }
-      it { is_expected.to eq 'http://i.vimeocdn.com/video/443595474_100x75.jpg' }
+      it { is_expected.to eq 'http://i.vimeocdn.com/video/299773432_100x75.jpg' }
     end
 
     describe '#thumbnail_medium' do
       subject { super().thumbnail_medium }
-      it { is_expected.to eq 'http://i.vimeocdn.com/video/443595474_200x150.jpg' }
+      it { is_expected.to eq 'http://i.vimeocdn.com/video/299773432_200x150.jpg' }
     end
 
     describe '#thumbnail_large' do
       subject { super().thumbnail_large }
-      it { is_expected.to eq 'http://i.vimeocdn.com/video/443595474_640.jpg' }
+      it { is_expected.to eq 'http://i.vimeocdn.com/video/299773432_640.jpg' }
     end
 
     describe '#videos' do

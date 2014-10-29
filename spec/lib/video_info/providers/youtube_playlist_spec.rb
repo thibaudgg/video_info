@@ -115,17 +115,17 @@ describe VideoInfo::Providers::YoutubePlaylist do
 
     describe '#thumbnail_small' do
       subject { super().thumbnail_small }
-      it { is_expected.to eq 'https://i1.ytimg.com/vi/8b0aEoxqqC0/default.jpg' }
+      it { is_expected.to eq 'https://i.ytimg.com/vi/8b0aEoxqqC0/default.jpg' }
     end
 
     describe '#thumbnail_medium' do
       subject { super().thumbnail_medium }
-      it { is_expected.to eq 'https://i1.ytimg.com/vi/8b0aEoxqqC0/mqdefault.jpg' }
+      it { is_expected.to eq 'https://i.ytimg.com/vi/8b0aEoxqqC0/mqdefault.jpg' }
     end
 
     describe '#thumbnail_large' do
       subject { super().thumbnail_large }
-      it { is_expected.to eq 'https://i1.ytimg.com/vi/8b0aEoxqqC0/hqdefault.jpg' }
+      it { is_expected.to eq 'https://i.ytimg.com/vi/8b0aEoxqqC0/hqdefault.jpg' }
     end
 
     describe '#videos' do

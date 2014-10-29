@@ -12,7 +12,7 @@ describe VideoInfo::Providers::Vimeo do
 
     context "with Vimeo OnDemand url" do
       let(:url) { 'https://vimeo.com/ondemand/less/101677664' }
-      it { should be_true }
+      it { is_expected.to be_truthy }
     end
 
     context "with vimeo album url" do

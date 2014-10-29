@@ -19,11 +19,13 @@ http_interactions:
       X-Gdata-User-Country:
       - CH
       Content-Type:
-      - application/json;charset=UTF-8
+      - application/json; charset=UTF-8
+      Access-Control-Allow-Origin:
+      - "*"
       Expires:
-      - Wed, 04 Jun 2014 20:09:18 GMT
+      - Wed, 29 Oct 2014 20:41:14 GMT
       Date:
-      - Wed, 04 Jun 2014 20:04:18 GMT
+      - Wed, 29 Oct 2014 20:36:14 GMT
       Cache-Control:
       - public, max-age=300, no-transform
       Vary:
@@ -35,7 +37,7 @@ http_interactions:
       Last-Modified:
       - Wed, 26 Feb 2014 22:25:04 GMT
       Content-Length:
-      - '52784'
+      - '95297'
       X-Content-Type-Options:
       - nosniff
       X-Frame-Options:
@@ -45,10 +47,10 @@ http_interactions:
       Server:
       - GSE
       Alternate-Protocol:
-      - 80:quic
+      - 80:quic,p=0.01
     body:
       encoding: UTF-8
       string: ''
     http_version: 
-  recorded_at: Wed, 04 Jun 2014 20:08:11 GMT
-recorded_with: VCR 2.9.2
+  recorded_at: Wed, 29 Oct 2014 20:36:14 GMT
+recorded_with: VCR 2.9.3
