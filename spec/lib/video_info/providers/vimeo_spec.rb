@@ -15,6 +15,11 @@ describe VideoInfo::Providers::Vimeo do
       it { is_expected.to be_truthy }
     end
 
+    context "with Vimeo Channels url" do
+      let(:url) { 'https://vimeo.com/channels/any_channel/111431415' }
+      it { is_expected.to be_truthy }
+    end
+
     context "with vimeo album url" do
       let(:url) { 'http://vimeo.com/album/2755718' }
       it { is_expected.to be_falsey }
@@ -201,6 +206,13 @@ describe VideoInfo::Providers::Vimeo do
 
     its(:provider) { should eq 'Vimeo' }
     its(:video_id) { should eq '101677664' }
+  end
+
+  context "with video 111431415 in /channels/*/ url", :vcr do
+    subject { VideoInfo.new('https://vimeo.com/channels/some_channel1/111431415') }
+
+    its(:provider) { should eq 'Vimeo' }
+    its(:video_id) { should eq '111431415' }
   end
 
 end
