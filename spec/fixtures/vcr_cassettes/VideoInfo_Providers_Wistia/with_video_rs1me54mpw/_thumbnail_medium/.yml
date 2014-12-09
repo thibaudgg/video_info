@@ -1,0 +1,73 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://fast.wistia.com/oembed?url=http://home.wistia.com/medias/rs1me54mpw
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - VideoInfo/2.3.3
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.0.9
+      Content-Type:
+      - application/json; charset=utf-8
+      Status:
+      - 200 OK
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - public, no-cache
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      P3p:
+      - CP="CURi ADMa DEVa IVAa IVDa CONi OUR IND DSP CAO COR"
+      X-Request-Id:
+      - 3c60e80379c8419e224ce5cd544722e2
+      X-Runtime:
+      - '0.145098'
+      X-Rack-Cache:
+      - miss
+      Via:
+      - 1.1 varnish
+      - 1.1 varnish
+      Content-Length:
+      - '660'
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Tue, 09 Dec 2014 06:21:57 GMT
+      Age:
+      - '3767'
+      Connection:
+      - keep-alive
+      X-Served-By:
+      - cache-ord1732-ORD, cache-syd1621-SYD
+      X-Cache:
+      - MISS, HIT
+      X-Cache-Hits:
+      - 0, 5
+      X-Timer:
+      - S1418106117.616693,VS0,VE0
+      Vary:
+      - X-Forwarded-Proto
+    body:
+      encoding: UTF-8
+      string: '{"version":"1.0","type":"video","html":"<iframe src=\"//fast.wistia.net/embed/iframe/rs1me54mpw\"
+        allowtransparency=\"true\" frameborder=\"0\" scrolling=\"no\" class=\"wistia_embed\"
+        name=\"wistia_embed\" allowfullscreen mozallowfullscreen webkitallowfullscreen
+        oallowfullscreen msallowfullscreen width=\"960\" height=\"540\"></iframe>","width":960,"height":540,"provider_name":"Wistia,
+        Inc.","provider_url":"http://wistia.com","title":"Lance Kalish - Yes To Group","thumbnail_url":"https://embed-ssl.wistia.com/deliveries/dc005e6a7583a25c4b7c284c08afc42fb67fdb95.jpg?image_crop_resized=960x540","thumbnail_width":960,"thumbnail_height":540,"duration":1214.83}'
+    http_version: 
+  recorded_at: Tue, 09 Dec 2014 06:21:57 GMT
+recorded_with: VCR 2.9.3

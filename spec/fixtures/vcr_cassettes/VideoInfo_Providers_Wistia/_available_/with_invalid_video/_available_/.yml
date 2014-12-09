@@ -1,0 +1,65 @@
+---
+http_interactions:
+- request:
+    method: head
+    uri: http://fast.wistia.com/oembed?url=http://home.wistia.com/medias/no_video
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Server:
+      - nginx/1.0.9
+      Content-Type:
+      - application/json; charset=utf-8
+      Status:
+      - 404 Not Found
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - public, no-cache
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      P3p:
+      - CP="CURi ADMa DEVa IVAa IVDa CONi OUR IND DSP CAO COR"
+      X-Request-Id:
+      - 06592ecb190bdff02c6534d1813d8644
+      X-Runtime:
+      - '0.013808'
+      X-Rack-Cache:
+      - miss
+      Via:
+      - 1.1 varnish
+      - 1.1 varnish
+      Content-Length:
+      - '1'
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Tue, 09 Dec 2014 06:21:57 GMT
+      Age:
+      - '1533'
+      Connection:
+      - keep-alive
+      X-Served-By:
+      - cache-ord1722-ORD, cache-syd1622-SYD
+      X-Cache:
+      - MISS, HIT
+      X-Cache-Hits:
+      - 0, 1
+      X-Timer:
+      - S1418106117.331597,VS0,VE0
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Tue, 09 Dec 2014 06:21:57 GMT
+recorded_with: VCR 2.9.3
