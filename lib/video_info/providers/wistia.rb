@@ -1,7 +1,7 @@
 class VideoInfo
   module Providers
     class Wistia < Provider
-      
+
       def self.usable?(url)
         url =~ /(.*)(wistia.com|wistia.net|wi.st)/
       end
@@ -41,7 +41,7 @@ class VideoInfo
       end
 
       def _api_base
-        "fast.wistia.com"
+        'fast.wistia.com'
       end
 
       def _api_path
