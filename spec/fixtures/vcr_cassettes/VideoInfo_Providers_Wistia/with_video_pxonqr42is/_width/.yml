@@ -1,0 +1,73 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://fast.wistia.com/oembed?url=http://home.wistia.com/medias/pxonqr42is
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - VideoInfo/2.3.3
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.0.9
+      Content-Type:
+      - application/json; charset=utf-8
+      Status:
+      - 200 OK
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - public, no-cache
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      P3p:
+      - CP="CURi ADMa DEVa IVAa IVDa CONi OUR IND DSP CAO COR"
+      X-Request-Id:
+      - 64fbc9d55eb6cf1444f09036dffd7606
+      X-Runtime:
+      - '0.061998'
+      X-Rack-Cache:
+      - miss
+      Via:
+      - 1.1 varnish
+      - 1.1 varnish
+      Content-Length:
+      - '654'
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Tue, 09 Dec 2014 06:21:57 GMT
+      Age:
+      - '2407'
+      Connection:
+      - keep-alive
+      X-Served-By:
+      - cache-ord1726-ORD, cache-syd1620-SYD
+      X-Cache:
+      - MISS, HIT
+      X-Cache-Hits:
+      - 0, 5
+      X-Timer:
+      - S1418106117.820911,VS0,VE0
+      Vary:
+      - X-Forwarded-Proto
+    body:
+      encoding: UTF-8
+      string: '{"version":"1.0","type":"video","html":"<iframe src=\"//fast.wistia.net/embed/iframe/pxonqr42is\"
+        allowtransparency=\"true\" frameborder=\"0\" scrolling=\"no\" class=\"wistia_embed\"
+        name=\"wistia_embed\" allowfullscreen mozallowfullscreen webkitallowfullscreen
+        oallowfullscreen msallowfullscreen width=\"960\" height=\"568\"></iframe>","width":960,"height":568,"provider_name":"Wistia,
+        Inc.","provider_url":"http://wistia.com","title":"Understanding Analytics","thumbnail_url":"https://embed-ssl.wistia.com/deliveries/0fccbdc60ade35723f79f1c002bc61b135b610fa.jpg?image_crop_resized=960x540","thumbnail_width":960,"thumbnail_height":540,"duration":250.0}'
+    http_version: 
+  recorded_at: Tue, 09 Dec 2014 06:21:57 GMT
+recorded_with: VCR 2.9.3

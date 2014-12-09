@@ -1,0 +1,67 @@
+---
+http_interactions:
+- request:
+    method: head
+    uri: http://fast.wistia.com/oembed?url=http://home.wistia.com/medias/rs1me54mpw
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.0.9
+      Content-Type:
+      - application/json; charset=utf-8
+      Status:
+      - 200 OK
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - public, no-cache
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      P3p:
+      - CP="CURi ADMa DEVa IVAa IVDa CONi OUR IND DSP CAO COR"
+      X-Request-Id:
+      - 3c60e80379c8419e224ce5cd544722e2
+      X-Runtime:
+      - '0.145098'
+      X-Rack-Cache:
+      - miss
+      Via:
+      - 1.1 varnish
+      - 1.1 varnish
+      Content-Length:
+      - '660'
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Tue, 09 Dec 2014 06:21:57 GMT
+      Age:
+      - '3767'
+      Connection:
+      - keep-alive
+      X-Served-By:
+      - cache-ord1732-ORD, cache-syd1620-SYD
+      X-Cache:
+      - MISS, HIT
+      X-Cache-Hits:
+      - 0, 1
+      X-Timer:
+      - S1418106117.186035,VS0,VE0
+      Vary:
+      - X-Forwarded-Proto
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Tue, 09 Dec 2014 06:21:57 GMT
+recorded_with: VCR 2.9.3

@@ -48,6 +48,20 @@ video = VideoInfo.new("http://vimeo.com/898029")
 # video.embed_url        => "http://player.vimeo.com/video/898029"
 # video.embed_code       => "'<iframe src="//player.vimeo.com/video/898029?title=0&amp;byline=0&amp;portrait=0&amp;autoplay=0" frameborder="0"></iframe>'"
 
+video = VideoInfo.new("http://fast.wistia.com/embed/medias/pxonqr42is")
+# video.available?       => true
+# video.provider         => "Wistia"
+# video.video_id         => "pxonqr42is"
+# video.title            => "Understanding Analytics"
+# video.duration         => 250 (in seconds)
+# video.width            => 960
+# video.height           => 568
+# video.thumbnail_small  => "https://embed-ssl.wistia.com/deliveries/0fccbdc60ade35723f79f1c002bc61b135b610fa.jpg?image_crop_resized=960x540"
+# video.thumbnail_medium => "https://embed-ssl.wistia.com/deliveries/0fccbdc60ade35723f79f1c002bc61b135b610fa.jpg?image_crop_resized=960x540"
+# video.thumbnail_large  => "https://embed-ssl.wistia.com/deliveries/0fccbdc60ade35723f79f1c002bc61b135b610fa.jpg?image_crop_resized=960x540"
+# video.embed_url        => "//fast.wistia.net/embed/iframe/pxonqr42is"
+# video.embed_code       => "'<iframe src="//fast.wistia.net/embed/iframe/pxonqr42is" frameborder="0"></iframe>'"
+
 video = VideoInfo.new("http://www.youtube.com/watch?v=mZqGqE0D0n4")
 # video.available?       => true
 # video.video_id         => "mZqGqE0D0n4"
