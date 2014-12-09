@@ -1,7 +1,6 @@
 class VideoInfo
   module Providers
     class Dailymotion < Provider
-
       def self.usable?(url)
         url =~ /(dai(?:\.ly|lymotion\.com))/
       end
@@ -50,9 +49,9 @@ class VideoInfo
 
       def _response_code
         response = nil
-        Net::HTTP.start(_api_base, 443, use_ssl: true) {|http|
+        Net::HTTP.start(_api_base, 443, use_ssl: true) do |http|
           response = http.get(_api_path)
-        }
+        end
         response.code
       end
 
@@ -79,7 +78,6 @@ class VideoInfo
       def _default_url_attributes
         { autoplay: 0 }
       end
-
     end
   end
 end

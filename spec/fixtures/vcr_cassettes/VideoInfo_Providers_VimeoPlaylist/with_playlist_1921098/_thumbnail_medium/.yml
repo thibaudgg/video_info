@@ -8,7 +8,7 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - VideoInfo/2.3.1
+      - VideoInfo/2.4.0
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -29,11 +29,11 @@ http_interactions:
       X-Ratelimit-Limit:
       - '3600'
       X-Ratelimit-Remaining:
-      - '3590'
+      - '3597'
       X-Ratelimit-Reset:
-      - '1414618567'
+      - '1418156847'
       Expires:
-      - Wed, 29 Oct 2014 20:46:39 GMT
+      - Tue, 09 Dec 2014 19:28:27 GMT
       Last-Modified:
       - Thu, 31 May 2012 15:34:36 GMT
       Etag:
@@ -47,19 +47,19 @@ http_interactions:
       Accept-Ranges:
       - bytes
       Date:
-      - Wed, 29 Oct 2014 20:45:39 GMT
+      - Tue, 09 Dec 2014 19:27:27 GMT
       X-Varnish:
-      - 833958295 833957961
+      - '894794696'
       Age:
       - '0'
       Via:
       - 1.1 varnish
       X-Varnish-Cache:
-      - '1'
+      - '0'
       Connection:
       - close
       X-Vserver:
-      - dfvimeowebproxy3
+      - dfvimeowebproxy2
     body:
       encoding: UTF-8
       string: '{"id":1921098,"created_on":"2012-04-30 11:00:53","last_modified":"2012-05-31
@@ -67,5 +67,5 @@ http_interactions:
         get you started in the brand new Vimeo!","url":"http:\/\/vimeo.com\/album\/1921098","thumbnail_small":"http:\/\/i.vimeocdn.com\/video\/299773432_100x75.jpg","thumbnail_medium":"http:\/\/i.vimeocdn.com\/video\/299773432_200x150.jpg","thumbnail_large":"http:\/\/i.vimeocdn.com\/video\/299773432_640.jpg","total_videos":9,"user_id":152184,"user_display_name":"Vimeo
         Staff","user_url":"http:\/\/vimeo.com\/staff"}'
     http_version: 
-  recorded_at: Wed, 29 Oct 2014 20:45:39 GMT
+  recorded_at: Tue, 09 Dec 2014 19:27:27 GMT
 recorded_with: VCR 2.9.3

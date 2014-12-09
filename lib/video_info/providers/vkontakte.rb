@@ -16,7 +16,7 @@ class VideoInfo
       end
 
       def description
-        content = data[/<meta name="description" content="(.*)" \/>/,1]
+        content = data[/<meta name="description" content="(.*)" \/>/, 1]
         HTMLEntities.new.decode(content)
       end
       alias_method :keywords, :description
@@ -34,11 +34,11 @@ class VideoInfo
       end
 
       def title
-        data[/<title>(.*)<\/title>/,1].gsub(" | ВКонтакте", "")
+        data[/<title>(.*)<\/title>/, 1].gsub(' | ВКонтакте', '')
       end
 
       def view_count
-        data[/mv_num_views\\">.*?(\d+)/,1].to_i
+        data[/mv_num_views\\">.*?(\d+)/, 1].to_i
       end
 
       def embed_url
@@ -46,7 +46,7 @@ class VideoInfo
       end
 
       def duration
-        data[/"duration":(\d+)/,1].to_i
+        data[/"duration":(\d+)/, 1].to_i
       end
 
       private
@@ -56,28 +56,26 @@ class VideoInfo
         if RUBY_VERSION.to_i < 2
           Iconv.iconv('utf-8', 'cp1251', uri.read)[0]
         else
-          uri.read.encode("UTF-8")
+          uri.read.encode('UTF-8')
         end
       end
 
       def _response_code
         response = nil
-        Net::HTTP.start(_api_base, 80) {|http|
-          response = http.get(_api_path)
-        }
+        Net::HTTP.start(_api_base, 80) { |http| response = http.get(_api_path) }
         response.code
       end
 
       def _api_base
-        URI::parse(url).host
+        URI.parse(url).host
       end
 
       def _api_path
-        URI::parse(url).path
+        URI.parse(url).path
       end
 
       def _data_hash
-        data[/hash2\\":\\"(\w+)/,1]
+        data[/hash2\\":\\"(\w+)/, 1]
       end
 
       def _set_video_id_from_url
@@ -89,13 +87,12 @@ class VideoInfo
       end
 
       def _default_iframe_attributes
-        { allowfullscreen: "allowfullscreen" }
+        { allowfullscreen: 'allowfullscreen' }
       end
 
       def _default_url_attributes
         {}
       end
-
     end
   end
 end

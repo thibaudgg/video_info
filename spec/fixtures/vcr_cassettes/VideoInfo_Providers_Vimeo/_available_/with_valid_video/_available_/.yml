@@ -17,7 +17,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Wed, 29 Oct 2014 20:36:08 GMT
+      - Tue, 09 Dec 2014 19:27:28 GMT
       Server:
       - Apache
       Access-Control-Allow-Origin:
@@ -31,15 +31,15 @@ http_interactions:
       X-Ratelimit-Remaining:
       - '3597'
       X-Ratelimit-Reset:
-      - '1414618566'
+      - '1418156846'
       Cache-Control:
       - max-age=60
       Expires:
-      - Wed, 29 Oct 2014 20:37:08 GMT
+      - Tue, 09 Dec 2014 19:28:28 GMT
       Last-Modified:
-      - Tue, 28 Oct 2014 02:13:21 GMT
+      - Sat, 06 Dec 2014 23:12:21 GMT
       Etag:
-      - '"34a6900f26a7c1eefc21a9638b65ac2d"'
+      - '"68eeec2f655166235a3fafb4e552483a"'
       Vary:
       - Accept-Encoding
       Connection:
@@ -50,5 +50,5 @@ http_interactions:
       encoding: UTF-8
       string: ''
     http_version: 
-  recorded_at: Wed, 29 Oct 2014 20:36:08 GMT
+  recorded_at: Tue, 09 Dec 2014 19:27:28 GMT
 recorded_with: VCR 2.9.3

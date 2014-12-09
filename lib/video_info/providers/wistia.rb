@@ -1,7 +1,6 @@
 class VideoInfo
   module Providers
     class Wistia < Provider
-
       def self.usable?(url)
         url =~ /(.*)(wistia.com|wistia.net|wi.st)/
       end
@@ -59,7 +58,6 @@ class VideoInfo
       def _default_url_attributes
         {}
       end
-
     end
   end
 end

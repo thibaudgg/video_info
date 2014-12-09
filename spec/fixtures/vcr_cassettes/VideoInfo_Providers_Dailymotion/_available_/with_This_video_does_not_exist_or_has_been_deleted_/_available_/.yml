@@ -21,28 +21,32 @@ http_interactions:
       Server:
       - DMS/1.0.42
       X-Dm-Backnode:
-      - web-047.adm.dailymotion.com:80
+      - web-051.adm.dailymotion.com:80
       Vary:
       - Authorization,Accept-Encoding
       Cache-Control:
       - private, max-age=900
       Content-Type:
-      - application/json
+      - application/json; charset=UTF-8
       P3p:
       - policyref="http://www.dailymotion.com/w3c/p3p.xml", CP="IDC DSP CURa ADMa
         DEVa TAIa OUR BUS IND UNI COM NAV INT"
       Date:
-      - Wed, 29 Oct 2014 20:36:04 GMT
+      - Tue, 09 Dec 2014 19:27:23 GMT
       X-Dm-Lb:
       - 195.8.215.129
       Access-Control-Allow-Origin:
       - "*"
       Etag:
-      - W/"p3bf5_k0DFScFYlnTb63Ug"
+      - W/"bQdj-tf3xQT_eEdX1mjrEQ"
       X-Response-Time:
-      - 0.058677 seconds
+      - 0.056163 seconds
       Last-Modified:
-      - Wed, 29 Oct 2014 15:28:54 GMT
+      - Thu, 27 Nov 2014 15:31:39 GMT
+      Access-Control-Allow-Headers:
+      - Authorization
+      Access-Control-Allow-Methods:
+      - GET, POST, DELETE
       X-Dm-Page:
       - ch-fr.rest.rest_api
       Content-Length:
@@ -52,5 +56,5 @@ http_interactions:
       string: '{"error":{"code":404,"message":"This video does not exist or has been
         deleted.","type":"not_found"}}'
     http_version: 
-  recorded_at: Wed, 29 Oct 2014 20:36:04 GMT
+  recorded_at: Tue, 09 Dec 2014 19:27:23 GMT
 recorded_with: VCR 2.9.3

@@ -1,7 +1,6 @@
 class VideoInfo
   module Providers
     class VimeoPlaylist < Vimeo
-
       alias_method :playlist_id, :video_id
 
       def self.usable?(url)
@@ -58,7 +57,6 @@ class VideoInfo
           entry['id']
         end
       end
-
     end
   end
 end

@@ -13,13 +13,17 @@ class VideoInfo
     end
 
     def self.usable?(url)
-      raise NotImplementedError.new('Provider class must implement .usable? public method')
+      raise NotImplementedError.new(
+        'Provider class must implement .usable? public method'
+      )
     end
 
     def embed_code(options = {})
       iframe_attributes = options.fetch(:iframe_attributes, {})
       iframe_attrs = ["src=\"#{_embed_url(options)}\"", "frameborder=\"0\""]
-      iframe_attrs << _hash_to_attributes(_default_iframe_attributes.merge(iframe_attributes))
+      iframe_attrs << _hash_to_attributes(
+        _default_iframe_attributes.merge(iframe_attributes)
+      )
 
       "<iframe #{iframe_attrs.reject(&:empty?).join(" ")}></iframe>"
     end
@@ -27,7 +31,6 @@ class VideoInfo
     def data
       @data ||= _set_data_from_api
     end
-
 
     def available?
       !%w[403 404].include?(_response_code)
@@ -37,14 +40,13 @@ class VideoInfo
 
     def _response_code
       response = nil
-      Net::HTTP.start(_api_base, 80) {|http|
-        response = http.head(_api_path)
-      }
+      Net::HTTP.start(_api_base, 80) { |http| response = http.head(_api_path) }
       response.code
     end
 
     def _clean_options(options)
-      options = { 'User-Agent' => "VideoInfo/#{VideoInfo::VERSION}" }.merge(options)
+      options =
+        { 'User-Agent' => "VideoInfo/#{VideoInfo::VERSION}" }.merge(options)
       options.dup.each do |key, value|
         if _not_openuri_option_symbol?(key)
           options[_http_header_field(key)] = value
@@ -79,11 +81,15 @@ class VideoInfo
     end
 
     def _url_regex
-      raise NotImplementedError.new('Provider class must implement #_url_regex private method')
+      raise NotImplementedError.new(
+        'Provider class must implement #_url_regex private method'
+      )
     end
 
     def _api_url
-      raise NotImplementedError.new('Provider class must implement #_api_url private method')
+      raise NotImplementedError.new(
+        'Provider class must implement #_api_url private method'
+      )
     end
 
     def _embed_url(options)
@@ -97,7 +103,7 @@ class VideoInfo
 
     def _hash_to_attributes(hash)
       return unless hash.is_a?(Hash)
-      hash.map{|k,v| "#{k}=\"#{v}\""}.join(' ')
+      hash.map { |k, v| "#{k}=\"#{v}\"" }.join(' ')
     end
 
     def _hash_to_params(hash)

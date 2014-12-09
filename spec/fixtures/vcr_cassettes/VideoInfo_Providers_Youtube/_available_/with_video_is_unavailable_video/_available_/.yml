@@ -23,9 +23,9 @@ http_interactions:
       Content-Length:
       - '181'
       Date:
-      - Wed, 29 Oct 2014 20:36:17 GMT
+      - Tue, 09 Dec 2014 19:27:37 GMT
       Expires:
-      - Wed, 29 Oct 2014 20:36:17 GMT
+      - Tue, 09 Dec 2014 19:27:37 GMT
       Cache-Control:
       - private, max-age=0
       X-Content-Type-Options:
@@ -37,10 +37,10 @@ http_interactions:
       Server:
       - GSE
       Alternate-Protocol:
-      - 80:quic,p=0.01
+      - 80:quic,p=0.02
     body:
       encoding: UTF-8
       string: ''
     http_version: 
-  recorded_at: Wed, 29 Oct 2014 20:36:17 GMT
+  recorded_at: Tue, 09 Dec 2014 19:27:37 GMT
 recorded_with: VCR 2.9.3

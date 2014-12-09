@@ -1,7 +1,6 @@
 class VideoInfo
   module Providers
     class Youtube < Provider
-
       def self.usable?(url)
         url =~ /(youtube\.com\/(?!playlist|embed\/videoseries).*)|(youtu\.be)/
       end
@@ -47,7 +46,11 @@ class VideoInfo
       end
 
       def view_count
-        _video_entry['yt$statistics'] ? _video_entry['yt$statistics']['viewCount'].to_i : 0
+        if _video_entry['yt$statistics']
+          _video_entry['yt$statistics']['viewCount'].to_i
+        else
+          0
+        end
       end
 
       private
@@ -69,7 +72,7 @@ class VideoInfo
       end
 
       def _default_iframe_attributes
-        { allowfullscreen: "allowfullscreen" }
+        { allowfullscreen: 'allowfullscreen' }
       end
 
       def _default_url_attributes
@@ -87,7 +90,6 @@ class VideoInfo
       def _video_thumbnail(id)
         _video_entry['media$group']['media$thumbnail'][id]['url']
       end
-
     end
   end
 end

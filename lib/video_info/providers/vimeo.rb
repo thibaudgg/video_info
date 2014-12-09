@@ -1,7 +1,6 @@
 class VideoInfo
   module Providers
     class Vimeo < Provider
-
       def self.usable?(url)
         url =~ /(vimeo\.com\/(?!album|hubnut\/album).*)/
       end
@@ -45,7 +44,7 @@ class VideoInfo
       end
 
       def _api_base
-        "vimeo.com"
+        'vimeo.com'
       end
 
       def _api_path
@@ -66,7 +65,6 @@ class VideoInfo
           portrait: 0,
           autoplay: 0 }
       end
-
     end
   end
 end

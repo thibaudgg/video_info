@@ -19,9 +19,9 @@ http_interactions:
       message: Not Found
     headers:
       Server:
-      - nginx
+      - Apache
       Date:
-      - Wed, 29 Oct 2014 20:36:11 GMT
+      - Tue, 09 Dec 2014 19:27:32 GMT
       Content-Type:
       - text/html
       Content-Length:
@@ -42,5 +42,5 @@ http_interactions:
           </body>
         </html>
     http_version: 
-  recorded_at: Wed, 29 Oct 2014 20:36:11 GMT
+  recorded_at: Tue, 09 Dec 2014 19:27:32 GMT
 recorded_with: VCR 2.9.3
