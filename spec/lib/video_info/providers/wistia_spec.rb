@@ -1,6 +1,5 @@
 # encoding: UTF-8
 require 'spec_helper'
-require 'pry'
 
 describe VideoInfo::Providers::Wistia do
 
