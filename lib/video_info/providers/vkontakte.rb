@@ -78,10 +78,21 @@ class VideoInfo
         _make_request(url, options)
       end
 
+      def _error_found?(response)
+        title = response.body[/<title>(.*)<\/title>/, 1]
+                        .force_encoding('cp1251')
+                        .encode('UTF-8', undef: :replace)
+        !!title.index('Ошибка')
+      end
+
       def _response_code
         response = nil
         Net::HTTP.start(_api_base, 80) { |http| response = http.get(_api_path) }
-        response.code
+        if _error_found? response
+          "403"
+        else
+          response.code
+        end
       end
 
       def _api_base

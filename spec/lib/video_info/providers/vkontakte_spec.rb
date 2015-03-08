@@ -35,6 +35,11 @@ describe VideoInfo::Providers::Vkontakte do
       its(:available?)       { should be_falsey }
     end
 
+    context "with private video", :vcr do
+      subject { VideoInfo.new('http://vk.com/video9491528_165193133') }
+      its(:available?)       { should be_falsey }
+    end
+
   end
 
   context "with video kirill.lyanoi?z=video2152699_168591741%2F56fd229a9dfe2dcdbe", :vcr do
