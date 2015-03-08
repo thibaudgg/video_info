@@ -13,7 +13,7 @@ class VideoInfo
       end
 
       def provider
-        "Vkontakte"
+        'Vkontakte'
       end
 
       def description
@@ -43,11 +43,16 @@ class VideoInfo
       end
 
       def embed_url
-        youtube = data[/iframe\ id=\"video_player\".*src=\"(.*)\"\ frameborder=/, 1]
+        youtube = data[
+          /iframe\ id=\"video_player\".*src=\"(.*)\"\ frameborder=/, 1
+        ]
         if youtube
-          VideoInfo::Providers::Youtube.new(URI.unescape(youtube.gsub(/\\/, ''))).embed_url
+          VideoInfo::Providers::Youtube.new(
+            URI.unescape(youtube.gsub(/\\/, ''))
+          ).embed_url
         else
-          "//vk.com/video_ext.php?oid=#{video_owner}&id=#{video_id}&hash=#{_data_hash}"
+          "//vk.com/video_ext.php?oid=#{video_owner}" +
+          "&id=#{video_id}&hash=#{_data_hash}"
         end
       end
 
@@ -58,15 +63,15 @@ class VideoInfo
       private
 
       def _set_data_from_api
-        url = URI.parse("https://vk.com/al_video.php")
-        options["act"] = "show"
-        options["al"] = "1"
-        options["video"] = "#{@video_owner}_#{@video_id}"
+        url = URI.parse('https://vk.com/al_video.php')
+        options['act'] = 'show'
+        options['al'] = '1'
+        options['video'] = "#{@video_owner}_#{@video_id}"
         resp = Net::HTTP.post_form(url, options)
         if RUBY_VERSION.to_i < 2
-          Iconv.iconv("UTF-8//TRANSLIT//IGNORE", "cp1251", resp.body)[0]
+          Iconv.iconv('UTF-8//TRANSLIT//IGNORE', 'cp1251', resp.body)[0]
         else
-          resp.body.force_encoding('cp1251').encode("UTF-8")
+          resp.body.force_encoding('cp1251').encode('UTF-8')
         end
       end
 
