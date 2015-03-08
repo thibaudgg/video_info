@@ -52,7 +52,7 @@ class VideoInfo
           ).embed_url
         else
           "//vk.com/video_ext.php?oid=#{video_owner}" +
-          "&id=#{video_id}&hash=#{_data_hash}"
+            "&id=#{video_id}&hash=#{_data_hash}"
         end
       end
 
