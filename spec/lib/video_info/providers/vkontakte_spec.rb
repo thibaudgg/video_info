@@ -60,6 +60,11 @@ describe VideoInfo::Providers::Vkontakte do
       its(:available?)       { should be_falsey }
     end
 
+    context "with redirect", :vcr do
+      subject { VideoInfo.new('http://vk.com/polinka_zh?z=video186965901_168185427%2Fbfb2bd2e674031520a') }
+      its(:available?)       { should be_truthy }
+    end
+
   end
 
   context "with video kirill.lyanoi?z=video2152699_168591741%2F56fd229a9dfe2dcdbe", :vcr do
