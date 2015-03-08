@@ -93,7 +93,7 @@ class VideoInfo
         response = nil
         Net::HTTP.start(_api_base, 80) { |http| response = http.get(_api_path) }
         if _error_found? response
-          "403"
+          '403'
         else
           response.code
         end
