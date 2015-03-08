@@ -94,7 +94,7 @@ class VideoInfo
       end
 
       def _set_video_id_from_url
-        url.gsub(_url_regex) { @video_owner, @video_id = $1.split("_") }
+        url.gsub(_url_regex) { @video_owner, @video_id = $1.split('_') }
       end
 
       def _url_regex
@@ -102,7 +102,7 @@ class VideoInfo
       end
 
       def _default_iframe_attributes
-        { allowfullscreen: "allowfullscreen" }
+        { allowfullscreen: 'allowfullscreen' }
       end
 
       def _default_url_attributes
