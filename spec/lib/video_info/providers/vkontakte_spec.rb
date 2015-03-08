@@ -73,7 +73,7 @@ describe VideoInfo::Providers::Vkontakte do
 
     describe '#title' do
       subject { super().title }
-      it { is_expected.to eq 'Я уточка))))) | VK' }
+      it { is_expected.to eq 'Я уточка)))))' }
     end
 
     describe '#description' do
@@ -127,7 +127,7 @@ describe VideoInfo::Providers::Vkontakte do
 
     describe '#title' do
       subject { super().title }
-      it { is_expected.to eq 'SpaceGlasses are the future of computing | VK' }
+      it { is_expected.to eq 'SpaceGlasses are the future of computing' }
     end
   end
 

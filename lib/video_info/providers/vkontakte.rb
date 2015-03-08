@@ -38,7 +38,7 @@ class VideoInfo
       end
 
       def view_count
-        data[/mv_num_views\\">.*?(\d+)/, 1].to_i
+        data[/video_row_info_views\\">.*?(\d+)/, 1].to_i
       end
 
       def embed_url
