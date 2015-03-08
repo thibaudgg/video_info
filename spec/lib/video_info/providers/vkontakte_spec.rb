@@ -65,6 +65,11 @@ describe VideoInfo::Providers::Vkontakte do
       its(:available?)       { should be_truthy }
     end
 
+    context "with redirect to main page for auth", :vcr do
+      subject { VideoInfo.new('http://vk.com/video?z=video1472940_169081944%2Falbum1472940') }
+      its(:available?)       { should be_falsey }
+    end
+
   end
 
   context "with video kirill.lyanoi?z=video2152699_168591741%2F56fd229a9dfe2dcdbe", :vcr do

@@ -67,6 +67,10 @@ class VideoInfo
         data[/"duration":(\d+)/, 1].to_i
       end
 
+      def available?
+        !%w[403 404 302 401].include?(_response_code)
+      end
+
       private
 
       def _make_request(url, options)
@@ -97,17 +101,27 @@ class VideoInfo
         !!title.index('Ошибка')
       end
 
-      def _response_code
-        response = Net::HTTP.get_response(_api_base, _api_path, 80)
-        if response.code == '302'
-          response = Net::HTTP.get_response(
-            URI.parse(response.header['location'])
-          )
-        end
-        if _error_found? response
+      def _get_response_code(response)
+        if response.header['location'] == '/'
+          '401'
+        elsif response.code == '302'
+          '302'
+        elsif _error_found? response
           '403'
         else
           response.code
+        end
+      end
+
+      def _response_code
+        response = Net::HTTP.get_response(_api_base, _api_path, 80)
+        code = _get_response_code response
+        if code  == '302'
+          _get_response_code Net::HTTP.get_response(
+            URI.parse(response.header['location'])
+          )
+        else
+          code
         end
       end
 
