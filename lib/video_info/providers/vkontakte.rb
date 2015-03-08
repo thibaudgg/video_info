@@ -79,9 +79,13 @@ class VideoInfo
       end
 
       def _error_found?(response)
-        title = response.body[/<title>(.*)<\/title>/, 1]
-                        .force_encoding('cp1251')
-                        .encode('UTF-8', undef: :replace)
+        title = response.body[
+          /<title>(.*)<\/title>/, 1
+        ].force_encoding(
+          'cp1251'
+        ).encode(
+          'UTF-8', undef: :replace
+        )
         !!title.index('Ошибка')
       end
 
