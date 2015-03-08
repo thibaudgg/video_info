@@ -1,6 +1,7 @@
 # encoding: UTF-8
 require 'htmlentities'
 require 'iconv' if RUBY_VERSION.to_i < 2
+require 'net/http'
 
 class VideoInfo
   module Providers
@@ -8,15 +9,15 @@ class VideoInfo
       attr_accessor :video_owner
 
       def self.usable?(url)
-        url =~ /(vk\.com)|(vkontakte\.ru)/
+        !!(url =~ /(vk\.com)|(vkontakte\.ru)/)
       end
 
       def provider
-        'Vkontakte'
+        "Vkontakte"
       end
 
       def description
-        content = data[/<meta name="description" content="(.*)" \/>/, 1]
+        content = data[/"desc":"(.*?)",/, 1]
         HTMLEntities.new.decode(content)
       end
       alias_method :keywords, :description
@@ -26,7 +27,7 @@ class VideoInfo
           360 => 480,
           480 => 640,
           720 => 1280
-        }[height]
+        }[height].to_i
       end
 
       def height
@@ -34,15 +35,20 @@ class VideoInfo
       end
 
       def title
-        data[/<title>(.*)<\/title>/, 1].gsub(' | ВКонтакте', '')
+        data[/\="mv_title">(.*)<\/div>/, 1].gsub(' | ВКонтакте', '')
       end
 
       def view_count
-        data[/video_row_info_views\\">.*?(\d+)/, 1].to_i
+        data[/mv_views_count_number\">.*?(\d+)/, 1].to_i
       end
 
       def embed_url
-        "//vk.com/video_ext.php?oid=#{video_owner}&id=#{video_id}&hash=#{_data_hash}"
+        youtube = data[/iframe\ id=\"video_player\".*src=\"(.*)\"\ frameborder=/, 1]
+        if youtube
+          VideoInfo::Providers::Youtube.new(URI.unescape(youtube.gsub(/\\/, ''))).embed_url
+        else
+          "//vk.com/video_ext.php?oid=#{video_owner}&id=#{video_id}&hash=#{_data_hash}"
+        end
       end
 
       def duration
@@ -52,11 +58,15 @@ class VideoInfo
       private
 
       def _set_data_from_api
-        uri = open(url, options)
+        url = URI.parse("https://vk.com/al_video.php")
+        options["act"] = "show"
+        options["al"] = "1"
+        options["video"] = "#{@video_owner}_#{@video_id}"
+        resp = Net::HTTP.post_form(url, options)
         if RUBY_VERSION.to_i < 2
-          Iconv.iconv('utf-8', 'cp1251', uri.read)[0]
+          Iconv.iconv("UTF-8//TRANSLIT//IGNORE", "cp1251", resp.body)[0]
         else
-          uri.read.encode('UTF-8')
+          resp.body.force_encoding('cp1251').encode("UTF-8")
         end
       end
 
@@ -75,19 +85,19 @@ class VideoInfo
       end
 
       def _data_hash
-        data[/hash2\\":\\"(\w+)/, 1]
+        data[/"hash2":"(\w+)/, 1]
       end
 
       def _set_video_id_from_url
-        url.gsub(_url_regex) { @video_owner, @video_id = $1.split('_') }
+        url.gsub(_url_regex) { @video_owner, @video_id = $1.split("_") }
       end
 
       def _url_regex
-        /(?:vkontakte\.ru\/video|vk\.com\/video)(-?\d+_\d+)/i
+        /(?:vkontakte\.ru\/video|vk\.com\/video|vk\.com\/.*?=video)(-?\d+_\d+)/i
       end
 
       def _default_iframe_attributes
-        { allowfullscreen: 'allowfullscreen' }
+        { allowfullscreen: "allowfullscreen" }
       end
 
       def _default_url_attributes
