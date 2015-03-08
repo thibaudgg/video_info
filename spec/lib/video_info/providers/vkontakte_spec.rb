@@ -27,6 +27,21 @@ describe VideoInfo::Providers::Vkontakte do
       let(:url) { 'http://vk.com just random data' }
       it { should be_falsey }
     end
+
+    context "with spaces at end" do
+      let(:url) { 'http://vk.com/video39576223_108370515        ' }
+      it { should be_truthy }
+    end
+
+    context "with spaces at start" do
+      let(:url) { '      http://vk.com/video39576223_108370515' }
+      it { should be_truthy }
+    end
+
+    context "with spaces around url" do
+      let(:url) { '      http://vk.com/video39576223_108370515      ' }
+      it { should be_truthy }
+    end
   end
 
   describe "#available?" do

@@ -7,7 +7,13 @@ class VideoInfo
     class Vkontakte < Provider
       attr_accessor :video_owner
 
+      def initialize(url, options = {})
+        super(url, options)
+        @url.strip!
+      end
+
       def self.usable?(url)
+        url.strip!
         vkontakte = !!(url =~ /\A(http|https):\/\/(vk\.com)|(vkontakte\.ru)\z/)
         valid = !!(url =~ /\A#{URI::regexp(['http', 'https'])}\z/)
         vkontakte && valid
