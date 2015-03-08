@@ -22,6 +22,11 @@ describe VideoInfo::Providers::Vkontakte do
       let(:url) { 'http://www.youtube.com/898029' }
       it { should be_falsey }
     end
+
+    context "with invalid url" do
+      let(:url) { 'http://vk.com just random data' }
+      it { should be_falsey }
+    end
   end
 
   describe "#available?" do
