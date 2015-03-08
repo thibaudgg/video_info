@@ -10,7 +10,7 @@ http_interactions:
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
-      - "*/*"
+      - ! '*/*'
       User-Agent:
       - Ruby
       Host:
@@ -349,4 +349,40 @@ http_interactions:
         YXRlPg==
     http_version: 
   recorded_at: Sun, 08 Mar 2015 12:11:27 GMT
+- request:
+    method: post
+    uri: http://vk.com:443/al_video.php
+    body:
+      encoding: US-ASCII
+      string: User-Agent=VideoInfo%2F2.4.0&act=show&al=1&video=2152699_168591741
+    headers:
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+      Content-Type:
+      - application/x-www-form-urlencoded
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Server:
+      - Apache
+      Date:
+      - Sun, 08 Mar 2015 13:18:18 GMT
+      Content-Type:
+      - text/html
+      Content-Length:
+      - '267'
+      Connection:
+      - close
+    body:
+      encoding: US-ASCII
+      string: ! "<html>\r\n<head><title>400 The plain HTTP request was sent to HTTPS
+        port</title></head>\r\n<body bgcolor=\"white\">\r\n<center><h1>400 Bad Request</h1></center>\r\n<center>The
+        plain HTTP request was sent to HTTPS port</center>\r\n<hr><center> Apache
+        </center>\r\n</body>\r\n</html>\r\n"
+    http_version: 
+  recorded_at: Sun, 08 Mar 2015 13:18:18 GMT
 recorded_with: VCR 2.9.3

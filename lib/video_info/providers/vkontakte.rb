@@ -1,6 +1,5 @@
 # encoding: UTF-8
 require 'htmlentities'
-require 'iconv' if RUBY_VERSION.to_i < 2
 require 'net/http'
 
 class VideoInfo
@@ -62,17 +61,21 @@ class VideoInfo
 
       private
 
+      def _make_request(url, options)
+        request = Net::HTTP::Post.new(url.path)
+        request.body = URI.encode_www_form(options)
+        conn = Net::HTTP.new(url.host, url.port)
+        conn.use_ssl = true
+        resp = conn.request(request)
+        resp.body.force_encoding('cp1251').encode('UTF-8')
+      end
+
       def _set_data_from_api
-        url = URI.parse('https://vk.com/al_video.php')
+        url = URI('https://vk.com/al_video.php')
         options['act'] = 'show'
         options['al'] = '1'
         options['video'] = "#{@video_owner}_#{@video_id}"
-        resp = Net::HTTP.post_form(url, options)
-        if RUBY_VERSION.to_i < 2
-          Iconv.iconv('UTF-8//TRANSLIT//IGNORE', 'cp1251', resp.body)[0]
-        else
-          resp.body.force_encoding('cp1251').encode('UTF-8')
-        end
+        _make_request(url, options)
       end
 
       def _response_code
