@@ -67,7 +67,7 @@ class VideoInfo
         conn = Net::HTTP.new(url.host, url.port)
         conn.use_ssl = true
         resp = conn.request(request)
-        resp.body.force_encoding('cp1251').encode('UTF-8')
+        resp.body.force_encoding('cp1251').encode('UTF-8', undef: :replace)
       end
 
       def _set_data_from_api
