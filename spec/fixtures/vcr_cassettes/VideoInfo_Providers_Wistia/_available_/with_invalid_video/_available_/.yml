@@ -8,7 +8,7 @@ http_interactions:
       string: ''
     headers:
       Accept:
-      - '*/*'
+      - "*/*"
       User-Agent:
       - Ruby
   response:
@@ -17,13 +17,15 @@ http_interactions:
       message: Not Found
     headers:
       Server:
-      - nginx/1.0.9
+      - nginx/1.4.6 (Ubuntu)
       Content-Type:
       - application/json; charset=utf-8
       Status:
       - 404 Not Found
+      X-Content-Type-Options:
+      - nosniff
       Access-Control-Allow-Origin:
-      - '*'
+      - "*"
       Cache-Control:
       - public, no-cache
       X-Ua-Compatible:
@@ -31,9 +33,9 @@ http_interactions:
       P3p:
       - CP="CURi ADMa DEVa IVAa IVDa CONi OUR IND DSP CAO COR"
       X-Request-Id:
-      - 06592ecb190bdff02c6534d1813d8644
+      - f9f15f3d063a457a7939ae04f1139640
       X-Runtime:
-      - '0.013808'
+      - '0.006561'
       X-Rack-Cache:
       - miss
       Via:
@@ -44,22 +46,24 @@ http_interactions:
       Accept-Ranges:
       - bytes
       Date:
-      - Tue, 09 Dec 2014 06:21:57 GMT
+      - Mon, 09 Mar 2015 14:06:52 GMT
       Age:
-      - '1533'
+      - '70317'
       Connection:
       - keep-alive
       X-Served-By:
-      - cache-ord1722-ORD, cache-syd1622-SYD
+      - cache-ord1724-ORD, cache-fra1232-FRA
       X-Cache:
-      - MISS, HIT
+      - HIT, MISS
       X-Cache-Hits:
-      - 0, 1
+      - 1, 0
       X-Timer:
-      - S1418106117.331597,VS0,VE0
+      - S1425910011.957850,VS0,VE108
+      Strict-Transport-Security:
+      - max-age=0
     body:
       encoding: UTF-8
       string: ''
     http_version: 
-  recorded_at: Tue, 09 Dec 2014 06:21:57 GMT
+  recorded_at: Mon, 09 Mar 2015 14:06:52 GMT
 recorded_with: VCR 2.9.3

@@ -16,39 +16,61 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      Date:
-      - Tue, 09 Dec 2014 19:27:28 GMT
       Server:
-      - Apache
+      - nginx
+      Content-Type:
+      - application/json
       Access-Control-Allow-Origin:
       - "*"
       X-Content-Type-Options:
       - nosniff
       X-Frame-Options:
-      - deny
+      - sameorigin
       X-Ratelimit-Limit:
       - '3600'
       X-Ratelimit-Remaining:
       - '3597'
       X-Ratelimit-Reset:
-      - '1418156846'
+      - '1425913607'
+      Content-Disposition:
+      - attachment; filename=vimeo.json
       Cache-Control:
       - max-age=60
       Expires:
-      - Tue, 09 Dec 2014 19:28:28 GMT
+      - Mon, 09 Mar 2015 14:07:49 GMT
       Last-Modified:
-      - Sat, 06 Dec 2014 23:12:21 GMT
+      - Thu, 05 Mar 2015 13:09:21 GMT
       Etag:
-      - '"68eeec2f655166235a3fafb4e552483a"'
-      Vary:
-      - Accept-Encoding
+      - '"6ad05458282d6d612e2b1d4bb4d0385a"'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Ua-Compatible:
+      - IE=edge
+      Content-Length:
+      - '1108'
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Mon, 09 Mar 2015 14:06:49 GMT
+      Via:
+      - 1.1 varnish
+      Age:
+      - '0'
       Connection:
-      - close
-      Content-Type:
-      - application/json
+      - keep-alive
+      X-Served-By:
+      - cache-fra1243-FRA
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      X-Timer:
+      - S1425910009.039607,VS0,VE197
+      Vary:
+      - User-Agent,Accept-Encoding
     body:
       encoding: UTF-8
       string: ''
     http_version: 
-  recorded_at: Tue, 09 Dec 2014 19:27:28 GMT
+  recorded_at: Mon, 09 Mar 2015 14:06:49 GMT
 recorded_with: VCR 2.9.3
