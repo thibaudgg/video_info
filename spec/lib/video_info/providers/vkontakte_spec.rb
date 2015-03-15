@@ -70,6 +70,20 @@ describe VideoInfo::Providers::Vkontakte do
       its(:available?)       { should be_falsey }
     end
 
+    context "with hashes", :vcr do
+      subject { VideoInfo.new('https://vk.com/videos43640822#/video43640822_168790809') }
+      its(:available?)       { should be_truthy }
+    end
+
+  end
+
+  context "with video videos43640822#/video43640822_168790809", :vcr do
+    subject { VideoInfo.new('https://vk.com/videos43640822#/video43640822_168790809') }
+
+    its(:provider)         { should eq 'Vkontakte' }
+    its(:video_owner)      { should eq '43640822' }
+    its(:video_id)         { should eq '168790809' }
+    its(:title)            { should eq 'UDC open cup 2014/ 3 place / Saley Daria (solo)' }
   end
 
   context "with video kirill.lyanoi?z=video2152699_168591741%2F56fd229a9dfe2dcdbe", :vcr do

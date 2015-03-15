@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - Apache
       Date:
-      - Sun, 08 Mar 2015 17:34:45 GMT
+      - Sun, 15 Mar 2015 19:42:50 GMT
       Content-Type:
       - text/html; charset=windows-1251
       Content-Length:
@@ -29,9 +29,9 @@ http_interactions:
       Connection:
       - keep-alive
       X-Powered-By:
-      - PHP/3.11903
+      - PHP/3.12025
       Set-Cookie:
-      - remixlang=0; expires=Fri, 26 Feb 2016 21:36:47 GMT; path=/; domain=.vk.com
+      - remixlang=0; expires=Mon, 07 Mar 2016 07:21:11 GMT; path=/; domain=.vk.com
       Pragma:
       - no-cache
       Cache-Control:
@@ -42,7 +42,7 @@ http_interactions:
       encoding: UTF-8
       string: ''
     http_version: 
-  recorded_at: Sun, 08 Mar 2015 17:34:45 GMT
+  recorded_at: Sun, 15 Mar 2015 19:42:50 GMT
 - request:
     method: get
     uri: http://m.vk.com/polinka_zh
@@ -66,7 +66,7 @@ http_interactions:
       Server:
       - Apache
       Date:
-      - Sun, 08 Mar 2015 17:34:46 GMT
+      - Sun, 15 Mar 2015 19:42:50 GMT
       Content-Type:
       - text/html; charset=utf-8
       Content-Length:
@@ -74,9 +74,9 @@ http_interactions:
       Connection:
       - keep-alive
       X-Powered-By:
-      - PHP/3.11903
+      - PHP/3.12025
       Set-Cookie:
-      - remixlang=0; expires=Thu, 17 Mar 2016 06:22:44 GMT; path=/; domain=.vk.com
+      - remixlang=0; expires=Sat, 19 Mar 2016 15:34:51 GMT; path=/; domain=.vk.com
       Pragma:
       - no-cache
       Cache-Control:
@@ -192,11 +192,11 @@ http_interactions:
         PjwvbGk+CjwvdWw+CjwvZGl2PjwvZGl2Pgo8ZGl2IGNsYXNzPSJfY250cnMi
         IHN0eWxlPSJoZWlnaHQ6MDsiPgo8aW1nIHdpZHRoPSIxIiBoZWlnaHQ9IjEi
         IHNyYz0iLy9jb3VudGVyLnlhZHJvLnJ1L2hpdD91aHR0cCUzQSUyRiUyRm0u
-        dmsuY29tJTJGcG9saW5rYV96aDtyOzQ4NjM0MzQ1IiBhbHQ9IiIgYWxpZ249
+        dmsuY29tJTJGcG9saW5rYV96aDtyOzU4NzU2MDY3IiBhbHQ9IiIgYWxpZ249
         ImxlZnQiIC8+CjxpbWcgd2lkdGg9IjEiIGhlaWdodD0iMSIgc3JjPSIvL2Iu
         c2NvcmVjYXJkcmVzZWFyY2guY29tL3A/YzE9MiZjMj0xMzc2NTIxNiZjMz0m
         YzQ9aHR0cCUzQSUyRiUyRm0udmsuY29tJTJGcG9saW5rYV96aCZjNT0mYzk9
-        JmMxNT0mY3Y9Mi4wJmNqPTEmcm49NDg2MzQzNDUiIGFsdD0iIiBhbGlnbj0i
+        JmMxNT0mY3Y9Mi4wJmNqPTEmcm49NTg3NTYwNjciIGFsdD0iIiBhbGlnbj0i
         bGVmdCIgLz4KPGltZyBzcmM9Ii8vdG9wLWZ3ejEubWFpbC5ydS9jb3VudGVy
         P2lkPTI1Nzk0Mzc7cj0iIHN0eWxlPSJib3JkZXI6MDsiIGhlaWdodD0iMSIg
         d2lkdGg9IjEiIGFsdD0i0KDQtdC50YLQuNC90LNATWFpbC5ydSIgLz4KPC9k
@@ -206,5 +206,5 @@ http_interactions:
         ZXRFbGVtZW50c0J5VGFnTmFtZSgnYm9keScpWzBdLmlubmVySFRNTD0nJyk7
         Ci8vLS0+Cjwvc2NyaXB0Pgo8L2JvZHk+CjwvaHRtbD4=
     http_version: 
-  recorded_at: Sun, 08 Mar 2015 17:34:46 GMT
+  recorded_at: Sun, 15 Mar 2015 19:42:50 GMT
 recorded_with: VCR 2.9.3
