@@ -87,7 +87,13 @@ class VideoInfo
         options['act'] = 'show'
         options['al'] = '1'
         options['video'] = "#{@video_owner}_#{@video_id}"
-        _make_request(url, options)
+        data = _make_request(url, options)
+        if data.index('Ошибка доступа')
+          # try second time
+          _make_request(url, options)
+        else
+          data
+        end
       end
 
       def _error_found?(response)
@@ -142,7 +148,7 @@ class VideoInfo
       end
 
       def _url_regex
-        /(?:vkontakte\.ru\/video|vk\.com\/video|vk\.com\/.*?=video)(-?\d+_\d+)/i
+        /(?:vkontakte\.ru\/video|vk\.com\/video|vk\.com\/.*?video)(-?\d+_\d+)/i
       end
 
       def _default_iframe_attributes
