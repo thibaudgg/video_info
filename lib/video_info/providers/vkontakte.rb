@@ -50,17 +50,21 @@ class VideoInfo
       end
 
       def embed_url
-        youtube = data[
-          /iframe\ id=\"video_player\".*src=\"(.*)\"\ frameborder=/, 1
+        iframe_src = data[
+          /iframe\ id=\"video_player\".*src=\"([^\"]*)\".*frameborder=/, 1
         ]
-        if youtube
+        if iframe_src
+          # it may be youtube video
           VideoInfo::Providers::Youtube.new(
-            URI.unescape(youtube.gsub(/\\/, ''))
+            URI.unescape(iframe_src.gsub(/\\/, ''))
           ).embed_url
         else
           "//vk.com/video_ext.php?oid=#{video_owner}" +
             "&id=#{video_id}&hash=#{_data_hash}"
         end
+      rescue
+        # or rutube video
+        iframe_src
       end
 
       def duration
