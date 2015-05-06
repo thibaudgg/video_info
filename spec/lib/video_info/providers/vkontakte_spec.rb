@@ -77,6 +77,17 @@ describe VideoInfo::Providers::Vkontakte do
 
   end
 
+  context "with video http://vk.com/video53128560_168563219", :vcr do
+    subject { VideoInfo.new('http://vk.com/video53128560_168563219') }
+
+    its(:provider)         { should eq 'Vkontakte' }
+    its(:video_owner)      { should eq '53128560' }
+    its(:video_id)         { should eq '168563219' }
+    its(:title)            { should eq 'Настя Юрасова/ Стрип-пластика/ Jakwob feat. Maiday - Fade' }
+    its(:embed_url)        { should eq '//rutube.ru/video/embed/6964152?vk_puid23=&vk_puid24=&vk_puid34=0' }
+    its(:embed_code)       { should eq '<iframe src="//rutube.ru/video/embed/6964152?vk_puid23=&vk_puid24=&vk_puid34=0" frameborder="0" allowfullscreen="allowfullscreen"></iframe>' }
+  end
+
   context "with video videos43640822#/video43640822_168790809", :vcr do
     subject { VideoInfo.new('https://vk.com/videos43640822#/video43640822_168790809') }
 
