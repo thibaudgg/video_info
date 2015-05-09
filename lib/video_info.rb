@@ -62,6 +62,7 @@ class VideoInfo
           raise UrlError, "#{video_info.provider} is disabled"
         end
       end
+
       video_info
     else
       raise UrlError, "Url is not usable by any Providers: #{url}"
