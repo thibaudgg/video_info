@@ -40,6 +40,16 @@ class VideoInfo
   def ==(other)
     url == other.url && video_id == other.video_id
   end
+  
+  @@provider_api_keys = {}
+
+  def self.provider_api_keys
+    @@provider_api_keys
+  end
+
+  def self.provider_api_keys=(keys)
+    @@provider_api_keys = keys
+  end
 
   private
 
