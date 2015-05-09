@@ -57,11 +57,8 @@ class VideoInfo
     if provider_const = _providers_const.detect { |p| p.usable?(url) }
       const_provider = provider_const.new(url, options)
 
-      if defined? const_provider.provider and const_provider.provider
-        if self.class.disable_providers.map(&:downcase).include? const_provider.provider.downcase
-
-          raise UrlError, "#{const_provider.provider} is disabled"
-        end
+      if defined?(const_provider.provider) and const_provider.provider
+        ensure_enabled_provider(const_provider.provider)
       end
 
       const_provider
@@ -72,5 +69,11 @@ class VideoInfo
 
   def _providers_const
     PROVIDERS.map { |p| Providers.const_get(p) }
+  end
+
+  def ensure_enabled_provider(provider)
+    if self.class.disable_providers.map(&:downcase).include?(provider.downcase)
+      raise UrlError, "#{provider} is disabled"
+    end
   end
 end
