@@ -55,15 +55,15 @@ class VideoInfo
 
   def _select_provider(url, options)
     if provider_const = _providers_const.detect { |p| p.usable?(url) }
-      video_info = provider_const.new(url, options)
-     
-      if defined? video_info.provider and video_info.provider
-        if self.class.disable_providers.include? video_info.provider
-          raise UrlError, "#{video_info.provider} is disabled"
+      const_provider = provider_const.new(url, options)
+      
+      if defined? const_provider.provider and const_provider.provider
+        if self.class.disable_providers.include? const_provider.provider
+          raise UrlError, "#{const_provider.provider} is disabled"
         end
       end
 
-      video_info
+      const_provider
     else
       raise UrlError, "Url is not usable by any Providers: #{url}"
     end
