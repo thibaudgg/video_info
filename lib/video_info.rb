@@ -58,7 +58,7 @@ class VideoInfo
       const_provider = provider_const.new(url, options)
       
       if defined? const_provider.provider and const_provider.provider
-        if self.class.disable_providers.include? const_provider.provider
+        if self.class.disable_providers.map { |p| p.downcase }.include? const_provider.provider.downcase
           raise UrlError, "#{const_provider.provider} is disabled"
         end
       end
