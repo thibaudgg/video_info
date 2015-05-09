@@ -1,3 +1,4 @@
+require 'iso8601'
 class VideoInfo
   module Providers
     class Youtube < Provider
@@ -9,12 +10,24 @@ class VideoInfo
         'YouTube'
       end
 
-      def title
-        _video_entry['title']['$t']
+      def api_key
+        VideoInfo.providers_api_key[:youtube]
       end
 
-      %w[description keywords].each do |method|
-        define_method(method) { _video_media_group["media$#{method}"]['$t'] }
+      def title
+        _video_snippet['title']
+      end
+
+      # %w[description keywords].each do |method|
+      #   define_method(method) { _video_entry["media$#{method}"]['$t'] }
+      # end
+
+      def description
+        _video_snippet['description']
+      end
+
+      def keywords
+        _video_snippet['tags']
       end
 
       %w[width height].each do |method|
@@ -22,7 +35,7 @@ class VideoInfo
       end
 
       def duration
-        _video_media_group['yt$duration']['seconds'].to_i
+         ISO8601::Duration.new(_video_content_details['duration']).to_seconds.to_i
       end
 
       def embed_url
@@ -30,27 +43,23 @@ class VideoInfo
       end
 
       def date
-        Time.parse(_video_entry['published']['$t'], Time.now.utc)
+        Time.parse(_video_snippet['publishedAt'], Time.now.utc)
       end
 
       def thumbnail_small
-        _video_thumbnail(0)
+        _video_snippet['thumbnails']['default']['url']
       end
 
       def thumbnail_medium
-        _video_thumbnail(1)
+        _video_snippet['thumbnails']['medium']['url']
       end
 
       def thumbnail_large
-        _video_thumbnail(2)
+        _video_snippet['thumbnails']['high']['url']
       end
 
       def view_count
-        if _video_entry['yt$statistics']
-          _video_entry['yt$statistics']['viewCount'].to_i
-        else
-          0
-        end
+        _video_statistics['viewCount'].to_i rescue 0
       end
 
       private
@@ -60,15 +69,15 @@ class VideoInfo
       end
 
       def _api_base
-        "gdata.youtube.com"
+        "www.googleapis.com"
       end
 
       def _api_path
-        "/feeds/api/videos/#{video_id}?v=2&alt=json"
+        "/youtube/v3/videos?id=#{video_id}&part=snippet,statistics,contentDetails&fields=items(id,snippet,statistics,contentDetails)&key=#{api_key}"
       end
 
       def _api_url
-        "http://#{_api_base}#{_api_path}"
+        "https://#{_api_base}#{_api_path}"
       end
 
       def _default_iframe_attributes
@@ -79,13 +88,21 @@ class VideoInfo
         {}
       end
 
-      def _video_entry
-        data['entry']
+      def _video_snippet
+        data['items'][0]['snippet']
       end
 
-      def _video_media_group
-        data['entry']['media$group']
+      def _video_content_details
+        data['items'][0]['contentDetails']
       end
+
+      def _video_statistics
+        data['items'][0]['statistics']
+      end
+
+      # def _video_media_group
+      #   data['entry']['media$group']
+      # end
 
       def _video_thumbnail(id)
         _video_entry['media$group']['media$thumbnail'][id]['url']
