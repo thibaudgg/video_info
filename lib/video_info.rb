@@ -6,7 +6,7 @@ require 'net/http'
 class VideoInfo
   class UrlError < StandardError; end
   extend Forwardable
-  
+ 
   PROVIDERS = %w[
     Dailymotion Vkontakte Wistia
     Vimeo VimeoPlaylist
@@ -56,9 +56,10 @@ class VideoInfo
   def _select_provider(url, options)
     if provider_const = _providers_const.detect { |p| p.usable?(url) }
       const_provider = provider_const.new(url, options)
-      
-      if defined? const_provider.provider and const_provider.provider
-        if self.class.disable_providers.map { |p| p.downcase }.include? const_provider.provider.downcase
+
+      if defined? const_provider.provider && const_provider.provider
+        if self.class.disable_providers.map(&:downcase).include? const_provider.provider.downcase
+
           raise UrlError, "#{const_provider.provider} is disabled"
         end
       end

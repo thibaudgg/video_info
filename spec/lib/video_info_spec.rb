@@ -26,7 +26,7 @@ describe VideoInfo do
   end
   
   describe ".disable_providers" do
-    let(:youtube_url) { 'https://www.youtube.com/watch?v=mZqGqE0D0n4'}
+    let(:youtube_url) { 'https://www.youtube.com/watch?v=mZqGqE0D0n4' }
     let(:vimeo_url) { 'http://vimeo.com/86701482' }
 
     it "does not attempt to use a provider marked as disabled" do
