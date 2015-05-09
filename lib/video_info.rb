@@ -6,7 +6,7 @@ require 'net/http'
 class VideoInfo
   class UrlError < StandardError; end
   extend Forwardable
- 
+
   PROVIDERS = %w[
     Dailymotion Vkontakte Wistia
     Vimeo VimeoPlaylist
