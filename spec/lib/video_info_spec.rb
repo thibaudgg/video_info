@@ -26,15 +26,13 @@ describe VideoInfo do
   end
   
   describe ".disable_providers" do
-    let(:disabled_providers) { %w[ YouTube ] }
-    let(:url) { 'https://www.youtube.com/watch?v=mZqGqE0D0n4'}
+    let(:youtube_url) { 'https://www.youtube.com/watch?v=mZqGqE0D0n4'}
 
     it "does not attempt to use a provider marked as disabled" do
-      VideoInfo.disable_providers = disabled_providers
+      VideoInfo.disable_providers = %w[YouTube]
 
-      expect { VideoInfo.new(url) }.to raise_error(VideoInfo::UrlError)
+      expect { VideoInfo.new(youtube_url) }.to raise_error(VideoInfo::UrlError)
 
-      # cleanup
       VideoInfo.disable_providers = []
     end
   end
