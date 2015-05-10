@@ -51,6 +51,10 @@ class VideoInfo
     @@disable_providers = providers
   end
 
+  def self.disabled_provider?(provider)
+    disable_providers.map(&:downcase).include?(provider.downcase)
+  end
+
   private
 
   def _select_provider(url, options)
@@ -72,7 +76,7 @@ class VideoInfo
   end
 
   def ensure_enabled_provider(provider)
-    if self.class.disable_providers.map(&:downcase).include?(provider.downcase)
+    if self.class.disabled_provider?(provider)
       raise UrlError, "#{provider} is disabled"
     end
   end
