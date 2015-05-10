@@ -61,7 +61,7 @@ class VideoInfo
     if provider_const = _providers_const.detect { |p| p.usable?(url) }
       const_provider = provider_const.new(url, options)
 
-      if defined?(const_provider.provider) and const_provider.provider
+      if defined?(const_provider.provider) && const_provider.provider
         ensure_enabled_provider(const_provider.provider)
       end
 
