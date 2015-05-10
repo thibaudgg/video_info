@@ -24,7 +24,7 @@ describe VideoInfo do
       expect { VideoInfo.new(url, options) }.to raise_error(VideoInfo::UrlError)
     end
   end
-  
+
   describe ".disable_providers" do
     let(:youtube_url) { 'https://www.youtube.com/watch?v=mZqGqE0D0n4' }
     let(:vimeo_url) { 'http://vimeo.com/86701482' }
@@ -40,7 +40,7 @@ describe VideoInfo do
 
     it "is case insensitive" do
       VideoInfo.disable_providers = %w[youTUBe VIMEO]
-      
+
       expect { VideoInfo.new(youtube_url) }.to raise_error(VideoInfo::UrlError)
       expect { VideoInfo.new(vimeo_url) }.to raise_error(VideoInfo::UrlError)
 
