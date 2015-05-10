@@ -66,7 +66,7 @@ class VideoInfo
       end
 
       def _api_base
-        "www.googleapis.com"
+        'www.googleapis.com'
       end
 
       def _api_path
