@@ -31,7 +31,8 @@ class VideoInfo
       end
 
       def duration
-         ISO8601::Duration.new(_video_content_details['duration']).to_seconds.to_i
+        video_duration = _video_content_details['duration']
+        ISO8601::Duration.new(video_duration).to_seconds.to_i
       end
 
       def embed_url
