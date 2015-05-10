@@ -18,10 +18,6 @@ class VideoInfo
         _video_snippet['title']
       end
 
-      # %w[description keywords].each do |method|
-      #   define_method(method) { _video_entry["media$#{method}"]['$t'] }
-      # end
-
       def description
         _video_snippet['description']
       end
