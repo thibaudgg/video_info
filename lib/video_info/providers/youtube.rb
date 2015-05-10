@@ -11,7 +11,7 @@ class VideoInfo
       end
 
       def api_key
-        VideoInfo.providers_api_keys[:youtube]
+        VideoInfo.provider_api_keys[:youtube]
       end
 
       def title
