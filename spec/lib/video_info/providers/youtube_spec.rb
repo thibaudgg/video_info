@@ -2,7 +2,7 @@ require 'spec_helper'
 
 describe VideoInfo::Providers::Youtube do
   before(:all) do
-    VideoInfo.provider_api_keys = { :youtube => 'AIzaSyA6PYwSr1EnLFUFy1cZDk3Ifb0rxeJaeZ0' }
+    VideoInfo.provider_api_keys = { youtube: 'AIzaSyA6PYwSr1EnLFUFy1cZDk3Ifb0rxeJaeZ0' }
   end
 
   describe ".usable?" do
