@@ -16,6 +16,15 @@ gem install video_info
 Usage
 -----
 
+## Note for YouTube usage!
+Youtube recently updated their API to require an API key. To get an API key, [follow the instructions here](https://developers.google.com/youtube/registering_an_application)
+
+To set the API key, do the following:
+``` ruby
+VideoInfo.provider_api_keys = { youtube: 'YOUR_API_KEY' }
+```
+
+
 ``` ruby
 video = VideoInfo.new('http://www.dailymotion.com/video/x7lni3')
 # video.available?       => true
@@ -61,10 +70,6 @@ video = VideoInfo.new("http://fast.wistia.com/embed/medias/pxonqr42is")
 # video.thumbnail_large  => 'https://embed-ssl.wistia.com/deliveries/0fccbdc60ade35723f79f1c002bc61b135b610fa.jpg?image_crop_resized=960x540'
 # video.embed_url        => '//fast.wistia.net/embed/iframe/pxonqr42is'
 # video.embed_code       => "<iframe src='//fast.wistia.net/embed/iframe/pxonqr42is' frameborder='0'></iframe>"
-
-# Youtube recently updated their API to require an API key. To get an API key, [follow the instructions here.](https://developers.google.com/youtube/registering_an_application)
-
-VideoInfo.provider_api_keys = { youtube: 'YOUR_API_KEY' }
 
 video = VideoInfo.new("http://www.youtube.com/watch?v=mZqGqE0D0n4")
 # video.available?       => true
