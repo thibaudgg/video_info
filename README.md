@@ -62,6 +62,10 @@ video = VideoInfo.new("http://fast.wistia.com/embed/medias/pxonqr42is")
 # video.embed_url        => '//fast.wistia.net/embed/iframe/pxonqr42is'
 # video.embed_code       => "<iframe src='//fast.wistia.net/embed/iframe/pxonqr42is' frameborder='0'></iframe>"
 
+# Youtube recently updated their API to require an API key. To get an API key, [follow the instructions here.](https://developers.google.com/youtube/registering_an_application)
+
+VideoInfo.provider_api_keys = { youtube: 'YOUR_API_KEY' }
+
 video = VideoInfo.new("http://www.youtube.com/watch?v=mZqGqE0D0n4")
 # video.available?       => true
 # video.video_id         => 'mZqGqE0D0n4'
