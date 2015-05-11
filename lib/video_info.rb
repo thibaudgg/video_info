@@ -63,7 +63,6 @@ class VideoInfo
 
   def self.disabled_provider?(provider)
     disable_providers.map(&:downcase).include?(provider.downcase)
->>>>>>> master
   end
 
   private
