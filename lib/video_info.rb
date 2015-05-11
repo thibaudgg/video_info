@@ -49,7 +49,7 @@ class VideoInfo
 
   def self.provider_api_keys=(api_keys)
     api_keys.keys.each do |key|
-      raise ArgumentError, "Key must be a symbol!" unless key.is_a?(Symbol)
+      raise ArgumentError, 'Key must be a symbol!' unless key.is_a?(Symbol)
     end
     @@provider_api_keys = api_keys
   end
