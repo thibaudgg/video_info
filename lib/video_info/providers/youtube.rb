@@ -61,6 +61,10 @@ class VideoInfo
 
       private
 
+      def available?
+        data['items'].size > 0 rescue false
+      end
+
       def _url_regex
         /(?:youtube(?:-nocookie)?\.com\/(?:[^\/]+\/.+\/|(?:v|e(?:mbed)?)\/|.*[?&]v=)|youtu\.be\/)([^"&?\/ ]{11})/i
       end
