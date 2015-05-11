@@ -131,6 +131,17 @@ VideoInfo.new('http://www.youtube.com/watch?v=mZqGqE0D0n4').embed_code(iframe_at
 => '<iframe src="//www.youtube.com/embed/mZqGqE0D0n4?autoplay=1" frameborder="0" allowfullscreen="allowfullscreen"></iframe>'
 ```
 
+If you would like to disable certain providers, you can do so by modifying the class variable `disable_providers`:
+
+``` ruby
+VideoInfo.disable_providers = %w[YouTube] # disable YouTube
+VideoInfo.disable_providers = %w[Vimeo YouTube] # disable Vimeo and Youtube
+VideoInfo.disable_providers = [] # enable all providers
+```
+
+Note: `disable_providers` is case-insensitive. Attempting to use a disabled provider will raise a UrlError, just like attempting to use a
+non-video URL.
+
 Author
 ------
 

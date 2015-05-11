@@ -41,11 +41,31 @@ class VideoInfo
     url == other.url && video_id == other.video_id
   end
 
+  @@disable_providers = []
+
+  def self.disable_providers
+    @@disable_providers
+  end
+
+  def self.disable_providers=(providers)
+    @@disable_providers = providers
+  end
+
+  def self.disabled_provider?(provider)
+    disable_providers.map(&:downcase).include?(provider.downcase)
+  end
+
   private
 
   def _select_provider(url, options)
     if provider_const = _providers_const.detect { |p| p.usable?(url) }
-      provider_const.new(url, options)
+      const_provider = provider_const.new(url, options)
+
+      if defined?(const_provider.provider) && const_provider.provider
+        ensure_enabled_provider(const_provider.provider)
+      end
+
+      const_provider
     else
       raise UrlError, "Url is not usable by any Providers: #{url}"
     end
@@ -53,5 +73,11 @@ class VideoInfo
 
   def _providers_const
     PROVIDERS.map { |p| Providers.const_get(p) }
+  end
+
+  def ensure_enabled_provider(provider)
+    if self.class.disabled_provider?(provider)
+      raise UrlError, "#{provider} is disabled"
+    end
   end
 end
