@@ -97,10 +97,6 @@ class VideoInfo
         data['items'][0]['statistics']
       end
 
-      # def _video_media_group
-      #   data['entry']['media$group']
-      # end
-
       def _video_thumbnail(id)
         _video_entry['media$group']['media$thumbnail'][id]['url']
       end
