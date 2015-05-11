@@ -70,6 +70,13 @@ describe VideoInfo do
     end
   end
 
+  describe ".provider_api_keys" do
+    it "raises an error if key isn't a symbol" do
+      expect { VideoInfo.provider_api_keys = { "Youtube" => "key" } }.to raise_error(ArgumentError)
+      expect { VideoInfo.provider_api_keys = { youtube: "key" } }.to_not raise_error
+    end
+  end
+
   describe "#==" do
     let(:vi_a) { VideoInfo.new('http://www.youtube.com/watch?v=AT_5xOGh6Ko') }
     let(:vi_b) { VideoInfo.new('http://www.youtube.com/watch?v=AT_5xOGh6Ko') }
