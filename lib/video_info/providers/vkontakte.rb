@@ -104,7 +104,7 @@ class VideoInfo
         ).encode(
           'UTF-8', undef: :replace
         )
-        !!title.index('Ошибка')
+        title.index('Error | VK')
       end
 
       def _get_response_code(response)
