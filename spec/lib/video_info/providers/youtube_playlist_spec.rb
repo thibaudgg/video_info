@@ -44,6 +44,7 @@ describe VideoInfo::Providers::YoutubePlaylist do
   context "with playlist PL9hW1uS6HUftLdHI6RIsaf", :vcr do
     let(:videos) {
       [
+        VideoInfo.new('http://www.youtube.com/watch?v=Oi67QjrXy2w'),
         VideoInfo.new('http://www.youtube.com/watch?v=_Bt3-WsHfB0'),
         VideoInfo.new('http://www.youtube.com/watch?v=9g2U12SsRns'),
         VideoInfo.new('http://www.youtube.com/watch?v=8b0aEoxqqC0'),
