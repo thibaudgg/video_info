@@ -41,6 +41,19 @@ class VideoInfo
     url == other.url && video_id == other.video_id
   end
 
+  @@provider_api_keys = {}
+
+  def self.provider_api_keys
+    @@provider_api_keys
+  end
+
+  def self.provider_api_keys=(api_keys)
+    api_keys.keys.each do |key|
+      raise ArgumentError, 'Key must be a symbol!' unless key.is_a?(Symbol)
+    end
+    @@provider_api_keys = api_keys
+  end
+
   @@disable_providers = []
 
   def self.disable_providers

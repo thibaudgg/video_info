@@ -16,6 +16,15 @@ gem install video_info
 Usage
 -----
 
+## Note for YouTube usage!
+Youtube recently updated their API to require an API key. To get an API key, [follow the instructions here](https://developers.google.com/youtube/registering_an_application)
+
+To set the API key, do the following:
+``` ruby
+VideoInfo.provider_api_keys = { youtube: 'YOUR_API_KEY' }
+```
+
+
 ``` ruby
 video = VideoInfo.new('http://www.dailymotion.com/video/x7lni3')
 # video.available?       => true
