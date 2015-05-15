@@ -41,7 +41,7 @@ class VideoInfo
       end
 
       def _api_path
-        "/youtube/v3/playlistItems?part=contentDetails&playlistId=#{playlist_id}&key=#{api_key}"
+        "/youtube/v3/playlists?part=snippet&id=#{playlist_id}&key=#{api_key}"
       end
 
       def _playlist_video_ids
