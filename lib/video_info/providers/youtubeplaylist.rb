@@ -29,11 +29,11 @@ class VideoInfo
       private
 
       def _playlist_entry
-        data['feed']
+        data['items']
       end
 
-      def _video_entry
-        _playlist_entry
+      def _playlist_items
+        data['items']
       end
 
       def _url_regex
@@ -45,12 +45,13 @@ class VideoInfo
       end
 
       def _playlist_video_ids
-        return [] unless _playlist_entry['entry']
-        _playlist_entry['entry'].map do |entry|
-          entry['media$group']['yt$videoid']['$t']
+        return [] unless _playlist_items[0]
+        _playlist_items.map do |item|
+          # ugly hack!
+          thumbnail_url = item['snippet']['thumbnails']['default']['url']
+          thumbnail_url.split('https://i.ytimg.com/vi/')[1].split('/default.jpg')[0]
         end
       end
-
     end
   end
 end
