@@ -8,6 +8,10 @@ class VideoInfo
         url =~ /((youtube\.com)\/playlist)|((youtube\.com)\/embed\/videoseries)/
       end
 
+      def description
+        data['items'][0]['snippet']['description']
+      end
+
       def videos
         _playlist_video_ids.map do |entry_id|
           VideoInfo.new("http://www.youtube.com/watch?v=#{entry_id}")
@@ -16,10 +20,6 @@ class VideoInfo
 
       def embed_url
         "//www.youtube.com/embed/videoseries?list=#{playlist_id}"
-      end
-
-      def description
-        _playlist_entry['subtitle']['$t']
       end
 
       %w[date keywords duration view_count].each do |method|
