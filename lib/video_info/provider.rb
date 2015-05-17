@@ -56,8 +56,8 @@ class VideoInfo
       options
     end
 
-    def _set_data_from_api
-      uri = open(_api_url, options)
+    def _set_data_from_api(api_url = _api_url)
+      uri = open(api_url, options)
       MultiJson.load(uri.read)
     end
 
