@@ -27,7 +27,6 @@ class VideoInfo
         define_method(method) { nil }
       end
 
-
       private
 
       def _playlist_entry
