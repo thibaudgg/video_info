@@ -59,7 +59,6 @@ class VideoInfo
       end
 
       def _playlist_video_ids
-        return [] unless _playlist_items_data
         _playlist_items_data['items'].map do |item|
           item['snippet']['resourceId']['videoId']
         end
