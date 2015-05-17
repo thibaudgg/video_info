@@ -45,7 +45,7 @@ class VideoInfo
       end
 
       def _playlist_video_ids
-        return [] unless _playlist_items[0]
+        return [] unless _playlist_items[1]
         _playlist_items.map do |item|
           # ugly hack!
           thumbnail_url = item['snippet']['thumbnails']['default']['url']
