@@ -1,6 +1,10 @@
 require 'spec_helper'
 
 describe VideoInfo::Providers::YoutubePlaylist do
+  before(:all) do
+    VideoInfo.provider_api_keys = {}
+  end
+
   describe ".usable?" do
     subject { VideoInfo::Providers::YoutubePlaylist.usable?(url) }
 
