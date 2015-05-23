@@ -1,9 +1,17 @@
+require_relative 'youtubeplaylist_api'
+
 class VideoInfo
   module Providers
     class YoutubePlaylist < Youtube
 
       alias_method :playlist_id, :video_id
       attr_accessor :playlist_items_data
+
+      def initialize(url, options = {})
+        extend YoutubePlaylistAPI
+
+        super(url, options)
+      end
 
       def self.usable?(url)
         url =~ /((youtube\.com)\/playlist)|((youtube\.com)\/embed\/videoseries)/
