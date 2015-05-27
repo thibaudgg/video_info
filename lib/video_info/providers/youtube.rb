@@ -31,7 +31,7 @@ class VideoInfo
       end
 
       def duration
-        video_duration = _video_content_details['duration']
+        video_duration = _video_content_details['duration'] || 0
         ISO8601::Duration.new(video_duration).to_seconds.to_i
       end
 
@@ -40,18 +40,22 @@ class VideoInfo
       end
 
       def date
-        Time.parse(_video_snippet['publishedAt'], Time.now.utc)
+        return unless published_at = _video_snippet['publishedAt']
+        Time.parse(published_at, Time.now.utc)
       end
 
       def thumbnail_small
+        return "https://i.ytimg.com/vi/#{video_id}/default.jpg" unless _video_snippet['thumbnails']
         _video_snippet['thumbnails']['default']['url']
       end
 
       def thumbnail_medium
+        return "https://i.ytimg.com/vi/#{video_id}/mqdefault.jpg" unless _video_snippet['thumbnails']
         _video_snippet['thumbnails']['medium']['url']
       end
 
       def thumbnail_large
+        return "https://i.ytimg.com/vi/#{video_id}/hqdefault.jpg" unless _video_snippet['thumbnails']
         _video_snippet['thumbnails']['high']['url']
       end
 
@@ -90,14 +94,17 @@ class VideoInfo
       end
 
       def _video_snippet
+        return {} unless available?
         data['items'][0]['snippet']
       end
 
       def _video_content_details
+        return {} unless available?
         data['items'][0]['contentDetails']
       end
 
       def _video_statistics
+        return {} unless available?
         data['items'][0]['statistics']
       end
 
