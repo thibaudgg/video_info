@@ -6,11 +6,11 @@ class VideoInfo
   module Providers
     module YoutubePlaylistScraper
       def description
-	data.css('meta')[1].values[1]
+	data.css('meta').find { |m| m.values[0] == 'description' }.values[1]
       end
       
       def title
-	data.css('meta')[0].values[1]
+	data.css('meta').find { |m| m.values[0] == 'title' }.values[1]
       end
 
       private
