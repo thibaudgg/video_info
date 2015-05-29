@@ -12,6 +12,10 @@ class VideoInfo
       def title
 	data.css('meta').find { |m| m.values[0] == 'title' }.values[1]
       end
+      
+      def videos
+	raise NotImplementedError
+      end
 
       private
 

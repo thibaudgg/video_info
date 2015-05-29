@@ -134,7 +134,7 @@ describe VideoInfo::Providers::YoutubePlaylist do
 
     describe '#videos' do
       subject { super().videos }
-      it { is_expected.to match_array(videos) }
+      it { expect { subject}.to raise_error(NotImplementedError) }
     end
 
     describe '#view_count' do
@@ -153,7 +153,7 @@ describe VideoInfo::Providers::YoutubePlaylist do
 
     describe '#videos' do
       subject { super().videos }
-      it { is_expected.to eq [] }
+      it { expect { subject }.to raise_error(NotImplementedError) } 
     end
   end
 
