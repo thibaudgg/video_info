@@ -16,6 +16,10 @@ class VideoInfo
       def videos
 	raise(NotImplementedError, 'To access videos, you must provide an API key to VideoInfo.provider_api_keys')
       end
+      
+      def thumbnail_medium
+	'https:' + data.css('div.pl-header-thumb img').attr('src').value
+      end
 
       private
 
