@@ -8,6 +8,10 @@ class VideoInfo
       def description
 	data.css('meta')[1].values[1]
       end
+      
+      def title
+	data.css('meta')[0].values[1]
+      end
 
       private
 
