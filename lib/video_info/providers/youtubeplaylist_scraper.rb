@@ -24,7 +24,10 @@ class VideoInfo
       def thumbnail_medium
 	'https:' + data.css('div.pl-header-thumb img').attr('src').value
       end
-
+      
+      def thumbnail_large
+	thumbnail_medium.sub('mqdefault.jpg', 'hqdefault.jpg')
+      end
 
       private
 
