@@ -24,6 +24,8 @@ Gem::Specification.new do |s|
   s.add_dependency 'multi_json'
   s.add_dependency 'htmlentities'
   s.add_dependency 'iso8601'
+  s.add_dependency 'nokogiri'
+  s.add_dependency 'open_uri_redirections'
 
   s.add_development_dependency 'bundler', '>= 1.3.5'
   s.add_development_dependency 'rake'
