@@ -1,4 +1,5 @@
 require_relative 'youtubeplaylist_api'
+require_relative 'youtubeplaylist_scraper'
 
 class VideoInfo
   module Providers
@@ -7,7 +8,11 @@ class VideoInfo
       attr_accessor :playlist_items_data
 
       def initialize(url, options = {})
-        extend YoutubePlaylistAPI
+	if VideoInfo.provider_api_keys[:youtube].nil?
+	  extend YoutubePlaylistScraper
+	else
+	  extend YoutubePlaylistAPI
+	end
 
         super(url, options)
       end
