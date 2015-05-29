@@ -14,7 +14,7 @@ class VideoInfo
       end
       
       def videos
-	raise NotImplementedError
+	raise(NotImplementedError, 'To access videos, you must provide an API key to VideoInfo.provider_api_keys')
       end
 
       private
