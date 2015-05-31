@@ -30,11 +30,15 @@ class VideoInfo
       end
 
       private
-
+      
+      def available?
+	!data.css('div#page').attr('class').value.include?('oops-content')
+      end
+     
       def _set_data_from_api(api_url = _api_url)
 	Nokogiri::HTML(open(api_url, :allow_redirections => :safe))
       end
-
+      
       def _api_url
 	@url
       end
