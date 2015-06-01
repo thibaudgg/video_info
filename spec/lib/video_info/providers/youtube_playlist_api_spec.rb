@@ -2,7 +2,7 @@ require 'spec_helper'
 
 describe VideoInfo::Providers::YoutubePlaylist do
   before(:all) do
-    VideoInfo.provider_api_keys = {}
+    VideoInfo.provider_api_keys = { youtube: 'AIzaSyA6PYwSr1EnLFUFy1cZDk3Ifb0rxeJaeZ0' }
   end
 
   describe ".usable?" do
@@ -134,7 +134,10 @@ describe VideoInfo::Providers::YoutubePlaylist do
 
     describe '#videos' do
       subject { super().videos }
-      it { expect { subject}.to raise_error(NotImplementedError) }
+      it 'returns list of videos in playlist' do
+        pending("waiting for bug in Youtube API to be fixed")
+        is_expected.to match_array(videos)
+      end
     end
 
     describe '#view_count' do
@@ -153,7 +156,7 @@ describe VideoInfo::Providers::YoutubePlaylist do
 
     describe '#videos' do
       subject { super().videos }
-      it { expect { subject }.to raise_error(NotImplementedError) } 
+      it { is_expected.to eq [] }
     end
   end
 
