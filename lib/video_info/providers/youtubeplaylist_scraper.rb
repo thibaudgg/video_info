@@ -44,7 +44,7 @@ class VideoInfo
       private
       
       def available?
-	!data.css('div#page').attr('class').value.include?('oops-content')
+	!data.css('div#page').attr('class')[0].value.include?('oops-content')
       end
      
       def _set_data_from_api(api_url = _api_url)
