@@ -22,7 +22,7 @@ class VideoInfo
       end
 
       def thumbnail_medium
-	'https:' + data.css('div.pl-header-thumb img').attr('src').value
+	'https:' + data.css('div.pl-header-thumb img').attr('src')[0].value
       end
       
       def thumbnail_large
