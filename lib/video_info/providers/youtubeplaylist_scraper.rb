@@ -8,8 +8,8 @@ class VideoInfo
       def description
         meta_nodes = data.css('meta')
 
-        description_node = meta_nodes.detect do
-          |m| m.attr('name').value == 'description'
+        description_node = meta_nodes.detect do |m|
+          m.attr('name').value == 'description'
         end
 
         description_node.attr('content').value
@@ -18,8 +18,8 @@ class VideoInfo
       def title
         meta_nodes = data.css('meta')
 
-        title_node = meta_nodes.detect do
-          |m| m.attr('name').value == 'title'
+        title_node = meta_nodes.detect do |m|
+          m.attr('name').value == 'title'
         end
 
         title_node.attr('content').value
