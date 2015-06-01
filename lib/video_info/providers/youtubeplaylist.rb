@@ -8,11 +8,11 @@ class VideoInfo
       attr_accessor :playlist_items_data
 
       def initialize(url, options = {})
-	if VideoInfo.provider_api_keys[:youtube].nil?
-	  extend YoutubePlaylistScraper
-	else
-	  extend YoutubePlaylistAPI
-	end
+        if VideoInfo.provider_api_keys[:youtube].nil?
+          extend YoutubePlaylistScraper
+        else
+          extend YoutubePlaylistAPI
+        end
 
         super(url, options)
       end
