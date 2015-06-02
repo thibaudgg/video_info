@@ -1,11 +1,16 @@
 require 'iso8601'
 require_relative 'youtube_api'
+require_relative 'youtube_scraper'
 
 class VideoInfo
   module Providers
     class Youtube < Provider
       def initialize(url, options = {})
-        extend YoutubeAPI
+        if VideoInfo.provider_api_keys[:youtube].nil?
+          extend YoutubeScraper
+        else
+          extend YoutubeAPI
+        end
 
         super(url, options)
       end
