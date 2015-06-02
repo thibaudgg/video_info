@@ -4,6 +4,18 @@ require 'open-uri'
 class VideoInfo
   module Providers
     module YoutubeScraper
+      def date
+        meta_nodes = data.css('meta')
+
+        date_published_node = meta_nodes.detect do |m|
+          itemprop_attr = m.attr('itemprop')
+
+          itemprop_attr.value == 'datePublished' unless !itemprop_attr
+        end
+
+        Time.parse(date_published_node.attr('content').value)
+      end
+
       def description
         if available?
           meta_nodes = data.css('meta')

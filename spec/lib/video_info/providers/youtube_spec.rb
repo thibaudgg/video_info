@@ -184,7 +184,7 @@ describe VideoInfo::Providers::Youtube do
 
     describe '#date' do
       subject { super().date }
-      it { is_expected.to eq Time.parse('Sat Apr 12 22:25:35 UTC 2008', Time.now.utc) }
+      it { is_expected.to eq Time.parse('Sat Apr 12 2008', Time.now.utc) }
     end
 
     describe '#thumbnail_small' do
