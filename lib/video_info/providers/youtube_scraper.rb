@@ -58,6 +58,10 @@ class VideoInfo
         return "https://i.ytimg.com/vi/#{video_id}/hqdefault.jpg"
       end
 
+      def view_count
+        data.css('div.watch-view-count').text.gsub(',', '').to_i
+      end
+
       private
 
       def available?
