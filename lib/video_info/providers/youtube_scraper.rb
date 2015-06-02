@@ -44,7 +44,9 @@ class VideoInfo
             itemprop_attr.value == 'duration' unless !itemprop_attr
           end
 
-          duration_node.attr('content').value.to_i
+          duration = duration_node.attr('content').value
+
+          ISO8601::Duration.new(duration).to_seconds.to_i
         else
           0
         end
