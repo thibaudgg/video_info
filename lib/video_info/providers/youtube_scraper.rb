@@ -15,8 +15,6 @@ class VideoInfo
           end
 
           Time.parse(date_published_node.attr('content').value)
-        else
-          nil
         end
       end
 
@@ -29,8 +27,6 @@ class VideoInfo
           end
 
           description_node.attr('content').value
-        else
-          nil
         end
       end
 
@@ -61,8 +57,6 @@ class VideoInfo
           end
 
           keywords_node.attr('content').value
-        else
-          nil
         end
       end
 
@@ -75,21 +69,19 @@ class VideoInfo
           end
 
           title_node.attr('content').value
-        else
-          nil
         end
       end
 
       def thumbnail_small
-        return "https://i.ytimg.com/vi/#{video_id}/default.jpg"
+        "https://i.ytimg.com/vi/#{video_id}/default.jpg"
       end
 
       def thumbnail_medium
-        return "https://i.ytimg.com/vi/#{video_id}/mqdefault.jpg"
+        "https://i.ytimg.com/vi/#{video_id}/mqdefault.jpg"
       end
 
       def thumbnail_large
-        return "https://i.ytimg.com/vi/#{video_id}/hqdefault.jpg"
+        "https://i.ytimg.com/vi/#{video_id}/hqdefault.jpg"
       end
 
       def view_count
