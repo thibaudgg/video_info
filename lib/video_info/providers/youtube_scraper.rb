@@ -5,23 +5,45 @@ class VideoInfo
   module Providers
     module YoutubeScraper
       def description
-        meta_nodes = data.css('meta')
+        if available?
+          meta_nodes = data.css('meta')
 
-        description_node = meta_nodes.detect do |m|
-          m.attr('name').value == 'description'
+          description_node = meta_nodes.detect do |m|
+            m.attr('name').value == 'description'
+          end
+
+          description_node.attr('content').value
+        else
+          nil
         end
+      end
 
-        description_node.attr('content').value
+      def keywords
+        if available?
+          meta_nodes = data.css('meta')
+
+          description_node = meta_nodes.detect do |m|
+            m.attr('name').value == 'keywords'
+          end
+
+          description_node.attr('content').value
+        else
+          nil
+        end
       end
 
       def title
-        meta_nodes = data.css('meta')
+        if available?
+          meta_nodes = data.css('meta')
 
-        title_node = meta_nodes.detect do |m|
-          m.attr('name').value == 'title'
+          title_node = meta_nodes.detect do |m|
+            m.attr('name').value == 'title'
+          end
+
+          title_node.attr('content').value
+        else
+          nil
         end
-
-        title_node.attr('content').value
       end
 
       def thumbnail_small
@@ -39,7 +61,7 @@ class VideoInfo
       private
 
       def available?
-        !data.css('div#page').attr('class')[0].value.include?('oops-content')
+        data.css('div#unavailable-submessage').text.strip.empty?
       end
 
       def _set_data_from_api(api_url = _api_url)
