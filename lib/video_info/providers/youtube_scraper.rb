@@ -5,15 +5,19 @@ class VideoInfo
   module Providers
     module YoutubeScraper
       def date
-        meta_nodes = data.css('meta')
+        if available?
+          meta_nodes = data.css('meta')
 
-        date_published_node = meta_nodes.detect do |m|
-          itemprop_attr = m.attr('itemprop')
+          date_published_node = meta_nodes.detect do |m|
+            itemprop_attr = m.attr('itemprop')
 
-          itemprop_attr.value == 'datePublished' unless !itemprop_attr
+            itemprop_attr.value == 'datePublished' unless !itemprop_attr
+          end
+
+          Time.parse(date_published_node.attr('content').value)
+        else
+          nil
         end
-
-        Time.parse(date_published_node.attr('content').value)
       end
 
       def description
@@ -30,15 +34,31 @@ class VideoInfo
         end
       end
 
+      def duration
+        if available?
+          meta_nodes = data.css('meta')
+
+          duration_node = meta_nodes.detect do |m|
+            itemprop_attr = m.attr('itemprop')
+
+            itemprop_attr.value == 'duration' unless !itemprop_attr
+          end
+
+          duration_node.attr('content').value.to_i
+        else
+          0
+        end
+      end
+
       def keywords
         if available?
           meta_nodes = data.css('meta')
 
-          description_node = meta_nodes.detect do |m|
+          keywords_node = meta_nodes.detect do |m|
             m.attr('name').value == 'keywords'
           end
 
-          description_node.attr('content').value
+          keywords_node.attr('content').value
         else
           nil
         end
