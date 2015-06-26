@@ -164,7 +164,7 @@ describe VideoInfo::Providers::Youtube do
 
     describe '#keywords' do
       subject { super().keywords }
-      it { is_expected.to be ['cherry' 'bloom' 'king' 'of' 'the' 'knife' 'guitar' 'drum' 'clip' 'rock' 'alternative' 'tremplin' 'Paris-Forum']}
+      it { is_expected.to be ['cherry' 'bloom' 'king' 'of' 'the' 'knife' 'guitar' 'drum' 'clip' 'rock' 'alternative' 'tremplin' 'Paris-Forum'] }
     end
 
     describe '#duration' do
