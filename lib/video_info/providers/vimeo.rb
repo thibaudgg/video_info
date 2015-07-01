@@ -33,6 +33,18 @@ class VideoInfo
         _video['stats_number_of_plays'].to_i
       end
 
+      def author_thumbnail
+        _video['user_portrait_huge']
+      end
+
+      def author_domain
+        get_host_without_www(_video['user_url']) if _video['user_url']
+      end
+
+      def author
+        _video['user_name']
+      end
+
       private
 
       def _video

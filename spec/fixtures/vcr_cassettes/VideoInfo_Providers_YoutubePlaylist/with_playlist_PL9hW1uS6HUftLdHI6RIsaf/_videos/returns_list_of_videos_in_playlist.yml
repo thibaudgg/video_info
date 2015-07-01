@@ -1,0 +1,265 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.googleapis.com/youtube/v3/playlistItems?fields=items&key=AIzaSyA6PYwSr1EnLFUFy1cZDk3Ifb0rxeJaeZ0&part=snippet&playlistId=PL9hW1uS6HUftLdHI6RIsaf-iXTm09qnEr
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - VideoInfo/2.4.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Expires:
+      - Wed, 01 Jul 2015 18:26:18 GMT
+      Date:
+      - Wed, 01 Jul 2015 18:26:18 GMT
+      Cache-Control:
+      - private, max-age=0, must-revalidate, no-transform
+      Etag:
+      - '"Y3xTLFF3RLtHXX85JBgzzgp2Enw/0-dRuoFefu59MRZrJ9OQJh1wEio"'
+      Vary:
+      - Origin
+      - X-Origin
+      Content-Type:
+      - application/json; charset=UTF-8
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '6724'
+      Server:
+      - GSE
+      Alternate-Protocol:
+      - 443:quic,p=1
+    body:
+      encoding: UTF-8
+      string: |
+        {
+         "items": [
+          {
+           "kind": "youtube#playlistItem",
+           "etag": "\"Y3xTLFF3RLtHXX85JBgzzgp2Enw/K-gvAWZR6aZKd0do3Xn3MtdmfGM\"",
+           "id": "PLa0L99Uc4VSCXhwLjoLzxv8xxws5JLbfTP3YqbDI0DxQ",
+           "snippet": {
+            "publishedAt": "2015-04-22T21:47:21.000Z",
+            "channelId": "UCMDQxm7cUx3yXkfeHa5zJIQ",
+            "title": "Account termination on YouTube",
+            "description": "Learn more about account termination in the YouTube Help Center: https://support.google.com/youtube/answer/2802168",
+            "thumbnails": {
+             "default": {
+              "url": "https://i.ytimg.com/vi/Oi67QjrXy2w/default.jpg",
+              "width": 120,
+              "height": 90
+             },
+             "medium": {
+              "url": "https://i.ytimg.com/vi/Oi67QjrXy2w/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+             },
+             "high": {
+              "url": "https://i.ytimg.com/vi/Oi67QjrXy2w/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+             },
+             "standard": {
+              "url": "https://i.ytimg.com/vi/Oi67QjrXy2w/sddefault.jpg",
+              "width": 640,
+              "height": 480
+             },
+             "maxres": {
+              "url": "https://i.ytimg.com/vi/Oi67QjrXy2w/maxresdefault.jpg",
+              "width": 1280,
+              "height": 720
+             }
+            },
+            "channelTitle": "YouTube Help",
+            "playlistId": "PL9hW1uS6HUftLdHI6RIsaf-iXTm09qnEr",
+            "position": 0,
+            "resourceId": {
+             "kind": "youtube#video",
+             "videoId": "Oi67QjrXy2w"
+            }
+           }
+          },
+          {
+           "kind": "youtube#playlistItem",
+           "etag": "\"Y3xTLFF3RLtHXX85JBgzzgp2Enw/9EB6BjQI7LVTh8ZS5KAmyhTIlTI\"",
+           "id": "PLa0L99Uc4VSCXhwLjoLzxvw2SdI2zb8sl0kYOz9dDFO0",
+           "snippet": {
+            "publishedAt": "2015-04-22T21:48:43.000Z",
+            "channelId": "UCMDQxm7cUx3yXkfeHa5zJIQ",
+            "title": "YouTube Copyright Basics (Global)",
+            "description": "",
+            "thumbnails": {
+             "default": {
+              "url": "https://i.ytimg.com/vi/OQVHWsTHcoc/default.jpg",
+              "width": 120,
+              "height": 90
+             },
+             "medium": {
+              "url": "https://i.ytimg.com/vi/OQVHWsTHcoc/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+             },
+             "high": {
+              "url": "https://i.ytimg.com/vi/OQVHWsTHcoc/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+             },
+             "standard": {
+              "url": "https://i.ytimg.com/vi/OQVHWsTHcoc/sddefault.jpg",
+              "width": 640,
+              "height": 480
+             }
+            },
+            "channelTitle": "YouTube Help",
+            "playlistId": "PL9hW1uS6HUftLdHI6RIsaf-iXTm09qnEr",
+            "position": 1,
+            "resourceId": {
+             "kind": "youtube#video",
+             "videoId": "OQVHWsTHcoc"
+            }
+           }
+          },
+          {
+           "kind": "youtube#playlistItem",
+           "etag": "\"Y3xTLFF3RLtHXX85JBgzzgp2Enw/FtVY3O5dQ8V9f_gX2fAT2V2BcRE\"",
+           "id": "PLa0L99Uc4VSCXhwLjoLzxvzeL5__87gFCq75gAaFE6gY",
+           "snippet": {
+            "publishedAt": "2013-09-13T16:49:50.000Z",
+            "channelId": "UCMDQxm7cUx3yXkfeHa5zJIQ",
+            "title": "Buying YouTube views through third-party services",
+            "description": "Viewcounts serve as a way to recognize and surface great content. Since views are so important, it's no surprise that an ecosystem of businesses has evolved around artificially helping creators get and create YouTube views, likes, and subscribers.\n\nHowever, paying for views obtained through some of these companies could be a violation of our terms, which exist, in part, to make sure the views on any YouTube video come from real, genuine people.\n\nPlease visit our Help Center article for more info!\n\nhttps://support.google.com/youtube/answer/3399767",
+            "thumbnails": {
+             "default": {
+              "url": "https://i.ytimg.com/vi/_Bt3-WsHfB0/default.jpg",
+              "width": 120,
+              "height": 90
+             },
+             "medium": {
+              "url": "https://i.ytimg.com/vi/_Bt3-WsHfB0/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+             },
+             "high": {
+              "url": "https://i.ytimg.com/vi/_Bt3-WsHfB0/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+             },
+             "standard": {
+              "url": "https://i.ytimg.com/vi/_Bt3-WsHfB0/sddefault.jpg",
+              "width": 640,
+              "height": 480
+             },
+             "maxres": {
+              "url": "https://i.ytimg.com/vi/_Bt3-WsHfB0/maxresdefault.jpg",
+              "width": 1280,
+              "height": 720
+             }
+            },
+            "channelTitle": "YouTube Help",
+            "playlistId": "PL9hW1uS6HUftLdHI6RIsaf-iXTm09qnEr",
+            "position": 2,
+            "resourceId": {
+             "kind": "youtube#video",
+             "videoId": "_Bt3-WsHfB0"
+            }
+           }
+          },
+          {
+           "kind": "youtube#playlistItem",
+           "etag": "\"Y3xTLFF3RLtHXX85JBgzzgp2Enw/aZB_rEa-HGKt3gO7mbYt_rv2DGM\"",
+           "id": "PLa0L99Uc4VSCXhwLjoLzxv5JvZLgV8BItvSbpyhS9_p8",
+           "snippet": {
+            "publishedAt": "2013-08-09T05:09:51.000Z",
+            "channelId": "UCMDQxm7cUx3yXkfeHa5zJIQ",
+            "title": "YouTube Content ID",
+            "description": "Learn more about YouTube's Content ID system.",
+            "thumbnails": {
+             "default": {
+              "url": "https://i.ytimg.com/vi/9g2U12SsRns/default.jpg",
+              "width": 120,
+              "height": 90
+             },
+             "medium": {
+              "url": "https://i.ytimg.com/vi/9g2U12SsRns/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+             },
+             "high": {
+              "url": "https://i.ytimg.com/vi/9g2U12SsRns/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+             }
+            },
+            "channelTitle": "YouTube Help",
+            "playlistId": "PL9hW1uS6HUftLdHI6RIsaf-iXTm09qnEr",
+            "position": 3,
+            "resourceId": {
+             "kind": "youtube#video",
+             "videoId": "9g2U12SsRns"
+            }
+           }
+          },
+          {
+           "kind": "youtube#playlistItem",
+           "etag": "\"Y3xTLFF3RLtHXX85JBgzzgp2Enw/9AILAwA-TinybwmctvWPN47Ii34\"",
+           "id": "PLa0L99Uc4VSCXhwLjoLzxv4Zz231WHvzzM2lBS3jjPZs",
+           "snippet": {
+            "publishedAt": "2013-08-09T05:09:51.000Z",
+            "channelId": "UCMDQxm7cUx3yXkfeHa5zJIQ",
+            "title": "Reporting and Policy Enforcement on YouTube",
+            "description": "This video explains the basics of reporting on YouTube. \n\nTo learn more about reporting, policies and safety please visit our Policy and Safety hub, http://www.youtube.com/yt/policyandsafety/",
+            "thumbnails": {
+             "default": {
+              "url": "https://i.ytimg.com/vi/6c3mHikRz0I/default.jpg",
+              "width": 120,
+              "height": 90
+             },
+             "medium": {
+              "url": "https://i.ytimg.com/vi/6c3mHikRz0I/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+             },
+             "high": {
+              "url": "https://i.ytimg.com/vi/6c3mHikRz0I/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+             },
+             "standard": {
+              "url": "https://i.ytimg.com/vi/6c3mHikRz0I/sddefault.jpg",
+              "width": 640,
+              "height": 480
+             },
+             "maxres": {
+              "url": "https://i.ytimg.com/vi/6c3mHikRz0I/maxresdefault.jpg",
+              "width": 1280,
+              "height": 720
+             }
+            },
+            "channelTitle": "YouTube Help",
+            "playlistId": "PL9hW1uS6HUftLdHI6RIsaf-iXTm09qnEr",
+            "position": 4,
+            "resourceId": {
+             "kind": "youtube#video",
+             "videoId": "6c3mHikRz0I"
+            }
+           }
+          }
+         ]
+        }
+    http_version: 
+  recorded_at: Wed, 01 Jul 2015 18:26:18 GMT
+recorded_with: VCR 2.9.3

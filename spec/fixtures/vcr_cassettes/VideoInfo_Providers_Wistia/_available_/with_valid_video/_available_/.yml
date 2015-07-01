@@ -17,7 +17,7 @@ http_interactions:
       message: OK
     headers:
       Server:
-      - nginx/1.4.6 (Ubuntu)
+      - nginx/1.6.3
       Content-Type:
       - application/json; charset=utf-8
       Status:
@@ -33,9 +33,9 @@ http_interactions:
       P3p:
       - CP="CURi ADMa DEVa IVAa IVDa CONi OUR IND DSP CAO COR"
       X-Request-Id:
-      - a5a7a40b003248b2537d520bec74cd23
+      - d0dd8794ad976a76e06760d961bf2987
       X-Runtime:
-      - '0.044548'
+      - '0.040397'
       X-Rack-Cache:
       - miss
       Via:
@@ -46,26 +46,26 @@ http_interactions:
       Accept-Ranges:
       - bytes
       Date:
-      - Mon, 09 Mar 2015 14:06:51 GMT
+      - Wed, 01 Jul 2015 18:26:16 GMT
       Age:
-      - '70317'
+      - '32325'
       Connection:
       - keep-alive
       X-Served-By:
-      - cache-ord1733-ORD, cache-fra1228-FRA
+      - cache-ord1735-ORD, cache-jfk1024-JFK
       X-Cache:
-      - HIT, MISS
+      - HIT, HIT
       X-Cache-Hits:
-      - 1, 0
+      - 9, 4
       X-Timer:
-      - S1425910011.789409,VS0,VE108
+      - S1435775176.401670,VS0,VE0
       Vary:
-      - X-Forwarded-Proto
+      - Accept-Encoding,X-Forwarded-Proto
       Strict-Transport-Security:
       - max-age=0
     body:
       encoding: UTF-8
       string: ''
     http_version: 
-  recorded_at: Mon, 09 Mar 2015 14:06:51 GMT
+  recorded_at: Wed, 01 Jul 2015 18:26:16 GMT
 recorded_with: VCR 2.9.3

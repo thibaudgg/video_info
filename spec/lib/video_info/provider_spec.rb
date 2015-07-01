@@ -53,6 +53,13 @@ describe VideoInfo::Provider do
     end
   end
 
+  describe '#get_host_without_www' do
+    it "pulls TLDs form URLs" do
+      url = 'http://www.google.com/'
+      expect(provider.send(:get_host_without_www, url)).to eq 'google.com'
+    end
+  end
+
   describe ".usable?" do
     it { expect { VideoInfo::Provider.usable?('url') }.to raise_error(NotImplementedError, 'Provider class must implement .usable? public method') }
   end

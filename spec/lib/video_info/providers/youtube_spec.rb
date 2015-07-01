@@ -116,6 +116,7 @@ describe VideoInfo::Providers::Youtube do
         subject { super().view_count }
         it { is_expected.to be == 0 }
       end
+
     end
 
     context "with 'video no longer available due to a copyright claim' video", :vcr do

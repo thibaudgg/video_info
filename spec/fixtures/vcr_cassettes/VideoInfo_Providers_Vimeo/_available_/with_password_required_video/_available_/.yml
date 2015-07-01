@@ -76,44 +76,48 @@ http_interactions:
       X-Ratelimit-Limit:
       - '3600'
       X-Ratelimit-Remaining:
-      - '3592'
+      - '3599'
       X-Ratelimit-Reset:
-      - '1425913607'
+      - '1435794515'
       Content-Disposition:
       - attachment; filename=vimeo.json
       Cache-Control:
       - max-age=300, must-revalidate
       Expires:
-      - Mon, 09 Mar 2015 14:12:44 GMT
+      - Wed, 01 Jul 2015 22:53:35 GMT
       X-Xss-Protection:
       - 1; mode=block
       X-Ua-Compatible:
       - IE=edge
+      Strict-Transport-Security:
+      - max-age=900; includeSubDomains
       Content-Length:
       - '19'
       Accept-Ranges:
       - bytes
       Date:
-      - Mon, 09 Mar 2015 14:07:44 GMT
+      - Wed, 01 Jul 2015 22:48:35 GMT
       Via:
       - 1.1 varnish
       Age:
       - '0'
       Connection:
       - keep-alive
+      Set-Cookie:
+      - clip_ver=3; expires=Sun, 30 Aug 2015 22:48:35 GMT; path=/;
       X-Served-By:
-      - cache-fra1228-FRA
+      - cache-mia1325-MIA
       X-Cache:
       - MISS
       X-Cache-Hits:
       - '0'
       X-Timer:
-      - S1425910064.363129,VS0,VE100
+      - S1435790915.706881,VS0,VE45
       Vary:
       - User-Agent,Accept-Encoding
     body:
       encoding: UTF-8
       string: ''
     http_version: 
-  recorded_at: Mon, 09 Mar 2015 14:07:44 GMT
+  recorded_at: Wed, 01 Jul 2015 22:48:35 GMT
 recorded_with: VCR 2.9.3
