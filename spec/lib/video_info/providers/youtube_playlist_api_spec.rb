@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 describe VideoInfo::Providers::YoutubePlaylist do
-  before(:all) do
+  before(:each) do
     VideoInfo.provider_api_keys = { youtube: 'AIzaSyA6PYwSr1EnLFUFy1cZDk3Ifb0rxeJaeZ0' }
   end
 
@@ -94,7 +94,7 @@ describe VideoInfo::Providers::YoutubePlaylist do
 
     describe '#keywords' do
       subject { super().keywords }
-      it { is_expected.to be_nil }
+      it { is_expected.to eq ['video', 'sharing', 'camera phone', 'video phone', 'free', 'upload']  }
     end
 
     describe '#duration' do
