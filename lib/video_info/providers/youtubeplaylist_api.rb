@@ -4,6 +4,10 @@ class VideoInfo
       data['items'][0]['snippet']['description']
     end
 
+    def date
+      nil
+    end
+
     def duration
       nil
     end
@@ -12,6 +16,10 @@ class VideoInfo
       _playlist_video_ids.map do |entry_id|
         VideoInfo.new("http://www.youtube.com/watch?v=#{entry_id}")
       end
+    end
+
+    def view_count
+      nil
     end
 
     private
