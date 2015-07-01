@@ -56,8 +56,8 @@ class VideoInfo
 
     private
 
-    def available?
-      !data.css('div#page').attr('class')[0].value.include?('oops-content')
-    end
+    #def available?
+    #  !data.css('div#page').attr('class')[0].value.include?('oops-content')
+    #end
   end
 end
