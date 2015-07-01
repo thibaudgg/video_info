@@ -21,6 +21,18 @@ class VideoInfo
         url =~ /((youtube\.com)\/playlist)|((youtube\.com)\/embed\/videoseries)/
       end
 
+      def date
+        nil
+      end
+
+      def duration
+        nil
+      end
+
+      def view_count
+        nil
+      end
+
       def embed_url
         "//www.youtube.com/embed/videoseries?list=#{playlist_id}"
       end

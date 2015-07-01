@@ -5,8 +5,20 @@ require 'open_uri_redirections'
 class VideoInfo
   module Providers
     module YoutubePlaylistScraper
+      def date
+        nil
+      end
+
+      def duration
+        nil
+      end
+
       def videos
         raise(NotImplementedError, 'To access videos, you must provide an API key to VideoInfo.provider_api_keys')
+      end
+
+      def view_count
+        nil
       end
 
       def thumbnail_small
