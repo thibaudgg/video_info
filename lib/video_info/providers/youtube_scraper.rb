@@ -56,7 +56,7 @@ class VideoInfo
             m.attr('name').value == 'keywords'
           end
 
-          keywords_node.attr('content').value
+          keywords_node.attr('content').value.split(', ')
         end
       end
 
