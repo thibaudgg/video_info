@@ -94,7 +94,7 @@ describe VideoInfo::Providers::YoutubePlaylist do
 
     describe '#keywords' do
       subject { super().keywords }
-      it { is_expected.to be_nil }
+      it { is_expected.to eq ['video', 'sharing', 'camera phone', 'video phone', 'free', 'upload'] }
     end
 
     describe '#duration' do
@@ -153,7 +153,7 @@ describe VideoInfo::Providers::YoutubePlaylist do
 
     describe '#videos' do
       subject { super().videos }
-      it { expect { subject }.to raise_error(NotImplementedError) } 
+      it { expect { subject }.to raise_error(NotImplementedError) }
     end
   end
 
