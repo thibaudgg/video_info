@@ -17,13 +17,7 @@ class VideoInfo
       end
 
       def description
-        if available?
-          description_node = meta_nodes.detect do |m|
-            m.attr('name').value == 'description'
-          end
-
-          description_node.attr('content').value
-        end
+        meta_node_value('description')
       end
 
       def duration
@@ -45,9 +39,7 @@ class VideoInfo
       def keywords
         value = meta_node_value('keywords')
 
-        if value
-          value.split(', ')
-        end
+        value.split(', ') unless !value
       end
 
       def title
