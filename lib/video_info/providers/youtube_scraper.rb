@@ -6,8 +6,6 @@ class VideoInfo
     module YoutubeScraper
       def date
         if available?
-          meta_nodes = data.css('meta')
-
           date_published_node = meta_nodes.detect do |m|
             itemprop_attr = m.attr('itemprop')
 
@@ -20,8 +18,6 @@ class VideoInfo
 
       def description
         if available?
-          meta_nodes = data.css('meta')
-
           description_node = meta_nodes.detect do |m|
             m.attr('name').value == 'description'
           end
@@ -32,8 +28,6 @@ class VideoInfo
 
       def duration
         if available?
-          meta_nodes = data.css('meta')
-
           duration_node = meta_nodes.detect do |m|
             itemprop_attr = m.attr('itemprop')
 
@@ -50,8 +44,6 @@ class VideoInfo
 
       def keywords
         if available?
-          meta_nodes = data.css('meta')
-
           keywords_node = meta_nodes.detect do |m|
             m.attr('name').value == 'keywords'
           end
@@ -86,6 +78,10 @@ class VideoInfo
 
       def view_count
         data.css('div.watch-view-count').text.gsub(',', '').to_i
+      end
+
+      def meta_nodes
+        @meta_nodes ||= data.css('meta')
       end
 
       private
