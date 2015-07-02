@@ -5,15 +5,9 @@ class VideoInfo
   module Providers
     module YoutubeScraper
       def date
-        if available?
-          date_published_node = meta_nodes.detect do |m|
-            itemprop_attr = m.attr('itemprop')
+        date = itemprop_node_value('datePublished')
 
-            itemprop_attr.value == 'datePublished' unless !itemprop_attr
-          end
-
-          Time.parse(date_published_node.attr('content').value)
-        end
+        Time.parse(date) unless !date
       end
 
       def description
@@ -21,15 +15,9 @@ class VideoInfo
       end
 
       def duration
-        if available?
-          duration_node = meta_nodes.detect do |m|
-            itemprop_attr = m.attr('itemprop')
+        duration = itemprop_node_value('duration')
 
-            itemprop_attr.value == 'duration' unless !itemprop_attr
-          end
-
-          duration = duration_node.attr('content').value
-
+        if duration
           ISO8601::Duration.new(duration).to_seconds.to_i
         else
           0
@@ -71,6 +59,18 @@ class VideoInfo
       def meta_node_value(name)
         if available?
           node = meta_nodes.detect { |n| n.attr('name').value == name }
+
+          node.attr('content').value
+        end
+      end
+
+      def itemprop_node_value(name)
+        if available?
+          node = meta_nodes.detect do |m|
+            itemprop_attr = m.attr('itemprop')
+
+            itemprop_attr.value == name unless !itemprop_attr
+          end
 
           node.attr('content').value
         end
