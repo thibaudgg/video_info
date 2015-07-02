@@ -81,7 +81,7 @@ class VideoInfo
       end
 
       def _set_data_from_api(api_url = _api_url)
-        Oga.parse_html(open(api_url, allow_redirections: :safe))
+        Oga.parse_html(open(api_url, allow_redirections: :safe).read)
       end
 
       def _api_url
