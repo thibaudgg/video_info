@@ -43,25 +43,15 @@ class VideoInfo
       end
 
       def keywords
-        if available?
-          keywords_node = meta_nodes.detect do |m|
-            m.attr('name').value == 'keywords'
-          end
+        value = meta_node_value('keywords')
 
-          keywords_node.attr('content').value.split(', ')
+        if value
+          value.split(', ')
         end
       end
 
       def title
-        if available?
-          meta_nodes = data.css('meta')
-
-          title_node = meta_nodes.detect do |m|
-            m.attr('name').value == 'title'
-          end
-
-          title_node.attr('content').value
-        end
+        meta_node_value('title')
       end
 
       def thumbnail_small
@@ -80,11 +70,19 @@ class VideoInfo
         data.css('div.watch-view-count').text.gsub(',', '').to_i
       end
 
+      private
+
       def meta_nodes
         @meta_nodes ||= data.css('meta')
       end
 
-      private
+      def meta_node_value(name)
+        if available?
+          node = meta_nodes.detect { |n| n.attr('name').value == name }
+
+          node.attr('content').value
+        end
+      end
 
       def available?
         data.css('div#unavailable-submessage').text.strip.empty?
