@@ -2,53 +2,6 @@
 http_interactions:
 - request:
     method: head
-    uri: http://vimeo.com/api/v2/video/54189727.json
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept:
-      - "*/*"
-      User-Agent:
-      - Ruby
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Date:
-      - Wed, 04 Jun 2014 20:08:06 GMT
-      Server:
-      - Apache
-      Access-Control-Allow-Origin:
-      - "*"
-      X-Ratelimit-Limit:
-      - '3600'
-      X-Ratelimit-Remaining:
-      - '3590'
-      X-Ratelimit-Reset:
-      - '1401915849'
-      Cache-Control:
-      - max-age=60
-      Expires:
-      - Wed, 04 Jun 2014 20:09:06 GMT
-      Last-Modified:
-      - Wed, 04 Jun 2014 19:15:10 GMT
-      Etag:
-      - '"b79934c3583f053e6f50c8de2084faca"'
-      Vary:
-      - Accept-Encoding
-      Cneonction:
-      - close
-      Content-Type:
-      - application/json
-    body:
-      encoding: UTF-8
-      string: ''
-    http_version: 
-  recorded_at: Wed, 04 Jun 2014 20:08:06 GMT
-- request:
-    method: head
     uri: http://vimeo.com/api/v2/video/74636562.json
     body:
       encoding: US-ASCII
@@ -76,15 +29,15 @@ http_interactions:
       X-Ratelimit-Limit:
       - '3600'
       X-Ratelimit-Remaining:
-      - '3599'
+      - '3594'
       X-Ratelimit-Reset:
-      - '1435794515'
+      - '1436928899'
       Content-Disposition:
       - attachment; filename=vimeo.json
       Cache-Control:
       - max-age=300, must-revalidate
       Expires:
-      - Wed, 01 Jul 2015 22:53:35 GMT
+      - Wed, 15 Jul 2015 02:22:05 GMT
       X-Xss-Protection:
       - 1; mode=block
       X-Ua-Compatible:
@@ -96,7 +49,7 @@ http_interactions:
       Accept-Ranges:
       - bytes
       Date:
-      - Wed, 01 Jul 2015 22:48:35 GMT
+      - Wed, 15 Jul 2015 02:17:05 GMT
       Via:
       - 1.1 varnish
       Age:
@@ -104,20 +57,20 @@ http_interactions:
       Connection:
       - keep-alive
       Set-Cookie:
-      - clip_ver=3; expires=Sun, 30 Aug 2015 22:48:35 GMT; path=/;
+      - clip_v=1; expires=Sun, 13 Sep 2015 02:17:05 GMT; path=/;
       X-Served-By:
-      - cache-mia1325-MIA
+      - cache-mia1324-MIA
       X-Cache:
       - MISS
       X-Cache-Hits:
       - '0'
       X-Timer:
-      - S1435790915.706881,VS0,VE45
+      - S1436926624.980234,VS0,VE54
       Vary:
       - User-Agent,Accept-Encoding
     body:
       encoding: UTF-8
       string: ''
     http_version: 
-  recorded_at: Wed, 01 Jul 2015 22:48:35 GMT
+  recorded_at: Wed, 15 Jul 2015 02:17:05 GMT
 recorded_with: VCR 2.9.3

@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - DMS/1.0.42
       X-Dm-Backnode:
-      - web-088.adm.dailymotion.com:80
+      - web-019.adm.dailymotion.com:80
       Vary:
       - Accept-Encoding
       Cache-Control:
@@ -32,15 +32,15 @@ http_interactions:
       - policyref="http://www.dailymotion.com/w3c/p3p.xml", CP="IDC DSP CURa ADMa
         DEVa TAIa OUR BUS IND UNI COM NAV INT"
       Date:
-      - Wed, 01 Jul 2015 18:25:49 GMT
-      X-Dm-Tg:
+      - Wed, 15 Jul 2015 02:15:57 GMT
+      Surrogate-Key:
       - v/x7lni3
       X-Dm-Lb:
-      - 195.8.215.157
+      - 195.8.215.129
       Access-Control-Allow-Origin:
       - "*"
       X-Dm-Backnode-Response-Time:
-      - '92'
+      - '72'
       Etag:
       - W/"rQeFNlJ5iMPO8gmsSDhiVw"
       X-Robots-Tag:
@@ -59,5 +59,5 @@ http_interactions:
       encoding: ASCII-8BIT
       string: '{"id":"x7lni3","title":"Mario Kart (R\u00e9mi Gaillard)","channel":"fun","owner":"x4r137"}'
     http_version: 
-  recorded_at: Wed, 01 Jul 2015 18:25:49 GMT
+  recorded_at: Wed, 15 Jul 2015 02:15:57 GMT
 recorded_with: VCR 2.9.3

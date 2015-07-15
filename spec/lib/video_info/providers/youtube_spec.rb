@@ -124,7 +124,7 @@ describe VideoInfo::Providers::Youtube do
 
       describe '#available?' do
         subject { super().available? }
-        it { is_expected.to be_falsey }
+        it { is_expected.to be_truthy }
       end
     end
   end
@@ -169,7 +169,7 @@ describe VideoInfo::Providers::Youtube do
 
     describe '#keywords' do
       subject { super().keywords }
-      it { is_expected.to be_nil }
+      it { is_expected.to eql ["cherry", "bloom", "king", "of", "the", "knife", "guitar", "drum", "clip", "rock", "alternative", "tremplin", "Paris-Forum"] }
     end
 
     describe '#duration' do

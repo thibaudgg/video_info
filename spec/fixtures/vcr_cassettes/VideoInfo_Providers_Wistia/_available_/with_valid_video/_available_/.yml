@@ -33,9 +33,9 @@ http_interactions:
       P3p:
       - CP="CURi ADMa DEVa IVAa IVDa CONi OUR IND DSP CAO COR"
       X-Request-Id:
-      - d0dd8794ad976a76e06760d961bf2987
+      - e5ebae63206659cb02f9c4d0d8bfcb22
       X-Runtime:
-      - '0.040397'
+      - '0.034291'
       X-Rack-Cache:
       - miss
       Via:
@@ -46,19 +46,19 @@ http_interactions:
       Accept-Ranges:
       - bytes
       Date:
-      - Wed, 01 Jul 2015 18:26:16 GMT
+      - Wed, 15 Jul 2015 02:19:03 GMT
       Age:
-      - '32325'
+      - '0'
       Connection:
       - keep-alive
       X-Served-By:
-      - cache-ord1735-ORD, cache-jfk1024-JFK
+      - cache-ord1735-ORD, cache-dfw1822-DFW
       X-Cache:
-      - HIT, HIT
+      - MISS, MISS
       X-Cache-Hits:
-      - 9, 4
+      - 0, 0
       X-Timer:
-      - S1435775176.401670,VS0,VE0
+      - S1436926743.548275,VS0,VE64
       Vary:
       - Accept-Encoding,X-Forwarded-Proto
       Strict-Transport-Security:
@@ -67,5 +67,5 @@ http_interactions:
       encoding: UTF-8
       string: ''
     http_version: 
-  recorded_at: Wed, 01 Jul 2015 18:26:16 GMT
+  recorded_at: Wed, 15 Jul 2015 02:19:03 GMT
 recorded_with: VCR 2.9.3

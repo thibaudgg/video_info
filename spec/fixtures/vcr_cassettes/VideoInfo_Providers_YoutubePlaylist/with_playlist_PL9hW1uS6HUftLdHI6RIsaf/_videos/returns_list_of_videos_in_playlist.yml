@@ -19,13 +19,13 @@ http_interactions:
       message: OK
     headers:
       Expires:
-      - Wed, 01 Jul 2015 18:26:18 GMT
+      - Wed, 15 Jul 2015 02:20:46 GMT
       Date:
-      - Wed, 01 Jul 2015 18:26:18 GMT
+      - Wed, 15 Jul 2015 02:20:46 GMT
       Cache-Control:
       - private, max-age=0, must-revalidate, no-transform
       Etag:
-      - '"Y3xTLFF3RLtHXX85JBgzzgp2Enw/0-dRuoFefu59MRZrJ9OQJh1wEio"'
+      - '"iDqJ1j7zKs4x3o3ZsFlBOwgWAHU/0-dRuoFefu59MRZrJ9OQJh1wEio"'
       Vary:
       - Origin
       - X-Origin
@@ -50,7 +50,7 @@ http_interactions:
          "items": [
           {
            "kind": "youtube#playlistItem",
-           "etag": "\"Y3xTLFF3RLtHXX85JBgzzgp2Enw/K-gvAWZR6aZKd0do3Xn3MtdmfGM\"",
+           "etag": "\"iDqJ1j7zKs4x3o3ZsFlBOwgWAHU/K-gvAWZR6aZKd0do3Xn3MtdmfGM\"",
            "id": "PLa0L99Uc4VSCXhwLjoLzxv8xxws5JLbfTP3YqbDI0DxQ",
            "snippet": {
             "publishedAt": "2015-04-22T21:47:21.000Z",
@@ -95,7 +95,7 @@ http_interactions:
           },
           {
            "kind": "youtube#playlistItem",
-           "etag": "\"Y3xTLFF3RLtHXX85JBgzzgp2Enw/9EB6BjQI7LVTh8ZS5KAmyhTIlTI\"",
+           "etag": "\"iDqJ1j7zKs4x3o3ZsFlBOwgWAHU/9EB6BjQI7LVTh8ZS5KAmyhTIlTI\"",
            "id": "PLa0L99Uc4VSCXhwLjoLzxvw2SdI2zb8sl0kYOz9dDFO0",
            "snippet": {
             "publishedAt": "2015-04-22T21:48:43.000Z",
@@ -135,7 +135,7 @@ http_interactions:
           },
           {
            "kind": "youtube#playlistItem",
-           "etag": "\"Y3xTLFF3RLtHXX85JBgzzgp2Enw/FtVY3O5dQ8V9f_gX2fAT2V2BcRE\"",
+           "etag": "\"iDqJ1j7zKs4x3o3ZsFlBOwgWAHU/FtVY3O5dQ8V9f_gX2fAT2V2BcRE\"",
            "id": "PLa0L99Uc4VSCXhwLjoLzxvzeL5__87gFCq75gAaFE6gY",
            "snippet": {
             "publishedAt": "2013-09-13T16:49:50.000Z",
@@ -180,7 +180,7 @@ http_interactions:
           },
           {
            "kind": "youtube#playlistItem",
-           "etag": "\"Y3xTLFF3RLtHXX85JBgzzgp2Enw/aZB_rEa-HGKt3gO7mbYt_rv2DGM\"",
+           "etag": "\"iDqJ1j7zKs4x3o3ZsFlBOwgWAHU/aZB_rEa-HGKt3gO7mbYt_rv2DGM\"",
            "id": "PLa0L99Uc4VSCXhwLjoLzxv5JvZLgV8BItvSbpyhS9_p8",
            "snippet": {
             "publishedAt": "2013-08-09T05:09:51.000Z",
@@ -215,7 +215,7 @@ http_interactions:
           },
           {
            "kind": "youtube#playlistItem",
-           "etag": "\"Y3xTLFF3RLtHXX85JBgzzgp2Enw/9AILAwA-TinybwmctvWPN47Ii34\"",
+           "etag": "\"iDqJ1j7zKs4x3o3ZsFlBOwgWAHU/9AILAwA-TinybwmctvWPN47Ii34\"",
            "id": "PLa0L99Uc4VSCXhwLjoLzxv4Zz231WHvzzM2lBS3jjPZs",
            "snippet": {
             "publishedAt": "2013-08-09T05:09:51.000Z",
@@ -261,5 +261,5 @@ http_interactions:
          ]
         }
     http_version: 
-  recorded_at: Wed, 01 Jul 2015 18:26:18 GMT
+  recorded_at: Wed, 15 Jul 2015 02:20:47 GMT
 recorded_with: VCR 2.9.3

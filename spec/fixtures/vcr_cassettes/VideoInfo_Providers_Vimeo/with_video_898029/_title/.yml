@@ -31,19 +31,19 @@ http_interactions:
       X-Ratelimit-Limit:
       - '3600'
       X-Ratelimit-Remaining:
-      - '3593'
+      - '3568'
       X-Ratelimit-Reset:
-      - '1435778755'
+      - '1436843341'
       Content-Disposition:
       - attachment; filename=vimeo.json
       Cache-Control:
       - max-age=60
       Expires:
-      - Wed, 01 Jul 2015 18:26:57 GMT
+      - Tue, 14 Jul 2015 02:26:08 GMT
       Last-Modified:
-      - Thu, 25 Jun 2015 11:10:48 GMT
+      - Fri, 03 Jul 2015 14:15:08 GMT
       Etag:
-      - '"8124cc4750402af51bdd1629ab294787"'
+      - '"a9266008d46ccd21ca1a4828a5b41d01"'
       X-Xss-Protection:
       - 1; mode=block
       X-Ua-Compatible:
@@ -55,7 +55,7 @@ http_interactions:
       Accept-Ranges:
       - bytes
       Date:
-      - Wed, 01 Jul 2015 18:25:57 GMT
+      - Wed, 15 Jul 2015 02:17:05 GMT
       Via:
       - 1.1 varnish
       Age:
@@ -63,15 +63,15 @@ http_interactions:
       Connection:
       - keep-alive
       Set-Cookie:
-      - clip_ver=2; expires=Sun, 30 Aug 2015 18:25:57 GMT; path=/;
+      - clip_v=1; expires=Sun, 13 Sep 2015 02:17:05 GMT; path=/;
       X-Served-By:
-      - cache-mia1322-MIA
+      - cache-mia1323-MIA
       X-Cache:
-      - MISS
+      - HIT
       X-Cache-Hits:
       - '0'
       X-Timer:
-      - S1435775157.249252,VS0,VE56
+      - S1436926625.736076,VS0,VE39
       Vary:
       - User-Agent,Accept-Encoding
     body:
@@ -80,8 +80,8 @@ http_interactions:
         first video from the upcoming album Secret Sounds, to download in-stores April
         14. Checkout http:\/\/www.cherrybloom.net","url":"http:\/\/vimeo.com\/898029","upload_date":"2008-04-14
         13:10:39","thumbnail_small":"http:\/\/i.vimeocdn.com\/video\/34373130_100x75.jpg","thumbnail_medium":"http:\/\/i.vimeocdn.com\/video\/34373130_200x150.jpg","thumbnail_large":"http:\/\/i.vimeocdn.com\/video\/34373130_640.jpg","user_id":206215,"user_name":"Octave
-        Zangs","user_url":"http:\/\/vimeo.com\/octave","user_portrait_small":"http:\/\/i.vimeocdn.com\/portrait\/2577152_30x30.jpg","user_portrait_medium":"http:\/\/i.vimeocdn.com\/portrait\/2577152_75x75.jpg","user_portrait_large":"http:\/\/i.vimeocdn.com\/portrait\/2577152_100x100.jpg","user_portrait_huge":"http:\/\/i.vimeocdn.com\/portrait\/2577152_300x300.jpg","stats_number_of_likes":11,"stats_number_of_plays":4666,"stats_number_of_comments":4,"duration":175,"width":640,"height":360,"tags":"cherry
+        Zangs","user_url":"http:\/\/vimeo.com\/octave","user_portrait_small":"http:\/\/i.vimeocdn.com\/portrait\/2577152_30x30.jpg","user_portrait_medium":"http:\/\/i.vimeocdn.com\/portrait\/2577152_75x75.jpg","user_portrait_large":"http:\/\/i.vimeocdn.com\/portrait\/2577152_100x100.jpg","user_portrait_huge":"http:\/\/i.vimeocdn.com\/portrait\/2577152_300x300.jpg","stats_number_of_likes":11,"stats_number_of_plays":4669,"stats_number_of_comments":4,"duration":175,"width":640,"height":360,"tags":"cherry
         bloom, secret sounds, king of the knife, rock, alternative","embed_privacy":"anywhere"}]'
     http_version: 
-  recorded_at: Wed, 01 Jul 2015 18:25:57 GMT
+  recorded_at: Wed, 15 Jul 2015 02:17:05 GMT
 recorded_with: VCR 2.9.3

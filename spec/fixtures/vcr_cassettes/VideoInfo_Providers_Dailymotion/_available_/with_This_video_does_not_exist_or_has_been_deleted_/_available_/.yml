@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - DMS/1.0.42
       X-Dm-Backnode:
-      - web-061.adm.dailymotion.com:80
+      - web-097.adm.dailymotion.com:80
       Vary:
       - Accept-Encoding
       Cache-Control:
@@ -32,15 +32,15 @@ http_interactions:
       - policyref="http://www.dailymotion.com/w3c/p3p.xml", CP="IDC DSP CURa ADMa
         DEVa TAIa OUR BUS IND UNI COM NAV INT"
       Date:
-      - Wed, 01 Jul 2015 18:25:50 GMT
-      X-Dm-Tg:
+      - Wed, 15 Jul 2015 02:16:00 GMT
+      Surrogate-Key:
       - v/xyqjuo
       X-Dm-Lb:
-      - 195.8.215.170
+      - 195.8.215.130
       Access-Control-Allow-Origin:
       - "*"
       X-Dm-Backnode-Response-Time:
-      - '99'
+      - '70'
       Etag:
       - W/"KMdX3eyVz0MaVdxO7IOMTA"
       X-Robots-Tag:
@@ -60,5 +60,5 @@ http_interactions:
       string: '{"error":{"code":404,"message":"This video does not exist or has been
         deleted.","type":"not_found"}}'
     http_version: 
-  recorded_at: Wed, 01 Jul 2015 18:25:50 GMT
+  recorded_at: Wed, 15 Jul 2015 02:16:01 GMT
 recorded_with: VCR 2.9.3

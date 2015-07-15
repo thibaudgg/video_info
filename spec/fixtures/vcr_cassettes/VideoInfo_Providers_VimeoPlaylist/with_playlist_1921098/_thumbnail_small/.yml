@@ -33,13 +33,13 @@ http_interactions:
       X-Ratelimit-Remaining:
       - '3597'
       X-Ratelimit-Reset:
-      - '1435778755'
+      - '1436930210'
       Content-Disposition:
       - attachment; filename=vimeo.json
       Cache-Control:
       - max-age=60
       Expires:
-      - Wed, 01 Jul 2015 18:26:56 GMT
+      - Wed, 15 Jul 2015 02:17:54 GMT
       Last-Modified:
       - Thu, 31 May 2012 15:34:36 GMT
       Etag:
@@ -55,7 +55,7 @@ http_interactions:
       Accept-Ranges:
       - bytes
       Date:
-      - Wed, 01 Jul 2015 18:25:56 GMT
+      - Wed, 15 Jul 2015 02:16:54 GMT
       Via:
       - 1.1 varnish
       Age:
@@ -63,7 +63,7 @@ http_interactions:
       Connection:
       - keep-alive
       Set-Cookie:
-      - clip_ver=3; expires=Sun, 30 Aug 2015 18:25:56 GMT; path=/;
+      - clip_v=1; expires=Sun, 13 Sep 2015 02:16:54 GMT; path=/;
       X-Served-By:
       - cache-mia1322-MIA
       X-Cache:
@@ -71,7 +71,7 @@ http_interactions:
       X-Cache-Hits:
       - '0'
       X-Timer:
-      - S1435775156.191352,VS0,VE44
+      - S1436926614.432497,VS0,VE47
       Vary:
       - User-Agent,Accept-Encoding
     body:
@@ -81,5 +81,5 @@ http_interactions:
         get you started in the brand new Vimeo!","url":"http:\/\/vimeo.com\/album\/1921098","thumbnail_small":"http:\/\/i.vimeocdn.com\/video\/299773432_100x75.jpg","thumbnail_medium":"http:\/\/i.vimeocdn.com\/video\/299773432_200x150.jpg","thumbnail_large":"http:\/\/i.vimeocdn.com\/video\/299773432_640.jpg","total_videos":9,"user_id":152184,"user_display_name":"Vimeo
         Staff","user_url":"http:\/\/vimeo.com\/staff"}'
     http_version: 
-  recorded_at: Wed, 01 Jul 2015 18:25:56 GMT
+  recorded_at: Wed, 15 Jul 2015 02:16:55 GMT
 recorded_with: VCR 2.9.3
