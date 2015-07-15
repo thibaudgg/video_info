@@ -197,4 +197,65 @@ http_interactions:
         }
     http_version: 
   recorded_at: Wed, 15 Jul 2015 03:19:08 GMT
+- request:
+    method: get
+    uri: https://www.googleapis.com/youtube/v3/channels?id%20%20%20%20%20%20%20%20=UCzxQk-rZGowoqMBKxGD5jSA&key=AIzaSyA6PYwSr1EnLFUFy1cZDk3Ifb0rxeJaeZ0&part=snippet
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Vary:
+      - Origin
+      - X-Origin
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Wed, 15 Jul 2015 13:36:22 GMT
+      Expires:
+      - Wed, 15 Jul 2015 13:36:22 GMT
+      Cache-Control:
+      - private, max-age=0
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      Server:
+      - GSE
+      Alternate-Protocol:
+      - 443:quic,p=1
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: |
+        {
+         "error": {
+          "errors": [
+           {
+            "domain": "youtube.parameter",
+            "reason": "missingRequiredParameter",
+            "message": "No filter selected.",
+            "locationType": "parameter",
+            "location": ""
+           }
+          ],
+          "code": 400,
+          "message": "No filter selected."
+         }
+        }
+    http_version: 
+  recorded_at: Wed, 15 Jul 2015 13:36:23 GMT
 recorded_with: VCR 2.9.3

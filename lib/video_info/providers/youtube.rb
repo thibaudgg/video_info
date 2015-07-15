@@ -72,6 +72,10 @@ class VideoInfo
         ["default"]["url"] rescue nil
       end
 
+      def author_domain
+        nil
+      end
+
       private
 
       def available?

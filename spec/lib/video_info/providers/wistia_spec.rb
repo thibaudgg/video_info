@@ -95,7 +95,7 @@ describe VideoInfo::Providers::Wistia do
       subject { super().thumbnail_small }
       it { is_expected.to eq 'https://embed-ssl.wistia.com/deliveries/dc005e6a7583a25c4b7c284c08afc42fb67fdb95.jpg?image_crop_resized=960x540' }
     end
-    
+
     describe '#thumbnail_large' do
       subject { super().thumbnail_small }
       it { is_expected.to eq 'https://embed-ssl.wistia.com/deliveries/dc005e6a7583a25c4b7c284c08afc42fb67fdb95.jpg?image_crop_resized=960x540' }
@@ -149,7 +149,7 @@ describe VideoInfo::Providers::Wistia do
       subject { super().height }
       it { is_expected.to eq 568 }
     end
-    
+
     describe '#thumbnail_small' do
       subject { super().thumbnail_small }
       it { is_expected.to eq 'https://embed-ssl.wistia.com/deliveries/0fccbdc60ade35723f79f1c002bc61b135b610fa.jpg?image_crop_resized=960x540' }
@@ -163,6 +163,13 @@ describe VideoInfo::Providers::Wistia do
     describe '#thumbnail_large' do
       subject { super().thumbnail_small }
       it { is_expected.to eq 'https://embed-ssl.wistia.com/deliveries/0fccbdc60ade35723f79f1c002bc61b135b610fa.jpg?image_crop_resized=960x540' }
+    end
+
+    ['author', 'author_thumbnail', 'author_domain'].each do |method|
+      describe "#{method}" do
+        subject { super().send("#{method}") }
+        it { is_expected.to be_nil }
+      end
     end
   end
 end

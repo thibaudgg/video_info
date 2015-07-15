@@ -224,6 +224,13 @@ describe VideoInfo::Providers::Youtube do
       it { is_expected.to eql 'https://yt3.ggpht.com/-7rhnfdQaI3k/AAAAAAAAAAI/AAAAAAAAAAA/eMJZ5HBukCQ/s88-c-k-no/photo.jpg' }
     end
 
+    ['author_domain'].each do |method|
+      describe "#{method}" do
+        subject { super().send("#{method}") }
+        it { is_expected.to be_nil }
+      end
+    end
+
   end
 
   context "with video oQ49W_xKzKA", :vcr do
