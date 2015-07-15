@@ -124,6 +124,21 @@ describe VideoInfo::Providers::Dailymotion do
       subject { super().view_count }
       it { is_expected.to be > 10000000 }
     end
+
+    describe '#author_thumbnail' do
+      subject { super().author_thumbnail }
+      it { is_expected.to eq 'http://s2.dmcdn.net/HN6TP/360x360-VRY.jpg' }
+    end
+
+    describe '#author_domain' do
+      subject { super().author_domain }
+      it { is_expected.to eq 'dailymotion.com' }
+    end
+
+    describe '#author' do
+      subject { super().author }
+      it { is_expected.to eq 'nqtv' }
+    end    
   end
 
   context "with video x7lni3 and url_attributes", :vcr do

@@ -63,6 +63,19 @@ class VideoInfo
         _video_statistics['viewCount'].to_i rescue 0
       end
 
+      def author
+        _video_snippet['channelTitle']
+      end
+
+      def author_thumbnail
+        _channel_snippet["items"][0]["snippet"]["thumbnails"]
+        ["default"]["url"] rescue nil
+      end
+
+      def author_domain
+        nil
+      end
+
       private
 
       def available?
@@ -75,6 +88,11 @@ class VideoInfo
 
       def _api_base
         'www.googleapis.com'
+      end
+
+      def _channel_api_url(channel_id)
+        "https://#{_api_base}/youtube/v3/channels?part=snippet&id
+        =#{channel_id}&key=#{api_key}"
       end
 
       def _api_path
@@ -91,6 +109,12 @@ class VideoInfo
 
       def _default_url_attributes
         {}
+      end
+
+      def _channel_snippet
+        channel_url = _channel_api_url(_video_snippet['channelId'])
+        @channel_data ||= open(channel_url)
+        MultiJson.load(@channel_data.read)
       end
 
       def _video_snippet

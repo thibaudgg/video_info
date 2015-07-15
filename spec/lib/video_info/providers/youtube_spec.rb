@@ -116,6 +116,9 @@ describe VideoInfo::Providers::Youtube do
         subject { super().view_count }
         it { is_expected.to be == 0 }
       end
+
+
+
     end
 
     context "with 'video no longer available due to a copyright claim' video", :vcr do
@@ -123,7 +126,7 @@ describe VideoInfo::Providers::Youtube do
 
       describe '#available?' do
         subject { super().available? }
-        it { is_expected.to be_falsey }
+        it { is_expected.to be_truthy }
       end
     end
   end
@@ -168,7 +171,7 @@ describe VideoInfo::Providers::Youtube do
 
     describe '#keywords' do
       subject { super().keywords }
-      it { is_expected.to be_nil }
+      it { is_expected.to eql ["cherry", "bloom", "king", "of", "the", "knife", "guitar", "drum", "clip", "rock", "alternative", "tremplin", "Paris-Forum"] }
     end
 
     describe '#duration' do
@@ -210,6 +213,24 @@ describe VideoInfo::Providers::Youtube do
       subject { super().view_count }
       it { is_expected.to be > 4000 }
     end
+
+    describe '#author' do
+      subject { super().author }
+      it { is_expected.to eql 'Cherry Bloom' }
+    end
+
+    describe '#author_thumbnail' do
+      subject { super().author_thumbnail }
+      it { is_expected.to eql 'https://yt3.ggpht.com/-7rhnfdQaI3k/AAAAAAAAAAI/AAAAAAAAAAA/eMJZ5HBukCQ/s88-c-k-no/photo.jpg' }
+    end
+
+    ['author_domain'].each do |method|
+      describe "#{method}" do
+        subject { super().send("#{method}") }
+        it { is_expected.to be_nil }
+      end
+    end
+
   end
 
   context "with video oQ49W_xKzKA", :vcr do

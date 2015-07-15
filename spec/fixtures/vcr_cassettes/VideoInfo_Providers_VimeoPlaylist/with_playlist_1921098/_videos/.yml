@@ -8,7 +8,7 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - VideoInfo/2.4.1
+      - VideoInfo/2.4.2
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -33,41 +33,45 @@ http_interactions:
       X-Ratelimit-Remaining:
       - '3594'
       X-Ratelimit-Reset:
-      - '1425913607'
+      - '1436930210'
       Content-Disposition:
       - attachment; filename=vimeo.json
       Cache-Control:
       - max-age=60
       Expires:
-      - Mon, 09 Mar 2015 14:07:48 GMT
+      - Wed, 15 Jul 2015 02:18:00 GMT
       Last-Modified:
-      - Mon, 02 Mar 2015 17:45:12 GMT
+      - Thu, 09 Jul 2015 09:16:44 GMT
       Etag:
-      - '"d561ec945ebbeef55471a2dd25112213"'
+      - '"3cd1aa3a2865bdf95b8379544bdd55d8"'
       X-Xss-Protection:
       - 1; mode=block
       X-Ua-Compatible:
       - IE=edge
+      Strict-Transport-Security:
+      - max-age=900; includeSubDomains
       Content-Length:
-      - '982'
+      - '983'
       Accept-Ranges:
       - bytes
       Date:
-      - Mon, 09 Mar 2015 14:06:48 GMT
+      - Wed, 15 Jul 2015 02:17:01 GMT
       Via:
       - 1.1 varnish
       Age:
       - '0'
       Connection:
       - keep-alive
+      Set-Cookie:
+      - clip_v=1; expires=Sun, 13 Sep 2015 02:17:01 GMT; path=/;
       X-Served-By:
-      - cache-fra1242-FRA
+      - cache-mia1325-MIA
       X-Cache:
       - MISS
       X-Cache-Hits:
       - '0'
       X-Timer:
-      - S1425910008.558764,VS0,VE229
+      - S1436926620.919930,VS0,VE156
       Vary:
       - User-Agent,Accept-Encoding
     body:
@@ -75,40 +79,40 @@ http_interactions:
       string: '[{"id":39837353,"title":"Get To Know The New Vimeo: Searching","description":"For
         questions about how to use the new Vimeo please visit our help center- vimeo.com\/help","url":"http:\/\/vimeo.com\/39837353","upload_date":"2012-04-05
         11:18:51","mobile_url":"http:\/\/vimeo.com\/39837353","thumbnail_small":"http:\/\/i.vimeocdn.com\/video\/276994236_100x75.jpg","thumbnail_medium":"http:\/\/i.vimeocdn.com\/video\/276994236_200x150.jpg","thumbnail_large":"http:\/\/i.vimeocdn.com\/video\/276994236_640.jpg","user_id":152184,"user_name":"Vimeo
-        Staff","user_url":"http:\/\/vimeo.com\/staff","user_portrait_small":"http:\/\/i.vimeocdn.com\/portrait\/7313095_30x30.jpg","user_portrait_medium":"http:\/\/i.vimeocdn.com\/portrait\/7313095_75x75.jpg","user_portrait_large":"http:\/\/i.vimeocdn.com\/portrait\/7313095_100x100.jpg","user_portrait_huge":"http:\/\/i.vimeocdn.com\/portrait\/7313095_300x300.jpg","stats_number_of_likes":139,"stats_number_of_plays":15492,"stats_number_of_comments":30,"duration":269,"width":1280,"height":720,"tags":"help,
+        Staff","user_url":"http:\/\/vimeo.com\/staff","user_portrait_small":"http:\/\/i.vimeocdn.com\/portrait\/9661877_30x30.jpg","user_portrait_medium":"http:\/\/i.vimeocdn.com\/portrait\/9661877_75x75.jpg","user_portrait_large":"http:\/\/i.vimeocdn.com\/portrait\/9661877_100x100.jpg","user_portrait_huge":"http:\/\/i.vimeocdn.com\/portrait\/9661877_300x300.jpg","stats_number_of_likes":143,"stats_number_of_plays":16247,"stats_number_of_comments":33,"duration":269,"width":1280,"height":720,"tags":"help,
         new vimeo","embed_privacy":"anywhere"},{"id":40170418,"title":"Get To Know
         The New Vimeo: Video Page","description":"For questions about how to use the
         new Vimeo please visit our help center- vimeo.com\/help","url":"http:\/\/vimeo.com\/40170418","upload_date":"2012-04-11
         14:03:52","mobile_url":"http:\/\/vimeo.com\/40170418","thumbnail_small":"http:\/\/i.vimeocdn.com\/video\/282865794_100x75.jpg","thumbnail_medium":"http:\/\/i.vimeocdn.com\/video\/282865794_200x150.jpg","thumbnail_large":"http:\/\/i.vimeocdn.com\/video\/282865794_640.jpg","user_id":152184,"user_name":"Vimeo
-        Staff","user_url":"http:\/\/vimeo.com\/staff","user_portrait_small":"http:\/\/i.vimeocdn.com\/portrait\/7313095_30x30.jpg","user_portrait_medium":"http:\/\/i.vimeocdn.com\/portrait\/7313095_75x75.jpg","user_portrait_large":"http:\/\/i.vimeocdn.com\/portrait\/7313095_100x100.jpg","user_portrait_huge":"http:\/\/i.vimeocdn.com\/portrait\/7313095_300x300.jpg","stats_number_of_likes":190,"stats_number_of_plays":39410,"stats_number_of_comments":27,"duration":118,"width":1280,"height":720,"tags":"","embed_privacy":"anywhere"},{"id":38809325,"title":"Get
+        Staff","user_url":"http:\/\/vimeo.com\/staff","user_portrait_small":"http:\/\/i.vimeocdn.com\/portrait\/9661877_30x30.jpg","user_portrait_medium":"http:\/\/i.vimeocdn.com\/portrait\/9661877_75x75.jpg","user_portrait_large":"http:\/\/i.vimeocdn.com\/portrait\/9661877_100x100.jpg","user_portrait_huge":"http:\/\/i.vimeocdn.com\/portrait\/9661877_300x300.jpg","stats_number_of_likes":200,"stats_number_of_plays":42465,"stats_number_of_comments":30,"duration":118,"width":1280,"height":720,"tags":"","embed_privacy":"anywhere"},{"id":38809325,"title":"Get
         To Know The New Vimeo: Feed Manager","description":"For questions about how
         to use the new Vimeo please visit our help center- vimeo.com\/help","url":"http:\/\/vimeo.com\/38809325","upload_date":"2012-03-19
         17:28:12","mobile_url":"http:\/\/vimeo.com\/38809325","thumbnail_small":"http:\/\/i.vimeocdn.com\/video\/267346780_100x75.jpg","thumbnail_medium":"http:\/\/i.vimeocdn.com\/video\/267346780_200x150.jpg","thumbnail_large":"http:\/\/i.vimeocdn.com\/video\/267346780_640.jpg","user_id":152184,"user_name":"Vimeo
-        Staff","user_url":"http:\/\/vimeo.com\/staff","user_portrait_small":"http:\/\/i.vimeocdn.com\/portrait\/7313095_30x30.jpg","user_portrait_medium":"http:\/\/i.vimeocdn.com\/portrait\/7313095_75x75.jpg","user_portrait_large":"http:\/\/i.vimeocdn.com\/portrait\/7313095_100x100.jpg","user_portrait_huge":"http:\/\/i.vimeocdn.com\/portrait\/7313095_300x300.jpg","stats_number_of_likes":70,"stats_number_of_plays":8660,"stats_number_of_comments":16,"duration":167,"width":1280,"height":720,"tags":"help,
+        Staff","user_url":"http:\/\/vimeo.com\/staff","user_portrait_small":"http:\/\/i.vimeocdn.com\/portrait\/9661877_30x30.jpg","user_portrait_medium":"http:\/\/i.vimeocdn.com\/portrait\/9661877_75x75.jpg","user_portrait_large":"http:\/\/i.vimeocdn.com\/portrait\/9661877_100x100.jpg","user_portrait_huge":"http:\/\/i.vimeocdn.com\/portrait\/9661877_300x300.jpg","stats_number_of_likes":68,"stats_number_of_plays":9018,"stats_number_of_comments":20,"duration":167,"width":1280,"height":720,"tags":"help,
         new vimeo","embed_privacy":"anywhere"},{"id":38445453,"title":"Get To Know
         The New Vimeo: The Feed","description":"For questions about how to use the
         new Vimeo please visit our help center- vimeo.com\/help","url":"http:\/\/vimeo.com\/38445453","upload_date":"2012-03-13
         12:53:02","mobile_url":"http:\/\/vimeo.com\/38445453","thumbnail_small":"http:\/\/i.vimeocdn.com\/video\/265608490_100x75.jpg","thumbnail_medium":"http:\/\/i.vimeocdn.com\/video\/265608490_200x150.jpg","thumbnail_large":"http:\/\/i.vimeocdn.com\/video\/265608490_640.jpg","user_id":152184,"user_name":"Vimeo
-        Staff","user_url":"http:\/\/vimeo.com\/staff","user_portrait_small":"http:\/\/i.vimeocdn.com\/portrait\/7313095_30x30.jpg","user_portrait_medium":"http:\/\/i.vimeocdn.com\/portrait\/7313095_75x75.jpg","user_portrait_large":"http:\/\/i.vimeocdn.com\/portrait\/7313095_100x100.jpg","user_portrait_huge":"http:\/\/i.vimeocdn.com\/portrait\/7313095_300x300.jpg","stats_number_of_likes":1805,"stats_number_of_plays":99248,"stats_number_of_comments":20,"duration":108,"width":1280,"height":720,"tags":"help,
+        Staff","user_url":"http:\/\/vimeo.com\/staff","user_portrait_small":"http:\/\/i.vimeocdn.com\/portrait\/9661877_30x30.jpg","user_portrait_medium":"http:\/\/i.vimeocdn.com\/portrait\/9661877_75x75.jpg","user_portrait_large":"http:\/\/i.vimeocdn.com\/portrait\/9661877_100x100.jpg","user_portrait_huge":"http:\/\/i.vimeocdn.com\/portrait\/9661877_300x300.jpg","stats_number_of_likes":2063,"stats_number_of_plays":114748,"stats_number_of_comments":28,"duration":108,"width":1280,"height":720,"tags":"help,
         new vimeo","embed_privacy":"anywhere"},{"id":38445381,"title":"Get To Know
         The New Vimeo: Top Navigation","description":"For questions about how to use
         the new Vimeo please visit our help center- vimeo.com\/help","url":"http:\/\/vimeo.com\/38445381","upload_date":"2012-03-13
         12:51:59","mobile_url":"http:\/\/vimeo.com\/38445381","thumbnail_small":"http:\/\/i.vimeocdn.com\/video\/265608931_100x75.jpg","thumbnail_medium":"http:\/\/i.vimeocdn.com\/video\/265608931_200x150.jpg","thumbnail_large":"http:\/\/i.vimeocdn.com\/video\/265608931_640.jpg","user_id":152184,"user_name":"Vimeo
-        Staff","user_url":"http:\/\/vimeo.com\/staff","user_portrait_small":"http:\/\/i.vimeocdn.com\/portrait\/7313095_30x30.jpg","user_portrait_medium":"http:\/\/i.vimeocdn.com\/portrait\/7313095_75x75.jpg","user_portrait_large":"http:\/\/i.vimeocdn.com\/portrait\/7313095_100x100.jpg","user_portrait_huge":"http:\/\/i.vimeocdn.com\/portrait\/7313095_300x300.jpg","stats_number_of_likes":129,"stats_number_of_plays":22527,"stats_number_of_comments":15,"duration":111,"width":1280,"height":720,"tags":"help,
+        Staff","user_url":"http:\/\/vimeo.com\/staff","user_portrait_small":"http:\/\/i.vimeocdn.com\/portrait\/9661877_30x30.jpg","user_portrait_medium":"http:\/\/i.vimeocdn.com\/portrait\/9661877_75x75.jpg","user_portrait_large":"http:\/\/i.vimeocdn.com\/portrait\/9661877_100x100.jpg","user_portrait_huge":"http:\/\/i.vimeocdn.com\/portrait\/9661877_300x300.jpg","stats_number_of_likes":125,"stats_number_of_plays":23662,"stats_number_of_comments":18,"duration":111,"width":1280,"height":720,"tags":"help,
         new vimeo","embed_privacy":"anywhere"},{"id":38445243,"title":"Get To Know
         The New Vimeo: Profile","description":"For questions about how to use the
         new Vimeo please visit our help center- vimeo.com\/help","url":"http:\/\/vimeo.com\/38445243","upload_date":"2012-03-13
         12:49:57","mobile_url":"http:\/\/vimeo.com\/38445243","thumbnail_small":"http:\/\/i.vimeocdn.com\/video\/265610468_100x75.jpg","thumbnail_medium":"http:\/\/i.vimeocdn.com\/video\/265610468_200x150.jpg","thumbnail_large":"http:\/\/i.vimeocdn.com\/video\/265610468_640.jpg","user_id":152184,"user_name":"Vimeo
-        Staff","user_url":"http:\/\/vimeo.com\/staff","user_portrait_small":"http:\/\/i.vimeocdn.com\/portrait\/7313095_30x30.jpg","user_portrait_medium":"http:\/\/i.vimeocdn.com\/portrait\/7313095_75x75.jpg","user_portrait_large":"http:\/\/i.vimeocdn.com\/portrait\/7313095_100x100.jpg","user_portrait_huge":"http:\/\/i.vimeocdn.com\/portrait\/7313095_300x300.jpg","stats_number_of_likes":153,"stats_number_of_plays":16884,"stats_number_of_comments":6,"duration":228,"width":1280,"height":720,"tags":"help,
+        Staff","user_url":"http:\/\/vimeo.com\/staff","user_portrait_small":"http:\/\/i.vimeocdn.com\/portrait\/9661877_30x30.jpg","user_portrait_medium":"http:\/\/i.vimeocdn.com\/portrait\/9661877_75x75.jpg","user_portrait_large":"http:\/\/i.vimeocdn.com\/portrait\/9661877_100x100.jpg","user_portrait_huge":"http:\/\/i.vimeocdn.com\/portrait\/9661877_300x300.jpg","stats_number_of_likes":142,"stats_number_of_plays":17601,"stats_number_of_comments":9,"duration":228,"width":1280,"height":720,"tags":"help,
         new vimeo","embed_privacy":"anywhere"},{"id":38394965,"title":"Get To Know
         The New Vimeo: Browser","description":"For questions about how to use the
         new Vimeo please visit our help center- vimeo.com\/help","url":"http:\/\/vimeo.com\/38394965","upload_date":"2012-03-12
         17:23:12","mobile_url":"http:\/\/vimeo.com\/38394965","thumbnail_small":"http:\/\/i.vimeocdn.com\/video\/265610800_100x75.jpg","thumbnail_medium":"http:\/\/i.vimeocdn.com\/video\/265610800_200x150.jpg","thumbnail_large":"http:\/\/i.vimeocdn.com\/video\/265610800_640.jpg","user_id":152184,"user_name":"Vimeo
-        Staff","user_url":"http:\/\/vimeo.com\/staff","user_portrait_small":"http:\/\/i.vimeocdn.com\/portrait\/7313095_30x30.jpg","user_portrait_medium":"http:\/\/i.vimeocdn.com\/portrait\/7313095_75x75.jpg","user_portrait_large":"http:\/\/i.vimeocdn.com\/portrait\/7313095_100x100.jpg","user_portrait_huge":"http:\/\/i.vimeocdn.com\/portrait\/7313095_300x300.jpg","stats_number_of_likes":150,"stats_number_of_plays":17262,"stats_number_of_comments":26,"duration":74,"width":1280,"height":720,"tags":"help,
+        Staff","user_url":"http:\/\/vimeo.com\/staff","user_portrait_small":"http:\/\/i.vimeocdn.com\/portrait\/9661877_30x30.jpg","user_portrait_medium":"http:\/\/i.vimeocdn.com\/portrait\/9661877_75x75.jpg","user_portrait_large":"http:\/\/i.vimeocdn.com\/portrait\/9661877_100x100.jpg","user_portrait_huge":"http:\/\/i.vimeocdn.com\/portrait\/9661877_300x300.jpg","stats_number_of_likes":144,"stats_number_of_plays":17999,"stats_number_of_comments":29,"duration":74,"width":1280,"height":720,"tags":"help,
         new vimeo","embed_privacy":"anywhere"},{"id":42647970,"title":"Get To Know
         The New Vimeo: Uploading","description":"","url":"http:\/\/vimeo.com\/42647970","upload_date":"2012-05-22
         15:45:44","mobile_url":"http:\/\/vimeo.com\/42647970","thumbnail_small":"http:\/\/i.vimeocdn.com\/video\/299773432_100x75.jpg","thumbnail_medium":"http:\/\/i.vimeocdn.com\/video\/299773432_200x150.jpg","thumbnail_large":"http:\/\/i.vimeocdn.com\/video\/299773432_640.jpg","user_id":152184,"user_name":"Vimeo
-        Staff","user_url":"http:\/\/vimeo.com\/staff","user_portrait_small":"http:\/\/i.vimeocdn.com\/portrait\/7313095_30x30.jpg","user_portrait_medium":"http:\/\/i.vimeocdn.com\/portrait\/7313095_75x75.jpg","user_portrait_large":"http:\/\/i.vimeocdn.com\/portrait\/7313095_100x100.jpg","user_portrait_huge":"http:\/\/i.vimeocdn.com\/portrait\/7313095_300x300.jpg","stats_number_of_likes":623,"stats_number_of_plays":107236,"stats_number_of_comments":17,"duration":104,"width":1280,"height":720,"tags":"","embed_privacy":"anywhere"}]'
+        Staff","user_url":"http:\/\/vimeo.com\/staff","user_portrait_small":"http:\/\/i.vimeocdn.com\/portrait\/9661877_30x30.jpg","user_portrait_medium":"http:\/\/i.vimeocdn.com\/portrait\/9661877_75x75.jpg","user_portrait_large":"http:\/\/i.vimeocdn.com\/portrait\/9661877_100x100.jpg","user_portrait_huge":"http:\/\/i.vimeocdn.com\/portrait\/9661877_300x300.jpg","stats_number_of_likes":628,"stats_number_of_plays":113420,"stats_number_of_comments":21,"duration":104,"width":1280,"height":720,"tags":"","embed_privacy":"anywhere"}]'
     http_version: 
-  recorded_at: Mon, 09 Mar 2015 14:06:48 GMT
+  recorded_at: Wed, 15 Jul 2015 02:17:01 GMT
 recorded_with: VCR 2.9.3

@@ -144,6 +144,21 @@ describe VideoInfo::Providers::Vimeo do
       subject { super().view_count }
       it { is_expected.to be > 4000 }
     end
+
+    describe '#author_thumbnail' do
+      subject { super().author_thumbnail }
+      it { is_expected.to eq 'http://i.vimeocdn.com/portrait/2577152_300x300.jpg' }
+    end
+
+    describe '#author_domain' do
+      subject { super().author_domain }
+      it { is_expected.to eq 'vimeo.com' }
+    end
+
+    describe '#author' do
+      subject { super().author }
+      it { is_expected.to eq 'Octave Zangs' }
+    end  
   end
 
   context "with video 898029 and url_attributes", :vcr do

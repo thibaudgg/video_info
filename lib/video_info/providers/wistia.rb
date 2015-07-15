@@ -13,7 +13,7 @@ class VideoInfo
         define_method(method) { data[method] }
       end
 
-      %w[description keywords view_count date].each do |method|
+      %w[description keywords view_count date author author_domain author_thumbnail].each do |method|
         define_method(method) { nil }
       end
 

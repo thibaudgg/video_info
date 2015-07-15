@@ -19,6 +19,7 @@ class VideoInfo
   def_delegators :@provider, :date, :duration, :width, :height
   def_delegators :@provider, :thumbnail_small, :thumbnail_medium, :thumbnail_large
   def_delegators :@provider, :embed_code, :embed_url
+  def_delegators :@provider, :author_thumbnail, :author, :author_domain
   def_delegators :@provider, :available?
   def_delegators :@provider, :playlist_id, :videos
 

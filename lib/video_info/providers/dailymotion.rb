@@ -45,6 +45,18 @@ class VideoInfo
         data['views_total'].to_i
       end
 
+      def author_thumbnail
+        data['owner.avatar_360_url']
+      end
+
+      def author_domain
+        get_host_without_www(data['owner.url']) unless data['owner.url'].nil?
+      end
+
+      def author
+        data['owner.username']
+      end
+
       private
 
       def _response_code
@@ -68,7 +80,10 @@ class VideoInfo
       end
 
       def _api_url
-        "https://#{_api_base}#{_api_path}?fields=id,title,description,duration,created_time,url,views_total,tags,thumbnail_url,thumbnail_720_url,thumbnail_240_url,thumbnail_60_url"
+        "https://#{_api_base}#{_api_path}?fields=id,title,description,duration,
+        created_time,url,views_total,tags,thumbnail_url,thumbnail_720_url,
+        thumbnail_240_url,thumbnail_60_url,owner.avatar_360_url,
+        owner.url,owner.username"
       end
 
       def _default_iframe_attributes

@@ -8,7 +8,7 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - VideoInfo/2.4.1
+      - VideoInfo/2.4.2
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -19,7 +19,7 @@ http_interactions:
       message: OK
     headers:
       Server:
-      - nginx/1.4.6 (Ubuntu)
+      - nginx/1.6.3
       Content-Type:
       - application/json; charset=utf-8
       Status:
@@ -35,38 +35,38 @@ http_interactions:
       P3p:
       - CP="CURi ADMa DEVa IVAa IVDa CONi OUR IND DSP CAO COR"
       X-Request-Id:
-      - a5a7a40b003248b2537d520bec74cd23
+      - 36b75e471fe759ed1f882875c1985840
       X-Runtime:
-      - '0.044548'
+      - '0.030309'
       X-Rack-Cache:
       - miss
       Via:
       - 1.1 varnish
       - 1.1 varnish
       Content-Length:
-      - '733'
+      - '432'
       Accept-Ranges:
       - bytes
       Date:
-      - Mon, 09 Mar 2015 14:06:52 GMT
+      - Wed, 15 Jul 2015 02:19:19 GMT
       Age:
-      - '70317'
+      - '14'
       Connection:
       - keep-alive
       X-Served-By:
-      - cache-ord1720-ORD, cache-fra1239-FRA
+      - cache-ord1722-ORD, cache-dfw1830-DFW
       X-Cache:
-      - HIT, HIT
+      - MISS, HIT
       X-Cache-Hits:
-      - 1, 1
+      - 0, 1
       X-Timer:
-      - S1425910012.683401,VS0,VE0
+      - S1436926759.321895,VS0,VE0
       Vary:
-      - X-Forwarded-Proto
+      - Accept-Encoding,X-Forwarded-Proto
       Strict-Transport-Security:
       - max-age=0
     body:
-      encoding: UTF-8
+      encoding: ASCII-8BIT
       string: '{"version":"1.0","type":"video","html":"<iframe src=\"//fast.wistia.net/embed/iframe/rs1me54mpw\"
         allowtransparency=\"true\" frameborder=\"0\" scrolling=\"no\" class=\"wistia_embed\"
         name=\"wistia_embed\" allowfullscreen mozallowfullscreen webkitallowfullscreen
@@ -74,5 +74,5 @@ http_interactions:
         src=\"//fast.wistia.net/assets/external/E-v1.js\" async></script>","width":960,"height":540,"provider_name":"Wistia,
         Inc.","provider_url":"http://wistia.com","title":"Lance Kalish - Yes To Group","thumbnail_url":"https://embed-ssl.wistia.com/deliveries/dc005e6a7583a25c4b7c284c08afc42fb67fdb95.jpg?image_crop_resized=960x540","thumbnail_width":960,"thumbnail_height":540,"duration":1214.83}'
     http_version: 
-  recorded_at: Mon, 09 Mar 2015 14:06:52 GMT
+  recorded_at: Wed, 15 Jul 2015 02:19:19 GMT
 recorded_with: VCR 2.9.3
