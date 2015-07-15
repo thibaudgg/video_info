@@ -68,7 +68,8 @@ class VideoInfo
       end
 
       def author_thumbnail
-        _channel_snippet["items"][0]["snippet"]["thumbnails"]["default"]["url"] rescue nil
+        _channel_snippet["items"][0]["snippet"]["thumbnails"]
+        ["default"]["url"] rescue nil
       end
 
       private
@@ -86,7 +87,8 @@ class VideoInfo
       end
 
       def _channel_api_url(channel_id)
-        "https://#{_api_base}/youtube/v3/channels?part=snippet&id=#{channel_id}&key=#{api_key}"
+        "https://#{_api_base}/youtube/v3/channels?part=snippet&id
+        =#{channel_id}&key=#{api_key}"
       end
 
       def _api_path
