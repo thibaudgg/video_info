@@ -80,9 +80,10 @@ class VideoInfo
       end
 
       def _api_url
-        "https://#{_api_base}#{_api_path}?fields=id,title,description,duration,created_time,url,
-        views_total,tags,thumbnail_url,thumbnail_720_url,thumbnail_240_url,thumbnail_60_url,
-        owner.avatar_360_url,owner.url,owner.username"
+        "https://#{_api_base}#{_api_path}?fields=id,title,description,duration,
+        created_time,url,views_total,tags,thumbnail_url,thumbnail_720_url,
+        thumbnail_240_url,thumbnail_60_url,owner.avatar_360_url,
+        owner.url,owner.username"
       end
 
       def _default_iframe_attributes
