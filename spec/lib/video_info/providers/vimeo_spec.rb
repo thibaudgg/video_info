@@ -1,6 +1,9 @@
 require 'spec_helper'
 
 describe VideoInfo::Providers::Vimeo do
+  before(:all) do
+    VideoInfo.provider_api_keys = { vimeo: '6b66b015a3504793b4f541d878f46ff6'}
+  end
 
   describe ".usable?" do
     subject { VideoInfo::Providers::Vimeo.usable?(url) }
@@ -122,22 +125,22 @@ describe VideoInfo::Providers::Vimeo do
 
     describe '#date' do
       subject { super().date }
-      it { is_expected.to eq Time.parse('2008-04-14 13:10:39', Time.now.utc) }
+      it { is_expected.to eq Time.parse('2008-04-14T17:10:39+00:00', Time.now.utc).utc }
     end
 
     describe '#thumbnail_small' do
       subject { super().thumbnail_small }
-      it { is_expected.to eq 'http://i.vimeocdn.com/video/34373130_100x75.jpg' }
+      it { is_expected.to eq 'https://i.vimeocdn.com/video/898029_100x75.jpg' }
     end
 
     describe '#thumbnail_medium' do
       subject { super().thumbnail_medium }
-      it { is_expected.to eq 'http://i.vimeocdn.com/video/34373130_200x150.jpg' }
+      it { is_expected.to eq 'https://i.vimeocdn.com/video/898029_200x150.jpg' }
     end
 
     describe '#thumbnail_large' do
       subject { super().thumbnail_large }
-      it { is_expected.to eq 'http://i.vimeocdn.com/video/34373130_640.jpg' }
+      it { is_expected.to eq 'https://i.vimeocdn.com/video/898029_640.jpg' }
     end
 
     describe '#view_count' do
