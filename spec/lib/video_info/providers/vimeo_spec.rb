@@ -135,17 +135,27 @@ describe VideoInfo::Providers::Vimeo do
 
     describe '#thumbnail_small' do
       subject { super().thumbnail_small }
-      it { is_expected.to eq 'https://i.vimeocdn.com/video/898029_100x75.jpg' }
+      it { is_expected.to eq 'https://i.vimeocdn.com/video/34373130_100x75.jpg' }
     end
 
     describe '#thumbnail_medium' do
       subject { super().thumbnail_medium }
-      it { is_expected.to eq 'https://i.vimeocdn.com/video/898029_200x150.jpg' }
+      it { is_expected.to eq 'https://i.vimeocdn.com/video/34373130_200x150.jpg' }
     end
 
     describe '#thumbnail_large' do
       subject { super().thumbnail_large }
-      it { is_expected.to eq 'https://i.vimeocdn.com/video/898029_640.jpg' }
+      it { is_expected.to eq 'https://i.vimeocdn.com/video/34373130_640.jpg' }
+    end
+
+    describe '#author_thumbnail' do
+      subject { super().author_thumbnail }
+      it { is_expected.to eq 'https://i.vimeocdn.com/portrait/2577152_75x75.jpg' }
+    end
+
+    describe '#author' do
+      subject { super().author }
+      it { is_expected.to eq 'Octave Zangs' }
     end
 
     describe '#view_count' do
