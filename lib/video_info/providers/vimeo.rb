@@ -25,16 +25,37 @@ class VideoInfo
         _video['name']
       end
 
+      def author
+        _video['user']['name']
+      end
+
+      def author_thumbnail_id
+        @author_thumbnail_id ||= _parse_picture_id(_video['user']['pictures']['uri'])
+      end
+
+      def author_thumbnail(width=75)
+        "https://i.vimeocdn.com/portrait/#{author_thumbnail_id}_#{width}x#{width}.jpg"
+      end
+
+      def thumbnail_id
+        @thumbnail_id ||= _parse_picture_id(_video['pictures']['uri'])
+      end
+
+      def thumbnail(width=200, height=nil)
+        base_uri = "https://i.vimeocdn.com/video/#{thumbnail_id}"
+        height ? base_uri + "_#{width}x#{height}.jpg" : base_uri + "_#{width}.jpg"
+      end
+      
       def thumbnail_small
-        "https://i.vimeocdn.com/video/#{video_id}_100x75.jpg"
+        thumbnail(100,75)
       end
 
       def thumbnail_medium
-        "https://i.vimeocdn.com/video/#{video_id}_200x150.jpg"
+        thumbnail(200,150)
       end
 
       def thumbnail_large
-        "https://i.vimeocdn.com/video/#{video_id}_640.jpg"
+        thumbnail(640)
       end
 
       def keywords
@@ -105,6 +126,10 @@ class VideoInfo
           byline: 0,
           portrait: 0,
           autoplay: 0 }
+      end
+
+      def _parse_picture_id(uri)
+        /\/pictures\/(\d+)/.match(uri)[1]
       end
     end
   end
