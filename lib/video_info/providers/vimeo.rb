@@ -33,7 +33,7 @@ class VideoInfo
         @author_thumbnail_id ||= _parse_picture_id(_video['user']['pictures']['uri'])
       end
 
-      def author_thumbnail(width=75)
+      def author_thumbnail(width = 75)
         "https://i.vimeocdn.com/portrait/#{author_thumbnail_id}_#{width}x#{width}.jpg"
       end
 
@@ -41,17 +41,17 @@ class VideoInfo
         @thumbnail_id ||= _parse_picture_id(_video['pictures']['uri'])
       end
 
-      def thumbnail(width=200, height=nil)
+      def thumbnail(width = 200, height = nil)
         base_uri = "https://i.vimeocdn.com/video/#{thumbnail_id}"
         height ? base_uri + "_#{width}x#{height}.jpg" : base_uri + "_#{width}.jpg"
       end
-      
+
       def thumbnail_small
-        thumbnail(100,75)
+        thumbnail(100, 75)
       end
 
       def thumbnail_medium
-        thumbnail(200,150)
+        thumbnail(200, 150)
       end
 
       def thumbnail_large
