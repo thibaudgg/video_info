@@ -50,14 +50,14 @@ class VideoInfo
     end
 
     def _http_response_code(http)
-      response = http.head(_api_path, @options) 
+      response = http.head(_api_path, @options)
       response.code
     end
 
     def _https_response_code(http)
       http.use_ssl = true
       http.verify_mode = OpenSSL::SSL::VERIFY_NONE
-      response = http.head(_api_path, @options) 
+      response = http.head(_api_path, @options)
       response.code
     end
 

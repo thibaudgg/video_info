@@ -2,35 +2,35 @@ require 'spec_helper'
 
 describe VideoInfo::Providers::VimeoPlaylist do
   before(:all) do
-    VideoInfo.provider_api_keys = { vimeo: '6b66b015a3504793b4f541d878f46ff6'}
+    VideoInfo.provider_api_keys = { vimeo: '6b66b015a3504793b4f541d878f46ff6' }
   end
 
-  describe ".usable?" do
+  describe '.usable?' do
     subject { VideoInfo::Providers::VimeoPlaylist.usable?(url) }
 
-    context "with vimeo album url" do
+    context 'with vimeo album url' do
       let(:url) { 'http://vimeo.com/album/2755718' }
       it { is_expected.to be_truthy }
     end
 
-    context "with vimeo hubnub embed url" do
+    context 'with vimeo hubnub embed url' do
       let(:url) { 'http://player.vimeo.com/hubnut/album/2755718' }
       it { is_expected.to be_truthy }
     end
 
-    context "with vimeo url" do
+    context 'with vimeo url' do
       let(:url) { 'http://www.vimeo.com/898029' }
       it { is_expected.to be_falsey }
     end
 
-    context "with other url" do
+    context 'with other url' do
       let(:url) { 'http://www.youtube.com/898029' }
       it { is_expected.to be_falsey }
     end
   end
 
-  describe "#available?" do
-    context "with valid playlist", :vcr do
+  describe '#available?' do
+    context 'with valid playlist', :vcr do
       subject { VideoInfo.new('http://vimeo.com/album/2755718') }
 
       describe '#available?' do
@@ -39,7 +39,7 @@ describe VideoInfo::Providers::VimeoPlaylist do
       end
     end
 
-    context "with invalid playlist", :vcr do
+    context 'with invalid playlist', :vcr do
       subject { VideoInfo.new('http://vimeo.com/album/2') }
 
       describe '#available?' do
@@ -49,8 +49,7 @@ describe VideoInfo::Providers::VimeoPlaylist do
     end
   end
 
-
-  context "with playlist 1921098", :vcr do
+  context 'with playlist 1921098', :vcr do
     let(:videos) {
       [
         39837353, 40170418, 38809325, 38445453,
@@ -147,7 +146,7 @@ describe VideoInfo::Providers::VimeoPlaylist do
     end
   end
 
-  context "with playlist 2755718 in embed path", :vcr do
+  context 'with playlist 2755718 in embed path', :vcr do
     subject { VideoInfo.new('http://player.vimeo.com/hubnut/album/2755718') }
 
     describe '#playlist_id' do
@@ -155,5 +154,4 @@ describe VideoInfo::Providers::VimeoPlaylist do
       it { is_expected.to eq '2755718' }
     end
   end
-
 end
