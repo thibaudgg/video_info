@@ -58,7 +58,6 @@ class VideoInfo
         json = MultiJson.load(uri.read)
         json['data']
       end
-
     end
   end
 end

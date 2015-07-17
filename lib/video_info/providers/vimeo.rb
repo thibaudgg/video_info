@@ -42,7 +42,7 @@ class VideoInfo
       end
 
       def keywords_array
-        _video['tags'].map { |t| t["tag"] }
+        _video['tags'].map { |t| t['tag'] }
       end
 
       def embed_url
@@ -54,7 +54,7 @@ class VideoInfo
       end
 
       def view_count
-        _video['stats']["plays"].to_i
+        _video['stats']['plays'].to_i
       end
 
       private
@@ -65,15 +65,15 @@ class VideoInfo
       end
 
       def _api_version
-        "3.2"
+        '3.2'
       end
 
       def _authorization_headers
-        { "Authorization" => "bearer #{api_key}" }
+        { 'Authorization' => "bearer #{api_key}" }
       end
 
       def _api_version_headers
-        { "Accept" => "application/vnd.vimeo.*+json;version=#{_api_version}"}
+        { 'Accept' => "application/vnd.vimeo.*+json;version=#{_api_version}" }
       end
 
       def _video

@@ -2,23 +2,23 @@ require 'spec_helper'
 
 describe VideoInfo::Providers::Vimeo do
   before(:all) do
-    VideoInfo.provider_api_keys = { vimeo: '6b66b015a3504793b4f541d878f46ff6'}
+    VideoInfo.provider_api_keys = { vimeo: '6b66b015a3504793b4f541d878f46ff6' }
   end
 
-  describe ".usable?" do
+  describe '.usable?' do
     subject { VideoInfo::Providers::Vimeo.usable?(url) }
 
-    context "with vimeo url" do
+    context 'with vimeo url' do
       let(:url) { 'http://www.vimeo.com/898029' }
       it { is_expected.to be_truthy }
     end
 
-    context "with Vimeo OnDemand url" do
+    context 'with Vimeo OnDemand url' do
       let(:url) { 'https://vimeo.com/ondemand/less/101677664' }
       it { is_expected.to be_truthy }
     end
 
-    context "with Vimeo Channels url" do
+    context 'with Vimeo Channels url' do
       let(:url) { 'https://vimeo.com/channels/any_channel/111431415' }
       it { is_expected.to be_truthy }
     end
@@ -28,24 +28,24 @@ describe VideoInfo::Providers::Vimeo do
       it { is_expected.to be_truthy }
     end
 
-    context "with vimeo album url" do
+    context 'with vimeo album url' do
       let(:url) { 'http://vimeo.com/album/2755718' }
       it { is_expected.to be_falsey }
     end
 
-    context "with vimeo hubnub embed url" do
+    context 'with vimeo hubnub embed url' do
       let(:url) { 'http://player.vimeo.com/hubnut/album/2755718' }
       it { is_expected.to be_falsey }
     end
 
-    context "with other url" do
+    context 'with other url' do
       let(:url) { 'http://www.youtube.com/898029' }
       it { is_expected.to be_falsey }
     end
   end
 
-  describe "#available?" do
-    context "with valid video", :vcr do
+  describe '#available?' do
+    context 'with valid video', :vcr do
       subject { VideoInfo.new('http://www.vimeo.com/898029') }
 
       describe '#available?' do
@@ -70,7 +70,7 @@ describe VideoInfo::Providers::Vimeo do
     end
   end
 
-  context "with video 898029", :vcr do
+  context 'with video 898029', :vcr do
     subject { VideoInfo.new('http://www.vimeo.com/898029') }
 
     describe '#provider' do
@@ -154,20 +154,20 @@ describe VideoInfo::Providers::Vimeo do
     end
   end
 
-  context "with video 898029 and url_attributes", :vcr do
+  context 'with video 898029 and url_attributes', :vcr do
     subject { VideoInfo.new('http://www.vimeo.com/898029') }
 
     it { expect(subject.embed_code(url_attributes: { autoplay: 1 })).to match(/autoplay=1/) }
   end
 
-  context "with video 898029 and iframe_attributes", :vcr do
+  context 'with video 898029 and iframe_attributes', :vcr do
     subject { VideoInfo.new('http://www.vimeo.com/898029') }
 
     it { expect(subject.embed_code(iframe_attributes: { width: 800, height: 600 })).to match(/width="800"/) }
     it { expect(subject.embed_code(iframe_attributes: { width: 800, height: 600 })).to match(/height="600"/) }
   end
 
-  context "with video 898029 in /group/ url", :vcr do
+  context 'with video 898029 in /group/ url', :vcr do
     subject { VideoInfo.new('http://vimeo.com/groups/1234/videos/898029') }
 
     describe '#provider' do
@@ -181,7 +181,7 @@ describe VideoInfo::Providers::Vimeo do
     end
   end
 
-  context "with video 898029 in /group/ url", :vcr do
+  context 'with video 898029 in /group/ url', :vcr do
     subject { VideoInfo.new('http://player.vimeo.com/video/898029') }
 
     describe '#provider' do
@@ -195,7 +195,7 @@ describe VideoInfo::Providers::Vimeo do
     end
   end
 
-  context "with video 898029 in text", :vcr do
+  context 'with video 898029 in text', :vcr do
     subject { VideoInfo.new('<a href="http://www.vimeo.com/898029">http://www.vimeo.com/898029</a>') }
 
     describe '#provider' do
@@ -209,14 +209,14 @@ describe VideoInfo::Providers::Vimeo do
     end
   end
 
-  context "with video 101677664 in /ondemand/ url", :vcr do
+  context 'with video 101677664 in /ondemand/ url', :vcr do
     subject { VideoInfo.new('https://vimeo.com/ondemand/less/101677664') }
 
     its(:provider) { should eq 'Vimeo' }
     its(:video_id) { should eq '101677664' }
   end
 
-  context "with video 111431415 in /channels/*/ url", :vcr do
+  context 'with video 111431415 in /channels/*/ url', :vcr do
     subject { VideoInfo.new('https://vimeo.com/channels/some_channel1/111431415') }
 
     its(:provider) { should eq 'Vimeo' }
@@ -229,5 +229,4 @@ describe VideoInfo::Providers::Vimeo do
     its(:provider) { should eq 'Vimeo' }
     its(:video_id) { should eq '126641548' }
   end
-
 end
