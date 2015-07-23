@@ -20,6 +20,11 @@ describe VideoInfo::Providers::Vimeo do
       it { is_expected.to be_truthy }
     end
 
+    context "with Vimeo Review url" do
+      let(:url) { 'https://vimeo.com/user39798190/review/126641548/8a56234e32' }
+      it { is_expected.to be_truthy }
+    end
+
     context "with vimeo album url" do
       let(:url) { 'http://vimeo.com/album/2755718' }
       it { is_expected.to be_falsey }
@@ -213,6 +218,13 @@ describe VideoInfo::Providers::Vimeo do
 
     its(:provider) { should eq 'Vimeo' }
     its(:video_id) { should eq '111431415' }
+  end
+
+  context "with video 126641548 in /user*/review/126641548/* url", :vcr do
+    subject { VideoInfo.new('http://www.vimeo.com/user39798190/review/126641548/8a56234e32') }
+
+    its(:provider) { should eq 'Vimeo' }
+    its(:video_id) { should eq '126641548' }
   end
 
 end
