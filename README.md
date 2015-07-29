@@ -17,7 +17,13 @@ Usage
 -----
 
 ## Note for YouTube usage!
-Youtube recently updated their API to require an API key. To get an API key, [follow the instructions here](https://developers.google.com/youtube/registering_an_application)
+Youtube recently updated their API to require an API key. 
+
+To get around this, a scraper was implemented. However, the scraper can only get the date the video was posted, while the API is able to get the date and the exact time the video was posted.
+
+You may also wish to use the API to protect against potential HTML changes that could break the scraper.
+
+To get an API key, [follow the instructions here](https://developers.google.com/youtube/registering_an_application)
 
 To set the API key, do the following:
 ``` ruby
