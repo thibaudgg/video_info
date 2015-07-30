@@ -123,7 +123,7 @@ describe VideoInfo::Providers::Youtube do
 
       describe '#available?' do
         subject { super().available? }
-        it { is_expected.to be_falsey }
+        it { is_expected.to be_true }
       end
     end
   end
