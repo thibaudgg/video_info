@@ -94,7 +94,7 @@ describe VideoInfo::Providers::YoutubePlaylist do
 
     describe '#keywords' do
       subject { super().keywords }
-      it { is_expected.to eq ['video', 'sharing', 'camera phone', 'video phone', 'free', 'upload']  }
+      it { is_expected.to be_nil }
     end
 
     describe '#duration' do

@@ -29,6 +29,10 @@ class VideoInfo
         nil
       end
 
+      def keywords
+        nil
+      end
+
       def view_count
         nil
       end
