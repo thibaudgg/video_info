@@ -13,6 +13,10 @@ class VideoInfo
         nil
       end
 
+      def keywords
+        nil
+      end
+
       def videos
         raise(NotImplementedError, 'To access videos, you must provide an API key to VideoInfo.provider_api_keys')
       end
