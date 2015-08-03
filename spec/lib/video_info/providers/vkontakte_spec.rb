@@ -56,7 +56,7 @@ describe VideoInfo::Providers::Vkontakte do
     end
 
     context "with private video", :vcr do
-      subject { VideoInfo.new('http://vk.com/video9491528_165193133') }
+      subject { VideoInfo.new('http://vk.com/video39576223_166315543') }
       its(:available?)       { should be_falsey }
     end
 
