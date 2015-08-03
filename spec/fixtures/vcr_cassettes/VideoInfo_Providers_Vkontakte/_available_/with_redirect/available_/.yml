@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - Apache
       Date:
-      - Sun, 15 Mar 2015 19:42:50 GMT
+      - Wed, 06 May 2015 12:06:17 GMT
       Content-Type:
       - text/html; charset=windows-1251
       Content-Length:
@@ -29,9 +29,9 @@ http_interactions:
       Connection:
       - keep-alive
       X-Powered-By:
-      - PHP/3.12025
+      - PHP/3.13593
       Set-Cookie:
-      - remixlang=0; expires=Mon, 07 Mar 2016 07:21:11 GMT; path=/; domain=.vk.com
+      - remixlang=0; expires=Wed, 27 Apr 2016 19:28:25 GMT; path=/; domain=.vk.com
       Pragma:
       - no-cache
       Cache-Control:
@@ -42,7 +42,7 @@ http_interactions:
       encoding: UTF-8
       string: ''
     http_version: 
-  recorded_at: Sun, 15 Mar 2015 19:42:50 GMT
+  recorded_at: Wed, 06 May 2015 12:06:20 GMT
 - request:
     method: get
     uri: http://m.vk.com/polinka_zh
@@ -56,8 +56,6 @@ http_interactions:
       - "*/*"
       User-Agent:
       - Ruby
-      Host:
-      - m.vk.com
   response:
     status:
       code: 200
@@ -66,17 +64,17 @@ http_interactions:
       Server:
       - Apache
       Date:
-      - Sun, 15 Mar 2015 19:42:50 GMT
+      - Wed, 06 May 2015 12:06:20 GMT
       Content-Type:
       - text/html; charset=utf-8
       Content-Length:
-      - '2482'
+      - '2465'
       Connection:
       - keep-alive
       X-Powered-By:
-      - PHP/3.12025
+      - PHP/3.13593
       Set-Cookie:
-      - remixlang=0; expires=Sat, 19 Mar 2016 15:34:51 GMT; path=/; domain=.vk.com
+      - remixlang=0; expires=Mon, 16 May 2016 11:40:31 GMT; path=/; domain=.vk.com
       Pragma:
       - no-cache
       Cache-Control:
@@ -146,7 +144,7 @@ http_interactions:
         XC8qKGF3YXl8bG9naW4pKFwucGhwKT8oW15hLXowLTlcLl18JCkvKSYmKGI9
         IiIpLGEucmVwbGFjZShhLnByb3RvY29sKyIvLyIrYS5ob3N0KyIvIitiKSl9
         KShsb2NhdGlvbik7Ci8vLS0+Cjwvc2NyaXB0Pgo8bGluayB0eXBlPSJ0ZXh0
-        L2NzcyIgcmVsPSJzdHlsZXNoZWV0IiBocmVmPSIvY3NzL3NfYy5jc3M/MTcy
+        L2NzcyIgcmVsPSJzdHlsZXNoZWV0IiBocmVmPSIvY3NzL3NfYy5jc3M/MTcz
         Ij48L2xpbms+CjxsaW5rIHR5cGU9InRleHQvY3NzIiByZWw9InN0eWxlc2hl
         ZXQiIG1lZGlhPSJvbmx5IHNjcmVlbiIgaHJlZj0iL2Nzcy9zX3l6Zy5jc3M/
         MTU4Ij48L2xpbms+CjxsaW5rIHJlbD0ic2hvcnRjdXQgaWNvbiIgaHJlZj0i
@@ -192,19 +190,19 @@ http_interactions:
         PjwvbGk+CjwvdWw+CjwvZGl2PjwvZGl2Pgo8ZGl2IGNsYXNzPSJfY250cnMi
         IHN0eWxlPSJoZWlnaHQ6MDsiPgo8aW1nIHdpZHRoPSIxIiBoZWlnaHQ9IjEi
         IHNyYz0iLy9jb3VudGVyLnlhZHJvLnJ1L2hpdD91aHR0cCUzQSUyRiUyRm0u
-        dmsuY29tJTJGcG9saW5rYV96aDtyOzU4NzU2MDY3IiBhbHQ9IiIgYWxpZ249
-        ImxlZnQiIC8+CjxpbWcgd2lkdGg9IjEiIGhlaWdodD0iMSIgc3JjPSIvL2Iu
-        c2NvcmVjYXJkcmVzZWFyY2guY29tL3A/YzE9MiZjMj0xMzc2NTIxNiZjMz0m
-        YzQ9aHR0cCUzQSUyRiUyRm0udmsuY29tJTJGcG9saW5rYV96aCZjNT0mYzk9
-        JmMxNT0mY3Y9Mi4wJmNqPTEmcm49NTg3NTYwNjciIGFsdD0iIiBhbGlnbj0i
-        bGVmdCIgLz4KPGltZyBzcmM9Ii8vdG9wLWZ3ejEubWFpbC5ydS9jb3VudGVy
-        P2lkPTI1Nzk0Mzc7cj0iIHN0eWxlPSJib3JkZXI6MDsiIGhlaWdodD0iMSIg
-        d2lkdGg9IjEiIGFsdD0i0KDQtdC50YLQuNC90LNATWFpbC5ydSIgLz4KPC9k
-        aXY+PC9kaXY+CjxkaXYgaWQ9InoiPjwvZGl2Pgo8L2Rpdj4KPGRpdiBpZD0i
-        dmtfYm90dG9tIj48L2Rpdj4KPHNjcmlwdCB0eXBlPSJ0ZXh0L2phdmFzY3Jp
-        cHQiPgo8IS0tCnBhcmVudCYmcGFyZW50IT13aW5kb3cmJihkb2N1bWVudC5n
-        ZXRFbGVtZW50c0J5VGFnTmFtZSgnYm9keScpWzBdLmlubmVySFRNTD0nJyk7
-        Ci8vLS0+Cjwvc2NyaXB0Pgo8L2JvZHk+CjwvaHRtbD4=
+        dmsuY29tJTJGcG9saW5rYV96aDtyOzY3NDg3MTAiIGFsdD0iIiBhbGlnbj0i
+        bGVmdCIgLz4KPGltZyB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBzcmM9Ii8vYi5z
+        Y29yZWNhcmRyZXNlYXJjaC5jb20vcD9jMT0yJmMyPTEzNzY1MjE2JmMzPSZj
+        ND1odHRwJTNBJTJGJTJGbS52ay5jb20lMkZwb2xpbmthX3poJmM1PSZjOT0m
+        YzE1PSZjdj0yLjAmY2o9MSZybj02NzQ4NzEwIiBhbHQ9IiIgYWxpZ249Imxl
+        ZnQiIC8+CjxpbWcgc3JjPSIvL3RvcC1md3oxLm1haWwucnUvY291bnRlcj9p
+        ZD0yNTc5NDM3O3I9IiBzdHlsZT0iYm9yZGVyOjA7IiBoZWlnaHQ9IjEiIHdp
+        ZHRoPSIxIiAvPgo8L2Rpdj48L2Rpdj4KPGRpdiBpZD0ieiI+PC9kaXY+Cjwv
+        ZGl2Pgo8ZGl2IGlkPSJ2a19ib3R0b20iPjwvZGl2Pgo8c2NyaXB0IHR5cGU9
+        InRleHQvamF2YXNjcmlwdCI+CjwhLS0KcGFyZW50JiZwYXJlbnQhPXdpbmRv
+        dyYmKGRvY3VtZW50LmdldEVsZW1lbnRzQnlUYWdOYW1lKCdib2R5JylbMF0u
+        aW5uZXJIVE1MPScnKTsKLy8tLT4KPC9zY3JpcHQ+CjwvYm9keT4KPC9odG1s
+        Pg==
     http_version: 
-  recorded_at: Sun, 15 Mar 2015 19:42:50 GMT
+  recorded_at: Wed, 06 May 2015 12:06:24 GMT
 recorded_with: VCR 2.9.3
