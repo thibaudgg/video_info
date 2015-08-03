@@ -1,6 +1,10 @@
 require 'spec_helper'
 
 describe VideoInfo::Providers::Youtube do
+  before(:all) do
+    VideoInfo.provider_api_keys = { youtube: 'AIzaSyA6PYwSr1EnLFUFy1cZDk3Ifb0rxeJaeZ0' }
+  end
+
   describe ".usable?" do
     subject { VideoInfo::Providers::Youtube.usable?(url) }
 
@@ -119,7 +123,7 @@ describe VideoInfo::Providers::Youtube do
 
       describe '#available?' do
         subject { super().available? }
-        it { is_expected.to be_falsey }
+        it { is_expected.to be_truthy }
       end
     end
   end
@@ -184,7 +188,7 @@ describe VideoInfo::Providers::Youtube do
 
     describe '#date' do
       subject { super().date }
-      it { is_expected.to eq Time.parse('Sat Apr 12 2008', Time.now.utc) }
+      it { is_expected.to eq Time.parse('Sat Apr 12 22:25:35 UTC 2008', Time.now.utc) }
     end
 
     describe '#thumbnail_small' do
