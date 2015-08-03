@@ -6,6 +6,5 @@ rvm:
   - rbx
 matrix:
   allow_failures:
-    - rvm:
-      - rbx
-      - jruby
+    - rvm: rbx
+    - rvm: jruby
