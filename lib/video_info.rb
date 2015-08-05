@@ -17,11 +17,14 @@ class VideoInfo
   def_delegators :@provider, :provider, :video_id, :video_owner, :url, :data
   def_delegators :@provider, :title, :description, :keywords, :view_count
   def_delegators :@provider, :date, :duration, :width, :height
+  def_delegators :@provider, :thumbnail
   def_delegators :@provider, :thumbnail_small, :thumbnail_medium, :thumbnail_large
   def_delegators :@provider, :embed_code, :embed_url
   def_delegators :@provider, :available?
   def_delegators :@provider, :playlist_id, :videos
-
+  def_delegators :@provider, :author, :author_thumbnail
+  def_delegators :@provider, :data=
+  
   def initialize(url, options = {})
     @provider = _select_provider(url, options)
   end

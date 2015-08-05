@@ -39,8 +39,25 @@ class VideoInfo
     private
 
     def _response_code
-      response = nil
-      Net::HTTP.start(_api_base, 80) { |http| response = http.head(_api_path) }
+      uri = URI.parse(_api_url)
+      http = Net::HTTP.new(uri.host, uri.port)
+
+      if (uri.scheme == 'https')
+        _https_response_code(http)
+      else
+        _http_response_code(http)
+      end
+    end
+
+    def _http_response_code(http)
+      response = http.head(_api_path, @options)
+      response.code
+    end
+
+    def _https_response_code(http)
+      http.use_ssl = true
+      http.verify_mode = OpenSSL::SSL::VERIFY_NONE
+      response = http.head(_api_path, @options)
       response.code
     end
 

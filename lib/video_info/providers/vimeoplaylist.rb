@@ -8,8 +8,10 @@ class VideoInfo
       end
 
       def videos
-        _playlist_video_ids.map do |entry_id|
-          VideoInfo.new("http://vimeo.com/#{entry_id}")
+        @videos ||= _data_videos.map do |video_data|
+          video = Vimeo.new(video_data['link'])
+          video.data = video
+          video
         end
       end
 
@@ -17,7 +19,7 @@ class VideoInfo
         "//player.vimeo.com/hubnut/album/#{playlist_id}"
       end
 
-      %w[width height date keywords duration view_count].each do |method|
+      %w[width height keywords view_count].each do |method|
         define_method(method) { nil }
       end
 
@@ -32,15 +34,19 @@ class VideoInfo
       end
 
       def _api_path
-        "/api/v2/album/#{video_id}/info.json"
+        "/albums/#{playlist_id}"
+      end
+
+      def _api_path_album_videos
+        "/albums/#{playlist_id}/videos"
       end
 
       def _api_videos_path
-        "/api/v2/album/#{video_id}/videos.json"
+        "/videos/#{video_id}"
       end
 
       def _api_videos_url
-        "http://#{_api_base}#{_api_videos_path}"
+        "https://#{_api_base}#{_api_path_album_videos}"
       end
 
       def _data_videos
@@ -49,13 +55,8 @@ class VideoInfo
 
       def _set_videos_from_api
         uri = open(_api_videos_url, options)
-        MultiJson.load(uri.read)
-      end
-
-      def _playlist_video_ids
-        _data_videos.map do |entry|
-          entry['id']
-        end
+        json = MultiJson.load(uri.read)
+        json['data']
       end
     end
   end
