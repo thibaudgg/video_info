@@ -17,7 +17,8 @@ class VideoInfo
   def_delegators :@provider, :provider, :video_id, :video_owner, :url, :data
   def_delegators :@provider, :title, :description, :keywords, :view_count
   def_delegators :@provider, :date, :duration, :width, :height
-  def_delegators :@provider, :thumbnail, :thumbnail_small, :thumbnail_medium, :thumbnail_large
+  def_delegators :@provider, :thumbnail
+  def_delegators :@provider, :thumbnail_small, :thumbnail_medium, :thumbnail_large
   def_delegators :@provider, :embed_code, :embed_url
   def_delegators :@provider, :available?
   def_delegators :@provider, :playlist_id, :videos
