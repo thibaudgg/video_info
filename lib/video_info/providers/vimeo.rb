@@ -30,7 +30,8 @@ class VideoInfo
       end
 
       def author_thumbnail_id
-        @author_thumbnail_id ||= _parse_picture_id(_video['user']['pictures']['uri'])
+        author_uri = _video['user']['pictures']['uri']
+        @author_thumbnail_id ||= _parse_picture_id(author_uri)
       end
 
       def author_thumbnail(width = 75)
