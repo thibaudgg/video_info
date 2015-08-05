@@ -122,17 +122,17 @@ describe VideoInfo::Providers::VimeoPlaylist do
 
     describe '#thumbnail_small' do
       subject { super().thumbnail_small }
-      it { is_expected.to eq 'https://i.vimeocdn.com/video/1921098_100x75.jpg' }
+      it { is_expected.to eq 'https://i.vimeocdn.com/video/299773432_100x75.jpg' }
     end
 
     describe '#thumbnail_medium' do
       subject { super().thumbnail_medium }
-      it { is_expected.to eq 'https://i.vimeocdn.com/video/1921098_200x150.jpg' }
+      it { is_expected.to eq 'https://i.vimeocdn.com/video/299773432_200x150.jpg' }
     end
 
     describe '#thumbnail_large' do
       subject { super().thumbnail_large }
-      it { is_expected.to eq 'https://i.vimeocdn.com/video/1921098_640.jpg' }
+      it { is_expected.to eq 'https://i.vimeocdn.com/video/299773432_640.jpg' }
     end
 
     describe '#videos' do
