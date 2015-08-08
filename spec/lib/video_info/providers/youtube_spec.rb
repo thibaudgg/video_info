@@ -385,4 +385,12 @@ describe VideoInfo::Providers::Youtube do
     it { expect(subject.embed_code(iframe_attributes: { :'data-colorbox' => true })).to match(/data-colorbox="true"/) }
   end
 
+  context "URL without http:// or https://" do
+    subject { VideoInfo.new('www.youtube.com/watch?v=ylTY9WbMGDc') }
+
+    describe '#title' do
+      subject { super().title }
+      it { is_expected.to eq ('Deafheaven - Sunbather') }
+    end
+  end
 end

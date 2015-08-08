@@ -14,6 +14,8 @@ VCR.configure do |config|
     record: :new_episodes,
     re_record_interval: 7 * 24 * 60 * 60
   }
+
+  config.allow_http_connections_when_no_cassette = true
   config.hook_into :webmock
   config.configure_rspec_metadata!
 end
