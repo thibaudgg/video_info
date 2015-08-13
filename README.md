@@ -16,7 +16,8 @@ gem install video_info
 Usage
 -----
 
-## Note for YouTube usage!
+### Note for YouTube usage!
+
 Youtube recently updated their API to require an API key.
 
 To get around this, a scraper was implemented. However, the scraper can only get the date the video was posted, while the API is able to get the date and the exact time the video was posted.
