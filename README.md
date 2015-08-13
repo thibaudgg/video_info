@@ -16,19 +16,21 @@ gem install video_info
 Usage
 -----
 
-### Note for YouTube usage!
+### Note for YouTube and Vimeo usage!
 
-Youtube recently updated their API to require an API key.
+Youtube and Vimeo have recently updated their APIs to require an API keys.
 
-To get around this, a scraper was implemented. However, the scraper can only get the date the video was posted, while the API is able to get the date and the exact time the video was posted.
+A scraper has been implemented for Youtube. However, the scraper can only get the date the video was posted, while the API is able to get the date and the exact time the video was posted. You may also wish to use the API to protect against potential HTML changes that could break the scraper.
 
-You may also wish to use the API to protect against potential HTML changes that could break the scraper.
+No scraper has been implemented for Vimeo yet.
 
-To get an API key, [follow the instructions here](https://developers.google.com/youtube/registering_an_application)
+To get a Youtube API key, [follow the instructions here](https://developers.google.com/youtube/registering_an_application)
 
-To set the API key, do the following:
+To get a Vimeo API key, [follow the instructions here](https://developer.vimeo.com/api/start)
+
+To set the API keys, do the following:
 ``` ruby
-VideoInfo.provider_api_keys = { youtube: 'YOUR_API_KEY' }
+VideoInfo.provider_api_keys = { youtube: 'YOUR_YOUTUBE_API_KEY', vimeo: 'YOUR_VIMEO_API_KEY' }
 ```
 
 
