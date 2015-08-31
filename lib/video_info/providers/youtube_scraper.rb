@@ -88,7 +88,14 @@ class VideoInfo
           uri.scheme = 'http'
         end
 
-        Oga.parse_html(open(uri.to_s, allow_redirections: :safe).read)
+        # handle fullscreen video URLs
+        if url.include?('.com/v/')
+          video_id = url.split('/v/')[1]
+          new_url = 'https://www.youtube.com/watch?v=' + video_id
+          Oga.parse_html(open(new_url).read)
+        else
+          Oga.parse_html(open(uri.to_s, allow_redirections: :safe).read)
+        end
       end
 
       def _api_url

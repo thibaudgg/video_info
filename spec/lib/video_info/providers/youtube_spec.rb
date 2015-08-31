@@ -393,4 +393,88 @@ describe VideoInfo::Providers::Youtube do
       it { is_expected.to eq ('Deafheaven - Sunbather') }
     end
   end
+
+    context "with full screen video URLs", :vcr do
+    subject { VideoInfo.new('http://www.youtube.com/v/mZqGqE0D0n4') }
+
+    describe '#provider' do
+      subject { super().provider }
+      it { is_expected.to eq 'YouTube' }
+    end
+
+    describe '#video_id' do
+      subject { super().video_id }
+      it { is_expected.to eq 'mZqGqE0D0n4' }
+    end
+
+    describe '#url' do
+      subject { super().url }
+      it { is_expected.to eq 'http://www.youtube.com/v/mZqGqE0D0n4' }
+    end
+
+    describe '#embed_url' do
+      subject { super().embed_url }
+      it { is_expected.to eq '//www.youtube.com/embed/mZqGqE0D0n4' }
+    end
+
+    describe '#embed_code' do
+      subject { super().embed_code }
+      it { is_expected.to eq '<iframe src="//www.youtube.com/embed/mZqGqE0D0n4" frameborder="0" allowfullscreen="allowfullscreen"></iframe>' }
+    end
+
+    describe '#title' do
+      subject { super().title }
+      it { is_expected.to eq 'Cherry Bloom - King Of The Knife' }
+    end
+
+    describe '#description' do
+      subject { super().description }
+      it { is_expected.to eq 'The first video from the upcoming album Secret Sounds, to download in-stores April 14. Checkout http://www.cherrybloom.net' }
+    end
+
+    describe '#keywords' do
+      subject { super().keywords }
+      it { is_expected.to eq %w(cherry bloom king of the knife guitar drum clip rock alternative tremplin Paris-Forum) }
+    end
+
+    describe '#duration' do
+      subject { super().duration }
+      it { is_expected.to eq 176 }
+    end
+
+    describe '#width' do
+      subject { super().width }
+      it { is_expected.to be_nil }
+    end
+
+    describe '#height' do
+      subject { super().height }
+      it { is_expected.to be_nil }
+    end
+
+    describe '#date' do
+      subject { super().date }
+      it { is_expected.to eq Time.parse('Sat Apr 12 2008', Time.now.utc) }
+    end
+
+    describe '#thumbnail_small' do
+      subject { super().thumbnail_small }
+      it { is_expected.to eq 'https://i.ytimg.com/vi/mZqGqE0D0n4/default.jpg' }
+    end
+
+    describe '#thumbnail_medium' do
+      subject { super().thumbnail_medium }
+      it { is_expected.to eq 'https://i.ytimg.com/vi/mZqGqE0D0n4/mqdefault.jpg' }
+    end
+
+    describe '#thumbnail_large' do
+      subject { super().thumbnail_large }
+      it { is_expected.to eq 'https://i.ytimg.com/vi/mZqGqE0D0n4/hqdefault.jpg' }
+    end
+
+    describe '#view_count' do
+      subject { super().view_count }
+      it { is_expected.to be > 4000 }
+    end
+  end
 end
