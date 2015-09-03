@@ -394,7 +394,7 @@ describe VideoInfo::Providers::Youtube do
     end
   end
 
-    context "with full screen video URLs", :vcr do
+  context "with full screen video URLs", :vcr do
     subject { VideoInfo.new('http://www.youtube.com/v/mZqGqE0D0n4') }
 
     describe '#provider' do
@@ -475,6 +475,16 @@ describe VideoInfo::Providers::Youtube do
     describe '#view_count' do
       subject { super().view_count }
       it { is_expected.to be > 4000 }
+    end
+  end
+
+
+  context "with full screen video URLs with params", :vcr do
+    subject { VideoInfo.new('https://www.youtube.com/v/ylTY9WbMGDc?someParam=foo') }
+
+    describe '#title' do
+      subject { super().title }
+      it { is_expected.to eq 'Deafheaven - Sunbather' }
     end
   end
 end

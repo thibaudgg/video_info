@@ -90,7 +90,7 @@ class VideoInfo
 
         # handle fullscreen video URLs
         if url.include?('.com/v/')
-          video_id = url.split('/v/')[1]
+          video_id = url.split('/v/')[1].split('?')[0]
           new_url = 'https://www.youtube.com/watch?v=' + video_id
           Oga.parse_html(open(new_url).read)
         else
