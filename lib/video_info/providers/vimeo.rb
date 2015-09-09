@@ -17,10 +17,6 @@ class VideoInfo
         'Vimeo'
       end
 
-      def api_key
-        VideoInfo.provider_api_keys[:vimeo]
-      end
-
       %w[description].each do |method|
         define_method(method) { _video[method] }
       end
