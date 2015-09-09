@@ -34,18 +34,6 @@ class VideoInfo
         meta_node_value('title')
       end
 
-      def thumbnail_small
-        "https://i.ytimg.com/vi/#{video_id}/default.jpg"
-      end
-
-      def thumbnail_medium
-        "https://i.ytimg.com/vi/#{video_id}/mqdefault.jpg"
-      end
-
-      def thumbnail_large
-        "https://i.ytimg.com/vi/#{video_id}/hqdefault.jpg"
-      end
-
       def view_count
         data.css('div.watch-view-count').text.gsub(/\D/, '').to_i
       end
