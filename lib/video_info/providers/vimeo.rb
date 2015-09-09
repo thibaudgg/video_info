@@ -1,6 +1,14 @@
+require_relative 'vimeo_api'
+
 class VideoInfo
   module Providers
     class Vimeo < Provider
+      def initialize(url, options = {})
+        extend VimeoAPI
+
+        super(url, options)
+      end
+
       def self.usable?(url)
         url =~ /(vimeo\.com\/(?!album|hubnut\/album).*)/
       end
