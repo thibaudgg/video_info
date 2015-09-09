@@ -47,7 +47,7 @@ class VideoInfo
       end
 
       def view_count
-        data.css('div.watch-view-count').text.gsub(',', '').to_i
+        data.css('div.watch-view-count').text.gsub(/\D/, '').to_i
       end
 
       private
