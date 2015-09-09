@@ -20,12 +20,12 @@ Gem::Specification.new do |s|
 
   s.required_ruby_version = '>= 1.9.3'
 
-  s.add_dependency 'addressable'
+  s.add_dependency 'addressable', '~> 2.3'
   s.add_dependency 'multi_json', '~> 1.11'
-  s.add_dependency 'htmlentities'
-  s.add_dependency 'iso8601'
-  s.add_dependency 'oga'
-  s.add_dependency 'open_uri_redirections'
+  s.add_dependency 'htmlentities', '~> 4.3'
+  s.add_dependency 'iso8601', '~> 0.8'
+  s.add_dependency 'oga', '~> 1.3'
+  s.add_dependency 'open_uri_redirections', '~> 0.2'
 
   s.add_development_dependency 'bundler', '>= 1.3.5'
   s.add_development_dependency 'rake'
