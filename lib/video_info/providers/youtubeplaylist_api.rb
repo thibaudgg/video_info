@@ -22,6 +22,18 @@ class VideoInfo
       nil
     end
 
+    def thumbnail_small
+      _video_snippet['thumbnails']['default']['url']
+    end
+
+    def thumbnail_medium
+      _video_snippet['thumbnails']['medium']['url']
+    end
+
+    def thumbnail_large
+      _video_snippet['thumbnails']['high']['url']
+    end
+
     private
 
     def _playlist_entry
