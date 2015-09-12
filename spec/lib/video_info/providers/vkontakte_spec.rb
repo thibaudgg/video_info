@@ -77,6 +77,17 @@ describe VideoInfo::Providers::Vkontakte do
 
   end
 
+  context "with video https://vk.com/id44052340?z=video61291456_159590018%2F2521d92730a272a9ea", :vcr do
+    subject { VideoInfo.new('https://vk.com/id44052340?z=video61291456_159590018%2F2521d92730a272a9ea') }
+
+    its(:provider)         { should eq 'Vkontakte' }
+    its(:video_owner)      { should eq '61291456' }
+    its(:video_id)         { should eq '159590018' }
+    its(:title)            { should eq 'Happy Birthday To You' }
+    its(:embed_url)        { should eq '//vk.com/video_ext.php?oid=61291456&id=159590018&hash=68174b2af560c54c' }
+    its(:embed_code)       { should eq '<iframe src="//vk.com/video_ext.php?oid=61291456&id=159590018&hash=68174b2af560c54c" frameborder="0" allowfullscreen="allowfullscreen"></iframe>' }
+  end
+
   context "with video videos43640822#/video43640822_168790809", :vcr do
     subject { VideoInfo.new('https://vk.com/videos43640822#/video43640822_168790809') }
 
