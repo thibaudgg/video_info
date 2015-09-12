@@ -54,7 +54,7 @@ describe VideoInfo::Providers::Vimeo do
     end
 
     context "with 'this video does not exist' video", :vcr do
-      subject { VideoInfo.new('http://vimeo.com/59312311') }
+      subject { VideoInfo.new('http://vimeo.com/593123111') }
 
       describe '#available?' do
         it { is_expected.to_not be_available }
