@@ -143,7 +143,7 @@ describe VideoInfo::Providers::Vkontakte do
     its(:title)            { should eq 'SpaceGlasses are the future of computing' }
   end
 
-  context "with valid video and connection timeout" do
+  context 'with valid video and connection timeout' do
     subject { VideoInfo.new('http://vk.com/video-54799401_165822734') }
 
     describe '#title' do
@@ -157,12 +157,12 @@ describe VideoInfo::Providers::Vkontakte do
     end
   end
 
-  context "with valid video and OpenURI::HTTPError exception" do
+  context 'with valid video and OpenURI::HTTPError exception' do
     subject { VideoInfo.new('http://vk.com/video-54799401_165822734') }
 
     describe '#title' do
       before do
-        stub_request(:any, /.*vk.com.*/).to_raise(OpenURI::HTTPError.new("error", :nop))
+        stub_request(:any, /.*vk.com.*/).to_raise(OpenURI::HTTPError.new('error', :nop))
       end
 
       it 'raises VideoInfo::HttpError exception' do

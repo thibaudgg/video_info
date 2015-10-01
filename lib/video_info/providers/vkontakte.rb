@@ -100,7 +100,7 @@ class VideoInfo
             data
           end
         rescue OpenURI::HTTPError, *NetHttpTimeoutErrors.all
-          raise VideoInfo::HttpError.new "unexpected network error while fetching information about the video"
+          raise VideoInfo::HttpError.new 'unexpected network error while fetching information about the video'
         end
       end
 

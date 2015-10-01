@@ -87,7 +87,7 @@ class VideoInfo
             Oga.parse_html(open(uri.to_s, allow_redirections: :safe).read)
           end
         rescue OpenURI::HTTPError, *NetHttpTimeoutErrors.all
-          raise VideoInfo::HttpError.new "unexpected network error while fetching information about the video"
+          raise VideoInfo::HttpError.new 'unexpected network error while fetching information about the video'
         end
       end
 

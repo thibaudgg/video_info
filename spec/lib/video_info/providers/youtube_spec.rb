@@ -489,12 +489,12 @@ describe VideoInfo::Providers::Youtube do
     end
   end
 
-  context "with valid video and connection timeout" do
+  context 'with valid video and connection timeout' do
     subject { VideoInfo.new('https://www.youtube.com/watch?v=lExm5LELpP4') }
 
     describe '#title' do
       before do
-        @stubbed = stub_request(:get, "https://www.youtube.com/watch?v=lExm5LELpP4").to_timeout
+        @stubbed = stub_request(:get, 'https://www.youtube.com/watch?v=lExm5LELpP4').to_timeout
       end
 
       after do
@@ -507,12 +507,12 @@ describe VideoInfo::Providers::Youtube do
     end
   end
 
-  context "with valid video and OpenURI::HTTPError exception" do
+  context 'with valid video and OpenURI::HTTPError exception' do
     subject { VideoInfo.new('https://www.youtube.com/watch?v=lExm5LELpP4') }
 
     describe '#title' do
       before do
-        stub_request(:get, "https://www.youtube.com/watch?v=lExm5LELpP4").to_raise(OpenURI::HTTPError.new("error", :nop))
+        stub_request(:get, 'https://www.youtube.com/watch?v=lExm5LELpP4').to_raise(OpenURI::HTTPError.new('error', :nop))
       end
 
       it 'raises VideoInfo::HttpError exception' do
