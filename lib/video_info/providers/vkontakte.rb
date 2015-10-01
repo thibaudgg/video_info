@@ -86,21 +86,16 @@ class VideoInfo
         resp.body.force_encoding('cp1251').encode('UTF-8', undef: :replace)
       end
 
-      def _set_data_from_api
-        begin
-          url = URI('https://vk.com/al_video.php')
-          options['act'] = 'show'
-          options['al'] = '1'
-          options['video'] = "#{@video_owner}_#{@video_id}"
-          data = _make_request(url, options)
-          if data.index('Ошибка доступа')
-            # try second time
-            _make_request(url, options)
-          else
-            data
-          end
-        rescue OpenURI::HTTPError, *NetHttpTimeoutErrors.all
-          raise VideoInfo::HttpError.new 'unexpected network error while fetching information about the video'
+      def _set_data_from_api_impl(api_url)
+        options['act'] = 'show'
+        options['al'] = '1'
+        options['video'] = "#{@video_owner}_#{@video_id}"
+        data = _make_request(api_url, options)
+        if data.index('Ошибка доступа')
+          # try second time
+          _make_request(api_url, options)
+        else
+          data
         end
       end
 
@@ -165,6 +160,10 @@ class VideoInfo
 
       def _default_url_attributes
         {}
+      end
+
+      def _api_url
+        URI('https://vk.com/al_video.php')
       end
     end
   end

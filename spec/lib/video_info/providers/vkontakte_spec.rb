@@ -170,5 +170,4 @@ describe VideoInfo::Providers::Vkontakte do
       end
     end
   end
-
 end
