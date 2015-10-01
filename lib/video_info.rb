@@ -4,7 +4,9 @@ require 'forwardable'
 require 'net/http'
 
 class VideoInfo
-  class UrlError < StandardError; end
+  class Error < StandardError; end
+  class UrlError < Error; end
+  class HttpError < Error; end
   extend Forwardable
 
   PROVIDERS = %w[
@@ -24,7 +26,7 @@ class VideoInfo
   def_delegators :@provider, :playlist_id, :videos
   def_delegators :@provider, :author, :author_thumbnail
   def_delegators :@provider, :data=
-  
+
   def initialize(url, options = {})
     @provider = _select_provider(url, options)
   end

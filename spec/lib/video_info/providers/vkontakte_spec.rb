@@ -1,5 +1,6 @@
 # encoding: UTF-8
 require 'spec_helper'
+require 'webmock/rspec'
 
 describe VideoInfo::Providers::Vkontakte do
 
@@ -104,8 +105,8 @@ describe VideoInfo::Providers::Vkontakte do
     its(:video_owner)      { should eq '2152699' }
     its(:video_id)         { should eq '168591741' }
     its(:url)              { should eq 'https://vk.com/kirill.lyanoi?z=video2152699_168591741%2F56fd229a9dfe2dcdbe' }
-    its(:embed_url)        { should eq '//www.youtube.com/embed/4Thws5wq5GI' }
-    its(:embed_code)       { should eq '<iframe src="//www.youtube.com/embed/4Thws5wq5GI" frameborder="0" allowfullscreen="allowfullscreen"></iframe>' }
+    its(:embed_url)        { should eq '//vk.com/video_ext.php?oid=2152699&id=168591741&hash=' }
+    its(:embed_code)       { should eq '<iframe src="//vk.com/video_ext.php?oid=2152699&id=168591741&hash=" frameborder="0" allowfullscreen="allowfullscreen"></iframe>' }
     its(:title)            { should eq 'BEAT SOUL STEP — RDC14 Project818 Russian Dance Championship, May 1-2, Moscow 2014' }
     its(:description)      { should start_with 'BEAT SOUL STEP ★ Project818 Russian Dance Championship ★ 1-2 мая, Москва 2014' }
     its(:keywords)         { should start_with 'BEAT SOUL STEP ★ Project818 Russian Dance Championship ★ 1-2 мая, Москва 2014' }
@@ -142,4 +143,31 @@ describe VideoInfo::Providers::Vkontakte do
     its(:title)            { should eq 'SpaceGlasses are the future of computing' }
   end
 
+  context 'with valid video and connection timeout' do
+    subject { VideoInfo.new('http://vk.com/video-54799401_165822734') }
+
+    describe '#title' do
+      before do
+        stub_request(:any, /.*vk.com.*/).to_timeout
+      end
+
+      it 'raises VideoInfo::HttpError exception' do
+        expect { subject.title }.to raise_error VideoInfo::HttpError
+      end
+    end
+  end
+
+  context 'with valid video and OpenURI::HTTPError exception' do
+    subject { VideoInfo.new('http://vk.com/video-54799401_165822734') }
+
+    describe '#title' do
+      before do
+        stub_request(:any, /.*vk.com.*/).to_raise(OpenURI::HTTPError.new('error', :nop))
+      end
+
+      it 'raises VideoInfo::HttpError exception' do
+        expect { subject.title }.to raise_error VideoInfo::HttpError
+      end
+    end
+  end
 end

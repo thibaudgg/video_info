@@ -1,5 +1,6 @@
 require 'oga'
 require 'open-uri'
+require 'net_http_timeout_errors'
 
 class VideoInfo
   module Providers
@@ -68,7 +69,7 @@ class VideoInfo
         data.css('div#unavailable-submessage').text.strip.empty?
       end
 
-      def _set_data_from_api(api_url = _api_url)
+      def _set_data_from_api_impl(api_url)
         uri = URI(api_url)
 
         unless uri.scheme

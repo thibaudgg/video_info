@@ -74,6 +74,12 @@ class VideoInfo
     end
 
     def _set_data_from_api(api_url = _api_url)
+      _set_data_from_api_impl(api_url)
+      rescue OpenURI::HTTPError, *NetHttpTimeoutErrors.all
+        raise VideoInfo::HttpError.new 'unexpected network error while fetching information about the video'
+    end
+
+    def _set_data_from_api_impl(api_url)
       uri = open(api_url, options)
       MultiJson.load(uri.read)
     end

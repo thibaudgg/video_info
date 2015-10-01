@@ -86,15 +86,14 @@ class VideoInfo
         resp.body.force_encoding('cp1251').encode('UTF-8', undef: :replace)
       end
 
-      def _set_data_from_api
-        url = URI('https://vk.com/al_video.php')
+      def _set_data_from_api_impl(api_url)
         options['act'] = 'show'
         options['al'] = '1'
         options['video'] = "#{@video_owner}_#{@video_id}"
-        data = _make_request(url, options)
+        data = _make_request(api_url, options)
         if data.index('Ошибка доступа')
           # try second time
-          _make_request(url, options)
+          _make_request(api_url, options)
         else
           data
         end
@@ -161,6 +160,10 @@ class VideoInfo
 
       def _default_url_attributes
         {}
+      end
+
+      def _api_url
+        URI('https://vk.com/al_video.php')
       end
     end
   end
