@@ -69,7 +69,7 @@ class VideoInfo
         data.css('div#unavailable-submessage').text.strip.empty?
       end
 
-      def _set_data_from_api_impl(api_url = _api_url)
+      def _set_data_from_api_impl(api_url)
         uri = URI(api_url)
 
         unless uri.scheme
