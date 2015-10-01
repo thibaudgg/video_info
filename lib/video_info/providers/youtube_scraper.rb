@@ -1,5 +1,6 @@
 require 'oga'
 require 'open-uri'
+require 'net_http_timeout_errors'
 
 class VideoInfo
   module Providers
@@ -76,13 +77,17 @@ class VideoInfo
           uri.scheme = 'http'
         end
 
-        # handle fullscreen video URLs
-        if url.include?('.com/v/')
-          video_id = url.split('/v/')[1].split('?')[0]
-          new_url = 'https://www.youtube.com/watch?v=' + video_id
-          Oga.parse_html(open(new_url).read)
-        else
-          Oga.parse_html(open(uri.to_s, allow_redirections: :safe).read)
+        begin
+          # handle fullscreen video URLs
+          if url.include?('.com/v/')
+            video_id = url.split('/v/')[1].split('?')[0]
+            new_url = 'https://www.youtube.com/watch?v=' + video_id
+            Oga.parse_html(open(new_url).read)
+          else
+            Oga.parse_html(open(uri.to_s, allow_redirections: :safe).read)
+          end
+        rescue OpenURI::HTTPError, *NetHttpTimeoutErrors.all
+          raise VideoInfo::HttpError.new "unexpected network error while fetching information about the video"
         end
       end
 

@@ -87,16 +87,20 @@ class VideoInfo
       end
 
       def _set_data_from_api
-        url = URI('https://vk.com/al_video.php')
-        options['act'] = 'show'
-        options['al'] = '1'
-        options['video'] = "#{@video_owner}_#{@video_id}"
-        data = _make_request(url, options)
-        if data.index('Ошибка доступа')
-          # try second time
-          _make_request(url, options)
-        else
-          data
+        begin
+          url = URI('https://vk.com/al_video.php')
+          options['act'] = 'show'
+          options['al'] = '1'
+          options['video'] = "#{@video_owner}_#{@video_id}"
+          data = _make_request(url, options)
+          if data.index('Ошибка доступа')
+            # try second time
+            _make_request(url, options)
+          else
+            data
+          end
+        rescue OpenURI::HTTPError, *NetHttpTimeoutErrors.all
+          raise VideoInfo::HttpError.new "unexpected network error while fetching information about the video"
         end
       end
 

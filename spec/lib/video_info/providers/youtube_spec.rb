@@ -1,4 +1,5 @@
 require 'spec_helper'
+require 'webmock/rspec'
 
 describe VideoInfo::Providers::Youtube do
   describe ".usable?" do
@@ -485,6 +486,38 @@ describe VideoInfo::Providers::Youtube do
     describe '#title' do
       subject { super().title }
       it { is_expected.to eq 'Deafheaven - Sunbather' }
+    end
+  end
+
+  context "with valid video and connection timeout" do
+    subject { VideoInfo.new('https://www.youtube.com/watch?v=lExm5LELpP4') }
+
+    describe '#title' do
+      before do
+        @stubbed = stub_request(:get, "https://www.youtube.com/watch?v=lExm5LELpP4").to_timeout
+      end
+
+      after do
+        remove_request_stub(@stubbed) if @stubbed
+      end
+
+      it 'raises VideoInfo::HttpError exception' do
+        expect { subject.title }.to raise_error VideoInfo::HttpError
+      end
+    end
+  end
+
+  context "with valid video and OpenURI::HTTPError exception" do
+    subject { VideoInfo.new('https://www.youtube.com/watch?v=lExm5LELpP4') }
+
+    describe '#title' do
+      before do
+        stub_request(:get, "https://www.youtube.com/watch?v=lExm5LELpP4").to_raise(OpenURI::HTTPError.new("error", :nop))
+      end
+
+      it 'raises VideoInfo::HttpError exception' do
+        expect { subject.title }.to raise_error VideoInfo::HttpError
+      end
     end
   end
 end
