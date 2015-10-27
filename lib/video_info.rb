@@ -2,11 +2,23 @@ require 'video_info/version'
 require 'video_info/provider'
 require 'forwardable'
 require 'net/http'
+require 'logger'
 
 class VideoInfo
   class Error < StandardError; end
   class UrlError < Error; end
   class HttpError < Error; end
+
+  class << self
+    attr_writer :logger
+
+    def logger
+      @logger ||= Logger.new($stdout).tap do |lgr|
+        lgr.progname = name
+      end
+    end
+  end
+
   extend Forwardable
 
   PROVIDERS = %w[
