@@ -75,8 +75,23 @@ class VideoInfo
 
     def _set_data_from_api(api_url = _api_url)
       _set_data_from_api_impl(api_url)
-      rescue OpenURI::HTTPError, *NetHttpTimeoutErrors.all
-        raise VideoInfo::HttpError.new 'unexpected network error while fetching information about the video'
+    rescue OpenURI::HTTPError, *NetHttpTimeoutErrors.all => e
+      if e.instance_of?(OpenURI::HTTPError) &&
+         e.respond_to?(:io) &&
+         e.io.respond_to?(:status)
+        response_code = e.io.status[0]
+        if response_code == '400'
+          log_warn('your API key is probably invalid. Please verify it.')
+        end
+      end
+
+      msg = 'unexpected network error while
+            fetching information about the video'
+      raise VideoInfo::HttpError.new(msg)
+    end
+
+    def log_warn(message)
+      VideoInfo.logger.warn(message)
     end
 
     def _set_data_from_api_impl(api_url)

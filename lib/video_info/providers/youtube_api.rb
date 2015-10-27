@@ -34,7 +34,9 @@ class VideoInfo
       private
 
       def available?
-        data['items'].size > 0 rescue false
+        data['items'].size > 0
+      rescue VideoInfo::HttpError
+        false
       end
 
       def _api_base

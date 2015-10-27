@@ -36,6 +36,25 @@ describe VideoInfo::Providers::Youtube do
       end
     end
 
+    context 'with valid video and invalid API key' do
+      subject { VideoInfo.new('http://www.youtube.com/watch?v=mZqGqE0D0n4') }
+      let(:msg) { 'your API key is probably invalid. Please verify it.' }
+      before do
+        VideoInfo.provider_api_keys[:youtube] = 'invalid_key'
+      end
+
+      after do
+        VideoInfo.provider_api_keys[:youtube] = nil
+      end
+
+      describe '#available?' do
+        it 'logs warning message to alert user about invalid API key' do
+          expect(VideoInfo.logger).to receive(:warn).with(msg)
+          subject.title
+        end
+      end
+    end
+
     context "with 'video is unavailable' video", :vcr do
       subject { VideoInfo.new('http://www.youtube.com/watch?v=SUkXvWn1m7Q') }
 
