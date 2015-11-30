@@ -1,5 +1,6 @@
 require 'oga'
 require 'open-uri'
+require 'json'
 
 class VideoInfo
   module Providers
@@ -62,7 +63,35 @@ class VideoInfo
         meta_node_value('og:video:width').to_i
       end
 
+      def thumbnail_small
+        thumbnail_url.split('_')[0] + '_100x75.jpg'
+      end
+
+      def thumbnail_medium
+        thumbnail_url.split('_')[0] + '_200x150.jpg'
+      end
+
+      def thumbnail_large
+        thumbnail_url.split('_')[0] + '_640.jpg'
+      end
+
       private
+
+      def json_script
+        @json_script ||= JSON.parse(data.css('script').detect do |n|
+          type = n.attr('type')
+
+          if type.nil?
+            false
+          else
+            type.value == 'application/ld+json'
+          end
+        end.text)[0]
+      end
+
+      def thumbnail_url
+        @thumbnail_url ||= json_script['thumbnailUrl']
+      end
 
       def meta_nodes
         @meta_nodes ||= data.css('meta')
