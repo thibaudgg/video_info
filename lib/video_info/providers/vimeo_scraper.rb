@@ -18,6 +18,30 @@ class VideoInfo
         meta_node_value('og:description')
       end
 
+      def duration
+        nil
+      end
+
+      def keywords
+        keyword_elements = meta_nodes.find_all do |n|
+          property = n.attr('property')
+
+          if property.nil?
+            false
+          else
+            property.value == 'video:tag'
+          end
+        end
+
+        keywords = keyword_elements.map { |e| e.attr('content').value }
+
+        keywords_string = ''
+
+        keywords.each { |keyword| keywords_string << keyword << ', ' }
+
+        keywords_string[0..-3]
+      end
+
       def height
         meta_node_value('og:video:height').to_i
       end
