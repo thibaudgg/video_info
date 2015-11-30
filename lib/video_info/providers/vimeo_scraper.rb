@@ -18,6 +18,10 @@ class VideoInfo
         author_element.text
       end
 
+      def author_thumbnail
+        data.css('img.portrait').attr('src')[0].value
+      end
+
       def title
         meta_node_value('og:title')
       end
