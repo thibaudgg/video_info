@@ -5,9 +5,17 @@ class VideoInfo
   module Providers
     module VimeoScraper
       def author
-        author_element = data.css('a').detect { |n| n.attr('rel').value == 'author' }
+        author_element = data.css('a').detect do |n|
+          rel = n.attr('rel')
 
-        author_element.value
+          if rel.nil?
+            false
+          else
+            rel.value == 'author'
+          end
+        end
+
+        author_element.text
       end
 
       def title
