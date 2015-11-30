@@ -1,6 +1,10 @@
 require 'spec_helper'
 
 describe VideoInfo::Providers::Vimeo do
+  before(:all) do
+    VideoInfo.provider_api_keys = { vimeo: '6b66b015a3504793b4f541d878f46ff6' }
+  end
+
   describe '.usable?' do
     subject { VideoInfo::Providers::Vimeo.usable?(url) }
 
@@ -50,7 +54,7 @@ describe VideoInfo::Providers::Vimeo do
     end
 
     context "with 'this video does not exist' video", :vcr do
-      subject { VideoInfo.new('http://vimeo.com/593123111') }
+      subject { VideoInfo.new('http://vimeo.com/59312311') }
 
       describe '#available?' do
         it { is_expected.to_not be_available }

@@ -1,10 +1,15 @@
 require_relative 'vimeo_api'
+require_relative 'vimeo_scraper'
 
 class VideoInfo
   module Providers
     class Vimeo < Provider
       def initialize(url, options = {})
-        extend VimeoAPI
+        if VideoInfo.provider_api_keys[:vimeo].nil?
+          extend VimeoScraper
+        else
+          extend VimeoAPI
+        end
 
         super(url, options)
       end
