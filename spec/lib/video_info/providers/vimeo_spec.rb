@@ -1,6 +1,10 @@
 require 'spec_helper'
 
 describe VideoInfo::Providers::Vimeo do
+  before(:all) do
+    VideoInfo.provider_api_keys = { vimeo: nil }
+  end
+
   describe '.usable?' do
     subject { VideoInfo::Providers::Vimeo.usable?(url) }
 
