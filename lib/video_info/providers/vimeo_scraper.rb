@@ -32,7 +32,7 @@ class VideoInfo
       end
 
       def duration
-        nil
+        ISO8601::Duration.new(json_script['duration']).to_seconds.to_i
       end
 
       def keywords
