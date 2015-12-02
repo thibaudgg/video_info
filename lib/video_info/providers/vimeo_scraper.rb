@@ -31,6 +31,10 @@ class VideoInfo
         meta_node_value('og:description')
       end
 
+      def date
+        ISO8601::DateTime.new(json_script['uploadDate']).to_time
+      end
+
       def duration
         ISO8601::Duration.new(json_script['duration']).to_seconds.to_i
       end
