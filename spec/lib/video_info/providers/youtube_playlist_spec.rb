@@ -134,7 +134,7 @@ describe VideoInfo::Providers::YoutubePlaylist do
 
     describe '#videos' do
       subject { super().videos }
-      it { expect { subject}.to raise_error(NotImplementedError) }
+      it { expect { subject }.to raise_error(NotImplementedError) }
     end
 
     describe '#view_count' do
