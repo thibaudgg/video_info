@@ -160,7 +160,7 @@ describe VideoInfo::Providers::Vimeo do
 
     describe '#view_count' do
       subject { super().view_count }
-      it { is_expected.to be > 4000 }
+      it { expect { subject }.to raise_error(NotImplementedError) }
     end
   end
 

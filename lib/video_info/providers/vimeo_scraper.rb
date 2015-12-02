@@ -75,6 +75,10 @@ class VideoInfo
         thumbnail_url.split('_')[0] + '_640.jpg'
       end
 
+      def view_count
+        raise(NotImplementedError, 'To access view_count, you must provide an API key to VideoInfo.provider_api_keys')
+      end
+
       private
 
       def json_script
