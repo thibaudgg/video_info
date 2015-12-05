@@ -2,7 +2,7 @@ class VideoInfo
   module Providers
     class Aparat < Provider
       def self.usable?(url)
-        url =~ / (*.)(aparat\.com\/(?!v).*)/
+        url =~ /((.*)aparat\.com\/v\/(.*))/
       end
 
       def provider
