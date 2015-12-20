@@ -25,6 +25,7 @@ class VideoInfo
     Dailymotion Vkontakte Wistia
     Vimeo VimeoPlaylist
     Youtube YoutubePlaylist
+    Aparat
   ]
   PROVIDERS.each { |p| require "video_info/providers/#{p.downcase}" }
 

@@ -8,11 +8,11 @@ Gem::Specification.new do |s|
   s.version      = VideoInfo::VERSION
   s.license      = 'MIT'
 
-  s.author       = 'Thibaud Guillaume-Gentil'
+  s.author       = 'Mahdiar Golchin'
   s.email        = 'thibaud@thibaud.gg'
   s.homepage     = 'https://rubygems.org/gems/video_info'
-  s.summary      = 'Dailymotion, Vimeo, VK and YouTube info parser.'
-  s.description  = 'Get video info from Dailymotion, Vimeo, VK and YouTube url.'
+  s.summary      = 'Aparat,Dailymotion, Vimeo, VK and YouTube info parser.'
+  s.description  = 'Get video info from Aparat,Dailymotion, Vimeo, VK and YouTube url.'
 
   s.files        = `git ls-files`.split($/)
   s.test_files   = s.files.grep(%r{^spec/})
