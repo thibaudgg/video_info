@@ -2,7 +2,7 @@ require 'spec_helper'
 
 describe VideoInfo::Providers::Vimeo do
   before(:all) do
-    VideoInfo.provider_api_keys = { vimeo: nil }
+    VideoInfo.provider_api_keys = { }
   end
 
   describe '.usable?' do
@@ -120,12 +120,12 @@ describe VideoInfo::Providers::Vimeo do
 
     describe '#width' do
       subject { super().width }
-      it { is_expected.to eq 640 }
+      it { is_expected.to eq 1280 }
     end
 
     describe '#height' do
       subject { super().height }
-      it { is_expected.to eq 360 }
+      it { is_expected.to eq 720 }
     end
 
     describe '#date' do
