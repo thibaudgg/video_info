@@ -83,6 +83,10 @@ class VideoInfo
         raise(NotImplementedError, 'To access view_count, you must provide an API key to VideoInfo.provider_api_keys')
       end
 
+      def available?
+        super
+      end
+
       private
 
       def json_script
@@ -121,16 +125,18 @@ class VideoInfo
         end
       end
 
-      def available?
-        true
-      end
-
       def _set_data_from_api_impl(api_url)
-        Oga.parse_html(open(api_url, allow_redirections: :safe).read)
+        Oga.parse_html(open(api_url.to_s, allow_redirections: :safe).read)
       end
 
       def _api_url
-        @url
+        uri = URI.parse(@url)
+        uri.scheme = 'https'
+        uri.to_s
+      end
+
+      def _api_path
+        _api_url
       end
     end
   end
