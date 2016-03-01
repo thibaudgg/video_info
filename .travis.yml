@@ -9,5 +9,4 @@ matrix:
     - rvm: rbx
     - rvm: jruby
 before_install:
-  - gem update
-  - gem install bundler
+  - gem update bundler
