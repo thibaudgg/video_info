@@ -61,7 +61,7 @@ class VideoInfo
       end
 
       def view_count
-        json_info['interactionCount'].to_i
+        json_info['interactionCount']
       end
 
       def available?
