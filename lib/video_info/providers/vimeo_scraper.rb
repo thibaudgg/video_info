@@ -6,17 +6,7 @@ class VideoInfo
   module Providers
     module VimeoScraper
       def author
-        author_element = data.css('a').detect do |n|
-          rel = n.attr('rel')
-
-          if rel.nil?
-            false
-          else
-            rel.value == 'author'
-          end
-        end
-
-        author_element.text
+       json_script['author']['name']
       end
 
       def author_thumbnail
