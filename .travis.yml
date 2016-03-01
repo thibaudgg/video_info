@@ -8,3 +8,6 @@ matrix:
   allow_failures:
     - rvm: rbx
     - rvm: jruby
+before_install:
+  - gem update
+  - gem install bundler
