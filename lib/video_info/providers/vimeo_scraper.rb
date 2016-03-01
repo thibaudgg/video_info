@@ -15,16 +15,17 @@ class VideoInfo
       end
 
       def available?
-        i = super
+        is_available = super
 
-        if i
+        if is_available
           page_header = data.css('#page_header')
 
           if page_header.text == "\n Private Video\n "
-            i = false
+            is_available = false
           end
         end
-        i
+
+        is_available
       end
 
       def title
