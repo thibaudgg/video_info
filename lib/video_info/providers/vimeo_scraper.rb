@@ -10,7 +10,7 @@ class VideoInfo
       end
 
       def author_thumbnail
-        d = data.css('script')[6].text.split('window.vimeo.clip_page_config =')[1]
+        d = data.css('script')[5].text.split('window.vimeo.clip_page_config =')[1]
         JSON.parse(d.split(";\n")[0])['owner']['portrait']['src']
       end
 
