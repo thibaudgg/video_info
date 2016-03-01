@@ -61,7 +61,7 @@ class VideoInfo
       end
 
       def view_count
-        raise(NotImplementedError, 'To access view_count, you must provide an API key to VideoInfo.provider_api_keys')
+        json_info['interactionCount'].to_i
       end
 
       def available?
