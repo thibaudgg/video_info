@@ -8,8 +8,13 @@ describe VideoInfo::Providers::YoutubePlaylist do
   describe ".usable?" do
     subject { VideoInfo::Providers::YoutubePlaylist.usable?(url) }
 
-    context "with youtube.com/playlist url" do
+    context "with youtube.com/playlist?p= url" do
       let(:url) { 'http://www.youtube.com/playlist?p=PLA575C81A1FBC04CF' }
+      it { is_expected.to be_truthy }
+    end
+
+    context "with youtube.com/playlist?list= url" do
+      let(:url) { 'http://www.youtube.com/playlist?list=PLA575C81A1FBC04CF' }
       it { is_expected.to be_truthy }
     end
 
@@ -40,6 +45,15 @@ describe VideoInfo::Providers::YoutubePlaylist do
       describe '#available?' do
         subject { super().available? }
         it { is_expected.to be_falsey }
+      end
+    end
+
+    context "with &list= url", :vcr do
+      subject { VideoInfo.new('http://www.youtube.com/playlist?list=PLA575C81A1FBC04CF') }
+
+      describe '#available?' do
+        subject { super().available? }
+        it { is_expected.to be_truthy }
       end
     end
   end

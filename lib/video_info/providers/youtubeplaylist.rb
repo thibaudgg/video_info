@@ -48,7 +48,7 @@ class VideoInfo
       private
 
       def _url_regex
-        /youtube.com\/playlist\?p=(\S*)|youtube.com\/embed\/videoseries\?list=([a-zA-Z0-9-]*)/
+        /youtube.com\/playlist\?p=(\S*)|youtube.com\/playlist\?list=(\S*)|youtube.com\/embed\/videoseries\?list=([a-zA-Z0-9-]*)/
       end
     end
   end
