@@ -14,6 +14,19 @@ class VideoInfo
         JSON.parse(d.split(";\n")[0])['owner']['portrait']['src']
       end
 
+      def available?
+        i = super
+
+        if i
+          page_header = data.css('#page_header')
+
+          if page_header.text == "\n Private Video\n "
+            i = false
+          end
+        end
+        i
+      end
+
       def title
         meta_node_value('og:title')
       end
@@ -62,10 +75,6 @@ class VideoInfo
 
       def view_count
         json_info['interactionCount']
-      end
-
-      def available?
-        super
       end
 
       private
