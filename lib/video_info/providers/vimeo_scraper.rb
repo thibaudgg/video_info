@@ -6,7 +6,7 @@ class VideoInfo
   module Providers
     module VimeoScraper
       def author
-       json_script['author']['name']
+       json_info['author']['name']
       end
 
       def author_thumbnail
@@ -23,31 +23,21 @@ class VideoInfo
       end
 
       def date
-        ISO8601::DateTime.new(json_script['uploadDate']).to_time
+        upload_date = json_info['uploadDate']
+        ISO8601::DateTime.new(upload_date).to_time
       end
 
       def duration
-        ISO8601::Duration.new(json_script['duration']).to_seconds.to_i
+        duration = json_info['duration']
+        ISO8601::Duration.new(duration).to_seconds.to_i
       end
 
       def keywords
-        keyword_elements = meta_nodes.find_all do |n|
-          property = n.attr('property')
+        keywords_str = ''
 
-          if property.nil?
-            false
-          else
-            property.value == 'video:tag'
-          end
-        end
+        json_info['keywords'].each { |keyword| keywords_str << keyword << ", " }
 
-        keywords = keyword_elements.map { |e| e.attr('content').value }
-
-        keywords_string = ''
-
-        keywords.each { |keyword| keywords_string << keyword << ', ' }
-
-        keywords_string[0..-3]
+        keywords_str.chop.chop # remove trailing ", "
       end
 
       def height
@@ -80,8 +70,8 @@ class VideoInfo
 
       private
 
-      def json_script
-        @json_script ||= JSON.parse(data.css('script').detect do |n|
+      def json_info
+        @json_info ||= JSON.parse(data.css('script').detect do |n|
           type = n.attr('type')
 
           if type.nil?
@@ -93,7 +83,7 @@ class VideoInfo
       end
 
       def thumbnail_url
-        @thumbnail_url ||= json_script['thumbnailUrl']
+        @thumbnail_url ||= json_info['thumbnailUrl']
       end
 
       def meta_nodes
