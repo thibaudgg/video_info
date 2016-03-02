@@ -83,12 +83,19 @@ class VideoInfo
           new_url = 'https://www.youtube.com/watch?v=' + video_id
           Oga.parse_html(open(new_url).read)
         else
-          Oga.parse_html(open(uri.to_s, allow_redirections: :safe).read)
+          Oga.parse_html(open(uri.to_s).read)
         end
       end
 
       def _api_url
-        @url
+        uri = URI.parse(@url)
+        if uri.scheme
+          uri.scheme = 'https'
+        else
+          uri.path = uri.path.prepend('//')
+          uri.scheme = 'https'
+        end
+        uri.to_s
       end
     end
   end

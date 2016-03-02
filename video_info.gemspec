@@ -24,7 +24,6 @@ Gem::Specification.new do |s|
   s.add_dependency 'htmlentities', '~> 4.3'
   s.add_dependency 'iso8601', '~> 0.9'
   s.add_dependency 'oga', '~> 2.2'
-  s.add_dependency 'open_uri_redirections', '~> 0.2'
   s.add_dependency 'net_http_timeout_errors', '~> 0.3.0'
 
   s.add_development_dependency 'bundler', '>= 1.3.5'

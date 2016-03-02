@@ -1,6 +1,4 @@
 require 'oga'
-require 'open-uri'
-require 'open_uri_redirections'
 
 class VideoInfo
   module Providers
