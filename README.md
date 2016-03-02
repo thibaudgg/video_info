@@ -2,7 +2,7 @@
 
 [![Gem Version](https://badge.fury.io/rb/video_info.svg)](http://badge.fury.io/rb/video_info) [![Build Status](https://travis-ci.org/thibaudgg/video_info.svg?branch=master)](https://travis-ci.org/thibaudgg/video_info) [![Dependency Status](https://gemnasium.com/thibaudgg/video_info.svg)](https://gemnasium.com/thibaudgg/video_info) [![Code Climate](https://codeclimate.com/github/thibaudgg/video_info.svg)](https://codeclimate.com/github/thibaudgg/video_info) [![Coverage Status](https://coveralls.io/repos/thibaudgg/video_info/badge.svg?branch=master)](https://coveralls.io/r/thibaudgg/video_info)
 
-Simple Ruby Gem to get video info from Dailymotion, VK, Vimeo (with playlist), Wistia and YouTube (with playlist).
+Simple Ruby Gem to get video info from Dailymotion, VK, Vimeo, Wistia and YouTube (with playlist).
 
 Tested against Ruby 2.2.0 and the latest versions of JRuby & Rubinius.
 
@@ -20,9 +20,7 @@ Usage
 
 Youtube and Vimeo have recently updated their APIs to require API keys.
 
-A scraper has been implemented for Youtube. However, the scraper can only get the date the video was posted, while the API is able to get the date and the exact time the video was posted. You may also wish to use the API to protect against potential HTML changes that could break the scraper.
-
-No scraper has been implemented for Vimeo yet.
+Scrapers has been implemented for both Youtube and Vimeo. However, the Youtube scraper can only get the date the video was posted, while the API is able to get the date and the exact time the video was posted. You may also wish to use the API to protect against potential HTML changes that could break the scrapesr.
 
 To get a Youtube API key, [follow the instructions here](https://developers.google.com/youtube/registering_an_application)
 
@@ -105,19 +103,6 @@ playlist = VideoInfo.new("http://www.youtube.com/playlist?p=PL9hW1uS6HUftLdHI6RI
 # playlist.embed_url           => 'http://www.youtube.com/embed/videoseries?list=PL9hW1uS6HUftLdHI6RIsaf-iXTm09qnEr'
 # playlist.embed_code          => "<iframe src='//www.youtube.com/embed/videoseries?list=PL9hW1uS6HUftLdHI6RIsaf-iXTm09qnEr' frameborder='0' allowfullscreen='allowfullscreen'></iframe>"
 # playlist.videos              => [VideoInfo.new('http://www.youtube.com/watch?v=_Bt3-WsHfB0'), VideoInfo.new('http://www.youtube.com/watch?v=9g2U12SsRns'), VideoInfo.new('http://www.youtube.com/watch?v=8b0aEoxqqC0'), VideoInfo.new('http://www.youtube.com/watch?v=6c3mHikRz0I'), VideoInfo.new('http://www.youtube.com/watch?v=OQVHWsTHcoc')]
-
-playlist = VideoInfo.new("http://vimeo.com/album/2755718")
-# playlist.available?          => true
-# playlist.playlist_id         => '2755718'
-# playlist.provider            => 'Vimeo'
-# playlist.title               => 'The Century Of Self'
-# playlist.thumbnail_small     => 'http://b.vimeocdn.com/ts/443/595/443595474_100.jpg'
-# playlist.thumbnail_medium    => 'http://b.vimeocdn.com/ts/443/595/443595474_200.jpg'
-# playlist.thumbnail_large     => 'http://b.vimeocdn.com/ts/443/595/443595474_640.jpg'
-# playlist.embed_url           => 'player.vimeo.com/hubnut/album/2755718'
-# playlist.embed_code          => "<iframe src='//player.vimeo.com/hubnut/album/2755718?autoplay=0&byline=0&portrait=0&title=0' frameborder='0'></iframe>"
-# playlist.videos              => [VideoInfo.new('http://vimeo.com/67977038'), VideoInfo.new('http://vimeo.com/68843810'), VideoInfo.new('http://vimeo.com/69949597'), VideoInfo.new('http://vimeo.com/70388245')]
-```
 
 Options
 -------
