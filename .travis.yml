@@ -1,4 +1,5 @@
 language: ruby
+sudo: false
 bundler_args: --without tool
 rvm:
   - 2.2.0
