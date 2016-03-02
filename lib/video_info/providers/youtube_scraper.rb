@@ -70,31 +70,25 @@ class VideoInfo
       end
 
       def _set_data_from_api_impl(api_url)
-        uri = URI(api_url)
-
-        unless uri.scheme
-          uri.path = uri.path.prepend('//')
-          uri.scheme = 'http'
-        end
-
         # handle fullscreen video URLs
         if url.include?('.com/v/')
           video_id = url.split('/v/')[1].split('?')[0]
           new_url = 'https://www.youtube.com/watch?v=' + video_id
           Oga.parse_html(open(new_url).read)
         else
-          Oga.parse_html(open(uri.to_s).read)
+          Oga.parse_html(open(api_url).read)
         end
       end
 
       def _api_url
         uri = URI.parse(@url)
-        if uri.scheme
-          uri.scheme = 'https'
-        else
+
+        unless uri.scheme
           uri.path = uri.path.prepend('//')
-          uri.scheme = 'https'
         end
+
+        uri.scheme = 'https'
+
         uri.to_s
       end
     end
