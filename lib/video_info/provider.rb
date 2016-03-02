@@ -1,5 +1,5 @@
 require 'open-uri'
-require 'multi_json'
+require 'json'
 require 'addressable/uri'
 
 class VideoInfo
@@ -96,7 +96,7 @@ class VideoInfo
 
     def _set_data_from_api_impl(api_url)
       uri = open(api_url, options)
-      MultiJson.load(uri.read)
+      JSON.load(uri.read)
     end
 
     def _not_openuri_option_symbol?(key)
