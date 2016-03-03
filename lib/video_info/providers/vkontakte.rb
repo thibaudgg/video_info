@@ -1,5 +1,5 @@
 # encoding: UTF-8
-require 'htmlentities'
+require 'cgi'
 require 'net/http'
 
 class VideoInfo
@@ -25,7 +25,7 @@ class VideoInfo
 
       def description
         content = data[/"desc":"(.*?)",/, 1]
-        HTMLEntities.new.decode(content)
+        CGI.unescape_html(content).gsub('&nbsp;', ' ')
       end
       alias_method :keywords, :description
 
