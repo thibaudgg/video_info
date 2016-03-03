@@ -1,6 +1,6 @@
 require 'open-uri'
 require 'json'
-require 'addressable/uri'
+require 'uri'
 
 class VideoInfo
   class Provider
@@ -145,9 +145,7 @@ class VideoInfo
     end
 
     def _hash_to_params(hash)
-      uri = Addressable::URI.new
-      uri.query_values = hash
-      uri.query
+      URI.encode_www_form(hash)
     end
   end
 end

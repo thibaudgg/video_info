@@ -95,7 +95,7 @@ describe VideoInfo::Providers::Vimeo do
 
     describe '#embed_code' do
       subject { super().embed_code }
-      it { is_expected.to eq '<iframe src="//player.vimeo.com/video/898029?autoplay=0&byline=0&portrait=0&title=0" frameborder="0"></iframe>' }
+      it { is_expected.to eq '<iframe src="//player.vimeo.com/video/898029?title=0&byline=0&portrait=0&autoplay=0" frameborder="0"></iframe>' }
     end
 
     describe '#title' do
