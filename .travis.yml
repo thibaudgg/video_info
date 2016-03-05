@@ -9,5 +9,7 @@ matrix:
   allow_failures:
     - rvm: rbx
     - rvm: jruby-9.0.4.0
+jdk:
+  - oraclejdk8
 before_install:
   - gem update bundler
