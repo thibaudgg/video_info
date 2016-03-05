@@ -3,11 +3,11 @@ sudo: false
 bundler_args: --without tool
 rvm:
   - 2.2.0
-  - jruby
+  - jruby-9.0.4.0
   - rbx
 matrix:
   allow_failures:
     - rvm: rbx
-    - rvm: jruby
+    - rvm: jruby-9.0.4.0
 before_install:
   - gem update bundler
