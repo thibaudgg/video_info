@@ -10,3 +10,7 @@ matrix:
   allow_failures:
     - rvm: rbx-2
     - rvm: jruby-head
+jdk:
+  - oraclejdk8
+before_install:
+  - gem update bundler
