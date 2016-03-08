@@ -8,7 +8,7 @@ class VideoInfo
       def date
         date = itemprop_node_value('datePublished')
 
-        Time.parse(date) unless !date
+        Time.parse(date) if date
       end
 
       def description
@@ -28,7 +28,7 @@ class VideoInfo
       def keywords
         value = meta_node_value('keywords')
 
-        value.split(', ') unless !value
+        value.split(', ') if value
       end
 
       def title
@@ -58,7 +58,7 @@ class VideoInfo
           node = meta_nodes.detect do |m|
             itemprop_attr = m.attr('itemprop')
 
-            itemprop_attr.value == name unless !itemprop_attr
+            itemprop_attr.value == name if itemprop_attr
           end
 
           node.attr('content').value

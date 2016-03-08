@@ -28,13 +28,13 @@ class VideoInfo
       end
 
       def view_count
-        _video_statistics['viewCount'].to_i rescue 0
+        _video_statistics['viewCount'].to_i
       end
 
       private
 
       def available?
-        data['items'].size > 0
+        !data['items'].empty?
       rescue VideoInfo::HttpError
         false
       end
@@ -44,7 +44,9 @@ class VideoInfo
       end
 
       def _api_path
-        "/youtube/v3/videos?id=#{video_id}&part=snippet,statistics,contentDetails&fields=items(id,snippet,statistics,contentDetails)&key=#{api_key}"
+        "/youtube/v3/videos?id=#{video_id}" \
+        '&part=snippet,statistics,contentDetails&fields=' \
+        "items(id,snippet,statistics,contentDetails)&key=#{api_key}"
       end
 
       def _api_url

@@ -56,11 +56,11 @@ class VideoInfo
       end
 
       def _url_regex
-        /dai(?:\.ly|lymotion\.com\/(?:embed\/)?video)\/([a-zA-Z0-9]*)/
+        %r{dai(?:\.ly|lymotion\.com\/(?:embed\/)?video)\/([a-zA-Z0-9]*)}
       end
 
       def _api_base
-        "api.dailymotion.com"
+        'api.dailymotion.com'
       end
 
       def _api_path
@@ -68,7 +68,10 @@ class VideoInfo
       end
 
       def _api_url
-        "https://#{_api_base}#{_api_path}?fields=id,title,description,duration,created_time,url,views_total,tags,thumbnail_url,thumbnail_720_url,thumbnail_240_url,thumbnail_60_url"
+        "https://#{_api_base}#{_api_path}?" \
+        'fields=id,title,description,duration,created_time,' \
+        'url,views_total,tags,thumbnail_url,thumbnail_720_url,' \
+        'thumbnail_240_url,thumbnail_60_url'
       end
 
       def _default_iframe_attributes

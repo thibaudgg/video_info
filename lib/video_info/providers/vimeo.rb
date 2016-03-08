@@ -15,7 +15,7 @@ class VideoInfo
       end
 
       def self.usable?(url)
-        url =~ /(vimeo\.com\/(?!album|hubnut\/album).*)/
+        url =~ %r{(vimeo\.com\/(?!album|hubnut\/album).*)}
       end
 
       def provider
@@ -29,12 +29,12 @@ class VideoInfo
       private
 
       def _url_regex
-        /.*\.com&&
+        %r{.*\.com&&
         |\/(?:(?:groups\/[^\/]+\/videos\/)
         |(?:ondemand|channels)(?:(?:\/less\/)
         |(?:user[0-9]+\/review\/)?([0-9]+).*
         |(?:\/\w*\/))|(?:video\/))?([0-9]+).*$
-        /x
+        }x
       end
 
       def _default_iframe_attributes

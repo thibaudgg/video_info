@@ -27,7 +27,8 @@ class VideoInfo
       end
 
       def author_thumbnail(width = 75)
-        "https://i.vimeocdn.com/portrait/#{author_thumbnail_id}_#{width}x#{width}.jpg"
+        'https://i.vimeocdn.com/portrait/' \
+        "#{author_thumbnail_id}_#{width}x#{width}.jpg"
       end
 
       def thumbnail_id
@@ -36,7 +37,11 @@ class VideoInfo
 
       def thumbnail(width = 200, height = nil)
         base_uri = "https://i.vimeocdn.com/video/#{thumbnail_id}"
-        height ? base_uri + "_#{width}x#{height}.jpg" : base_uri + "_#{width}.jpg"
+        if height
+          base_uri + "_#{width}x#{height}.jpg"
+        else
+          base_uri + "_#{width}.jpg"
+        end
       end
 
       def thumbnail_small
@@ -103,7 +108,7 @@ class VideoInfo
       end
 
       def _parse_picture_id(uri)
-        /\/pictures\/(\d+)/.match(uri)[1]
+        %r{\/pictures\/(\d+)}.match(uri)[1]
       end
     end
   end

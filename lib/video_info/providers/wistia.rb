@@ -36,7 +36,8 @@ class VideoInfo
       private
 
       def _url_regex
-        /(?:.*)(?:wistia.com|wi.st|wistia.net)\/(?:embed\/)?(?:medias\/)?(?:iframe\/)?(.+)/
+        %r{(?:.*)(?:wistia.com|wi.st|wistia.net)
+           \/(?:embed\/)?(?:medias\/)?(?:iframe\/)?(.+)}x
       end
 
       def _api_base
