@@ -16,7 +16,8 @@ class VideoInfo
       end
 
       def self.usable?(url)
-        url =~ /(youtube\.com\/(?!playlist|embed\/videoseries).*)|(youtu\.be)/
+        url =~ %r{(youtube\.com\/(?!playlist|embed\/videoseries).*)|
+                  (youtu\.be)}x
       end
 
       def provider
@@ -46,7 +47,8 @@ class VideoInfo
       private
 
       def _url_regex
-        /(?:youtube(?:-nocookie)?\.com\/(?:[^\/]+\/.+\/|(?:v|e(?:mbed)?)\/|.*[?&]v=)|youtu\.be\/)([^"&?\/ ]{11})/i
+        %r{(?:youtube(?:-nocookie)?\.com\/(?:[^\/]+\/.+\/|(?:v|e(?:mbed)?)\/|
+           .*[?&]v=)|youtu\.be\/)([^"&?\/ ]{11})}x
       end
 
       def _default_iframe_attributes
