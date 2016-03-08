@@ -11,6 +11,22 @@ class VideoInfo
 
   class << self
     attr_writer :logger
+    attr_accessor :disable_providers, :provider_api_keys
+
+    def disable_providers
+      @disable_providers || []
+    end
+
+    def provider_api_keys
+      @provider_api_keys || {}
+    end
+
+    def provider_api_keys=(api_keys)
+      api_keys.keys.each do |key|
+        raise ArgumentError, 'Key must be a symbol!' unless key.is_a?(Symbol)
+      end
+      @provider_api_keys = api_keys
+    end
 
     def logger
       @logger ||= Logger.new($stdout).tap do |lgr|
@@ -58,29 +74,6 @@ class VideoInfo
 
   def ==(other)
     url == other.url && video_id == other.video_id
-  end
-
-  @@provider_api_keys = {}
-
-  def self.provider_api_keys
-    @@provider_api_keys
-  end
-
-  def self.provider_api_keys=(api_keys)
-    api_keys.keys.each do |key|
-      raise ArgumentError, 'Key must be a symbol!' unless key.is_a?(Symbol)
-    end
-    @@provider_api_keys = api_keys
-  end
-
-  @@disable_providers = []
-
-  def self.disable_providers
-    @@disable_providers
-  end
-
-  def self.disable_providers=(providers)
-    @@disable_providers = providers
   end
 
   def self.disabled_provider?(provider)
