@@ -18,7 +18,8 @@ class VideoInfo
       end
 
       def self.usable?(url)
-        url =~ /((youtube\.com)\/playlist)|((youtube\.com)\/embed\/videoseries)/
+        url =~ %r{((youtube\.com)\/playlist)|
+                  ((youtube\.com)\/embed\/videoseries)}x
       end
 
       def date
@@ -48,7 +49,9 @@ class VideoInfo
       private
 
       def _url_regex
-        /youtube.com\/playlist\?p=(\S*)|youtube.com\/playlist\?list=(\S*)|youtube.com\/embed\/videoseries\?list=([a-zA-Z0-9-]*)/
+        %r{youtube.com\/playlist\?p=(\S*)|
+          youtube.com\/playlist\?list=(\S*)|
+          youtube.com\/embed\/videoseries\?list=([a-zA-Z0-9-]*)}x
       end
     end
   end
