@@ -6,12 +6,15 @@ class VideoInfo
   module Providers
     module VimeoScraper
       def author
-       json_info['author']['name']
+        json_info['author']['name']
       end
 
       def author_thumbnail
-        d = data.css('script')[5].text.split('window.vimeo.clip_page_config =')[1]
-        JSON.parse(d.split(";\n")[0])['owner']['portrait']['src']
+        split_point = 'window.vimeo.clip_page_config ='
+        script_text = data.css('script')[5].text
+        split_script_text = script_text.split(split_point)[1]
+        parsed_data = JSON.parse(split_script_text.split(";\n")[0])
+        parsed_data['owner']['portrait']['src']
       end
 
       def available?
@@ -49,7 +52,7 @@ class VideoInfo
       def keywords
         keywords_str = ''
 
-        json_info['keywords'].each { |keyword| keywords_str << keyword << ", " }
+        json_info['keywords'].each { |keyword| keywords_str << keyword << ', ' }
 
         keywords_str.chop.chop # remove trailing ", "
       end
@@ -132,4 +135,3 @@ class VideoInfo
     end
   end
 end
-
