@@ -14,8 +14,9 @@ class VideoInfo
 
       def self.usable?(url)
         url.strip!
-        vkontakte = !!(url =~ /\A(http|https):\/\/(vk\.com)|(vkontakte\.ru)\z/)
-        valid = !!(url =~ /\A#{URI::regexp(['http', 'https'])}\z/)
+        vkontakte = !!(url =~ %r{\A(http|https):\/\/(vk\.com)|
+                                 (vkontakte\.ru)\z})
+        valid = !!(url =~ /\A#{URI.regexp(%w[http https])}\z/)
         vkontakte && valid
       end
 
@@ -38,11 +39,11 @@ class VideoInfo
       end
 
       def height
-        data[/url(\d+)/,1].to_i
+        data[/url(\d+)/, 1].to_i
       end
 
       def title
-        data[/\="mv_title">(.*)<\/div>/, 1].gsub(' | ВКонтакте', '')
+        data[%r{\="mv_title">(.*)<\/div>}, 1].gsub(' | ВКонтакте', '')
       end
 
       def view_count
@@ -56,11 +57,11 @@ class VideoInfo
         if iframe_src
           # it may be youtube video
           VideoInfo::Providers::Youtube.new(
-            URI.unescape(iframe_src.gsub(/\\/, ''))
+            URI.unescape(iframe_src.delete(/\\/, ''))
           ).embed_url
         else
-          "//vk.com/video_ext.php?oid=#{video_owner}" +
-            "&id=#{video_id}&hash=#{_data_hash}"
+          "//vk.com/video_ext.php?oid=#{video_owner}" \
+          "&id=#{video_id}&hash=#{_data_hash}"
         end
       rescue
         # or rutube video
@@ -101,7 +102,7 @@ class VideoInfo
 
       def _error_found?(response)
         title = response.body[
-          /<title>(.*)<\/title>/, 1
+          %r{<title>(.*)<\/title>}, 1
         ].force_encoding(
           'cp1251'
         ).encode(
@@ -151,7 +152,8 @@ class VideoInfo
       end
 
       def _url_regex
-        /(?:vkontakte\.ru\/video|vk\.com\/video|vk\.com\/.*?video)(-?\d+_\d+)/i
+        %r{(?:vkontakte\.ru\/video|vk\.com\/video
+            |vk\.com\/.*?video)(-?\d+_\d+)}i
       end
 
       def _default_iframe_attributes
