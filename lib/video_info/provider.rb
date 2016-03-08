@@ -12,7 +12,7 @@ class VideoInfo
       _set_video_id_from_url
     end
 
-    def self.usable?(url)
+    def self.usable?(_url)
       raise NotImplementedError.new(
         'Provider class must implement .usable? public method'
       )
@@ -20,12 +20,12 @@ class VideoInfo
 
     def embed_code(options = {})
       iframe_attributes = options.fetch(:iframe_attributes, {})
-      iframe_attrs = ["src=\"#{_embed_url(options)}\"", "frameborder=\"0\""]
+      iframe_attrs = ["src=\"#{_embed_url(options)}\"", 'frameborder="0"']
       iframe_attrs << _hash_to_attributes(
         _default_iframe_attributes.merge(iframe_attributes)
       )
 
-      "<iframe #{iframe_attrs.reject(&:empty?).join(" ")}></iframe>"
+      "<iframe #{iframe_attrs.reject(&:empty?).join(' ')}></iframe>"
     end
 
     def data
@@ -42,7 +42,7 @@ class VideoInfo
       uri = URI.parse(_api_url)
       http = Net::HTTP.new(uri.host, uri.port)
 
-      if (uri.scheme == 'https')
+      if uri.scheme == 'https'
         _https_response_code(http)
       else
         _http_response_code(http)
