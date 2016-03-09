@@ -11,6 +11,10 @@ class VideoInfo
         Time.parse(date) if date
       end
 
+      def author
+        data.css('.yt-user-info')[0].css('a').text
+      end
+
       def description
         meta_node_value('description')
       end
