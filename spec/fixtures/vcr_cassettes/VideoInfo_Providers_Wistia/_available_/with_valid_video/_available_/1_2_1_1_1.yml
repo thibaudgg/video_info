@@ -1,0 +1,73 @@
+---
+http_interactions:
+- request:
+    method: head
+    uri: http://fast.wistia.com/oembed?url=http://home.wistia.com/medias/rs1me54mpw
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - VideoInfo/2.6.0
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.8.1
+      Content-Type:
+      - application/json; charset=utf-8
+      Status:
+      - 200 OK
+      X-Content-Type-Options:
+      - nosniff
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, no-cache
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      P3p:
+      - CP="CURi ADMa DEVa IVAa IVDa CONi OUR IND DSP CAO COR"
+      X-Request-Id:
+      - 26bcfe700107e52888ce6f999eb65efc
+      X-Runtime:
+      - '0.044791'
+      X-Rack-Cache:
+      - miss
+      Via:
+      - 1.1 varnish
+      - 1.1 varnish
+      Fastly-Debug-Digest:
+      - 0cb2dce10e342c18e932e8428741b0b03e8678383f77a7e425ccd2c0cd233ec0
+      Content-Length:
+      - '735'
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Wed, 09 Mar 2016 19:20:53 GMT
+      Age:
+      - '7500'
+      Connection:
+      - keep-alive
+      X-Served-By:
+      - cache-ord1732-ORD, cache-sjc3133-SJC
+      X-Cache:
+      - HIT, MISS
+      X-Cache-Hits:
+      - 1, 0
+      X-Timer:
+      - S1457551253.797064,VS0,VE55
+      Vary:
+      - Accept-Encoding,X-Forwarded-Proto
+      Strict-Transport-Security:
+      - max-age=0
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Wed, 09 Mar 2016 19:20:53 GMT
+recorded_with: VCR 3.0.1

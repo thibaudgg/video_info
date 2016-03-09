@@ -1,0 +1,122 @@
+---
+http_interactions:
+- request:
+    method: head
+    uri: https://api.vimeo.com/videos/59312311
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - VideoInfo/2.6.0
+      Authorization:
+      - bearer 6b66b015a3504793b4f541d878f46ff6
+      Accept:
+      - application/vnd.vimeo.*+json;version=3.2
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Server:
+      - nginx
+      Content-Type:
+      - application/vnd.vimeo.error+json
+      Cache-Control:
+      - no-cache, max-age=315360000
+      Strict-Transport-Security:
+      - max-age=15120000; includeSubDomains; preload
+      Expires:
+      - Sat, 07 Mar 2026 19:19:37 GMT
+      Via:
+      - 1.1 varnish
+      - 1.1 varnish
+      Fastly-Debug-Digest:
+      - fbfaf22e1f15c56ce649913552562d4904264cca46246316e7b373514c1b3c90
+      Content-Length:
+      - '50'
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Wed, 09 Mar 2016 19:19:37 GMT
+      Age:
+      - '0'
+      Connection:
+      - keep-alive
+      X-Served-By:
+      - cache-iad2124-IAD, cache-sjc3135-SJC
+      X-Cache:
+      - MISS, MISS
+      X-Cache-Hits:
+      - 0, 0
+      X-Timer:
+      - S1457551177.043016,VS0,VE131
+      Vary:
+      - Accept,Vimeo-Client-Id,Accept-Encoding
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Wed, 09 Mar 2016 19:19:37 GMT
+- request:
+    method: head
+    uri: https://vimeo.com/593123111
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - VideoInfo/2.6.0
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Server:
+      - nginx
+      Content-Type:
+      - text/html; charset=UTF-8
+      Expires:
+      - Wed, 09 Mar 2016 07:19:44 GMT
+      X-Frame-Options:
+      - sameorigin
+      Via:
+      - 1.1 varnish
+      - 1.1 varnish
+      - 1.1 varnish
+      Cache-Control:
+      - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+      X-Varnish-Cache:
+      - '0'
+      X-Vserver:
+      - dfvimeowebproxy1
+      Fastly-Debug-Digest:
+      - 8b8801f83b493c820384220ea9a4251b5d16adecdb24a485a147c4b5e9d999e7
+      Content-Length:
+      - '35913'
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Wed, 09 Mar 2016 19:19:44 GMT
+      Age:
+      - '0'
+      Connection:
+      - keep-alive
+      X-Served-By:
+      - cache-iad2129-IAD, cache-sjc3644-SJC
+      X-Cache:
+      - MISS, MISS
+      X-Cache-Hits:
+      - 0, 0
+      X-Timer:
+      - S1457551183.968440,VS0,VE182
+      Vary:
+      - Accept-Encoding
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Wed, 09 Mar 2016 19:19:44 GMT
+recorded_with: VCR 3.0.1

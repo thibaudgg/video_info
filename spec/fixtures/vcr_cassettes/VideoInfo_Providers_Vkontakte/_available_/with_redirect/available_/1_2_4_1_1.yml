@@ -1,0 +1,168 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://vk.com/polinka_zh
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 302
+      message: Found
+    headers:
+      Server:
+      - Apache
+      Date:
+      - Wed, 09 Mar 2016 19:20:03 GMT
+      Content-Type:
+      - text/html; charset=windows-1251
+      Content-Length:
+      - '20'
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - PHP/3.21958
+      Set-Cookie:
+      - remixlang=3; expires=Mon, 06 Mar 2017 12:10:06 GMT; path=/; domain=.vk.com
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - no-store
+      Location:
+      - http://m.vk.com/polinka_zh
+    body:
+      encoding: ASCII-8BIT
+      string: ''
+    http_version: 
+  recorded_at: Wed, 09 Mar 2016 19:20:03 GMT
+- request:
+    method: get
+    uri: http://m.vk.com/polinka_zh
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - m.vk.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Apache
+      Date:
+      - Wed, 09 Mar 2016 19:20:03 GMT
+      Content-Type:
+      - text/html; charset=utf-8
+      Content-Length:
+      - '2350'
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - PHP/3.21958
+      Set-Cookie:
+      - remixlang=3; expires=Mon, 20 Mar 2017 04:11:25 GMT; path=/; domain=.vk.com
+      - remixstid=1002499601_f385cddf5fce7b22a2; expires=Sun, 05 Mar 2017 05:33:18
+        GMT; path=/; domain=.vk.com
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - no-store
+      X-Frame-Options:
+      - SAMEORIGIN
+    body:
+      encoding: ASCII-8BIT
+      string: |-
+        <?xml version="1.0" encoding="utf-8"?>
+        <!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd">
+        <html xmlns="http://www.w3.org/1999/xhtml" >
+        <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=yes" />
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="MobileOptimized" content="176" />
+        <meta name="HandheldFriendly" content="True" />
+        <base id="base">
+        <meta name="robots" content="noindex,nofollow" />
+        <title>Polina Zhdanova</title>
+        <script type="text/javascript">
+        <!--
+        (function(k,a,d,e,f){function l(){var c=function(){var b=!1;try{b=new XMLHttpRequest}catch(a){try{b=new ActiveXObject("Msxml2.XMLHTTP")}catch(d){try{b=new ActiveXObject("Microsoft.XMLHTTP")}catch(c){b=!1}}}return b?e:f}(),g=function(){var b=k.createElement("div");b.innerHTML='<input type="file" />';b=b.getElementsByTagName("input")[0];return"file"!=b.type||b.disabled?f:e}(),h="ontouchstart"in a?e:f,m;try{m=typeof navigator.geolocation!==d?e:typeof a.google!==d&&typeof google.gears!==d?e:typeof device!==d&&typeof device.getServiceObject!==d?e:typeof Mojo!==d&&"Mojo.Service.Request"!==typeof Mojo.Service.Request?e:f}catch(p){m=f}var l=function(b){try{var d=a.Audio?new Audio:k.createElement("audio");if(d.canPlayType&&d.canPlayType(b)&&"no"!=d.canPlayType(b))return e}catch(c){}return f}("audio/mpeg"),n=function(b){try{for(var a=k.createElement("div"),c=0,g=["webkit","Moz","ms","O",""],h=g.length;c<h;c++){var l=g[c],m=l?l+b:b.toLowerCase();if(typeof a.style[m]!==d)return e}return f}catch(n){return f}}("Transform");return c+g+h+m+l+n+((a.XMLHttpRequest||a.XDomainRequest)&&(a.FormData||a.FileReader&&(a.XMLHttpRequest&&XMLHttpRequest.sendAsBinary||a.ArrayBuffer&&a.Uint8Array&&(a.MozBlobBuilder||a.WebKitBlobBuilder||a.BlobBuilder)))?e:f)}var c=a.screen,g=c.width||0,c=c.height||0,n=a.devicePixelRatio||1,p=(k.cookie.match(/(^|;\s+)remixmdevice=([^;]+)/)||[])[2]||"",h=p.split("/");p&&g==h[0]&&c==h[1]&&7==h[3].length||(g=[g,c,n,l()].join("/"),k.cookie="remixmdevice=; expires="+(new Date(0)).toUTCString()+"; path=/",k.cookie="remixmdevice="+g+"; expires="+(new Date((new Date).getTime()+7776E6)).toUTCString()+"; path=/; domain=.vk.com",location.replace(location.toString()))})(document,window,"undefined","!","-");(function(a,d){var c=a.hash||"",b=c.substr(2);"#/"==c.substr(0,2)&&!d&&(b.match(/^\/*(away|login)(\.php)?([^a-z0-9\.]|$)/)&&(b=""),a.replace(a.protocol+"//"+a.host+"/"+b))})(location);
+        //-->
+        </script>
+        <link type="text/css" rel="stylesheet" href="/css/s_c.css?183"></link>
+        <link type="text/css" rel="stylesheet" media="only screen" href="/css/s_yzg.css?161"></link>
+        <link rel="shortcut icon" href="/images/favicon_vk.ico?3"></link>
+        <link rel="canonical" href="http://vk.com/polinka_zh"></link><link rel="alternate" href="android-app://com.vkontakte.android/vkontakte/m.vk.com/polinka_zh" />
+        </head>
+        <body id="vk" class="_ivk _hover">
+        <div id="vk_utils"></div>
+        <div id="vk_head" class="mhead">
+        <div class="hb_wrap"><div class="hb_btn">&nbsp;</div></div>
+        </div>
+        <div id="vk_wrap">
+        <div id="l"></div>
+        <div id="m"><div id="mhead" class="mhead"><a href="/" accesskey="*" class="hb_wrap mhb_home mhb_vkhome">
+        <div class="hb_btn mhi_home mhi_vkhome">&nbsp;</div>
+        </a>
+        <a href="/login?to=cG9saW5rYV96aA--" class="hb_wrap mhb_notify" accesskey="#">
+        <div class="hb_btn">
+        <em class="mh_btn_label">log in</em>
+        </div>
+        </a>
+        <div class="hb_wrap mhb_back al_back"><h1 class="hb_btn mh_header">Polina</h1></div></div>
+        <div id="mcont" class="mcont"><div class="pcont fit_box">
+        <div class="owner_panel profile_panel">
+        <img src="/images/deactivated_hid_100.gif" class="pp_img" alt="Polina Zhdanova" style="background-image:url(/images/deactivated_hid_50.gif)" />
+        <div class="pp_cont">
+        <h2 class="op_header">Polina Zhdanova</h2>
+        <div class="pp_last_activity"></div>
+        <div class="pp_info"></div>
+        </div>
+        </div>
+        <div class="ipanel bl_cont">
+        <div class="service_msg_box">
+        <div class="service_msg service_msg_null">You have to log in in order to view this page.</div>
+        </div>
+        </div>
+        </div></div>
+        <div id="mfoot" class="mfoot"><div class="pfoot">
+        <ul id="footer_menu" class="footer_menu">
+        <li class="fm_row"><a class="fm_item" href="/">Home</a></li>
+        <li class="fm_row"><a id="fv_link" class="fm_item fv_link" href="http://vk.com/polinka_zh?_fm=profile">Full version</a></li>
+        </ul>
+        </div></div>
+        <div class="_cntrs" style="height:0;">
+        <img width="1" height="1" src="//counter.yadro.ru/hit?uhttp%3A%2F%2Fm.vk.com%2Fpolinka_zh;r;79907609" alt="" align="left" />
+        <img width="1" height="1" src="//b.scorecardresearch.com/p?c1=2&c2=13765216&c3=&c4=http%3A%2F%2Fm.vk.com%2Fpolinka_zh&c5=&c9=&c15=&cv=2.0&cj=1&rn=79907609" alt="" align="left" />
+        <img src="//top-fwz1.mail.ru/counter?id=2579437;pid=0;r=" style="border:0;" height="1" width="1" />
+        </div></div>
+        <div id="z"></div>
+        </div>
+        <div id="vk_bottom"></div>
+        <script type="text/javascript">
+        <!--
+        parent&&parent!=window&&(document.getElementsByTagName('body')[0].innerHTML='');
+        //-->
+        </script>
+        </body>
+        </html>
+    http_version: 
+  recorded_at: Wed, 09 Mar 2016 19:20:04 GMT
+recorded_with: VCR 3.0.1
