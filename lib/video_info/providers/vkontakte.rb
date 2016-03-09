@@ -48,6 +48,12 @@ class VideoInfo
         data_after_author_div.split('</a>')[0].split('">')[1]
       end
 
+      def author_thumbnail
+        split_point = '<img id="mv_author_img" class="mv_author_img" src="'
+        author_img_split = data.split(split_point)[1]
+        author_img_split.split('">')[0]
+      end
+
       def title
         data[%r{\="mv_title">(.*)<\/div>}, 1].gsub(' | ВКонтакте', '')
       end

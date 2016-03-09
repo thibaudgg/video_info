@@ -98,6 +98,7 @@ describe VideoInfo::Providers::Vkontakte do
     its(:video_id)         { should eq '168790809' }
     its(:title)            { should eq 'UDC open cup 2014/ 3 place / Saley Daria (solo)' }
     its(:author)           { should eq 'Dasha Saley' }
+    its(:author_thumbnail) { should eq 'https://pp.vk.me/c633618/v633618822/1171b/Tm_TYkMxFww.jpg' }
   end
 
   context "with video kirill.lyanoi?z=video2152699_168591741%2F56fd229a9dfe2dcdbe", :vcr do
@@ -117,6 +118,7 @@ describe VideoInfo::Providers::Vkontakte do
     its(:height)           { should eq 0 }
     its(:view_count)       { should be > 10 }
     its(:author)           { should eq 'Kirill Lyanoy' }
+    its(:author_thumbnail) { should eq 'https://pp.vk.me/c623824/v623824699/55575/CCQZ29l0B9k.jpg' }
   end
 
   context "with video video39576223_108370515", :vcr do
