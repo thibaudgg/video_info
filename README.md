@@ -85,6 +85,7 @@ video = VideoInfo.new("http://www.youtube.com/watch?v=mZqGqE0D0n4")
 # video.title            => 'Cherry Bloom - King Of The Knife'
 # video.author           => 'Cherry Bloom'
 # video.author_thumbnail => 'https://yt3.ggpht.com/-7rhnfdQaI3k/AAAAAAAAAAI/AAAAAAAAAAA/eMJZ5HBukCQ/s88-c-k-no/photo.jpg'
+# video.author_url       => 'https://www.youtube.com/channel/UCzxQk-rZGowoqMBKxGD5jSA'
 # video.description      => 'The first video from the upcoming album Secret Sounds, to download in-stores April 14. Checkout http://www.cherrybloom.net'
 # video.duration         => 175 (in seconds)
 # video.date             => Sat Apr 12 22:25:35 UTC 2008
