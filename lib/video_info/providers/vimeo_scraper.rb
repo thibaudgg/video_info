@@ -11,10 +11,14 @@ class VideoInfo
 
       def author_thumbnail
         split_point = 'window.vimeo.clip_page_config ='
-        script_text = data.css('script')[5].text
+        script_text = data.css('script')[6].text
         split_script_text = script_text.split(split_point)[1]
         parsed_data = JSON.parse(split_script_text.split(";\n")[0])
         parsed_data['owner']['portrait']['src']
+      end
+
+      def author_url
+        json_info['author']['url']
       end
 
       def available?

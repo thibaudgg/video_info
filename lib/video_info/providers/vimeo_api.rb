@@ -26,6 +26,10 @@ class VideoInfo
         @author_thumbnail_id ||= _parse_picture_id(author_uri)
       end
 
+      def author_url
+        _video['user']['link']
+      end
+
       def author_thumbnail(width = 75)
         'https://i.vimeocdn.com/portrait/' \
         "#{author_thumbnail_id}_#{width}x#{width}.jpg"
