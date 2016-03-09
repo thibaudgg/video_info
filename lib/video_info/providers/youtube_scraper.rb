@@ -20,7 +20,8 @@ class VideoInfo
       end
 
       def author_url
-        ''
+        path = data.css('.yt-user-info')[0].css('a')[0].attr('href').value
+        'https://www.youtube.com' + path
       end
 
       def description
