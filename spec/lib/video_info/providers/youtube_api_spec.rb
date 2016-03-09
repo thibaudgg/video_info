@@ -166,6 +166,11 @@ describe VideoInfo::Providers::Youtube do
       it { is_expected.to eql 'https://yt3.ggpht.com/-7rhnfdQaI3k/AAAAAAAAAAI/AAAAAAAAAAA/eMJZ5HBukCQ/s88-c-k-no/photo.jpg' }
     end
 
+    describe '#author_url' do
+      subject { super().author_url }
+      it { is_expected.to eql 'https://www.youtube.com/channel/UCzxQk-rZGowoqMBKxGD5jSA' }
+    end
+
     describe '#title' do
       subject { super().title }
       it { is_expected.to eq 'Cherry Bloom - King Of The Knife' }
