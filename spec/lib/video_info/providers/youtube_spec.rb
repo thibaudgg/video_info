@@ -236,6 +236,11 @@ describe VideoInfo::Providers::Youtube do
       subject { super().author_thumbnail }
       it { is_expected.to eql 'https://yt3.ggpht.com/-7rhnfdQaI3k/AAAAAAAAAAI/AAAAAAAAAAA/eMJZ5HBukCQ/s88-c-k-no/photo.jpg' }
     end
+
+    describe '#author_url' do
+      subject { super().author_url }
+      it { is_expected.to eql 'https://www.youtube.com/channel/UCzxQk-rZGowoqMBKxGD5jSA' }
+    end
   end
 
   context "with video oQ49W_xKzKA", :vcr do

@@ -19,6 +19,10 @@ class VideoInfo
         data.css('.yt-thumb-clip')[0].css('img').attr('data-thumb')[0].value
       end
 
+      def author_url
+        ''
+      end
+
       def description
         meta_node_value('description')
       end
