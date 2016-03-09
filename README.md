@@ -54,6 +54,7 @@ video = VideoInfo.new("http://vimeo.com/898029")
 # video.title            => 'Cherry Bloom - King Of The Knife'
 # video.description      => 'The first video from the upcoming album Secret Sounds, to download in-stores April 14. Checkout http://www.cherrybloom.net'
 # video.author           => 'Octave Zangs'
+# video.author_thumbnail => 'https://i.vimeocdn.com/portrait/2577152_75x75.jpg'
 # video.keywords         => 'alternative, bloom, cherry, clip, drum, guitar, king, knife, of, Paris-Forum, rock, the, tremplin'
 # video.duration         => 175 (in seconds)
 # video.date             => Mon Apr 14 13:10:39 +0200 2008
