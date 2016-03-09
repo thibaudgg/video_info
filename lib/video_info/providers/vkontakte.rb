@@ -1,6 +1,7 @@
 # encoding: UTF-8
 require 'cgi'
 require 'net/http'
+require 'oga'
 
 class VideoInfo
   module Providers
@@ -40,6 +41,11 @@ class VideoInfo
 
       def height
         data[/url(\d+)/, 1].to_i
+      end
+
+      def author
+        data_after_author_div = data.split('<a class="mem_link" href="')[1]
+        data_after_author_div.split('</a>')[0].split('">')[1]
       end
 
       def title

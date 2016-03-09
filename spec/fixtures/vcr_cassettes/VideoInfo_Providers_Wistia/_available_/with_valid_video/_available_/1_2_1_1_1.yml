@@ -48,19 +48,19 @@ http_interactions:
       Accept-Ranges:
       - bytes
       Date:
-      - Wed, 09 Mar 2016 19:20:53 GMT
+      - Wed, 09 Mar 2016 21:03:39 GMT
       Age:
-      - '7500'
+      - '13666'
       Connection:
       - keep-alive
       X-Served-By:
-      - cache-ord1732-ORD, cache-sjc3133-SJC
+      - cache-ord1732-ORD, cache-sjc3127-SJC
       X-Cache:
-      - HIT, MISS
+      - HIT, HIT
       X-Cache-Hits:
-      - 1, 0
+      - 1, 1
       X-Timer:
-      - S1457551253.797064,VS0,VE55
+      - S1457557419.826865,VS0,VE0
       Vary:
       - Accept-Encoding,X-Forwarded-Proto
       Strict-Transport-Security:
@@ -69,5 +69,5 @@ http_interactions:
       encoding: UTF-8
       string: ''
     http_version: 
-  recorded_at: Wed, 09 Mar 2016 19:20:53 GMT
+  recorded_at: Wed, 09 Mar 2016 21:03:39 GMT
 recorded_with: VCR 3.0.1

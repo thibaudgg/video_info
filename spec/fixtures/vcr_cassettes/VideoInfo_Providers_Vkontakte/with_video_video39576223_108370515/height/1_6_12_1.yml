@@ -21,17 +21,17 @@ http_interactions:
       Server:
       - Apache
       Date:
-      - Wed, 09 Mar 2016 19:20:51 GMT
+      - Wed, 09 Mar 2016 21:03:37 GMT
       Content-Type:
       - text/html; charset=windows-1251
       Content-Length:
-      - '5917'
+      - '5918'
       Connection:
       - keep-alive
       X-Powered-By:
-      - PHP/3.21958
+      - PHP/3.21960
       Set-Cookie:
-      - remixlang=3; expires=Mon, 13 Mar 2017 17:54:10 GMT; path=/; domain=.vk.com
+      - remixlang=3; expires=Fri, 10 Mar 2017 22:28:16 GMT; path=/; domain=.vk.com
       Pragma:
       - no-cache
       Cache-Control:
@@ -140,9 +140,9 @@ http_interactions:
         YW1lIGxpbmsiLCJsYW5nX25leHQiOiJOZXh0IHZpZGVvIiwidXJsMjQwIjoi
         aHR0cHM6XC9cL3BzdjQudmsubWVcL3Y0MzNcL2Fzc2V0c1wvdmlkZW9cL2Ni
         Zjg0OTY1MDNjNy04MTE5NjkwMy52ay5mbHY/ZXh0cmE9aXFlUzU4TlZLTVFV
-        SXF4QndVd21YVENSeGlLTlRKS2ZQVHd5MnptSWsxd3pmb1ZoWEdfTGdVbzdz
+        SXF4QndVd21YVENSeGlLTlRKS2ZQVHd5MnptSWsxd3pmb1ZoWEdfTGhrZzdz
         YjQxa3FKWWVQeGFJbTJzQ0ZlWkFySk1HbzQxSzgyQWJiR1hJeEJkVWdMd202
-        N3puVkxmRVlleldqb282bWdUWGFFbCIsImpwZyI6Imh0dHBzOlwvXC9wcC52
+        N3puVkxmUnRPMkNHOHY2V0JHQ3ZKOCIsImpwZyI6Imh0dHBzOlwvXC9wcC52
         ay5tZVwvdjQzM1wvYXNzZXRzXC90aHVtYm5haWxzXC84ODYxNWNhOTgxMTk2
         OTAzLjMyMC52ay5qcGciLCJpcF9zdWJtIjoxLCJwcm94eSI6InBzdjQiLCJo
         dHRwcyI6MSwidmlld2VyX2lkIjowLCJub2xvZ28iOjEsInNob3dfbmV4dCI6
@@ -434,5 +434,5 @@ http_interactions:
         aW9uIjoiIiwicGxfbGlzdCI6MCwibWluT25CZ0NsaWNrIjowfTwhPjwhcGFn
         ZXZpZXdfY2FuZGlkYXRlPg==
     http_version: 
-  recorded_at: Wed, 09 Mar 2016 19:20:51 GMT
+  recorded_at: Wed, 09 Mar 2016 21:03:37 GMT
 recorded_with: VCR 3.0.1
