@@ -156,6 +156,11 @@ describe VideoInfo::Providers::Youtube do
       it { is_expected.to eq '<iframe src="//www.youtube.com/embed/mZqGqE0D0n4" frameborder="0" allowfullscreen="allowfullscreen"></iframe>' }
     end
 
+    describe '#author' do
+      subject { super().author }
+      it { is_expected.to eql 'Cherry Bloom' }
+    end
+
     describe '#title' do
       subject { super().title }
       it { is_expected.to eq 'Cherry Bloom - King Of The Knife' }

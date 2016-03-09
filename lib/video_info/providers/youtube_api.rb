@@ -5,6 +5,10 @@ class VideoInfo
         VideoInfo.provider_api_keys[:youtube]
       end
 
+      def author
+        _video_snippet['channelTitle']
+      end
+
       def title
         _video_snippet['title']
       end
