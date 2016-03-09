@@ -18,7 +18,6 @@ coverage
 rdoc
 pkg
 Gemfile.lock
-spec/fixtures/
 *.gem
 
 ## PROJECT::SPECIFIC
