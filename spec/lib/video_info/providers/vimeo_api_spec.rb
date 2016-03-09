@@ -158,6 +158,11 @@ describe VideoInfo::Providers::Vimeo do
       it { is_expected.to eq 'Octave Zangs' }
     end
 
+    describe '#author_url' do
+      subject { super().author_url }
+      it { is_expected.to eq 'https://vimeo.com/octave' }
+    end
+
     describe '#view_count' do
       subject { super().view_count }
       it { is_expected.to be > 4000 }
