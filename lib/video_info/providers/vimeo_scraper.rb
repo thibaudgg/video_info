@@ -17,6 +17,10 @@ class VideoInfo
         parsed_data['owner']['portrait']['src']
       end
 
+      def author_url
+        json_info['author']['url']
+      end
+
       def available?
         is_available = super
 
