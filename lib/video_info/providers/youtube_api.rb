@@ -10,7 +10,7 @@ class VideoInfo
       end
 
       def author_thumbnail
-        _channel_snippet['items'][0]['snippet']['thumbnails']['default']['url']
+        _channel_snippet['thumbnails']['default']['url']
       end
 
       def title
@@ -74,7 +74,8 @@ class VideoInfo
       def _channel_snippet
         channel_url = _channel_api_url(_video_snippet['channelId'])
         @channel_data ||= open(channel_url)
-        JSON.load(@channel_data.read)
+        json_data = JSON.load(@channel_data.read)
+        json_data['items'][0]['snippet']
       end
 
       def _video_content_details
