@@ -13,6 +13,11 @@ class VideoInfo
         _channel_snippet['thumbnails']['default']['url']
       end
 
+      def author_url
+        channel_id = _channel_info['items'][0]['id']
+        'https://www.youtube.com/channel/' + channel_id
+      end
+
       def title
         _video_snippet['title']
       end
@@ -71,11 +76,14 @@ class VideoInfo
         "=#{channel_id}&key=#{api_key}"
       end
 
-      def _channel_snippet
+      def _channel_info
         channel_url = _channel_api_url(_video_snippet['channelId'])
         @channel_data ||= open(channel_url)
         json_data = JSON.load(@channel_data.read)
-        json_data['items'][0]['snippet']
+      end
+
+      def _channel_snippet
+        _channel_info['items'][0]['snippet']
       end
 
       def _video_content_details
