@@ -4,7 +4,7 @@
 
 Simple Ruby Gem to get video info from Dailymotion, VK, Vimeo, Wistia and YouTube (with playlist).
 
-Tested against Ruby 2.2.0 and the latest versions of JRuby & Rubinius.
+Tested against Ruby 2.3.0, 2.2.4, and the latest versions of JRuby & Rubinius.
 
 Install
 --------
