@@ -93,7 +93,11 @@ describe VideoInfo::Providers::YoutubePlaylist do
 
     describe '#embed_code' do
       subject { super().embed_code }
-      it { is_expected.to eq '<iframe src="//www.youtube.com/embed/videoseries?list=PL9hW1uS6HUftLdHI6RIsaf-iXTm09qnEr" frameborder="0" allowfullscreen="allowfullscreen"></iframe>' }
+      embed_code = '<iframe src="//www.youtube.com/embed/videoseries' \
+                   '?list=PL9hW1uS6HUftLdHI6RIsaf-iXTm09qnEr" ' \
+                   'frameborder="0" allowfullscreen="allowfullscreen">' \
+                   '</iframe>'
+      it { is_expected.to eq embed_code }
     end
 
     describe '#title' do
@@ -173,8 +177,10 @@ describe VideoInfo::Providers::YoutubePlaylist do
 
   end
 
-  context "with playlist PL0E8117603D70E10A in embed path", :vcr do
-    subject { VideoInfo.new('http://www.youtube.com/embed/videoseries?list=PL0E8117603D70E10A') }
+  context 'with playlist PL0E8117603D70E10A in embed path', :vcr do
+    playlist_url = 'http://www.youtube.com/embed/videoseries?' \
+                   'list=PL0E8117603D70E10A'
+    subject { VideoInfo.new(playlist_url) }
 
     describe '#playlist_id' do
       subject { super().playlist_id }
@@ -187,14 +193,14 @@ describe VideoInfo::Providers::YoutubePlaylist do
     end
   end
 
-  context "with playlist PL9hW1uS6HUftLdHI6RIsaf-iXTm09qnEr in embed path", :vcr do
-    subject { VideoInfo.new('http://www.youtube.com/embed/videoseries?list=PL9hW1uS6HUftLdHI6RIsaf-iXTm09qnEr') }
+  context 'with playlist PL9hW1uS6HUftLdHI6RIsaf-iXTm09qnEr in embed path', :vcr do
+    playlist_url = 'http://www.youtube.com/embed/videoseries' \
+                   '?list=PL9hW1uS6HUftLdHI6RIsaf-iXTm09qnEr'
+    subject { VideoInfo.new(playlist_url) }
 
     describe '#playlist_id' do
       subject { super().playlist_id }
       it { is_expected.to eq 'PL9hW1uS6HUftLdHI6RIsaf-iXTm09qnEr' }
     end
   end
-
-
 end
