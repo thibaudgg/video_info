@@ -6,6 +6,14 @@ Simple Ruby Gem to get video info from Dailymotion, VK, Vimeo, Wistia and YouTub
 
 Tested against Ruby 2.3.0, 2.2.4, and the latest versions of JRuby & Rubinius.
 
+Features
+--------
+* Simple, single-function API that returns a simple data structure
+* Has a mere three gem dependencies
+* Automatic fallback to scrapers when required API keys aren't provided
+* Fetches metadata on the video, including title, duration, upload date, description, keywords, thumbnail, and dimensions
+* Fetches metadata on the author, including name, thumbnail, and channel/profile URL
+
 Install
 --------
 
