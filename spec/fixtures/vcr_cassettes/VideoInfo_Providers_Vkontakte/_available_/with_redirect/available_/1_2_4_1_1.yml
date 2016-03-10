@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - Apache
       Date:
-      - Wed, 09 Mar 2016 19:20:03 GMT
+      - Wed, 09 Mar 2016 21:01:13 GMT
       Content-Type:
       - text/html; charset=windows-1251
       Content-Length:
@@ -29,9 +29,9 @@ http_interactions:
       Connection:
       - keep-alive
       X-Powered-By:
-      - PHP/3.21958
+      - PHP/3.21960
       Set-Cookie:
-      - remixlang=3; expires=Mon, 06 Mar 2017 12:10:06 GMT; path=/; domain=.vk.com
+      - remixlang=3; expires=Sun, 05 Mar 2017 18:07:18 GMT; path=/; domain=.vk.com
       Pragma:
       - no-cache
       Cache-Control:
@@ -42,7 +42,7 @@ http_interactions:
       encoding: ASCII-8BIT
       string: ''
     http_version: 
-  recorded_at: Wed, 09 Mar 2016 19:20:03 GMT
+  recorded_at: Wed, 09 Mar 2016 21:01:14 GMT
 - request:
     method: get
     uri: http://m.vk.com/polinka_zh
@@ -66,18 +66,18 @@ http_interactions:
       Server:
       - Apache
       Date:
-      - Wed, 09 Mar 2016 19:20:03 GMT
+      - Wed, 09 Mar 2016 21:01:14 GMT
       Content-Type:
       - text/html; charset=utf-8
       Content-Length:
-      - '2350'
+      - '2349'
       Connection:
       - keep-alive
       X-Powered-By:
-      - PHP/3.21958
+      - PHP/3.21960
       Set-Cookie:
-      - remixlang=3; expires=Mon, 20 Mar 2017 04:11:25 GMT; path=/; domain=.vk.com
-      - remixstid=1002499601_f385cddf5fce7b22a2; expires=Sun, 05 Mar 2017 05:33:18
+      - remixlang=3; expires=Wed, 15 Mar 2017 22:50:42 GMT; path=/; domain=.vk.com
+      - remixstid=2122757418_0650d11992afedbc69; expires=Sat, 18 Mar 2017 21:47:44
         GMT; path=/; domain=.vk.com
       Pragma:
       - no-cache
@@ -149,8 +149,8 @@ http_interactions:
         </ul>
         </div></div>
         <div class="_cntrs" style="height:0;">
-        <img width="1" height="1" src="//counter.yadro.ru/hit?uhttp%3A%2F%2Fm.vk.com%2Fpolinka_zh;r;79907609" alt="" align="left" />
-        <img width="1" height="1" src="//b.scorecardresearch.com/p?c1=2&c2=13765216&c3=&c4=http%3A%2F%2Fm.vk.com%2Fpolinka_zh&c5=&c9=&c15=&cv=2.0&cj=1&rn=79907609" alt="" align="left" />
+        <img width="1" height="1" src="//counter.yadro.ru/hit?uhttp%3A%2F%2Fm.vk.com%2Fpolinka_zh;r;91332643" alt="" align="left" />
+        <img width="1" height="1" src="//b.scorecardresearch.com/p?c1=2&c2=13765216&c3=&c4=http%3A%2F%2Fm.vk.com%2Fpolinka_zh&c5=&c9=&c15=&cv=2.0&cj=1&rn=91332643" alt="" align="left" />
         <img src="//top-fwz1.mail.ru/counter?id=2579437;pid=0;r=" style="border:0;" height="1" width="1" />
         </div></div>
         <div id="z"></div>
@@ -164,5 +164,5 @@ http_interactions:
         </body>
         </html>
     http_version: 
-  recorded_at: Wed, 09 Mar 2016 19:20:04 GMT
+  recorded_at: Wed, 09 Mar 2016 21:01:14 GMT
 recorded_with: VCR 3.0.1

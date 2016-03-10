@@ -1,6 +1,7 @@
 # encoding: UTF-8
 require 'cgi'
 require 'net/http'
+require 'oga'
 
 class VideoInfo
   module Providers
@@ -40,6 +41,22 @@ class VideoInfo
 
       def height
         data[/url(\d+)/, 1].to_i
+      end
+
+      def author
+        data_after_author_div = data.split('<a class="mem_link" href="')[1]
+        data_after_author_div.split('</a>')[0].split('">')[1]
+      end
+
+      def author_thumbnail
+        split_point = '<img id="mv_author_img" class="mv_author_img" src="'
+        author_img_split = data.split(split_point)[1]
+        author_img_split.split('">')[0]
+      end
+
+      def author_url
+        data_after_author_div = data.split('<a class="mem_link" href="')[1]
+        'https://vk.com' + data_after_author_div.split('"')[0]
       end
 
       def title

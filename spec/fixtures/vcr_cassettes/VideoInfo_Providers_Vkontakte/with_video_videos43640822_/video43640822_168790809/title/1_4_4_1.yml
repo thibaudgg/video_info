@@ -21,17 +21,17 @@ http_interactions:
       Server:
       - Apache
       Date:
-      - Wed, 09 Mar 2016 19:20:18 GMT
+      - Wed, 09 Mar 2016 21:02:19 GMT
       Content-Type:
       - text/html; charset=windows-1251
       Content-Length:
-      - '6078'
+      - '6077'
       Connection:
       - keep-alive
       X-Powered-By:
-      - PHP/3.21958
+      - PHP/3.21960
       Set-Cookie:
-      - remixlang=3; expires=Sun, 05 Mar 2017 10:34:56 GMT; path=/; domain=.vk.com
+      - remixlang=3; expires=Sun, 12 Mar 2017 17:58:45 GMT; path=/; domain=.vk.com
       Pragma:
       - no-cache
       Cache-Control:
@@ -141,22 +141,22 @@ http_interactions:
         ZnJhbWUgbGluayIsImxhbmdfbmV4dCI6Ik5leHQgdmlkZW8iLCJ1cmwyNDAi
         OiJodHRwczpcL1wvY3M1NDA2MDkudmsubWVcL3UyNzk2NTI5XC92aWRlb3Nc
         L2M2OTJhY2RlMzkuMjQwLm1wND9leHRyYT05bHhpdUhyd2hDWWhfVU1XUS0x
-        ZDUyQTZWMEdKaHhKcWJ3QlJPc3VLN0dvVDJ3VThiQmNXSm91U3VVNWlhMVFz
-        NXU1Sjg1a00tN2FqamxOX19TX3kyWWpUNldiTjcxaDU3V2FTaW82UXpoN2hx
-        U1NPM25kTzY4LXJ2UEtKIiwidXJsMzYwIjoiaHR0cHM6XC9cL2NzNTQwNjA5
+        ZDUyQTZWMEdKaHhKcWJ3QlJPc3VLN0dvVDJ3VThiQmNXSVltU3VVNWlhMVFz
+        NXU1Sjg1a00tN2FqamxOX19TX3kyWWpUNldiTjcxaDU3V2FTaW82UXpoN2hf
+        M1BkaWlNYTZwbXV2X2ZZIiwidXJsMzYwIjoiaHR0cHM6XC9cL2NzNTQwNjA5
         LnZrLm1lXC91Mjc5NjUyOVwvdmlkZW9zXC9jNjkyYWNkZTM5LjM2MC5tcDQ/
         ZXh0cmE9OWx4aXVIcndoQ1loX1VNV1EtMWQ1MkE2VjBHSmh4SnFid0JST3N1
-        SzdHb1Qyd1U4YkJjV0pvdVN1VTVpYTFRczV1NUo4NWtNLTdhampsTl9fU195
-        MllqVDZXYk43MWg1N1dhU2lvNlF6aDdocVNTTzNuZE82OC1ydlBLSiIsInVy
+        SzdHb1Qyd1U4YkJjV0lZbVN1VTVpYTFRczV1NUo4NWtNLTdhampsTl9fU195
+        MllqVDZXYk43MWg1N1dhU2lvNlF6aDdoXzNQZGlpTWE2cG11dl9mWSIsInVy
         bDQ4MCI6Imh0dHBzOlwvXC9jczU0MDYwOS52ay5tZVwvdTI3OTY1MjlcL3Zp
         ZGVvc1wvYzY5MmFjZGUzOS40ODAubXA0P2V4dHJhPTlseGl1SHJ3aENZaF9V
-        TVdRLTFkNTJBNlYwR0poeEpxYndCUk9zdUs3R29UMndVOGJCY1dKb3VTdVU1
+        TVdRLTFkNTJBNlYwR0poeEpxYndCUk9zdUs3R29UMndVOGJCY1dJWW1TdVU1
         aWExUXM1dTVKODVrTS03YWpqbE5fX1NfeTJZalQ2V2JONzFoNTdXYVNpbzZR
-        emg3aHFTU08zbmRPNjgtcnZQS0oiLCJ1cmw3MjAiOiJodHRwczpcL1wvY3M1
+        emg3aF8zUGRpaU1hNnBtdXZfZlkiLCJ1cmw3MjAiOiJodHRwczpcL1wvY3M1
         NDA2MDkudmsubWVcL3UyNzk2NTI5XC92aWRlb3NcL2M2OTJhY2RlMzkuNzIw
         Lm1wND9leHRyYT05bHhpdUhyd2hDWWhfVU1XUS0xZDUyQTZWMEdKaHhKcWJ3
-        QlJPc3VLN0dvVDJ3VThiQmNXSm91U3VVNWlhMVFzNXU1Sjg1a00tN2FqamxO
-        X19TX3kyWWpUNldiTjcxaDU3V2FTaW82UXpoN2hxU1NPM25kTzY4LXJ2UEtK
+        QlJPc3VLN0dvVDJ3VThiQmNXSVltU3VVNWlhMVFzNXU1Sjg1a00tN2FqamxO
+        X19TX3kyWWpUNldiTjcxaDU3V2FTaW82UXpoN2hfM1BkaWlNYTZwbXV2X2ZZ
         IiwianBnIjoiaHR0cHM6XC9cL3BwLnZrLm1lXC9jNTQwNjA5XC91Mjc5NjUy
         OVwvdmlkZW9cL2xfZWI3OTA0ODcuanBnIiwiaXBfc3VibSI6MSwicHJveHki
         OiJwc3Y0IiwiaHR0cHMiOjEsInZpZXdlcl9pZCI6MCwibm9sb2dvIjoxLCJz
@@ -235,7 +235,7 @@ http_interactions:
         MTQgYXQgOTowNCBhbSA8c3BhbiBjbGFzcz0ibXZfZGF0ZV92aWV3c19kZWxp
         bSI+JmJ1bGw7PC9zcGFuPiA8ZGl2IGNsYXNzPSJtdl92aWV3c19jb3VudCBm
         bF9yIj4KICA8bm9icj48c3BhbiBjbGFzcz0ibXZfdmlld3NfY291bnRfbnVt
-        YmVyIj4xLDQ0NyB2aWV3czwvc3Bhbj48L25vYnI+CjwvZGl2PjwvZGl2Pgog
+        YmVyIj4xLDQ0OSB2aWV3czwvc3Bhbj48L25vYnI+CjwvZGl2PjwvZGl2Pgog
         ICAgICAgIDwvZGl2PgogICAgICAgIAogICAgICA8L2Rpdj4KICAgIDwvZGl2
         PgoKICAgIDxkaXYgY2xhc3M9ImNsZWFyIj48L2Rpdj4KICAgIDxkaXYgY2xh
         c3M9Im12X3NoYXJlX2FjdGlvbnMgZmxfbCBtdl9ub19sb2dnZWRfdXNlciI+
@@ -482,7 +482,7 @@ http_interactions:
         b3BlbiBjdXAgMjAxNFwvIDMgcGxhY2UgXC8gU2FsZXkgRGFyaWEgKHNvbG8p
         IiwxNCwwLCIxOjI0IiwzLCJfMjI2NjhkMWJhNDgzOTMzMzRiIiwiIiwiIiwi
         PGEgaHJlZj1cIlwvZGFyaWFzYWxleVwiIGNsYXNzPVwibWVtX2xpbmtcIj5E
-        YXNoYSBTYWxleTxcL2E+IiwxNDAxNjg5MDQ5LDE0NDcsIiIsIiIsMF0sImNh
+        YXNoYSBTYWxleTxcL2E+IiwxNDAxNjg5MDQ5LDE0NDksIiIsIiIsMF0sImNh
         bkV4cG9ydCI6MSwiaXNWaWRlb0FkcyI6ZmFsc2UsImRlbGV0ZUZyb21BbGxB
         bGJ1bXNIYXNoIjoiIiwiUExBWUxJU1RfQURERURfSUQiOi0yLCJQTEFZTElT
         VF9VUExPQURFRF9JRCI6LTEsIm5vUHVibGljQWRkIjpmYWxzZSwiUExBWUVS
@@ -492,5 +492,5 @@ http_interactions:
         IiIsInNob3dJbmZvIjowLCJwdWJsaXNoQWN0aW9uIjoiIiwicGxfbGlzdCI6
         MCwibWluT25CZ0NsaWNrIjowfTwhPjwhcGFnZXZpZXdfY2FuZGlkYXRlPg==
     http_version: 
-  recorded_at: Wed, 09 Mar 2016 19:20:18 GMT
+  recorded_at: Wed, 09 Mar 2016 21:02:19 GMT
 recorded_with: VCR 3.0.1
