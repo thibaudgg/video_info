@@ -15,6 +15,19 @@ class VideoInfo
         nil
       end
 
+      def author
+        data.css('.channel-header-profile-image').attr('title')[0].value
+      end
+
+      def author_thumbnail
+        data.css('.channel-header-profile-image').attr('src')[0].value
+      end
+
+      def author_url
+        element = data.css('.channel-header-profile-image-container')
+        'https://www.youtube.com' + element.attr('href')[0].value
+      end
+
       def videos
         raise(NotImplementedError,
               'To access videos, you must provide an API key ' \
