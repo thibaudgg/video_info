@@ -169,7 +169,7 @@ describe VideoInfo::Providers::YoutubePlaylist do
       it { is_expected.to eq 'https://yt3.ggpht.com/-ni_VaN38-AE/AAAAAAAAAAI/AAAAAAAAAAA/bJCTTfihBl0/s88-c-k-no/photo.jpg' }
     end
 
-    describe '#author' do
+    describe '#author_url' do
       subject { super().author_url }
       it { is_expected.to eq 'https://www.youtube.com/channel/UCMDQxm7cUx3yXkfeHa5zJIQ' }
     end
