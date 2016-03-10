@@ -54,6 +54,11 @@ class VideoInfo
         author_img_split.split('">')[0]
       end
 
+      def author_url
+        data_after_author_div = data.split('<a class="mem_link" href="')[1]
+        'https://vk.com' + data_after_author_div.split('"')[0]
+      end
+
       def title
         data[%r{\="mv_title">(.*)<\/div>}, 1].gsub(' | ВКонтакте', '')
       end
