@@ -120,7 +120,7 @@ describe VideoInfo::Providers::Vimeo do
 
     describe '#keywords' do
       subject { super().keywords }
-      it do
+      it 'should have correct keywords as string' do
         is_expected.to eq 'cherry bloom, secret sounds, ' \
                           'king of the knife, rock, alternative'
       end
@@ -143,7 +143,7 @@ describe VideoInfo::Providers::Vimeo do
 
     describe '#date' do
       subject { super().date }
-      it do
+      it 'should have correct date' do
         is_expected.to eq Time.parse('2008-04-14T17:10:39+00:00',
                                      Time.now.utc).utc
       end
