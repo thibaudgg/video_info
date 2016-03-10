@@ -158,6 +158,21 @@ describe VideoInfo::Providers::YoutubePlaylist do
       subject { super().view_count }
       it { is_expected.to be_nil }
     end
+
+    describe '#author' do
+      subject { super().author }
+      it { is_expected.to eq 'YouTube Help' }
+    end
+
+    describe '#author_thumbnail' do
+      subject { super().author_thumbnail }
+      it { is_expected.to eq 'https://yt3.ggpht.com/-ni_VaN38-AE/AAAAAAAAAAI/AAAAAAAAAAA/bJCTTfihBl0/s88-c-k-no/photo.jpg' }
+    end
+
+    describe '#author' do
+      subject { super().author_url }
+      it { is_expected.to eq 'https://www.youtube.com/channel/UCMDQxm7cUx3yXkfeHa5zJIQ' }
+    end
   end
 
   context "with playlist PL0E8117603D70E10A in embed path", :vcr do
@@ -182,6 +197,4 @@ describe VideoInfo::Providers::YoutubePlaylist do
       it { is_expected.to eq 'PL9hW1uS6HUftLdHI6RIsaf-iXTm09qnEr' }
     end
   end
-
-
 end
