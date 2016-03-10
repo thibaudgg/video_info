@@ -23,7 +23,7 @@ describe VideoInfo::Providers::Vimeo do
       it { is_expected.to be_truthy }
     end
 
-    context "with Vimeo Review url" do
+    context 'with Vimeo Review url' do
       let(:url) { 'https://vimeo.com/user39798190/review/126641548/8a56234e32' }
       it { is_expected.to be_truthy }
     end
@@ -95,7 +95,10 @@ describe VideoInfo::Providers::Vimeo do
 
     describe '#embed_code' do
       subject { super().embed_code }
-      it { is_expected.to eq '<iframe src="//player.vimeo.com/video/898029?title=0&byline=0&portrait=0&autoplay=0" frameborder="0"></iframe>' }
+      embed_code = '<iframe src="//player.vimeo.com/video/898029?' \
+                   'title=0&byline=0&portrait=0&autoplay=0" ' \
+                   'frameborder="0"></iframe>'
+      it { is_expected.to eq embed_code }
     end
 
     describe '#title' do
@@ -105,12 +108,18 @@ describe VideoInfo::Providers::Vimeo do
 
     describe '#description' do
       subject { super().description }
-      it { is_expected.to eq 'The first video from the upcoming album Secret Sounds, to download in-stores April 14. Checkout http://www.cherrybloom.net' }
+      description = 'The first video from the upcoming album Secret Sounds, ' \
+                    'to download in-stores April 14. ' \
+                    'Checkout http://www.cherrybloom.net'
+      it { is_expected.to eq description }
     end
 
     describe '#keywords' do
       subject { super().keywords }
-      it { is_expected.to eq 'cherry bloom, secret sounds, king of the knife, rock, alternative' }
+      it 'should return a string list of keywords' do
+        is_expected.to eq 'cherry bloom, secret sounds, ' \
+                          'king of the knife, rock, alternative'
+      end
     end
 
     describe '#duration' do
@@ -130,27 +139,34 @@ describe VideoInfo::Providers::Vimeo do
 
     describe '#date' do
       subject { super().date }
-      it { is_expected.to eq Time.parse('2008-04-14T17:10:39+00:00', Time.now.utc).utc }
+      it 'should have correct upload date' do
+        is_expected.to eq Time.parse('2008-04-14T17:10:39+00:00',
+                                     Time.now.utc).utc
+      end
     end
 
     describe '#thumbnail_small' do
       subject { super().thumbnail_small }
-      it { is_expected.to eq 'https://i.vimeocdn.com/video/34373130_100x75.jpg' }
+      thumbnail_url = 'https://i.vimeocdn.com/video/34373130_100x75.jpg'
+      it { is_expected.to eq thumbnail_url }
     end
 
     describe '#thumbnail_medium' do
       subject { super().thumbnail_medium }
-      it { is_expected.to eq 'https://i.vimeocdn.com/video/34373130_200x150.jpg' }
+      thumbnail_url = 'https://i.vimeocdn.com/video/34373130_200x150.jpg'
+      it { is_expected.to eq thumbnail_url }
     end
 
     describe '#thumbnail_large' do
       subject { super().thumbnail_large }
-      it { is_expected.to eq 'https://i.vimeocdn.com/video/34373130_640.jpg' }
+      thumbnail_url = 'https://i.vimeocdn.com/video/34373130_640.jpg'
+      it { is_expected.to eq thumbnail_url }
     end
 
     describe '#author_thumbnail' do
       subject { super().author_thumbnail }
-      it { is_expected.to eq 'https://i.vimeocdn.com/portrait/2577152_75x75.jpg' }
+      thumbnail_url = 'https://i.vimeocdn.com/portrait/2577152_75x75.jpg'
+      it { is_expected.to eq thumbnail_url }
     end
 
     describe '#author' do
@@ -172,14 +188,22 @@ describe VideoInfo::Providers::Vimeo do
   context 'with video 898029 and url_attributes', :vcr do
     subject { VideoInfo.new('http://www.vimeo.com/898029') }
 
-    it { expect(subject.embed_code(url_attributes: { autoplay: 1 })).to match(/autoplay=1/) }
+    it 'should add URL attribute' do
+      attributes = { autoplay: 1 }
+      expected = expect(subject.embed_code(url_attributes: attributes))
+      expected.to match(/autoplay=1/)
+    end
   end
 
   context 'with video 898029 and iframe_attributes', :vcr do
     subject { VideoInfo.new('http://www.vimeo.com/898029') }
 
-    it { expect(subject.embed_code(iframe_attributes: { width: 800, height: 600 })).to match(/width="800"/) }
-    it { expect(subject.embed_code(iframe_attributes: { width: 800, height: 600 })).to match(/height="600"/) }
+    it 'should have proper dimensions' do
+      dimensions = { width: 800, height: 600 }
+      expected = expect(subject.embed_code(iframe_attributes: dimensions))
+      expected.to match(/width="800"/)
+      expected.to match(/height="600"/)
+    end
   end
 
   context 'with video 898029 in /group/ url', :vcr do
@@ -211,7 +235,9 @@ describe VideoInfo::Providers::Vimeo do
   end
 
   context 'with video 898029 in text', :vcr do
-    subject { VideoInfo.new('<a href="http://www.vimeo.com/898029">http://www.vimeo.com/898029</a>') }
+    video_url_in_text = '<a href="http://www.vimeo.com/898029">' \
+                        'http://www.vimeo.com/898029</a>'
+    subject { VideoInfo.new(video_url_in_text) }
 
     describe '#provider' do
       subject { super().provider }
@@ -232,14 +258,16 @@ describe VideoInfo::Providers::Vimeo do
   end
 
   context 'with video 111431415 in /channels/*/ url', :vcr do
-    subject { VideoInfo.new('https://vimeo.com/channels/some_channel1/111431415') }
+    video_url = 'https://vimeo.com/channels/some_channel1/111431415'
+    subject { VideoInfo.new(video_url) }
 
     its(:provider) { should eq 'Vimeo' }
     its(:video_id) { should eq '111431415' }
   end
 
-  context "with video 126641548 in /user*/review/126641548/* url", :vcr do
-    subject { VideoInfo.new('http://www.vimeo.com/user39798190/review/126641548/8a56234e32') }
+  context 'with video 126641548 in /user*/review/126641548/* url', :vcr do
+    video_url = 'http://www.vimeo.com/user39798190/review/126641548/8a56234e32'
+    subject { VideoInfo.new(video_url) }
 
     its(:provider) { should eq 'Vimeo' }
     its(:video_id) { should eq '126641548' }
