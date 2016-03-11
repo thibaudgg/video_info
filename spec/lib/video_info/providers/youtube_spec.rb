@@ -2,32 +2,32 @@ require 'spec_helper'
 require 'webmock/rspec'
 
 describe VideoInfo::Providers::Youtube do
-  describe ".usable?" do
+  describe '.usable?' do
     subject { VideoInfo::Providers::Youtube.usable?(url) }
 
-    context "with youtube.com url" do
+    context 'with youtube.com url' do
       let(:url) { 'http://www.youtube.com/watch?v=Xp6CXF' }
       it { is_expected.to be_truthy }
     end
 
-    context "with youtu.be url" do
+    context 'with youtu.be url' do
       let(:url) { 'http://youtu.be/JM9NgvjjVng' }
       it { is_expected.to be_truthy }
     end
 
-    context "with other url" do
+    context 'with other url' do
       let(:url) { 'http://google.com/video1' }
       it { is_expected.to be_falsey }
     end
 
-    context "with playlist url" do
+    context 'with playlist url' do
       let(:url) { 'http://www.youtube.com/playlist?p=PLA575C81A1FBC04CF' }
       it { is_expected.to be_falsey }
     end
   end
 
-  describe "#available?" do
-    context "with valid video", :vcr do
+  describe '#available?' do
+    context 'with valid video', :vcr do
       subject { VideoInfo.new('http://www.youtube.com/watch?v=mZqGqE0D0n4') }
 
       describe '#available?' do
@@ -55,7 +55,7 @@ describe VideoInfo::Providers::Youtube do
       end
     end
 
-    context "with 'video is unavailable' video", :vcr do
+    context 'with unavailable video', :vcr do
       subject { VideoInfo.new('http://www.youtube.com/watch?v=SUkXvWn1m7Q') }
 
       describe '#available?' do
@@ -85,7 +85,10 @@ describe VideoInfo::Providers::Youtube do
 
       describe '#embed_code' do
         subject { super().embed_code }
-        it { is_expected.to eq '<iframe src="//www.youtube.com/embed/SUkXvWn1m7Q" frameborder="0" allowfullscreen="allowfullscreen"></iframe>' }
+        embed_code = '<iframe src="//www.youtube.com/embed/SUkXvWn1m7Q" ' \
+                     'frameborder="0" allowfullscreen="allowfullscreen">' \
+                     '</iframe>'
+        it { is_expected.to eq embed_code }
       end
 
       describe '#title' do
@@ -115,17 +118,20 @@ describe VideoInfo::Providers::Youtube do
 
       describe '#thumbnail_small' do
         subject { super().thumbnail_small }
-        it { is_expected.to eq 'https://i.ytimg.com/vi/SUkXvWn1m7Q/default.jpg' }
+        thumbnail_url = 'https://i.ytimg.com/vi/SUkXvWn1m7Q/default.jpg'
+        it { is_expected.to eq thumbnail_url }
       end
 
       describe '#thumbnail_medium' do
         subject { super().thumbnail_medium }
-        it { is_expected.to eq 'https://i.ytimg.com/vi/SUkXvWn1m7Q/mqdefault.jpg' }
+        thumbnail_url = 'https://i.ytimg.com/vi/SUkXvWn1m7Q/mqdefault.jpg'
+        it { is_expected.to eq thumbnail_url }
       end
 
       describe '#thumbnail_large' do
         subject { super().thumbnail_large }
-        it { is_expected.to eq 'https://i.ytimg.com/vi/SUkXvWn1m7Q/hqdefault.jpg' }
+        thumbnail_url = 'https://i.ytimg.com/vi/SUkXvWn1m7Q/hqdefault.jpg'
+        it { is_expected.to eq thumbnail_url }
       end
 
       describe '#view_count' do
@@ -134,7 +140,7 @@ describe VideoInfo::Providers::Youtube do
       end
     end
 
-    context "with 'video no longer available due to a copyright claim' video", :vcr do
+    context 'with video removed because of copyright claim', :vcr do
       subject { VideoInfo.new('http://www.youtube.com/watch?v=ffClNhwx0KU') }
 
       describe '#available?' do
@@ -144,8 +150,9 @@ describe VideoInfo::Providers::Youtube do
     end
   end
 
-  context "with video mZqGqE0D0n4", :vcr do
-    subject { VideoInfo.new('http://www.youtube.com/watch?v=mZqGqE0D0n4') }
+  context 'with video mZqGqE0D0n4', :vcr do
+    video_url = 'http://www.youtube.com/watch?v=mZqGqE0D0n4'
+    subject { VideoInfo.new(video_url) }
 
     describe '#provider' do
       subject { super().provider }
@@ -159,7 +166,7 @@ describe VideoInfo::Providers::Youtube do
 
     describe '#url' do
       subject { super().url }
-      it { is_expected.to eq 'http://www.youtube.com/watch?v=mZqGqE0D0n4' }
+      it { is_expected.to eq video_url }
     end
 
     describe '#embed_url' do
@@ -169,7 +176,10 @@ describe VideoInfo::Providers::Youtube do
 
     describe '#embed_code' do
       subject { super().embed_code }
-      it { is_expected.to eq '<iframe src="//www.youtube.com/embed/mZqGqE0D0n4" frameborder="0" allowfullscreen="allowfullscreen"></iframe>' }
+      embed_code = '<iframe src="//www.youtube.com/embed/mZqGqE0D0n4" ' \
+                   'frameborder="0" allowfullscreen="allowfullscreen">' \
+                   '</iframe>'
+      it { is_expected.to eq embed_code }
     end
 
     describe '#title' do
@@ -179,12 +189,17 @@ describe VideoInfo::Providers::Youtube do
 
     describe '#description' do
       subject { super().description }
-      it { is_expected.to eq 'The first video from the upcoming album Secret Sounds, to download in-stores April 14. Checkout http://www.cherrybloom.net' }
+      description_text = 'The first video from the upcoming album ' \
+                         'Secret Sounds, to download in-stores April 14. ' \
+                         'Checkout http://www.cherrybloom.net'
+      it { is_expected.to eq description_text }
     end
 
     describe '#keywords' do
       subject { super().keywords }
-      it { is_expected.to eq %w(cherry bloom king of the knife guitar drum clip rock alternative tremplin Paris-Forum) }
+      keywords_list = %w(cherry bloom king of the knife guitar
+                         drum clip rock alternative tremplin Paris-Forum)
+      it { is_expected.to eq keywords_list }
     end
 
     describe '#duration' do
@@ -209,17 +224,20 @@ describe VideoInfo::Providers::Youtube do
 
     describe '#thumbnail_small' do
       subject { super().thumbnail_small }
-      it { is_expected.to eq 'https://i.ytimg.com/vi/mZqGqE0D0n4/default.jpg' }
+      thumbnail_url = 'https://i.ytimg.com/vi/mZqGqE0D0n4/default.jpg'
+      it { is_expected.to eq thumbnail_url }
     end
 
     describe '#thumbnail_medium' do
       subject { super().thumbnail_medium }
-      it { is_expected.to eq 'https://i.ytimg.com/vi/mZqGqE0D0n4/mqdefault.jpg' }
+      thumbnail_url = 'https://i.ytimg.com/vi/mZqGqE0D0n4/mqdefault.jpg'
+      it { is_expected.to eq thumbnail_url }
     end
 
     describe '#thumbnail_large' do
       subject { super().thumbnail_large }
-      it { is_expected.to eq 'https://i.ytimg.com/vi/mZqGqE0D0n4/hqdefault.jpg' }
+      thumbnail_url = 'https://i.ytimg.com/vi/mZqGqE0D0n4/hqdefault.jpg'
+      it { is_expected.to eq thumbnail_url }
     end
 
     describe '#view_count' do
@@ -234,23 +252,31 @@ describe VideoInfo::Providers::Youtube do
 
     describe '#author_thumbnail' do
       subject { super().author_thumbnail }
-      it { is_expected.to eql 'https://yt3.ggpht.com/-7rhnfdQaI3k/AAAAAAAAAAI/AAAAAAAAAAA/eMJZ5HBukCQ/s88-c-k-no/photo.jpg' }
+      author_thumbnail = 'https://yt3.ggpht.com/-7rhnfdQaI3k/AAAAAAAAAAI/' \
+                         'AAAAAAAAAAA/eMJZ5HBukCQ/s88-c-k-no/photo.jpg'
+      it { is_expected.to eql author_thumbnail }
     end
 
     describe '#author_url' do
       subject { super().author_url }
-      it { is_expected.to eql 'https://www.youtube.com/channel/UCzxQk-rZGowoqMBKxGD5jSA' }
+      author_url = 'https://www.youtube.com/channel/UCzxQk-rZGowoqMBKxGD5jSA'
+      it { is_expected.to eql author_url }
     end
   end
 
-  context "with video oQ49W_xKzKA", :vcr do
-    subject { VideoInfo.new('http://www.youtube.com/watch?v=oQ49W_xKzKA') }
+  context 'with video oQ49W_xKzKA', :vcr do
+    video_url = 'http://www.youtube.com/watch?v=oQ49W_xKzKA'
+    subject { VideoInfo.new(video_url) }
 
-    it { expect(subject.embed_code(url_attributes: { autoplay: 1 })).to match(/autoplay=1/) }
+    it 'should contain autoplay attribute' do
+      expected = expect(subject.embed_code(url_attributes: { autoplay: 1 }))
+      expected.to match(/autoplay=1/)
+    end
   end
 
-  context "with video oQ49W_xKzKA", :vcr do
-    subject { VideoInfo.new('http://www.youtube.com/watch?v=oQ49W_xKzKA') }
+  context 'with video oQ49W_xKzKA', :vcr do
+    video_url = 'http://www.youtube.com/watch?v=oQ49W_xKzKA'
+    subject { VideoInfo.new(video_url) }
 
     describe '#provider' do
       subject { super().provider }
@@ -263,7 +289,7 @@ describe VideoInfo::Providers::Youtube do
     end
   end
 
-  context "with video Xp6CXF-Cesg", :vcr do
+  context 'with video Xp6CXF-Cesg', :vcr do
     subject { VideoInfo.new('http://www.youtube.com/watch?v=Xp6CXF-Cesg') }
 
     describe '#provider' do
@@ -277,8 +303,9 @@ describe VideoInfo::Providers::Youtube do
     end
   end
 
-  context "with video VeasFckfMHY in user url", :vcr do
-    subject { VideoInfo.new('http://www.youtube.com/user/EducatorVids3?v=VeasFckfMHY') }
+  context 'with video VeasFckfMHY in user url', :vcr do
+    video_url = 'http://www.youtube.com/user/EducatorVids3?v=VeasFckfMHY'
+    subject { VideoInfo.new(video_url) }
 
     describe '#provider' do
       subject { super().provider }
@@ -292,12 +319,13 @@ describe VideoInfo::Providers::Youtube do
 
     describe '#url' do
       subject { super().url }
-      it { is_expected.to eq 'http://www.youtube.com/user/EducatorVids3?v=VeasFckfMHY' }
+      it { is_expected.to eq video_url }
     end
   end
 
-  context "with video VeasFckfMHY after params", :vcr do
-    subject { VideoInfo.new('http://www.youtube.com/watch?feature=player_profilepage&v=VeasFckfMHY') }
+  context 'with video VeasFckfMHY after params', :vcr do
+    video_url = 'http://www.youtube.com/watch?feature=player_profilepage&v=VeasFckfMHY'
+    subject { VideoInfo.new(video_url) }
 
     describe '#provider' do
       subject { super().provider }
@@ -311,11 +339,11 @@ describe VideoInfo::Providers::Youtube do
 
     describe '#url' do
       subject { super().url }
-      it { is_expected.to eq 'http://www.youtube.com/watch?feature=player_profilepage&v=VeasFckfMHY' }
+      it { is_expected.to eq video_url }
     end
   end
 
-  context "with video VeasFckfMHY in path", :vcr do
+  context 'with video VeasFckfMHY in path', :vcr do
     subject { VideoInfo.new('http://www.youtube.com/v/VeasFckfMHY') }
 
     describe '#provider' do
@@ -329,7 +357,7 @@ describe VideoInfo::Providers::Youtube do
     end
   end
 
-  context "with video VeasFckfMHY in e path", :vcr do
+  context 'with video VeasFckfMHY in e path', :vcr do
     subject { VideoInfo.new('http://www.youtube.com/e/VeasFckfMHY') }
 
     describe '#provider' do
@@ -343,7 +371,7 @@ describe VideoInfo::Providers::Youtube do
     end
   end
 
-  context "with video VeasFckfMHY in embed path", :vcr do
+  context 'with video VeasFckfMHY in embed path', :vcr do
     subject { VideoInfo.new('http://www.youtube.com/embed/VeasFckfMHY') }
 
     describe '#provider' do
@@ -357,7 +385,7 @@ describe VideoInfo::Providers::Youtube do
     end
   end
 
-  context "with video JM9NgvjjVng in youtu.be url", :vcr do
+  context 'with video JM9NgvjjVng in youtu.be url', :vcr do
     subject { VideoInfo.new('http://youtu.be/JM9NgvjjVng') }
 
     describe '#provider' do
@@ -385,8 +413,11 @@ describe VideoInfo::Providers::Youtube do
     end
   end
 
-  context "with video url in text", :vcr do
-    subject { VideoInfo.new('<a href="http://www.youtube.com/watch?v=mZqGqE0D0n4">http://www.youtube.com/watch?v=mZqGqE0D0n4</a>') }
+  context 'with video url in text', :vcr do
+    url_in_text = '<a href="http://www.youtube.com/watch?v=mZqGqE0D0n4">' \
+                  'http://www.youtube.com/watch?v=mZqGqE0D0n4</a>'
+
+    subject { VideoInfo.new(url_in_text) }
 
     describe '#provider' do
       subject { super().provider }
@@ -399,38 +430,48 @@ describe VideoInfo::Providers::Youtube do
     end
   end
 
-  context "with iframe attributes", :vcr do
+  context 'with iframe attributes', :vcr do
     subject { VideoInfo.new('http://www.youtube.com/watch?v=mZqGqE0D0n4') }
 
     describe '#provider' do
       subject { super().provider }
       it { is_expected.to eq('YouTube') }
     end
-    it { expect(subject.embed_code(iframe_attributes: { width: 800, height: 600 })).to match(/width="800"/) }
-    it { expect(subject.embed_code(iframe_attributes: { width: 800, height: 600 })).to match(/height="600"/) }
+
+    it 'should apply width and height attributes properly' do
+      dimensions = { width: 800, height: 600 }
+      expected = expect(subject.embed_code(iframe_attributes: dimensions))
+      expected.to match(/width="800"/)
+      expected.to match(/height="600"/)
+    end
   end
 
-  context "with arbitrary iframe_attributes", :vcr do
+  context 'with arbitrary iframe_attributes', :vcr do
     subject { VideoInfo.new('http://www.youtube.com/watch?v=mZqGqE0D0n4') }
 
     describe '#provider' do
       subject { super().provider }
       it { is_expected.to eq('YouTube') }
     end
-    it { expect(subject.embed_code(iframe_attributes: { :'data-colorbox' => true })).to match(/data-colorbox="true"/) }
+    it 'should apply arbitrary iframe attributes' do
+      attributes = { :'data-colorbox' => true }
+      expected = expect(subject.embed_code(iframe_attributes: attributes))
+      expected.to match(/data-colorbox="true"/)
+    end
   end
 
-  context "URL without http:// or https://" do
+  context 'URL without http:// or https://' do
     subject { VideoInfo.new('www.youtube.com/watch?v=ylTY9WbMGDc') }
 
     describe '#title' do
       subject { super().title }
-      it { is_expected.to eq ('Deafheaven - Sunbather') }
+      it { is_expected.to eq 'Deafheaven - Sunbather' }
     end
   end
 
-  context "with full screen video URLs", :vcr do
-    subject { VideoInfo.new('http://www.youtube.com/v/mZqGqE0D0n4') }
+  context 'with full screen video URLs', :vcr do
+    video_url = 'http://www.youtube.com/v/mZqGqE0D0n4'
+    subject { VideoInfo.new(video_url) }
 
     describe '#provider' do
       subject { super().provider }
@@ -444,7 +485,7 @@ describe VideoInfo::Providers::Youtube do
 
     describe '#url' do
       subject { super().url }
-      it { is_expected.to eq 'http://www.youtube.com/v/mZqGqE0D0n4' }
+      it { is_expected.to eq video_url }
     end
 
     describe '#embed_url' do
@@ -454,7 +495,10 @@ describe VideoInfo::Providers::Youtube do
 
     describe '#embed_code' do
       subject { super().embed_code }
-      it { is_expected.to eq '<iframe src="//www.youtube.com/embed/mZqGqE0D0n4" frameborder="0" allowfullscreen="allowfullscreen"></iframe>' }
+      embed_code = '<iframe src="//www.youtube.com/embed/mZqGqE0D0n4" ' \
+                   'frameborder="0" allowfullscreen="allowfullscreen">' \
+                   '</iframe>'
+      it { is_expected.to eq embed_code }
     end
 
     describe '#title' do
@@ -464,12 +508,17 @@ describe VideoInfo::Providers::Youtube do
 
     describe '#description' do
       subject { super().description }
-      it { is_expected.to eq 'The first video from the upcoming album Secret Sounds, to download in-stores April 14. Checkout http://www.cherrybloom.net' }
+      description = 'The first video from the upcoming album Secret Sounds, ' \
+                    'to download in-stores April 14. ' \
+                    'Checkout http://www.cherrybloom.net'
+      it { is_expected.to eq description }
     end
 
     describe '#keywords' do
       subject { super().keywords }
-      it { is_expected.to eq %w(cherry bloom king of the knife guitar drum clip rock alternative tremplin Paris-Forum) }
+      keywords_list = %w(cherry bloom king of the knife guitar
+                         drum clip rock alternative tremplin Paris-Forum)
+      it { is_expected.to eq keywords_list }
     end
 
     describe '#duration' do
@@ -494,17 +543,20 @@ describe VideoInfo::Providers::Youtube do
 
     describe '#thumbnail_small' do
       subject { super().thumbnail_small }
-      it { is_expected.to eq 'https://i.ytimg.com/vi/mZqGqE0D0n4/default.jpg' }
+      thumbnail_url = 'https://i.ytimg.com/vi/mZqGqE0D0n4/default.jpg'
+      it { is_expected.to eq thumbnail_url }
     end
 
     describe '#thumbnail_medium' do
       subject { super().thumbnail_medium }
-      it { is_expected.to eq 'https://i.ytimg.com/vi/mZqGqE0D0n4/mqdefault.jpg' }
+      thumbnail_url = 'https://i.ytimg.com/vi/mZqGqE0D0n4/mqdefault.jpg'
+      it { is_expected.to eq thumbnail_url }
     end
 
     describe '#thumbnail_large' do
       subject { super().thumbnail_large }
-      it { is_expected.to eq 'https://i.ytimg.com/vi/mZqGqE0D0n4/hqdefault.jpg' }
+      thumbnail_url = 'https://i.ytimg.com/vi/mZqGqE0D0n4/hqdefault.jpg'
+      it { is_expected.to eq thumbnail_url }
     end
 
     describe '#view_count' do
@@ -513,9 +565,9 @@ describe VideoInfo::Providers::Youtube do
     end
   end
 
-
-  context "with full screen video URLs with params", :vcr do
-    subject { VideoInfo.new('https://www.youtube.com/v/ylTY9WbMGDc?someParam=foo') }
+  context 'with full screen video URLs with params', :vcr do
+    video_url = 'https://www.youtube.com/v/ylTY9WbMGDc?someParam=foo'
+    subject { VideoInfo.new(video_url) }
 
     describe '#title' do
       subject { super().title }
@@ -524,11 +576,13 @@ describe VideoInfo::Providers::Youtube do
   end
 
   context 'with valid video and connection timeout' do
-    subject { VideoInfo.new('https://www.youtube.com/watch?v=lExm5LELpP4') }
+    video_url = 'https://www.youtube.com/watch?v=lExm5LELpP4'
+    subject { VideoInfo.new(video_url) }
 
     describe '#title' do
       before do
-        @stubbed = stub_request(:get, 'https://www.youtube.com/watch?v=lExm5LELpP4').to_timeout
+        stub = stub_request(:get, video_url)
+        @stubbed = stub.to_timeout
       end
 
       after do
@@ -542,11 +596,13 @@ describe VideoInfo::Providers::Youtube do
   end
 
   context 'with valid video and OpenURI::HTTPError exception' do
-    subject { VideoInfo.new('https://www.youtube.com/watch?v=lExm5LELpP4') }
+    video_url = 'https://www.youtube.com/watch?v=lExm5LELpP4'
+    subject { VideoInfo.new(video_url) }
 
     describe '#title' do
       before do
-        stub_request(:get, 'https://www.youtube.com/watch?v=lExm5LELpP4').to_raise(OpenURI::HTTPError.new('error', :nop))
+        stub = stub_request(:get, video_url)
+        stub.to_raise(OpenURI::HTTPError.new('error', :nop))
       end
 
       it 'raises VideoInfo::HttpError exception' do
