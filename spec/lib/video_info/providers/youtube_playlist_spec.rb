@@ -5,33 +5,34 @@ describe VideoInfo::Providers::YoutubePlaylist do
     VideoInfo.provider_api_keys = {}
   end
 
-  describe ".usable?" do
+  describe '.usable?' do
     subject { VideoInfo::Providers::YoutubePlaylist.usable?(url) }
 
-    context "with youtube.com/playlist?p= url" do
+    context 'with youtube.com/playlist?p= url' do
       let(:url) { 'http://www.youtube.com/playlist?p=PLA575C81A1FBC04CF' }
       it { is_expected.to be_truthy }
     end
 
-    context "with youtube.com/playlist?list= url" do
+    context 'with youtube.com/playlist?list= url' do
       let(:url) { 'http://www.youtube.com/playlist?list=PLA575C81A1FBC04CF' }
       it { is_expected.to be_truthy }
     end
 
-    context "with youtube.com url" do
+    context 'with youtube.com url' do
       let(:url) { 'http://www.youtube.com/watch?v=Xp6CXF' }
       it { is_expected.to be_falsey }
     end
 
-    context "with other url" do
+    context 'with other url' do
       let(:url) { 'http://example.com/video1' }
       it { is_expected.to be_falsey }
     end
   end
 
-  describe "#available?" do
-    context "with valid playlist", :vcr do
-      subject { VideoInfo.new('http://www.youtube.com/playlist?p=PLA575C81A1FBC04CF') }
+  describe '#available?' do
+    context 'with valid playlist', :vcr do
+      playlist_url = 'http://www.youtube.com/playlist?p=PLA575C81A1FBC04CF'
+      subject { VideoInfo.new(playlist_url) }
 
       describe '#available?' do
         subject { super().available? }
@@ -39,8 +40,10 @@ describe VideoInfo::Providers::YoutubePlaylist do
       end
     end
 
-    context "with invalid playlist", :vcr do
-      subject { VideoInfo.new('http://www.youtube.com/playlist?p=PLA575C81A1FBC04CF_invalid') }
+    context 'with invalid playlist', :vcr do
+      invalid_playlist_url = 'http://www.youtube.com/playlist?' \
+                             'p=PLA575C81A1FBC04CF_invalid'
+      subject { VideoInfo.new(invalid_playlist_url) }
 
       describe '#available?' do
         subject { super().available? }
@@ -48,8 +51,9 @@ describe VideoInfo::Providers::YoutubePlaylist do
       end
     end
 
-    context "with &list= url", :vcr do
-      subject { VideoInfo.new('http://www.youtube.com/playlist?list=PLA575C81A1FBC04CF') }
+    context 'with &list= url', :vcr do
+      playlist_url = 'http://www.youtube.com/playlist?list=PLA575C81A1FBC04CF'
+      subject { VideoInfo.new(playlist_url) }
 
       describe '#available?' do
         subject { super().available? }
@@ -58,8 +62,8 @@ describe VideoInfo::Providers::YoutubePlaylist do
     end
   end
 
-  context "with playlist PL9hW1uS6HUftLdHI6RIsaf", :vcr do
-    let(:videos) {
+  context 'with playlist PL9hW1uS6HUftLdHI6RIsaf', :vcr do
+    let(:videos) do
       [
         VideoInfo.new('http://www.youtube.com/watch?v=Oi67QjrXy2w'),
         VideoInfo.new('http://www.youtube.com/watch?v=_Bt3-WsHfB0'),
@@ -68,8 +72,11 @@ describe VideoInfo::Providers::YoutubePlaylist do
         VideoInfo.new('http://www.youtube.com/watch?v=6c3mHikRz0I'),
         VideoInfo.new('http://www.youtube.com/watch?v=OQVHWsTHcoc')
       ]
-    }
-    subject { VideoInfo.new('http://www.youtube.com/playlist?p=PL9hW1uS6HUftLdHI6RIsaf-iXTm09qnEr') }
+    end
+
+    playlist_url = 'http://www.youtube.com/playlist?p=PL9hW1uS6HUftLdHI6RIsaf-iXTm09qnEr'
+
+    subject { VideoInfo.new(playlist_url) }
 
     describe '#provider' do
       subject { super().provider }
@@ -83,17 +90,24 @@ describe VideoInfo::Providers::YoutubePlaylist do
 
     describe '#url' do
       subject { super().url }
-      it { is_expected.to eq 'http://www.youtube.com/playlist?p=PL9hW1uS6HUftLdHI6RIsaf-iXTm09qnEr' }
+      url = 'http://www.youtube.com/playlist?p=PL9hW1uS6HUftLdHI6RIsaf-iXTm09qnEr'
+      it { is_expected.to eq url }
     end
 
     describe '#embed_url' do
       subject { super().embed_url }
-      it { is_expected.to eq '//www.youtube.com/embed/videoseries?list=PL9hW1uS6HUftLdHI6RIsaf-iXTm09qnEr' }
+      embed_url = '//www.youtube.com/embed/videoseries?' \
+                  'list=PL9hW1uS6HUftLdHI6RIsaf-iXTm09qnEr'
+      it { is_expected.to eq embed_url }
     end
 
     describe '#embed_code' do
       subject { super().embed_code }
-      it { is_expected.to eq '<iframe src="//www.youtube.com/embed/videoseries?list=PL9hW1uS6HUftLdHI6RIsaf-iXTm09qnEr" frameborder="0" allowfullscreen="allowfullscreen"></iframe>' }
+      embed_code = '<iframe src="//www.youtube.com/embed/videoseries' \
+                   '?list=PL9hW1uS6HUftLdHI6RIsaf-iXTm09qnEr" ' \
+                   'frameborder="0" allowfullscreen="allowfullscreen">' \
+                   '</iframe>'
+      it { is_expected.to eq embed_code }
     end
 
     describe '#title' do
@@ -103,7 +117,9 @@ describe VideoInfo::Providers::YoutubePlaylist do
 
     describe '#description' do
       subject { super().description }
-      it { is_expected.to eq 'Learn more about copyright basics, flagging, and the YouTube community.' }
+      description = 'Learn more about copyright basics, flagging, ' \
+                    'and the YouTube community.'
+      it { is_expected.to eq description }
     end
 
     describe '#keywords' do
@@ -133,17 +149,20 @@ describe VideoInfo::Providers::YoutubePlaylist do
 
     describe '#thumbnail_small' do
       subject { super().thumbnail_small }
-      it { is_expected.to eq 'https://i.ytimg.com/vi/8b0aEoxqqC0/default.jpg' }
+      thumbnail_url = 'https://i.ytimg.com/vi/8b0aEoxqqC0/default.jpg'
+      it { is_expected.to eq thumbnail_url }
     end
 
     describe '#thumbnail_medium' do
       subject { super().thumbnail_medium }
-      it { is_expected.to eq 'https://i.ytimg.com/vi/8b0aEoxqqC0/mqdefault.jpg' }
+      thumbnail_url = 'https://i.ytimg.com/vi/8b0aEoxqqC0/mqdefault.jpg'
+      it { is_expected.to eq thumbnail_url }
     end
 
     describe '#thumbnail_large' do
       subject { super().thumbnail_large }
-      it { is_expected.to eq 'https://i.ytimg.com/vi/8b0aEoxqqC0/hqdefault.jpg' }
+      thumbnail_url = 'https://i.ytimg.com/vi/8b0aEoxqqC0/hqdefault.jpg'
+      it { is_expected.to eq thumbnail_url }
     end
 
     describe '#videos' do
@@ -163,18 +182,21 @@ describe VideoInfo::Providers::YoutubePlaylist do
 
     describe '#author_thumbnail' do
       subject { super().author_thumbnail }
-      it { is_expected.to eq 'https://yt3.ggpht.com/-ni_VaN38-AE/AAAAAAAAAAI/AAAAAAAAAAA/bJCTTfihBl0/s100-c-k-no/photo.jpg' }
+      thumbnail_url = 'https://yt3.ggpht.com/-ni_VaN38-AE/AAAAAAAAAAI' \
+                      '/AAAAAAAAAAA/bJCTTfihBl0/s100-c-k-no/photo.jpg'
+      it { is_expected.to eq thumbnail_url }
     end
 
     describe '#author_url' do
       subject { super().author_url }
       it { is_expected.to eq 'https://www.youtube.com/user/YouTubeHelp' }
     end
-
   end
 
-  context "with playlist PL0E8117603D70E10A in embed path", :vcr do
-    subject { VideoInfo.new('http://www.youtube.com/embed/videoseries?list=PL0E8117603D70E10A') }
+  context 'with playlist that does not exist in embed path', :vcr do
+    playlist_url = 'http://www.youtube.com/embed/videoseries?' \
+                   'list=PL0E8117603D70E10A'
+    subject { VideoInfo.new(playlist_url) }
 
     describe '#playlist_id' do
       subject { super().playlist_id }
@@ -187,14 +209,14 @@ describe VideoInfo::Providers::YoutubePlaylist do
     end
   end
 
-  context "with playlist PL9hW1uS6HUftLdHI6RIsaf-iXTm09qnEr in embed path", :vcr do
-    subject { VideoInfo.new('http://www.youtube.com/embed/videoseries?list=PL9hW1uS6HUftLdHI6RIsaf-iXTm09qnEr') }
+  context 'with playlist valid playlist in embed path', :vcr do
+    playlist_url = 'http://www.youtube.com/embed/videoseries' \
+                   '?list=PL9hW1uS6HUftLdHI6RIsaf-iXTm09qnEr'
+    subject { VideoInfo.new(playlist_url) }
 
     describe '#playlist_id' do
       subject { super().playlist_id }
       it { is_expected.to eq 'PL9hW1uS6HUftLdHI6RIsaf-iXTm09qnEr' }
     end
   end
-
-
 end
