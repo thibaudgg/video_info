@@ -55,8 +55,9 @@ class VideoInfo
       end
 
       def author_url
-        data_after_author_div = data.split('<a class="mem_link" href="')[1]
-        'https://vk.com' + data_after_author_div.split('"')[0]
+        split_point = '"author_href":"\\/'
+        author_url_path = data.split(split_point)[1].split('"')[0]
+        'https://vk.com/' + author_url_path
       end
 
       def title
