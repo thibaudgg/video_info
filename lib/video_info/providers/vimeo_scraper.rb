@@ -63,11 +63,7 @@ class VideoInfo
       end
 
       def keywords
-        keywords_str = ''
-
-        json_info['keywords'].each { |keyword| keywords_str << keyword << ', ' }
-
-        keywords_str.chop.chop # remove trailing ", "
+        json_info['keywords']
       end
 
       def height

@@ -121,8 +121,9 @@ describe VideoInfo::Providers::Vimeo do
     describe '#keywords' do
       subject { super().keywords }
       it 'should have correct keywords as string' do
-        is_expected.to eq 'cherry bloom, secret sounds, ' \
-                          'king of the knife, rock, alternative'
+        keywords_list = ['cherry bloom', 'secret sounds',
+                         'king of the knife', 'rock', 'alternative']
+        is_expected.to eq keywords_list
       end
     end
 
