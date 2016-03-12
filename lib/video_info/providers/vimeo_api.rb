@@ -61,7 +61,7 @@ class VideoInfo
       end
 
       def keywords
-        keywords_array.join(', ')
+        keywords_array
       end
 
       def keywords_array
