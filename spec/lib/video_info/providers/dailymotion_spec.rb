@@ -139,8 +139,8 @@ describe VideoInfo::Providers::Dailymotion do
     subject { VideoInfo.new('http://www.dailymotion.com/video/x7lni3') }
 
     it do
-      expected = expect(subject.embed_code(url_attributes: { autoplay: 1 }))
-      expected.to match(/autoplay=1/)
+      embed_code = subject.embed_code(url_attributes: { autoplay: 1 })
+      expect(embed_code).to match(/autoplay=1/)
     end
   end
 
@@ -149,9 +149,9 @@ describe VideoInfo::Providers::Dailymotion do
 
     it 'should properly apply dimensions attributes' do
       dimensions = { width: 800, height: 600 }
-      expected = expect(subject.embed_code(iframe_attributes: dimensions))
-      expected.to match(/width="800"/)
-      expected.to match(/height="600"/)
+      embed_code = subject.embed_code(iframe_attributes: dimensions)
+      expect(embed_code).to match(/width="800"/)
+      expect(embed_code).to match(/height="600"/)
     end
   end
 
