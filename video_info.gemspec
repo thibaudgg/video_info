@@ -25,10 +25,10 @@ Gem::Specification.new do |s|
   s.add_dependency 'net_http_timeout_errors', '~> 0.3.0'
 
   s.add_development_dependency 'bundler', '>= 1.3.5'
-  s.add_development_dependency 'rake'
-  s.add_development_dependency 'rspec'
-  s.add_development_dependency 'rspec-its'
+  s.add_development_dependency 'rake', '~> 11.1'
+  s.add_development_dependency 'rspec', '~> 3.4'
+  s.add_development_dependency 'rspec-its', '~> 1.2'
   s.add_development_dependency 'rubocop', '~> 0.37'
-  s.add_development_dependency 'vcr'
-  s.add_development_dependency 'webmock'
+  s.add_development_dependency 'vcr', '~> 3.0'
+  s.add_development_dependency 'webmock', '~> 1.24'
 end
