@@ -260,8 +260,8 @@ require 'spec_helper'
       subject { VideoInfo.new('http://www.youtube.com/watch?v=oQ49W_xKzKA') }
 
       it 'should properly apply arbitrary url attributes' do
-        expected = expect(subject.embed_code(url_attributes: { autoplay: 1 }))
-        expected.to match(/autoplay=1/)
+        embed_code = subject.embed_code(url_attributes: { autoplay: 1 })
+        expect(embed_code).to match(/autoplay=1/)
       end
     end
 
@@ -429,9 +429,9 @@ require 'spec_helper'
 
       it 'should properly apply dimensions attributes' do
         dimensions = { width: 800, height: 600 }
-        expected = expect(subject.embed_code(iframe_attributes: dimensions))
-        expected.to match(/width="800"/)
-        expected.to match(/height="600"/)
+        embed_code = subject.embed_code(iframe_attributes: dimensions)
+        expect(embed_code).to match(/width="800"/)
+        expect(embed_code).to match(/height="600"/)
       end
     end
 
@@ -445,8 +445,8 @@ require 'spec_helper'
 
       it 'should properly apply arbitrary attributes' do
         attributes = { :'data-colorbox' => true }
-        expected = expect(subject.embed_code(iframe_attributes: attributes))
-        expected.to match(/data-colorbox="true"/)
+        embed_code = subject.embed_code(iframe_attributes: attributes)
+        expect(embed_code).to match(/data-colorbox="true"/)
       end
     end
 
