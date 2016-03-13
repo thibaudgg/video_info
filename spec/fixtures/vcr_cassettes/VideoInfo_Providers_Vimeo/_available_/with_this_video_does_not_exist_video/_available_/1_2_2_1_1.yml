@@ -27,7 +27,7 @@ http_interactions:
       Strict-Transport-Security:
       - max-age=15120000; includeSubDomains; preload
       Expires:
-      - Sat, 07 Mar 2026 21:00:53 GMT
+      - Wed, 11 Mar 2026 05:49:30 GMT
       Via:
       - 1.1 varnish
       - 1.1 varnish
@@ -38,26 +38,26 @@ http_interactions:
       Accept-Ranges:
       - bytes
       Date:
-      - Wed, 09 Mar 2016 21:00:53 GMT
+      - Sun, 13 Mar 2016 05:49:30 GMT
       Age:
       - '0'
       Connection:
       - keep-alive
       X-Served-By:
-      - cache-iad2123-IAD, cache-sjc3642-SJC
+      - cache-iad2123-IAD, cache-sjc3628-SJC
       X-Cache:
       - MISS, MISS
       X-Cache-Hits:
       - 0, 0
       X-Timer:
-      - S1457557253.788360,VS0,VE118
+      - S1457848170.516852,VS0,VE103
       Vary:
       - Accept,Vimeo-Client-Id,Accept-Encoding
     body:
       encoding: UTF-8
       string: ''
     http_version: 
-  recorded_at: Wed, 09 Mar 2016 21:00:53 GMT
+  recorded_at: Sun, 13 Mar 2016 05:49:30 GMT
 - request:
     method: head
     uri: https://vimeo.com/593123111
@@ -79,7 +79,7 @@ http_interactions:
       Content-Type:
       - text/html; charset=UTF-8
       Expires:
-      - Wed, 09 Mar 2016 09:01:00 GMT
+      - Sat, 12 Mar 2016 17:49:36 GMT
       X-Frame-Options:
       - sameorigin
       Via:
@@ -95,28 +95,28 @@ http_interactions:
       Fastly-Debug-Digest:
       - 8b8801f83b493c820384220ea9a4251b5d16adecdb24a485a147c4b5e9d999e7
       Content-Length:
-      - '35924'
+      - '48272'
       Accept-Ranges:
       - bytes
       Date:
-      - Wed, 09 Mar 2016 21:01:00 GMT
+      - Sun, 13 Mar 2016 05:49:37 GMT
       Age:
       - '0'
       Connection:
       - keep-alive
       X-Served-By:
-      - cache-iad2121-IAD, cache-sjc3134-SJC
+      - cache-iad2129-IAD, cache-sjc3623-SJC
       X-Cache:
       - MISS, MISS
       X-Cache-Hits:
       - 0, 0
       X-Timer:
-      - S1457557260.789214,VS0,VE207
+      - S1457848176.848925,VS0,VE161
       Vary:
       - Accept-Encoding
     body:
       encoding: UTF-8
       string: ''
     http_version: 
-  recorded_at: Wed, 09 Mar 2016 21:01:01 GMT
+  recorded_at: Sun, 13 Mar 2016 05:49:37 GMT
 recorded_with: VCR 3.0.1

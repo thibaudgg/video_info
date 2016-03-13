@@ -35,9 +35,9 @@ http_interactions:
       P3p:
       - CP="CURi ADMa DEVa IVAa IVDa CONi OUR IND DSP CAO COR"
       X-Request-Id:
-      - e2451bffd94207c41e631429b6a230fd
+      - 134055239f6f4814574231e02cab2336
       X-Runtime:
-      - '0.036817'
+      - '0.050819'
       X-Rack-Cache:
       - miss
       Via:
@@ -50,19 +50,19 @@ http_interactions:
       Accept-Ranges:
       - bytes
       Date:
-      - Wed, 09 Mar 2016 21:03:40 GMT
+      - Sun, 13 Mar 2016 05:51:22 GMT
       Age:
-      - '6166'
+      - '1848'
       Connection:
       - keep-alive
       X-Served-By:
-      - cache-ord1721-ORD, cache-sjc3121-SJC
+      - cache-ord1722-ORD, cache-lax1424-LAX
       X-Cache:
       - HIT, HIT
       X-Cache-Hits:
       - 1, 1
       X-Timer:
-      - S1457557420.951421,VS0,VE0
+      - S1457848282.371980,VS0,VE0
       Vary:
       - Accept-Encoding,X-Forwarded-Proto
       Strict-Transport-Security:
@@ -76,5 +76,5 @@ http_interactions:
         src=\"//fast.wistia.net/assets/external/E-v1.js\" async></script>","width":960,"height":568,"provider_name":"Wistia,
         Inc.","provider_url":"http://wistia.com","title":"Understanding Analytics","thumbnail_url":"https://embed-ssl.wistia.com/deliveries/0fccbdc60ade35723f79f1c002bc61b135b610fa.jpg?image_crop_resized=960x540","thumbnail_width":960,"thumbnail_height":540,"duration":250.0}'
     http_version: 
-  recorded_at: Wed, 09 Mar 2016 21:03:40 GMT
+  recorded_at: Sun, 13 Mar 2016 05:51:22 GMT
 recorded_with: VCR 3.0.1

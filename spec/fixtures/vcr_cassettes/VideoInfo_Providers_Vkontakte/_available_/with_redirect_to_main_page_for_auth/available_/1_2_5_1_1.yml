@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - Apache
       Date:
-      - Wed, 09 Mar 2016 21:01:15 GMT
+      - Sun, 13 Mar 2016 05:49:51 GMT
       Content-Type:
       - text/html; charset=windows-1251
       Content-Length:
@@ -29,9 +29,9 @@ http_interactions:
       Connection:
       - keep-alive
       X-Powered-By:
-      - PHP/3.21960
+      - PHP/3.22083
       Set-Cookie:
-      - remixlang=3; expires=Sun, 12 Mar 2017 18:24:49 GMT; path=/; domain=.vk.com
+      - remixlang=3; expires=Wed, 22 Mar 2017 06:24:08 GMT; path=/; domain=.vk.com
       Pragma:
       - no-cache
       Cache-Control:
@@ -42,5 +42,5 @@ http_interactions:
       encoding: ASCII-8BIT
       string: ''
     http_version: 
-  recorded_at: Wed, 09 Mar 2016 21:01:15 GMT
+  recorded_at: Sun, 13 Mar 2016 05:49:51 GMT
 recorded_with: VCR 3.0.1
