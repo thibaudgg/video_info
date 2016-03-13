@@ -116,4 +116,127 @@ http_interactions:
         }
     http_version: 
   recorded_at: Sun, 13 Mar 2016 05:11:48 GMT
+- request:
+    method: get
+    uri: https://www.googleapis.com/youtube/v3/videos?fields=items(id,snippet,statistics,status,contentDetails)&id=mZqGqE0D0n4&key=AIzaSyA6PYwSr1EnLFUFy1cZDk3Ifb0rxeJaeZ0&part=snippet,statistics,status,contentDetails
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - VideoInfo/2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Expires:
+      - Sun, 13 Mar 2016 05:42:08 GMT
+      Date:
+      - Sun, 13 Mar 2016 05:42:08 GMT
+      Cache-Control:
+      - private, max-age=0, must-revalidate, no-transform
+      Etag:
+      - '"q5k97EMVGxODeKcDgp8gnMu79wM/arckKQCj2H5-lIuvakISQhrJsn8"'
+      Vary:
+      - Origin
+      - X-Origin
+      Content-Type:
+      - application/json; charset=UTF-8
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '1767'
+      Server:
+      - GSE
+      Alternate-Protocol:
+      - 443:quic,p=1
+      Alt-Svc:
+      - quic=":443"; ma=2592000; v="31,30,29,28,27,26,25"
+    body:
+      encoding: UTF-8
+      string: |
+        {
+         "items": [
+          {
+           "id": "mZqGqE0D0n4",
+           "snippet": {
+            "publishedAt": "2008-04-12T22:25:35.000Z",
+            "channelId": "UCzxQk-rZGowoqMBKxGD5jSA",
+            "title": "Cherry Bloom - King Of The Knife",
+            "description": "The first video from the upcoming album Secret Sounds, to download in-stores April 14. Checkout http://www.cherrybloom.net",
+            "thumbnails": {
+             "default": {
+              "url": "https://i.ytimg.com/vi/mZqGqE0D0n4/default.jpg",
+              "width": 120,
+              "height": 90
+             },
+             "medium": {
+              "url": "https://i.ytimg.com/vi/mZqGqE0D0n4/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+             },
+             "high": {
+              "url": "https://i.ytimg.com/vi/mZqGqE0D0n4/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+             }
+            },
+            "channelTitle": "Cherry Bloom",
+            "tags": [
+             "cherry",
+             "bloom",
+             "king",
+             "of",
+             "the",
+             "knife",
+             "guitar",
+             "drum",
+             "clip",
+             "rock",
+             "alternative",
+             "tremplin",
+             "Paris-Forum"
+            ],
+            "categoryId": "10",
+            "liveBroadcastContent": "none",
+            "localized": {
+             "title": "Cherry Bloom - King Of The Knife",
+             "description": "The first video from the upcoming album Secret Sounds, to download in-stores April 14. Checkout http://www.cherrybloom.net"
+            }
+           },
+           "contentDetails": {
+            "duration": "PT2M56S",
+            "dimension": "2d",
+            "definition": "sd",
+            "caption": "false",
+            "licensedContent": false
+           },
+           "status": {
+            "uploadStatus": "processed",
+            "privacyStatus": "public",
+            "license": "youtube",
+            "embeddable": true,
+            "publicStatsViewable": true
+           },
+           "statistics": {
+            "viewCount": "7185",
+            "likeCount": "51",
+            "dislikeCount": "2",
+            "favoriteCount": "0",
+            "commentCount": "8"
+           }
+          }
+         ]
+        }
+    http_version: 
+  recorded_at: Sun, 13 Mar 2016 05:42:08 GMT
 recorded_with: VCR 3.0.1

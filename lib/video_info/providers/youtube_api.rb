@@ -47,7 +47,12 @@ class VideoInfo
       private
 
       def available?
-        !data['items'].empty?
+        if !data['items'].empty?
+          upload_status = data['items'][0]['status']['uploadStatus']
+          'rejected' != upload_status
+        else
+          false
+        end
       rescue VideoInfo::HttpError
         false
       end
@@ -58,8 +63,8 @@ class VideoInfo
 
       def _api_path
         "/youtube/v3/videos?id=#{video_id}" \
-        '&part=snippet,statistics,contentDetails&fields=' \
-        "items(id,snippet,statistics,contentDetails)&key=#{api_key}"
+        '&part=snippet,statistics,status,contentDetails&fields=' \
+        "items(id,snippet,statistics,status,contentDetails)&key=#{api_key}"
       end
 
       def _api_url

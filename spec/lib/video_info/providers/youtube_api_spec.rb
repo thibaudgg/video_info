@@ -130,7 +130,7 @@ require 'spec_helper'
 
         describe '#available?' do
           subject { super().available? }
-          it { is_expected.to be_truthy }
+          it { is_expected.to be_falsey }
         end
       end
     end
