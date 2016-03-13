@@ -33,7 +33,9 @@ class VideoInfo
       def available?
         is_available = super
 
-        if is_available
+        if data.nil?
+          is_available = false
+        elsif is_available
           page_header = data.css('#page_header')
 
           if page_header.text == "\n Private Video\n "
@@ -130,6 +132,9 @@ class VideoInfo
 
       def _set_data_from_api_impl(api_url)
         Oga.parse_html(open(api_url.to_s).read)
+
+      rescue OpenURI::HTTPError
+        nil
       end
 
       def _api_url
