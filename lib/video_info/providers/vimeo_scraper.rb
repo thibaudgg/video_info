@@ -67,11 +67,11 @@ class VideoInfo
       end
 
       def height
-        meta_node_value('og:video:height').to_i
+        json_info['height']
       end
 
       def width
-        meta_node_value('og:video:width').to_i
+        json_info['width']
       end
 
       def thumbnail_small
