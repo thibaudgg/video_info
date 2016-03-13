@@ -33,7 +33,9 @@ class VideoInfo
       def available?
         is_available = super
 
-        if is_available
+        if data.nil?
+          is_available = false
+        elsif is_available
           page_header = data.css('#page_header')
 
           if page_header.text == "\n Private Video\n "
@@ -67,11 +69,11 @@ class VideoInfo
       end
 
       def height
-        meta_node_value('og:video:height').to_i
+        json_info['height']
       end
 
       def width
-        meta_node_value('og:video:width').to_i
+        json_info['width']
       end
 
       def thumbnail_small
@@ -130,6 +132,9 @@ class VideoInfo
 
       def _set_data_from_api_impl(api_url)
         Oga.parse_html(open(api_url.to_s).read)
+
+      rescue OpenURI::HTTPError
+        nil
       end
 
       def _api_url
