@@ -94,7 +94,7 @@ video = VideoInfo.new('http://vk.com/video39576223_108370515')
 # video.provider         => "Vkontakte"
 # video.video_id         => "108370515"
 # video.author           => "Alexander Maslov"
-# video.author_thumbnail => "https://pp.vk.me/c624521/v624521223/3c288/lVcVW7LNnrQ.jpg" 
+# video.author_thumbnail => "https://pp.vk.me/c624521/v624521223/3c288/lVcVW7LNnrQ.jpg"
 # video.author_url       => "https://vk.com/videos39576223"
 # video.title            => "Я уточка)))))"
 # video.description      => "это ВЗРЫВ МОЗГА!!!<br>Просто отвал башки..."
@@ -176,6 +176,7 @@ VideoInfo.disable_providers = [] # enable all providers
 Note: `disable_providers` is case-insensitive. Attempting to use a disabled provider will raise a UrlError, just like attempting to use a
 non-video URL.
 
+
 Author
 ------
 
@@ -185,6 +186,7 @@ Maintainers
 -----------
 
 [Thibaud Guillaume-Gentil](https://github.com/thibaudgg) ([@thibaudgg](https://twitter.com/thibaudgg))
+
 [Vincent Heuken](https://github.com/vheuken) ([@vheuken](https://github.com/vheuken))
 
 Contributors
