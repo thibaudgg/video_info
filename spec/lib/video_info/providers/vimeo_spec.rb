@@ -193,8 +193,8 @@ require 'spec_helper'
 
       it 'should add URL attribute' do
         attributes = { autoplay: 1 }
-        expected = expect(subject.embed_code(url_attributes: attributes))
-        expected.to match(/autoplay=1/)
+        embed_code = subject.embed_code(url_attributes: attributes)
+        expect(embed_code).to match(/autoplay=1/)
       end
     end
 
@@ -203,9 +203,9 @@ require 'spec_helper'
 
       it 'should have proper dimensions' do
         dimensions = { width: 800, height: 600 }
-        expected = expect(subject.embed_code(iframe_attributes: dimensions))
-        expected.to match(/width="800"/)
-        expected.to match(/height="600"/)
+        embed_code = subject.embed_code(iframe_attributes: dimensions)
+        expect(embed_code).to match(/width="800"/)
+        expect(embed_code).to match(/height="600"/)
       end
     end
 
