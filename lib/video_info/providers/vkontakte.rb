@@ -29,7 +29,10 @@ class VideoInfo
         content = data[/"desc":"(.*?)",/, 1]
         CGI.unescape_html(content).gsub('&nbsp;', ' ')
       end
-      alias_method :keywords, :description
+
+      def keywords
+        nil
+      end
 
       def width
         { 240 => 320,

@@ -147,7 +147,7 @@ describe VideoInfo::Providers::Vkontakte do
     its(:embed_code)       { should eq embed_code }
     its(:title)            { should eq video_title }
     its(:description)      { should start_with description_text }
-    its(:keywords)         { should start_with description_text }
+    its(:keywords)         { should be_nil }
     its(:duration)         { should eq 299 }
     its(:width)            { should eq 0 }
     its(:height)           { should eq 0 }
@@ -161,7 +161,6 @@ describe VideoInfo::Providers::Vkontakte do
     subject { VideoInfo.new('http://vk.com/video39576223_108370515') }
 
     description_text = 'это ВЗРЫВ МОЗГА!!!<br>Просто отвал башки...'
-    keywords = 'это ВЗРЫВ МОЗГА!!!<br>Просто отвал башки...'
     embed_url = '//vk.com/video_ext.php?oid=39576223&' \
                 'id=108370515&hash=15184dbd085c47af'
     embed_code = '<iframe src="//vk.com/video_ext.php?oid=39576223&' \
@@ -176,7 +175,7 @@ describe VideoInfo::Providers::Vkontakte do
     its(:embed_code)   { should eq embed_code }
     its(:title)        { should eq 'Я уточка)))))' }
     its(:description)  { should eq description_text }
-    its(:keywords)     { should eq keywords }
+    its(:keywords)     { should be_nil }
     its(:duration)     { should eq 183 }
     its(:width)        { should eq 320 }
     its(:height)       { should eq 240 }
