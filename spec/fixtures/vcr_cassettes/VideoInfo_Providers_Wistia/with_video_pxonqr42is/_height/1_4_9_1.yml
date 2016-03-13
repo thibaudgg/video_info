@@ -1,0 +1,80 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://fast.wistia.com/oembed?url=http://home.wistia.com/medias/pxonqr42is
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - VideoInfo/2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.8.1
+      Content-Type:
+      - application/json; charset=utf-8
+      Status:
+      - 200 OK
+      X-Content-Type-Options:
+      - nosniff
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, no-cache
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      P3p:
+      - CP="CURi ADMa DEVa IVAa IVDa CONi OUR IND DSP CAO COR"
+      X-Request-Id:
+      - 134055239f6f4814574231e02cab2336
+      X-Runtime:
+      - '0.050819'
+      X-Rack-Cache:
+      - miss
+      Via:
+      - 1.1 varnish
+      - 1.1 varnish
+      Fastly-Debug-Digest:
+      - 05317f3b6c4b18f379c581f5f2e8500ed43d4651f4f2ac28f3a5fc0797f7ad71
+      Content-Length:
+      - '430'
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Sun, 13 Mar 2016 05:51:22 GMT
+      Age:
+      - '1848'
+      Connection:
+      - keep-alive
+      X-Served-By:
+      - cache-ord1722-ORD, cache-lax1424-LAX
+      X-Cache:
+      - HIT, HIT
+      X-Cache-Hits:
+      - 1, 1
+      X-Timer:
+      - S1457848282.371980,VS0,VE0
+      Vary:
+      - Accept-Encoding,X-Forwarded-Proto
+      Strict-Transport-Security:
+      - max-age=0
+    body:
+      encoding: ASCII-8BIT
+      string: '{"version":"1.0","type":"video","html":"<iframe src=\"//fast.wistia.net/embed/iframe/pxonqr42is\"
+        allowtransparency=\"true\" frameborder=\"0\" scrolling=\"no\" class=\"wistia_embed\"
+        name=\"wistia_embed\" allowfullscreen mozallowfullscreen webkitallowfullscreen
+        oallowfullscreen msallowfullscreen width=\"960\" height=\"568\"></iframe>\n<script
+        src=\"//fast.wistia.net/assets/external/E-v1.js\" async></script>","width":960,"height":568,"provider_name":"Wistia,
+        Inc.","provider_url":"http://wistia.com","title":"Understanding Analytics","thumbnail_url":"https://embed-ssl.wistia.com/deliveries/0fccbdc60ade35723f79f1c002bc61b135b610fa.jpg?image_crop_resized=960x540","thumbnail_width":960,"thumbnail_height":540,"duration":250.0}'
+    http_version: 
+  recorded_at: Sun, 13 Mar 2016 05:51:22 GMT
+recorded_with: VCR 3.0.1

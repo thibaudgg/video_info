@@ -1,5 +1,11 @@
 class VideoInfo
   module YoutubePlaylistAPI
+    def available?
+      !data['items'].empty?
+    rescue VideoInfo::HttpError
+      false
+    end
+
     def description
       data['items'][0]['snippet']['description']
     end
