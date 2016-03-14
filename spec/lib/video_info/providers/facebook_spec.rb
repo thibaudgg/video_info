@@ -18,6 +18,44 @@ describe VideoInfo::Providers::Facebook do
       it { is_expected.to be_truthy }
     end
 
+    context 'with Facebook page URL' do
+      url = 'https://www.facebook.com/freddyolo420'
+      let(:url) { url }
+      it { is_expected.to be_falsey }
+    end
+
+    context 'with Facebook page videos list page' do
+      url = 'https://www.facebook.com/freddyolo420/videos'
+      let(:url) { url }
+      it { is_expected.to be_falsey }
+    end
+
+    context 'with Facebook page photo page' do
+      url = 'https://www.facebook.com/freddyolo420/photos/pb.593748813981151' \
+            '.-2207520000.1457977944./1080457915310236/?type=3&theater'
+      let(:url) { url }
+      it { is_expected.to be_falsey }
+    end
+
+    context 'with Facebook profile URL' do
+      url = 'https://www.facebook.com/vincent.heuken'
+      let(:url) { url }
+      it { is_expected.to be_falsey }
+    end
+
+    context 'with Facebook profile video URL' do
+      url = 'https://www.facebook.com/vincent.heuken/videos/10206065040175225/?permPage=1'
+      let(:url) { url }
+      it { is_expected.to be_truthy }
+    end
+
+    context 'with Facebook profile theater video URL' do
+      url = 'https://www.facebook.com/vincent.heuken/videos/' \
+            'vb.1538564816/10206065040175225/?type=3&theater'
+      let(:url) { url }
+      it { is_expected.to be_truthy }
+    end
+
     context 'with other url' do
       let(:url) { 'http://google.com' }
       it { is_expected.to be_falsey }
