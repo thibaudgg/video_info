@@ -40,6 +40,7 @@ class VideoInfo
   PROVIDERS = %w[
     Dailymotion Vkontakte Wistia
     Vimeo Youtube YoutubePlaylist
+    Facebook
   ].freeze
   PROVIDERS.each { |p| require "video_info/providers/#{p.downcase}" }
 
