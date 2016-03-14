@@ -15,7 +15,6 @@ describe VideoInfo::Providers::Facebook do
             'id=593748813981151&refsrc=https%3A%2F%2Fm.facebook.com' \
             '%2Ffreddyolo420%2Fvideos%2F1071390929550268%2F&_rdr'
       let(:url) { url }
-      p url
       it { is_expected.to be_truthy }
     end
 
