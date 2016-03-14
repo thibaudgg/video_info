@@ -44,7 +44,8 @@ describe VideoInfo::Providers::Facebook do
     end
 
     context 'with Facebook profile video URL' do
-      url = 'https://www.facebook.com/vincent.heuken/videos/10206065040175225/?permPage=1'
+      url = 'https://www.facebook.com/vincent.heuken/videos/' \
+            '10206065040175225/?permPage=1'
       let(:url) { url }
       it { is_expected.to be_truthy }
     end
