@@ -1,12 +1,18 @@
 require 'spec_helper'
 
 describe VideoInfo::Providers::Facebook do
+  public_video_from_page_url = 'https://www.facebook.com/freddyolo420/' \
+                               'videos/1071390929550268/'
+
+  before(:all) do
+    VideoInfo.provider_api_keys = { facebook: '' }
+  end
+
   describe '.usable?' do
     subject { VideoInfo::Providers::Facebook.usable?(url) }
 
     context 'with Facebook page video URL' do
-      url = 'https://www.facebook.com/freddyolo420/videos/1071390929550268/'
-      let(:url) { url }
+      let(:url) { public_video_from_page_url }
       it { is_expected.to be_truthy }
     end
 
@@ -60,6 +66,27 @@ describe VideoInfo::Providers::Facebook do
     context 'with other url' do
       let(:url) { 'http://google.com' }
       it { is_expected.to be_falsey }
+    end
+  end
+
+  describe '#available?' do
+    context 'with public video from page', :vcr do
+      subject { VideoInfo.new(public_video_from_page_url) }
+
+      describe '#available?' do
+        subject { super().available? }
+        it { is_expected.to be_truthy }
+      end
+
+      describe '#video_id' do
+        subject { super().video_id }
+        it { is_expected.to eq '1071390929550268' }
+      end
+
+      describe '#author' do
+        subject { super().author }
+        it { is_expected.to eq 'フレッドYOLO' }
+      end
     end
   end
 end
