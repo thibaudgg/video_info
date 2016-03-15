@@ -10,7 +10,11 @@ class VideoInfo
       end
 
       def author
-        @author ||= data.css('#fbPhotoPageAuthorName')[0].text
+        data.css('#fbPhotoPageAuthorName')[0].text
+      end
+
+      def author_thumbnail
+        data.css('#fbPhotoPageAuthorPic')[0].css('img')[0].attr('src').value
       end
 
       private

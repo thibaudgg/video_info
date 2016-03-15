@@ -87,6 +87,15 @@ describe VideoInfo::Providers::Facebook do
         subject { super().author }
         it { is_expected.to eq 'フレッドYOLO' }
       end
+
+      describe '#author_thumbnail' do
+        author_thumbnail_url = 'https://scontent.xx.fbcdn.net/hprofile-ash4/' \
+                               'v/t1.0-1/p32x32/1001098_616848995004466' \
+                               '_2144030070_n.png?oh=' \
+                               'c7e1b20bcffa6e78229df4a1db11828d&oe=575416CD'
+        subject { super().author_thumbnail }
+        it { is_expected.to eq author_thumbnail_url }
+      end
     end
   end
 end
