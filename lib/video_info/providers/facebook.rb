@@ -17,6 +17,13 @@ class VideoInfo
         data.css('#fbPhotoPageAuthorPic')[0].css('img')[0].attr('src').value
       end
 
+      def author_url
+        url = data.css('#fbPhotoPageAuthorName')[0].css('a')[0].attr('href').value
+        uri = URI.parse(url)
+        uri.query = '' # strip off options
+        uri.to_s.chomp('/?')
+      end
+
       private
 
       def available?

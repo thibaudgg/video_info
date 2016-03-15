@@ -96,6 +96,12 @@ describe VideoInfo::Providers::Facebook do
         subject { super().author_thumbnail }
         it { is_expected.to eq author_thumbnail_url }
       end
+
+      describe '#author_url' do
+        author_url = 'https://www.facebook.com/freddyolo420'
+        subject { super().author_url }
+        it { is_expected.to eq author_url }
+      end
     end
   end
 end
