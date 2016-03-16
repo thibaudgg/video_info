@@ -119,5 +119,29 @@ describe VideoInfo::Providers::Facebook do
       subject { super().title }
       it { is_expected.to be_nil }
     end
+
+    describe '#thumbnail' do
+      thumbnail_url = 'https://scontent.xx.fbcdn.net/hvthumb-xpa1/v/' \
+                      't15.0-10/p160x160/12720103_1071391039550257_' \
+                      '1997979656_n.jpg?oh=c29fe72d1d3a5be4e81071a0cd' \
+                      '877a9a&oe=57528694'
+      subject { super().thumbnail }
+      it { is_expected.to eq thumbnail_url }
+    end
+
+    describe '#thumbnail_small' do
+      subject { super().thumbnail_small }
+      it { is_expected.to be_nil }
+    end
+
+    describe '#thumbnail_medium' do
+      subject { super().thumbnail_medium }
+      it { is_expected.to be_nil }
+    end
+
+    describe '#thumbnail_large' do
+      subject { super().thumbnail_large }
+      it { is_expected.to be_nil }
+    end
   end
 end

@@ -27,8 +27,24 @@ class VideoInfo
         data['length'].round.to_i
       end
 
+      def thumbnail
+        data['picture']
+      end
+
+      def thumbnail_small
+        nil
+      end
+
+      def thumbnail_medium
+        nil
+      end
+
+      def thumbnail_large
+        nil
+      end
+
       def title
-        data['title']
+        nil
       end
 
       private
@@ -50,7 +66,8 @@ class VideoInfo
       end
 
       def _api_path
-        "/#{_api_version}/#{video_id}?fields=description,from,length,title" \
+        "/#{_api_version}/#{video_id}" \
+        '?fields=description,from,length,picture,title' \
         "&access_token=#{_app_id}|#{_app_secret}"
       end
 

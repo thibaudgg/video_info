@@ -49,6 +49,7 @@ class VideoInfo
   def_delegators :@provider, :date, :duration, :width, :height
   def_delegators :@provider, :thumbnail
   def_delegators :@provider,
+                 :thumbnail,
                  :thumbnail_small,
                  :thumbnail_medium,
                  :thumbnail_large,

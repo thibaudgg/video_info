@@ -1,0 +1,54 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://graph.facebook.com/v2.5/1071390929550268?access_token=1526814430954328%7C1bd1051b2e630584a5fa01a8ebf21cad&fields=description,from,length,picture,title
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - VideoInfo/2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Type:
+      - application/json; charset=UTF-8
+      X-Fb-Trace-Id:
+      - GITsbcq9xpa
+      X-Fb-Rev:
+      - '2233316'
+      Etag:
+      - '"2a165f961c15c60b69733507c1e8ad0bc61df5e7"'
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - private, no-cache, no-store, must-revalidate
+      Facebook-Api-Version:
+      - v2.5
+      Expires:
+      - Sat, 01 Jan 2000 00:00:00 GMT
+      Vary:
+      - Accept-Encoding
+      X-Fb-Debug:
+      - q15eBJfLz7S2Cli8S9JYtzqNTahPloaEcga9VU3hkyHCEZCuuvcJKw4XbczVqH6Z3jMxkMZWjbtlT2qvjT98VQ==
+      Date:
+      - Wed, 16 Mar 2016 18:59:06 GMT
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '272'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"description":"If he visits you it''s to late","from":{"name":"\u30d5\u30ec\u30c3\u30c9YOLO","id":"593748813981151"},"length":9.509,"picture":"https:\/\/scontent.xx.fbcdn.net\/hvthumb-xpa1\/v\/t15.0-10\/p160x160\/12720103_1071391039550257_1997979656_n.jpg?oh=c29fe72d1d3a5be4e81071a0cd877a9a&oe=57528694","id":"1071390929550268"}'
+    http_version: 
+  recorded_at: Wed, 16 Mar 2016 18:59:04 GMT
+recorded_with: VCR 3.0.1
