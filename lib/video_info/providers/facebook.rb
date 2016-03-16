@@ -19,6 +19,10 @@ class VideoInfo
         'https://www.facebook.com/' + data['from']['id']
       end
 
+      def duration
+        data['length'].round.to_i
+      end
+
       private
 
       def available?
