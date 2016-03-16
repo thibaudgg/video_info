@@ -105,9 +105,19 @@ describe VideoInfo::Providers::Facebook do
       it { is_expected.to eq author_url }
     end
 
+    describe '#description' do
+      subject { super().description }
+      it { is_expected.to eq "If he visits you it's to late" }
+    end
+
     describe '#duration' do
       subject { super().duration }
       it { is_expected.to eq 10 }
+    end
+
+    describe '#title' do
+      subject { super().title }
+      it { is_expected.to be_nil }
     end
   end
 end

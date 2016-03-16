@@ -19,8 +19,16 @@ class VideoInfo
         'https://www.facebook.com/' + data['from']['id']
       end
 
+      def description
+        data['description']
+      end
+
       def duration
         data['length'].round.to_i
+      end
+
+      def title
+        data['title']
       end
 
       private
@@ -42,7 +50,7 @@ class VideoInfo
       end
 
       def _api_path
-        "/#{_api_version}/#{video_id}?fields=from,length" \
+        "/#{_api_version}/#{video_id}?fields=description,from,length,title" \
         "&access_token=#{_app_id}|#{_app_secret}"
       end
 

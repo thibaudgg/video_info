@@ -146,4 +146,153 @@ http_interactions:
       string: '{"from":{"name":"\u30d5\u30ec\u30c3\u30c9YOLO","id":"593748813981151"},"length":9.509,"id":"1071390929550268"}'
     http_version: 
   recorded_at: Wed, 16 Mar 2016 09:37:28 GMT
+- request:
+    method: get
+    uri: https://graph.facebook.com/v2.5/1071390929550268?access_token=1526814430954328%7C1bd1051b2e630584a5fa01a8ebf21cad&fields=from,title,length
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - VideoInfo/2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Type:
+      - application/json; charset=UTF-8
+      X-Fb-Trace-Id:
+      - BMcpmZd6aj1
+      X-Fb-Rev:
+      - '2231853'
+      Etag:
+      - '"ff9487c8dac16e23d6113a5eb74c29cdcd2f7e5f"'
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - private, no-cache, no-store, must-revalidate
+      Facebook-Api-Version:
+      - v2.5
+      Expires:
+      - Sat, 01 Jan 2000 00:00:00 GMT
+      X-Fb-Debug:
+      - PIamfsMGsFoJJeyP+Jx/+nqf4ngd4gTCIL86kSHfVAvaVSNGxIXM/YzgJa1T8A8uS0ze3IJ6yrDRXUJCV6AVxQ==
+      Date:
+      - Wed, 16 Mar 2016 09:46:15 GMT
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '110'
+    body:
+      encoding: UTF-8
+      string: '{"from":{"name":"\u30d5\u30ec\u30c3\u30c9YOLO","id":"593748813981151"},"length":9.509,"id":"1071390929550268"}'
+    http_version: 
+  recorded_at: Wed, 16 Mar 2016 09:46:15 GMT
+- request:
+    method: get
+    uri: https://graph.facebook.com/v2.5/1071390929550268?access_token=1526814430954328%7C1bd1051b2e630584a5fa01a8ebf21cad&fields=from,length,title
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - VideoInfo/2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Type:
+      - application/json; charset=UTF-8
+      X-Fb-Trace-Id:
+      - Fs48n21ncDK
+      X-Fb-Rev:
+      - '2231853'
+      Etag:
+      - '"ff9487c8dac16e23d6113a5eb74c29cdcd2f7e5f"'
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - private, no-cache, no-store, must-revalidate
+      Facebook-Api-Version:
+      - v2.5
+      Expires:
+      - Sat, 01 Jan 2000 00:00:00 GMT
+      X-Fb-Debug:
+      - 9ucYp4zU/znZxESyZY8VtiMNFW97jfgdOMIrEDve4bqzqDTHuDRE0e+NCG9OaXzVcCKPMpvsSiSbl0Cbf1UGnA==
+      Date:
+      - Wed, 16 Mar 2016 09:48:24 GMT
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '110'
+    body:
+      encoding: UTF-8
+      string: '{"from":{"name":"\u30d5\u30ec\u30c3\u30c9YOLO","id":"593748813981151"},"length":9.509,"id":"1071390929550268"}'
+    http_version: 
+  recorded_at: Wed, 16 Mar 2016 09:48:23 GMT
+- request:
+    method: get
+    uri: https://graph.facebook.com/v2.5/1071390929550268?access_token=1526814430954328%7C1bd1051b2e630584a5fa01a8ebf21cad&fields=description,from,length,title
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - VideoInfo/2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Type:
+      - application/json; charset=UTF-8
+      X-Fb-Trace-Id:
+      - CkPmm+8B7iC
+      X-Fb-Rev:
+      - '2231853'
+      Etag:
+      - '"df7fd873f49742f4f4d2729c71dce72bfe5b4160"'
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - private, no-cache, no-store, must-revalidate
+      Facebook-Api-Version:
+      - v2.5
+      Expires:
+      - Sat, 01 Jan 2000 00:00:00 GMT
+      Vary:
+      - Accept-Encoding
+      X-Fb-Debug:
+      - IvgWKEDetZt3OcMEPMjvCtv0+KcpwH4YMd6k8n8OJk/HuTgJBT1B7L4Foa2+J9KkJ8EV6TULzNRE60uFlezgXg==
+      Date:
+      - Wed, 16 Mar 2016 09:50:52 GMT
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '149'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"description":"If he visits you it''s to late","from":{"name":"\u30d5\u30ec\u30c3\u30c9YOLO","id":"593748813981151"},"length":9.509,"id":"1071390929550268"}'
+    http_version: 
+  recorded_at: Wed, 16 Mar 2016 09:50:51 GMT
 recorded_with: VCR 3.0.1
