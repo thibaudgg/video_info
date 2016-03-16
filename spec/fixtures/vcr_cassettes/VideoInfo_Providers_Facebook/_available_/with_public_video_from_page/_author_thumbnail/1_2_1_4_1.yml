@@ -3103,4 +3103,106 @@ http_interactions:
         bnNlIn0pKCk7PC9zY3JpcHQ+PC9ib2R5PjwvaHRtbD4=
     http_version: 
   recorded_at: Tue, 15 Mar 2016 17:08:43 GMT
+- request:
+    method: get
+    uri: https://graph.facebook.com/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - VideoInfo/2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Www-Authenticate:
+      - OAuth "Facebook Platform" "invalid_request" "Unsupported get request. Please
+        read the Graph API documentation at https://developers.facebook.com/docs/graph-api"
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Type:
+      - application/json; charset=UTF-8
+      X-Fb-Trace-Id:
+      - ByfC9M6BLIP
+      X-Fb-Rev:
+      - '2231853'
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - no-store
+      Facebook-Api-Version:
+      - v2.0
+      Expires:
+      - Sat, 01 Jan 2000 00:00:00 GMT
+      Vary:
+      - Accept-Encoding
+      X-Fb-Debug:
+      - BNOm7R2NzVKCuGmRz7Wb26jJBSdr0KGcBGPpoE6T2loM6JyukRviaoZ3Hu358qeOMCS5P80hRJdHaz+jLE79MA==
+      Date:
+      - Wed, 16 Mar 2016 03:04:13 GMT
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '192'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"error":{"message":"Unsupported get request. Please read the Graph
+        API documentation at https:\/\/developers.facebook.com\/docs\/graph-api","type":"GraphMethodException","code":100,"fbtrace_id":"ByfC9M6BLIP"}}'
+    http_version: 
+  recorded_at: Wed, 16 Mar 2016 03:04:13 GMT
+- request:
+    method: get
+    uri: https://graph.facebook.com/2.5/1071390929550268
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - VideoInfo/2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Www-Authenticate:
+      - 'OAuth "Facebook Platform" "invalid_request" "Unknown path components: /1071390929550268"'
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Type:
+      - application/json; charset=UTF-8
+      X-Fb-Trace-Id:
+      - HzpjigLP731
+      X-Fb-Rev:
+      - '2231853'
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - no-store
+      Facebook-Api-Version:
+      - v2.0
+      Expires:
+      - Sat, 01 Jan 2000 00:00:00 GMT
+      X-Fb-Debug:
+      - iOPG7HxoxBS1/Y0lyDLCJhbjbv2+stNCfnmbvtifUtCgRcSEfIjve12dQ5+RvgokMtiEKNk7o3enJUmjxXOL3Q==
+      Date:
+      - Wed, 16 Mar 2016 03:07:07 GMT
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '130'
+    body:
+      encoding: UTF-8
+      string: '{"error":{"message":"Unknown path components: \/1071390929550268","type":"OAuthException","code":2500,"fbtrace_id":"HzpjigLP731"}}'
+    http_version: 
+  recorded_at: Wed, 16 Mar 2016 03:07:07 GMT
 recorded_with: VCR 3.0.1

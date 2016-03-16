@@ -1,6 +1,3 @@
-require 'open-uri'
-require 'oga'
-
 class VideoInfo
   module Providers
     class Facebook < Provider
@@ -10,18 +7,15 @@ class VideoInfo
       end
 
       def author
-        data.css('#fbPhotoPageAuthorName')[0].text
+        data
       end
 
       def author_thumbnail
-        data.css('#fbPhotoPageAuthorPic')[0].css('img')[0].attr('src').value
+        data
       end
 
       def author_url
-        url = data.css('#fbPhotoPageAuthorName')[0].css('a')[0].attr('href').value
-        uri = URI.parse(url)
-        uri.query = '' # strip off options
-        uri.to_s.chomp('/?')
+        data
       end
 
       private
@@ -34,22 +28,20 @@ class VideoInfo
         %r{(?:.*facebook\.com\/.*\/videos\/(.*)/)}
       end
 
-      def _set_data_from_api_impl(api_url)
-        html = open(api_url).read
+      def _api_base
+        'graph.facebook.com'
+      end
 
-        Oga.parse_html(html.force_encoding('UTF-8'))
+      def _api_version
+        '2.5'
+      end
+
+      def _api_path
+        "/#{_api_version}/#{video_id}"
       end
 
       def _api_url
-        uri = URI.parse(@url)
-
-        unless uri.scheme
-          uri.path = uri.path.prepend('//')
-        end
-
-        uri.scheme = 'https'
-
-        uri.to_s
+        "https://#{_api_base}#{_api_path}"
       end
     end
   end
