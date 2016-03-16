@@ -1,3 +1,5 @@
+require 'json'
+
 class VideoInfo
   module Providers
     class Facebook < Provider
@@ -7,15 +9,14 @@ class VideoInfo
       end
 
       def author
-        data
+        data['from']['name']
       end
 
       def author_thumbnail
-        data
       end
 
       def author_url
-        data
+        'https://www.facebook.com/' + data['from']['id']
       end
 
       private
@@ -33,15 +34,24 @@ class VideoInfo
       end
 
       def _api_version
-        '2.5'
+        'v2.5'
       end
 
       def _api_path
-        "/#{_api_version}/#{video_id}"
+        "/#{_api_version}/#{video_id}?fields=from,length" \
+        "&access_token=#{_app_id}|#{_app_secret}"
       end
 
       def _api_url
         "https://#{_api_base}#{_api_path}"
+      end
+
+      def _app_id
+        VideoInfo.provider_api_keys[:facebook_app_id]
+      end
+
+      def _app_secret
+        VideoInfo.provider_api_keys[:facebook_app_secret]
       end
     end
   end

@@ -1,0 +1,149 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://graph.facebook.com/v2.5/1071390929550268
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - VideoInfo/2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Www-Authenticate:
+      - OAuth "Facebook Platform" "invalid_token" "An access token is required to
+        request this resource."
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Type:
+      - application/json; charset=UTF-8
+      X-Fb-Trace-Id:
+      - BHw2fS9Eajk
+      X-Fb-Rev:
+      - '2231853'
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - no-store
+      Facebook-Api-Version:
+      - v2.5
+      Expires:
+      - Sat, 01 Jan 2000 00:00:00 GMT
+      X-Fb-Debug:
+      - KN0sYb8L5iV38VF1ymB/cVZXb/rzMqJ/mn4/+1qWbUKkcF63bGZ6Cajlad5sR50E3JXSn3TfUPVuDNHXoMH58g==
+      Date:
+      - Wed, 16 Mar 2016 09:31:59 GMT
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '139'
+    body:
+      encoding: UTF-8
+      string: '{"error":{"message":"An access token is required to request this resource.","type":"OAuthException","code":104,"fbtrace_id":"BHw2fS9Eajk"}}'
+    http_version: 
+  recorded_at: Wed, 16 Mar 2016 09:31:59 GMT
+- request:
+    method: get
+    uri: https://graph.facebook.com/v2.5/1071390929550268?access_token=%7C&fields=from,length
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - VideoInfo/2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Www-Authenticate:
+      - OAuth "Facebook Platform" "invalid_token" "Invalid OAuth access token signature."
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Type:
+      - application/json; charset=UTF-8
+      X-Fb-Trace-Id:
+      - HWDtmcA0qT5
+      X-Fb-Rev:
+      - '2231853'
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - no-store
+      Expires:
+      - Sat, 01 Jan 2000 00:00:00 GMT
+      X-Fb-Debug:
+      - iwIXNIWDAY6juISBKehAlV/3eeyts7e+ferXrjXLsdTb6DzDFgL/OtN+4K8xP6y3/42J55G3o6M65B8sAbfMUQ==
+      Date:
+      - Wed, 16 Mar 2016 09:36:18 GMT
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '123'
+    body:
+      encoding: UTF-8
+      string: '{"error":{"message":"Invalid OAuth access token signature.","type":"OAuthException","code":190,"fbtrace_id":"HWDtmcA0qT5"}}'
+    http_version: 
+  recorded_at: Wed, 16 Mar 2016 09:36:18 GMT
+- request:
+    method: get
+    uri: https://graph.facebook.com/v2.5/1071390929550268?access_token=1526814430954328%7C1bd1051b2e630584a5fa01a8ebf21cad&fields=from,length
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - VideoInfo/2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Type:
+      - application/json; charset=UTF-8
+      X-Fb-Trace-Id:
+      - F3kLTwvPFn6
+      X-Fb-Rev:
+      - '2231853'
+      Etag:
+      - '"ff9487c8dac16e23d6113a5eb74c29cdcd2f7e5f"'
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - private, no-cache, no-store, must-revalidate
+      Facebook-Api-Version:
+      - v2.5
+      Expires:
+      - Sat, 01 Jan 2000 00:00:00 GMT
+      X-Fb-Debug:
+      - 1+b58F95UG7PKAqCBopM/Dk6u6t9vEiZcR8SP5DSnyj52pmoQaICFgow5Q91xq9wXgr+AKotyRKIBpwnBapR6A==
+      Date:
+      - Wed, 16 Mar 2016 09:37:28 GMT
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '110'
+    body:
+      encoding: UTF-8
+      string: '{"from":{"name":"\u30d5\u30ec\u30c3\u30c9YOLO","id":"593748813981151"},"length":9.509,"id":"1071390929550268"}'
+    http_version: 
+  recorded_at: Wed, 16 Mar 2016 09:37:28 GMT
+recorded_with: VCR 3.0.1
