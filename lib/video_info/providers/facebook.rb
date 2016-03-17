@@ -101,7 +101,7 @@ class VideoInfo
 
         author_thumbnail_data = super(_profile_api_url(user_id))['data']
 
-        data = data.merge({ 'author_thumbnail' => author_thumbnail_data })
+        data = data.merge('author_thumbnail' => author_thumbnail_data)
 
         data.freeze
       end
