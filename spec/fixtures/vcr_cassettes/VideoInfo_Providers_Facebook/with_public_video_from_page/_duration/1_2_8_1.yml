@@ -1,0 +1,157 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://graph.facebook.com/v2.5/1071390929550268?access_token=1526814430954328%7C1bd1051b2e630584a5fa01a8ebf21cad&fields=description,from,length,picture,title
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - VideoInfo/2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Type:
+      - application/json; charset=UTF-8
+      X-Fb-Trace-Id:
+      - GyGfOeQGcOK
+      X-Fb-Rev:
+      - '2234476'
+      Etag:
+      - '"2a165f961c15c60b69733507c1e8ad0bc61df5e7"'
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - private, no-cache, no-store, must-revalidate
+      Facebook-Api-Version:
+      - v2.5
+      Expires:
+      - Sat, 01 Jan 2000 00:00:00 GMT
+      Vary:
+      - Accept-Encoding
+      X-Fb-Debug:
+      - 0wOwnGOUL8hEX8Le411x3TOyqOCixE023Qkif8ziw2lh1bUyM89fgKHKy+rFmK3Hta5H6+G6MURQ/t4eI/xXgA==
+      Date:
+      - Thu, 17 Mar 2016 02:46:06 GMT
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '272'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"description":"If he visits you it''s to late","from":{"name":"\u30d5\u30ec\u30c3\u30c9YOLO","id":"593748813981151"},"length":9.509,"picture":"https:\/\/scontent.xx.fbcdn.net\/hvthumb-xpa1\/v\/t15.0-10\/p160x160\/12720103_1071391039550257_1997979656_n.jpg?oh=c29fe72d1d3a5be4e81071a0cd877a9a&oe=57528694","id":"1071390929550268"}'
+    http_version: 
+  recorded_at: Thu, 17 Mar 2016 02:46:04 GMT
+- request:
+    method: get
+    uri: https://graph.facebook.com/v2.5/593748813981151/picture?access_token=1526814430954328%7C1bd1051b2e630584a5fa01a8ebf21cad&redirect=0
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - VideoInfo/2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Type:
+      - application/json; charset=UTF-8
+      X-Fb-Trace-Id:
+      - CYXLKA3FcPg
+      X-Fb-Rev:
+      - '2234476'
+      Etag:
+      - '"702dad639a32c432f25028603f60240fca177c6e"'
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - private, no-cache, no-store, must-revalidate
+      Facebook-Api-Version:
+      - v2.5
+      Expires:
+      - Sat, 01 Jan 2000 00:00:00 GMT
+      Vary:
+      - Accept-Encoding
+      X-Fb-Debug:
+      - XSCHQAw5/RlkjrJvKwXGeZ0B6s7ztjq2Tmucd0RcsJ4W07frY9trNqQG+dHrBaVMTpdCP24CoysjnuLrmrdaXQ==
+      Date:
+      - Thu, 17 Mar 2016 02:46:07 GMT
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '184'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":{"is_silhouette":false,"url":"https:\/\/scontent.xx.fbcdn.net\/hprofile-ash4\/v\/t1.0-1\/p50x50\/1001098_616848995004466_2144030070_n.png?oh=234c7dab4aa9c322264aabcd625b0e59&oe=574E35F9"}}'
+    http_version: 
+  recorded_at: Thu, 17 Mar 2016 02:46:05 GMT
+- request:
+    method: get
+    uri: https://graph.facebook.com/v2.5/1071390929550268?access_token=1526814430954328%7C1bd1051b2e630584a5fa01a8ebf21cad&fields=created_time,description,from,length,picture,title
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - VideoInfo/2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Type:
+      - application/json; charset=UTF-8
+      X-Fb-Trace-Id:
+      - BRCI32anVaR
+      X-Fb-Rev:
+      - '2234476'
+      Etag:
+      - '"48492a77b9aa0fd1c8b8b970547e677229eb022f"'
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - private, no-cache, no-store, must-revalidate
+      Facebook-Api-Version:
+      - v2.5
+      Expires:
+      - Sat, 01 Jan 2000 00:00:00 GMT
+      Vary:
+      - Accept-Encoding
+      X-Fb-Debug:
+      - k2iOtTTk29UVg2E4whbcD4W9MWt5dCl31C7SgK/CwBHIi5QTG1iCqatlBOBarqsWU0DGe9Ug8sOmqtgIP8fcmw==
+      Date:
+      - Thu, 17 Mar 2016 02:48:21 GMT
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '300'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"created_time":"2016-02-27T06:18:01+0000","description":"If he visits
+        you it''s to late","from":{"name":"\u30d5\u30ec\u30c3\u30c9YOLO","id":"593748813981151"},"length":9.509,"picture":"https:\/\/scontent.xx.fbcdn.net\/hvthumb-xpa1\/v\/t15.0-10\/p160x160\/12720103_1071391039550257_1997979656_n.jpg?oh=c29fe72d1d3a5be4e81071a0cd877a9a&oe=57528694","id":"1071390929550268"}'
+    http_version: 
+  recorded_at: Thu, 17 Mar 2016 02:48:18 GMT
+recorded_with: VCR 3.0.1

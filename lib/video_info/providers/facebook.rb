@@ -21,6 +21,11 @@ class VideoInfo
         'https://www.facebook.com/' + data['from']['id']
       end
 
+      def date
+        created_at = data['created_time']
+        Time.parse(created_at, Time.now.utc)
+      end
+
       def description
         data['description']
       end
@@ -69,7 +74,7 @@ class VideoInfo
 
       def _api_path
         "/#{_api_version}/#{video_id}" \
-        '?fields=description,from,length,picture,title' \
+        '?fields=created_time,description,from,length,picture,title' \
         "&access_token=#{_app_id}|#{_app_secret}"
       end
 

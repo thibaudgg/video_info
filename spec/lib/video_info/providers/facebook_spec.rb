@@ -105,6 +105,14 @@ describe VideoInfo::Providers::Facebook do
       it { is_expected.to eq author_url }
     end
 
+    describe '#date' do
+      subject { super().date }
+      it 'should return date posted' do
+        is_expected.to eq Time.parse('Fri Feb 27 6:18:01 UTC 2016',
+                                     Time.now.utc)
+      end
+    end
+
     describe '#description' do
       subject { super().description }
       it { is_expected.to eq "If he visits you it's to late" }
