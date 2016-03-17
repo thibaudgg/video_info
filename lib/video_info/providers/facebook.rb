@@ -1,4 +1,5 @@
 require 'json'
+require 'open-uri'
 
 class VideoInfo
   module Providers
@@ -13,6 +14,7 @@ class VideoInfo
       end
 
       def author_thumbnail
+        data['author_thumbnail']['url']
       end
 
       def author_url
@@ -75,12 +77,33 @@ class VideoInfo
         "https://#{_api_base}#{_api_path}"
       end
 
+      def _profile_api_path(user_id)
+        "/#{_api_version}/#{user_id}/picture" \
+        "?redirect=0&access_token=#{_app_id}|#{_app_secret}"
+      end
+
+      def _profile_api_url(user_id)
+        "https://#{_api_base}#{_profile_api_path(user_id)}"
+      end
+
       def _app_id
         VideoInfo.provider_api_keys[:facebook_app_id]
       end
 
       def _app_secret
         VideoInfo.provider_api_keys[:facebook_app_secret]
+      end
+
+      def _set_data_from_api_impl(api_url)
+        data = super(api_url)
+
+        user_id = data['from']['id']
+
+        author_thumbnail_data = super(_profile_api_url(user_id))['data']
+
+        data = data.merge({ 'author_thumbnail' => author_thumbnail_data })
+
+        data.freeze
       end
     end
   end

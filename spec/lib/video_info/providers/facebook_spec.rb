@@ -91,12 +91,12 @@ describe VideoInfo::Providers::Facebook do
     end
 
     describe '#author_thumbnail' do
-      author_thumbnail_url = 'https://scontent.xx.fbcdn.net/hprofile-ash4/' \
-                             'v/t1.0-1/p32x32/1001098_616848995004466' \
-                             '_2144030070_n.png?oh=' \
-                             'c7e1b20bcffa6e78229df4a1db11828d&oe=575416CD'
+      author_thumbnail_url = 'https://scontent.xx.fbcdn.net/hprofile-ash4/v/' \
+                             't1.0-1/p50x50/1001098_616848995004466_214403' \
+                             '0070_n.png?oh=234c7dab4aa9c322264aabcd625b0e5' \
+                             '9&oe=574E35F9'
       subject { super().author_thumbnail }
-      pending { is_expected.to eq author_thumbnail_url }
+      it { is_expected.to eq author_thumbnail_url }
     end
 
     describe '#author_url' do
