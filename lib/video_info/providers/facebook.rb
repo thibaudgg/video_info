@@ -100,11 +100,15 @@ class VideoInfo
       end
 
       def _set_data_from_api_impl(api_url)
-        data = super(api_url)
+        encoded_api_url = URI.encode(api_url)
+
+        data = super(encoded_api_url)
 
         user_id = data['from']['id']
 
-        author_thumbnail_data = super(_profile_api_url(user_id))['data']
+        encoded_profile_api_url = URI.encode(_profile_api_url(user_id))
+
+        author_thumbnail_data = super(encoded_profile_api_url)['data']
 
         data = data.merge('author_thumbnail' => author_thumbnail_data)
 
