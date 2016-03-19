@@ -51,7 +51,7 @@ class VideoInfo
       end
 
       def title
-        nil
+        data['title']
       end
 
       private
