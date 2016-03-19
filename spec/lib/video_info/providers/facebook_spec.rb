@@ -3,8 +3,8 @@ require 'spec_helper'
 describe VideoInfo::Providers::Facebook do
   public_video_from_page_url = 'https://www.facebook.com/freddyolo420/' \
                                'videos/1071390929550268/'
-
   mobile_story_url = 'https://m.facebook.com/story.php?story_fbid=1071390929550268&id=593748813981151&_rdr'
+  regular_mobile_url = 'm.facebook.com/freddyolo420/videos/1071390929550268/'
 
   before(:all) do
     VideoInfo.provider_api_keys = {
@@ -23,6 +23,11 @@ describe VideoInfo::Providers::Facebook do
 
     context 'with mobile Facebook story video URL' do
       let(:url) { mobile_story_url }
+      it { is_expected.to be_truthy }
+    end
+
+    context 'with regular mobile Facebook URL' do
+      let(:url) { regular_mobile_url }
       it { is_expected.to be_truthy }
     end
 
@@ -243,8 +248,27 @@ describe VideoInfo::Providers::Facebook do
     end
   end
 
-  context 'with mobile Facebook URL' do
+  context 'with mobile Facebook Story URL' do
     subject { VideoInfo.new(mobile_story_url) }
+
+    describe '#available?' do
+      subject { super().available? }
+      it { is_expected.to be_truthy }
+    end
+
+    describe '#video_id' do
+      subject { super().video_id }
+      it { is_expected.to eq '1071390929550268' }
+    end
+
+    describe '#author' do
+      subject { super().author }
+      it { is_expected.to eq 'フレッドYOLO' }
+    end
+  end
+
+  context 'with regular mobile Facebook URL' do
+    subject { VideoInfo.new(regular_mobile_url) }
 
     describe '#available?' do
       subject { super().available? }
