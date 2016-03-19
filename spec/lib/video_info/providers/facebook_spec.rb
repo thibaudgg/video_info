@@ -3,7 +3,8 @@ require 'spec_helper'
 describe VideoInfo::Providers::Facebook do
   public_video_from_page_url = 'https://www.facebook.com/freddyolo420/' \
                                'videos/1071390929550268/'
-  mobile_story_url = 'https://m.facebook.com/story.php?story_fbid=1071390929550268&id=593748813981151&_rdr'
+  mobile_story_url = 'https://m.facebook.com/story.php?story_fbid=' \
+                     '1071390929550268&id=593748813981151&_rdr'
   regular_mobile_url = 'm.facebook.com/freddyolo420/videos/1071390929550268/'
 
   before(:all) do
