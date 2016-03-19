@@ -23,9 +23,9 @@ http_interactions:
       Content-Type:
       - application/json; charset=UTF-8
       X-Fb-Trace-Id:
-      - BUlU9NIho6G
+      - H2gRmYPx9iI
       X-Fb-Rev:
-      - '2234476'
+      - '2239045'
       Etag:
       - '"48492a77b9aa0fd1c8b8b970547e677229eb022f"'
       Pragma:
@@ -39,9 +39,9 @@ http_interactions:
       Vary:
       - Accept-Encoding
       X-Fb-Debug:
-      - Va5Qzb+RSpo2msuelTQMUZ47gpwDryiIyMBdvNU7/5EFKjMgTluMTPFoOsU40YMG9rjhMWW2bhhuAOAd5XdovA==
+      - zY6Taq+/puwt5A1nIVBHqCktnV4swzwX8wcp/Fa56q9bVgJj/mOFRBUh1e+bZgNwgVvRgdaU8295RcGhyD9M3Q==
       Date:
-      - Thu, 17 Mar 2016 03:04:24 GMT
+      - Sat, 19 Mar 2016 05:06:25 GMT
       Connection:
       - keep-alive
       Content-Length:
@@ -51,7 +51,7 @@ http_interactions:
       string: '{"created_time":"2016-02-27T06:18:01+0000","description":"If he visits
         you it''s to late","from":{"name":"\u30d5\u30ec\u30c3\u30c9YOLO","id":"593748813981151"},"length":9.509,"picture":"https:\/\/scontent.xx.fbcdn.net\/hvthumb-xpa1\/v\/t15.0-10\/p160x160\/12720103_1071391039550257_1997979656_n.jpg?oh=c29fe72d1d3a5be4e81071a0cd877a9a&oe=57528694","id":"1071390929550268"}'
     http_version: 
-  recorded_at: Thu, 17 Mar 2016 03:04:22 GMT
+  recorded_at: Sat, 19 Mar 2016 05:06:24 GMT
 - request:
     method: get
     uri: https://graph.facebook.com/v2.5/593748813981151/picture?access_token=1526814430954328%7C1bd1051b2e630584a5fa01a8ebf21cad&redirect=0
@@ -75,9 +75,9 @@ http_interactions:
       Content-Type:
       - application/json; charset=UTF-8
       X-Fb-Trace-Id:
-      - ATj0Wykk6wi
+      - Dv8UopabJHO
       X-Fb-Rev:
-      - '2234476'
+      - '2239045'
       Etag:
       - '"702dad639a32c432f25028603f60240fca177c6e"'
       Pragma:
@@ -91,9 +91,9 @@ http_interactions:
       Vary:
       - Accept-Encoding
       X-Fb-Debug:
-      - XEwqge/v7OWENmB8MUWxwzfAdDvSOtygjXvxoZL6l5pDOCv5Crtj9v9BHFChkqwb9QgwLo02aGInbc23JC1rkw==
+      - LqrZFVhdrNAY7L/mXpqoIYadbCX7vNXvozodDA7sn2YDPOz7t6clWdM7ZxQd23RXkTkhFwCjWrf/5fP4Sn/ztg==
       Date:
-      - Thu, 17 Mar 2016 03:04:24 GMT
+      - Sat, 19 Mar 2016 05:06:25 GMT
       Connection:
       - keep-alive
       Content-Length:
@@ -102,58 +102,5 @@ http_interactions:
       encoding: ASCII-8BIT
       string: '{"data":{"is_silhouette":false,"url":"https:\/\/scontent.xx.fbcdn.net\/hprofile-ash4\/v\/t1.0-1\/p50x50\/1001098_616848995004466_2144030070_n.png?oh=234c7dab4aa9c322264aabcd625b0e59&oe=574E35F9"}}'
     http_version: 
-  recorded_at: Thu, 17 Mar 2016 03:04:22 GMT
-- request:
-    method: get
-    uri: https://graph.facebook.com/v2.5/1071390929550268?access_token=1526814430954328%7C1bd1051b2e630584a5fa01a8ebf21cad&fields=created_time,description,dimensions,from,length,picture,title
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - VideoInfo/2.6.0
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 400
-      message: Bad Request
-    headers:
-      Www-Authenticate:
-      - OAuth "Facebook Platform" "invalid_request" "(#100) Tried accessing nonexisting
-        field (dimensions) on node type (Video)"
-      Access-Control-Allow-Origin:
-      - "*"
-      Content-Type:
-      - application/json; charset=UTF-8
-      X-Fb-Trace-Id:
-      - GniaFbannwf
-      X-Fb-Rev:
-      - '2239045'
-      Pragma:
-      - no-cache
-      Cache-Control:
-      - no-store
-      Facebook-Api-Version:
-      - v2.5
-      Expires:
-      - Sat, 01 Jan 2000 00:00:00 GMT
-      Vary:
-      - Accept-Encoding
-      X-Fb-Debug:
-      - ODX5OSi6a/gzB04M/38tValU1tbZoAJGpfO+35yWnPUT7a9ln5SR0xvP308B9D8IBr9+jrkPB+RKa1CVMtBNqg==
-      Date:
-      - Sat, 19 Mar 2016 05:01:36 GMT
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '152'
-    body:
-      encoding: ASCII-8BIT
-      string: '{"error":{"message":"(#100) Tried accessing nonexisting field (dimensions)
-        on node type (Video)","type":"OAuthException","code":100,"fbtrace_id":"GniaFbannwf"}}'
-    http_version: 
-  recorded_at: Sat, 19 Mar 2016 05:01:36 GMT
+  recorded_at: Sat, 19 Mar 2016 05:06:24 GMT
 recorded_with: VCR 3.0.1

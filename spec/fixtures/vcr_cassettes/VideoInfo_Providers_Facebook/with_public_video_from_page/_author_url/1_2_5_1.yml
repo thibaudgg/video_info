@@ -721,4 +721,57 @@ http_interactions:
         you it''s to late","from":{"name":"\u30d5\u30ec\u30c3\u30c9YOLO","id":"593748813981151"},"length":9.509,"picture":"https:\/\/scontent.xx.fbcdn.net\/hvthumb-xpa1\/v\/t15.0-10\/p160x160\/12720103_1071391039550257_1997979656_n.jpg?oh=c29fe72d1d3a5be4e81071a0cd877a9a&oe=57528694","id":"1071390929550268"}'
     http_version: 
   recorded_at: Thu, 17 Mar 2016 02:48:18 GMT
+- request:
+    method: get
+    uri: https://graph.facebook.com/v2.5/1071390929550268?access_token=1526814430954328%7C1bd1051b2e630584a5fa01a8ebf21cad&fields=created_time,description,dimensions,from,length,picture,title
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - VideoInfo/2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Www-Authenticate:
+      - OAuth "Facebook Platform" "invalid_request" "(#100) Tried accessing nonexisting
+        field (dimensions) on node type (Video)"
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Type:
+      - application/json; charset=UTF-8
+      X-Fb-Trace-Id:
+      - F/oBLsGu2VT
+      X-Fb-Rev:
+      - '2239045'
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - no-store
+      Facebook-Api-Version:
+      - v2.5
+      Expires:
+      - Sat, 01 Jan 2000 00:00:00 GMT
+      Vary:
+      - Accept-Encoding
+      X-Fb-Debug:
+      - r9DT8o0LhpAf/R9GFEnVMlPhUd1vP0WMDeRDBhmZKcb8GlQxNzYOYJV9cTv8e8nRvp+ayaovaqOBOIQT5QDd+Q==
+      Date:
+      - Sat, 19 Mar 2016 05:01:36 GMT
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '158'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"error":{"message":"(#100) Tried accessing nonexisting field (dimensions)
+        on node type (Video)","type":"OAuthException","code":100,"fbtrace_id":"F\/oBLsGu2VT"}}'
+    http_version: 
+  recorded_at: Sat, 19 Mar 2016 05:01:35 GMT
 recorded_with: VCR 3.0.1

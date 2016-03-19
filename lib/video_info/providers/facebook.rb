@@ -54,6 +54,14 @@ class VideoInfo
         data['title']
       end
 
+      def width
+        nil
+      end
+
+      def height
+        nil
+      end
+
       private
 
       def available?

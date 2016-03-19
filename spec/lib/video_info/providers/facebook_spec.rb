@@ -122,6 +122,16 @@ describe VideoInfo::Providers::Facebook do
       it { is_expected.to eq "If he visits you it's to late" }
     end
 
+    describe '#width' do
+      subject { super().width }
+      it { is_expected.to eq nil }
+    end
+
+    describe '#height' do
+      subject { super().height }
+      it { is_expected.to eq nil }
+    end
+
     describe '#duration' do
       subject { super().duration }
       it { is_expected.to eq 10 }
