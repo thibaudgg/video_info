@@ -4,10 +4,6 @@ describe VideoInfo::Providers::Facebook do
   public_video_from_page_url = 'https://www.facebook.com/freddyolo420/' \
                                'videos/1071390929550268/'
 
-  public_video_from_profile_url = 'https://www.facebook.com/lllDavidACMlll' \
-                                  '/videos/10205379584751731/' \
-                                  '?__mref=message_bubble'
-
   before(:all) do
     VideoInfo.provider_api_keys = {
       facebook_app_id: '1526814430954328',
