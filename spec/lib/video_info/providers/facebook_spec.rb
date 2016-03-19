@@ -167,8 +167,9 @@ describe VideoInfo::Providers::Facebook do
     end
   end
 
-  context 'with public video from user profile', :vcr do
-    subject { VideoInfo.new(public_video_from_profile_url) }
+  context 'video from public Facebook page with title', :vcr do
+    url = 'https://www.facebook.com/171086066559073/videos/195408520793494/'
+    subject { VideoInfo.new(url) }
 
     describe '#available?' do
       subject { super().available? }
@@ -177,7 +178,65 @@ describe VideoInfo::Providers::Facebook do
 
     describe '#video_id' do
       subject { super().video_id }
-      it { is_expected.to eq '10205379584751731' }
+      it { is_expected.to eq '195408520793494' }
+    end
+
+    describe '#title' do
+      subject { super().title }
+      it { is_expected.to eq 'Hank listens to Bolivarian Music' }
+    end
+
+    describe '#description' do
+      subject { super().description }
+      it { is_expected.to be_nil }
+    end
+
+    describe '#author' do
+      subject { super().author }
+      it { is_expected.to eq "Republique D'Egües" }
+    end
+
+    describe '#author_url' do
+      subject { super().author_url }
+      it { is_expected.to eq 'https://www.facebook.com/171086066559073' }
+    end
+
+    describe '#author_thumbnail' do
+      thumbnail_url = 'https://scontent.xx.fbcdn.net/hprofile-xap1/v/l/' \
+                      't1.0-1/c0.0.50.50/p50x50/734946_251600755174270_' \
+                      '4852164893761838478_n.jpg' \
+                      '?oh=33e887cf208eebbd2af66ec04d413117&oe=578619F3'
+      subject { super().author_thumbnail }
+      it { is_expected.to eq thumbnail_url }
+    end
+
+    describe '#thumbnail' do
+      thumbnail_url =  'https://scontent.xx.fbcdn.net/hvthumb-xat1/v/' \
+                       't15.0-10/p128x128/12105557_195409484126731_' \
+                       '875852838_n.jpg?oh=e2fa2fe0bfc77dab0177723c7' \
+                       'd5ea99a&oe=574DDCB4'
+      subject { super().thumbnail }
+      it { is_expected.to eq thumbnail_url }
+    end
+
+    describe '#thumbnail_small' do
+      subject { super().thumbnail_small }
+      it { is_expected.to be_nil }
+    end
+
+    describe '#thumbnail_medium' do
+      subject { super().thumbnail_medium }
+      it { is_expected.to be_nil }
+    end
+
+    describe '#thumbnail_large' do
+      subject { super().thumbnail_large }
+      it { is_expected.to be_nil }
+    end
+
+    describe '#duration' do
+      subject { super().duration }
+      it { is_expected.to eq 26 }
     end
   end
 end
