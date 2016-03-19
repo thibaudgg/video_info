@@ -6,7 +6,8 @@ class VideoInfo
     class Facebook < Provider
       def self.usable?(url)
         url =~ %r{(facebook\.com\/.*/videos/.*)|
-                  (facebook\.com/.*\%2Fvideos%2F)}x
+                  (facebook\.com/.*\%2Fvideos%2F)|
+                  (facebook.com\/story.php\?story_fbid=.*)}x
       end
 
       def author
@@ -69,7 +70,8 @@ class VideoInfo
       end
 
       def _url_regex
-        %r{(?:.*facebook\.com\/.*\/videos\/(.*)/)}
+        %r{(?:.*facebook\.com\/.*\/videos\/(.*)/)|
+           (?:.*facebook\.com\/story.php\?story_fbid\=(.*)\&id)}x
       end
 
       def _api_base

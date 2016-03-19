@@ -4,6 +4,8 @@ describe VideoInfo::Providers::Facebook do
   public_video_from_page_url = 'https://www.facebook.com/freddyolo420/' \
                                'videos/1071390929550268/'
 
+  mobile_story_url = 'https://m.facebook.com/story.php?story_fbid=1071390929550268&id=593748813981151&_rdr'
+
   before(:all) do
     VideoInfo.provider_api_keys = {
       facebook_app_id: '1526814430954328',
@@ -20,6 +22,11 @@ describe VideoInfo::Providers::Facebook do
     end
 
     context 'with mobile Facebook story video URL' do
+      let(:url) { mobile_story_url }
+      it { is_expected.to be_truthy }
+    end
+
+    context 'with different mobile Facebook story video URL' do
       url = 'https://m.facebook.com/story.php?story_fbid=1071390929550268&' \
             'id=593748813981151&refsrc=https%3A%2F%2Fm.facebook.com' \
             '%2Ffreddyolo420%2Fvideos%2F1071390929550268%2F&_rdr'
@@ -233,6 +240,25 @@ describe VideoInfo::Providers::Facebook do
     describe '#duration' do
       subject { super().duration }
       it { is_expected.to eq 26 }
+    end
+  end
+
+  context 'with mobile Facebook URL' do
+    subject { VideoInfo.new(mobile_story_url) }
+
+    describe '#available?' do
+      subject { super().available? }
+      it { is_expected.to be_truthy }
+    end
+
+    describe '#video_id' do
+      subject { super().video_id }
+      it { is_expected.to eq '1071390929550268' }
+    end
+
+    describe '#author' do
+      subject { super().author }
+      it { is_expected.to eq 'フレッドYOLO' }
     end
   end
 end
