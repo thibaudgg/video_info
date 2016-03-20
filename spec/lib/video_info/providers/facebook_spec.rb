@@ -8,7 +8,6 @@ describe VideoInfo::Providers::Facebook do
   regular_mobile_url = 'm.facebook.com/freddyolo420/videos/1071390929550268/'
 
   before(:all) do
-
     facebook_app_id = '1526814430954328'
     facebook_app_secret = '1bd1051b2e630584a5fa01a8ebf21cad'
 
