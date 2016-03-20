@@ -85,7 +85,7 @@ class VideoInfo
       def _api_path
         "/#{_api_version}/#{video_id}" \
         '?fields=created_time,description,from,length,picture,title' \
-        "&access_token=#{_app_id}|#{_app_secret}"
+        "&access_token=#{_access_token}"
       end
 
       def _api_url
@@ -94,19 +94,15 @@ class VideoInfo
 
       def _profile_api_path(user_id)
         "/#{_api_version}/#{user_id}/picture" \
-        "?redirect=0&access_token=#{_app_id}|#{_app_secret}"
+        "?redirect=0&access_token=#{_access_token}"
       end
 
       def _profile_api_url(user_id)
         "https://#{_api_base}#{_profile_api_path(user_id)}"
       end
 
-      def _app_id
-        VideoInfo.provider_api_keys[:facebook_app_id]
-      end
-
-      def _app_secret
-        VideoInfo.provider_api_keys[:facebook_app_secret]
+      def _access_token
+        VideoInfo.provider_api_keys[:facebook_access_token]
       end
 
       def _set_data_from_api_impl(api_url)

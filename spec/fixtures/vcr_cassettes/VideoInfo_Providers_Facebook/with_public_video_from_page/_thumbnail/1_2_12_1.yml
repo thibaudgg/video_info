@@ -103,4 +103,51 @@ http_interactions:
       string: '{"data":{"is_silhouette":false,"url":"https:\/\/scontent.xx.fbcdn.net\/hprofile-ash4\/v\/t1.0-1\/p50x50\/1001098_616848995004466_2144030070_n.png?oh=234c7dab4aa9c322264aabcd625b0e59&oe=574E35F9"}}'
     http_version: 
   recorded_at: Sat, 19 Mar 2016 05:06:25 GMT
+- request:
+    method: get
+    uri: https://graph.facebook.com/v2.5/1071390929550268?access_token=%7C&fields=created_time,description,from,length,picture,title
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - VideoInfo/2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Www-Authenticate:
+      - OAuth "Facebook Platform" "invalid_token" "Invalid OAuth access token signature."
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Type:
+      - application/json; charset=UTF-8
+      X-Fb-Trace-Id:
+      - B9PQOFLcc/n
+      X-Fb-Rev:
+      - '2239045'
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - no-store
+      Expires:
+      - Sat, 01 Jan 2000 00:00:00 GMT
+      X-Fb-Debug:
+      - ooJonDhHCZ7dAzvP7/MhFFFyIsnuukRF7EF2JGjJ7HGsPqsbUmWavUFF+9C20No9AGiU1/JT9qXb2Q7u+BEwQw==
+      Date:
+      - Sun, 20 Mar 2016 06:24:54 GMT
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '124'
+    body:
+      encoding: UTF-8
+      string: '{"error":{"message":"Invalid OAuth access token signature.","type":"OAuthException","code":190,"fbtrace_id":"B9PQOFLcc\/n"}}'
+    http_version: 
+  recorded_at: Sun, 20 Mar 2016 06:24:54 GMT
 recorded_with: VCR 3.0.1
