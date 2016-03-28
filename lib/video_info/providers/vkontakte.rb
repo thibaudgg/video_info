@@ -71,7 +71,7 @@ class VideoInfo
         data[/mv_views_count_number\">.*?(\d+)/, 1].to_i
       end
 
-      def embed_url
+      def embed_url(options = {})
         iframe_src = data[
           /iframe\ id=\"video_player\".*src=\"([^\"]*)\".*frameborder=/, 1
         ]

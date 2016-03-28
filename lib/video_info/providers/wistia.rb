@@ -17,7 +17,7 @@ class VideoInfo
         define_method(method) { nil }
       end
 
-      def embed_url
+      def embed_url(options = {})
         "//fast.wistia.net/embed/iframe/#{video_id}"
       end
 

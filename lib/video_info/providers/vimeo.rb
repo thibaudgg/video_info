@@ -22,8 +22,17 @@ class VideoInfo
         'Vimeo'
       end
 
-      def embed_url
-        "//player.vimeo.com/video/#{video_id}"
+      def embed_url(options = {})
+        params = ''
+        options.each do |k, v|
+          case k
+          when :quality
+            params << "#{k}=#{v}p&"
+          else
+            params << "#{k}=#{v}&"
+          end
+        end
+        "//player.vimeo.com/video/#{video_id}?#{params}"
       end
 
       private
