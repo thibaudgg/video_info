@@ -28,8 +28,12 @@ class VideoInfo
         define_method(method) { nil }
       end
 
-      def embed_url
+      def embed_url(options = {})
         "//www.youtube.com/embed/#{video_id}"
+      end
+
+      def duration
+        _video_media_group['yt$duration']['seconds'].to_i
       end
 
       def thumbnail_small

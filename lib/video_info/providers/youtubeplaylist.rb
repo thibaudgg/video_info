@@ -38,7 +38,7 @@ class VideoInfo
         nil
       end
 
-      def embed_url
+      def embed_url(options = {})
         "//www.youtube.com/embed/videoseries?list=#{playlist_id}"
       end
 

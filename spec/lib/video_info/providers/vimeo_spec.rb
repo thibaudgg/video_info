@@ -91,8 +91,8 @@ require 'spec_helper'
       end
 
       describe '#embed_url' do
-        subject { super().embed_url }
-        it { is_expected.to eq '//player.vimeo.com/video/898029' }
+        subject { super().embed_url(quality: "1080") }
+        it { is_expected.to eq "//player.vimeo.com/video/898029?quality=1080p" }
       end
 
       describe '#embed_code' do

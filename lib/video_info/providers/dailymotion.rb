@@ -21,7 +21,7 @@ class VideoInfo
         data['tags']
       end
 
-      def embed_url
+      def embed_url(options = {})
         "//www.dailymotion.com/embed/video/#{video_id}"
       end
 
