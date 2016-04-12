@@ -35,9 +35,9 @@ http_interactions:
       P3p:
       - CP="CURi ADMa DEVa IVAa IVDa CONi OUR IND DSP CAO COR"
       X-Request-Id:
-      - a7f99e013f1cb5fefb9ca8cd114f43a6
+      - b23292ac464c7d52286e9265e3ff179f
       X-Runtime:
-      - '0.034062'
+      - '0.038831'
       X-Rack-Cache:
       - miss
       Via:
@@ -50,19 +50,19 @@ http_interactions:
       Accept-Ranges:
       - bytes
       Date:
-      - Sun, 13 Mar 2016 05:51:21 GMT
+      - Tue, 12 Apr 2016 00:34:10 GMT
       Age:
-      - '1847'
+      - '0'
       Connection:
       - keep-alive
       X-Served-By:
-      - cache-ord1732-ORD, cache-sjc3124-SJC
+      - cache-ord1746-ORD, cache-lax1429-LAX
       X-Cache:
       - HIT, MISS
       X-Cache-Hits:
       - 1, 0
       X-Timer:
-      - S1457848281.363090,VS0,VE56
+      - S1460421250.306156,VS0,VE54
       Vary:
       - Accept-Encoding,X-Forwarded-Proto
       Strict-Transport-Security:
@@ -76,5 +76,5 @@ http_interactions:
         src=\"//fast.wistia.net/assets/external/E-v1.js\" async></script>","width":960,"height":540,"provider_name":"Wistia,
         Inc.","provider_url":"http://wistia.com","title":"Lance Kalish - Yes To Group","thumbnail_url":"https://embed-ssl.wistia.com/deliveries/dc005e6a7583a25c4b7c284c08afc42fb67fdb95.jpg?image_crop_resized=960x540","thumbnail_width":960,"thumbnail_height":540,"duration":1214.83}'
     http_version: 
-  recorded_at: Sun, 13 Mar 2016 05:51:21 GMT
+  recorded_at: Tue, 12 Apr 2016 00:34:10 GMT
 recorded_with: VCR 3.0.1
