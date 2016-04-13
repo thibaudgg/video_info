@@ -10,4 +10,5 @@ rvm:
 jdk:
   - oraclejdk8
 before_install:
+  - gem install bundler
   - gem update bundler
