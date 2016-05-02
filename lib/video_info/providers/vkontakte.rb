@@ -73,7 +73,7 @@ class VideoInfo
 
       def embed_url
         iframe_src = data[
-          /iframe\ id=\"video_player\".*src=\"([^\"]*)\".*frameborder=/, 1
+          /iframe\ id=\"video_yt_player\".*src=\"([^\"]*)\".*frameborder=/, 1
         ]
         if iframe_src
           # it may be youtube video
@@ -94,7 +94,8 @@ class VideoInfo
       end
 
       def available?
-        !%w[403 404 302 401].include?(_response_code)
+        !%w[403 404 302 401].include?(_response_code) &&
+          !(data =~ /Ошибка доступа/)
       end
 
       private
