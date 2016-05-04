@@ -102,22 +102,22 @@ describe VideoInfo::Providers::Vkontakte do
     its(:title)            { should eq 'Happy Birthday To You' }
     its(:embed_url)        { should eq embed_url }
     its(:embed_code)       { should eq embed_code }
-    its(:author)           { should eq 'Tanka Malesh' }
+    its(:author)           { should eq('Tanka Malesh').or(eq('Танька Малеш')) }
   end
 
   context 'with video videos43640822#/video43640822_168790809', :vcr do
     video_url = 'https://vk.com/videos43640822#/video43640822_168790809'
     subject { VideoInfo.new(video_url) }
 
-    author_thumbnail = 'https://pp.vk.me/c633618/v633618822/' \
-                       '1171b/Tm_TYkMxFww.jpg'
+    author_thumbnail = 'https://pp.vk.me/c604531/v604531822' \
+                       '/2beb/JrLWCWTA7y0.jpg'
     video_title = 'UDC open cup 2014/ 3 place / Saley Daria (solo)'
 
     its(:provider)         { should eq 'Vkontakte' }
     its(:video_owner)      { should eq '43640822' }
     its(:video_id)         { should eq '168790809' }
     its(:title)            { should eq video_title }
-    its(:author)           { should eq 'Dasha Saley' }
+    its(:author)           { should eq('Dasha Saley').or(eq('Даша Салей')) }
     its(:author_thumbnail) { should eq author_thumbnail }
     its(:author_url)       { should eq 'https://vk.com/dariasaley' }
   end
@@ -134,10 +134,16 @@ describe VideoInfo::Providers::Vkontakte do
                        'Dance Championship ★ 1-2 мая, Москва 2014'
     video_title = 'BEAT SOUL STEP — RDC14 Project818 Russian ' \
                   'Dance Championship, May 1-2, Moscow 2014'
-    embed_code = '<iframe src="//vk.com/video_ext.php?oid=2152699&' \
-                 'id=168591741&hash=" frameborder="0" allowfullscreen=' \
-                 '"allowfullscreen"></iframe>'
-    embed_url = '//vk.com/video_ext.php?oid=2152699&id=168591741&hash='
+    embed_code = '<iframe src="https://www.youtube.com/embed/' \
+                 '4Thws5wq5GI?enablejsapi=1&autoplay=0&start=0' \
+                 '&autohide=1&wmode=opaque&showinfo=0&origin=' \
+                 'https://vk.com&fs=1&rel=0&cc_load_policy=0' \
+                 '&iv_load_policy=3" frameborder="0" ' \
+                 'allowfullscreen="allowfullscreen"></iframe>'
+    embed_url = 'https://www.youtube.com/embed/4Thws5wq5GI?enablejsapi=1' \
+                '&autoplay=0&start=0&autohide=1&wmode=opaque&showinfo=0' \
+                '&origin=https://vk.com&fs=1&rel=0&cc_load_policy=0' \
+                '&iv_load_policy=3'
 
     its(:provider)         { should eq 'Vkontakte' }
     its(:video_owner)      { should eq '2152699' }
@@ -152,7 +158,7 @@ describe VideoInfo::Providers::Vkontakte do
     its(:width)            { should eq 0 }
     its(:height)           { should eq 0 }
     its(:view_count)       { should be > 10 }
-    its(:author)           { should eq 'Kirill Lyanoy' }
+    its(:author)           { should eq('Kirill Lyanoy').or(eq('Кирилл Льяной')) }
     its(:author_thumbnail) { should eq author_thumbnail }
     its(:author_url)       { should eq 'https://vk.com/lyanoi.kirill' }
   end
@@ -218,5 +224,17 @@ describe VideoInfo::Providers::Vkontakte do
         expect { subject.title }.to raise_error VideoInfo::HttpError
       end
     end
+  end
+
+  context 'with video video3552522_171340713', :vcr do
+    subject { VideoInfo.new('http://vk.com/video3552522_171340713') }
+
+    embed_url = 'https://www.youtube.com/embed/C3_e-e6qoSg?' \
+                'enablejsapi=1&autoplay=0&start=0&autohide=1' \
+                '&wmode=opaque&showinfo=0&origin=' \
+                'https://vk.com&fs=1&rel=0&cc_load_policy=0' \
+                '&iv_load_policy=3'
+
+    its(:embed_url) { should eq embed_url }
   end
 end
