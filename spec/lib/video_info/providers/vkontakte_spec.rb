@@ -144,6 +144,8 @@ describe VideoInfo::Providers::Vkontakte do
                 '&autoplay=0&start=0&autohide=1&wmode=opaque&showinfo=0' \
                 '&origin=https://vk.com&fs=1&rel=0&cc_load_policy=0' \
                 '&iv_load_policy=3'
+    author = 'Kirill Lyanoy'
+    author_alt = 'Кирилл Льяной'
 
     its(:provider)         { should eq 'Vkontakte' }
     its(:video_owner)      { should eq '2152699' }
@@ -158,7 +160,7 @@ describe VideoInfo::Providers::Vkontakte do
     its(:width)            { should eq 0 }
     its(:height)           { should eq 0 }
     its(:view_count)       { should be > 10 }
-    its(:author)           { should eq('Kirill Lyanoy').or(eq('Кирилл Льяной')) }
+    its(:author)           { should eq(author).or(eq(author_alt)) }
     its(:author_thumbnail) { should eq author_thumbnail }
     its(:author_url)       { should eq 'https://vk.com/lyanoi.kirill' }
   end

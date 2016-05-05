@@ -111,7 +111,7 @@ require 'spec_helper'
       describe '#description' do
         subject { super().description }
         description = "'New Bermuda,' the upcoming album from Deafheaven, " \
-                      "is available October 2nd"
+                      'is available October 2nd'
         it { is_expected.to eq description }
       end
 
