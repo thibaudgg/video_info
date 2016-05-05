@@ -15,6 +15,64 @@ http_interactions:
       - application/vnd.vimeo.*+json;version=3.2
   response:
     status:
+      code: 404
+      message: Not Found
+    headers:
+      Server:
+      - nginx
+      Content-Type:
+      - application/vnd.vimeo.error+json
+      Cache-Control:
+      - no-cache, max-age=315360000
+      Strict-Transport-Security:
+      - max-age=15120000; includeSubDomains; preload
+      Expires:
+      - Sun, 03 May 2026 01:01:50 GMT
+      Via:
+      - 1.1 varnish
+      - 1.1 varnish
+      Fastly-Debug-Digest:
+      - c3672039fd974d279856f1a1643b4e8d68c526f3bd160f59365e5e01b8b4b4a5
+      Content-Length:
+      - '50'
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Thu, 05 May 2016 01:01:50 GMT
+      Age:
+      - '0'
+      Connection:
+      - keep-alive
+      X-Served-By:
+      - cache-iad2136-IAD, cache-lax1427-LAX
+      X-Cache:
+      - MISS, MISS
+      X-Cache-Hits:
+      - 0, 0
+      X-Timer:
+      - S1462410110.290897,VS0,VE93
+      Vary:
+      - Accept,Vimeo-Client-Id,Accept-Encoding
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Thu, 05 May 2016 01:01:50 GMT
+- request:
+    method: head
+    uri: https://api.vimeo.com/videos/98605382
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - VideoInfo/2.6.0
+      Authorization:
+      - bearer 6b66b015a3504793b4f541d878f46ff6
+      Accept:
+      - application/vnd.vimeo.*+json;version=3.2
+  response:
+    status:
       code: 200
       message: OK
     headers:
@@ -27,35 +85,35 @@ http_interactions:
       Strict-Transport-Security:
       - max-age=15120000; includeSubDomains; preload
       Expires:
-      - Fri, 10 Apr 2026 00:28:42 GMT
+      - Sun, 03 May 2026 01:03:29 GMT
       Via:
       - 1.1 varnish
       - 1.1 varnish
       Fastly-Debug-Digest:
-      - c3672039fd974d279856f1a1643b4e8d68c526f3bd160f59365e5e01b8b4b4a5
+      - e1a6082c7056329c14f1d8da1dbc41c69e2a21b9c94e74b98a8cbf1b484af80a
       Content-Length:
-      - '4916'
+      - '10400'
       Accept-Ranges:
       - bytes
       Date:
-      - Tue, 12 Apr 2016 00:28:42 GMT
+      - Thu, 05 May 2016 01:03:29 GMT
       Age:
       - '0'
       Connection:
       - keep-alive
       X-Served-By:
-      - cache-iad2149-IAD, cache-sjc3123-SJC
+      - cache-iad2123-IAD, cache-lax1430-LAX
       X-Cache:
       - MISS, MISS
       X-Cache-Hits:
       - 0, 0
       X-Timer:
-      - S1460420922.394987,VS0,VE293
+      - S1462410209.292496,VS0,VE193
       Vary:
       - Accept,Vimeo-Client-Id,Accept-Encoding
     body:
       encoding: UTF-8
       string: ''
     http_version: 
-  recorded_at: Tue, 12 Apr 2016 00:28:42 GMT
+  recorded_at: Thu, 05 May 2016 01:03:29 GMT
 recorded_with: VCR 3.0.1

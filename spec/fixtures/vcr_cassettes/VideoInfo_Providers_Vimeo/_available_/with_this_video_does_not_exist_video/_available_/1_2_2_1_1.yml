@@ -21,7 +21,7 @@ http_interactions:
       Content-Type:
       - text/html; charset=UTF-8
       Expires:
-      - Mon, 11 Apr 2016 12:28:35 GMT
+      - Wed, 04 May 2016 13:01:45 GMT
       X-Frame-Options:
       - sameorigin
       Via:
@@ -41,24 +41,24 @@ http_interactions:
       Accept-Ranges:
       - bytes
       Date:
-      - Tue, 12 Apr 2016 00:28:35 GMT
+      - Thu, 05 May 2016 01:01:45 GMT
       Connection:
       - keep-alive
       X-Served-By:
-      - cache-iad2146-IAD, cache-sjc3648-SJC
+      - cache-iad2144-IAD, cache-lax1425-LAX
       X-Cache:
       - MISS, MISS
       X-Cache-Hits:
       - 0, 0
       X-Timer:
-      - S1460420915.820627,VS0,VE167
+      - S1462410105.224271,VS0,VE159
       Vary:
       - Accept-Encoding
     body:
       encoding: UTF-8
       string: ''
     http_version: 
-  recorded_at: Tue, 12 Apr 2016 00:28:35 GMT
+  recorded_at: Thu, 05 May 2016 01:01:45 GMT
 - request:
     method: get
     uri: https://vimeo.com/59312311
@@ -82,7 +82,7 @@ http_interactions:
       Content-Type:
       - text/html; charset=UTF-8
       Expires:
-      - Mon, 11 Apr 2016 12:28:36 GMT
+      - Wed, 04 May 2016 13:01:45 GMT
       X-Frame-Options:
       - sameorigin
       Via:
@@ -98,21 +98,21 @@ http_interactions:
       Fastly-Debug-Digest:
       - 02f57185cc3286a03888389f52d21ed0573da129f9f0b030aaea608ed9877300
       Content-Length:
-      - '11040'
+      - '11043'
       Accept-Ranges:
       - bytes
       Date:
-      - Tue, 12 Apr 2016 00:28:36 GMT
+      - Thu, 05 May 2016 01:01:45 GMT
       Connection:
       - keep-alive
       X-Served-By:
-      - cache-iad2120-IAD, cache-sjc3626-SJC
+      - cache-iad2130-IAD, cache-lax1421-LAX
       X-Cache:
       - MISS, MISS
       X-Cache-Hits:
       - 0, 0
       X-Timer:
-      - S1460420916.071856,VS0,VE119
+      - S1462410105.426623,VS0,VE111
       Vary:
       - Accept-Encoding
     body:
@@ -148,21 +148,21 @@ http_interactions:
         Ly9mLnZpbWVvY2RuLmNvbS9sb2dvLnN2ZyI+CiA8dGl0bGU+VmltZVVoT2g8
         L3RpdGxlPgogICAgICA8bGluayByZWw9InN0eWxlc2hlZXQiIGhyZWY9Imh0
         dHBzOi8vZi52aW1lb2Nkbi5jb20vc3R5bGVzL2Nzc19vcHQvZ2xvYmFsL2lj
-        b25fZm9udHMubWluLmNzcz9kMTU3MjY5OGMxIj4KCiA8bGluayByZWw9InN0
+        b25fZm9udHMubWluLmNzcz81YzdlMzdmMWZlIj4KCiA8bGluayByZWw9InN0
         eWxlc2hlZXQiIGhyZWY9Imh0dHBzOi8vZi52aW1lb2Nkbi5jb20vc3R5bGVz
-        L2Nzc19vcHQvZ2xvYmFsX2xlZ2FjeV9jb21iaW5lZC5taW4uY3NzP2I4MGJh
-        MGVjIj4KIDxsaW5rIHJlbD0ic3R5bGVzaGVldCIgaHJlZj0iaHR0cHM6Ly9m
+        L2Nzc19vcHQvZ2xvYmFsX2xlZ2FjeV9jb21iaW5lZC5taW4uY3NzPzViNzY0
+        NjJlIj4KIDxsaW5rIHJlbD0ic3R5bGVzaGVldCIgaHJlZj0iaHR0cHM6Ly9m
         LnZpbWVvY2RuLmNvbS9zdHlsZXMvY3NzX29wdC9nbG9iYWxfbGVnYWN5X3No
-        YXJlZF9jb21iaW5lZC5taW4uY3NzPzIyOTE3ZWNmIj4KIDxsaW5rIHJlbD0i
+        YXJlZF9jb21iaW5lZC5taW4uY3NzPzQ1MTBmNDlkIj4KIDxsaW5rIHJlbD0i
         c3R5bGVzaGVldCIgaHJlZj0iaHR0cHM6Ly9mLnZpbWVvY2RuLmNvbS9zdHls
         ZXMvY3NzX29wdC9wYWdlcy9leGNlcHRpb24ubWluLmNzcz9lOGRkZjJjZSI+
         CgoKIDxzY3JpcHQ+CiAgCiAgdmFyIHBsYXllckFzc2V0VXJscyA9IHsianMi
-        OiJodHRwczpcL1wvZi52aW1lb2Nkbi5jb21cL3BcLzIuMjMuMlwvanNcL3Bs
+        OiJodHRwczpcL1wvZi52aW1lb2Nkbi5jb21cL3BcLzIuMjQuNFwvanNcL3Bs
         YXllci5qcyIsIm1vb2ciOiJodHRwczpcL1wvZi52aW1lb2Nkbi5jb21cL3Bc
-        L2ZsYXNoXC9tb29nYWxvb3BcLzYuMy41XC9tb29nYWxvb3Auc3dmIiwibW9v
-        Z19qcyI6Imh0dHBzOlwvXC9mLnZpbWVvY2RuLmNvbVwvcFwvMi4yMy4yXC9q
+        L2ZsYXNoXC9tb29nYWxvb3BcLzYuMy42XC9tb29nYWxvb3Auc3dmIiwibW9v
+        Z19qcyI6Imh0dHBzOlwvXC9mLnZpbWVvY2RuLmNvbVwvcFwvMi4yNC40XC9q
         c1wvbW9vZ2Fsb29wLmpzIiwiY3NzIjoiaHR0cHM6XC9cL2YudmltZW9jZG4u
-        Y29tXC9wXC8yLjIzLjJcL2Nzc1wvcGxheWVyLmNzcyIsInBsYXllcl91cmwi
+        Y29tXC9wXC8yLjI0LjRcL2Nzc1wvcGxheWVyLmNzcyIsInBsYXllcl91cmwi
         OiJwbGF5ZXIudmltZW8uY29tIn07CgogIHZhciBfZXh0ZW5kID0gZnVuY3Rp
         b24oKXtmb3IodmFyIHI9YXJndW1lbnRzWzBdLG49MSxlPWFyZ3VtZW50cy5s
         ZW5ndGg7ZT5uO24rKyl7dmFyIHQ9YXJndW1lbnRzW25dO2Zvcih2YXIgYSBp
@@ -761,10 +761,10 @@ http_interactions:
         aWRlIGlkPSJmb290ZXJfdGlwIiBjbGFzcz0iZm9vdGVyX3YyX190aXAiIGFy
         aWEtbGl2ZT0icG9saXRlIj4KIDxoNCBjbGFzcz0iZm9vdGVyX3YyX190aXAt
         aGVhZGVyIj5EaWQgeW91IGtub3c/PC9oND4KIDxwIGNsYXNzPSJhY3RpdmUg
-        Zm9vdGVyX3YyX190aXAtY29udGVudCI+SWYgeW914oCZcmUgYSB2aWRlby1t
-        YWtpbmcgZmlyc3QtdGltZXIsIDxhIGhyZWY9Ii92aWRlb3NjaG9vbC8xMDEi
-        PlZpbWVvIFZpZGVvIFNjaG9vbCAxMDE8L2E+IGhhcyBqdXN0IHdoYXQgeW91
-        IG5lZWQgdG8gZ2V0IHN0YXJ0ZWQuPC9wPgogPC9hc2lkZT4KIDwvc2VjdGlv
+        Zm9vdGVyX3YyX190aXAtY29udGVudCI+PGEgaHJlZj0iL3ZpZGVvc2Nob29s
+        L2xlc3Nvbi8yODIvZ2V0dGluZy1kb3duLXdpdGgtbG93LWFuZ2xlcyI+TG93
+        LWFuZ2xlIHNob3RzPC9hPiBjYW4gZ2l2ZSB5b3VyIG5leHQgdmlkZW8gYSBi
+        cmFuZCBuZXcgcGVyc3BlY3RpdmUuPC9wPgogPC9hc2lkZT4KIDwvc2VjdGlv
         bj4KIAogIDxzZWN0aW9uIGNsYXNzPSJmb290ZXJfdjJfX2F1eGlsaWFyeSAi
         PgoKIDxkaXYgY2xhc3M9ImZvb3Rlcl92Ml9fbGVnYWwiPgogPGRpdiBjbGFz
         cz0iZm9vdGVyX3YyX19hdXhpbGlhcnktY29udGVudCI+CiA8cD5UTSArICZj
@@ -825,7 +825,7 @@ http_interactions:
         bGVzL2Nzc19vcHQvJywKIEpTX0RJUiA9ICdodHRwczovL2YudmltZW9jZG4u
         Y29tL2pzX29wdC8nLAogSU1BR0VfRElSID0gJ2h0dHBzOi8vZi52aW1lb2Nk
         bi5jb20vaW1hZ2VzX3Y2LycsCiBTVkdfRElSID0gJ2h0dHBzOi8vZi52aW1l
-        b2Nkbi5jb20vc3ZnLycsCiAgQlVJTERfSEFTSCA9ICc1NDU2Zic7CgogIHZh
+        b2Nkbi5jb20vc3ZnLycsCiAgQlVJTERfSEFTSCA9ICdmYTI0Nic7CgogIHZh
         ciB2aW1lbyA9IF9leHRlbmQoKHdpbmRvdy52aW1lbyB8fCB7fSksIHsiYXBw
         X3ZlcnNpb24iOiJ2NiIsImRvbWFpbiI6InZpbWVvLmNvbSIsInVybCI6InZp
         bWVvLmNvbSIsImN1cl91c2VyIjpmYWxzZSwiaXNfbW9iaWxlIjpmYWxzZX0p
@@ -919,7 +919,7 @@ http_interactions:
         cmlwdD4KIDxzY3JpcHQgc3JjPSJodHRwczovL2YudmltZW9jZG4uY29tL2pz
         X29wdC9hYmxpbmNvbG5fY29tYmluZWQubWluLmpzPzJkNDUyYzUyIj48L3Nj
         cmlwdD4KIDxzY3JpcHQgc3JjPSJodHRwczovL2YudmltZW9jZG4uY29tL2pz
-        X29wdC9nbG9iYWxfbGVnYWN5X2NvbWJpbmVkLm1pbi5qcz80Nzk1NzZlMyI+
+        X29wdC9nbG9iYWxfbGVnYWN5X2NvbWJpbmVkLm1pbi5qcz9iNTZhMjBkYyI+
         PC9zY3JpcHQ+CiA8c2NyaXB0IHNyYz0iaHR0cHM6Ly9mLnZpbWVvY2RuLmNv
         bS9qc19vcHQvbGVnYWN5L3ZpbWVvL2NvbnRyb2xsZXJzLzQwNC5taW4uanM/
         YTdmYTFhODYiPjwvc2NyaXB0PgoKIDxzY3JpcHQgYXN5bmMgc3JjPSIvL3d3
@@ -932,5 +932,5 @@ http_interactions:
         bWVvRG9tUmVhZHkoKTsKIH0KICA8L3NjcmlwdD4KCgogPC9ib2R5Pgo8L2h0
         bWw+Cg==
     http_version: 
-  recorded_at: Tue, 12 Apr 2016 00:28:36 GMT
+  recorded_at: Thu, 05 May 2016 01:01:45 GMT
 recorded_with: VCR 3.0.1

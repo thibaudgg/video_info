@@ -23,7 +23,7 @@ http_interactions:
       X-Dm-Api-Object:
       - video
       X-Dm-Backnode:
-      - 10.194.150.36:80
+      - 10.194.151.108:80
       X-Dm-Api-Method:
       - info
       Cache-Control:
@@ -31,19 +31,20 @@ http_interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Access-Control-Expose-Headers:
-      - X-DM-BackNode-Response-Time, X-DM-Edge, X-DM-Cache-Status, X-Served-By
+      - Date, X-DM-BackNode-Response-Time, X-DM-Edge, X-DM-Cache-Status, X-Served-By,
+        X-DM-BackNode-Response-Time
       X-Dm-Lb-Ip:
       - 195.8.215.129
       Expires:
       - Fri, 01 Jan 2010 05:00:00 GMT
       X-Dm-Lb-Name:
-      - lb-10
+      - lb-09
       X-Dm-Random-Number:
-      - '8684607'
+      - '2083301'
       Access-Control-Allow-Origin:
       - "*"
       X-Dm-Backnode-Response-Time:
-      - '41'
+      - '22'
       X-Robots-Tag:
       - noindex
       Access-Control-Allow-Headers:
@@ -62,13 +63,13 @@ http_interactions:
       Accept-Ranges:
       - bytes
       Date:
-      - Tue, 12 Apr 2016 00:28:33 GMT
+      - Thu, 05 May 2016 01:01:43 GMT
       Age:
       - '0'
       Connection:
       - keep-alive
       X-Served-By:
-      - cache-fra1250-FRA, cache-sjc3121-SJC
+      - cache-fra1232-FRA, cache-sjc3135-SJC
       X-Cache:
       - MISS, MISS
       X-Cache-Hits:
@@ -84,5 +85,5 @@ http_interactions:
       string: '{"error":{"more_info":"https:\/\/developer.dailymotion.com\/api#error-codes","code":404,"message":"Can''t
         find object video for `id'' parameter","type":"not_found","error_data":{"reason":"object_not_found"}}}'
     http_version: 
-  recorded_at: Tue, 12 Apr 2016 00:28:33 GMT
+  recorded_at: Thu, 05 May 2016 01:01:43 GMT
 recorded_with: VCR 3.0.1

@@ -48,7 +48,7 @@ require 'spec_helper'
 
     describe '#available?' do
       context 'with valid video', :vcr do
-        subject { VideoInfo.new('http://www.vimeo.com/898029') }
+        subject { VideoInfo.new('http://vimeo.com/98605382') }
 
         describe '#available?' do
           it { is_expected.to be_available }
@@ -72,8 +72,8 @@ require 'spec_helper'
       end
     end
 
-    context 'with video 898029', :vcr do
-      subject { VideoInfo.new('http://www.vimeo.com/898029') }
+    context 'with video 136971428', :vcr do
+      subject { VideoInfo.new('https://vimeo.com/136971428') }
 
       describe '#provider' do
         subject { super().provider }
@@ -82,22 +82,22 @@ require 'spec_helper'
 
       describe '#video_id' do
         subject { super().video_id }
-        it { is_expected.to eq '898029' }
+        it { is_expected.to eq '136971428' }
       end
 
       describe '#url' do
         subject { super().url }
-        it { is_expected.to eq 'http://www.vimeo.com/898029' }
+        it { is_expected.to eq 'https://vimeo.com/136971428' }
       end
 
       describe '#embed_url' do
         subject { super().embed_url }
-        it { is_expected.to eq '//player.vimeo.com/video/898029' }
+        it { is_expected.to eq '//player.vimeo.com/video/136971428' }
       end
 
       describe '#embed_code' do
         subject { super().embed_code }
-        embed_code = '<iframe src="//player.vimeo.com/video/898029?' \
+        embed_code = '<iframe src="//player.vimeo.com/video/136971428?' \
                      'title=0&byline=0&portrait=0&autoplay=0" ' \
                      'frameborder="0"></iframe>'
         it { is_expected.to eq embed_code }
@@ -105,86 +105,84 @@ require 'spec_helper'
 
       describe '#title' do
         subject { super().title }
-        it { is_expected.to eq 'Cherry Bloom - King Of The Knife' }
+        it { is_expected.to eq "Deafheaven - 'New Bermuda' Trailer" }
       end
 
       describe '#description' do
         subject { super().description }
-        description = 'The first video from the upcoming album Secret Sounds,' \
-                      ' to download in-stores April 14. ' \
-                      'Checkout http://www.cherrybloom.net'
+        description = "'New Bermuda,' the upcoming album from Deafheaven, " \
+                      "is available October 2nd"
         it { is_expected.to eq description }
       end
 
       describe '#keywords' do
         subject { super().keywords }
         it 'should return a string list of keywords' do
-          keywords_list = ['cherry bloom', 'secret sounds',
-                           'king of the knife', 'rock', 'alternative']
+          keywords_list = []
           is_expected.to eq keywords_list
         end
       end
 
       describe '#duration' do
         subject { super().duration }
-        it { is_expected.to eq 175 }
+        it { is_expected.to eq 59 }
       end
 
       describe '#width' do
         subject { super().width }
-        it { is_expected.to eq 640 }
+        it { is_expected.to eq 1280 }
       end
 
       describe '#height' do
         subject { super().height }
-        it { is_expected.to eq 360 }
+        it { is_expected.to eq 720 }
       end
 
       describe '#date' do
         subject { super().date }
         it 'should have correct upload date' do
-          is_expected.to eq Time.parse('2008-04-14T17:10:39+00:00',
+          is_expected.to eq Time.parse('2015-08-21T21:37:43+00:00',
                                        Time.now.utc).utc
         end
       end
 
       describe '#thumbnail_small' do
         subject { super().thumbnail_small }
-        thumbnail_url = 'https://i.vimeocdn.com/video/34373130_100x75.jpg'
+        thumbnail_url = 'https://i.vimeocdn.com/video/531688239_100x75.jpg'
         it { is_expected.to eq thumbnail_url }
       end
 
       describe '#thumbnail_medium' do
         subject { super().thumbnail_medium }
-        thumbnail_url = 'https://i.vimeocdn.com/video/34373130_200x150.jpg'
+        thumbnail_url = 'https://i.vimeocdn.com/video/531688239_200x150.jpg'
         it { is_expected.to eq thumbnail_url }
       end
 
       describe '#thumbnail_large' do
         subject { super().thumbnail_large }
-        thumbnail_url = 'https://i.vimeocdn.com/video/34373130_640.jpg'
+        thumbnail_url = 'https://i.vimeocdn.com/video/531688239_640.jpg'
         it { is_expected.to eq thumbnail_url }
       end
 
       describe '#author_thumbnail' do
         subject { super().author_thumbnail }
-        thumbnail_url = 'https://i.vimeocdn.com/portrait/2577152_75x75.jpg'
+        thumbnail_url = 'https://i.vimeocdn.com/portrait/327118_75x75.jpg'
         it { is_expected.to eq thumbnail_url }
       end
 
       describe '#author' do
         subject { super().author }
-        it { is_expected.to eq 'Octave Zangs' }
+        it { is_expected.to eq 'Anti Records' }
       end
 
       describe '#author_url' do
         subject { super().author_url }
-        it { is_expected.to eq 'https://vimeo.com/octave' }
+        it { is_expected.to eq 'https://vimeo.com/antirecords' }
       end
 
       describe '#view_count' do
         subject { super().view_count }
-        it { is_expected.to be > 4000 }
+        it { is_expected.to be > 80 }
       end
     end
 

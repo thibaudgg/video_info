@@ -1,0 +1,68 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.vimeo.com/videos/136971428
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - VideoInfo/2.6.0
+      Authorization:
+      - bearer 6b66b015a3504793b4f541d878f46ff6
+      Accept:
+      - application/vnd.vimeo.*+json;version=3.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Content-Type:
+      - application/vnd.vimeo.video+json
+      Cache-Control:
+      - no-cache, max-age=315360000
+      Strict-Transport-Security:
+      - max-age=15120000; includeSubDomains; preload
+      Expires:
+      - Sun, 03 May 2026 01:07:59 GMT
+      Via:
+      - 1.1 varnish
+      - 1.1 varnish
+      Fastly-Debug-Digest:
+      - 0d94ad6e757fc08c8ced42c1d2a77169f2aa45dd8b863c1cd49a0e8bd236bd6b
+      Content-Length:
+      - '1413'
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Thu, 05 May 2016 01:07:59 GMT
+      Age:
+      - '0'
+      Connection:
+      - keep-alive
+      X-Served-By:
+      - cache-iad2121-IAD, cache-lax1425-LAX
+      X-Cache:
+      - MISS, MISS
+      X-Cache-Hits:
+      - 0, 0
+      X-Timer:
+      - S1462410479.695122,VS0,VE120
+      Vary:
+      - Accept,Vimeo-Client-Id,Accept-Encoding
+    body:
+      encoding: ASCII-8BIT
+      string: '{"uri":"/videos/136971428","name":"Deafheaven - ''New Bermuda'' Trailer","description":"''New
+        Bermuda,'' the upcoming album from Deafheaven, is available October 2nd","link":"https://vimeo.com/136971428","duration":59,"width":1280,"language":"en","height":720,"embed":{"html":"<iframe
+        src=\"https://player.vimeo.com/video/136971428?badge=0&autopause=0&player_id=0\"
+        width=\"1280\" height=\"720\" frameborder=\"0\" title=\"Deafheaven - &#039;New
+        Bermuda&#039; Trailer\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>"},"created_time":"2015-08-21T21:37:43+00:00","modified_time":"2016-05-02T19:16:48+00:00","content_rating":["safe"],"license":null,"privacy":{"view":"anybody","embed":"public","download":false,"add":true,"comments":"anybody"},"pictures":{"uri":"/videos/136971428/pictures/531688239","active":true,"type":"custom","sizes":[{"width":100,"height":75,"link":"https://i.vimeocdn.com/video/531688239_100x75.jpg?r=pad","link_with_play_button":"https://i.vimeocdn.com/filter/overlay?src=https://i.vimeocdn.com/video/531688239_100x75.jpg&src=http://f.vimeocdn.com/p/images/crawler_play.png"},{"width":200,"height":150,"link":"https://i.vimeocdn.com/video/531688239_200x150.jpg?r=pad","link_with_play_button":"https://i.vimeocdn.com/filter/overlay?src=https://i.vimeocdn.com/video/531688239_200x150.jpg&src=http://f.vimeocdn.com/p/images/crawler_play.png"},{"width":295,"height":166,"link":"https://i.vimeocdn.com/video/531688239_295x166.jpg?r=pad","link_with_play_button":"https://i.vimeocdn.com/filter/overlay?src=https://i.vimeocdn.com/video/531688239_295x166.jpg&src=http://f.vimeocdn.com/p/images/crawler_play.png"},{"width":640,"height":360,"link":"https://i.vimeocdn.com/video/531688239_640x360.jpg?r=pad","link_with_play_button":"https://i.vimeocdn.com/filter/overlay?src=https://i.vimeocdn.com/video/531688239_640x360.jpg&src=http://f.vimeocdn.com/p/images/crawler_play.png"},{"width":960,"height":540,"link":"https://i.vimeocdn.com/video/531688239_960x540.jpg?r=pad","link_with_play_button":"https://i.vimeocdn.com/filter/overlay?src=https://i.vimeocdn.com/video/531688239_960x540.jpg&src=http://f.vimeocdn.com/p/images/crawler_play.png"},{"width":1280,"height":720,"link":"https://i.vimeocdn.com/video/531688239_1280x720.jpg?r=pad","link_with_play_button":"https://i.vimeocdn.com/filter/overlay?src=https://i.vimeocdn.com/video/531688239_1280x720.jpg&src=http://f.vimeocdn.com/p/images/crawler_play.png"}],"resource_key":"d02759c29fd9734d3100d5c1f04f06b2dc74a90b"},"tags":[],"stats":{"plays":84},"metadata":{"connections":{"comments":{"uri":"/videos/136971428/comments","options":["GET","POST"],"total":0},"credits":{"uri":"/videos/136971428/credits","options":["GET","POST"],"total":1},"likes":{"uri":"/videos/136971428/likes","options":["GET"],"total":0},"pictures":{"uri":"/videos/136971428/pictures","options":["GET","POST"],"total":1},"texttracks":{"uri":"/videos/136971428/texttracks","options":["GET","POST"],"total":0},"related":null},"interactions":{"watchlater":{"added":false,"added_time":null,"uri":"/users/22881647/watchlater/136971428"},"like":{"added":false,"added_time":null,"uri":"/users/22881647/likes/136971428"}}},"user":{"uri":"/users/814311","name":"Anti
+        Records","link":"https://vimeo.com/antirecords","location":"Los Angeles, Ca","bio":null,"created_time":"2008-10-06T20:33:11+00:00","account":"plus","pictures":{"uri":"/users/814311/pictures/327118","active":true,"type":"custom","sizes":[{"width":30,"height":30,"link":"https://i.vimeocdn.com/portrait/327118_30x30.jpg?r=pad"},{"width":75,"height":75,"link":"https://i.vimeocdn.com/portrait/327118_75x75.jpg?r=pad"},{"width":100,"height":100,"link":"https://i.vimeocdn.com/portrait/327118_100x100.jpg?r=pad"},{"width":300,"height":300,"link":"https://i.vimeocdn.com/portrait/327118_300x300.jpg?r=pad"}],"resource_key":"c3e1d632526279a122a559fbe91c39628ba5a9b1"},"websites":[{"name":null,"link":"http://www.anti.com","description":null}],"metadata":{"connections":{"activities":{"uri":"/users/814311/activities","options":["GET"]},"albums":{"uri":"/users/814311/albums","options":["GET"],"total":1},"channels":{"uri":"/users/814311/channels","options":["GET"],"total":1},"feed":{"uri":"/users/814311/feed","options":["GET"]},"followers":{"uri":"/users/814311/followers","options":["GET"],"total":443},"following":{"uri":"/users/814311/following","options":["GET"],"total":2},"groups":{"uri":"/users/814311/groups","options":["GET"],"total":0},"likes":{"uri":"/users/814311/likes","options":["GET"],"total":1},"portfolios":{"uri":"/users/814311/portfolios","options":["GET"],"total":0},"videos":{"uri":"/users/814311/videos","options":["GET"],"total":38},"shared":{"uri":"/users/814311/shared/videos","options":["GET"],"total":198},"pictures":{"uri":"/users/814311/pictures","options":["GET","POST"],"total":1}},"interactions":{"follow":{"added":false,"added_time":null,"uri":"/users/22881647/following/814311"}}},"resource_key":"e1d6212aaacbfb79302c5f750b44d5101a3f8a55","preferences":{"videos":{"privacy":null}}},"app":null,"status":"available","resource_key":"48aedcb7a82d508bf45829b10c79523ffafc8362","embed_presets":null}'
+    http_version: 
+  recorded_at: Thu, 05 May 2016 01:07:59 GMT
+recorded_with: VCR 3.0.1

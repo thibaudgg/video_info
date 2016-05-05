@@ -65,7 +65,11 @@ class VideoInfo
       end
 
       def keywords
-        json_info['keywords']
+        if json_info['keywords']
+          json_info['keywords']
+        else
+          []
+        end
       end
 
       def height
