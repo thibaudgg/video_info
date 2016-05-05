@@ -7,6 +7,10 @@ rvm:
   - 2.3.0
   - jruby-head
   - rbx-2
+matrix:
+  allow_failures:
+    - rvm: jruby-head
+    - rvm: rbx-2
 jdk:
   - oraclejdk8
 before_install:
