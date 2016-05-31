@@ -8,7 +8,7 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - VideoInfo/2.6.0
+      - VideoInfo/2.6.1
       Accept:
       - "*/*"
   response:
@@ -33,9 +33,9 @@ http_interactions:
       P3p:
       - CP="CURi ADMa DEVa IVAa IVDa CONi OUR IND DSP CAO COR"
       X-Request-Id:
-      - 19327fee875b8340f55f1f3c70381de1
+      - 89b7f6bed54df60a15a7204642d22742
       X-Runtime:
-      - '0.009768'
+      - '0.009330'
       X-Rack-Cache:
       - miss
       Via:
@@ -48,24 +48,24 @@ http_interactions:
       Accept-Ranges:
       - bytes
       Date:
-      - Thu, 05 May 2016 01:01:53 GMT
+      - Tue, 31 May 2016 07:00:55 GMT
       Age:
-      - '76241'
+      - '0'
       Connection:
       - keep-alive
       X-Served-By:
-      - cache-ord1724-ORD, cache-sjc3125-SJC
+      - cache-ord1730-ORD, cache-lax1440-LAX
       X-Cache:
-      - HIT, HIT
+      - MISS, MISS
       X-Cache-Hits:
-      - 1, 1
+      - 0, 0
       X-Timer:
-      - S1462410113.041548,VS0,VE0
+      - S1464678055.827958,VS0,VE81
       Strict-Transport-Security:
       - max-age=0
     body:
       encoding: UTF-8
       string: ''
     http_version: 
-  recorded_at: Thu, 05 May 2016 01:01:52 GMT
-recorded_with: VCR 3.0.1
+  recorded_at: Tue, 31 May 2016 07:00:55 GMT
+recorded_with: VCR 3.0.3

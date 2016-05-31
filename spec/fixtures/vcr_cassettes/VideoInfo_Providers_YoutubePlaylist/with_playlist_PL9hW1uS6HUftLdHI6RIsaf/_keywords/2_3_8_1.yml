@@ -8,7 +8,7 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - VideoInfo/2.6.0
+      - VideoInfo/2.6.1
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -19,13 +19,13 @@ http_interactions:
       message: OK
     headers:
       Expires:
-      - Thu, 05 May 2016 01:01:56 GMT
+      - Tue, 31 May 2016 07:01:03 GMT
       Date:
-      - Thu, 05 May 2016 01:01:56 GMT
+      - Tue, 31 May 2016 07:01:03 GMT
       Cache-Control:
       - private, max-age=0, must-revalidate, no-transform
       Etag:
-      - '"kiOs9cZLH2FUp6r6KJ8eyq_LIOk/Cj1QC1vsAJ1KT33B9-eOX8tPo74"'
+      - '"mie-I9wWQF7ndS7wC10DLBkzLlg/Cj1QC1vsAJ1KT33B9-eOX8tPo74"'
       Vary:
       - Origin
       - X-Origin
@@ -44,13 +44,13 @@ http_interactions:
       Alternate-Protocol:
       - 443:quic
       Alt-Svc:
-      - quic=":443"; ma=2592000; v="33,32,31,30,29,28,27,26,25"
+      - quic=":443"; ma=2592000; v="34,33,32,31,30,29,28,27,26,25"
     body:
       encoding: UTF-8
       string: |
         {
          "kind": "youtube#playlistListResponse",
-         "etag": "\"kiOs9cZLH2FUp6r6KJ8eyq_LIOk/Cj1QC1vsAJ1KT33B9-eOX8tPo74\"",
+         "etag": "\"mie-I9wWQF7ndS7wC10DLBkzLlg/Cj1QC1vsAJ1KT33B9-eOX8tPo74\"",
          "pageInfo": {
           "totalResults": 1,
           "resultsPerPage": 5
@@ -58,7 +58,7 @@ http_interactions:
          "items": [
           {
            "kind": "youtube#playlist",
-           "etag": "\"kiOs9cZLH2FUp6r6KJ8eyq_LIOk/Kl26xazym-tGf3sAZ80b1j2HL1o\"",
+           "etag": "\"mie-I9wWQF7ndS7wC10DLBkzLlg/Kl26xazym-tGf3sAZ80b1j2HL1o\"",
            "id": "PL9hW1uS6HUftLdHI6RIsaf-iXTm09qnEr",
            "snippet": {
             "publishedAt": "2013-08-09T05:09:51.000Z",
@@ -103,5 +103,5 @@ http_interactions:
          ]
         }
     http_version: 
-  recorded_at: Thu, 05 May 2016 01:01:56 GMT
-recorded_with: VCR 3.0.1
+  recorded_at: Tue, 31 May 2016 07:01:03 GMT
+recorded_with: VCR 3.0.3

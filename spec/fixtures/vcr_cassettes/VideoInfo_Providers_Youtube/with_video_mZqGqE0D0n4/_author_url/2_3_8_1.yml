@@ -8,7 +8,7 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - VideoInfo/2.6.0
+      - VideoInfo/2.6.1
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -19,13 +19,13 @@ http_interactions:
       message: OK
     headers:
       Expires:
-      - Thu, 05 May 2016 01:02:07 GMT
+      - Tue, 31 May 2016 07:01:21 GMT
       Date:
-      - Thu, 05 May 2016 01:02:07 GMT
+      - Tue, 31 May 2016 07:01:21 GMT
       Cache-Control:
       - private, max-age=0, must-revalidate, no-transform
       Etag:
-      - '"kiOs9cZLH2FUp6r6KJ8eyq_LIOk/5KImdEdXTfilUBWr7nMPo0oFjjI"'
+      - '"mie-I9wWQF7ndS7wC10DLBkzLlg/U78idvUrDRckC53nRYVGYGzcn2Q"'
       Vary:
       - Origin
       - X-Origin
@@ -44,7 +44,7 @@ http_interactions:
       Alternate-Protocol:
       - 443:quic
       Alt-Svc:
-      - quic=":443"; ma=2592000; v="33,32,31,30,29,28,27,26,25"
+      - quic=":443"; ma=2592000; v="34,33,32,31,30,29,28,27,26,25"
     body:
       encoding: UTF-8
       string: |
@@ -113,7 +113,7 @@ http_interactions:
             "publicStatsViewable": true
            },
            "statistics": {
-            "viewCount": "7208",
+            "viewCount": "7229",
             "likeCount": "51",
             "dislikeCount": "2",
             "favoriteCount": "0",
@@ -123,7 +123,7 @@ http_interactions:
          ]
         }
     http_version: 
-  recorded_at: Thu, 05 May 2016 01:02:07 GMT
+  recorded_at: Tue, 31 May 2016 07:01:21 GMT
 - request:
     method: get
     uri: https://www.googleapis.com/youtube/v3/channels?id=UCzxQk-rZGowoqMBKxGD5jSA&key=AIzaSyA6PYwSr1EnLFUFy1cZDk3Ifb0rxeJaeZ0&part=snippet
@@ -143,13 +143,13 @@ http_interactions:
       message: OK
     headers:
       Expires:
-      - Thu, 05 May 2016 01:02:07 GMT
+      - Tue, 31 May 2016 07:01:21 GMT
       Date:
-      - Thu, 05 May 2016 01:02:07 GMT
+      - Tue, 31 May 2016 07:01:21 GMT
       Cache-Control:
       - private, max-age=300, must-revalidate, no-transform
       Etag:
-      - '"kiOs9cZLH2FUp6r6KJ8eyq_LIOk/HdPUE1JMIOxjvQBoQH8kamqep4k"'
+      - '"mie-I9wWQF7ndS7wC10DLBkzLlg/HdPUE1JMIOxjvQBoQH8kamqep4k"'
       Vary:
       - Origin
       - X-Origin
@@ -168,13 +168,13 @@ http_interactions:
       Alternate-Protocol:
       - 443:quic
       Alt-Svc:
-      - quic=":443"; ma=2592000; v="33,32,31,30,29,28,27,26,25"
+      - quic=":443"; ma=2592000; v="34,33,32,31,30,29,28,27,26,25"
     body:
       encoding: UTF-8
       string: |
         {
          "kind": "youtube#channelListResponse",
-         "etag": "\"kiOs9cZLH2FUp6r6KJ8eyq_LIOk/HdPUE1JMIOxjvQBoQH8kamqep4k\"",
+         "etag": "\"mie-I9wWQF7ndS7wC10DLBkzLlg/HdPUE1JMIOxjvQBoQH8kamqep4k\"",
          "pageInfo": {
           "totalResults": 1,
           "resultsPerPage": 1
@@ -182,7 +182,7 @@ http_interactions:
          "items": [
           {
            "kind": "youtube#channel",
-           "etag": "\"kiOs9cZLH2FUp6r6KJ8eyq_LIOk/xsKxrELkp4MVsh8BkbCkfIeS92s\"",
+           "etag": "\"mie-I9wWQF7ndS7wC10DLBkzLlg/xsKxrELkp4MVsh8BkbCkfIeS92s\"",
            "id": "UCzxQk-rZGowoqMBKxGD5jSA",
            "snippet": {
             "title": "Cherry Bloom",
@@ -208,5 +208,5 @@ http_interactions:
          ]
         }
     http_version: 
-  recorded_at: Thu, 05 May 2016 01:02:07 GMT
-recorded_with: VCR 3.0.1
+  recorded_at: Tue, 31 May 2016 07:01:21 GMT
+recorded_with: VCR 3.0.3

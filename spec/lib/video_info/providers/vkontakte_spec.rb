@@ -109,8 +109,8 @@ describe VideoInfo::Providers::Vkontakte do
     video_url = 'https://vk.com/videos43640822#/video43640822_168790809'
     subject { VideoInfo.new(video_url) }
 
-    author_thumbnail = 'https://pp.vk.me/c604531/v604531822' \
-                       '/2beb/JrLWCWTA7y0.jpg'
+    author_thumbnail = 'https://pp.vk.me/c631516/v631516822' \
+                       '/22f70/Cd2lengywbk.jpg'
     video_title = 'UDC open cup 2014/ 3 place / Saley Daria (solo)'
 
     its(:provider)         { should eq 'Vkontakte' }

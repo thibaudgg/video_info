@@ -8,7 +8,7 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - VideoInfo/2.6.0
+      - VideoInfo/2.6.1
       Authorization:
       - bearer 6b66b015a3504793b4f541d878f46ff6
       Accept:
@@ -27,7 +27,7 @@ http_interactions:
       Strict-Transport-Security:
       - max-age=15120000; includeSubDomains; preload
       Expires:
-      - Sun, 03 May 2026 01:01:50 GMT
+      - Fri, 29 May 2026 07:00:14 GMT
       Via:
       - 1.1 varnish
       - 1.1 varnish
@@ -38,22 +38,22 @@ http_interactions:
       Accept-Ranges:
       - bytes
       Date:
-      - Thu, 05 May 2016 01:01:50 GMT
+      - Tue, 31 May 2016 07:00:14 GMT
       Connection:
       - keep-alive
       X-Served-By:
-      - cache-iad2142-IAD, cache-lax1426-LAX
+      - cache-iad2136-IAD, cache-lax1423-LAX
       X-Cache:
       - MISS, MISS
       X-Cache-Hits:
       - 0, 0
       X-Timer:
-      - S1462410110.581121,VS0,VE86
+      - S1464678014.419120,VS0,VE92
       Vary:
       - Accept,Vimeo-Client-Id,Accept-Encoding
     body:
       encoding: UTF-8
       string: ''
     http_version: 
-  recorded_at: Thu, 05 May 2016 01:01:50 GMT
-recorded_with: VCR 3.0.1
+  recorded_at: Tue, 31 May 2016 07:00:14 GMT
+recorded_with: VCR 3.0.3

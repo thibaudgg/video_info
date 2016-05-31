@@ -8,7 +8,7 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - VideoInfo/2.6.0
+      - VideoInfo/2.6.1
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -35,9 +35,9 @@ http_interactions:
       P3p:
       - CP="CURi ADMa DEVa IVAa IVDa CONi OUR IND DSP CAO COR"
       X-Request-Id:
-      - 62ffd6c49ad811e0622350f7ab37b142
+      - ce80b54efe1cdefb4ef1450d25a59ee9
       X-Runtime:
-      - '0.031830'
+      - '0.031765'
       X-Rack-Cache:
       - miss
       Via:
@@ -46,23 +46,23 @@ http_interactions:
       Fastly-Debug-Digest:
       - 0cb2dce10e342c18e932e8428741b0b03e8678383f77a7e425ccd2c0cd233ec0
       Content-Length:
-      - '434'
+      - '432'
       Accept-Ranges:
       - bytes
       Date:
-      - Thu, 05 May 2016 01:01:53 GMT
+      - Tue, 31 May 2016 07:00:56 GMT
       Age:
-      - '76242'
+      - '0'
       Connection:
       - keep-alive
       X-Served-By:
-      - cache-ord1726-ORD, cache-sjc3133-SJC
+      - cache-ord1738-ORD, cache-lax1421-LAX
       X-Cache:
-      - HIT, HIT
+      - MISS, HIT
       X-Cache-Hits:
-      - 1, 1
+      - 0, 2
       X-Timer:
-      - S1462410113.348981,VS0,VE0
+      - S1464678056.478640,VS0,VE0
       Vary:
       - Accept-Encoding,X-Forwarded-Proto
       Strict-Transport-Security:
@@ -74,7 +74,7 @@ http_interactions:
         name=\"wistia_embed\" allowfullscreen mozallowfullscreen webkitallowfullscreen
         oallowfullscreen msallowfullscreen width=\"960\" height=\"540\"></iframe>\n<script
         src=\"//fast.wistia.net/assets/external/E-v1.js\" async></script>","width":960,"height":540,"provider_name":"Wistia,
-        Inc.","provider_url":"http://wistia.com","title":"Lance Kalish - Yes To Group","thumbnail_url":"https://embed-ssl.wistia.com/deliveries/dc005e6a7583a25c4b7c284c08afc42fb67fdb95.jpg?image_crop_resized=960x540","thumbnail_width":960,"thumbnail_height":540,"duration":1214.83}'
+        Inc.","provider_url":"https://wistia.com","title":"Lance Kalish - Yes To Group","thumbnail_url":"https://embed-ssl.wistia.com/deliveries/dc005e6a7583a25c4b7c284c08afc42fb67fdb95.jpg?image_crop_resized=960x540","thumbnail_width":960,"thumbnail_height":540,"duration":1214.83}'
     http_version: 
-  recorded_at: Thu, 05 May 2016 01:01:53 GMT
-recorded_with: VCR 3.0.1
+  recorded_at: Tue, 31 May 2016 07:00:56 GMT
+recorded_with: VCR 3.0.3
