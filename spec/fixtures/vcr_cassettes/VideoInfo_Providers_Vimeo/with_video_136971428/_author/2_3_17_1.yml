@@ -65,4 +65,62 @@ http_interactions:
         Records","link":"https://vimeo.com/antirecords","location":"Los Angeles, Ca","bio":null,"created_time":"2008-10-06T20:33:11+00:00","account":"plus","pictures":{"uri":"/users/814311/pictures/327118","active":true,"type":"custom","sizes":[{"width":30,"height":30,"link":"https://i.vimeocdn.com/portrait/327118_30x30.jpg?r=pad"},{"width":75,"height":75,"link":"https://i.vimeocdn.com/portrait/327118_75x75.jpg?r=pad"},{"width":100,"height":100,"link":"https://i.vimeocdn.com/portrait/327118_100x100.jpg?r=pad"},{"width":300,"height":300,"link":"https://i.vimeocdn.com/portrait/327118_300x300.jpg?r=pad"}],"resource_key":"c3e1d632526279a122a559fbe91c39628ba5a9b1"},"websites":[{"name":null,"link":"http://www.anti.com","description":null}],"metadata":{"connections":{"activities":{"uri":"/users/814311/activities","options":["GET"]},"albums":{"uri":"/users/814311/albums","options":["GET"],"total":1},"channels":{"uri":"/users/814311/channels","options":["GET"],"total":1},"feed":{"uri":"/users/814311/feed","options":["GET"]},"followers":{"uri":"/users/814311/followers","options":["GET"],"total":449},"following":{"uri":"/users/814311/following","options":["GET"],"total":2},"groups":{"uri":"/users/814311/groups","options":["GET"],"total":0},"likes":{"uri":"/users/814311/likes","options":["GET"],"total":1},"portfolios":{"uri":"/users/814311/portfolios","options":["GET"],"total":0},"videos":{"uri":"/users/814311/videos","options":["GET"],"total":38},"shared":{"uri":"/users/814311/shared/videos","options":["GET"],"total":199},"pictures":{"uri":"/users/814311/pictures","options":["GET","POST"],"total":1}},"interactions":{"follow":{"added":false,"added_time":null,"uri":"/users/22881647/following/814311"}}},"resource_key":"e1d6212aaacbfb79302c5f750b44d5101a3f8a55","preferences":{"videos":{"privacy":null}}},"app":null,"status":"available","resource_key":"7c4542791d2267ed231d820afcfff7d6c840e688","embed_presets":null}'
     http_version: 
   recorded_at: Tue, 31 May 2016 07:00:18 GMT
+- request:
+    method: head
+    uri: https://api.vimeo.com/videos/136971428
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - VideoInfo/2.6.1
+      Authorization:
+      - bearer 6b66b015a3504793b4f541d878f46ff6
+      Accept:
+      - application/vnd.vimeo.*+json;version=3.2
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Content-Type:
+      - application/vnd.vimeo.video+json
+      Cache-Control:
+      - no-cache, max-age=315360000
+      Strict-Transport-Security:
+      - max-age=15120000; includeSubDomains; preload
+      Expires:
+      - Fri, 29 May 2026 08:40:14 GMT
+      Via:
+      - 1.1 varnish
+      - 1.1 varnish
+      Fastly-Debug-Digest:
+      - 0d94ad6e757fc08c8ced42c1d2a77169f2aa45dd8b863c1cd49a0e8bd236bd6b
+      Content-Length:
+      - '5132'
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Tue, 31 May 2016 08:40:14 GMT
+      Age:
+      - '0'
+      Connection:
+      - keep-alive
+      X-Served-By:
+      - cache-iad2130-IAD, cache-lax1431-LAX
+      X-Cache:
+      - MISS, MISS
+      X-Cache-Hits:
+      - 0, 0
+      X-Timer:
+      - S1464684014.500027,VS0,VE131
+      Vary:
+      - Accept,Vimeo-Client-Id,Accept-Encoding
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Tue, 31 May 2016 08:40:14 GMT
 recorded_with: VCR 3.0.3

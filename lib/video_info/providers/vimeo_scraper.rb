@@ -7,10 +7,16 @@ class VideoInfo
   module Providers
     module VimeoScraper
       def author
-        json_info['author']['name']
+        if available?
+          json_info['author']['name']
+        end
       end
 
       def author_thumbnail
+        unless available?
+          return nil
+        end
+
         split_point = 'window.vimeo.clip_page_config ='
         script_tags = data.css('script')
 
@@ -28,7 +34,9 @@ class VideoInfo
       end
 
       def author_url
-        json_info['author']['url']
+        if available?
+          json_info['author']['url']
+        end
       end
 
       def available?
@@ -56,16 +64,24 @@ class VideoInfo
       end
 
       def date
-        upload_date = json_info['uploadDate']
-        ISO8601::DateTime.new(upload_date).to_time
+        if available?
+          upload_date = json_info['uploadDate']
+          ISO8601::DateTime.new(upload_date).to_time
+        end
       end
 
       def duration
-        duration = json_info['duration']
-        ISO8601::Duration.new(duration).to_seconds.to_i
+        if available?
+          duration = json_info['duration']
+          ISO8601::Duration.new(duration).to_seconds.to_i
+        end
       end
 
       def keywords
+        unless available?
+          return nil
+        end
+
         if json_info['keywords']
           json_info['keywords']
         else
@@ -74,27 +90,39 @@ class VideoInfo
       end
 
       def height
-        json_info['height']
+        if available?
+          json_info['height']
+        end
       end
 
       def width
-        json_info['width']
+        if available?
+          json_info['width']
+        end
       end
 
       def thumbnail_small
-        thumbnail_url.split('_')[0] + '_100x75.jpg'
+        if available?
+          thumbnail_url.split('_')[0] + '_100x75.jpg'
+        end
       end
 
       def thumbnail_medium
-        thumbnail_url.split('_')[0] + '_200x150.jpg'
+        if available?
+          thumbnail_url.split('_')[0] + '_200x150.jpg'
+        end
       end
 
       def thumbnail_large
-        thumbnail_url.split('_')[0] + '_640.jpg'
+        if available?
+          thumbnail_url.split('_')[0] + '_640.jpg'
+        end
       end
 
       def view_count
-        json_info['interactionCount']
+        if available?
+          json_info['interactionCount']
+        end
       end
 
       private

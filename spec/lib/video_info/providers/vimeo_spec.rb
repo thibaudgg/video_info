@@ -273,5 +273,28 @@ require 'spec_helper'
       its(:provider) { should eq 'Vimeo' }
       its(:video_id) { should eq '126641548' }
     end
+
+    context 'with unavailable video', :vcr do
+      if api_key.nil?
+        video_url = 'https://vimeo.com/0812455'
+        subject { VideoInfo.new(video_url) }
+
+        its(:available?) { should be false }
+        its(:author) { should be nil }
+        its(:author_thumbnail) { should be nil }
+        its(:author_url) { should be nil }
+        its(:title) { should be nil }
+        its(:description) { should be nil }
+        its(:date) { should be nil }
+        its(:duration) { should be nil }
+        its(:keywords) { should be nil }
+        its(:height) { should be nil }
+        its(:width) { should be nil }
+        its(:thumbnail_small) { should be nil }
+        its(:thumbnail_medium) { should be nil }
+        its(:thumbnail_large) { should be nil }
+        its(:view_count) { should be nil }
+      end
+    end
   end
 end

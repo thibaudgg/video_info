@@ -1506,4 +1506,76 @@ http_interactions:
         aXB0PiAKIDwvYm9keT4KPC9odG1sPgo=
     http_version: 
   recorded_at: Tue, 31 May 2016 07:00:09 GMT
+- request:
+    method: head
+    uri: https://vimeo.com/136971428
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - VideoInfo/2.6.1
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Content-Type:
+      - text/html; charset=UTF-8
+      Expires:
+      - Tue, 31 May 2016 09:00:07 GMT
+      X-Ua-Compatible:
+      - IE=edge
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - sameorigin
+      Strict-Transport-Security:
+      - max-age=15120000; includeSubDomains; preload
+      Content-Security-Policy-Report-Only:
+      - 'default-src https: data: blob: ''unsafe-inline'' ''unsafe-eval''; report-uri
+        /_csp'
+      Via:
+      - 1.1 varnish
+      - 1.1 varnish
+      - 1.1 varnish
+      Cache-Control:
+      - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+      X-Varnish-Cache:
+      - '1'
+      X-Vserver:
+      - dfvimeowebproxy1
+      Fastly-Debug-Digest:
+      - cea2dd45cda6c7f8b8db6116e3d4b4847f4eb4010957232b160811b44c7fa0bc
+      Content-Length:
+      - '64457'
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Tue, 31 May 2016 08:55:54 GMT
+      Age:
+      - '0'
+      Connection:
+      - keep-alive
+      X-Served-By:
+      - cache-iad2130-IAD, cache-lax1432-LAX
+      X-Cache:
+      - MISS, MISS
+      X-Cache-Hits:
+      - 0, 0
+      X-Timer:
+      - S1464684954.286984,VS0,VE79
+      Vary:
+      - User-Agent,Accept-Encoding
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Tue, 31 May 2016 08:55:54 GMT
 recorded_with: VCR 3.0.3
