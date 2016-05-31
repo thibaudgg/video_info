@@ -38,8 +38,7 @@ class VideoInfo
         { 240 => 320,
           360 => 480,
           480 => 640,
-          720 => 1280
-        }[height].to_i
+          720 => 1280 }[height].to_i
       end
 
       def height

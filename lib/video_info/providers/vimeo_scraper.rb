@@ -38,7 +38,7 @@ class VideoInfo
         elsif is_available
           password_elements = data.css('.exception_title--password')
 
-          if !password_elements.empty?
+          unless password_elements.empty?
             is_available = false
           end
         end
