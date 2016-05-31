@@ -1,6 +1,7 @@
 require 'oga'
 require 'open-uri'
 require 'json'
+require 'openssl'
 
 class VideoInfo
   module Providers
