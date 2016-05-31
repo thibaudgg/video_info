@@ -36,9 +36,9 @@ class VideoInfo
         if data.nil?
           is_available = false
         elsif is_available
-          page_header = data.css('#page_header')
+          password_elements = data.css('.exception_title--password')
 
-          if page_header.text == "\n Private Video\n "
+          if !password_elements.empty?
             is_available = false
           end
         end

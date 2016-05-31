@@ -85,7 +85,7 @@ http_interactions:
       Strict-Transport-Security:
       - max-age=15120000; includeSubDomains; preload
       Expires:
-      - Fri, 29 May 2026 07:04:03 GMT
+      - Fri, 29 May 2026 07:11:24 GMT
       Via:
       - 1.1 varnish
       - 1.1 varnish
@@ -96,24 +96,24 @@ http_interactions:
       Accept-Ranges:
       - bytes
       Date:
-      - Tue, 31 May 2016 07:04:03 GMT
+      - Tue, 31 May 2016 07:11:24 GMT
       Age:
       - '0'
       Connection:
       - keep-alive
       X-Served-By:
-      - cache-iad2149-IAD, cache-lax1429-LAX
+      - cache-iad2123-IAD, cache-lax1429-LAX
       X-Cache:
       - MISS, MISS
       X-Cache-Hits:
       - 0, 0
       X-Timer:
-      - S1464678243.340626,VS0,VE138
+      - S1464678684.781340,VS0,VE125
       Vary:
       - Accept,Vimeo-Client-Id,Accept-Encoding
     body:
       encoding: UTF-8
       string: ''
     http_version: 
-  recorded_at: Tue, 31 May 2016 07:04:03 GMT
+  recorded_at: Tue, 31 May 2016 07:11:24 GMT
 recorded_with: VCR 3.0.3
