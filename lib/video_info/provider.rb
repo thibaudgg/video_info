@@ -37,7 +37,7 @@ class VideoInfo
     end
 
     def thumbnail
-      if defined? self.thumbnail_large
+      if defined?(thumbnail_large)
         thumbnail_large
       end
     end

@@ -1054,26 +1054,26 @@ http_interactions:
       Accept-Ranges:
       - bytes
       Date:
-      - Thu, 02 Jun 2016 05:17:23 GMT
+      - Thu, 02 Jun 2016 05:21:59 GMT
       Age:
       - '0'
       Connection:
       - keep-alive
       X-Served-By:
-      - cache-iad2149-IAD, cache-lax1439-LAX
+      - cache-iad2137-IAD, cache-lax1422-LAX
       X-Cache:
       - MISS, MISS
       X-Cache-Hits:
       - 0, 0
       X-Timer:
-      - S1464844643.051027,VS0,VE138
+      - S1464844919.212813,VS0,VE141
       Vary:
       - User-Agent,Accept-Encoding
     body:
       encoding: UTF-8
       string: ''
     http_version: 
-  recorded_at: Thu, 02 Jun 2016 05:17:23 GMT
+  recorded_at: Thu, 02 Jun 2016 05:21:59 GMT
 - request:
     method: get
     uri: https://vimeo.com/98605382
@@ -1128,19 +1128,19 @@ http_interactions:
       Accept-Ranges:
       - bytes
       Date:
-      - Thu, 02 Jun 2016 05:17:23 GMT
+      - Thu, 02 Jun 2016 05:21:59 GMT
       Age:
       - '0'
       Connection:
       - keep-alive
       X-Served-By:
-      - cache-iad2142-IAD, cache-lax1424-LAX
+      - cache-iad2133-IAD, cache-lax1439-LAX
       X-Cache:
       - MISS, MISS
       X-Cache-Hits:
       - 0, 0
       X-Timer:
-      - S1464844643.328347,VS0,VE83
+      - S1464844919.489467,VS0,VE78
       Vary:
       - User-Agent,Accept-Encoding
     body:
@@ -2668,5 +2668,5 @@ http_interactions:
         b2dsZXN5bmRpY2F0aW9uLmNvbS9wYWdlYWQvc2hvd19hZHMuanMiPjwvc2Ny
         JysnaXB0PicpOwogPC9zY3JpcHQ+IAogPC9ib2R5Pgo8L2h0bWw+Cg==
     http_version: 
-  recorded_at: Thu, 02 Jun 2016 05:17:23 GMT
+  recorded_at: Thu, 02 Jun 2016 05:21:59 GMT
 recorded_with: VCR 3.0.3
