@@ -164,6 +164,12 @@ require 'spec_helper'
         it { is_expected.to eq thumbnail_url }
       end
 
+      describe '#thumbnail' do
+        subject { super().thumbnail }
+        thumbnail_url = 'https://i.vimeocdn.com/video/531688239_640.jpg'
+        it { is_expected.to eq thumbnail_url }
+      end
+
       describe '#author_thumbnail' do
         subject { super().author_thumbnail }
         thumbnail_url = 'https://i.vimeocdn.com/portrait/327118_75x75.jpg'

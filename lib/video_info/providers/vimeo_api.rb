@@ -39,25 +39,16 @@ class VideoInfo
         @thumbnail_id ||= _parse_picture_id(_video['pictures']['uri'])
       end
 
-      def thumbnail(width = 200, height = nil)
-        base_uri = "https://i.vimeocdn.com/video/#{thumbnail_id}"
-        if height
-          base_uri + "_#{width}x#{height}.jpg"
-        else
-          base_uri + "_#{width}.jpg"
-        end
-      end
-
       def thumbnail_small
-        thumbnail(100, 75)
+        generate_thumbnail(100, 75)
       end
 
       def thumbnail_medium
-        thumbnail(200, 150)
+        generate_thumbnail(200, 150)
       end
 
       def thumbnail_large
-        thumbnail(640)
+        generate_thumbnail(640)
       end
 
       def keywords
@@ -77,6 +68,15 @@ class VideoInfo
       end
 
       private
+
+      def generate_thumbnail(width = 200, height = nil)
+        base_uri = "https://i.vimeocdn.com/video/#{thumbnail_id}"
+        if height
+          base_uri + "_#{width}x#{height}.jpg"
+        else
+          base_uri + "_#{width}.jpg"
+        end
+      end
 
       def _clean_options(options)
         headers = [super, _authorization_headers, _api_version_headers]

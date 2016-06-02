@@ -163,6 +163,7 @@ describe VideoInfo::Providers::Vkontakte do
     its(:author)           { should eq(author).or(eq(author_alt)) }
     its(:author_thumbnail) { should eq author_thumbnail }
     its(:author_url)       { should eq 'https://vk.com/lyanoi.kirill' }
+    its(:thumbnail)        { should be_nil }
   end
 
   context 'with video video39576223_108370515', :vcr do

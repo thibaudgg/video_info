@@ -110,6 +110,14 @@ describe VideoInfo::Providers::Wistia do
                       '?image_crop_resized=960x540'
       it { is_expected.to eq thumbnail_url }
     end
+
+    describe '#thumbnail' do
+      subject { super().thumbnail }
+      thumbnail_url = 'https://embed-ssl.wistia.com/deliveries/' \
+                      'dc005e6a7583a25c4b7c284c08afc42fb67fdb95.jpg' \
+                      '?image_crop_resized=960x540'
+      it { is_expected.to eq thumbnail_url }
+    end
   end
 
   context 'with video pxonqr42is', :vcr do

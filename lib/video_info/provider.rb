@@ -36,6 +36,12 @@ class VideoInfo
       !%w[403 404 400].include?(_response_code)
     end
 
+    def thumbnail
+      if defined? self.thumbnail_large
+        thumbnail_large
+      end
+    end
+
     private
 
     def _response_code

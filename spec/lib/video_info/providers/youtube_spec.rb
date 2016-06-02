@@ -119,6 +119,12 @@ require 'spec_helper'
           it { is_expected.to eq thumbnail_url }
         end
 
+        describe '#thumbnail' do
+          subject { super().thumbnail }
+          thumbnail_url = 'https://i.ytimg.com/vi/SUkXvWn1m7Q/hqdefault.jpg'
+          it { is_expected.to eq thumbnail_url }
+        end
+
         describe '#view_count' do
           subject { super().view_count }
           it { is_expected.to be == 0 }

@@ -167,6 +167,12 @@ require 'spec_helper'
         it { is_expected.to eq thumbnail_url }
       end
 
+      describe '#thumbnail' do
+        subject { super().thumbnail }
+        thumbnail_url = 'https://i.ytimg.com/vi/8b0aEoxqqC0/hqdefault.jpg'
+        it { is_expected.to eq thumbnail_url }
+      end
+
       describe '#videos' do
         subject { super().videos }
         it 'returns list of videos in playlist' do
