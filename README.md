@@ -28,7 +28,7 @@ Usage
 
 Youtube and Vimeo have recently updated their APIs to require API keys.
 
-Scrapers has been implemented for both Youtube and Vimeo. However, the Youtube scraper can only get the date the video was posted, while the API is able to get the date and the exact time the video was posted. You may also wish to use the API to protect against potential HTML changes that could break the scrapesr.
+Scrapers has been implemented for both Youtube and Vimeo. However, the Youtube scraper can only get the date the video was posted, while the API is able to get the date and the exact time the video was posted. You may also wish to use the API to protect against potential HTML changes that could break the scrapers.
 
 To get a Youtube API key, [follow the instructions here](https://developers.google.com/youtube/registering_an_application)
 
