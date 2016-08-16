@@ -167,7 +167,7 @@ describe VideoInfo::Providers::Wistia do
 
     describe '#height' do
       subject { super().height }
-      it { is_expected.to eq 568 }
+      it { is_expected.to eq 540 }
     end
 
     describe '#thumbnail_small' do
