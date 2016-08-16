@@ -172,7 +172,18 @@ require 'spec_helper'
 
       describe '#author_thumbnail' do
         subject { super().author_thumbnail }
-        thumbnail_url = 'https://i.vimeocdn.com/portrait/14790276_75x75.jpg'
+
+        #
+        # For some reason, the scraper returns an image URL without
+        # a file extension. This will likely change in the future.
+        #
+
+        thumbnail_url = 'https://i.vimeocdn.com/portrait/14790276_75x75'
+
+        if api_key
+          thumbnail_url += '.jpg'
+        end
+
         it { is_expected.to eq thumbnail_url }
       end
 
