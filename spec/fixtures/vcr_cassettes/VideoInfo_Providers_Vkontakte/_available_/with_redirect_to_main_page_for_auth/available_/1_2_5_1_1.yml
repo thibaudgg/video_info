@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - Apache
       Date:
-      - Tue, 31 May 2016 07:00:25 GMT
+      - Tue, 16 Aug 2016 06:43:07 GMT
       Content-Type:
       - text/html; charset=windows-1251
       Content-Length:
@@ -29,18 +29,63 @@ http_interactions:
       Connection:
       - keep-alive
       X-Powered-By:
-      - PHP/3.23962
+      - PHP/3.25035
       Set-Cookie:
-      - remixlang=3; expires=Wed, 31 May 2017 10:53:44 GMT; path=/; domain=.vk.com
+      - remixlang=3; expires=Sun, 06 Aug 2017 06:48:05 GMT; path=/; domain=.vk.com
       Pragma:
       - no-cache
       Cache-Control:
       - no-store
       Location:
-      - "/"
+      - http://new.vk.com/video
     body:
       encoding: ASCII-8BIT
       string: ''
     http_version: 
-  recorded_at: Tue, 31 May 2016 07:00:25 GMT
+  recorded_at: Tue, 16 Aug 2016 06:43:07 GMT
+- request:
+    method: get
+    uri: http://new.vk.com/video
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - new.vk.com
+  response:
+    status:
+      code: 302
+      message: Found
+    headers:
+      Server:
+      - Apache
+      Date:
+      - Tue, 16 Aug 2016 06:43:08 GMT
+      Content-Type:
+      - text/html; charset=windows-1251
+      Content-Length:
+      - '20'
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - PHP/3.3847
+      Set-Cookie:
+      - remixlang=3; expires=Tue, 08 Aug 2017 03:41:30 GMT; path=/; domain=.vk.com
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - no-store
+      Location:
+      - https://new.vk.com/video
+    body:
+      encoding: ASCII-8BIT
+      string: ''
+    http_version: 
+  recorded_at: Tue, 16 Aug 2016 06:43:08 GMT
 recorded_with: VCR 3.0.3

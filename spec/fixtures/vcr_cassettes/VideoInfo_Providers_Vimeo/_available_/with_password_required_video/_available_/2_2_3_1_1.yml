@@ -26,34 +26,40 @@ http_interactions:
       - no-cache, max-age=315360000
       Strict-Transport-Security:
       - max-age=15120000; includeSubDomains; preload
+      X-Ratelimit-Limit:
+      - '500'
+      X-Ratelimit-Remaining:
+      - '497'
+      X-Ratelimit-Reset:
+      - '2016-08-16T06:58:00+00:00'
       Expires:
-      - Fri, 29 May 2026 07:00:14 GMT
+      - Fri, 14 Aug 2026 06:43:00 GMT
       Via:
       - 1.1 varnish
       - 1.1 varnish
       Fastly-Debug-Digest:
       - 8a3883348689ddeb91a29864d5887cd8b059e3d8249182ea55e4d501f3d81f7b
       Content-Length:
-      - '255'
+      - '257'
       Accept-Ranges:
       - bytes
       Date:
-      - Tue, 31 May 2016 07:00:14 GMT
+      - Tue, 16 Aug 2016 06:43:00 GMT
       Connection:
       - keep-alive
       X-Served-By:
-      - cache-iad2136-IAD, cache-lax1423-LAX
+      - cache-iad2138-IAD, cache-lax1439-LAX
       X-Cache:
       - MISS, MISS
       X-Cache-Hits:
       - 0, 0
       X-Timer:
-      - S1464678014.419120,VS0,VE92
+      - S1471329780.499360,VS0,VE94
       Vary:
       - Accept,Vimeo-Client-Id,Accept-Encoding
     body:
       encoding: UTF-8
       string: ''
     http_version: 
-  recorded_at: Tue, 31 May 2016 07:00:14 GMT
+  recorded_at: Tue, 16 Aug 2016 06:43:00 GMT
 recorded_with: VCR 3.0.3

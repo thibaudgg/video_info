@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - Apache
       Date:
-      - Tue, 31 May 2016 07:00:21 GMT
+      - Tue, 16 Aug 2016 06:43:05 GMT
       Content-Type:
       - text/html
       Content-Length:
@@ -29,7 +29,7 @@ http_interactions:
       Connection:
       - keep-alive
       Etag:
-      - '"530f5a16-19a"'
+      - '"531354fa-19a"'
     body:
       encoding: UTF-8
       string: |
@@ -42,5 +42,5 @@ http_interactions:
           </body>
         </html>
     http_version: 
-  recorded_at: Tue, 31 May 2016 07:00:21 GMT
+  recorded_at: Tue, 16 Aug 2016 06:43:05 GMT
 recorded_with: VCR 3.0.3

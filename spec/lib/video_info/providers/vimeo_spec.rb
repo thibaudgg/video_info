@@ -172,7 +172,7 @@ require 'spec_helper'
 
       describe '#author_thumbnail' do
         subject { super().author_thumbnail }
-        thumbnail_url = 'https://i.vimeocdn.com/portrait/327118_75x75.jpg'
+        thumbnail_url = 'https://i.vimeocdn.com/portrait/14790276_75x75.jpg'
         it { is_expected.to eq thumbnail_url }
       end
 

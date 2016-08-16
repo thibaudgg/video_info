@@ -17,9 +17,9 @@ http_interactions:
       message: Not Found
     headers:
       Server:
-      - nginx/1.8.1
+      - nginx
       Content-Type:
-      - application/json; charset=utf-8
+      - application/json
       Status:
       - 404 Not Found
       X-Content-Type-Options:
@@ -28,16 +28,12 @@ http_interactions:
       - "*"
       Cache-Control:
       - public, no-cache
-      X-Ua-Compatible:
-      - IE=Edge,chrome=1
       P3p:
       - CP="CURi ADMa DEVa IVAa IVDa CONi OUR IND DSP CAO COR"
       X-Request-Id:
-      - 89b7f6bed54df60a15a7204642d22742
+      - ff9d761d-54b8-4b1e-b03f-907452dbc2ab
       X-Runtime:
-      - '0.009330'
-      X-Rack-Cache:
-      - miss
+      - '0.008096'
       Via:
       - 1.1 varnish
       - 1.1 varnish
@@ -48,24 +44,24 @@ http_interactions:
       Accept-Ranges:
       - bytes
       Date:
-      - Tue, 31 May 2016 07:00:55 GMT
+      - Tue, 16 Aug 2016 06:43:33 GMT
       Age:
       - '0'
       Connection:
       - keep-alive
       X-Served-By:
-      - cache-ord1730-ORD, cache-lax1440-LAX
+      - cache-ord1725-ORD, cache-lax1441-LAX
       X-Cache:
       - MISS, MISS
       X-Cache-Hits:
       - 0, 0
       X-Timer:
-      - S1464678055.827958,VS0,VE81
+      - S1471329813.741836,VS0,VE69
       Strict-Transport-Security:
       - max-age=0
     body:
       encoding: UTF-8
       string: ''
     http_version: 
-  recorded_at: Tue, 31 May 2016 07:00:55 GMT
+  recorded_at: Tue, 16 Aug 2016 06:43:33 GMT
 recorded_with: VCR 3.0.3

@@ -18,57 +18,56 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      Strict-Transport-Security:
-      - max-age=604800
+      Content-Type:
+      - text/html; charset=utf-8
+      Cache-Control:
+      - no-cache
+      P3p:
+      - CP="This is not a P3P policy! See http://support.google.com/accounts/answer/151657?hl=en
+        for more info."
+      X-Content-Type-Options:
+      - nosniff
       Expires:
       - Tue, 27 Apr 1971 19:44:06 EST
       X-Frame-Options:
       - SAMEORIGIN
-      P3p:
-      - CP="This is not a P3P policy! See http://support.google.com/accounts/answer/151657?hl=en
-        for more info."
-      Cache-Control:
-      - no-cache
-      Content-Type:
-      - text/html; charset=utf-8
+      Strict-Transport-Security:
+      - max-age=31536000
       X-Xss-Protection:
       - 1; mode=block; report=https://www.google.com/appserve/security-bugs/log/youtube
-      X-Content-Type-Options:
-      - nosniff
       Date:
-      - Thu, 02 Jun 2016 05:06:17 GMT
+      - Tue, 16 Aug 2016 06:43:39 GMT
       Server:
       - YouTubeFrontEnd
       Set-Cookie:
-      - VISITOR_INFO1_LIVE=XvQsMc5ibKQ; path=/; domain=.youtube.com; expires=Tue,
-        31-Jan-2017 16:59:17 GMT; httponly
-      - YSC=pFcu1cGw-Po; path=/; domain=.youtube.com; httponly
+      - VISITOR_INFO1_LIVE=Z-DaiapBx_0; path=/; domain=.youtube.com; expires=Sun,
+        16-Apr-2017 18:36:39 GMT; httponly
+      - YSC=K0RfAIyNYXY; path=/; domain=.youtube.com; httponly
       Alternate-Protocol:
       - 443:quic
       Alt-Svc:
-      - quic=":443"; ma=2592000; v="34,33,32,31,30,29,28,27,26,25"
+      - quic=":443"; ma=2592000; v="36,35,34,33,32,31,30"
       Transfer-Encoding:
       - chunked
     body:
       encoding: ASCII-8BIT
       string: "<!DOCTYPE html><html lang=\"en\" data-cast-api-enabled=\"true\"><head><style
-        name=\"www-roboto\">@font-face{font-family:'Roboto';font-style:italic;font-weight:500;src:local('Roboto
-        Medium Italic'),local('Roboto-MediumItalic'),url(//fonts.gstatic.com/s/roboto/v15/OLffGBTaF0XFOW1gnuHF0Z0EAVxt0G0biEntp43Qt6E.ttf)format('truetype');}@font-face{font-family:'Roboto';font-style:normal;font-weight:400;src:local('Roboto
+        name=\"www-roboto\">@font-face{font-family:'Roboto';font-style:normal;font-weight:400;src:local('Roboto
         Regular'),local('Roboto-Regular'),url(//fonts.gstatic.com/s/roboto/v15/zN7GBFwfMP4uA6AR0HCoLQ.ttf)format('truetype');}@font-face{font-family:'Roboto';font-style:normal;font-weight:500;src:local('Roboto
         Medium'),local('Roboto-Medium'),url(//fonts.gstatic.com/s/roboto/v15/RxZJdnzeo3R5zSexge8UUaCWcynf_cDxXwCLxiixG1c.ttf)format('truetype');}@font-face{font-family:'Roboto';font-style:italic;font-weight:400;src:local('Roboto
-        Italic'),local('Roboto-Italic'),url(//fonts.gstatic.com/s/roboto/v15/W4wDsBUluyw0tK3tykhXEfesZW2xOQ-xsNqO47m55DA.ttf)format('truetype');}</style><script
+        Italic'),local('Roboto-Italic'),url(//fonts.gstatic.com/s/roboto/v15/W4wDsBUluyw0tK3tykhXEfesZW2xOQ-xsNqO47m55DA.ttf)format('truetype');}@font-face{font-family:'Roboto';font-style:italic;font-weight:500;src:local('Roboto
+        Medium Italic'),local('Roboto-MediumItalic'),url(//fonts.gstatic.com/s/roboto/v15/OLffGBTaF0XFOW1gnuHF0Z0EAVxt0G0biEntp43Qt6E.ttf)format('truetype');}</style><script
         name=\"www-roboto\">if (document.fonts && document.fonts.load) {document.fonts.load(\"400
-        10pt Roboto\", \"E\");document.fonts.load(\"500 10pt Roboto\", \"E\");}</script><script>__yt_experimental_now
-        = __spf_experimental_now = true;</script><script>var ytcsi = {gt: function(n)
-        {n = (n || '') + 'data_';return ytcsi[n] || (ytcsi[n] = {tick: {},span: {},info:
-        {}});},now: window.performance && window.performance.timing &&window.performance.now
-        && window['__yt_experimental_now'] ? function() {return window.performance.timing.navigationStart
+        10pt Roboto\", \"E\");document.fonts.load(\"500 10pt Roboto\", \"E\");}</script><script>var
+        ytcsi = {gt: function(n) {n = (n || '') + 'data_';return ytcsi[n] || (ytcsi[n]
+        = {tick: {},info: {}});},now: window.performance && window.performance.timing
+        &&window.performance.now ? function() {return window.performance.timing.navigationStart
         + window.performance.now();} : function() {return (new Date()).getTime();},tick:
-        function(l, t, n) {ytcsi.gt(n).tick[l] = t || ytcsi.now();},span: function(l,
-        s, e, n) {ytcsi.gt(n).span[l] = (e ? e : ytcsi.now()) - ytcsi.gt(n).tick[s];},setSpan:
-        function(l, s, n) {ytcsi.gt(n).span[l] = s;},info: function(k, v, n) {ytcsi.gt(n).info[k]
-        = v;},setStart: function(s, t, n) {ytcsi.info('yt_sts', s, n);ytcsi.tick('_start',
-        t, n);}};(function(w, d) {ytcsi.setStart('dhs', w.performance ? w.performance.timing.responseStart
+        function(l, t, n) {ticks = ytcsi.gt(n).tick;var v = t || ytcsi.now();if (ticks[l])
+        {ticks['_' + l] = (ticks['_' + l] || [ticks[l]]);ticks['_' + l].push(v);}ticks[l]
+        = v;},info: function(k, v, n) {ytcsi.gt(n).info[k] = v;},setStart: function(s,
+        t, n) {ytcsi.info('yt_sts', s, n);ytcsi.tick('_start', t, n);}};(function(w,
+        d) {ytcsi.setStart('dhs', w.performance ? w.performance.timing.responseStart
         : null);var isPrerender = (d.visibilityState || d.webkitVisibilityState) ==
         'prerender';var vName = d.webkitVisibilityState ? 'webkitvisibilitychange'
         : 'visibilitychange';if (isPrerender) {ytcsi.info('prerender', 1);var startTick
@@ -79,35 +78,33 @@ http_interactions:
         = {d: function() {return (window.yt && yt.config_) || ytcfg.data_ || (ytcfg.data_
         = {});},get: function(k, o) {return (k in ytcfg.d()) ? ytcfg.d()[k] : o;},set:
         function() {var a = arguments;if (a.length > 1) {ytcfg.d()[a[0]] = a[1];}
-        else {for (var k in a[0]) {ytcfg.d()[k] = a[0][k];}}}};</script>    <script>\n
-        \     ytcfg.set(\"EXP_LACT_HISTORY\", true);\n    </script>\n  <script>ytcfg.set(\"EXP_QUICK_FETCH_BISCOTTI\",
+        else {for (var k in a[0]) {ytcfg.d()[k] = a[0][k];}}}};</script>  <script>ytcfg.set(\"EXP_QUICK_FETCH_BISCOTTI\",
         false);ytcfg.set(\"LACT\", null);</script>\n  \n\n\n\n\n  <script>\n        (function(){var
-        d={b:\"content-snap-width-1\",c:\"content-snap-width-2\",f:\"content-snap-width-3\",a:\"home-content-snap-width-3\"};function
-        f(){var a=[],e;for(e in d)a.push(d[e]);return a}\nfunction g(a){var e=f().concat([\"guide-pinned\",\"show-guide\"]),b=e.length,h=[];a.replace(/\\S+/g,function(a){for(var
-        c=0;c<b;c++)if(a==e[c])return;h.push(a)});\nreturn h}\n;function l(a,e,b,h){var
-        m=document.getElementsByTagName(\"html\")[0],c=g(m.className);a&&1251<=(window.innerWidth||document.documentElement.clientWidth)&&(c.push(\"guide-pinned\"),e&&c.push(\"show-guide\"));if(b){b=[];var
-        k=(window.innerWidth||document.documentElement.clientWidth)-21-50;1251<=(window.innerWidth||document.documentElement.clientWidth)&&a&&e&&(k-=230);1262<=k?b.push(\"content-snap-width-3\"):1056<=k?b.push(\"content-snap-width-2\"):b.push(\"content-snap-width-1\");h&&1126<=k&&b.push(\"home-content-snap-width-3\");\nc.push.apply(c,b)}m.className=c.join(\"
-        \")}\nvar n=[\"yt\",\"www\",\"masthead\",\"sizing\",\"runBeforeBodyIsReady\"],p=this;n[0]in
-        p||!p.execScript||p.execScript(\"var \"+n[0]);for(var q;n.length&&(q=n.shift());)n.length||void
-        0===l?p[q]?p=p[q]:p=p[q]={}:p[q]=l;})();\n\n      try {window.ytbuffer = {};ytbuffer.handleClick
+        b={a:\"content-snap-width-1\",b:\"content-snap-width-2\",c:\"content-snap-width-3\"};function
+        f(){var a=[],c;for(c in b)a.push(b[c]);return a}\nfunction g(a){var c=f().concat([\"guide-pinned\",\"show-guide\"]),d=c.length,e=[];a.replace(/\\S+/g,function(a){for(var
+        k=0;k<d;k++)if(a==c[k])return;e.push(a)});\nreturn e}\n;function l(a,c,d){var
+        e=document.getElementsByTagName(\"html\")[0],h=g(e.className);a&&1251<=(window.innerWidth||document.documentElement.clientWidth)&&(h.push(\"guide-pinned\"),c&&h.push(\"show-guide\"));d&&(d=(window.innerWidth||document.documentElement.clientWidth)-21-50,1251<=(window.innerWidth||document.documentElement.clientWidth)&&a&&c&&(d-=230),h.push(1262<=d?\"content-snap-width-3\":1056<=d?\"content-snap-width-2\":\"content-snap-width-1\"));e.className=h.join(\"
+        \")}\nvar m=[\"yt\",\"www\",\"masthead\",\"sizing\",\"runBeforeBodyIsReady\"],n=this;m[0]in
+        n||!n.execScript||n.execScript(\"var \"+m[0]);for(var p;m.length&&(p=m.shift());)m.length||void
+        0===l?n[p]?n=n[p]:n=n[p]={}:n[p]=l;})();\n\n      try {window.ytbuffer = {};ytbuffer.handleClick
         = function(e) {var element = e.target || e.srcElement;while (element.parentElement)
         {if (/(^| )yt-can-buffer( |$)/.test(element.className)) {window.ytbuffer =
         {bufferedClick: e};element.className += ' yt-is-buffered';break;}element =
         element.parentElement;}};if (document.addEventListener) {document.addEventListener('click',
         ytbuffer.handleClick);} else {document.attachEvent('onclick', ytbuffer.handleClick);}}
-        catch(e) {}\n\n    yt.www.masthead.sizing.runBeforeBodyIsReady(false,false,true,false);\n
-        \ </script>\n\n      <script src=\"//s.ytimg.com/yts/jsbin/scheduler-vflYwPpuz/scheduler.js\"
+        catch(e) {}\n\n    yt.www.masthead.sizing.runBeforeBodyIsReady(false,false,true);\n
+        \ </script>\n\n      <script src=\"//s.ytimg.com/yts/jsbin/scheduler-vflC4aEhr/scheduler.js\"
         type=\"text/javascript\" name=\"scheduler/scheduler\"></script>\n\n\n    <script>var
         ytimg = {};ytimg.count = 1;ytimg.preload = function(src) {var img = new Image();var
         count = ++ytimg.count;ytimg[count] = img;img.onload = img.onerror = function()
-        {delete ytimg[count];};img.src = src;};</script>\n\n\n          <script src=\"//s.ytimg.com/yts/jsbin/player-en_US-vfldrOuaR/base.js\"
-        name=\"player/base\"></script>\n\n\n\n  <link rel=\"stylesheet\" href=\"//s.ytimg.com/yts/cssbin/www-core-vfldPSpMR.css\"
-        name=\"www-core\">\n      <link rel=\"stylesheet\" href=\"//s.ytimg.com/yts/cssbin/www-player-vflWo5N3E.css\"
-        name=\"www-player\">\n\n  <link rel=\"stylesheet\" href=\"//s.ytimg.com/yts/cssbin/www-pageframe-vflNP8pTX.css\"
+        {delete ytimg[count];};img.src = src;};</script>\n\n\n          <script src=\"//s.ytimg.com/yts/jsbin/player-en_US-vflCWknvV/base.js\"
+        name=\"player/base\"></script>\n\n\n\n  <link rel=\"stylesheet\" href=\"//s.ytimg.com/yts/cssbin/www-core-vflF1TsWK.css\"
+        name=\"www-core\">\n      <link rel=\"stylesheet\" href=\"//s.ytimg.com/yts/cssbin/www-player-vflKUyD_d.css\"
+        name=\"www-player\">\n\n  <link rel=\"stylesheet\" href=\"//s.ytimg.com/yts/cssbin/www-pageframe-vfl9J0tLo.css\"
         name=\"www-pageframe\">\n  \n\n<title>YouTube</title><meta name=\"robots\"
-        content=\"noindex\"><meta name=\"referrer\" content=\"origin\">      <meta
-        name=\"title\" content=\"\">\n\n      <meta name=\"description\" content=\"\">\n\n
-        \     <meta name=\"keywords\" content=\"\">\n\n<link rel=\"search\" type=\"application/opensearchdescription+xml\"
+        content=\"noindex\">      <meta name=\"title\" content=\"\">\n\n      <meta
+        name=\"description\" content=\"\">\n\n      <meta name=\"keywords\" content=\"\">\n\n<meta
+        name=\"referrer\" content=\"origin\"><link rel=\"search\" type=\"application/opensearchdescription+xml\"
         href=\"https://www.youtube.com/opensearch?locale=en_US\" title=\"YouTube Video
         Search\"><link rel=\"shortcut icon\" href=\"https://s.ytimg.com/yts/img/favicon-vflz7uhzw.ico\"
         type=\"image/x-icon\">     <link rel=\"icon\" href=\"//s.ytimg.com/yts/img/favicon_32-vfl8NGn4k.png\"
@@ -116,36 +113,37 @@ http_interactions:
         sizes=\"96x96\"><link rel=\"icon\" href=\"//s.ytimg.com/yts/img/favicon_144-vflWmzoXw.png\"
         sizes=\"144x144\"><meta name=\"theme-color\" content=\"#e62117\">  \n</head>
         \ <body dir=\"ltr\" id=\"body\" class=\"  ltr    exp-responsive exp-scrollable-guide
-        \  site-center-aligned site-as-giant-card appbar-hidden    visibility-logging-enabled
-        \  not-nirvana-dogfood  not-yt-legacy-css    flex-width-enabled      flex-width-enabled-snap
-        \   delayed-frame-styles-not-in  \" data-spf-name=\"watch\">\n<div id=\"early-body\"></div><div
-        id=\"body-container\"><div id=\"a11y-announcements-container\" role=\"alert\"><div
-        id=\"a11y-announcements-message\"></div></div><form name=\"logoutForm\" method=\"POST\"
-        action=\"/logout\"><input type=\"hidden\" name=\"action_logout\" value=\"1\"></form><div
-        id=\"masthead-positioner\">    \n  <div id=\"yt-masthead-container\" class=\"clearfix
-        yt-base-gutter\">  <button id=\"a11y-skip-nav\" class=\"skip-nav\" data-target-id=\"main\"
+        exp-wn-big-thumbs exp-wn-big-thumbs-v3 exp-wn-font-14   site-center-aligned
+        site-as-giant-card appbar-hidden    visibility-logging-enabled   not-nirvana-dogfood
+        \ not-yt-legacy-css    flex-width-enabled      flex-width-enabled-snap    delayed-frame-styles-not-in
+        \ \" data-spf-name=\"watch\">\n<div id=\"early-body\"></div><div id=\"body-container\"><div
+        id=\"a11y-announcements-container\" role=\"alert\"><div id=\"a11y-announcements-message\"></div></div><form
+        name=\"logoutForm\" method=\"POST\" action=\"/logout\"><input type=\"hidden\"
+        name=\"action_logout\" value=\"1\"></form><div id=\"masthead-positioner\">
+        \   \n  <div id=\"yt-masthead-container\" class=\"clearfix yt-base-gutter\">
+        \ <button id=\"a11y-skip-nav\" class=\"skip-nav\" data-target-id=\"main\"
         tabindex=\"3\">\nSkip navigation\n  </button>\n<div id=\"yt-masthead\"><div
         class=\"yt-masthead-logo-container \">  <button class=\"yt-uix-button yt-uix-button-size-default
         yt-uix-button-text yt-uix-button-empty yt-uix-button-has-icon appbar-guide-toggle
         appbar-guide-clickable-ancestor\" type=\"button\" onclick=\";return false;\"
-        id=\"appbar-guide-button\" aria-label=\"Guide\" aria-controls=\"appbar-guide-menu\"><span
+        aria-label=\"Guide\" aria-controls=\"appbar-guide-menu\" id=\"appbar-guide-button\"><span
         class=\"yt-uix-button-icon-wrapper\"><span class=\"yt-uix-button-icon yt-uix-button-icon-appbar-guide
         yt-sprite\"></span></span></button>\n  <div id=\"appbar-main-guide-notification-container\"></div>\n<span
         id=\"yt-masthead-logo-fragment\"><a href=\"/\" class=\"yt-uix-sessionlink
-        masthead-logo-renderer       spf-link \" data-sessionlink=\"itct=CAUQsV4iEwjF4LOHyYjNAhVTq34KHfgIAUEo-B0\"
-        id=\"logo-container\" title=\"YouTube Home\">  <span class=\"logo masthead-logo-renderer-logo
-        yt-sprite\" title=\"YouTube Home\"></span>\n</a></span></div><div id=\"yt-masthead-signin\"><a
-        href=\"//www.youtube.com/upload\" class=\"yt-uix-button   yt-uix-sessionlink
-        yt-uix-button-default yt-uix-button-size-default\" data-sessionlink=\"ei=yb5PV4XYGdPW-gP4kYSIBA&amp;feature=mhsb\"
+        masthead-logo-renderer       spf-link \" data-sessionlink=\"itct=CAUQsV4iEwjMxPHZqsXOAhWmDX8KHdfyBO4o-B0\"
+        id=\"logo-container\" title=\"YouTube Home\">  <span title=\"YouTube Home\"
+        class=\"logo masthead-logo-renderer-logo yt-sprite\"></span>\n</a></span></div><div
+        id=\"yt-masthead-signin\"><a href=\"//www.youtube.com/upload\" class=\"yt-uix-button
+        \  yt-uix-sessionlink yt-uix-button-default yt-uix-button-size-default\" data-sessionlink=\"ei=G7ayV4zLG6ab_APX5ZPwDg&amp;feature=mhsb\"
         id=\"upload-btn\"><span class=\"yt-uix-button-content\">Upload</span></a><div
         class=\"signin-container \"><button class=\"yt-uix-button yt-uix-button-size-default
         yt-uix-button-primary\" type=\"button\" onclick=\";window.location.href=this.getAttribute(&#39;href&#39;);return
-        false;\" role=\"link\" href=\"https://accounts.google.com/ServiceLogin?uilel=3&amp;service=youtube&amp;passive=true&amp;continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26feature%3Dsign_in_button%26next%3D%252Fwatch%253Fv%253DSUkXvWn1m7Q%26hl%3Den&amp;hl=en\"><span
-        class=\"yt-uix-button-content\">Sign in</span></button></div></div><div id=\"yt-masthead-content\"><form
-        id=\"masthead-search\" class=\"  search-form consolidated-form  vve-check\"
-        action=\"/results\" onsubmit=\"if (document.getElementById(&#39;masthead-search-term&#39;).value
-        == &#39;&#39;) return false;\" data-clicktracking=\"CAEQ7VAiEwjF4LOHyYjNAhVTq34KHfgIAUEo-B0\"
-        data-visibility-tracking=\"CAEQ7VAiEwjF4LOHyYjNAhVTq34KHfgIAUEo-B0\"><button
+        false;\" href=\"https://accounts.google.com/ServiceLogin?continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Fhl%3Den%26app%3Ddesktop%26next%3D%252Fwatch%253Fv%253DSUkXvWn1m7Q%26feature%3Dsign_in_button%26action_handle_signin%3Dtrue&amp;hl=en&amp;service=youtube&amp;passive=true&amp;uilel=3\"
+        role=\"link\"><span class=\"yt-uix-button-content\">Sign in</span></button></div></div><div
+        id=\"yt-masthead-content\"><form id=\"masthead-search\" class=\"  search-form
+        consolidated-form  vve-check\" action=\"/results\" onsubmit=\"if (document.getElementById(&#39;masthead-search-term&#39;).value
+        == &#39;&#39;) return false;\" data-clicktracking=\"CAIQ7VAiEwjMxPHZqsXOAhWmDX8KHdfyBO4o-B0\"
+        data-visibility-tracking=\"CAIQ7VAiEwjMxPHZqsXOAhWmDX8KHdfyBO4o-B0\"><button
         class=\"yt-uix-button yt-uix-button-size-default yt-uix-button-default search-btn-component
         search-button\" type=\"submit\" onclick=\"if (document.getElementById(&#39;masthead-search-term&#39;).value
         == &#39;&#39;) return false; document.getElementById(&#39;masthead-search&#39;).submit();
@@ -163,8 +161,8 @@ http_interactions:
         id=\"guide\" class=\"yt-scrollbar\">    <div id=\"appbar-guide-menu\" class=\"appbar-menu
         appbar-guide-menu-layout appbar-guide-clickable-ancestor\">\n    <div id=\"guide-container\">\n
         \     <div class=\"guide-module-content guide-module-loading\">\n          <p
-        class=\"yt-spinner \">\n        <span class=\"yt-spinner-img  yt-sprite\"
-        title=\"Loading icon\"></span>\n\n    <span class=\"yt-spinner-message\">\nLoading...\n
+        class=\"yt-spinner \">\n        <span title=\"Loading icon\" class=\"yt-spinner-img
+        \ yt-sprite\"></span>\n\n    <span class=\"yt-spinner-message\">\nLoading...\n
         \   </span>\n  </p>\n\n      </div>\n    </div>\n  </div>\n\n</div><div class=\"alerts-wrapper\"><div
         id=\"alerts\" class=\"content-alignment\">    \n  <div id=\"editor-progress-alert-container\"></div>\n
         \ <div class=\"yt-alert yt-alert-default yt-alert-warn hid \" id=\"editor-progress-alert-template\">
@@ -176,7 +174,7 @@ http_interactions:
         \   <div id=\"edit-confirmation-alert\"></div>\n  <div class=\"yt-alert yt-alert-actionable
         yt-alert-info hid \" id=\"edit-confirmation-alert-template\">  <div class=\"yt-alert-icon\">\n
         \   <span class=\"icon master-sprite yt-sprite\"></span>\n  </div>\n<div class=\"yt-alert-content\"
-        role=\"alert\">    <div class=\"yt-alert-message\">\n    </div>\n</div><div
+        role=\"alert\">    <div class=\"yt-alert-message\" tabindex=\"0\">\n    </div>\n</div><div
         class=\"yt-alert-buttons\">  <button class=\"yt-uix-button yt-uix-button-size-default
         yt-uix-button-alert-info yt-uix-button-has-icon edit-confirmation-yes\" type=\"button\"
         onclick=\";return false;\"><span class=\"yt-uix-button-icon-wrapper\"><span
@@ -209,16 +207,16 @@ http_interactions:
         class=\"watch-queue-title-container\"><span class=\"watch-queue-count\"></span><span
         class=\"watch-queue-title\">Watch Queue</span><span class=\"tv-queue-title\">Queue</span></div></div>
         \ <span class=\"dark-overflow-action-menu\">\n    \n    \n    <button aria-haspopup=\"true\"
-        onclick=\";return false;\" aria-label=\"Actions for the queue\" aria-expanded=\"false\"
-        class=\"flip control-bar-button yt-uix-button yt-uix-button-dark-overflow-action-menu
-        yt-uix-button-size-default yt-uix-button-has-icon no-icon-markup yt-uix-button-empty\"
-        type=\"button\" ><span class=\"yt-uix-button-arrow yt-sprite\"></span><ul
+        aria-expanded=\"false\" aria-label=\"Actions for the queue\" class=\"flip
+        control-bar-button yt-uix-button yt-uix-button-dark-overflow-action-menu yt-uix-button-size-default
+        yt-uix-button-has-icon no-icon-markup yt-uix-button-empty\" type=\"button\"
+        onclick=\";return false;\" ><span class=\"yt-uix-button-arrow yt-sprite\"></span><ul
         class=\"watch-queue-menu yt-uix-button-menu yt-uix-button-menu-dark-overflow-action-menu
-        hid\" role=\"menu\" aria-haspopup=\"true\"><li role=\"menuitem\"><span data-action=\"remove-all\"
-        class=\"watch-queue-menu-choice overflow-menu-choice yt-uix-button-menu-item\"
-        onclick=\";return false;\" >Remove all</span></li><li role=\"menuitem\"><span
-        data-action=\"disconnect\" class=\"watch-queue-menu-choice overflow-menu-choice
-        yt-uix-button-menu-item\" onclick=\";return false;\" >Disconnect</span></li></ul></button>\n
+        hid\" role=\"menu\" aria-haspopup=\"true\"><li role=\"menuitem\"><span onclick=\";return
+        false;\" class=\"watch-queue-menu-choice overflow-menu-choice yt-uix-button-menu-item\"
+        data-action=\"remove-all\" >Remove all</span></li><li role=\"menuitem\"><span
+        onclick=\";return false;\" class=\"watch-queue-menu-choice overflow-menu-choice
+        yt-uix-button-menu-item\" data-action=\"disconnect\" >Disconnect</span></li></ul></button>\n
         \ </span>\n  <div class=\"watch-queue-controls\">\n    <button class=\"yt-uix-button
         yt-uix-button-size-default yt-uix-button-empty yt-uix-button-has-icon control-bar-button
         prev-watch-queue-button yt-uix-button-opacity yt-uix-tooltip yt-uix-tooltip\"
@@ -242,13 +240,13 @@ http_interactions:
         \ </div>\n</div></div><div class=\"watch-queue-items-container yt-scrollbar-dark
         yt-scrollbar\"><ol class=\"watch-queue-items-list playlist-videos-list yt-uix-scroller\"
         data-scroll-action=\"yt.www.watchqueue.loadThumbnails\">  <p class=\"yt-spinner
-        \">\n        <span class=\"yt-spinner-img  yt-sprite\" title=\"Loading icon\"></span>\n\n
+        \">\n        <span title=\"Loading icon\" class=\"yt-spinner-img  yt-sprite\"></span>\n\n
         \   <span class=\"yt-spinner-message\">\nLoading...\n    </span>\n  </p>\n</ol></div></div>
         \ <div class=\"hid\">\n    <div id=\"watch-queue-title-msg\">\nWatch Queue\n
         \   </div>\n\n    <div id=\"tv-queue-title-msg\">Queue</div>\n\n    <div id=\"watch-queue-count-msg\">\n__count__/__total__\n
         \   </div>\n\n    <div id=\"watch-queue-loading-template\">\n      <!--\n
-        \         <p class=\"yt-spinner \">\n        <span class=\"yt-spinner-img
-        \ yt-sprite\" title=\"Loading icon\"></span>\n\n    <span class=\"yt-spinner-message\">\nLoading...\n
+        \         <p class=\"yt-spinner \">\n        <span title=\"Loading icon\"
+        class=\"yt-spinner-img  yt-sprite\"></span>\n\n    <span class=\"yt-spinner-message\">\nLoading...\n
         \   </span>\n  </p>\n\n      -->\n    </div>\n  </div>\n</div></div>\n    <div
         id=\"player-playlist\" class=\"  content-alignment    watch-player-playlist
         \ \">\n      \n    </div>\n\n  </div>\n\n  <div class=\"clear\"></div>\n</div><div
@@ -259,61 +257,60 @@ http_interactions:
         class=\"clearfix\">\n      <div id=\"watch7-preview\" class=\"player-width
         player-height hid\">\n      </div>\n      <div id=\"watch7-content\" class=\"watch-main-col
         \" itemscope itemid=\"\" itemtype=\"http://schema.org/VideoObject\"\n      >\n
-        \       \n      </div>\n      <div id=\"watch7-sidebar\" class=\"watch-sidebar\">\n
+        \         \n      </div>\n      <div id=\"watch7-sidebar\" class=\"watch-sidebar\">\n
         \     </div>\n    </div>\n  </div>\n  <div id=\"watch7-hidden-extras\">\n
         \     <div style=\"visibility: hidden; height: 0px; padding: 0px; overflow:
         hidden;\">\n  </div>\n\n  </div>\n\n\n  </div>\n\n</div></div></div></div>
         \ <div id=\"footer-container\" class=\"yt-base-gutter force-layer\"><div id=\"footer\"><div
         id=\"footer-main\"><div id=\"footer-logo\"><a href=\"/\" id=\"footer-logo-link\"
-        title=\"YouTube home\" data-sessionlink=\"ei=yb5PV4XYGdPW-gP4kYSIBA&amp;ved=CAIQpmEiEwjF4LOHyYjNAhVTq34KHfgIAUEo-B0\"
+        title=\"YouTube home\" data-sessionlink=\"ei=G7ayV4zLG6ab_APX5ZPwDg&amp;ved=CAEQpmEiEwjMxPHZqsXOAhWmDX8KHdfyBO4o-B0\"
         class=\"yt-uix-sessionlink\"><span class=\"footer-logo-icon yt-sprite\"></span></a></div>
         \ <ul class=\"pickers yt-uix-button-group\" data-button-toggle-group=\"optional\">\n
         \     <li>\n            <button class=\"yt-uix-button yt-uix-button-size-default
         yt-uix-button-default yt-uix-button-has-icon\" type=\"button\" onclick=\";return
-        false;\" id=\"yt-picker-language-button\" data-button-menu-id=\"arrow-display\"
-        data-picker-key=\"language\" data-picker-position=\"footer\" data-button-action=\"yt.www.picker.load\"
+        false;\" id=\"yt-picker-language-button\" data-button-action=\"yt.www.picker.load\"
+        data-picker-position=\"footer\" data-picker-key=\"language\" data-button-menu-id=\"arrow-display\"
         data-button-toggle=\"true\"><span class=\"yt-uix-button-icon-wrapper\"><span
         class=\"yt-uix-button-icon yt-uix-button-icon-footer-language yt-sprite\"></span></span><span
         class=\"yt-uix-button-content\">  <span class=\"yt-picker-button-label\">\nLanguage:\n
         \ </span>\n  English\n</span><span class=\"yt-uix-button-arrow yt-sprite\"></span></button>\n\n\n
         \     </li>\n      <li>\n            <button class=\"yt-uix-button yt-uix-button-size-default
         yt-uix-button-default\" type=\"button\" onclick=\";return false;\" id=\"yt-picker-country-button\"
-        data-button-menu-id=\"arrow-display\" data-picker-key=\"country\" data-picker-position=\"footer\"
-        data-button-action=\"yt.www.picker.load\" data-button-toggle=\"true\"><span
+        data-button-action=\"yt.www.picker.load\" data-picker-position=\"footer\"
+        data-picker-key=\"country\" data-button-menu-id=\"arrow-display\" data-button-toggle=\"true\"><span
         class=\"yt-uix-button-content\">  <span class=\"yt-picker-button-label\">\nCountry:\n
         \ </span>\n  Worldwide\n</span><span class=\"yt-uix-button-arrow yt-sprite\"></span></button>\n\n\n
         \     </li>\n      <li>\n            <button class=\"yt-uix-button yt-uix-button-size-default
         yt-uix-button-default\" type=\"button\" onclick=\";return false;\" id=\"yt-picker-safetymode-button\"
-        data-button-menu-id=\"arrow-display\" data-picker-key=\"safetymode\" data-picker-position=\"footer\"
-        data-button-action=\"yt.www.picker.load\" data-button-toggle=\"true\"><span
+        data-button-action=\"yt.www.picker.load\" data-picker-position=\"footer\"
+        data-picker-key=\"safetymode\" data-button-menu-id=\"arrow-display\" data-button-toggle=\"true\"><span
         class=\"yt-uix-button-content\">  <span class=\"yt-picker-button-label\">\nRestricted
         Mode:\n  </span>\nOff\n</span><span class=\"yt-uix-button-arrow yt-sprite\"></span></button>\n\n\n
         \     </li>\n  </ul>\n<a href=\"/feed/history\" class=\"yt-uix-button  footer-history
         yt-uix-sessionlink yt-uix-button-default yt-uix-button-size-default yt-uix-button-has-icon\"
-        data-sessionlink=\"ei=yb5PV4XYGdPW-gP4kYSIBA\"><span class=\"yt-uix-button-icon-wrapper\"><span
+        data-sessionlink=\"ei=G7ayV4zLG6ab_APX5ZPwDg\"><span class=\"yt-uix-button-icon-wrapper\"><span
         class=\"yt-uix-button-icon yt-uix-button-icon-footer-history yt-sprite\"></span></span><span
         class=\"yt-uix-button-content\">History</span></a>    <button class=\"yt-uix-button
         yt-uix-button-size-default yt-uix-button-default yt-uix-button-has-icon yt-uix-button-reverse
         yt-google-help-link inq-no-click \" type=\"button\" onclick=\";return false;\"
-        id=\"google-help\" data-ghelp-anchor=\"google-help\" data-ghelp-tracking-param=\"\"
+        data-ghelp-anchor=\"google-help\" data-ghelp-tracking-param=\"\" id=\"google-help\"
         data-feedback-product-id=\"59\" data-load-chat-support=\"\"><span class=\"yt-uix-button-icon-wrapper\"><span
         class=\"yt-uix-button-icon yt-uix-button-icon-questionmark yt-sprite\"></span></span><span
         class=\"yt-uix-button-content\">Help\n</span></button>\n      <div id=\"yt-picker-language-footer\"
         class=\"yt-picker\" style=\"display: none\">\n      <p class=\"yt-spinner
-        \">\n        <span class=\"yt-spinner-img  yt-sprite\" title=\"Loading icon\"></span>\n\n
+        \">\n        <span title=\"Loading icon\" class=\"yt-spinner-img  yt-sprite\"></span>\n\n
         \   <span class=\"yt-spinner-message\">\nLoading...\n    </span>\n  </p>\n\n
         \ </div>\n\n      <div id=\"yt-picker-country-footer\" class=\"yt-picker\"
-        style=\"display: none\">\n      <p class=\"yt-spinner \">\n        <span class=\"yt-spinner-img
-        \ yt-sprite\" title=\"Loading icon\"></span>\n\n    <span class=\"yt-spinner-message\">\nLoading...\n
+        style=\"display: none\">\n      <p class=\"yt-spinner \">\n        <span title=\"Loading
+        icon\" class=\"yt-spinner-img  yt-sprite\"></span>\n\n    <span class=\"yt-spinner-message\">\nLoading...\n
         \   </span>\n  </p>\n\n  </div>\n\n      <div id=\"yt-picker-safetymode-footer\"
         class=\"yt-picker\" style=\"display: none\">\n      <p class=\"yt-spinner
-        \">\n        <span class=\"yt-spinner-img  yt-sprite\" title=\"Loading icon\"></span>\n\n
+        \">\n        <span title=\"Loading icon\" class=\"yt-spinner-img  yt-sprite\"></span>\n\n
         \   <span class=\"yt-spinner-message\">\nLoading...\n    </span>\n  </p>\n\n
         \ </div>\n\n</div><div id=\"footer-links\"><ul id=\"footer-links-primary\">
-        \ <li><a href=\"//www.youtube.com/yt/about/\">About</a></li>\n  <li><a href=\"//www.youtube.com/yt/press/\">\nPress\n
-        \ </a></li>\n  <li><a href=\"//www.youtube.com/yt/copyright/\">Copyright</a></li>\n
-        \ <li><a href=\"//www.youtube.com/yt/creators/\">\nCreators\n  </a></li>\n
-        \ <li><a href=\"//www.youtube.com/yt/advertise/\">\nAdvertise\n  </a></li>\n
+        \ <li><a href=\"//www.youtube.com/yt/about/\">About</a></li>\n  <li><a href=\"//www.youtube.com/yt/press/\">Press</a></li>\n
+        \ <li><a href=\"//www.youtube.com/yt/copyright/\">Copyright</a></li>\n  <li><a
+        href=\"//www.youtube.com/yt/creators/\">Creators</a></li>\n  <li><a href=\"//www.youtube.com/yt/advertise/\">Advertise</a></li>\n
         \ <li><a href=\"//www.youtube.com/yt/dev/\">Developers</a></li>\n  <li><a
         href=\"https://plus.google.com/+youtube\" dir=\"ltr\">+YouTube</a></li>\n</ul><ul
         id=\"footer-links-secondary\">  <li><a href=\"/t/terms\">Terms</a></li>\n
@@ -326,74 +323,74 @@ http_interactions:
         \     <span class=\"yt-dialog-align\"></span>\n      <div class=\"yt-dialog-fg\"
         role=\"dialog\">\n        <div class=\"yt-dialog-fg-content\">\n          <div
         class=\"yt-dialog-loading\">\n              <div class=\"yt-dialog-waiting-content\">\n
-        \     <p class=\"yt-spinner \">\n        <span class=\"yt-spinner-img  yt-sprite\"
-        title=\"Loading icon\"></span>\n\n    <span class=\"yt-spinner-message\">\nLoading...\n
+        \     <p class=\"yt-spinner \">\n        <span title=\"Loading icon\" class=\"yt-spinner-img
+        \ yt-sprite\"></span>\n\n    <span class=\"yt-spinner-message\">\nLoading...\n
         \   </span>\n  </p>\n\n  </div>\n\n          </div>\n          <div class=\"yt-dialog-content\">\n
         \             <div id=\"feed-privacy-dialog\">\n  </div>\n\n          </div>\n
         \         <div class=\"yt-dialog-working\">\n              <div class=\"yt-dialog-working-overlay\"></div>\n
         \ <div class=\"yt-dialog-working-bubble\">\n    <div class=\"yt-dialog-waiting-content\">\n
-        \       <p class=\"yt-spinner \">\n        <span class=\"yt-spinner-img  yt-sprite\"
-        title=\"Loading icon\"></span>\n\n    <span class=\"yt-spinner-message\">\n
-        \       Working...\n    </span>\n  </p>\n\n      </div>\n  </div>\n\n          </div>\n
-        \       </div>\n        <div class=\"yt-dialog-focus-trap\" tabindex=\"0\"></div>\n
-        \     </div>\n    </div>\n  </div>\n\n\n<div id=\"hidden-component-template-wrapper\"
-        class=\"hid\">    <div id=\"shared-addto-watch-later-login\" class=\"hid\">\n
-        \     <a class=\"sign-in-link\" href=\"https://accounts.google.com/ServiceLogin?uilel=3&amp;service=youtube&amp;passive=true&amp;continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26feature%3Dplaylist%26next%3D%252Fwatch%253Fv%253DSUkXvWn1m7Q%26hl%3Den&amp;hl=en\">Sign
-        in</a> to add this to Watch Later\n\n    </div>\n  <div id=\"yt-uix-videoactionmenu-menu\"
-        class=\"yt-ui-menu-content\">\n      <div class=\"hide-on-create-pl-panel\">\n
-        \   <h3>\nAdd to\n    </h3>\n  </div>\n  <div class=\"add-to-widget\">\n      <p
-        class=\"yt-spinner \">\n        <span class=\"yt-spinner-img  yt-sprite\"
-        title=\"Loading icon\"></span>\n\n    <span class=\"yt-spinner-message\">\n
-        \       Loading playlists...\n    </span>\n  </p>\n\n  </div>\n\n  </div>\n</div>
-        \   <script>var ytspf = ytspf || {};ytspf.enabled = true;ytspf.config = {'reload-identifier':
-        'spfreload'};ytspf.config['experimental-request-headers'] = {'X-YouTube-Identity-Token':
-        null};ytspf.config['cache-max'] = 50;ytspf.config['navigate-limit'] = 50;ytspf.config['navigate-lifetime']
-        = 64800000;ytspf.config['animation-duration'] = 0;</script>\n  <script src=\"//s.ytimg.com/yts/jsbin/spf-vfl1I7oZI/spf.js\"
-        type=\"text/javascript\" name=\"spf/spf\"></script>\n  <script src=\"//s.ytimg.com/yts/jsbin/www-en_US-vfl_Cc9Ld/base.js\"
-        name=\"www/base\"></script>\n<script>spf.script.path({'www/': '//s.ytimg.com/yts/jsbin/www-en_US-vfl_Cc9Ld/'});var
+        \       <p class=\"yt-spinner \">\n        <span title=\"Loading icon\" class=\"yt-spinner-img
+        \ yt-sprite\"></span>\n\n    <span class=\"yt-spinner-message\">\n        Working...\n
+        \   </span>\n  </p>\n\n      </div>\n  </div>\n\n          </div>\n        </div>\n
+        \       <div class=\"yt-dialog-focus-trap\" tabindex=\"0\"></div>\n      </div>\n
+        \   </div>\n  </div>\n\n\n<div id=\"hidden-component-template-wrapper\" class=\"hid\">
+        \   <div id=\"shared-addto-watch-later-login\" class=\"hid\">\n      <a href=\"https://accounts.google.com/ServiceLogin?continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Fhl%3Den%26app%3Ddesktop%26next%3D%252Fwatch%253Fv%253DSUkXvWn1m7Q%26feature%3Dplaylist%26action_handle_signin%3Dtrue&amp;hl=en&amp;service=youtube&amp;passive=true&amp;uilel=3\"
+        class=\"sign-in-link\">Sign in</a> to add this to Watch Later\n\n    </div>\n
+        \ <div id=\"yt-uix-videoactionmenu-menu\" class=\"yt-ui-menu-content\">\n
+        \     <div class=\"hide-on-create-pl-panel\">\n    <h3>\nAdd to\n    </h3>\n
+        \ </div>\n  <div class=\"add-to-widget\">\n      <p class=\"yt-spinner \">\n
+        \       <span title=\"Loading icon\" class=\"yt-spinner-img  yt-sprite\"></span>\n\n
+        \   <span class=\"yt-spinner-message\">\n        Loading playlists...\n    </span>\n
+        \ </p>\n\n  </div>\n\n  </div>\n</div>    <script>var ytspf = ytspf || {};ytspf.enabled
+        = true;ytspf.config = {'reload-identifier': 'spfreload'};ytspf.config['request-headers']
+        = {'X-YouTube-Identity-Token': null};ytspf.config['experimental-request-headers']
+        = ytspf.config['request-headers'];ytspf.config['cache-max'] = 50;ytspf.config['navigate-limit']
+        = 50;ytspf.config['navigate-lifetime'] = 64800000;ytspf.config['animation-duration']
+        = 0;</script>\n  <script src=\"//s.ytimg.com/yts/jsbin/spf-vflX-LfC_/spf.js\"
+        type=\"text/javascript\" name=\"spf/spf\"></script>\n  <script src=\"//s.ytimg.com/yts/jsbin/www-en_US-vflJYJxZO/base.js\"
+        name=\"www/base\"></script>\n<script>spf.script.path({'www/': '//s.ytimg.com/yts/jsbin/www-en_US-vflJYJxZO/'});var
         ytdepmap = {\"www/base\": null, \"www/common\": \"www/base\", \"www/angular_base\":
         \"www/common\", \"www/channels_accountupload\": \"www/common\", \"www/channels\":
-        \"www/common\", \"www/dashboard\": \"www/common\", \"www/debugpolymer\": \"www/common\",
-        \"www/downloadreports\": \"www/common\", \"www/experiments\": \"www/common\",
-        \"www/feed\": \"www/common\", \"www/instant\": \"www/common\", \"www/legomap\":
-        \"www/common\", \"www/live_chat\": \"www/common\", \"www/live_chat_moderation\":
-        \"www/common\", \"www/promo_join_network\": \"www/common\", \"www/results_harlemshake\":
-        \"www/common\", \"www/results\": \"www/common\", \"www/results_starwars\":
-        \"www/common\", \"www/subscriptionmanager\": \"www/common\", \"www/unlimited\":
-        \"www/common\", \"www/watch\": \"www/common\", \"www/ypc_bootstrap\": \"www/common\",
-        \"www/ypc_core\": \"www/common\", \"www/channels_edit\": \"www/channels\",
-        \"www/live_broadcasts\": \"www/angular_base\", \"www/live_dashboard\": \"www/angular_base\",
-        \"www/videomanager\": \"www/angular_base\", \"www/watch_autoplayrenderer\":
+        \"www/common\", \"www/dashboard\": \"www/common\", \"www/downloadreports\":
+        \"www/common\", \"www/experiments\": \"www/common\", \"www/feed\": \"www/common\",
+        \"www/instant\": \"www/common\", \"www/legomap\": \"www/common\", \"www/live_chat\":
+        \"www/common\", \"www/live_chat_moderation\": \"www/common\", \"www/promo_join_network\":
+        \"www/common\", \"www/results_harlemshake\": \"www/common\", \"www/results\":
+        \"www/common\", \"www/results_starwars\": \"www/common\", \"www/subscriptionmanager\":
+        \"www/common\", \"www/unlimited\": \"www/common\", \"www/watch\": \"www/common\",
+        \"www/ypc_bootstrap\": \"www/common\", \"www/ypc_core\": \"www/common\", \"www/channels_edit\":
+        \"www/channels\", \"www/live_broadcasts\": \"www/angular_base\", \"www/live_dashboard\":
+        \"www/angular_base\", \"www/videomanager\": \"www/angular_base\", \"www/watch_autoplayrenderer\":
         \"www/watch\", \"www/watch_edit\": \"www/watch\", \"www/watch_editor\": \"www/watch\",
-        \"www/watch_live\": \"www/watch\", \"www/watch_missilecommand\": \"www/watch\",
-        \"www/watch_promos\": \"www/watch\", \"www/watch_speedyg\": \"www/watch\",
-        \"www/watch_transcript\": \"www/watch\", \"www/watch_videoshelf\": \"www/watch\",
-        \"www/ct_advancedsearch\": \"www/videomanager\", \"www/my_videos\": \"www/videomanager\"};spf.script.declare(ytdepmap);</script><script>if
-        (window.ytcsi) {window.ytcsi.tick(\"je\", null, '');}</script><script>yt.setConfig({GAPI_HINT_PARAMS:
-        \"m;\\/_\\/scs\\/abc-static\\/_\\/js\\/k=gapi.gapi.en.PQWOXwGAyXQ.O\\/m=__features__\\/rt=j\\/d=1\\/rs=AHpOoo-SsKefX_tnkYaztI7tux9JZAkUgw\",INNERTUBE_API_KEY:
-        \"AIzaSyAO_FJ2SlqU8Q4STEHLGCilw_Y9_11qcW8\",APIARY_HOST_FIRSTPARTY: \"\",APIARY_HOST:
-        \"\",INNERTUBE_API_VERSION: \"v1\",INNERTUBE_CONTEXT_CLIENT_VERSION: \"1.20160601\",'VISITOR_DATA':
-        \"CgtYdlFzTWM1aWJLUQ%3D%3D\",'GAPI_HOST': \"https:\\/\\/apis.google.com\",'GAPI_LOCALE':
-        \"en_US\",'INNERTUBE_CONTEXT_HL': \"en\",'INNERTUBE_CONTEXT_GL': \"US\",'XHR_APIARY_HOST':
-        \"youtubei.youtube.com\"});yt.setConfig({'EVENT_ID': \"yb5PV4XYGdPW-gP4kYSIBA\",'PAGE_NAME':
-        \"watch\",'LOGGED_IN': false,'SESSION_INDEX': null,'VALID_SESSION_TEMPDATA_DOMAINS':
-        [\"www.youtube.com\",\"gaming.youtube.com\"],'PARENT_TRACKING_PARAMS': \"\",'FORMATS_FILE_SIZE_JS':
-        [\"%s B\",\"%s KB\",\"%s MB\",\"%s GB\",\"%s TB\"],'DELEGATED_SESSION_ID':
-        null,'ONE_PICK_URL': \"\",'UNIVERSAL_HOVERCARDS': true,'GOOGLEPLUS_HOST':
-        \"https:\\/\\/plus.google.com\",'PAGEFRAME_JS': \"\\/\\/s.ytimg.com\\/yts\\/jsbin\\/www-pageframe-vfl0pXlT1\\/www-pageframe.js\",'JS_COMMON_MODULE':
-        \"\\/\\/s.ytimg.com\\/yts\\/jsbin\\/www-en_US-vfl_Cc9Ld\\/common.js\",'PAGE_FRAME_DELAYLOADED_CSS':
-        \"\\/\\/s.ytimg.com\\/yts\\/cssbin\\/www-pageframedelayloaded-vfl93QsDL.css\",'EXPERIMENT_FLAGS':
-        {\"consent_url_override\":\"\",\"legacy_cast\":true,\"log_window_onerror_fraction\":0.1,\"gfeedback_for_signed_out_users_enabled\":true,\"enable_negative_ticks\":true,\"player_swfcfg_cleanup\":true},'GUIDE_DELAY_LOAD':
-        true,'GUIDE_DELAYLOADED_CSS': \"\\/\\/s.ytimg.com\\/yts\\/cssbin\\/www-guide-vflmYVKfq.css\",'HIGH_CONTRAST_MODE_CSS':
-        \"\\/\\/s.ytimg.com\\/yts\\/cssbin\\/www-highcontrastmode-vflfTn6IK.css\",'PREFETCH_LINKS':
+        \"www/watch_live\": \"www/watch\", \"www/watch_promos\": \"www/watch\", \"www/watch_speedyg\":
+        \"www/watch\", \"www/watch_transcript\": \"www/watch\", \"www/watch_videoshelf\":
+        \"www/watch\", \"www/ct_advancedsearch\": \"www/videomanager\", \"www/my_videos\":
+        \"www/videomanager\"};spf.script.declare(ytdepmap);</script><script>if (window.ytcsi)
+        {window.ytcsi.tick(\"je\", null, '');}</script><script>yt.setConfig({APIARY_HOST_FIRSTPARTY:
+        \"\",GAPI_HINT_PARAMS: \"m;\\/_\\/scs\\/abc-static\\/_\\/js\\/k=gapi.gapi.en.xej1Zm3gE0Y.O\\/m=__features__\\/rt=j\\/d=1\\/rs=AHpOoo-sR4lSlZfnlntJ-N0rG1mLyBSreQ\",INNERTUBE_CONTEXT_CLIENT_VERSION:
+        \"1.20160815\",INNERTUBE_API_KEY: \"AIzaSyAO_FJ2SlqU8Q4STEHLGCilw_Y9_11qcW8\",INNERTUBE_CONTEXT_CLIENT_NAME:
+        \"1\",APIARY_HOST: \"\",INNERTUBE_API_VERSION: \"v1\",'VISITOR_DATA': \"CgtaLURhaWFwQnhfMA%3D%3D\",'GAPI_HOST':
+        \"https:\\/\\/apis.google.com\",'GAPI_LOCALE': \"en_US\",'INNERTUBE_CONTEXT_HL':
+        \"en\",'INNERTUBE_CONTEXT_GL': \"US\",'XHR_APIARY_HOST': \"youtubei.youtube.com\"});yt.setConfig({'EVENT_ID':
+        \"G7ayV4zLG6ab_APX5ZPwDg\",'PAGE_NAME': \"watch\",'LOGGED_IN': false,'SESSION_INDEX':
+        null,'VALID_SESSION_TEMPDATA_DOMAINS': [\"www.youtube.com\",\"gaming.youtube.com\"],'PARENT_TRACKING_PARAMS':
+        \"\",'FORMATS_FILE_SIZE_JS': [\"%s B\",\"%s KB\",\"%s MB\",\"%s GB\",\"%s
+        TB\"],'DELEGATED_SESSION_ID': null,'ONE_PICK_URL': \"\",'UNIVERSAL_HOVERCARDS':
+        true,'GOOGLEPLUS_HOST': \"https:\\/\\/plus.google.com\",'PAGEFRAME_JS': \"\\/\\/s.ytimg.com\\/yts\\/jsbin\\/www-pageframe-vflHi3ZpF\\/www-pageframe.js\",'GAPI_LOADER_URL':
+        \"\\/\\/s.ytimg.com\\/yts\\/jsbin\\/www-gapi-loader-vflAIn56k\\/www-gapi-loader.js\",'JS_COMMON_MODULE':
+        \"\\/\\/s.ytimg.com\\/yts\\/jsbin\\/www-en_US-vflJYJxZO\\/common.js\",'PAGE_FRAME_DELAYLOADED_CSS':
+        \"\\/\\/s.ytimg.com\\/yts\\/cssbin\\/www-pageframedelayloaded-vflaIsS9v.css\",'EXPERIMENT_FLAGS':
+        {\"enable_server_side_search_pyv\":true,\"block_spf_search_ads_impressions\":true,\"legacy_cast2\":true,\"log_window_onerror_fraction\":0.1,\"visibility_timeout\":0,\"watch_next_pause_autoplay_lact_sec\":0,\"navigation_only_csi_reset\":true,\"player_swfcfg_cleanup\":true,\"gfeedback_for_signed_out_users_enabled\":true,\"consent_url_override\":\"\",\"service_worker_cached\":true},'GUIDE_DELAY_LOAD':
+        true,'GUIDE_DELAYLOADED_CSS': \"\\/\\/s.ytimg.com\\/yts\\/cssbin\\/www-guide-vfljB86L5.css\",'GUIDED_HELP_PARAMS':
+        {\"logged_in\":\"0\"},'HIGH_CONTRAST_MODE_CSS': \"\\/\\/s.ytimg.com\\/yts\\/cssbin\\/www-highcontrastmode-vfl89v-_D.css\",'PREFETCH_LINKS':
         false,'PREFETCH_LINKS_MAX': 1,'PREFETCH_AUTOPLAY': false,'PREFETCH_AUTOPLAY_TIME':
         0,'PREFETCH_AUTONAV': false,'PREBUFFER_MAX': 1,'PREBUFFER_LINKS': false,'PREBUFFER_AUTOPLAY':
         false,'PREBUFFER_AUTONAV': false,'WATCH_LATER_BUTTON': \"\\n\\n  \\u003cbutton
         class=\\\"yt-uix-button yt-uix-button-size-small yt-uix-button-default yt-uix-button-empty
         yt-uix-button-has-icon no-icon-markup addto-button video-actions spf-nolink
         hide-until-delayloaded addto-watch-later-button-sign-in yt-uix-tooltip\\\"
-        type=\\\"button\\\" onclick=\\\";return false;\\\" role=\\\"button\\\" title=\\\"Watch
-        Later\\\" data-button-menu-id=\\\"shared-addto-watch-later-login\\\" data-video-ids=\\\"__VIDEO_ID__\\\"\\u003e\\u003cspan
+        type=\\\"button\\\" onclick=\\\";return false;\\\" title=\\\"Watch Later\\\"
+        role=\\\"button\\\" data-video-ids=\\\"__VIDEO_ID__\\\" data-button-menu-id=\\\"shared-addto-watch-later-login\\\"\\u003e\\u003cspan
         class=\\\"yt-uix-button-arrow yt-sprite\\\"\\u003e\\u003c\\/span\\u003e\\u003c\\/button\\u003e\\n\",'WATCH_QUEUE_BUTTON':
         \"  \\u003cbutton class=\\\"yt-uix-button yt-uix-button-size-small yt-uix-button-default
         yt-uix-button-empty yt-uix-button-has-icon no-icon-markup addto-button addto-queue-button
@@ -401,32 +398,31 @@ http_interactions:
         type=\\\"button\\\" onclick=\\\";return false;\\\" title=\\\"Queue\\\" data-video-ids=\\\"__VIDEO_ID__\\\"
         data-style=\\\"tv-queue\\\"\\u003e\\u003c\\/button\\u003e\\n\",'WATCH_QUEUE_MENU':
         \"  \\u003cspan class=\\\"thumb-menu dark-overflow-action-menu video-actions\\\"\\u003e\\n
-        \   \\u003cbutton aria-expanded=\\\"false\\\" class=\\\"yt-uix-button-reverse
+        \   \\u003cbutton aria-expanded=\\\"false\\\" type=\\\"button\\\" class=\\\"yt-uix-button-reverse
         flip addto-watch-queue-menu spf-nolink hide-until-delayloaded yt-uix-button
         yt-uix-button-dark-overflow-action-menu yt-uix-button-size-default yt-uix-button-has-icon
-        no-icon-markup yt-uix-button-empty\\\" type=\\\"button\\\" aria-haspopup=\\\"true\\\"
-        onclick=\\\";return false;\\\" \\u003e\\u003cspan class=\\\"yt-uix-button-arrow
-        yt-sprite\\\"\\u003e\\u003c\\/span\\u003e\\u003cul class=\\\"watch-queue-thumb-menu
-        yt-uix-button-menu yt-uix-button-menu-dark-overflow-action-menu hid\\\"\\u003e\\u003cli
-        role=\\\"menuitem\\\" class=\\\"overflow-menu-choice addto-watch-queue-menu-choice
-        addto-watch-queue-play-next yt-uix-button-menu-item\\\" data-action=\\\"play-next\\\"
-        onclick=\\\";return false;\\\"  data-video-ids=\\\"__VIDEO_ID__\\\"\\u003e\\u003cspan
+        no-icon-markup yt-uix-button-empty\\\" aria-haspopup=\\\"true\\\" onclick=\\\";return
+        false;\\\" \\u003e\\u003cspan class=\\\"yt-uix-button-arrow yt-sprite\\\"\\u003e\\u003c\\/span\\u003e\\u003cul
+        class=\\\"watch-queue-thumb-menu yt-uix-button-menu yt-uix-button-menu-dark-overflow-action-menu
+        hid\\\"\\u003e\\u003cli role=\\\"menuitem\\\" class=\\\"overflow-menu-choice
+        addto-watch-queue-menu-choice addto-watch-queue-play-next yt-uix-button-menu-item\\\"
+        data-action=\\\"play-next\\\" onclick=\\\";return false;\\\"  data-video-ids=\\\"__VIDEO_ID__\\\"\\u003e\\u003cspan
         class=\\\"addto-watch-queue-menu-text\\\"\\u003ePlay next\\u003c\\/span\\u003e\\u003c\\/li\\u003e\\u003cli
         role=\\\"menuitem\\\" class=\\\"overflow-menu-choice addto-watch-queue-menu-choice
         addto-watch-queue-play-now yt-uix-button-menu-item\\\" data-action=\\\"play-now\\\"
         onclick=\\\";return false;\\\"  data-video-ids=\\\"__VIDEO_ID__\\\"\\u003e\\u003cspan
         class=\\\"addto-watch-queue-menu-text\\\"\\u003ePlay now\\u003c\\/span\\u003e\\u003c\\/li\\u003e\\u003c\\/ul\\u003e\\u003c\\/button\\u003e\\n
         \ \\u003c\\/span\\u003e\\n\",'SAFETY_MODE_PENDING': false,'LOCAL_DATE_TIME_CONFIG':
-        {\"dateFormats\":[\"MMMM d, yyyy h:mm a\",\"MMMM d, yyyy\",\"MMM d, yyyy\",\"MMM
-        d, yyyy\"],\"formatShortTime\":\"h:mm a\",\"amPms\":[\"AM\",\"PM\"],\"shortWeekdays\":[\"Sun\",\"Mon\",\"Tue\",\"Wed\",\"Thu\",\"Fri\",\"Sat\"],\"formatLongDate\":\"MMMM
-        d, yyyy h:mm a\",\"months\":[\"January\",\"February\",\"March\",\"April\",\"May\",\"June\",\"July\",\"August\",\"September\",\"October\",\"November\",\"December\"],\"weekendRange\":[6,5],\"formatShortDate\":\"MMM
-        d, yyyy\",\"firstDayOfWeek\":0,\"firstWeekCutoffDay\":3,\"weekdays\":[\"Sunday\",\"Monday\",\"Tuesday\",\"Wednesday\",\"Thursday\",\"Friday\",\"Saturday\"],\"formatWeekdayShortTime\":\"EE
-        h:mm a\",\"formatLongDateOnly\":\"MMMM d, yyyy\",\"shortMonths\":[\"Jan\",\"Feb\",\"Mar\",\"Apr\",\"May\",\"Jun\",\"Jul\",\"Aug\",\"Sep\",\"Oct\",\"Nov\",\"Dec\"]},'PAGE_CL':
-        123730994,'PAGE_BUILD_LABEL': \"youtube_20160601_RC1\",'VARIANTS_CHECKSUM':
-        \"9ce6c2ca775e2998c5cb8c9f2910cf1d\",'ROOT_VE_TYPE': 3832,'CLIENT_PROTOCOL':
+        {\"amPms\":[\"AM\",\"PM\"],\"formatShortTime\":\"h:mm a\",\"shortWeekdays\":[\"Sun\",\"Mon\",\"Tue\",\"Wed\",\"Thu\",\"Fri\",\"Sat\"],\"shortMonths\":[\"Jan\",\"Feb\",\"Mar\",\"Apr\",\"May\",\"Jun\",\"Jul\",\"Aug\",\"Sep\",\"Oct\",\"Nov\",\"Dec\"],\"dateFormats\":[\"MMMM
+        d, yyyy h:mm a\",\"MMMM d, yyyy\",\"MMM d, yyyy\",\"MMM d, yyyy\"],\"formatWeekdayShortTime\":\"EE
+        h:mm a\",\"weekdays\":[\"Sunday\",\"Monday\",\"Tuesday\",\"Wednesday\",\"Thursday\",\"Friday\",\"Saturday\"],\"formatLongDateOnly\":\"MMMM
+        d, yyyy\",\"firstWeekCutoffDay\":3,\"firstDayOfWeek\":0,\"formatShortDate\":\"MMM
+        d, yyyy\",\"formatLongDate\":\"MMMM d, yyyy h:mm a\",\"months\":[\"January\",\"February\",\"March\",\"April\",\"May\",\"June\",\"July\",\"August\",\"September\",\"October\",\"November\",\"December\"],\"weekendRange\":[6,5]},'PAGE_CL':
+        130304760,'PAGE_BUILD_LABEL': \"youtube_20160815_RC3\",'VARIANTS_CHECKSUM':
+        \"51f1858bfb429e10080d9beca4bd6ecc\",'ROOT_VE_TYPE': 3832,'CLIENT_PROTOCOL':
         \"HTTP\\/1.1\",'CLIENT_TRANSPORT': \"tcp\",'MDX_ENABLE_CASTV2': true,'MDX_ENABLE_QUEUE':
-        true,'FEEDBACK_BUCKET_ID': \"Watch\",'FEEDBACK_LOCALE_LANGUAGE': \"en\",'FEEDBACK_LOCALE_EXTRAS':
-        {\"logged_in\":false,\"is_partner\":\"\",\"experiments\":\"9407157,9415398,9415575,9416126,9416475,9416891,9417035,9417482,9418543,9419979,9420289,9421041,9422250,9422523,9422596,9422928,9423552,9423555,9424603,9424678,9424701,9425413,9425506,9425552,9425648,9425931,9426542,9427175,9427440,9427931,9428158,9428398,9428632,9428958,9428971,9430082,9430877,9431012,9431454,9431808,9432684,9432923,9432931,9432940,9433046,9433050,9433096,9433161,9433223,9433614,9433839,9433851,9433870,9433872,9433946,9433970,9434204,9434351,9434381,9434686,9434734,9434949,9435022,9435385,9435521,9435527,9435876,9435916,9436055,9436168,9436255,9436339,9436392,9436603,9436970,9436995,9437036,9437066,9437294,9437506,9437553,9437618,9437877,9437957,9438150,9438227\",\"accept_language\":null}});
+        true,'SERVICE_WORKER_VFL': \"Rc1p6D\",'FEEDBACK_BUCKET_ID': \"Watch\",'FEEDBACK_LOCALE_LANGUAGE':
+        \"en\",'FEEDBACK_LOCALE_EXTRAS': {\"is_partner\":\"\",\"logged_in\":false,\"experiments\":\"9406993,9408999,9415398,9416475,9417035,9417482,9419979,9420289,9422596,9423552,9423555,9424603,9424678,9425648,9428398,9428632,9430082,9430877,9431012,9432923,9432939,9433096,9433221,9433839,9433870,9433946,9434077,9434686,9434949,9435526,9437506,9437553,9438282,9438309,9438327,9438662,9439294,9439451,9439580,9439956,9439958,9440012,9440054,9440345,9440690,9440723,9440792,9441194,9441321,9441323,9441535,9441542,9441560,9441644,9441761,9441901,9441930,9441967,9442077,9442115,9442210,9442252,9442424,9442426,9442746,9442917,9443067,9443156,9443259,9443419,9443508,9443667,9443685,9443715,9443787,9443916,9444180,9444189,9444355,9444400,9444451,9444657,9444987\",\"accept_language\":null}});
         \  yt.setConfig({\n    'GUIDED_HELP_LOCALE': \"en_US\",\n    'GUIDED_HELP_ENVIRONMENT':
         \"prod\"\n  });\nyt.setConfig('SPF_SEARCH_BOX', true);yt.setMsg({'ADDTO_CREATE_NEW_PLAYLIST':
         \"Create new playlist\\n\",'ADDTO_CREATE_PLAYLIST_DYNAMIC_TITLE': \"  $dynamic_title_placeholder
@@ -435,35 +431,36 @@ http_interactions:
         Queue\",'ADDTO_WATCH_QUEUE_ADDED': \"Added\",'ADDTO_WATCH_QUEUE_ERROR': \"Error\",'ADDTO_TV_QUEUE':
         \"Queue\",'ADS_INSTREAM_FIRST_PLAY': \"A video ad is playing.\",'ADS_INSTREAM_SKIPPABLE':
         \"Video ad can be skipped.\",'ADS_OVERLAY_IMPRESSION': \"Ad displayed.\",'MASTHEAD_NOTIFICATIONS_LABEL':
-        {\"other\": \"# unread notifications.\", \"case0\": \"0 unread notifications.\",
-        \"case1\": \"1 unread notification.\"},'MASTHEAD_NOTIFICATIONS_COUNT_99PLUS':
-        \"99+\"});    yt.setConfig({\n    'XSRF_TOKEN': \"QUFFLUhqbWFib1RNOFAtWU1WT1laZ3lIWTZHVmpWSWsxd3xBQ3Jtc0ttaUhMcXF6WDQ2QVBCZ2otQUFhYmRpSElkOWxxbUlfYk8wV09LNkktVlRLdWJmbDRjZm9GRlVnNTZqQ1ZUSmdlWXZRekplUGNJbWlkaXZ3eEZBZ1hqZlJObmFDV0l3RFYzVmJ5bUVXdUtEdUNGVlI2TUpJQUVFNEdMWnNXM1NYYU91SzAzX0hfM0htNVk5eVhhY1VOZEsyZG9ZT1E=\",\n
-        \   'XSRF_REDIRECT_TOKEN': \"JxsPl6-GWvQ560JrqTpLNRQjbCx8MTQ2NDkzMDM3N0AxNDY0ODQzOTc3\",\n
+        {\"case0\": \"0 unread notifications.\", \"case1\": \"1 unread notification.\",
+        \"other\": \"# unread notifications.\"},'MASTHEAD_NOTIFICATIONS_COUNT_99PLUS':
+        \"99+\"});    yt.setConfig({\n    'XSRF_TOKEN': \"QUFFLUhqbWNwSTNLTHF3NHVxcE44NDZYSy0xVjJHVWlnQXxBQ3Jtc0tuT1EtamJqMWVObTkzVUdReHYtazZ2WFl3ZHU2dXFwcVZ0b0dBcnVRVlRZWUtYTEJPUnh0YThtSVJfYURlUUR1VEFoQ3FadGhRN0diV2NaYUJzMGdRdnd4UnFsWU9iWW5NNF9RTFJ0dUo4X3ZKTzRzQ0NMQi16dGF0a09lRHRHbkFlNzlHMFNQMkFZUWM1YU1WTFlxNlJtMkRXSkE=\",\n
+        \   'XSRF_REDIRECT_TOKEN': \"9p-O8TN7guLvE2sGGgdMO1MsFqt8MTQ3MTQxNjIxOUAxNDcxMzI5ODE5\",\n
         \   'XSRF_FIELD_NAME': \"session_token\"\n  });\n\n  yt.setConfig('FEED_PRIVACY_CSS_URL',
-        \"\\/\\/s.ytimg.com\\/yts\\/cssbin\\/www-feedprivacydialog-vflJOlJu4.css\");\n\n
+        \"\\/\\/s.ytimg.com\\/yts\\/cssbin\\/www-feedprivacydialog-vflwQU0qt.css\");\n\n
         \ yt.setConfig('FEED_PRIVACY_LIGHTBOX_ENABLED', true);\nyt.setConfig({'SBOX_JS_URL':
-        \"\\/\\/s.ytimg.com\\/yts\\/jsbin\\/www-searchbox-legacy-vfl-0Z2GI\\/www-searchbox-legacy.js\",'SBOX_SETTINGS':
-        {\"HAS_ON_SCREEN_KEYBOARD\":false,\"SESSION_INDEX\":null,\"EXPERIMENT_STR\":\"\",\"EXPERIMENT_ID\":-1,\"PSUGGEST_TOKEN\":null,\"IS_FUSION\":true,\"REQUEST_LANGUAGE\":\"en\",\"PQ\":\"\",\"REQUEST_DOMAIN\":\"us\"},'SBOX_LABELS':
-        {\"SUGGESTION_DISMISSED_LABEL\":\"Suggestion dismissed\",\"SUGGESTION_DISMISS_LABEL\":\"Remove\"}});
-        \ yt.setConfig({\n    'YPC_LOADER_JS': \"\\/\\/s.ytimg.com\\/yts\\/jsbin\\/www-ypc-vfl4-dmM-\\/www-ypc.js\",\n
-        \   'YPC_LOADER_CSS': \"\\/\\/s.ytimg.com\\/yts\\/cssbin\\/www-ypc-vflQF5yB7.css\",\n
-        \   'YPC_SIGNIN_URL': \"https:\\/\\/accounts.google.com\\/ServiceLogin?uilel=3\\u0026service=youtube\\u0026passive=true\\u0026continue=http%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26next%3D%252F%26hl%3Den\\u0026hl=en\",\n
+        \"\\/\\/s.ytimg.com\\/yts\\/jsbin\\/www-searchbox-legacy-vfl1j89sY\\/www-searchbox-legacy.js\",'SBOX_SETTINGS':
+        {\"HAS_ON_SCREEN_KEYBOARD\":false,\"EXPERIMENT_ID\":-1,\"PSUGGEST_TOKEN\":null,\"SESSION_INDEX\":null,\"EXPERIMENT_STR\":\"\",\"REQUEST_LANGUAGE\":\"en\",\"IS_FUSION\":false,\"PQ\":\"\",\"REQUEST_DOMAIN\":\"us\"},'SBOX_LABELS':
+        {\"SUGGESTION_DISMISS_LABEL\":\"Remove\",\"SUGGESTION_DISMISSED_LABEL\":\"Suggestion
+        dismissed\"}});  yt.setConfig({\n    'YPC_LOADER_JS': \"\\/\\/s.ytimg.com\\/yts\\/jsbin\\/www-ypc-vflWaIbML\\/www-ypc.js\",\n
+        \   'YPC_LOADER_CSS': \"\\/\\/s.ytimg.com\\/yts\\/cssbin\\/www-ypc-vfla0ToBd.css\",\n
+        \   'YPC_SIGNIN_URL': \"https:\\/\\/accounts.google.com\\/ServiceLogin?continue=http%3A%2F%2Fwww.youtube.com%2Fsignin%3Fhl%3Den%26app%3Ddesktop%26next%3D%252F%26action_handle_signin%3Dtrue\\u0026hl=en\\u0026service=youtube\\u0026passive=true\\u0026uilel=3\",\n
         \   'DBLCLK_ADVERTISER_ID': \"2542116\",\n    'DBLCLK_YPC_ACTIVITY_GROUP':
-        \"youtu444\",\n      'YPC_MB_FLOW': true,\n    'SUBSCRIPTION_URL': \"\\/subscription_ajax\",\n
-        \   'YPC_SWITCH_URL': \"\\/signin?action_handle_signin=true\\u0026skip_identity_prompt=True\\u0026feature=purchases\\u0026next=%2F\",\n
-        \   'YPC_GB_LANGUAGE': \"en_US\",\n    'YPC_GB_URL': \"https:\\/\\/checkout.google.com\\/inapp\\/lib\\/buy.js\",\n
-        \   'YPC_MB_URL': \"https:\\/\\/payments.google.com\\/payments\\/v4\\/js\\/integrator.js?ss=md\",\n
+        \"youtu444\",\n    'SUBSCRIPTION_URL': \"\\/subscription_ajax\",\n    'YPC_SWITCH_URL':
+        \"\\/signin?next=%2F\\u0026skip_identity_prompt=True\\u0026feature=purchases\\u0026action_handle_signin=true\",\n
+        \   'YPC_GB_LANGUAGE': \"en_US\",\n    'YPC_MB_URL': \"https:\\/\\/payments.google.com\\/payments\\/v4\\/js\\/integrator.js?ss=md\",\n
         \   'YPC_TRANSACTION_URL': \"\\/transaction_handler\",\n    'YPC_SUBSCRIPTION_URL':
         \"\\/ypc_subscription_ajax\",\n    'YPC_POST_PURCHASE_URL': \"\\/ypc_post_purchase_ajax\",\n
-        \   'YTO_GTM_DATA': {\"event\":\"purchased\",\"purchaseStatus\":\"success\"}\n
+        \   'YTR_FAMILY_CREATION_URL': \"https:\\/\\/families.corp.google.com\\/webcreation?jsmode=du\\u0026usegapi=1\",\n
+        \   'YTO_GTM_DATA': {'event': 'purchased', 'purchaseStatus': 'success'}\n
         \ });\n  yt.setMsg({\n    'YPC_OFFER_OVERLAY': \"  \\n\",\n    'YPC_UNSUBSCRIBE_OVERLAY':
         \"  \\n\"\n  });\n  yt.setConfig('GOOGLE_HELP_CONTEXT', \"watch\");\nytcsi.info('st',
-        53);yt.setConfig({'CSI_SERVICE_NAME': \"youtube\",'TIMING_ACTION': \"watch,watch7_html5\",'TIMING_INFO':
-        {\"yt_li\":\"0\",\"e\":\"9407157,9416126,9416891,9422596,9428398,9431012,9432684,9433046,9433096,9433223,9433851,9433946,9434204,9435385,9435527,9435876,9435916,9436392,9436995,9437066,9437294,9437553,9438227\",\"c\":\"WEB\",\"yt_pl\":0,\"cver\":\"1.20160601\",\"yt_lt\":\"cold\"}});
-        \ yt.setConfig({\n    'XSRF_TOKEN': \"QUFFLUhqbWFib1RNOFAtWU1WT1laZ3lIWTZHVmpWSWsxd3xBQ3Jtc0ttaUhMcXF6WDQ2QVBCZ2otQUFhYmRpSElkOWxxbUlfYk8wV09LNkktVlRLdWJmbDRjZm9GRlVnNTZqQ1ZUSmdlWXZRekplUGNJbWlkaXZ3eEZBZ1hqZlJObmFDV0l3RFYzVmJ5bUVXdUtEdUNGVlI2TUpJQUVFNEdMWnNXM1NYYU91SzAzX0hfM0htNVk5eVhhY1VOZEsyZG9ZT1E=\",\n
-        \   'XSRF_REDIRECT_TOKEN': \"JxsPl6-GWvQ560JrqTpLNRQjbCx8MTQ2NDkzMDM3N0AxNDY0ODQzOTc3\",\n
-        \   'XSRF_FIELD_NAME': \"session_token\"\n  });\n  yt.setConfig('THUMB_DELAY_LOAD_BUFFER',
+        91);yt.setConfig({'CSI_SERVICE_NAME': \"youtube\",'TIMING_ACTION': \"watch,watch7_html5\",'TIMING_INFO':
+        {\"yt_pl\":0,\"yt_li\":\"0\",\"yt_lt\":\"cold\",\"e\":\"9406993,9422596,9428398,9431012,9433096,9433221,9433946,9435526,9438282,9438327,9438662,9439580,9439956,9440012,9441535,9441560,9442252,9442424,9442426,9442917,9443067,9443259,9443419,9443667,9443685,9444451\",\"cver\":\"1.20160815\",\"c\":\"WEB\"}});
+        \ yt.setConfig({\n    'XSRF_TOKEN': \"QUFFLUhqbWNwSTNLTHF3NHVxcE44NDZYSy0xVjJHVWlnQXxBQ3Jtc0tuT1EtamJqMWVObTkzVUdReHYtazZ2WFl3ZHU2dXFwcVZ0b0dBcnVRVlRZWUtYTEJPUnh0YThtSVJfYURlUUR1VEFoQ3FadGhRN0diV2NaYUJzMGdRdnd4UnFsWU9iWW5NNF9RTFJ0dUo4X3ZKTzRzQ0NMQi16dGF0a09lRHRHbkFlNzlHMFNQMkFZUWM1YU1WTFlxNlJtMkRXSkE=\",\n
+        \   'XSRF_REDIRECT_TOKEN': \"9p-O8TN7guLvE2sGGgdMO1MsFqt8MTQ3MTQxNjIxOUAxNDcxMzI5ODE5\",\n
+        \   'XSRF_FIELD_NAME': \"session_token\"\n  });\nyt.setConfig('ID_TOKEN',
+        null);yt.setConfig('SERVICE_WORKER_KILLSWITCH', false);  yt.setConfig('THUMB_DELAY_LOAD_BUFFER',
         0);\nif (window.ytcsi) {window.ytcsi.tick(\"jl\", null, '');}</script>\n</body></html>"
     http_version: 
-  recorded_at: Thu, 02 Jun 2016 05:06:17 GMT
+  recorded_at: Tue, 16 Aug 2016 06:43:39 GMT
 recorded_with: VCR 3.0.3

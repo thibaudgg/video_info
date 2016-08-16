@@ -17,7 +17,7 @@ http_interactions:
       message: OK
     headers:
       Server:
-      - nginx/1.8.1
+      - nginx
       Content-Type:
       - application/json; charset=utf-8
       Status:
@@ -28,39 +28,35 @@ http_interactions:
       - "*"
       Cache-Control:
       - public, no-cache
-      X-Ua-Compatible:
-      - IE=Edge,chrome=1
       P3p:
       - CP="CURi ADMa DEVa IVAa IVDa CONi OUR IND DSP CAO COR"
       X-Request-Id:
-      - 272971248ba5d589b15987f67f5cfcde
+      - 6ec491c9-e865-4274-87e6-a853c79d5b19
       X-Runtime:
-      - '0.040625'
-      X-Rack-Cache:
-      - miss
+      - '0.054840'
       Via:
       - 1.1 varnish
       - 1.1 varnish
       Fastly-Debug-Digest:
       - 0cb2dce10e342c18e932e8428741b0b03e8678383f77a7e425ccd2c0cd233ec0
       Content-Length:
-      - '736'
+      - '776'
       Accept-Ranges:
       - bytes
       Date:
-      - Tue, 31 May 2016 07:00:55 GMT
+      - Tue, 16 Aug 2016 06:43:33 GMT
       Age:
       - '0'
       Connection:
       - keep-alive
       X-Served-By:
-      - cache-ord1731-ORD, cache-lax1436-LAX
+      - cache-ord1731-ORD, cache-lax1441-LAX
       X-Cache:
       - MISS, MISS
       X-Cache-Hits:
       - 0, 0
       X-Timer:
-      - S1464678055.621321,VS0,VE111
+      - S1471329813.597402,VS0,VE117
       Vary:
       - Accept-Encoding,X-Forwarded-Proto
       Strict-Transport-Security:
@@ -69,5 +65,5 @@ http_interactions:
       encoding: UTF-8
       string: ''
     http_version: 
-  recorded_at: Tue, 31 May 2016 07:00:55 GMT
+  recorded_at: Tue, 16 Aug 2016 06:43:33 GMT
 recorded_with: VCR 3.0.3
