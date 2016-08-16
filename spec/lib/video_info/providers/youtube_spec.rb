@@ -180,7 +180,7 @@ require 'spec_helper'
       describe '#author_thumbnail' do
         subject { super().author_thumbnail }
         author_thumbnail = 'https://yt3.ggpht.com/-7rhnfdQaI3k/AAAAAAAAAAI/' \
-                           'AAAAAAAAAAA/eMJZ5HBukCQ/s88-c-k-no-rj-c0xffffff' \
+                           'AAAAAAAAAAA/eMJZ5HBukCQ/s88-c-k-no-mo-rj-c0xffffff' \
                            '/photo.jpg'
         it { is_expected.to eql author_thumbnail }
       end
