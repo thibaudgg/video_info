@@ -115,13 +115,13 @@ require 'spec_helper'
 
         describe '#thumbnail_large' do
           subject { super().thumbnail_large }
-          thumbnail_url = 'https://i.ytimg.com/vi/SUkXvWn1m7Q/hqdefault.jpg'
+          thumbnail_url = 'https://i.ytimg.com/vi/SUkXvWn1m7Q/maxresdefault.jpg'
           it { is_expected.to eq thumbnail_url }
         end
 
         describe '#thumbnail' do
           subject { super().thumbnail }
-          thumbnail_url = 'https://i.ytimg.com/vi/SUkXvWn1m7Q/hqdefault.jpg'
+          thumbnail_url = 'https://i.ytimg.com/vi/SUkXvWn1m7Q/maxresdefault.jpg'
           it { is_expected.to eq thumbnail_url }
         end
 
