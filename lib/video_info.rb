@@ -50,7 +50,8 @@ class VideoInfo
   def_delegators :@provider,
                  :thumbnail_small,
                  :thumbnail_medium,
-                 :thumbnail_large
+                 :thumbnail_large,
+                 :thumbnail_maxres
   def_delegators :@provider, :embed_code, :embed_url
   def_delegators :@provider, :available?
   def_delegators :@provider, :playlist_id, :videos
