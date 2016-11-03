@@ -44,6 +44,10 @@ class VideoInfo
         "https://i.ytimg.com/vi/#{video_id}/hqdefault.jpg"
       end
 
+      def thumbnail_maxres
+        "https://i.ytimg.com/vi/#{video_id}/maxresdefault.jpg"
+      end
+
       private
 
       def _url_regex
