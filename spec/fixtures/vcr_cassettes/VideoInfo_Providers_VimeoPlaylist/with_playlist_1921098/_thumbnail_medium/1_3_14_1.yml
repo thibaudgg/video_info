@@ -1,0 +1,63 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.vimeo.com/videos/1921098
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - VideoInfo/2.5.0
+      Authorization:
+      - bearer 6b66b015a3504793b4f541d878f46ff6
+      Accept:
+      - application/vnd.vimeo.*+json;version=3.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Server:
+      - nginx
+      Content-Type:
+      - application/vnd.vimeo.error+json
+      Cache-Control:
+      - no-cache, max-age=315360000
+      Strict-Transport-Security:
+      - max-age=15120000; includeSubDomains; preload
+      Expires:
+      - Thu, 25 Dec 2025 17:43:26 GMT
+      Via:
+      - 1.1 varnish
+      - 1.1 varnish
+      Fastly-Debug-Digest:
+      - 0f7d9a6b820d51e8546d46337cf407d94e59efed99aefd3dfc803d98b67a8081
+      Content-Length:
+      - '194'
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Mon, 28 Dec 2015 17:43:26 GMT
+      Connection:
+      - keep-alive
+      X-Served-By:
+      - cache-iad2130-IAD, cache-sjc3636-SJC
+      X-Cache:
+      - MISS, MISS
+      X-Cache-Hits:
+      - 0, 0
+      X-Timer:
+      - S1451324606.495937,VS0,VE100
+      Vary:
+      - Accept,Vimeo-Client-Id,Accept-Encoding
+    body:
+      encoding: ASCII-8BIT
+      string: '{"error":"Unfortunately, you can''t watch password-protected videos
+        with this app. Please get in touch with the app''s creator","link":null,"developer_message":"The
+        app does not have the capability to provide password on protected videos","error_code":2501}'
+    http_version: 
+  recorded_at: Mon, 28 Dec 2015 17:43:31 GMT
+recorded_with: VCR 3.0.1

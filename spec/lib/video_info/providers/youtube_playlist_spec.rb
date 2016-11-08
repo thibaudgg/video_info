@@ -151,25 +151,25 @@ require 'spec_helper'
 
       describe '#thumbnail_small' do
         subject { super().thumbnail_small }
-        thumbnail_url = 'https://i.ytimg.com/vi/8b0aEoxqqC0/default.jpg'
+        thumbnail_url = 'https://i.ytimg.com/vi/Oi67QjrXy2w/default.jpg'
         it { is_expected.to eq thumbnail_url }
       end
 
       describe '#thumbnail_medium' do
         subject { super().thumbnail_medium }
-        thumbnail_url = 'https://i.ytimg.com/vi/8b0aEoxqqC0/mqdefault.jpg'
+        thumbnail_url = 'https://i.ytimg.com/vi/Oi67QjrXy2w/mqdefault.jpg'
         it { is_expected.to eq thumbnail_url }
       end
 
       describe '#thumbnail_large' do
         subject { super().thumbnail_large }
-        thumbnail_url = 'https://i.ytimg.com/vi/8b0aEoxqqC0/hqdefault.jpg'
+        thumbnail_url = 'https://i.ytimg.com/vi/Oi67QjrXy2w/hqdefault.jpg'
         it { is_expected.to eq thumbnail_url }
       end
 
       describe '#thumbnail' do
         subject { super().thumbnail }
-        thumbnail_url = 'https://i.ytimg.com/vi/8b0aEoxqqC0/hqdefault.jpg'
+        thumbnail_url = 'https://i.ytimg.com/vi/Oi67QjrXy2w/hqdefault.jpg'
         it { is_expected.to eq thumbnail_url }
       end
 

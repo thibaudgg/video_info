@@ -1,0 +1,73 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.vimeo.com/videos/898029
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - VideoInfo/2.5.0
+      Authorization:
+      - bearer 6b66b015a3504793b4f541d878f46ff6
+      Accept:
+      - application/vnd.vimeo.*+json;version=3.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Content-Type:
+      - application/vnd.vimeo.video+json
+      Cache-Control:
+      - no-cache, max-age=315360000
+      Strict-Transport-Security:
+      - max-age=15120000; includeSubDomains; preload
+      Expires:
+      - Thu, 25 Dec 2025 17:43:20 GMT
+      Via:
+      - 1.1 varnish
+      - 1.1 varnish
+      Fastly-Debug-Digest:
+      - c3672039fd974d279856f1a1643b4e8d68c526f3bd160f59365e5e01b8b4b4a5
+      Content-Length:
+      - '1395'
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Mon, 28 Dec 2015 17:43:20 GMT
+      Age:
+      - '0'
+      Connection:
+      - keep-alive
+      X-Served-By:
+      - cache-iad2137-IAD, cache-sjc3134-SJC
+      X-Cache:
+      - MISS, MISS
+      X-Cache-Hits:
+      - 0, 0
+      X-Timer:
+      - S1451324600.752269,VS0,VE163
+      Vary:
+      - Accept,Vimeo-Client-Id,Accept-Encoding
+    body:
+      encoding: ASCII-8BIT
+      string: '{"uri":"/videos/898029","name":"Cherry Bloom - King Of The Knife","description":"The
+        first video from the upcoming album Secret Sounds, to download in-stores April
+        14. Checkout http://www.cherrybloom.net","link":"https://vimeo.com/898029","duration":175,"width":640,"language":null,"height":360,"embed":{"html":"<iframe
+        src=\"https://player.vimeo.com/video/898029?badge=0&autopause=0&player_id=0\"
+        width=\"640\" height=\"360\" frameborder=\"0\" title=\"Cherry Bloom - King
+        Of The Knife\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>"},"created_time":"2008-04-14T17:10:39+00:00","modified_time":"2015-12-02T11:13:10+00:00","content_rating":["unrated"],"license":null,"privacy":{"view":"anybody","embed":"public","download":true,"add":true,"comments":"anybody"},"pictures":{"uri":"/videos/898029/pictures/34373130","active":true,"type":"custom","sizes":[{"width":100,"height":75,"link":"https://i.vimeocdn.com/video/34373130_100x75.jpg?r=pad"},{"width":200,"height":150,"link":"https://i.vimeocdn.com/video/34373130_200x150.jpg?r=pad"},{"width":295,"height":166,"link":"https://i.vimeocdn.com/video/34373130_295x166.jpg?r=pad"},{"width":640,"height":360,"link":"https://i.vimeocdn.com/video/34373130_640x360.jpg?r=pad"},{"width":960,"height":540,"link":"https://i.vimeocdn.com/video/34373130_960x540.jpg?r=pad"}]},"tags":[{"uri":"/tags/cherrybloom","name":"cherry
+        bloom","tag":"cherry bloom","canonical":"cherrybloom","metadata":{"connections":{"videos":{"uri":"/tags/cherrybloom/videos","options":["GET"],"total":16}}}},{"uri":"/tags/secretsounds","name":"secret
+        sounds","tag":"secret sounds","canonical":"secretsounds","metadata":{"connections":{"videos":{"uri":"/tags/secretsounds/videos","options":["GET"],"total":4}}}},{"uri":"/tags/kingoftheknife","name":"king
+        of the knife","tag":"king of the knife","canonical":"kingoftheknife","metadata":{"connections":{"videos":{"uri":"/tags/kingoftheknife/videos","options":["GET"],"total":1}}}},{"uri":"/tags/rock","name":"rock","tag":"rock","canonical":"rock","metadata":{"connections":{"videos":{"uri":"/tags/rock/videos","options":["GET"],"total":138274}}}},{"uri":"/tags/alternative","name":"alternative","tag":"alternative","canonical":"alternative","metadata":{"connections":{"videos":{"uri":"/tags/alternative/videos","options":["GET"],"total":24861}}}}],"stats":{"plays":4707},"metadata":{"connections":{"comments":{"uri":"/videos/898029/comments","options":["GET","POST"],"total":4},"credits":{"uri":"/videos/898029/credits","options":["GET","POST"],"total":1},"likes":{"uri":"/videos/898029/likes","options":["GET"],"total":11},"pictures":{"uri":"/videos/898029/pictures","options":["GET","POST"],"total":1},"texttracks":{"uri":"/videos/898029/texttracks","options":["GET","POST"],"total":0},"related":null},"interactions":{"watchlater":{"added":false,"added_time":null,"uri":"/users/22881647/watchlater/898029"},"like":{"added":false,"added_time":null,"uri":"/users/22881647/likes/898029"}}},"user":{"uri":"/users/206215","name":"Octave
+        Zangs","link":"https://vimeo.com/octave","location":"Costa Mesa, CA","bio":"DP/Cinematographer
+        at Zangs Films.","created_time":"2007-06-10T22:17:36+00:00","account":"basic","pictures":{"uri":"/users/206215/pictures/2577152","active":true,"type":"custom","sizes":[{"width":30,"height":30,"link":"https://i.vimeocdn.com/portrait/2577152_30x30.jpg?r=pad"},{"width":75,"height":75,"link":"https://i.vimeocdn.com/portrait/2577152_75x75.jpg?r=pad"},{"width":100,"height":100,"link":"https://i.vimeocdn.com/portrait/2577152_100x100.jpg?r=pad"},{"width":300,"height":300,"link":"https://i.vimeocdn.com/portrait/2577152_300x300.jpg?r=pad"}]},"websites":[{"name":null,"link":"http://octavez.com","description":null},{"name":null,"link":"http://zangsfilms.com","description":null}],"metadata":{"connections":{"activities":{"uri":"/users/206215/activities","options":["GET"]},"albums":{"uri":"/users/206215/albums","options":["GET"],"total":0},"channels":{"uri":"/users/206215/channels","options":["GET"],"total":11},"feed":{"uri":"/users/206215/feed","options":["GET"]},"followers":{"uri":"/users/206215/followers","options":["GET"],"total":26},"following":{"uri":"/users/206215/following","options":["GET"],"total":80},"groups":{"uri":"/users/206215/groups","options":["GET"],"total":34},"likes":{"uri":"/users/206215/likes","options":["GET"],"total":218},"portfolios":{"uri":"/users/206215/portfolios","options":["GET"],"total":0},"videos":{"uri":"/users/206215/videos","options":["GET"],"total":3},"shared":{"uri":"/users/206215/shared/videos","options":["GET"],"total":20},"pictures":{"uri":"/users/206215/pictures","options":["GET","POST"],"total":1}},"interactions":{"follow":{"added":false,"added_time":null,"uri":"/users/22881647/following/206215"}}},"preferences":{"videos":{"privacy":null}}},"app":null,"status":"available","embed_presets":null}'
+    http_version: 
+  recorded_at: Mon, 28 Dec 2015 17:43:25 GMT
+recorded_with: VCR 3.0.1

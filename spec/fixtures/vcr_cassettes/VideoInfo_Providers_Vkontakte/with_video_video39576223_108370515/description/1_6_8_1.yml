@@ -21,26 +21,26 @@ http_interactions:
       Server:
       - Apache
       Date:
-      - Tue, 16 Aug 2016 06:43:28 GMT
+      - Thu, 03 Nov 2016 01:09:33 GMT
       Content-Type:
       - text/html; charset=windows-1251
       Content-Length:
-      - '182'
+      - '188'
       Connection:
       - keep-alive
       X-Powered-By:
-      - PHP/3.25035
+      - PHP/3.6966
       Set-Cookie:
-      - remixlang=3; expires=Fri, 25 Aug 2017 09:24:28 GMT; path=/; domain=.vk.com
+      - remixlang=3; expires=Wed, 25 Oct 2017 02:05:32 GMT; path=/; domain=.vk.com
       Pragma:
       - no-cache
       Cache-Control:
       - no-store
     body:
       encoding: ASCII-8BIT
-      string: '<!--19430<!><!>3<!>3661<!>0<!>Please log in or <a href="/join" onclick="return
-        !showBox(''join.php'', {act: ''box'', from: nav.strLoc}, {}, event)">sign
-        up</a> to view this video.<!><!pageview_candidate>'
+      string: '<!--789457310877<!><!>3<!>3682<!>0<!>Please log in or <a href="/join"
+        onclick="return !showBox(''join.php'', {act: ''box'', from: nav.strLoc}, {},
+        event)">sign up</a> to view this video.<!><!pageview_candidate>'
     http_version: 
-  recorded_at: Tue, 16 Aug 2016 06:43:28 GMT
-recorded_with: VCR 3.0.3
+  recorded_at: Thu, 03 Nov 2016 01:09:33 GMT
+recorded_with: VCR 3.0.1

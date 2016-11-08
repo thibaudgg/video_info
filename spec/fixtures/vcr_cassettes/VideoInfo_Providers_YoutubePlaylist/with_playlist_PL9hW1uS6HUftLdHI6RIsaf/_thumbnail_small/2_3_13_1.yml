@@ -19,13 +19,13 @@ http_interactions:
       message: OK
     headers:
       Expires:
-      - Tue, 16 Aug 2016 06:43:36 GMT
+      - Thu, 03 Nov 2016 01:09:53 GMT
       Date:
-      - Tue, 16 Aug 2016 06:43:36 GMT
+      - Thu, 03 Nov 2016 01:09:53 GMT
       Cache-Control:
       - private, max-age=0, must-revalidate, no-transform
       Etag:
-      - '"I_8xdZu766_FSaexEaDXTIfEWc0/Cj1QC1vsAJ1KT33B9-eOX8tPo74"'
+      - '"sZ5p5Mo8dPpfIzLYQBF8QIQJym0/agg8LwUfxQxkn2kzTfKMNFlldxI"'
       Vary:
       - Origin
       - X-Origin
@@ -41,16 +41,14 @@ http_interactions:
       - '1515'
       Server:
       - GSE
-      Alternate-Protocol:
-      - 443:quic
       Alt-Svc:
-      - quic=":443"; ma=2592000; v="36,35,34,33,32,31,30"
+      - quic=":443"; ma=2592000; v="36,35,34"
     body:
       encoding: UTF-8
       string: |
         {
          "kind": "youtube#playlistListResponse",
-         "etag": "\"I_8xdZu766_FSaexEaDXTIfEWc0/Cj1QC1vsAJ1KT33B9-eOX8tPo74\"",
+         "etag": "\"sZ5p5Mo8dPpfIzLYQBF8QIQJym0/agg8LwUfxQxkn2kzTfKMNFlldxI\"",
          "pageInfo": {
           "totalResults": 1,
           "resultsPerPage": 5
@@ -58,7 +56,7 @@ http_interactions:
          "items": [
           {
            "kind": "youtube#playlist",
-           "etag": "\"I_8xdZu766_FSaexEaDXTIfEWc0/Kl26xazym-tGf3sAZ80b1j2HL1o\"",
+           "etag": "\"sZ5p5Mo8dPpfIzLYQBF8QIQJym0/F2mG6YyXZ_T9NjBk6OlhtoKuxPY\"",
            "id": "PL9hW1uS6HUftLdHI6RIsaf-iXTm09qnEr",
            "snippet": {
             "publishedAt": "2013-08-09T05:09:51.000Z",
@@ -67,27 +65,27 @@ http_interactions:
             "description": "Learn more about copyright basics, flagging, and the YouTube community.",
             "thumbnails": {
              "default": {
-              "url": "https://i.ytimg.com/vi/8b0aEoxqqC0/default.jpg",
+              "url": "https://i.ytimg.com/vi/Oi67QjrXy2w/default.jpg",
               "width": 120,
               "height": 90
              },
              "medium": {
-              "url": "https://i.ytimg.com/vi/8b0aEoxqqC0/mqdefault.jpg",
+              "url": "https://i.ytimg.com/vi/Oi67QjrXy2w/mqdefault.jpg",
               "width": 320,
               "height": 180
              },
              "high": {
-              "url": "https://i.ytimg.com/vi/8b0aEoxqqC0/hqdefault.jpg",
+              "url": "https://i.ytimg.com/vi/Oi67QjrXy2w/hqdefault.jpg",
               "width": 480,
               "height": 360
              },
              "standard": {
-              "url": "https://i.ytimg.com/vi/8b0aEoxqqC0/sddefault.jpg",
+              "url": "https://i.ytimg.com/vi/Oi67QjrXy2w/sddefault.jpg",
               "width": 640,
               "height": 480
              },
              "maxres": {
-              "url": "https://i.ytimg.com/vi/8b0aEoxqqC0/maxresdefault.jpg",
+              "url": "https://i.ytimg.com/vi/Oi67QjrXy2w/maxresdefault.jpg",
               "width": 1280,
               "height": 720
              }
@@ -103,5 +101,5 @@ http_interactions:
          ]
         }
     http_version: 
-  recorded_at: Tue, 16 Aug 2016 06:43:36 GMT
-recorded_with: VCR 3.0.3
+  recorded_at: Thu, 03 Nov 2016 01:09:53 GMT
+recorded_with: VCR 3.0.1

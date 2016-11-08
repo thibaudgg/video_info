@@ -23,7 +23,7 @@ http_interactions:
       X-Dm-Api-Object:
       - video
       X-Dm-Backnode:
-      - 10.190.2.9:80
+      - 10.190.1.116:80
       X-Dm-Api-Method:
       - info
       Cache-Control:
@@ -38,13 +38,11 @@ http_interactions:
       X-Dm-Tg:
       - v-x7lni3
       X-Dm-Lb-Name:
-      - lb-10
+      - lb-08
       X-Dm-Random-Number:
-      - '6827633'
+      - '7095756'
       Access-Control-Allow-Origin:
       - "*"
-      X-Dm-Backnode-Response-Time:
-      - '22'
       Etag:
       - W/"rQeFNlJ5iMPO8gmsSDhiVw-gzip"
       X-Robots-Tag:
@@ -61,32 +59,34 @@ http_interactions:
       - 1.1 varnish
       - 1.1 varnish
       Fastly-Debug-Digest:
-      - 5156934e90466ffd0e4642c50195b7206345d38887e9d445fa00692b2f902722
+      - a1260d687a65fe813c0737da36a0e6aefc19d36751c69fa71a074a472d8420fe
       Content-Length:
       - '103'
       Accept-Ranges:
       - bytes
       Date:
-      - Tue, 16 Aug 2016 06:42:40 GMT
+      - Thu, 03 Nov 2016 01:07:25 GMT
       Age:
       - '0'
       Connection:
       - keep-alive
       X-Served-By:
-      - cache-fra1231-FRA, cache-lax1439-LAX
+      - cache-fra1247-FRA, cache-lax8624-LAX
       X-Cache:
-      - MISS, MISS
+      - HIT, MISS
       X-Cache-Hits:
-      - 0, 0
+      - 1, 0
       Vary:
       - X-DM-EC-Geo-Country, Accept-Encoding
+      X-Dm-Backnode-Response-Time:
+      - '0'
       X-Dm-Cache-Status:
-      - MISS
+      - HIT
       X-Dm-Edge:
       - Fastly
     body:
       encoding: ASCII-8BIT
       string: '{"id":"x7lni3","title":"Mario Kart (R\u00e9mi Gaillard)","channel":"fun","owner":"x4r137"}'
     http_version: 
-  recorded_at: Tue, 16 Aug 2016 06:42:40 GMT
-recorded_with: VCR 3.0.3
+  recorded_at: Thu, 03 Nov 2016 01:07:25 GMT
+recorded_with: VCR 3.0.1
