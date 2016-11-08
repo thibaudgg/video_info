@@ -66,7 +66,7 @@ http_interactions:
       Server:
       - Apache
       Date:
-      - Tue, 08 Nov 2016 04:23:10 GMT
+      - Tue, 08 Nov 2016 04:29:13 GMT
       Content-Type:
       - text/html; charset=windows-1251
       Content-Length:
@@ -76,7 +76,7 @@ http_interactions:
       X-Powered-By:
       - PHP/3.7057
       Set-Cookie:
-      - remixlang=3; expires=Wed, 15 Nov 2017 23:07:41 GMT; path=/; domain=.vk.com
+      - remixlang=3; expires=Mon, 30 Oct 2017 02:45:49 GMT; path=/; domain=.vk.com
       Pragma:
       - no-cache
       Cache-Control:
@@ -87,7 +87,7 @@ http_interactions:
       encoding: ASCII-8BIT
       string: ''
     http_version: 
-  recorded_at: Tue, 08 Nov 2016 04:23:10 GMT
+  recorded_at: Tue, 08 Nov 2016 04:29:13 GMT
 - request:
     method: get
     uri: https://vk.com/video39576223_108370515
@@ -111,7 +111,7 @@ http_interactions:
       Server:
       - Apache
       Date:
-      - Tue, 08 Nov 2016 04:23:10 GMT
+      - Tue, 08 Nov 2016 04:29:14 GMT
       Content-Type:
       - text/html; charset=windows-1251
       Content-Length:
@@ -121,8 +121,8 @@ http_interactions:
       X-Powered-By:
       - PHP/3.7057
       Set-Cookie:
-      - remixlang=3; expires=Mon, 06 Nov 2017 21:22:41 GMT; path=/; domain=.vk.com
-      - remixlhk=085be7a44f4e4c8e46; expires=Wed, 15 Nov 2017 01:47:50 GMT; path=/;
+      - remixlang=3; expires=Wed, 08 Nov 2017 20:34:19 GMT; path=/; domain=.vk.com
+      - remixlhk=402d494a1eaead5243; expires=Fri, 17 Nov 2017 23:15:12 GMT; path=/;
         domain=.vk.com
       Pragma:
       - no-cache
@@ -166,9 +166,9 @@ http_interactions:
         Yzg3NzliZDZhZTRjNzViMzcxJywKICB2Y19oOiAnMjE4NmMyYjUxYTlmYTE0
         ODg5Nzg1N2RlOTQ4ZWVkYjInLAogIG5hdlByZWZpeDogJy8nLAogIGR0OiBw
         YXJzZUludCgnMCcpIHx8IDAsCiAgZnM6IHBhcnNlSW50KCcxMycpIHx8IDEz
-        LAogIHRzOiAxNDc4NTc4OTkwLAogIHR6OiAxMDgwMCwKICBwZDogMCwKICBw
+        LAogIHRzOiAxNDc4NTc5MzU0LAogIHR6OiAxMDgwMCwKICBwZDogMCwKICBw
         YWRzOiAxLAogIGNzc19kaXI6ICcnLAogIHZjb3N0OiA3LAogIHRpbWU6IFsy
-        MDE2LCAxMSwgOCwgNywgMjMsIDEwXSwKICBzYW1wbGVVc2VyOiAtMSwgc3Bl
+        MDE2LCAxMSwgOCwgNywgMjksIDE0XSwKICBzYW1wbGVVc2VyOiAtMSwgc3Bl
         bnRMYXN0U2VuZFRTOiBuZXcgRGF0ZSgpLmdldFRpbWUoKSwKICBhMTF5OiAw
         LAoKICBwcl90cGw6ICI8ZGl2IGNsYXNzPVwicHIgJWNscyVcIiBpZD1cIiVp
         ZCVcIj48ZGl2IGNsYXNzPVwicHJfYnRcIj48XC9kaXY+PGRpdiBjbGFzcz1c
@@ -345,7 +345,7 @@ http_interactions:
         aGlkZGVuIiBuYW1lPSJfb3JpZ2luIiB2YWx1ZT0iaHR0cHM6Ly92ay5jb20i
         IC8+CiAgICA8aW5wdXQgdHlwZT0iaGlkZGVuIiBuYW1lPSJpcF9oIiB2YWx1
         ZT0iYzg3NzliZDZhZTRjNzViMzcxIiAvPgogICAgPGlucHV0IHR5cGU9Imhp
-        ZGRlbiIgbmFtZT0ibGdfaCIgdmFsdWU9ImQ2MjgyODEzODFkZTIwODhjMiIg
+        ZGRlbiIgbmFtZT0ibGdfaCIgdmFsdWU9ImIxODEyOThmMTg2MWUxZTZkNiIg
         Lz4KICAgIDxkaXYgY2xhc3M9ImxhYmVsIj5QaG9uZSBvciBlbWFpbDwvZGl2
         PgogICAgPGRpdiBjbGFzcz0ibGFiZWxlZCI+PGlucHV0IHR5cGU9InRleHQi
         IG5hbWU9ImVtYWlsIiBjbGFzcz0iZGFyayIgaWQ9InF1aWNrX2VtYWlsIiAv
@@ -1169,5 +1169,5 @@ http_interactions:
         c2UgeyBmKCk7IH0KfSkoZG9jdW1lbnQsIHdpbmRvdyk7CiAgICB9CiAgPC9z
         Y3JpcHQ+CjwvYm9keT4KCjwvaHRtbD4=
     http_version: 
-  recorded_at: Tue, 08 Nov 2016 04:23:10 GMT
-recorded_with: VCR 3.0.1
+  recorded_at: Tue, 08 Nov 2016 04:29:14 GMT
+recorded_with: VCR 3.0.3
