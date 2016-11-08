@@ -23,7 +23,7 @@ http_interactions:
       X-Dm-Api-Object:
       - video
       X-Dm-Backnode:
-      - 10.190.1.223:80
+      - 10.190.1.205:80
       X-Dm-Api-Method:
       - info
       Cache-Control:
@@ -38,9 +38,9 @@ http_interactions:
       X-Dm-Tg:
       - v-x7lni3
       X-Dm-Lb-Name:
-      - lb-08
+      - lb-10
       X-Dm-Random-Number:
-      - '8663090'
+      - '1382420'
       Access-Control-Allow-Origin:
       - "*"
       Etag:
@@ -61,21 +61,21 @@ http_interactions:
       Fastly-Debug-Digest:
       - 280830ca6679f64d21a78e03ae01c9a1f6738fa949d5b8780cf1031fb27cdb07
       Content-Length:
-      - '441'
+      - '438'
       Accept-Ranges:
       - bytes
       Date:
-      - Thu, 03 Nov 2016 01:07:28 GMT
+      - Tue, 08 Nov 2016 04:43:50 GMT
       Age:
       - '1'
       Connection:
       - keep-alive
       X-Served-By:
-      - cache-fra1244-FRA, cache-lax8626-LAX
+      - cache-fra1247-FRA, cache-sjc3121-SJC
       X-Cache:
-      - HIT, HIT
+      - MISS, HIT
       X-Cache-Hits:
-      - 1, 1
+      - 0, 1
       Vary:
       - X-DM-EC-Geo-Country, Accept-Encoding
       X-Dm-Backnode-Response-Time:
@@ -89,9 +89,9 @@ http_interactions:
       string: '{"id":"x7lni3","title":"Mario Kart (R\u00e9mi Gaillard)","description":"Super
         R\u00e9mi Kart est un jeu vid\u00e9o de course d\u00e9velopp\u00e9 et \u00e9dit\u00e9
         par N''Importe Quoi TV. Sa principale originalit\u00e9 vient de sa r\u00e9alit\u00e9...<br
-        \/>L''aventure continue sur www.nimportequi.com","duration":136,"created_time":1228321771,"url":"http:\/\/www.dailymotion.com\/video\/x7lni3_mario-kart-remi-gaillard_fun","views_total":10312054,"tags":["r\u00e9mi","remi","gaillard","imposteur","imposture","mario","bros","kart","nintendo","jeux"],"thumbnail_url":"http:\/\/s2.dmcdn.net\/BgWxI.jpg","thumbnail_720_url":"http:\/\/s2.dmcdn.net\/BgWxI\/x720-YcV.jpg","thumbnail_240_url":"http:\/\/s2.dmcdn.net\/BgWxI\/x240-b83.jpg","thumbnail_60_url":"http:\/\/s2.dmcdn.net\/BgWxI\/x60-kbf.jpg"}'
+        \/>L''aventure continue sur www.nimportequi.com","duration":136,"created_time":1228321771,"url":"http:\/\/www.dailymotion.com\/video\/x7lni3_mario-kart-remi-gaillard_fun","views_total":10312311,"tags":["r\u00e9mi","remi","gaillard","imposteur","imposture","mario","bros","kart","nintendo","jeux"],"thumbnail_url":"http:\/\/s2.dmcdn.net\/BgWxI.jpg","thumbnail_720_url":"http:\/\/s2.dmcdn.net\/BgWxI\/x720-YcV.jpg","thumbnail_240_url":"http:\/\/s2.dmcdn.net\/BgWxI\/x240-b83.jpg","thumbnail_60_url":"http:\/\/s2.dmcdn.net\/BgWxI\/x60-kbf.jpg"}'
     http_version: 
-  recorded_at: Thu, 03 Nov 2016 01:07:28 GMT
+  recorded_at: Tue, 08 Nov 2016 04:43:50 GMT
 - request:
     method: get
     uri: https://api.dailymotion.com/video/x7lni3?fields=id,title,description,duration,created_time,url,views_total,tags,thumbnail_url,thumbnail_720_url,thumbnail_240_url,thumbnail_60_url,owner
@@ -163,7 +163,7 @@ http_interactions:
       Connection:
       - keep-alive
       X-Served-By:
-      - cache-fra1229-FRA, cache-sjc3120-SJC
+      - cache-fra1229-FRA, cache-sjc3132-SJC
       X-Cache:
       - MISS, HIT
       X-Cache-Hits:
@@ -255,7 +255,7 @@ http_interactions:
       Connection:
       - keep-alive
       X-Served-By:
-      - cache-fra1247-FRA, cache-sjc3145-SJC
+      - cache-fra1247-FRA, cache-sjc3140-SJC
       X-Cache:
       - MISS, HIT
       X-Cache-Hits:

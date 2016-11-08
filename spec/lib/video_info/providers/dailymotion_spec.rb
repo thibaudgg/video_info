@@ -76,6 +76,11 @@ describe VideoInfo::Providers::Dailymotion do
       it { is_expected.to eq 'Mario Kart (Rémi Gaillard)' }
     end
 
+    describe '#author' do
+      subject { super().author }
+      it { is_expected.to eq 'Rémi Gaillard' }
+    end
+
     describe '#description' do
       subject { super().description }
       description_text = 'Super Rémi Kart est un jeu vidéo de course ' \
