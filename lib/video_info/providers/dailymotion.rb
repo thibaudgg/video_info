@@ -25,6 +25,10 @@ class VideoInfo
         data['owner.url']
       end
 
+      def author_thumbnail
+        data['owner.avatar_60_url']
+      end
+
       def keywords
         data['tags']
       end
@@ -79,7 +83,7 @@ class VideoInfo
         "https://#{_api_base}#{_api_path}?" \
         'fields=id,title,description,duration,created_time,' \
         'url,views_total,tags,thumbnail_url,thumbnail_720_url,' \
-        'owner.url,owner.screenname,' \
+        'owner.url,owner.screenname,owner.avatar_60_url,' \
         'thumbnail_240_url,thumbnail_60_url'
       end
 

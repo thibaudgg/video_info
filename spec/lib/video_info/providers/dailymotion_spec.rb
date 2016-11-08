@@ -86,6 +86,11 @@ describe VideoInfo::Providers::Dailymotion do
       it { is_expected.to eq 'http://www.dailymotion.com/nqtv' }
     end
 
+    describe '#author_thumbnail' do
+      subject { super().author_thumbnail }
+      it { is_expected.to eq 'http://s2.dmcdn.net/HN6TP/60x60-lEL.jpg' }
+    end
+
     describe '#description' do
       subject { super().description }
       description_text = 'Super Rémi Kart est un jeu vidéo de course ' \
