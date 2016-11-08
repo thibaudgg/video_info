@@ -161,7 +161,7 @@ You can also include an `iframe_attributes` or `url_attributes` hash to the `emb
 VideoInfo.new('http://www.youtube.com/watch?v=mZqGqE0D0n4').embed_code(iframe_attributes: { width: 800, height: 600, 'data-key' => 'value' })
 => '<iframe src="//www.youtube.com/embed/mZqGqE0D0n4" frameborder="0" allowfullscreen="allowfullscreen" width="800" height="600" data-key="value"></iframe>'
 
-'VideoInfo.new('http://www.youtube.com/watch?v=mZqGqE0D0n4').embed_code(url_attributes: { autoplay: 1 })
+VideoInfo.new('http://www.youtube.com/watch?v=mZqGqE0D0n4').embed_code(url_attributes: { autoplay: 1 })
 => '<iframe src="//www.youtube.com/embed/mZqGqE0D0n4?autoplay=1" frameborder="0" allowfullscreen="allowfullscreen"></iframe>'
 ```
 
