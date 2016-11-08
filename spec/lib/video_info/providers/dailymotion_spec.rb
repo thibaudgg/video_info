@@ -81,6 +81,11 @@ describe VideoInfo::Providers::Dailymotion do
       it { is_expected.to eq 'Rémi Gaillard' }
     end
 
+    describe '#author_url' do
+      subject { super().author_url }
+      it { is_expected.to eq 'http://www.dailymotion.com/nqtv' }
+    end
+
     describe '#description' do
       subject { super().description }
       description_text = 'Super Rémi Kart est un jeu vidéo de course ' \
