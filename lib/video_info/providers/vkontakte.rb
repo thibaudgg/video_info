@@ -1,7 +1,6 @@
 # encoding: UTF-8
 require 'cgi'
 require 'net/http'
-require 'oga'
 
 class VideoInfo
   module Providers
@@ -51,7 +50,7 @@ class VideoInfo
       end
 
       def author_thumbnail
-        split_point = '<img id="mv_author_img" class="mv_author_img" src="'
+        split_point = '<img id="mv_author_photo" class="mv_author_photo" src="'
         author_img_split = data.split(split_point)[1]
         author_img_split.split('">')[0]
       end
