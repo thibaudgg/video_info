@@ -19,13 +19,13 @@ http_interactions:
       message: OK
     headers:
       Expires:
-      - Thu, 03 Nov 2016 01:09:44 GMT
+      - Sun, 11 Dec 2016 19:15:10 GMT
       Date:
-      - Thu, 03 Nov 2016 01:09:44 GMT
+      - Sun, 11 Dec 2016 19:15:10 GMT
       Cache-Control:
       - private, max-age=0, must-revalidate, no-transform
       Etag:
-      - '"sZ5p5Mo8dPpfIzLYQBF8QIQJym0/z_k8MbxJ5FOjmqjXQ7ESbAQI-j4"'
+      - '"gMxXHe-zinKdE9lTnzKu8vjcmDI/z_k8MbxJ5FOjmqjXQ7ESbAQI-j4"'
       Vary:
       - Origin
       - X-Origin
@@ -42,13 +42,13 @@ http_interactions:
       Server:
       - GSE
       Alt-Svc:
-      - quic=":443"; ma=2592000; v="36,35,34"
+      - quic=":443"; ma=2592000; v="35,34"
     body:
       encoding: UTF-8
       string: |
         {
          "kind": "youtube#playlistListResponse",
-         "etag": "\"sZ5p5Mo8dPpfIzLYQBF8QIQJym0/z_k8MbxJ5FOjmqjXQ7ESbAQI-j4\"",
+         "etag": "\"gMxXHe-zinKdE9lTnzKu8vjcmDI/z_k8MbxJ5FOjmqjXQ7ESbAQI-j4\"",
          "pageInfo": {
           "totalResults": 1,
           "resultsPerPage": 5
@@ -56,7 +56,7 @@ http_interactions:
          "items": [
           {
            "kind": "youtube#playlist",
-           "etag": "\"sZ5p5Mo8dPpfIzLYQBF8QIQJym0/i_2ge7Hsv6L3QpB2OQmIuTa6V5k\"",
+           "etag": "\"gMxXHe-zinKdE9lTnzKu8vjcmDI/i_2ge7Hsv6L3QpB2OQmIuTa6V5k\"",
            "id": "PLA575C81A1FBC04CF",
            "snippet": {
             "publishedAt": "2010-01-07T22:20:45.000Z",
@@ -90,5 +90,5 @@ http_interactions:
          ]
         }
     http_version: 
-  recorded_at: Thu, 03 Nov 2016 01:09:44 GMT
-recorded_with: VCR 3.0.1
+  recorded_at: Sun, 11 Dec 2016 19:15:10 GMT
+recorded_with: VCR 3.0.3

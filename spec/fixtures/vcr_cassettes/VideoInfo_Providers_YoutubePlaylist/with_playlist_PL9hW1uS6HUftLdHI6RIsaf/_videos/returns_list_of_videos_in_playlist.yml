@@ -19,13 +19,13 @@ http_interactions:
       message: OK
     headers:
       Expires:
-      - Thu, 03 Nov 2016 01:09:48 GMT
+      - Sun, 11 Dec 2016 19:15:11 GMT
       Date:
-      - Thu, 03 Nov 2016 01:09:48 GMT
+      - Sun, 11 Dec 2016 19:15:11 GMT
       Cache-Control:
       - private, max-age=0, must-revalidate, no-transform
       Etag:
-      - '"sZ5p5Mo8dPpfIzLYQBF8QIQJym0/J2bTdCkcJrq35w3Jfk9blCtEa8M"'
+      - '"gMxXHe-zinKdE9lTnzKu8vjcmDI/hn9MuK-sE8HWV1bSoAPgJoKBoYE"'
       Vary:
       - Origin
       - X-Origin
@@ -42,7 +42,7 @@ http_interactions:
       Server:
       - GSE
       Alt-Svc:
-      - quic=":443"; ma=2592000; v="36,35,34"
+      - quic=":443"; ma=2592000; v="35,34"
     body:
       encoding: UTF-8
       string: |
@@ -50,7 +50,7 @@ http_interactions:
          "items": [
           {
            "kind": "youtube#playlistItem",
-           "etag": "\"sZ5p5Mo8dPpfIzLYQBF8QIQJym0/CckQjG1ENeGrjHXXbCkMyw56N6Y\"",
+           "etag": "\"gMxXHe-zinKdE9lTnzKu8vjcmDI/CckQjG1ENeGrjHXXbCkMyw56N6Y\"",
            "id": "UEw5aFcxdVM2SFVmdExkSEk2UklzYWYtaVhUbTA5cW5Fci41MzJCQjBCNDIyRkJDN0VD",
            "snippet": {
             "publishedAt": "2015-04-22T21:47:21.000Z",
@@ -95,7 +95,7 @@ http_interactions:
           },
           {
            "kind": "youtube#playlistItem",
-           "etag": "\"sZ5p5Mo8dPpfIzLYQBF8QIQJym0/7uNlnnzetzxOAgbocO_UEYRKP-8\"",
+           "etag": "\"gMxXHe-zinKdE9lTnzKu8vjcmDI/7uNlnnzetzxOAgbocO_UEYRKP-8\"",
            "id": "UEw5aFcxdVM2SFVmdExkSEk2UklzYWYtaVhUbTA5cW5Fci5DQUNERDQ2NkIzRUQxNTY1",
            "snippet": {
             "publishedAt": "2015-04-22T21:48:43.000Z",
@@ -135,7 +135,7 @@ http_interactions:
           },
           {
            "kind": "youtube#playlistItem",
-           "etag": "\"sZ5p5Mo8dPpfIzLYQBF8QIQJym0/jw4lwO4cFZlMCF64f2m5f-jg9JM\"",
+           "etag": "\"gMxXHe-zinKdE9lTnzKu8vjcmDI/jw4lwO4cFZlMCF64f2m5f-jg9JM\"",
            "id": "UEw5aFcxdVM2SFVmdExkSEk2UklzYWYtaVhUbTA5cW5Fci4wOTA3OTZBNzVEMTUzOTMy",
            "snippet": {
             "publishedAt": "2013-09-13T16:49:50.000Z",
@@ -180,7 +180,7 @@ http_interactions:
           },
           {
            "kind": "youtube#playlistItem",
-           "etag": "\"sZ5p5Mo8dPpfIzLYQBF8QIQJym0/vcBVlTuT5TB_QWXaTDCcvOrFGhI\"",
+           "etag": "\"gMxXHe-zinKdE9lTnzKu8vjcmDI/vcBVlTuT5TB_QWXaTDCcvOrFGhI\"",
            "id": "UEw5aFcxdVM2SFVmdExkSEk2UklzYWYtaVhUbTA5cW5Fci4wMTcyMDhGQUE4NTIzM0Y5",
            "snippet": {
             "publishedAt": "2013-08-09T05:09:51.000Z",
@@ -215,7 +215,7 @@ http_interactions:
           },
           {
            "kind": "youtube#playlistItem",
-           "etag": "\"sZ5p5Mo8dPpfIzLYQBF8QIQJym0/191Hb3um-8_q4QBsjYDqsEZaKy4\"",
+           "etag": "\"gMxXHe-zinKdE9lTnzKu8vjcmDI/191Hb3um-8_q4QBsjYDqsEZaKy4\"",
            "id": "UEw5aFcxdVM2SFVmdExkSEk2UklzYWYtaVhUbTA5cW5Fci4yODlGNEE0NkRGMEEzMEQy",
            "snippet": {
             "publishedAt": "2013-08-09T05:09:51.000Z",
@@ -261,5 +261,5 @@ http_interactions:
          ]
         }
     http_version: 
-  recorded_at: Thu, 03 Nov 2016 01:09:48 GMT
-recorded_with: VCR 3.0.1
+  recorded_at: Sun, 11 Dec 2016 19:15:11 GMT
+recorded_with: VCR 3.0.3

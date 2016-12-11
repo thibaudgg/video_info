@@ -21,15 +21,15 @@ http_interactions:
       Server:
       - Apache
       Date:
-      - Thu, 03 Nov 2016 01:08:53 GMT
+      - Sun, 11 Dec 2016 19:14:25 GMT
       Content-Type:
       - text/html
       Content-Length:
       - '405'
-      Etag:
-      - '"57d08209-195"'
       Connection:
       - keep-alive
+      Etag:
+      - '"57d08209-195"'
     body:
       encoding: UTF-8
       string: |
@@ -43,5 +43,5 @@ http_interactions:
         </body>
         </html>
     http_version: 
-  recorded_at: Thu, 03 Nov 2016 01:08:53 GMT
-recorded_with: VCR 3.0.1
+  recorded_at: Sun, 11 Dec 2016 19:14:25 GMT
+recorded_with: VCR 3.0.3

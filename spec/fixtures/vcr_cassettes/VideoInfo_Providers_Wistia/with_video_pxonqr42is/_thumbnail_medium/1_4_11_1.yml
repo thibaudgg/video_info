@@ -33,9 +33,9 @@ http_interactions:
       P3p:
       - CP="CURi ADMa DEVa IVAa IVDa CONi OUR IND DSP CAO COR"
       X-Request-Id:
-      - bec6d24d-456f-4bb9-95b2-d42df722dd6f
+      - 98be2d48-ed3e-4016-88e3-f71cc7119a09
       X-Runtime:
-      - '0.074850'
+      - '0.071001'
       Via:
       - 1.1 varnish
       - 1.1 varnish
@@ -46,23 +46,23 @@ http_interactions:
       Accept-Ranges:
       - bytes
       Date:
-      - Thu, 03 Nov 2016 01:09:43 GMT
+      - Sun, 11 Dec 2016 19:15:09 GMT
       Age:
-      - '170'
+      - '0'
+      Connection:
+      - keep-alive
       X-Served-By:
-      - cache-ord1725-ORD, cache-lax8637-LAX
+      - cache-ord1745-ORD, cache-sjc3129-SJC
       X-Cache:
-      - HIT, HIT
+      - MISS, HIT
       X-Cache-Hits:
-      - 1, 1
+      - 0, 1
       X-Timer:
-      - S1478135383.506912,VS0,VE0
+      - S1481483709.736642,VS0,VE5
       Vary:
       - Accept-Encoding,X-Forwarded-Proto
       Strict-Transport-Security:
       - max-age=0
-      Connection:
-      - keep-alive
     body:
       encoding: ASCII-8BIT
       string: '{"version":"1.0","type":"video","html":"\u003ciframe src=\"//fast.wistia.net/embed/iframe/pxonqr42is\"
@@ -72,5 +72,5 @@ http_interactions:
         src=\"//fast.wistia.net/assets/external/E-v1.js\" async\u003e\u003c/script\u003e","width":960,"height":540,"provider_name":"Wistia,
         Inc.","provider_url":"https://wistia.com","title":"Understanding Analytics","thumbnail_url":"https://embed-ssl.wistia.com/deliveries/0fccbdc60ade35723f79f1c002bc61b135b610fa.jpg?image_crop_resized=960x540","thumbnail_width":960,"thumbnail_height":540,"duration":250.0}'
     http_version: 
-  recorded_at: Thu, 03 Nov 2016 01:09:43 GMT
-recorded_with: VCR 3.0.1
+  recorded_at: Sun, 11 Dec 2016 19:15:09 GMT
+recorded_with: VCR 3.0.3

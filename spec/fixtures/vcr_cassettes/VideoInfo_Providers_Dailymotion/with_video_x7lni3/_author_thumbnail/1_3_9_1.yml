@@ -1118,7 +1118,7 @@ http_interactions:
       X-Dm-Api-Object:
       - video
       X-Dm-Backnode:
-      - 10.190.2.51:80
+      - web-332.adm.dc3.dailymotion.com:80
       X-Dm-Api-Method:
       - info
       Cache-Control:
@@ -1133,9 +1133,9 @@ http_interactions:
       X-Dm-Tg:
       - v-x7lni3
       X-Dm-Lb-Name:
-      - lb-10
+      - lb-08
       X-Dm-Random-Number:
-      - '2932971'
+      - '8056951'
       Access-Control-Allow-Origin:
       - "*"
       Etag:
@@ -1156,21 +1156,23 @@ http_interactions:
       Fastly-Debug-Digest:
       - 2236e0b1525f3241d04a3a531508c8a4d9999d65c6c6ba13ee5490c0a21c6a5e
       Content-Length:
-      - '491'
+      - '492'
       Accept-Ranges:
       - bytes
       Date:
-      - Tue, 08 Nov 2016 05:12:09 GMT
+      - Sun, 11 Dec 2016 19:13:43 GMT
       Age:
       - '0'
       Connection:
       - keep-alive
       X-Served-By:
-      - cache-fra1220-FRA, cache-sjc3132-SJC
+      - cache-fra1248-FRA, cache-sjc3132-SJC
       X-Cache:
       - MISS, HIT
       X-Cache-Hits:
       - 0, 1
+      X-Timer:
+      - S1481483623.166282,VS0,VE0
       Vary:
       - X-DM-EC-Geo-Country, Accept-Encoding
       X-Dm-Backnode-Response-Time:
@@ -1184,8 +1186,8 @@ http_interactions:
       string: '{"id":"x7lni3","title":"Mario Kart (R\u00e9mi Gaillard)","description":"Super
         R\u00e9mi Kart est un jeu vid\u00e9o de course d\u00e9velopp\u00e9 et \u00e9dit\u00e9
         par N''Importe Quoi TV. Sa principale originalit\u00e9 vient de sa r\u00e9alit\u00e9...<br
-        \/>L''aventure continue sur www.nimportequi.com","duration":136,"created_time":1228321771,"url":"http:\/\/www.dailymotion.com\/video\/x7lni3_mario-kart-remi-gaillard_fun","views_total":10312313,"tags":["r\u00e9mi","remi","gaillard","imposteur","imposture","mario","bros","kart","nintendo","jeux"],"thumbnail_url":"http:\/\/s2.dmcdn.net\/BgWxI.jpg","thumbnail_720_url":"http:\/\/s2.dmcdn.net\/BgWxI\/x720-YcV.jpg","owner.url":"http:\/\/www.dailymotion.com\/nqtv","owner.screenname":"R\u00e9mi
+        \/>L''aventure continue sur www.nimportequi.com","duration":136,"created_time":1228321771,"url":"http:\/\/www.dailymotion.com\/video\/x7lni3_mario-kart-remi-gaillard_fun","views_total":10314018,"tags":["r\u00e9mi","remi","gaillard","imposteur","imposture","mario","bros","kart","nintendo","jeux"],"thumbnail_url":"http:\/\/s2.dmcdn.net\/BgWxI.jpg","thumbnail_720_url":"http:\/\/s2.dmcdn.net\/BgWxI\/x720-YcV.jpg","owner.url":"http:\/\/www.dailymotion.com\/nqtv","owner.screenname":"R\u00e9mi
         Gaillard","owner.avatar_60_url":"http:\/\/s2.dmcdn.net\/HN6TP\/60x60-lEL.jpg","thumbnail_240_url":"http:\/\/s2.dmcdn.net\/BgWxI\/x240-b83.jpg","thumbnail_60_url":"http:\/\/s2.dmcdn.net\/BgWxI\/x60-kbf.jpg"}'
     http_version: 
-  recorded_at: Tue, 08 Nov 2016 05:12:09 GMT
+  recorded_at: Sun, 11 Dec 2016 19:13:43 GMT
 recorded_with: VCR 3.0.3

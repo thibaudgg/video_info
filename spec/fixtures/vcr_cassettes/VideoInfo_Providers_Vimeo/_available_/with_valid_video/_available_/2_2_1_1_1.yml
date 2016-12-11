@@ -31,9 +31,9 @@ http_interactions:
       X-Ratelimit-Remaining:
       - '499'
       X-Ratelimit-Reset:
-      - '2016-11-03T01:23:42+00:00'
+      - '2016-12-11T19:29:18+00:00'
       Expires:
-      - Sun, 01 Nov 2026 01:08:42 GMT
+      - Wed, 09 Dec 2026 19:14:18 GMT
       Via:
       - 1.1 varnish
       - 1.1 varnish
@@ -44,24 +44,24 @@ http_interactions:
       Accept-Ranges:
       - bytes
       Date:
-      - Thu, 03 Nov 2016 01:08:42 GMT
+      - Sun, 11 Dec 2016 19:14:18 GMT
       Age:
       - '0'
       Connection:
       - keep-alive
       X-Served-By:
-      - cache-iad2120-IAD, cache-lax8625-LAX
+      - cache-iad2132-IAD, cache-sjc3628-SJC
       X-Cache:
       - MISS, MISS
       X-Cache-Hits:
       - 0, 0
       X-Timer:
-      - S1478135322.112451,VS0,VE366
+      - S1481483658.376541,VS0,VE527
       Vary:
       - Accept,Vimeo-Client-Id,Accept-Encoding
     body:
       encoding: UTF-8
       string: ''
     http_version: 
-  recorded_at: Thu, 03 Nov 2016 01:08:42 GMT
-recorded_with: VCR 3.0.1
+  recorded_at: Sun, 11 Dec 2016 19:14:18 GMT
+recorded_with: VCR 3.0.3

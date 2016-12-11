@@ -19,13 +19,13 @@ http_interactions:
       message: OK
     headers:
       Expires:
-      - Thu, 03 Nov 2016 01:09:56 GMT
+      - Sun, 11 Dec 2016 19:15:14 GMT
       Date:
-      - Thu, 03 Nov 2016 01:09:56 GMT
+      - Sun, 11 Dec 2016 19:15:14 GMT
       Cache-Control:
       - private, max-age=0, must-revalidate, no-transform
       Etag:
-      - '"sZ5p5Mo8dPpfIzLYQBF8QIQJym0/agg8LwUfxQxkn2kzTfKMNFlldxI"'
+      - '"gMxXHe-zinKdE9lTnzKu8vjcmDI/agg8LwUfxQxkn2kzTfKMNFlldxI"'
       Vary:
       - Origin
       - X-Origin
@@ -42,13 +42,13 @@ http_interactions:
       Server:
       - GSE
       Alt-Svc:
-      - quic=":443"; ma=2592000; v="36,35,34"
+      - quic=":443"; ma=2592000; v="35,34"
     body:
       encoding: UTF-8
       string: |
         {
          "kind": "youtube#playlistListResponse",
-         "etag": "\"sZ5p5Mo8dPpfIzLYQBF8QIQJym0/agg8LwUfxQxkn2kzTfKMNFlldxI\"",
+         "etag": "\"gMxXHe-zinKdE9lTnzKu8vjcmDI/agg8LwUfxQxkn2kzTfKMNFlldxI\"",
          "pageInfo": {
           "totalResults": 1,
           "resultsPerPage": 5
@@ -56,7 +56,7 @@ http_interactions:
          "items": [
           {
            "kind": "youtube#playlist",
-           "etag": "\"sZ5p5Mo8dPpfIzLYQBF8QIQJym0/F2mG6YyXZ_T9NjBk6OlhtoKuxPY\"",
+           "etag": "\"gMxXHe-zinKdE9lTnzKu8vjcmDI/F2mG6YyXZ_T9NjBk6OlhtoKuxPY\"",
            "id": "PL9hW1uS6HUftLdHI6RIsaf-iXTm09qnEr",
            "snippet": {
             "publishedAt": "2013-08-09T05:09:51.000Z",
@@ -101,7 +101,7 @@ http_interactions:
          ]
         }
     http_version: 
-  recorded_at: Thu, 03 Nov 2016 01:09:56 GMT
+  recorded_at: Sun, 11 Dec 2016 19:15:14 GMT
 - request:
     method: get
     uri: https://www.googleapis.com/youtube/v3/channels?id=UCMDQxm7cUx3yXkfeHa5zJIQ&key=AIzaSyA6PYwSr1EnLFUFy1cZDk3Ifb0rxeJaeZ0&part=snippet
@@ -121,13 +121,13 @@ http_interactions:
       message: OK
     headers:
       Expires:
-      - Thu, 03 Nov 2016 01:09:56 GMT
+      - Sun, 11 Dec 2016 19:15:14 GMT
       Date:
-      - Thu, 03 Nov 2016 01:09:56 GMT
+      - Sun, 11 Dec 2016 19:15:14 GMT
       Cache-Control:
       - private, max-age=300, must-revalidate, no-transform
       Etag:
-      - '"sZ5p5Mo8dPpfIzLYQBF8QIQJym0/Wxm4uDFH3Jt788R_hBzww9z1Yc4"'
+      - '"gMxXHe-zinKdE9lTnzKu8vjcmDI/Wxm4uDFH3Jt788R_hBzww9z1Yc4"'
       Vary:
       - Origin
       - X-Origin
@@ -144,13 +144,13 @@ http_interactions:
       Server:
       - GSE
       Alt-Svc:
-      - quic=":443"; ma=2592000; v="36,35,34"
+      - quic=":443"; ma=2592000; v="35,34"
     body:
       encoding: UTF-8
       string: |
         {
          "kind": "youtube#channelListResponse",
-         "etag": "\"sZ5p5Mo8dPpfIzLYQBF8QIQJym0/Wxm4uDFH3Jt788R_hBzww9z1Yc4\"",
+         "etag": "\"gMxXHe-zinKdE9lTnzKu8vjcmDI/Wxm4uDFH3Jt788R_hBzww9z1Yc4\"",
          "pageInfo": {
           "totalResults": 1,
           "resultsPerPage": 1
@@ -158,7 +158,7 @@ http_interactions:
          "items": [
           {
            "kind": "youtube#channel",
-           "etag": "\"sZ5p5Mo8dPpfIzLYQBF8QIQJym0/t9MW7PttflLCT1O3v1auYtg1YBs\"",
+           "etag": "\"gMxXHe-zinKdE9lTnzKu8vjcmDI/t9MW7PttflLCT1O3v1auYtg1YBs\"",
            "id": "UCMDQxm7cUx3yXkfeHa5zJIQ",
            "snippet": {
             "title": "YouTube Help",
@@ -185,5 +185,5 @@ http_interactions:
          ]
         }
     http_version: 
-  recorded_at: Thu, 03 Nov 2016 01:09:56 GMT
-recorded_with: VCR 3.0.1
+  recorded_at: Sun, 11 Dec 2016 19:15:14 GMT
+recorded_with: VCR 3.0.3
