@@ -49,7 +49,7 @@ describe VideoInfo::Providers::Vkontakte do
 
   describe '#available?' do
     context 'with valid video', :vcr do
-      subject { VideoInfo.new('http://vk.com/video39576223_108370515') }
+      subject { VideoInfo.new('https://vk.com/videos39576223?z=video39576223_165607445%2Fpl_39576223_-2') }
       its(:available?) { should be_truthy }
     end
 
