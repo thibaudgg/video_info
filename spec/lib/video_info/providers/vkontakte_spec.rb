@@ -119,7 +119,7 @@ describe VideoInfo::Providers::Vkontakte do
     its(:title)            { should eq video_title }
     its(:author)           { should eq('Dasha Saley').or(eq('Даша Салей')) }
     its(:author_thumbnail) { should eq author_thumbnail }
-    its(:author_url)       { should eq 'https://vk.com/dariasaley' }
+    its(:author_url)       { should eq 'https://vk.com/videos43640822' }
   end
 
   context 'with video from kirill.lyanoi?z=' \
@@ -162,7 +162,7 @@ describe VideoInfo::Providers::Vkontakte do
     its(:view_count)       { should be > 10 }
     its(:author)           { should eq(author).or(eq(author_alt)) }
     its(:author_thumbnail) { should eq author_thumbnail }
-    its(:author_url)       { should eq 'https://vk.com/lyanoi.kirill' }
+    its(:author_url)       { should eq 'https://vk.com/videos2152699' }
     its(:thumbnail)        { should be_nil }
   end
 
