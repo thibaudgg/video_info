@@ -51,15 +51,12 @@ class VideoInfo
 
       def author_thumbnail
         split_point = '<img id="mv_author_photo" class="mv_author_photo" src="'
-        author_img_split = data.split(split_point)[1]
-        author_img_split.split('">')[0]
+        get_between(split_point, '">')
       end
 
       def author_url
-        # #author, #author_url, and #author_thumbnail all share the same logic
         split_point = "<div class=\"mv_author_name\">\n          <a class=\"mem_link\" href=\""
-        author_url_path = data.split(split_point)[1].split('">')[0]
-        'https://vk.com' + author_url_path
+        'https://vk.com' + get_between(split_point, '">')
       end
 
       def title
@@ -187,6 +184,10 @@ class VideoInfo
 
       def _api_url
         URI('https://vk.com/al_video.php')
+      end
+
+      def get_between(from_here, to_here)
+        data.split(from_here)[1].split(to_here)[0]
       end
     end
   end
