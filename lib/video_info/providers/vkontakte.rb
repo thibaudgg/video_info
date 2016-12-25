@@ -34,14 +34,11 @@ class VideoInfo
       end
 
       def width
-        { 240 => 320,
-          360 => 480,
-          480 => 640,
-          720 => 1280 }[height].to_i
+        data[/PLAYER_FULL_WIDTH":(\d+)/, 1].to_i
       end
 
       def height
-        data[/url(\d+)/, 1].to_i
+        data[/PLAYER_FULL_HEIGHT":(\d+)/, 1].to_i
       end
 
       def author
@@ -64,7 +61,7 @@ class VideoInfo
       end
 
       def view_count
-        data[/mv_views_count_number\">.*?(\d+)/, 1].to_i
+        data[/mv_views_count.*?(\d+)/, 1].to_i
       end
 
       def embed_url
@@ -91,13 +88,14 @@ class VideoInfo
 
       def available?
         !%w[403 404 302 401].include?(_response_code) &&
-          !(data =~ /Ошибка доступа/)
+          !(data =~ /(Ошибка доступа|Access denied)/)
       end
 
       private
 
       def _make_request(url, options)
         request = Net::HTTP::Post.new(url.path)
+        request.add_field 'User-Agent', 'Mozilla/5.0 (Linux; VideoInfo)'
         request.body = URI.encode_www_form(options)
         conn = Net::HTTP.new(url.host, url.port)
         conn.use_ssl = true
@@ -108,6 +106,8 @@ class VideoInfo
       def _set_data_from_api_impl(api_url)
         options['act'] = 'show'
         options['al'] = '1'
+        options['autoplay'] = '0'
+        options['module'] = 'profile'
         options['video'] = "#{@video_owner}_#{@video_id}"
         data = _make_request(api_url, options)
         if data.index('Ошибка доступа')
@@ -142,15 +142,15 @@ class VideoInfo
       end
 
       def _response_code
-        response = Net::HTTP.get_response(_api_base, _api_path, 80)
-        code = _get_response_code response
-        if code == '302'
-          _get_response_code Net::HTTP.get_response(
-            URI.parse(response.header['location'])
-          )
-        else
-          code
+        check_url = URI.parse(url)
+        req = Net::HTTP::Get.new(check_url)
+        req.add_field('User-Agent', 'Mozilla/5.0 (Linux; VideoInfo)')
+        res = Net::HTTP.start(check_url.host, check_url.port) do |http|
+          http.request(req)
         end
+        return res.code unless res.code == '302' && !res['location'].nil?
+        self.url = res['location']
+        _response_code
       end
 
       def _api_base
