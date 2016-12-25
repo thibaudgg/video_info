@@ -71,7 +71,7 @@ describe VideoInfo::Providers::Vkontakte do
     end
 
     context 'with redirect to main page for auth', :vcr do
-      video_url = 'http://vk.com/video?z=video1472940_169081944%2Falbum1472940'
+      video_url = 'https://vk.com/video?z=video39576223_166315543%2Fpl_cat_updates'
       subject { VideoInfo.new(video_url) }
       its(:available?) { should be_falsey }
     end
@@ -130,20 +130,16 @@ describe VideoInfo::Providers::Vkontakte do
 
     author_thumbnail = 'https://pp.vk.me/c623824/v623824699' \
                        '/55575/CCQZ29l0B9k.jpg'
+    thumbnail_small = 'https://pp.vk.me/c617831/u96123303/video/l_27e4ff5c.jpg'
     description_text = 'BEAT SOUL STEP ★ Project818 Russian ' \
                        'Dance Championship ★ 1-2 мая, Москва 2014'
     video_title = 'BEAT SOUL STEP — RDC14 Project818 Russian ' \
                   'Dance Championship, May 1-2, Moscow 2014'
-    embed_code = '<iframe src="https://www.youtube.com/embed/' \
-                 '4Thws5wq5GI?enablejsapi=1&autoplay=0&start=0' \
-                 '&autohide=1&wmode=opaque&showinfo=0&origin=' \
-                 'https://vk.com&fs=1&rel=0&cc_load_policy=0' \
-                 '&iv_load_policy=3" frameborder="0" ' \
+    embed_code = '<iframe src="//vk.com/video_ext.php?oid=2152699' \
+                 '&id=168591741&hash=ea1d3db98818125d" frameborder="0" ' \
                  'allowfullscreen="allowfullscreen"></iframe>'
-    embed_url = 'https://www.youtube.com/embed/4Thws5wq5GI?enablejsapi=1' \
-                '&autoplay=0&start=0&autohide=1&wmode=opaque&showinfo=0' \
-                '&origin=https://vk.com&fs=1&rel=0&cc_load_policy=0' \
-                '&iv_load_policy=3'
+    embed_url = '//vk.com/video_ext.php?oid=2152699&id=168591741' \
+                '&hash=ea1d3db98818125d'
     author = 'Kirill Lyanoy'
     author_alt = 'Кирилл Льяной'
 
@@ -157,37 +153,39 @@ describe VideoInfo::Providers::Vkontakte do
     its(:description)      { should start_with description_text }
     its(:keywords)         { should be_nil }
     its(:duration)         { should eq 299 }
-    its(:width)            { should eq 0 }
-    its(:height)           { should eq 0 }
+    its(:width)            { should eq 960 }
+    its(:height)           { should eq 540 }
     its(:view_count)       { should be > 10 }
     its(:author)           { should eq(author).or(eq(author_alt)) }
     its(:author_thumbnail) { should eq author_thumbnail }
     its(:author_url)       { should eq 'https://vk.com/videos2152699' }
     its(:thumbnail)        { should be_nil }
+    its(:thumbnail_small)  { should eq thumbnail_small }
   end
 
-  context 'with video video39576223_108370515', :vcr do
-    subject { VideoInfo.new('http://vk.com/video39576223_108370515') }
+  context 'with video video39576223_161598544', :vcr do
+    subject { VideoInfo.new('https://vk.com/video39576223_161598544') }
 
-    description_text = 'это ВЗРЫВ МОЗГА!!!<br>Просто отвал башки...'
+    title_text = 'Harry Partridge - Skyrim (русская озвучка)'
+    description_text = 'Тут могло быть описание'
     embed_url = '//vk.com/video_ext.php?oid=39576223&' \
-                'id=108370515&hash=15184dbd085c47af'
-    embed_code = '<iframe src="//vk.com/video_ext.php?oid=39576223&' \
-                 'id=108370515&hash=15184dbd085c47af" frameborder="0" ' \
-                 'allowfullscreen="allowfullscreen"></iframe>'
+                'id=161598544&hash=f7140d579b7f53e4'
+    embed_code = '<iframe src="//vk.com/video_ext.php?oid=39576223' \
+                 '&id=161598544&hash=f7140d579b7f53e4" frameborder="0"' \
+                 ' allowfullscreen="allowfullscreen"></iframe>'
 
     its(:provider)     { should eq 'Vkontakte' }
     its(:video_owner)  { should eq '39576223' }
-    its(:video_id)     { should eq '108370515' }
-    its(:url)          { should eq 'http://vk.com/video39576223_108370515' }
+    its(:video_id)     { should eq '161598544' }
+    its(:url)          { should eq 'https://vk.com/video39576223_161598544' }
     its(:embed_url)    { should eq embed_url }
     its(:embed_code)   { should eq embed_code }
-    its(:title)        { should eq 'Я уточка)))))' }
+    its(:title)        { should eq title_text }
     its(:description)  { should eq description_text }
     its(:keywords)     { should be_nil }
-    its(:duration)     { should eq 183 }
-    its(:width)        { should eq 320 }
-    its(:height)       { should eq 240 }
+    its(:duration)     { should eq 85 }
+    its(:width)        { should eq 960 }
+    its(:height)       { should eq 540 }
     its(:view_count)   { should be > 10 }
   end
 
@@ -232,11 +230,8 @@ describe VideoInfo::Providers::Vkontakte do
   context 'with video video3552522_171340713', :vcr do
     subject { VideoInfo.new('http://vk.com/video3552522_171340713') }
 
-    embed_url = 'https://www.youtube.com/embed/C3_e-e6qoSg?' \
-                'enablejsapi=1&autoplay=0&start=0&autohide=1' \
-                '&wmode=opaque&showinfo=0&origin=' \
-                'https://vk.com&fs=1&rel=0&cc_load_policy=0' \
-                '&iv_load_policy=3'
+    embed_url = '//vk.com/video_ext.php?oid=3552522&id=171340713' \
+                '&hash=9826caf9bf171494'
 
     its(:embed_url) { should eq embed_url }
   end
