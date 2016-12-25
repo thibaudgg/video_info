@@ -38200,7 +38200,7 @@ http_interactions:
       Server:
       - Apache
       Date:
-      - Sun, 25 Dec 2016 15:26:30 GMT
+      - Sun, 25 Dec 2016 16:09:40 GMT
       Content-Type:
       - text/html
       Content-Length:
@@ -38214,7 +38214,7 @@ http_interactions:
         plain HTTP request was sent to HTTPS port</center>\r\n<hr><center> Apache
         </center>\r\n</body>\r\n</html>\r\n"
     http_version: 
-  recorded_at: Sun, 25 Dec 2016 15:26:30 GMT
+  recorded_at: Sun, 25 Dec 2016 16:09:40 GMT
 - request:
     method: post
     uri: https://vk.com/al_video.php
@@ -38237,7 +38237,7 @@ http_interactions:
       Server:
       - Apache
       Date:
-      - Sun, 25 Dec 2016 15:26:31 GMT
+      - Sun, 25 Dec 2016 16:09:40 GMT
       Content-Type:
       - text/html; charset=windows-1251
       Content-Length:
@@ -38247,7 +38247,7 @@ http_interactions:
       X-Powered-By:
       - PHP/3.8993
       Set-Cookie:
-      - remixlang=0; expires=Fri, 22 Dec 2017 13:53:47 GMT; path=/; domain=.vk.com
+      - remixlang=0; expires=Sun, 17 Dec 2017 05:44:45 GMT; path=/; domain=.vk.com
       Pragma:
       - no-cache
       Cache-Control:
@@ -38259,7 +38259,7 @@ http_interactions:
         7vHy8+/gICg1KTwhPjwhPjU2MDgxNDE2PCE+PCFwYWdldmlld19jYW5kaWRh
         dGU+
     http_version: 
-  recorded_at: Sun, 25 Dec 2016 15:26:30 GMT
+  recorded_at: Sun, 25 Dec 2016 16:09:40 GMT
 - request:
     method: post
     uri: https://vk.com/al_video.php
@@ -38282,7 +38282,7 @@ http_interactions:
       Server:
       - Apache
       Date:
-      - Sun, 25 Dec 2016 15:26:31 GMT
+      - Sun, 25 Dec 2016 16:09:40 GMT
       Content-Type:
       - text/html; charset=windows-1251
       Content-Length:
@@ -38292,7 +38292,7 @@ http_interactions:
       X-Powered-By:
       - PHP/3.8993
       Set-Cookie:
-      - remixlang=0; expires=Mon, 25 Dec 2017 11:48:16 GMT; path=/; domain=.vk.com
+      - remixlang=0; expires=Sun, 24 Dec 2017 20:56:46 GMT; path=/; domain=.vk.com
       Pragma:
       - no-cache
       Cache-Control:
@@ -38304,5 +38304,5 @@ http_interactions:
         7vHy8+/gICg1KTwhPjwhPjU2MDgxNDE2PCE+PCFwYWdldmlld19jYW5kaWRh
         dGU+
     http_version: 
-  recorded_at: Sun, 25 Dec 2016 15:26:31 GMT
+  recorded_at: Sun, 25 Dec 2016 16:09:40 GMT
 recorded_with: VCR 3.0.3

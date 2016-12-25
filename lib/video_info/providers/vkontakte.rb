@@ -91,6 +91,24 @@ class VideoInfo
           !(data =~ /(Ошибка доступа|Access denied)/)
       end
 
+      def thumbnail_small
+        thumb = data[/"thumb":"(.*?)"/, 1]
+        return thumb.delete('\\') unless thumb.nil?
+        nil
+      end
+
+      def thumbnail_medium
+        thumbnail_small
+      end
+
+      def thumbnail_large
+        nil
+      end
+
+      def thumbnail_maxres
+        nil
+      end
+
       private
 
       def _make_request(url, options)

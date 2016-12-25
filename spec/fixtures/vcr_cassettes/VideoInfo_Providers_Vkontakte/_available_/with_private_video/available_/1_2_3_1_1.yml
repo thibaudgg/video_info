@@ -487,90 +487,6 @@ http_interactions:
     http_version: 
   recorded_at: Mon, 12 Dec 2016 07:16:07 GMT
 - request:
-    method: post
-    uri: https://vk.com/al_video.php
-    body:
-      encoding: US-ASCII
-      string: User-Agent=VideoInfo%2F2.6.1&act=show&al=1&autoplay=0&module=profile&video=39576223_166315543
-    headers:
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-      User-Agent:
-      - Mozilla/5.0 (Linux; VideoInfo)
-      - Ruby
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Server:
-      - Apache
-      Date:
-      - Sun, 25 Dec 2016 15:47:01 GMT
-      Content-Type:
-      - text/html; charset=windows-1251
-      Content-Length:
-      - '98'
-      Connection:
-      - keep-alive
-      X-Powered-By:
-      - PHP/3.8993
-      Set-Cookie:
-      - remixlang=3; expires=Thu, 21 Dec 2017 19:54:57 GMT; path=/; domain=.vk.com
-      Pragma:
-      - no-cache
-      Cache-Control:
-      - no-store
-    body:
-      encoding: ASCII-8BIT
-      string: "<!--843784178155<!><!>3<!>3692<!>8<!>Access denied (5)<!><!>56081416<!><!pageview_candidate>"
-    http_version: 
-  recorded_at: Sun, 25 Dec 2016 15:47:01 GMT
-- request:
-    method: post
-    uri: https://vk.com/al_video.php
-    body:
-      encoding: US-ASCII
-      string: User-Agent=VideoInfo%2F2.6.1&act=show&al=1&autoplay=0&module=profile&video=39576223_166315543
-    headers:
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-      User-Agent:
-      - Mozilla/5.0 (Linux; VideoInfo)
-      - Ruby
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Server:
-      - Apache
-      Date:
-      - Sun, 25 Dec 2016 15:47:34 GMT
-      Content-Type:
-      - text/html; charset=windows-1251
-      Content-Length:
-      - '98'
-      Connection:
-      - keep-alive
-      X-Powered-By:
-      - PHP/3.8993
-      Set-Cookie:
-      - remixlang=3; expires=Sun, 31 Dec 2017 06:54:32 GMT; path=/; domain=.vk.com
-      Pragma:
-      - no-cache
-      Cache-Control:
-      - no-store
-    body:
-      encoding: ASCII-8BIT
-      string: "<!--843784178155<!><!>3<!>3692<!>8<!>Access denied (5)<!><!>56081416<!><!pageview_candidate>"
-    http_version: 
-  recorded_at: Sun, 25 Dec 2016 15:47:35 GMT
-- request:
     method: get
     uri: http://vk.com/video39576223_166315543
     body:
@@ -594,7 +510,7 @@ http_interactions:
       Server:
       - Apache
       Date:
-      - Sun, 25 Dec 2016 15:47:39 GMT
+      - Sun, 25 Dec 2016 16:09:38 GMT
       Content-Type:
       - text/html; charset=windows-1251
       Content-Length:
@@ -604,7 +520,7 @@ http_interactions:
       X-Powered-By:
       - PHP/3.8993
       Set-Cookie:
-      - remixlang=3; expires=Mon, 01 Jan 2018 07:46:51 GMT; path=/; domain=.vk.com
+      - remixlang=0; expires=Thu, 04 Jan 2018 11:49:25 GMT; path=/; domain=.vk.com
       Pragma:
       - no-cache
       Cache-Control:
@@ -615,7 +531,7 @@ http_interactions:
       encoding: ASCII-8BIT
       string: ''
     http_version: 
-  recorded_at: Sun, 25 Dec 2016 15:47:39 GMT
+  recorded_at: Sun, 25 Dec 2016 16:09:38 GMT
 - request:
     method: get
     uri: http://vk.com:443/video39576223_166315543
@@ -640,7 +556,7 @@ http_interactions:
       Server:
       - Apache
       Date:
-      - Sun, 25 Dec 2016 15:47:43 GMT
+      - Sun, 25 Dec 2016 16:09:39 GMT
       Content-Type:
       - text/html
       Content-Length:
@@ -654,5 +570,95 @@ http_interactions:
         plain HTTP request was sent to HTTPS port</center>\r\n<hr><center> Apache
         </center>\r\n</body>\r\n</html>\r\n"
     http_version: 
-  recorded_at: Sun, 25 Dec 2016 15:47:43 GMT
+  recorded_at: Sun, 25 Dec 2016 16:09:39 GMT
+- request:
+    method: post
+    uri: https://vk.com/al_video.php
+    body:
+      encoding: US-ASCII
+      string: User-Agent=VideoInfo%2F2.6.1&act=show&al=1&autoplay=0&module=profile&video=39576223_166315543
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Mozilla/5.0 (Linux; VideoInfo)
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Apache
+      Date:
+      - Sun, 25 Dec 2016 16:09:39 GMT
+      Content-Type:
+      - text/html; charset=windows-1251
+      Content-Length:
+      - '99'
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - PHP/3.8993
+      Set-Cookie:
+      - remixlang=0; expires=Sun, 24 Dec 2017 09:36:32 GMT; path=/; domain=.vk.com
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - no-store
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        PCEtLTg0Mzc4NDE3ODE1NTwhPjwhPjA8IT42NzU1PCE+ODwhPs746OHq4CDk
+        7vHy8+/gICg1KTwhPjwhPjU2MDgxNDE2PCE+PCFwYWdldmlld19jYW5kaWRh
+        dGU+
+    http_version: 
+  recorded_at: Sun, 25 Dec 2016 16:09:39 GMT
+- request:
+    method: post
+    uri: https://vk.com/al_video.php
+    body:
+      encoding: US-ASCII
+      string: User-Agent=VideoInfo%2F2.6.1&act=show&al=1&autoplay=0&module=profile&video=39576223_166315543
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Mozilla/5.0 (Linux; VideoInfo)
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Apache
+      Date:
+      - Sun, 25 Dec 2016 16:09:39 GMT
+      Content-Type:
+      - text/html; charset=windows-1251
+      Content-Length:
+      - '99'
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - PHP/3.8993
+      Set-Cookie:
+      - remixlang=0; expires=Thu, 04 Jan 2018 12:52:21 GMT; path=/; domain=.vk.com
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - no-store
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        PCEtLTg0Mzc4NDE3ODE1NTwhPjwhPjA8IT42NzU1PCE+ODwhPs746OHq4CDk
+        7vHy8+/gICg1KTwhPjwhPjU2MDgxNDE2PCE+PCFwYWdldmlld19jYW5kaWRh
+        dGU+
+    http_version: 
+  recorded_at: Sun, 25 Dec 2016 16:09:39 GMT
 recorded_with: VCR 3.0.3

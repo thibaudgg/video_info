@@ -130,6 +130,7 @@ describe VideoInfo::Providers::Vkontakte do
 
     author_thumbnail = 'https://pp.vk.me/c623824/v623824699' \
                        '/55575/CCQZ29l0B9k.jpg'
+    thumbnail_small = 'https://pp.vk.me/c617831/u96123303/video/l_27e4ff5c.jpg'
     description_text = 'BEAT SOUL STEP ★ Project818 Russian ' \
                        'Dance Championship ★ 1-2 мая, Москва 2014'
     video_title = 'BEAT SOUL STEP — RDC14 Project818 Russian ' \
@@ -159,6 +160,7 @@ describe VideoInfo::Providers::Vkontakte do
     its(:author_thumbnail) { should eq author_thumbnail }
     its(:author_url)       { should eq 'https://vk.com/videos2152699' }
     its(:thumbnail)        { should be_nil }
+    its(:thumbnail_small)  { should eq thumbnail_small }
   end
 
   context 'with video video39576223_161598544', :vcr do
