@@ -31,37 +31,37 @@ http_interactions:
       X-Ratelimit-Remaining:
       - '499'
       X-Ratelimit-Reset:
-      - '2016-12-11T19:29:18+00:00'
+      - '2016-12-30T06:33:27+00:00'
       Expires:
-      - Wed, 09 Dec 2026 19:14:18 GMT
+      - Mon, 28 Dec 2026 06:18:27 GMT
       Via:
       - 1.1 varnish
       - 1.1 varnish
       Fastly-Debug-Digest:
       - e1a6082c7056329c14f1d8da1dbc41c69e2a21b9c94e74b98a8cbf1b484af80a
       Content-Length:
-      - '10744'
+      - '10745'
       Accept-Ranges:
       - bytes
       Date:
-      - Sun, 11 Dec 2016 19:14:18 GMT
+      - Fri, 30 Dec 2016 06:18:27 GMT
       Age:
       - '0'
       Connection:
       - keep-alive
       X-Served-By:
-      - cache-iad2132-IAD, cache-sjc3628-SJC
+      - cache-iad2125-IAD, cache-sjc3650-SJC
       X-Cache:
       - MISS, MISS
       X-Cache-Hits:
       - 0, 0
       X-Timer:
-      - S1481483658.376541,VS0,VE527
+      - S1483078707.473751,VS0,VE366
       Vary:
       - Accept,Vimeo-Client-Id,Accept-Encoding
     body:
       encoding: UTF-8
       string: ''
     http_version: 
-  recorded_at: Sun, 11 Dec 2016 19:14:18 GMT
+  recorded_at: Fri, 30 Dec 2016 06:18:27 GMT
 recorded_with: VCR 3.0.3

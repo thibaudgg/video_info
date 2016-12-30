@@ -33,32 +33,32 @@ http_interactions:
       P3p:
       - CP="CURi ADMa DEVa IVAa IVDa CONi OUR IND DSP CAO COR"
       X-Request-Id:
-      - 7ceb80e6-0a6f-4508-8082-e0bc42c05f7c
+      - 9e356b0d-8da9-4ffb-a23f-bc8dac99b1c6
       X-Runtime:
-      - '0.043472'
+      - '0.047660'
       Via:
       - 1.1 varnish
       - 1.1 varnish
       Fastly-Debug-Digest:
       - 0cb2dce10e342c18e932e8428741b0b03e8678383f77a7e425ccd2c0cd233ec0
       Content-Length:
-      - '441'
+      - '456'
       Accept-Ranges:
       - bytes
       Date:
-      - Sun, 11 Dec 2016 19:15:09 GMT
+      - Fri, 30 Dec 2016 06:18:41 GMT
       Age:
       - '0'
       Connection:
       - keep-alive
       X-Served-By:
-      - cache-ord1739-ORD, cache-sjc3144-SJC
+      - cache-ord1721-ORD, cache-sjc3135-SJC
       X-Cache:
       - MISS, HIT
       X-Cache-Hits:
       - 0, 1
       X-Timer:
-      - S1481483709.184265,VS0,VE0
+      - S1483078721.545915,VS0,VE0
       Vary:
       - Accept-Encoding,X-Forwarded-Proto
       Strict-Transport-Security:
@@ -66,11 +66,12 @@ http_interactions:
     body:
       encoding: ASCII-8BIT
       string: '{"version":"1.0","type":"video","html":"\u003ciframe src=\"//fast.wistia.net/embed/iframe/rs1me54mpw\"
-        allowtransparency=\"true\" frameborder=\"0\" scrolling=\"no\" class=\"wistia_embed\"
-        name=\"wistia_embed\" allowfullscreen mozallowfullscreen webkitallowfullscreen
-        oallowfullscreen msallowfullscreen width=\"960\" height=\"540\"\u003e\u003c/iframe\u003e\n\u003cscript
-        src=\"//fast.wistia.net/assets/external/E-v1.js\" async\u003e\u003c/script\u003e","width":960,"height":540,"provider_name":"Wistia,
+        title=\"Wistia video player\" allowtransparency=\"true\" frameborder=\"0\"
+        scrolling=\"no\" class=\"wistia_embed\" name=\"wistia_embed\" allowfullscreen
+        mozallowfullscreen webkitallowfullscreen oallowfullscreen msallowfullscreen
+        width=\"960\" height=\"540\"\u003e\u003c/iframe\u003e\n\u003cscript src=\"//fast.wistia.net/assets/external/E-v1.js\"
+        async\u003e\u003c/script\u003e","width":960,"height":540,"provider_name":"Wistia,
         Inc.","provider_url":"https://wistia.com","title":"Lance Kalish - Yes To Group","thumbnail_url":"https://embed-ssl.wistia.com/deliveries/dc005e6a7583a25c4b7c284c08afc42fb67fdb95.jpg?image_crop_resized=960x540","thumbnail_width":960,"thumbnail_height":540,"duration":1214.83}'
     http_version: 
-  recorded_at: Sun, 11 Dec 2016 19:15:09 GMT
+  recorded_at: Fri, 30 Dec 2016 06:18:41 GMT
 recorded_with: VCR 3.0.3

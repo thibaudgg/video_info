@@ -18,31 +18,31 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      Strict-Transport-Security:
-      - max-age=31536000
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      Cache-Control:
-      - no-cache
-      Content-Type:
-      - text/html; charset=utf-8
-      X-Xss-Protection:
-      - 1; mode=block; report=https://www.google.com/appserve/security-bugs/log/youtube
       Expires:
       - Tue, 27 Apr 1971 19:44:06 EST
       P3p:
       - CP="This is not a P3P policy! See http://support.google.com/accounts/answer/151657?hl=en
         for more info."
+      X-Xss-Protection:
+      - 1; mode=block; report=https://www.google.com/appserve/security-bugs/log/youtube
+      Cache-Control:
+      - no-cache
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - text/html; charset=utf-8
       Date:
-      - Sun, 11 Dec 2016 19:15:17 GMT
+      - Fri, 30 Dec 2016 06:18:49 GMT
       Server:
       - YouTubeFrontEnd
       Set-Cookie:
-      - VISITOR_INFO1_LIVE=9wC3V0kWG2A; path=/; domain=.youtube.com; expires=Sat,
-        12-Aug-2017 07:08:17 GMT; httponly
-      - YSC=TXu5nryz5Mo; path=/; domain=.youtube.com; httponly
+      - VISITOR_INFO1_LIVE=i05-ZsLdaHk; path=/; domain=.youtube.com; expires=Wed,
+        30-Aug-2017 18:11:49 GMT; httponly
+      - YSC=dt52EmMTjLk; path=/; domain=.youtube.com; httponly
       Alt-Svc:
       - quic=":443"; ma=2592000; v="35,34"
       Transfer-Encoding:
@@ -91,20 +91,20 @@ http_interactions:
         = element.parentElement;}};if (document.addEventListener) {document.addEventListener('click',
         ytbuffer.handleClick);} else {document.attachEvent('onclick', ytbuffer.handleClick);}}
         catch(e) {}\n\n    yt.www.masthead.sizing.runBeforeBodyIsReady(false,false,true);\n
-        \ </script>\n\n      <script src=\"//s.ytimg.com/yts/jsbin/scheduler-vflvmk6nB/scheduler.js\"
+        \ </script>\n\n      <script src=\"//s.ytimg.com/yts/jsbin/scheduler-vflOTrpam/scheduler.js\"
         type=\"text/javascript\" name=\"scheduler/scheduler\"></script>\n\n\n    <script>var
         ytimg = {};ytimg.count = 1;ytimg.preload = function(src) {var img = new Image();var
         count = ++ytimg.count;ytimg[count] = img;img.onload = img.onerror = function()
-        {delete ytimg[count];};img.src = src;};</script>\n\n\n          <script src=\"//s.ytimg.com/yts/jsbin/player-en_US-vfldNN9oa/base.js\"
-        name=\"player/base\"></script>\n\n\n\n  <link rel=\"stylesheet\" href=\"//s.ytimg.com/yts/cssbin/www-core-vflJPpRkk.css\"
-        name=\"www-core\">\n      <link rel=\"stylesheet\" href=\"//s.ytimg.com/yts/cssbin/www-player-vflWRuJVN.css\"
-        name=\"www-player\">\n\n  <link rel=\"stylesheet\" href=\"//s.ytimg.com/yts/cssbin/www-pageframe-vflCVi4ph.css\"
+        {delete ytimg[count];};img.src = src;};</script>\n\n\n          <script src=\"//s.ytimg.com/yts/jsbin/player-en_US-vfla6wgHS/base.js\"
+        name=\"player/base\"></script>\n\n\n\n  <link rel=\"stylesheet\" href=\"//s.ytimg.com/yts/cssbin/www-core-vflkj9BA1.css\"
+        name=\"www-core\">\n      <link rel=\"stylesheet\" href=\"//s.ytimg.com/yts/cssbin/www-player-vfluD-7hZ.css\"
+        name=\"www-player\">\n\n  <link rel=\"stylesheet\" href=\"//s.ytimg.com/yts/cssbin/www-pageframe-vflf8g2lE.css\"
         name=\"www-pageframe\">\n  \n\n<title>YouTube</title><meta name=\"robots\"
         content=\"noindex\">      <meta name=\"title\" content=\"\">\n\n      <meta
-        name=\"description\" content=\"\">\n\n      <meta name=\"keywords\" content=\"\">\n\n<meta
-        name=\"referrer\" content=\"origin\"><link rel=\"search\" type=\"application/opensearchdescription+xml\"
-        href=\"https://www.youtube.com/opensearch?locale=en_US\" title=\"YouTube Video
-        Search\"><link rel=\"shortcut icon\" href=\"https://s.ytimg.com/yts/img/favicon-vflz7uhzw.ico\"
+        name=\"description\" content=\"\">\n\n      <meta name=\"keywords\" content=\"\">\n\n<link
+        rel=\"manifest\" href=\"/manifest.json\"><meta name=\"referrer\" content=\"origin\"><link
+        rel=\"search\" type=\"application/opensearchdescription+xml\" href=\"https://www.youtube.com/opensearch?locale=en_US\"
+        title=\"YouTube Video Search\"><link rel=\"shortcut icon\" href=\"https://s.ytimg.com/yts/img/favicon-vflz7uhzw.ico\"
         type=\"image/x-icon\">     <link rel=\"icon\" href=\"//s.ytimg.com/yts/img/favicon_32-vfl8NGn4k.png\"
         sizes=\"32x32\"><link rel=\"icon\" href=\"//s.ytimg.com/yts/img/favicon_48-vfl1s0rGh.png\"
         sizes=\"48x48\"><link rel=\"icon\" href=\"//s.ytimg.com/yts/img/favicon_96-vfldSA3ca.png\"
@@ -131,25 +131,27 @@ http_interactions:
         aria-label=\"Guide\"><span class=\"yt-uix-button-icon-wrapper\"><span class=\"yt-uix-button-icon
         yt-uix-button-icon-appbar-guide yt-sprite\"></span></span></button>\n  <div
         id=\"appbar-main-guide-notification-container\"></div>\n<span id=\"yt-masthead-logo-fragment\"><a
-        href=\"/\" class=\"yt-uix-sessionlink masthead-logo-renderer       spf-link
-        \" data-sessionlink=\"itct=CAUQsV4iEwjHycr17OzQAhVG5H4KHdtyCNAo-B0\"  id=\"logo-container\"
+        href=\"/\" class=\"masthead-logo-renderer yt-uix-sessionlink       spf-link
+        \" data-sessionlink=\"itct=CAUQsV4iEwjkl9HmopvRAhUOmn4KHWceDtgo-B0\"  id=\"logo-container\"
         title=\"YouTube Home\">  <span class=\"logo masthead-logo-renderer-logo yt-sprite\"
         title=\"YouTube Home\"></span>\n</a></span></div><div id=\"yt-masthead-signin\"><a
         href=\"//www.youtube.com/upload\" class=\"yt-uix-button   yt-uix-sessionlink
-        yt-uix-button-default yt-uix-button-size-default\" data-sessionlink=\"ei=xaVNWIfTBcbI-wPb5aGADQ&amp;feature=mhsb\"
-        id=\"upload-btn\"><span class=\"yt-uix-button-content\">Upload</span></a><div
+        yt-uix-button-opacity yt-uix-button-size-default yt-uix-button-has-icon yt-uix-tooltip
+        yt-uix-button-empty\" data-sessionlink=\"ei=SfxlWKTPDY60-gPnvLjADQ&amp;feature=mhsb\"
+        id=\"upload-btn\" title=\"Upload\"><span class=\"yt-uix-button-icon-wrapper\"><span
+        class=\"yt-uix-button-icon yt-uix-button-icon-material-upload yt-sprite\"></span></span></a><div
         class=\"signin-container \"><button class=\"yt-uix-button yt-uix-button-size-default
         yt-uix-button-primary\" type=\"button\" onclick=\";window.location.href=this.getAttribute(&#39;href&#39;);return
-        false;\" role=\"link\" href=\"https://accounts.google.com/ServiceLogin?service=youtube&amp;hl=en&amp;uilel=3&amp;continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Ffeature%3Dsign_in_button%26hl%3Den%26action_handle_signin%3Dtrue%26next%3D%252Fwatch%253Fv%253DSUkXvWn1m7Q%26app%3Ddesktop&amp;passive=true\"><span
+        false;\" role=\"link\" href=\"https://accounts.google.com/ServiceLogin?service=youtube&amp;uilel=3&amp;passive=true&amp;continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Ffeature%3Dsign_in_button%26hl%3Den%26action_handle_signin%3Dtrue%26next%3D%252Fwatch%253Fv%253DSUkXvWn1m7Q%26app%3Ddesktop&amp;hl=en\"><span
         class=\"yt-uix-button-content\">Sign in</span></button></div></div><div id=\"yt-masthead-content\"><form
         id=\"masthead-search\" class=\"  search-form consolidated-form  vve-check\"
         action=\"/results\" onsubmit=\"if (document.getElementById(&#39;masthead-search-term&#39;).value
-        == &#39;&#39;) return false;\" data-clicktracking=\"CAIQ7VAiEwjHycr17OzQAhVG5H4KHdtyCNAo-B0\"
-        data-visibility-tracking=\"CAIQ7VAiEwjHycr17OzQAhVG5H4KHdtyCNAo-B0\"><button
+        == &#39;&#39;) return false;\" data-clicktracking=\"CAIQ7VAiEwjkl9HmopvRAhUOmn4KHWceDtgo-B0\"
+        data-visibility-tracking=\"CAIQ7VAiEwjkl9HmopvRAhUOmn4KHWceDtgo-B0\"><button
         class=\"yt-uix-button yt-uix-button-size-default yt-uix-button-default search-btn-component
         search-button\" type=\"submit\" onclick=\"if (document.getElementById(&#39;masthead-search-term&#39;).value
         == &#39;&#39;) return false; document.getElementById(&#39;masthead-search&#39;).submit();
-        return false;;return true;\" dir=\"ltr\" tabindex=\"2\" id=\"search-btn\"><span
+        return false;;return true;\" tabindex=\"2\" dir=\"ltr\" id=\"search-btn\"><span
         class=\"yt-uix-button-content\">Search</span></button><div id=\"masthead-search-terms\"
         class=\"masthead-search-terms-border\" dir=\"ltr\"><input id=\"masthead-search-term\"
         autocomplete=\"off\"  onkeydown=\"if (!this.value &amp;&amp; (event.keyCode
@@ -208,13 +210,13 @@ http_interactions:
         class=\"watch-queue-control-bar-icon\"><span class=\"watch-queue-icon yt-sprite\"></span></div><div
         class=\"watch-queue-title-container\"><span class=\"watch-queue-count\"></span><span
         class=\"watch-queue-title\">Watch Queue</span><span class=\"tv-queue-title\">Queue</span></div></div>
-        \ <span class=\"dark-overflow-action-menu\">\n    \n    \n    <button type=\"button\"
-        aria-expanded=\"false\" onclick=\";return false;\" aria-haspopup=\"true\"
-        class=\"flip control-bar-button yt-uix-button yt-uix-button-dark-overflow-action-menu
+        \ <span class=\"dark-overflow-action-menu\">\n    \n    \n    <button aria-expanded=\"false\"
+        type=\"button\" class=\"flip control-bar-button yt-uix-button yt-uix-button-dark-overflow-action-menu
         yt-uix-button-size-default yt-uix-button-has-icon no-icon-markup yt-uix-button-empty\"
-        aria-label=\"Actions for the queue\" ><span class=\"yt-uix-button-arrow yt-sprite\"></span><ul
-        class=\"watch-queue-menu yt-uix-button-menu yt-uix-button-menu-dark-overflow-action-menu
-        hid\" role=\"menu\" aria-haspopup=\"true\"><li role=\"menuitem\"><span class=\"watch-queue-menu-choice
+        aria-label=\"Actions for the queue\" aria-haspopup=\"true\" onclick=\";return
+        false;\" ><span class=\"yt-uix-button-arrow yt-sprite\"></span><ul class=\"watch-queue-menu
+        yt-uix-button-menu yt-uix-button-menu-dark-overflow-action-menu hid\" role=\"menu\"
+        aria-haspopup=\"true\"><li role=\"menuitem\"><span class=\"watch-queue-menu-choice
         overflow-menu-choice yt-uix-button-menu-item\" onclick=\";return false;\"
         data-action=\"remove-all\" >Remove all</span></li><li role=\"menuitem\"><span
         class=\"watch-queue-menu-choice overflow-menu-choice yt-uix-button-menu-item\"
@@ -277,7 +279,7 @@ http_interactions:
         hidden;\">\n  </div>\n\n  </div>\n\n\n  </div>\n\n</div></div></div></div>
         \ <div id=\"footer-container\" class=\"yt-base-gutter force-layer\"><div id=\"footer\"><div
         id=\"footer-main\"><div id=\"footer-logo\"><a href=\"/\" id=\"footer-logo-link\"
-        title=\"YouTube home\" data-sessionlink=\"ei=xaVNWIfTBcbI-wPb5aGADQ&amp;ved=CAEQpmEiEwjHycr17OzQAhVG5H4KHdtyCNAo-B0\"
+        title=\"YouTube home\" data-sessionlink=\"ei=SfxlWKTPDY60-gPnvLjADQ&amp;ved=CAEQpmEiEwjkl9HmopvRAhUOmn4KHWceDtgo-B0\"
         class=\"yt-uix-sessionlink\"><span class=\"footer-logo-icon yt-sprite\"></span></a></div>
         \ <ul class=\"pickers yt-uix-button-group\" data-button-toggle-group=\"optional\">\n
         \     <li>\n            <button class=\"yt-uix-button yt-uix-button-size-default
@@ -303,13 +305,13 @@ http_interactions:
         class=\"yt-uix-button-arrow yt-sprite\"></span></button>\n\n\n      </li>\n
         \ </ul>\n<a href=\"/feed/history\" class=\"yt-uix-button  footer-history yt-uix-sessionlink
         yt-uix-button-default yt-uix-button-size-default yt-uix-button-has-icon\"
-        data-sessionlink=\"ei=xaVNWIfTBcbI-wPb5aGADQ\"><span class=\"yt-uix-button-icon-wrapper\"><span
+        data-sessionlink=\"ei=SfxlWKTPDY60-gPnvLjADQ\"><span class=\"yt-uix-button-icon-wrapper\"><span
         class=\"yt-uix-button-icon yt-uix-button-icon-footer-history yt-sprite\"></span></span><span
         class=\"yt-uix-button-content\">History</span></a>    <button class=\"yt-uix-button
         yt-uix-button-size-default yt-uix-button-default yt-uix-button-has-icon yt-uix-button-reverse
         yt-google-help-link inq-no-click \" type=\"button\" onclick=\";return false;\"
         id=\"google-help\" data-ghelp-tracking-param=\"\" data-ghelp-anchor=\"google-help\"
-        data-load-chat-support=\"\" data-feedback-product-id=\"59\"><span class=\"yt-uix-button-icon-wrapper\"><span
+        data-feedback-product-id=\"59\" data-load-chat-support=\"\"><span class=\"yt-uix-button-icon-wrapper\"><span
         class=\"yt-uix-button-icon yt-uix-button-icon-questionmark yt-sprite\"></span></span><span
         class=\"yt-uix-button-content\">Help\n</span></button>\n      <div id=\"yt-picker-language-footer\"
         class=\"yt-picker\" style=\"display: none\">\n      <p class=\"yt-spinner
@@ -350,7 +352,7 @@ http_interactions:
         \       </div>\n        <div class=\"yt-dialog-focus-trap\" tabindex=\"0\"></div>\n
         \     </div>\n    </div>\n  </div>\n\n\n<div id=\"hidden-component-template-wrapper\"
         class=\"hid\">    <div id=\"shared-addto-watch-later-login\" class=\"hid\">\n
-        \     <a class=\"sign-in-link\" href=\"https://accounts.google.com/ServiceLogin?service=youtube&amp;hl=en&amp;uilel=3&amp;continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Ffeature%3Dplaylist%26hl%3Den%26action_handle_signin%3Dtrue%26next%3D%252Fwatch%253Fv%253DSUkXvWn1m7Q%26app%3Ddesktop&amp;passive=true\">Sign
+        \     <a class=\"sign-in-link\" href=\"https://accounts.google.com/ServiceLogin?service=youtube&amp;uilel=3&amp;passive=true&amp;continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Ffeature%3Dplaylist%26hl%3Den%26action_handle_signin%3Dtrue%26next%3D%252Fwatch%253Fv%253DSUkXvWn1m7Q%26app%3Ddesktop&amp;hl=en\">Sign
         in</a> to add this to Watch Later\n\n    </div>\n<div id=\"yt-uix-videoactionmenu-menu\"
         class=\"yt-ui-menu-content\">  <div class=\"hide-on-create-pl-panel\">\n    <h3>\nAdd
         to\n    </h3>\n  </div>\n  <div class=\"add-to-widget\">\n      <p class=\"yt-spinner
@@ -362,8 +364,8 @@ http_interactions:
         = ytspf.config['request-headers'];ytspf.config['cache-max'] = 50;ytspf.config['navigate-limit']
         = 50;ytspf.config['navigate-lifetime'] = 64800000;ytspf.config['animation-duration']
         = 0;</script>\n  <script src=\"//s.ytimg.com/yts/jsbin/spf-vfl-Bavno/spf.js\"
-        type=\"text/javascript\" name=\"spf/spf\"></script>\n  <script src=\"//s.ytimg.com/yts/jsbin/www-en_US-vflkJXSPO/base.js\"
-        name=\"www/base\"></script>\n<script>spf.script.path({'www/': '//s.ytimg.com/yts/jsbin/www-en_US-vflkJXSPO/'});var
+        type=\"text/javascript\" name=\"spf/spf\"></script>\n  <script src=\"//s.ytimg.com/yts/jsbin/www-en_US-vflGom8Pu/base.js\"
+        name=\"www/base\"></script>\n<script>spf.script.path({'www/': '//s.ytimg.com/yts/jsbin/www-en_US-vflGom8Pu/'});var
         ytdepmap = {\"www/base\": null, \"www/common\": \"www/base\", \"www/angular_base\":
         \"www/common\", \"www/channels_accountupload\": \"www/common\", \"www/channels\":
         \"www/common\", \"www/dashboard\": \"www/common\", \"www/downloadreports\":
@@ -380,24 +382,24 @@ http_interactions:
         \"www/watch_promos\": \"www/watch\", \"www/watch_speedyg\": \"www/watch\",
         \"www/watch_transcript\": \"www/watch\", \"www/watch_videoshelf\": \"www/watch\",
         \"www/ct_advancedsearch\": \"www/videomanager\", \"www/my_videos\": \"www/videomanager\"};spf.script.declare(ytdepmap);</script><script>if
-        (window.ytcsi) {window.ytcsi.tick(\"je\", null, '');}</script><script>yt.setConfig({INNERTUBE_CONTEXT_CLIENT_VERSION:
-        \"1.20161207\",INNERTUBE_API_KEY: \"AIzaSyAO_FJ2SlqU8Q4STEHLGCilw_Y9_11qcW8\",INNERTUBE_CONTEXT_CLIENT_NAME:
-        1,GAPI_HINT_PARAMS: \"m;\\/_\\/scs\\/abc-static\\/_\\/js\\/k=gapi.gapi.en.U_ZjamIixkk.O\\/m=__features__\\/rt=j\\/d=1\\/rs=AHpOoo-vbowTsdJgxjMinuRjWcqUL15H1g\",APIARY_HOST_FIRSTPARTY:
-        \"\",APIARY_HOST: \"\",INNERTUBE_API_VERSION: \"v1\",'VISITOR_DATA': \"Cgs5d0MzVjBrV0cyQQ%3D%3D\",'GAPI_HOST':
-        \"https:\\/\\/apis.google.com\",'GAPI_LOCALE': \"en_US\",'INNERTUBE_CONTEXT_HL':
-        \"en\",'INNERTUBE_CONTEXT_GL': \"US\",'XHR_APIARY_HOST': \"youtubei.youtube.com\"});yt.setConfig({'ROOT_VE_CHILDREN':
-        [\"CAEQpmEiEwjHycr17OzQAhVG5H4KHdtyCNAo-B0\",\"CAIQ7VAiEwjHycr17OzQAhVG5H4KHdtyCNAo-B0\"],'ROOT_VE_TYPE':
-        3832});yt.setConfig({'EVENT_ID': \"xaVNWIfTBcbI-wPb5aGADQ\",'PAGE_NAME': \"watch\",'LOGGED_IN':
+        (window.ytcsi) {window.ytcsi.tick(\"je\", null, '');}</script><script>yt.setConfig({INNERTUBE_API_KEY:
+        \"AIzaSyAO_FJ2SlqU8Q4STEHLGCilw_Y9_11qcW8\",APIARY_HOST: \"\",INNERTUBE_CONTEXT_CLIENT_NAME:
+        1,INNERTUBE_CONTEXT_CLIENT_VERSION: \"1.20161219\",APIARY_HOST_FIRSTPARTY:
+        \"\",GAPI_HINT_PARAMS: \"m;\\/_\\/scs\\/abc-static\\/_\\/js\\/k=gapi.gapi.en.FgPLF5SwqIU.O\\/m=__features__\\/rt=j\\/d=1\\/rs=AHpOoo-9R8fkhlRsCMrG4wpDzgf1RI7BzQ\",INNERTUBE_API_VERSION:
+        \"v1\",'VISITOR_DATA': \"CgtpMDUtWnNMZGFIaw%3D%3D\",'GAPI_HOST': \"https:\\/\\/apis.google.com\",'GAPI_LOCALE':
+        \"en_US\",'INNERTUBE_CONTEXT_HL': \"en\",'INNERTUBE_CONTEXT_GL': \"US\",'XHR_APIARY_HOST':
+        \"youtubei.youtube.com\"});yt.setConfig({'ROOT_VE_CHILDREN': [\"CAEQpmEiEwjkl9HmopvRAhUOmn4KHWceDtgo-B0\",\"CAIQ7VAiEwjkl9HmopvRAhUOmn4KHWceDtgo-B0\"],'ROOT_VE_TYPE':
+        3832});yt.setConfig({'EVENT_ID': \"SfxlWKTPDY60-gPnvLjADQ\",'PAGE_NAME': \"watch\",'LOGGED_IN':
         false,'SESSION_INDEX': null,'VALID_SESSION_TEMPDATA_DOMAINS': [\"www.youtube.com\",\"gaming.youtube.com\"],'PARENT_TRACKING_PARAMS':
         \"\",'FORMATS_FILE_SIZE_JS': [\"%s B\",\"%s KB\",\"%s MB\",\"%s GB\",\"%s
         TB\"],'DELEGATED_SESSION_ID': null,'ONE_PICK_URL': \"\",'UNIVERSAL_HOVERCARDS':
-        true,'GOOGLEPLUS_HOST': \"https:\\/\\/plus.google.com\",'PAGEFRAME_JS': \"\\/\\/s.ytimg.com\\/yts\\/jsbin\\/www-pageframe-vflNYv_-F\\/www-pageframe.js\",'GAPI_LOADER_URL':
-        \"\\/\\/s.ytimg.com\\/yts\\/jsbin\\/www-gapi-loader-vflVCinBE\\/www-gapi-loader.js\",'JS_COMMON_MODULE':
-        \"\\/\\/s.ytimg.com\\/yts\\/jsbin\\/www-en_US-vflkJXSPO\\/common.js\",'PAGE_FRAME_DELAYLOADED_CSS':
+        true,'GOOGLEPLUS_HOST': \"https:\\/\\/plus.google.com\",'PAGEFRAME_JS': \"\\/\\/s.ytimg.com\\/yts\\/jsbin\\/www-pageframe-vfl9167VI\\/www-pageframe.js\",'GAPI_LOADER_URL':
+        \"\\/\\/s.ytimg.com\\/yts\\/jsbin\\/www-gapi-loader-vflYAAKkz\\/www-gapi-loader.js\",'JS_COMMON_MODULE':
+        \"\\/\\/s.ytimg.com\\/yts\\/jsbin\\/www-en_US-vflGom8Pu\\/common.js\",'PAGE_FRAME_DELAYLOADED_CSS':
         \"\\/\\/s.ytimg.com\\/yts\\/cssbin\\/www-pageframedelayloaded-vflCPMjpM.css\",'EXPERIMENT_FLAGS':
-        {\"desktop_pyv_on_watch_override_lact\":true,\"player_swfcfg_cleanup\":true,\"warm_load_nav_start_web\":true,\"cold_load_nav_start_web\":true,\"comment_deep_link\":true,\"block_spf_search_ads_impressions\":true,\"desktop_pyv_on_watch_missing_params\":true,\"autoescape_tempdata_url\":true,\"log_window_onerror_fraction\":0.1,\"enable_watch_next_unlimited_offer_module_click\":true,\"navigation_only_csi_reset\":true,\"use_push_for_desktop_live_chat\":true,\"service_worker_scope\":\"\\/\",\"enable_server_side_search_pyv\":true,\"gfeedback_for_signed_out_users_enabled\":true,\"enable_more_related_ve_logging\":true,\"autoplay_pause_sampling_fraction\":0.0,\"web_logging_max_batch\":20,\"consent_url_override\":\"\",\"desktop_pyv_on_watch_via_valor\":true},'GUIDE_DELAY_LOAD':
+        {\"autoescape_tempdata_url\":true,\"comment_deep_link\":true,\"gfeedback_for_signed_out_users_enabled\":true,\"player_swfcfg_cleanup\":true,\"service_worker_scope\":\"\\/\",\"block_spf_search_ads_impressions\":true,\"use_push_for_desktop_live_chat\":true,\"consent_url_override\":\"\",\"warm_load_nav_start_web\":true,\"service_worker_enabled\":true,\"service_worker_push_subscriptions_page_only\":true,\"autoplay_pause_sampling_fraction\":0.0,\"service_worker_push_ticker_enabled\":true,\"desktop_pyv_on_watch_override_lact\":true,\"log_window_onerror_fraction\":0.1,\"cold_load_nav_start_web\":true,\"navigation_only_csi_reset\":true,\"desktop_pyv_on_watch_via_valor\":true,\"desktop_pyv_on_watch_missing_params\":true,\"enable_more_related_ve_logging\":true,\"service_worker_push_enabled\":true,\"enable_server_side_search_pyv\":true,\"clear_web_implicit_clicktracking\":true,\"web_logging_max_batch\":20},'GUIDE_DELAY_LOAD':
         true,'GUIDE_DELAYLOADED_CSS': \"\\/\\/s.ytimg.com\\/yts\\/cssbin\\/www-guide-vflc9xhok.css\",'GUIDED_HELP_PARAMS':
-        {\"logged_in\":\"0\"},'HIGH_CONTRAST_MODE_CSS': \"\\/\\/s.ytimg.com\\/yts\\/cssbin\\/www-highcontrastmode-vfleodbMF.css\",'PREFETCH_LINKS':
+        {\"logged_in\":\"0\"},'HIGH_CONTRAST_MODE_CSS': \"\\/\\/s.ytimg.com\\/yts\\/cssbin\\/www-highcontrastmode-vflarWIo2.css\",'PREFETCH_LINKS':
         false,'PREFETCH_LINKS_MAX': 1,'PREFETCH_AUTOPLAY': false,'PREFETCH_AUTOPLAY_TIME':
         0,'PREFETCH_AUTONAV': false,'PREBUFFER_MAX': 1,'PREBUFFER_LINKS': false,'PREBUFFER_AUTOPLAY':
         false,'PREBUFFER_AUTONAV': false,'WATCH_LATER_BUTTON': \"\\n\\n  \\u003cbutton
@@ -429,15 +431,16 @@ http_interactions:
         onclick=\\\";return false;\\\"  data-video-ids=\\\"__VIDEO_ID__\\\"\\u003e\\u003cspan
         class=\\\"addto-watch-queue-menu-text\\\"\\u003ePlay now\\u003c\\/span\\u003e\\u003c\\/li\\u003e\\u003c\\/ul\\u003e\\u003c\\/button\\u003e\\n
         \ \\u003c\\/span\\u003e\\n\",'SAFETY_MODE_PENDING': false,'ZWIEBACK_PING_URLS':
-        [\"https:\\/\\/www.google.com\\/pagead\\/lvz?pg=watch\\u0026evtid=AHc2NJ6J4yJDFy-WymJfwzg4kqgFxYJWUwFU0NT0Yt2_1ydukLP8kHy0Cdgbkv2EA5ei1xGKy7qqe0lPNtWH2miYjgao4oqq0g\\u0026req_ts=1481483717\\u0026sigh=ADin3AvAGia-31A4ToyH4nq7jWySKbttEw\"],'LOCAL_DATE_TIME_CONFIG':
-        {\"formatWeekdayShortTime\":\"EE h:mm a\",\"firstWeekCutoffDay\":3,\"formatLongDateOnly\":\"MMMM
-        d, yyyy\",\"formatShortDate\":\"MMM d, yyyy\",\"shortMonths\":[\"Jan\",\"Feb\",\"Mar\",\"Apr\",\"May\",\"Jun\",\"Jul\",\"Aug\",\"Sep\",\"Oct\",\"Nov\",\"Dec\"],\"dateFormats\":[\"MMMM
-        d, yyyy h:mm a\",\"MMMM d, yyyy\",\"MMM d, yyyy\",\"MMM d, yyyy\"],\"weekendRange\":[6,5],\"firstDayOfWeek\":0,\"amPms\":[\"AM\",\"PM\"],\"shortWeekdays\":[\"Sun\",\"Mon\",\"Tue\",\"Wed\",\"Thu\",\"Fri\",\"Sat\"],\"formatLongDate\":\"MMMM
-        d, yyyy h:mm a\",\"formatShortTime\":\"h:mm a\",\"weekdays\":[\"Sunday\",\"Monday\",\"Tuesday\",\"Wednesday\",\"Thursday\",\"Friday\",\"Saturday\"],\"months\":[\"January\",\"February\",\"March\",\"April\",\"May\",\"June\",\"July\",\"August\",\"September\",\"October\",\"November\",\"December\"]},'PAGE_CL':
-        141620861,'PAGE_BUILD_LABEL': \"youtube_20161207_0_RC2\",'VARIANTS_CHECKSUM':
-        \"71d4ffc995f3879e80b1438d726f2319\",'CLIENT_PROTOCOL': \"HTTP\\/1.1\",'CLIENT_TRANSPORT':
-        \"tcp\",'MDX_ENABLE_CASTV2': true,'MDX_ENABLE_QUEUE': true,'FEEDBACK_BUCKET_ID':
-        \"Watch\",'FEEDBACK_LOCALE_LANGUAGE': \"en\",'FEEDBACK_LOCALE_EXTRAS': {\"experiments\":\"9405960,9415398,9416475,9417482,9419451,9419979,9420289,9422596,9423555,9428398,9428632,9431012,9432923,9432939,9433221,9433839,9433870,9434046,9434289,9434949,9435354,9436222,9436416,9437506,9437553,9438015,9438309,9438400,9439294,9439451,9439580,9439877,9440054,9441194,9441514,9441651,9441929,9442115,9442157,9442387,9442426,9442746,9443611,9444189,9444771,9445139,9445634,9445898,9445952,9446054,9446061,9446142,9446170,9446212,9446297,9446364,9446877,9447232,9447774,9448273,9448302,9448536,9448710,9449034,9449243,9449256,9450209,9450269,9450402,9450544,9450626,9450637,9450641,9450933,9451169,9451343,9451372,9451415,9451494,9451701,9451783,9451827,9451873,9451937,9452119,9452448,9452833,9453098,9453167,9453682,9454366,9454395,9454469,9454578,9454653,9454793,9455068,9455228,9455321,9455402,9456100,9456197,9456217,9456249,9456443,9456446,9456462,9456516,9456846,9456903,9456930,9457049,9457114,9457116,9457169,9457230,9457244,9457533,9457571,9457626\",\"is_partner\":\"\",\"logged_in\":false,\"accept_language\":null}});
+        [\"https:\\/\\/www.google.com\\/pagead\\/lvz?pg=watch\\u0026evtid=APvfMIv-KaFKXYAD2PP1vfX1avSSZj38X3ZjeiMKeDYBcdAkT_yoVy26uWWeCKfLPA0hWwdKCZgcqDa39OWDd8WZZKMJC8vVFQ\\u0026req_ts=1483078729\\u0026sigh=AIoQEaC0P9UbHT08xTQYazHW-RYJZvZa8A\"],'LOCAL_DATE_TIME_CONFIG':
+        {\"amPms\":[\"AM\",\"PM\"],\"firstWeekCutoffDay\":3,\"months\":[\"January\",\"February\",\"March\",\"April\",\"May\",\"June\",\"July\",\"August\",\"September\",\"October\",\"November\",\"December\"],\"shortWeekdays\":[\"Sun\",\"Mon\",\"Tue\",\"Wed\",\"Thu\",\"Fri\",\"Sat\"],\"formatLongDate\":\"MMMM
+        d, yyyy h:mm a\",\"firstDayOfWeek\":0,\"weekendRange\":[6,5],\"weekdays\":[\"Sunday\",\"Monday\",\"Tuesday\",\"Wednesday\",\"Thursday\",\"Friday\",\"Saturday\"],\"formatShortDate\":\"MMM
+        d, yyyy\",\"formatLongDateOnly\":\"MMMM d, yyyy\",\"shortMonths\":[\"Jan\",\"Feb\",\"Mar\",\"Apr\",\"May\",\"Jun\",\"Jul\",\"Aug\",\"Sep\",\"Oct\",\"Nov\",\"Dec\"],\"formatWeekdayShortTime\":\"EE
+        h:mm a\",\"formatShortTime\":\"h:mm a\",\"dateFormats\":[\"MMMM d, yyyy h:mm
+        a\",\"MMMM d, yyyy\",\"MMM d, yyyy\",\"MMM d, yyyy\"]},'PAGE_CL': 142595697,'PAGE_BUILD_LABEL':
+        \"youtube_20161219_0_RC6\",'VARIANTS_CHECKSUM': \"c10a1a295343c6d865ec34df5a2aa604\",'CLIENT_PROTOCOL':
+        \"HTTP\\/1.1\",'CLIENT_TRANSPORT': \"tcp\",'MDX_ENABLE_CASTV2': true,'MDX_ENABLE_QUEUE':
+        true,'FEEDBACK_BUCKET_ID': \"Watch\",'FEEDBACK_LOCALE_LANGUAGE': \"en\",'FEEDBACK_LOCALE_EXTRAS':
+        {\"experiments\":\"9415398,9416475,9417482,9419979,9420289,9422596,9423555,9428398,9428632,9431012,9432923,9432939,9433221,9433839,9433870,9434046,9434289,9434949,9435354,9437506,9438015,9438309,9439294,9439451,9439580,9439877,9440054,9441194,9441514,9441929,9442115,9442387,9442426,9442746,9444189,9444771,9445139,9445634,9445860,9446054,9446062,9446142,9446170,9446364,9446877,9447232,9447774,9448273,9448302,9448710,9449034,9449243,9449256,9450059,9450268,9450402,9450524,9450544,9450626,9450637,9450641,9450934,9451164,9451343,9451384,9451494,9451701,9451783,9451827,9451874,9451937,9452119,9452146,9452448,9452747,9452833,9452850,9453098,9453167,9453682,9453767,9454366,9454383,9454394,9454653,9454794,9455068,9455228,9455321,9455655,9456026,9456249,9456380,9456418,9456443,9456446,9456516,9456628,9456631,9456640,9456671,9456673,9456846,9456931,9457115,9457116,9457146,9457169,9457492,9457521,9457532,9457548,9457571,9457580,9457592,9457596,9457598,9457623,9457626,9457670,9457760,9457968,9458027,9458029,9458240,9458265,9458386,9458670\",\"is_partner\":\"\",\"logged_in\":false,\"accept_language\":null}});
         \  yt.setConfig({\n    'GUIDED_HELP_LOCALE': \"en_US\",\n    'GUIDED_HELP_ENVIRONMENT':
         \"prod\"\n  });\nyt.setConfig('SPF_SEARCH_BOX', true);yt.setMsg({'ADDTO_CREATE_NEW_PLAYLIST':
         \"Create new playlist\\n\",'ADDTO_CREATE_PLAYLIST_DYNAMIC_TITLE': \"  $dynamic_title_placeholder
@@ -451,28 +454,30 @@ http_interactions:
         \"99+\",'MDX_AUTOPLAY_OFF': 'Autoplay is off','MDX_AUTOPLAY_ON': 'Autoplay
         is on'});  yt.setConfig('FEED_PRIVACY_CSS_URL', \"\\/\\/s.ytimg.com\\/yts\\/cssbin\\/www-feedprivacydialog-vflabTJpI.css\");\n\n
         \ yt.setConfig('FEED_PRIVACY_LIGHTBOX_ENABLED', true);\nyt.setConfig({'SBOX_JS_URL':
-        \"\\/\\/s.ytimg.com\\/yts\\/jsbin\\/www-searchbox-legacy-vflz5jIZ6\\/www-searchbox-legacy.js\",'SBOX_SETTINGS':
-        {\"PQ\":\"\",\"REQUEST_LANGUAGE\":\"en\",\"SUGG_EXP_ID\":\"ytd2_en_us_arm_5\",\"SESSION_INDEX\":null,\"IS_FUSION\":false,\"HAS_ON_SCREEN_KEYBOARD\":false,\"REQUEST_DOMAIN\":\"us\",\"PSUGGEST_TOKEN\":null},'SBOX_LABELS':
+        \"\\/\\/s.ytimg.com\\/yts\\/jsbin\\/www-searchbox-legacy-vflLzc-_V\\/www-searchbox-legacy.js\",'SBOX_SETTINGS':
+        {\"IS_FUSION\":false,\"HAS_ON_SCREEN_KEYBOARD\":false,\"PSUGGEST_TOKEN\":null,\"REQUEST_LANGUAGE\":\"en\",\"SESSION_INDEX\":null,\"SUGG_EXP_ID\":\"\",\"PQ\":\"\",\"REQUEST_DOMAIN\":\"us\"},'SBOX_LABELS':
         {\"SUGGESTION_DISMISSED_LABEL\":\"Suggestion dismissed\",\"SUGGESTION_DISMISS_LABEL\":\"Remove\"}});
-        \ yt.setConfig({\n    'YPC_LOADER_JS': \"\\/\\/s.ytimg.com\\/yts\\/jsbin\\/www-ypc-vflXmpeen\\/www-ypc.js\",\n
+        \ yt.setConfig({\n    'YPC_LOADER_JS': \"\\/\\/s.ytimg.com\\/yts\\/jsbin\\/www-ypc-vflmgqYIW\\/www-ypc.js\",\n
         \   'YPC_LOADER_CSS': \"\\/\\/s.ytimg.com\\/yts\\/cssbin\\/www-ypc-vfls8PFP_.css\",\n
-        \   'YPC_SIGNIN_URL': \"https:\\/\\/accounts.google.com\\/ServiceLogin?service=youtube\\u0026hl=en\\u0026uilel=3\\u0026continue=http%3A%2F%2Fwww.youtube.com%2Fsignin%3Fhl%3Den%26action_handle_signin%3Dtrue%26next%3D%252F%26app%3Ddesktop\\u0026passive=true\",\n
+        \   'YPC_SIGNIN_URL': \"https:\\/\\/accounts.google.com\\/ServiceLogin?service=youtube\\u0026uilel=3\\u0026passive=true\\u0026continue=http%3A%2F%2Fwww.youtube.com%2Fsignin%3Fhl%3Den%26action_handle_signin%3Dtrue%26next%3D%252F%26app%3Ddesktop\\u0026hl=en\",\n
         \   'DBLCLK_ADVERTISER_ID': \"2542116\",\n    'DBLCLK_YPC_ACTIVITY_GROUP':
         \"youtu444\",\n    'SUBSCRIPTION_URL': \"\\/subscription_ajax\",\n    'YPC_SWITCH_URL':
-        \"\\/signin?feature=purchases\\u0026next=%2F\\u0026action_handle_signin=true\\u0026skip_identity_prompt=True\",\n
+        \"\\/signin?next=%2F\\u0026feature=purchases\\u0026action_handle_signin=true\\u0026skip_identity_prompt=True\",\n
         \   'YPC_GB_LANGUAGE': \"en_US\",\n    'YPC_MB_URL': \"https:\\/\\/payments.google.com\\/payments\\/v4\\/js\\/integrator.js?ss=md\",\n
         \   'YPC_TRANSACTION_URL': \"\\/transaction_handler\",\n    'YPC_SUBSCRIPTION_URL':
         \"\\/ypc_subscription_ajax\",\n    'YPC_POST_PURCHASE_URL': \"\\/ypc_post_purchase_ajax\",\n
         \   'YTR_FAMILY_CREATION_URL': \"https:\\/\\/families.google.com\\/webcreation?usegapi=1\",\n
-        \   'YTO_GTM_DATA': {'event': 'purchased', 'purchaseStatus': 'success'}\n
-        \ });\n  yt.setMsg({\n    'YPC_OFFER_OVERLAY': \"  \\n\",\n    'YPC_UNSUBSCRIBE_OVERLAY':
-        \"  \\n\"\n  });\n  yt.setConfig('GOOGLE_HELP_CONTEXT', \"watch\");\nytcsi.info('st',
-        84);ytcfg.set({\"TIMING_ACTION\":\"watch,watch7_html5\",\"CSI_SERVICE_NAME\":\"youtube\",\"CSI_VIEWPORT\":true,\"TIMING_INFO\":{\"c\":\"WEB\",\"yt_li\":\"0\",\"cver\":\"1.20161207\",\"yt_lt\":\"cold\",\"GetPlayer_rid\":\"0x10068eea9fadea2a\",\"GetWatchNext_rid\":\"0x10068eea9fadea2a\",\"yt_pl\":0}});;
-        \ yt.setConfig({\n      'XSRF_TOKEN': \"QUFFLUhqbmJqQXhQUFBPbmZQUzdrSU1qYlBKTlR2UlBFQXxBQ3Jtc0ttUzByZHBZc0VxZkZpVlVIYVZuQnVrY1VrZ2Y5U1dkWjJabUN6eWFhdGhLV3UzMVB6YklQSUV0Z1RWZHNEdVNoOTRWR1JybXhmbzJtRlZCSTZaa05QdGpHdTYwWDRCMFpLRGRxMW41OFFSM0hNc2NMSFBlTF80bk5mbEFxUHZyU3FlbERmRHMwTS1iX0VGdC1ZcjZ4Z0dTaVpLTmc=\",\n
+        \   'YTO_GTM_DATA': {'event': 'purchased', 'purchaseStatus': 'success'},\n
+        \   'YTO_GTM_1_BUTTON_CLICK_DATA': {'event': 'landingButtonClick', 'buttonPosition':
+        '1'},\n    'YTO_GTM_2_BUTTON_CLICK_DATA': {'event': 'landingButtonClick',
+        'buttonPosition': '2'}\n  });\n  yt.setMsg({\n    'YPC_OFFER_OVERLAY': \"
+        \ \\n\",\n    'YPC_UNSUBSCRIBE_OVERLAY': \"  \\n\"\n  });\n  yt.setConfig('GOOGLE_HELP_CONTEXT',
+        \"watch\");\nytcsi.info('st', 83);ytcfg.set({\"TIMING_ACTION\":\"watch,watch7_html5\",\"CSI_SERVICE_NAME\":\"youtube\",\"CSI_VIEWPORT\":true,\"TIMING_INFO\":{\"yt_lt\":\"cold\",\"GetWatchNext_rid\":\"0xc70308d255fc1fb3\",\"GetPlayer_rid\":\"0xc70308d255fc1fb3\",\"c\":\"WEB\",\"yt_pl\":0,\"yt_li\":\"0\",\"cver\":\"1.20161219\"}});;
+        \ yt.setConfig({\n      'XSRF_TOKEN': \"QUFFLUhqbU5wdGxMazVSYXB1eFRrLVNHS0pHcFNRNEVZZ3xBQ3Jtc0tsamptbmNoWTFHVjZFNUZrdjE1dTExM05Bbjc3c3lPLTJrZ3hLaEVlNTktYWkzd0xpcTE2dE9yaHRwczVsRUl5VEoxNG5pWnJMeG1WQ0pSRmZmUi1UbWhSd0tSWllMTjNhMnBRZnJ2REI4SFFNOTZseHhNVUlQQ1lVMTNES1YzRXp2aUNwM3ZKMVdUTHRLeHc4UVhCaUxzaUd5eWc=\",\n
         \     'XSRF_FIELD_NAME': \"session_token\",\n\n      'XSRF_REDIRECT_TOKEN':
-        \"AKshUTOH8qPt2Y2ZAHRvEMGY1hp8MTQ4MTU3MDExN0AxNDgxNDgzNzE3\"  });\nyt.setConfig('ID_TOKEN',
+        \"QL7mO7Yy2ws82okX-3jxXYze0KV8MTQ4MzE2NTEyOUAxNDgzMDc4NzI5\"  });\nyt.setConfig('ID_TOKEN',
         null);yt.setConfig('SERVICE_WORKER_KILLSWITCH', false);  yt.setConfig('THUMB_DELAY_LOAD_BUFFER',
         0);\nif (window.ytcsi) {window.ytcsi.tick(\"jl\", null, '');}</script>\n</body></html>"
     http_version: 
-  recorded_at: Sun, 11 Dec 2016 19:15:17 GMT
+  recorded_at: Fri, 30 Dec 2016 06:18:49 GMT
 recorded_with: VCR 3.0.3

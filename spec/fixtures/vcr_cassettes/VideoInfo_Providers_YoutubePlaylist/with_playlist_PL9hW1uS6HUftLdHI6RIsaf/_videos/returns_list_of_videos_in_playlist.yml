@@ -19,13 +19,13 @@ http_interactions:
       message: OK
     headers:
       Expires:
-      - Sun, 11 Dec 2016 19:15:11 GMT
+      - Fri, 30 Dec 2016 06:18:43 GMT
       Date:
-      - Sun, 11 Dec 2016 19:15:11 GMT
+      - Fri, 30 Dec 2016 06:18:43 GMT
       Cache-Control:
       - private, max-age=0, must-revalidate, no-transform
       Etag:
-      - '"gMxXHe-zinKdE9lTnzKu8vjcmDI/hn9MuK-sE8HWV1bSoAPgJoKBoYE"'
+      - '"gMxXHe-zinKdE9lTnzKu8vjcmDI/GY8GeT12gx0y60mZt3kdDr3iJ9c"'
       Vary:
       - Origin
       - X-Origin
@@ -261,5 +261,5 @@ http_interactions:
          ]
         }
     http_version: 
-  recorded_at: Sun, 11 Dec 2016 19:15:11 GMT
+  recorded_at: Fri, 30 Dec 2016 06:18:43 GMT
 recorded_with: VCR 3.0.3
