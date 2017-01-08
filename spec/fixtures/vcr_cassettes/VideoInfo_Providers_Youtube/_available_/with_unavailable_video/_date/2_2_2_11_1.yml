@@ -19,9 +19,9 @@ http_interactions:
       message: OK
     headers:
       Expires:
-      - Fri, 30 Dec 2016 06:18:59 GMT
+      - Sun, 08 Jan 2017 21:15:12 GMT
       Date:
-      - Fri, 30 Dec 2016 06:18:59 GMT
+      - Sun, 08 Jan 2017 21:15:12 GMT
       Cache-Control:
       - private, max-age=0, must-revalidate, no-transform
       Etag:
@@ -50,5 +50,5 @@ http_interactions:
          "items": []
         }
     http_version: 
-  recorded_at: Fri, 30 Dec 2016 06:18:58 GMT
+  recorded_at: Sun, 08 Jan 2017 21:15:12 GMT
 recorded_with: VCR 3.0.3

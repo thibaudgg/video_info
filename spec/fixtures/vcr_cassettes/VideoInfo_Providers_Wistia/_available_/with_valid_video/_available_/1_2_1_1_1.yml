@@ -31,9 +31,9 @@ http_interactions:
       P3p:
       - CP="CURi ADMa DEVa IVAa IVDa CONi OUR IND DSP CAO COR"
       X-Request-Id:
-      - 882efd61-1307-4ea3-83b6-b694504bf0ae
+      - 73bde236-4512-4aab-9813-6a14ae950344
       X-Runtime:
-      - '0.075810'
+      - '0.056365'
       Via:
       - 1.1 varnish
       - 1.1 varnish
@@ -44,19 +44,19 @@ http_interactions:
       Accept-Ranges:
       - bytes
       Date:
-      - Fri, 30 Dec 2016 06:18:40 GMT
+      - Sun, 08 Jan 2017 21:14:54 GMT
       Age:
       - '0'
       Connection:
       - keep-alive
       X-Served-By:
-      - cache-ord1735-ORD, cache-sjc3620-SJC
+      - cache-ord1727-ORD, cache-sjc3148-SJC
       X-Cache:
       - MISS, MISS
       X-Cache-Hits:
       - 0, 0
       X-Timer:
-      - S1483078720.833696,VS0,VE135
+      - S1483910094.109228,VS0,VE114
       Vary:
       - Accept-Encoding,X-Forwarded-Proto
       Strict-Transport-Security:
@@ -65,5 +65,5 @@ http_interactions:
       encoding: UTF-8
       string: ''
     http_version: 
-  recorded_at: Fri, 30 Dec 2016 06:18:40 GMT
+  recorded_at: Sun, 08 Jan 2017 21:14:54 GMT
 recorded_with: VCR 3.0.3

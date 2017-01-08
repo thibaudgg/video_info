@@ -33,9 +33,9 @@ http_interactions:
       P3p:
       - CP="CURi ADMa DEVa IVAa IVDa CONi OUR IND DSP CAO COR"
       X-Request-Id:
-      - 1a38dca2-585f-433f-990a-c8577469fd57
+      - e75baebe-c221-4957-b651-20192b3799cc
       X-Runtime:
-      - '0.077158'
+      - '0.073878'
       Via:
       - 1.1 varnish
       - 1.1 varnish
@@ -46,19 +46,19 @@ http_interactions:
       Accept-Ranges:
       - bytes
       Date:
-      - Fri, 30 Dec 2016 06:18:42 GMT
+      - Sun, 08 Jan 2017 21:14:55 GMT
       Age:
       - '0'
       Connection:
       - keep-alive
       X-Served-By:
-      - cache-ord1731-ORD, cache-sjc3142-SJC
+      - cache-ord1741-ORD, cache-sjc3650-SJC
       X-Cache:
       - MISS, MISS
       X-Cache-Hits:
       - 0, 0
       X-Timer:
-      - S1483078721.933057,VS0,VE136
+      - S1483910094.965112,VS0,VE133
       Vary:
       - Accept-Encoding,X-Forwarded-Proto
       Strict-Transport-Security:
@@ -73,5 +73,5 @@ http_interactions:
         async\u003e\u003c/script\u003e","width":960,"height":540,"provider_name":"Wistia,
         Inc.","provider_url":"https://wistia.com","title":"Understanding Analytics","thumbnail_url":"https://embed-ssl.wistia.com/deliveries/0fccbdc60ade35723f79f1c002bc61b135b610fa.jpg?image_crop_resized=960x540","thumbnail_width":960,"thumbnail_height":540,"duration":250.0}'
     http_version: 
-  recorded_at: Fri, 30 Dec 2016 06:18:42 GMT
+  recorded_at: Sun, 08 Jan 2017 21:14:55 GMT
 recorded_with: VCR 3.0.3

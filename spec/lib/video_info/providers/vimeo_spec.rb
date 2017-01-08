@@ -291,6 +291,17 @@ require 'spec_helper'
       its(:video_id) { should eq '126641548' }
     end
 
+    context 'with video 193970014', :vcr do
+      video_url = 'https://vimeo.com/193970014'
+      subject { VideoInfo.new(video_url) }
+
+      its(:thumbnail) { should eq 'https://i.vimeocdn.com/video/607241994_640.jpg' }
+      its(:thumbnail_large) { should eq 'https://i.vimeocdn.com/video/607241994_640.jpg' }
+      its(:thumbnail_medium) { should eq 'https://i.vimeocdn.com/video/607241994_200x150.jpg' }
+      its(:thumbnail_small) { should eq 'https://i.vimeocdn.com/video/607241994_100x75.jpg' }
+
+    end
+
     context 'with unavailable video', :vcr do
       if api_key.nil?
         video_url = 'https://vimeo.com/0812455'

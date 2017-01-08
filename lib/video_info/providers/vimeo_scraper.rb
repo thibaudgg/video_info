@@ -2,6 +2,7 @@ require 'oga'
 require 'open-uri'
 require 'json'
 require 'openssl'
+require 'cgi'
 
 class VideoInfo
   module Providers
@@ -140,7 +141,17 @@ class VideoInfo
       end
 
       def thumbnail_url
-        @thumbnail_url ||= json_info['thumbnailUrl']
+        @thumbnail_url ||= remove_overlay(meta_node_value('og:image'))
+      end
+
+      def remove_overlay(url)
+        uri = URI.parse(url)
+        
+        if uri.path == '/filter/overlay'
+          CGI::parse(uri.query)['src0'][0]
+        else
+          url
+        end
       end
 
       def meta_nodes

@@ -23,7 +23,7 @@ http_interactions:
       X-Dm-Api-Object:
       - video
       X-Dm-Backnode:
-      - web-633.adm.dc3.dailymotion.com:80
+      - web-322.adm.dc3.dailymotion.com:80
       X-Dm-Api-Method:
       - info
       Cache-Control:
@@ -38,13 +38,13 @@ http_interactions:
       X-Dm-Tg:
       - v-x7lni3
       X-Dm-Lb-Name:
-      - lb-10
+      - lb-07
       X-Dm-Random-Number:
-      - '2280792'
+      - '388291'
       Access-Control-Allow-Origin:
       - "*"
       X-Dm-Backnode-Response-Time:
-      - '42'
+      - '23'
       Etag:
       - W/"rQeFNlJ5iMPO8gmsSDhiVw-gzip"
       X-Robots-Tag:
@@ -69,19 +69,19 @@ http_interactions:
       Accept-Ranges:
       - bytes
       Date:
-      - Fri, 30 Dec 2016 06:18:03 GMT
+      - Sun, 08 Jan 2017 21:14:14 GMT
       Age:
       - '0'
       Connection:
       - keep-alive
       X-Served-By:
-      - cache-fra1224-FRA, cache-sjc3624-SJC
+      - cache-fra1226-FRA, cache-sjc3627-SJC
       X-Cache:
       - MISS, MISS
       X-Cache-Hits:
       - 0, 0
       X-Timer:
-      - S1483078682.834308,VS0,VE198
+      - S1483910054.275314,VS0,VE179
       Vary:
       - X-DM-EC-Geo-Country, Accept-Encoding
       X-Dm-Cache-Status:
@@ -92,5 +92,5 @@ http_interactions:
       encoding: ASCII-8BIT
       string: '{"id":"x7lni3","title":"Mario Kart (R\u00e9mi Gaillard)","channel":"fun","owner":"x4r137"}'
     http_version: 
-  recorded_at: Fri, 30 Dec 2016 06:18:03 GMT
+  recorded_at: Sun, 08 Jan 2017 21:14:14 GMT
 recorded_with: VCR 3.0.3
