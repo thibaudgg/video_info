@@ -1,3 +1,3 @@
 class VideoInfo
-  VERSION = '2.6.1'.freeze
+  VERSION = '2.7'.freeze
 end
