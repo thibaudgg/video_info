@@ -40,6 +40,7 @@ class VideoInfo
   PROVIDERS = %w[
     Dailymotion Vkontakte Wistia
     Vimeo Youtube YoutubePlaylist
+    Facebook
   ].freeze
   PROVIDERS.each { |p| require "video_info/providers/#{p.downcase}" }
 
@@ -48,6 +49,7 @@ class VideoInfo
   def_delegators :@provider, :date, :duration, :width, :height
   def_delegators :@provider, :thumbnail
   def_delegators :@provider,
+                 :thumbnail,
                  :thumbnail_small,
                  :thumbnail_medium,
                  :thumbnail_large,

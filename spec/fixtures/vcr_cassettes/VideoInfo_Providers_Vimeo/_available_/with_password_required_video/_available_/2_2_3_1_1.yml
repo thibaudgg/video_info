@@ -8,58 +8,54 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - VideoInfo/2.6.1
+      - VideoInfo/2.7
       Authorization:
       - bearer 6b66b015a3504793b4f541d878f46ff6
       Accept:
       - application/vnd.vimeo.*+json;version=3.2
   response:
     status:
-      code: 403
-      message: Forbidden
+      code: 429
+      message: Too Many Requests
     headers:
       Server:
       - nginx
       Content-Type:
-      - application/vnd.vimeo.error+json
-      Cache-Control:
-      - no-cache, max-age=315360000
-      Strict-Transport-Security:
-      - max-age=15552000; includeSubDomains; preload
-      X-Ratelimit-Limit:
-      - '500'
-      X-Ratelimit-Remaining:
-      - '497'
-      X-Ratelimit-Reset:
-      - '2017-01-07T19:13:29+00:00'
+      - text/html; charset=UTF-8
       Expires:
-      - Tue, 05 Jan 2027 18:58:29 GMT
+      - Tue, 24 Jan 2017 19:33:19 GMT
+      Cache-Control:
+      - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+      X-Varnish-Esi:
+      - '0'
+      X-Frame-Options:
+      - sameorigin
       Via:
       - 1.1 varnish
       - 1.1 varnish
       Fastly-Debug-Digest:
       - 8a3883348689ddeb91a29864d5887cd8b059e3d8249182ea55e4d501f3d81f7b
       Content-Length:
-      - '257'
+      - '5073'
       Accept-Ranges:
       - bytes
       Date:
-      - Sat, 07 Jan 2017 18:58:29 GMT
+      - Wed, 25 Jan 2017 07:33:19 GMT
       Connection:
       - keep-alive
       X-Served-By:
-      - cache-iad2125-IAD, cache-sjc3139-SJC
+      - cache-iad2121-IAD, cache-sjc3620-SJC
       X-Cache:
       - MISS, MISS
       X-Cache-Hits:
       - 0, 0
       X-Timer:
-      - S1483815509.015918,VS0,VE112
+      - S1485329599.518338,VS0,VE92
       Vary:
-      - Accept,Vimeo-Client-Id,Accept-Encoding
+      - Accept-Encoding
     body:
       encoding: UTF-8
       string: ''
     http_version: 
-  recorded_at: Sat, 07 Jan 2017 18:58:29 GMT
+  recorded_at: Wed, 25 Jan 2017 07:33:19 GMT
 recorded_with: VCR 3.0.3

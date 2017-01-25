@@ -1,0 +1,59 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://graph.facebook.com/v2.5/1071390929550268?access_token=1526814430954328%7C1bd1051b2e630584a5fa01a8ebf21cad&fields=created_time,description,from,length,picture,title
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - VideoInfo/2.7
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Www-Authenticate:
+      - OAuth "Facebook Platform" "invalid_request" "Unsupported get request. Object
+        with ID '1071390929550268' does not exist, cannot be loaded due to missing
+        permissions, or does not support this operation. Please read the Graph API
+        documentation at https://developers.facebook.com/docs/graph-api"
+      Access-Control-Allow-Origin:
+      - "*"
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - no-store
+      Facebook-Api-Version:
+      - v2.5
+      Expires:
+      - Sat, 01 Jan 2000 00:00:00 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      X-Fb-Trace-Id:
+      - E9e5jcVQ8hn
+      X-Fb-Rev:
+      - '2794421'
+      Vary:
+      - Accept-Encoding
+      X-Fb-Debug:
+      - "+8SSCBg8Kuls47NTakrCdkudirieixrOEaxPFDe9zktKx95Y83TJ7qWDz6CrPWQMQOI8Awhe/MrMRehP9YmpWQ=="
+      Date:
+      - Wed, 25 Jan 2017 07:29:42 GMT
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '273'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"error":{"message":"Unsupported get request. Object with ID ''1071390929550268''
+        does not exist, cannot be loaded due to missing permissions, or does not support
+        this operation. Please read the Graph API documentation at https:\/\/developers.facebook.com\/docs\/graph-api","type":"GraphMethodException","code":100,"fbtrace_id":"E9e5jcVQ8hn"}}'
+    http_version: 
+  recorded_at: Wed, 25 Jan 2017 07:29:42 GMT
+recorded_with: VCR 3.0.3

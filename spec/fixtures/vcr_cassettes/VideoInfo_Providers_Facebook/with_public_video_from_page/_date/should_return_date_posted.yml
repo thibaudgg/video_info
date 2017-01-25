@@ -1,0 +1,112 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://graph.facebook.com/v2.5/1071390929550268?access_token=1526814430954328%7C1bd1051b2e630584a5fa01a8ebf21cad&fields=created_time,description,from,length,picture,title
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - VideoInfo/2.7
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Www-Authenticate:
+      - OAuth "Facebook Platform" "invalid_request" "Unsupported get request. Object
+        with ID '1071390929550268' does not exist, cannot be loaded due to missing
+        permissions, or does not support this operation. Please read the Graph API
+        documentation at https://developers.facebook.com/docs/graph-api"
+      Access-Control-Allow-Origin:
+      - "*"
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - no-store
+      Facebook-Api-Version:
+      - v2.5
+      Expires:
+      - Sat, 01 Jan 2000 00:00:00 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      X-Fb-Trace-Id:
+      - HBfBVRX3QKQ
+      X-Fb-Rev:
+      - '2794421'
+      Vary:
+      - Accept-Encoding
+      X-Fb-Debug:
+      - MbqoFE5mPI7stVGZTytgB2MgXxQANekEd+/DTpgB9pYh2DvthqgbdTtHgMUAqX+JSgq2lS/fsqmp0vUWjBGMYQ==
+      Date:
+      - Wed, 25 Jan 2017 07:29:42 GMT
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '276'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"error":{"message":"Unsupported get request. Object with ID ''1071390929550268''
+        does not exist, cannot be loaded due to missing permissions, or does not support
+        this operation. Please read the Graph API documentation at https:\/\/developers.facebook.com\/docs\/graph-api","type":"GraphMethodException","code":100,"fbtrace_id":"HBfBVRX3QKQ"}}'
+    http_version: 
+  recorded_at: Wed, 25 Jan 2017 07:29:42 GMT
+- request:
+    method: get
+    uri: https://graph.facebook.com/v2.5/1071390929550268?access_token=CAAVsoSZCLg1gBAAkLwFapDOQrZC4Tz84JVb80YKXL4i9kNNcmhGXtxeVG7ZAYZCFVWBZADqZAfeLCiiqIoSEQZCZAFhXKLmZCDkauIw4VNTAhMcUxAM5lVkaHHJQzjTG5ZAXO6zjdNA16dDZCL42GmKrmZBjZCdHxIZCXmUirJyxCg1zyvi1DXnV7m8dsntCYk0ySq5Oy0GNZC3uM176wZDZD&fields=created_time,description,from,length,picture,title
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - VideoInfo/2.7
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Www-Authenticate:
+      - 'OAuth "Facebook Platform" "invalid_token" "Error validating access token:
+        Session has expired on Thursday, 24-Mar-16 01:00:00 PDT. The current time
+        is Tuesday, 24-Jan-17 23:29:45 PST."'
+      Access-Control-Allow-Origin:
+      - "*"
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - no-store
+      Expires:
+      - Sat, 01 Jan 2000 00:00:00 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      X-Fb-Trace-Id:
+      - BL5MTyGVuZ4
+      X-Fb-Rev:
+      - '2794421'
+      Vary:
+      - Accept-Encoding
+      X-Fb-Debug:
+      - o6grYd2F+/rk/bki+KoiBV8FwI/5miMwWnS9Tfop85cSUs55uaxTazR/VaXoIlPOmx6uZS0EaJGpUIViFyIt9Q==
+      Date:
+      - Wed, 25 Jan 2017 07:29:45 GMT
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '217'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"error":{"message":"Error validating access token: Session has expired
+        on Thursday, 24-Mar-16 01:00:00 PDT. The current time is Tuesday, 24-Jan-17
+        23:29:45 PST.","type":"OAuthException","code":190,"error_subcode":463,"fbtrace_id":"BL5MTyGVuZ4"}}'
+    http_version: 
+  recorded_at: Wed, 25 Jan 2017 07:29:45 GMT
+recorded_with: VCR 3.0.3

@@ -1,0 +1,107 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://graph.facebook.com/v2.5/195408520793494?access_token=1526814430954328%7C1bd1051b2e630584a5fa01a8ebf21cad&fields=created_time,description,from,length,picture,title
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - VideoInfo/2.7
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Etag:
+      - '"6888824785334e1f07952aa38221b8b425152226"'
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - private, no-cache, no-store, must-revalidate
+      Facebook-Api-Version:
+      - v2.5
+      Expires:
+      - Sat, 01 Jan 2000 00:00:00 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      X-Fb-Trace-Id:
+      - B3aIPYhU8LJ
+      X-Fb-Rev:
+      - '2794421'
+      Vary:
+      - Accept-Encoding
+      X-Fb-Debug:
+      - T6F/28vZuiIaxZscTHRbm2PrcZfVEGnl3HuZIoaz3B02WTT32XPjz/lf9OMqMfJntBV0uHa/d21fPN0YUoguEQ==
+      Date:
+      - Wed, 25 Jan 2017 07:29:43 GMT
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '292'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"created_time":"2015-10-30T16:30:01+0000","from":{"name":"Republique
+        D''Eg\u00fces","id":"171086066559073"},"length":26.459,"picture":"https:\/\/scontent.xx.fbcdn.net\/v\/t15.0-10\/p128x128\/12105557_195409484126731_875852838_n.jpg?oh=91643272a3581b0fb3434b59c0ac3fe4&oe=5900EBB4","title":"Hank
+        listens to Bolivarian Music","id":"195408520793494"}'
+    http_version: 
+  recorded_at: Wed, 25 Jan 2017 07:29:43 GMT
+- request:
+    method: get
+    uri: https://graph.facebook.com/v2.5/171086066559073/picture?access_token=1526814430954328%7C1bd1051b2e630584a5fa01a8ebf21cad&redirect=0
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - VideoInfo/2.7
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Etag:
+      - '"52077f4caa82b5892e4db00c5d587615ce52af90"'
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - private, no-cache, no-store, must-revalidate
+      Facebook-Api-Version:
+      - v2.5
+      Expires:
+      - Sat, 01 Jan 2000 00:00:00 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      X-Fb-Trace-Id:
+      - GNmE25/tpSf
+      X-Fb-Rev:
+      - '2794421'
+      Vary:
+      - Accept-Encoding
+      X-Fb-Debug:
+      - 9KbW1rbq7oUZX328M5NYAfStoRTN9GF3XrZQQiZcJSxuHumPYVkPpUi5lWK8TwFqotX3w/NrY32WNyBadBbfhg==
+      Date:
+      - Wed, 25 Jan 2017 07:29:43 GMT
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '182'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":{"is_silhouette":false,"url":"https:\/\/scontent.xx.fbcdn.net\/v\/t1.0-1\/p50x50\/16265821_398698717131139_4235329689498754214_n.jpg?oh=b700302e44a46244ec8f0b5fae4790b4&oe=591EBBF2"}}'
+    http_version: 
+  recorded_at: Wed, 25 Jan 2017 07:29:43 GMT
+recorded_with: VCR 3.0.3
