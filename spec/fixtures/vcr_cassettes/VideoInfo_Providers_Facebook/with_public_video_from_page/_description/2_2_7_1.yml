@@ -1,0 +1,56 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://graph.facebook.com/v2.5/1071390929550268?access_token=CAAVsoSZCLg1gBAAkLwFapDOQrZC4Tz84JVb80YKXL4i9kNNcmhGXtxeVG7ZAYZCFVWBZADqZAfeLCiiqIoSEQZCZAFhXKLmZCDkauIw4VNTAhMcUxAM5lVkaHHJQzjTG5ZAXO6zjdNA16dDZCL42GmKrmZBjZCdHxIZCXmUirJyxCg1zyvi1DXnV7m8dsntCYk0ySq5Oy0GNZC3uM176wZDZD&fields=created_time,description,from,length,picture,title
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - VideoInfo/2.7
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Www-Authenticate:
+      - 'OAuth "Facebook Platform" "invalid_token" "Error validating access token:
+        Session has expired on Thursday, 24-Mar-16 01:00:00 PDT. The current time
+        is Tuesday, 24-Jan-17 23:29:45 PST."'
+      Access-Control-Allow-Origin:
+      - "*"
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - no-store
+      Expires:
+      - Sat, 01 Jan 2000 00:00:00 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      X-Fb-Trace-Id:
+      - D4JFuDSS8dz
+      X-Fb-Rev:
+      - '2794421'
+      Vary:
+      - Accept-Encoding
+      X-Fb-Debug:
+      - d/AeywPevHzkBMCe4/NEndyAZMFH2DfM51iaTDAvoXoIavRfYJZBECac5cqftm73TPD7jvMkHKVYzbrl2Iry7A==
+      Date:
+      - Wed, 25 Jan 2017 07:29:45 GMT
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '215'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"error":{"message":"Error validating access token: Session has expired
+        on Thursday, 24-Mar-16 01:00:00 PDT. The current time is Tuesday, 24-Jan-17
+        23:29:45 PST.","type":"OAuthException","code":190,"error_subcode":463,"fbtrace_id":"D4JFuDSS8dz"}}'
+    http_version: 
+  recorded_at: Wed, 25 Jan 2017 07:29:45 GMT
+recorded_with: VCR 3.0.3

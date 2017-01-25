@@ -1,0 +1,84 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://vk.com:443/video?z=video39576223_166315543/pl_cat_updates
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Mozilla/5.0 (Linux; VideoInfo)
+      - Ruby
+      Host:
+      - vk.com
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Server:
+      - Apache
+      Date:
+      - Wed, 25 Jan 2017 07:30:19 GMT
+      Content-Type:
+      - text/html
+      Content-Length:
+      - '267'
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: "<html>\r\n<head><title>400 The plain HTTP request was sent to HTTPS
+        port</title></head>\r\n<body bgcolor=\"white\">\r\n<center><h1>400 Bad Request</h1></center>\r\n<center>The
+        plain HTTP request was sent to HTTPS port</center>\r\n<hr><center> Apache
+        </center>\r\n</body>\r\n</html>\r\n"
+    http_version: 
+  recorded_at: Wed, 25 Jan 2017 07:30:19 GMT
+- request:
+    method: post
+    uri: https://vk.com/al_video.php
+    body:
+      encoding: US-ASCII
+      string: User-Agent=VideoInfo%2F2.7&act=show&al=1&autoplay=0&module=profile&video=39576223_166315543
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Mozilla/5.0 (Linux; VideoInfo)
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Apache
+      Date:
+      - Wed, 25 Jan 2017 07:30:20 GMT
+      Content-Type:
+      - text/html; charset=windows-1251
+      Content-Length:
+      - '97'
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - PHP/3.9909
+      Set-Cookie:
+      - remixlang=3; expires=Wed, 24 Jan 2018 10:20:31 GMT; path=/; domain=.vk.com
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - no-store
+    body:
+      encoding: ASCII-8BIT
+      string: "<!--834036811233<!><!>3<!>3693<!>8<!>Access denied (5)<!><!>56465835<!><!pageview_candidate>"
+    http_version: 
+  recorded_at: Wed, 25 Jan 2017 07:30:20 GMT
+recorded_with: VCR 3.0.3
