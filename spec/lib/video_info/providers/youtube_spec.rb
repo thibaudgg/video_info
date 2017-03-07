@@ -32,7 +32,7 @@ require 'spec_helper'
 
     describe '#available?' do
       context 'with valid video', :vcr do
-        subject { VideoInfo.new('http://www.youtube.com/watch?v=mZqGqE0D0n4') }
+        subject { VideoInfo.new('http://www.youtube.com/watch?v=mZqGqE0D0n4'.freeze) }
 
         describe '#available?' do
           subject { super().available? }

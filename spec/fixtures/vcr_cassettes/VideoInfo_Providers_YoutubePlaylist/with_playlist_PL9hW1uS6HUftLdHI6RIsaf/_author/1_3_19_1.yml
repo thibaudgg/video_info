@@ -8,7 +8,7 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - VideoInfo/2.6.1
+      - VideoInfo/2.7
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -19,13 +19,13 @@ http_interactions:
       message: OK
     headers:
       Expires:
-      - Sun, 08 Jan 2017 21:14:57 GMT
+      - Tue, 07 Mar 2017 04:18:21 GMT
       Date:
-      - Sun, 08 Jan 2017 21:14:57 GMT
+      - Tue, 07 Mar 2017 04:18:21 GMT
       Cache-Control:
       - private, max-age=0, must-revalidate, no-transform
       Etag:
-      - '"gMxXHe-zinKdE9lTnzKu8vjcmDI/agg8LwUfxQxkn2kzTfKMNFlldxI"'
+      - '"uQc-MPTsstrHkQcRXL3IWLmeNsM/agg8LwUfxQxkn2kzTfKMNFlldxI"'
       Vary:
       - Origin
       - X-Origin
@@ -42,13 +42,13 @@ http_interactions:
       Server:
       - GSE
       Alt-Svc:
-      - quic=":443"; ma=2592000; v="35,34"
+      - quic=":443"; ma=2592000; v="36,35,34"
     body:
       encoding: UTF-8
       string: |
         {
          "kind": "youtube#playlistListResponse",
-         "etag": "\"gMxXHe-zinKdE9lTnzKu8vjcmDI/agg8LwUfxQxkn2kzTfKMNFlldxI\"",
+         "etag": "\"uQc-MPTsstrHkQcRXL3IWLmeNsM/agg8LwUfxQxkn2kzTfKMNFlldxI\"",
          "pageInfo": {
           "totalResults": 1,
           "resultsPerPage": 5
@@ -56,7 +56,7 @@ http_interactions:
          "items": [
           {
            "kind": "youtube#playlist",
-           "etag": "\"gMxXHe-zinKdE9lTnzKu8vjcmDI/F2mG6YyXZ_T9NjBk6OlhtoKuxPY\"",
+           "etag": "\"uQc-MPTsstrHkQcRXL3IWLmeNsM/F2mG6YyXZ_T9NjBk6OlhtoKuxPY\"",
            "id": "PL9hW1uS6HUftLdHI6RIsaf-iXTm09qnEr",
            "snippet": {
             "publishedAt": "2013-08-09T05:09:51.000Z",
@@ -101,5 +101,5 @@ http_interactions:
          ]
         }
     http_version: 
-  recorded_at: Sun, 08 Jan 2017 21:14:57 GMT
+  recorded_at: Tue, 07 Mar 2017 04:18:21 GMT
 recorded_with: VCR 3.0.3

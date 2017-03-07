@@ -9,11 +9,11 @@ class VideoInfo
 
       def initialize(url, options = {})
         super(url, options)
-        @url.strip!
+        @url = @url.strip
       end
 
       def self.usable?(url)
-        url.strip!
+        url = url.strip
         vkontakte = !!(url =~ %r{\A(http|https):\/\/(vk\.com)|
                                  (vkontakte\.ru)\z})
         valid = !!(url =~ /\A#{URI.regexp(%w[http https])}\z/)

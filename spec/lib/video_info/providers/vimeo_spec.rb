@@ -48,7 +48,7 @@ require 'spec_helper'
 
     describe '#available?' do
       context 'with valid video', :vcr do
-        subject { VideoInfo.new('http://vimeo.com/98605382') }
+        subject { VideoInfo.new('http://vimeo.com/98605382'.freeze) }
 
         describe '#available?' do
           it { is_expected.to be_available }

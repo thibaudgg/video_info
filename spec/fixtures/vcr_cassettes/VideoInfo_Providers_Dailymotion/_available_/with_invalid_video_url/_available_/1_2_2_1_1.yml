@@ -23,7 +23,7 @@ http_interactions:
       X-Dm-Api-Object:
       - video
       X-Dm-Backnode:
-      - web-635.adm.dc3.dailymotion.com:80
+      - web-593.adm.dc3.dailymotion.com:80
       X-Dm-Api-Method:
       - info
       Cache-Control:
@@ -38,13 +38,13 @@ http_interactions:
       Expires:
       - Fri, 01 Jan 2010 05:00:00 GMT
       X-Dm-Lb-Name:
-      - lb-08
+      - lb-09
       X-Dm-Random-Number:
-      - '8849193'
+      - '1115725'
       Access-Control-Allow-Origin:
       - "*"
       X-Dm-Backnode-Response-Time:
-      - '42'
+      - '18'
       X-Robots-Tag:
       - noindex
       X-Frame-Options:
@@ -65,19 +65,19 @@ http_interactions:
       Accept-Ranges:
       - bytes
       Date:
-      - Sun, 08 Jan 2017 21:14:14 GMT
+      - Tue, 07 Mar 2017 04:17:14 GMT
       Age:
       - '0'
       Connection:
       - keep-alive
       X-Served-By:
-      - cache-fra1240-FRA, cache-sjc3139-SJC
+      - cache-fra1242-FRA, cache-lax8635-LAX
       X-Cache:
       - MISS, MISS
       X-Cache-Hits:
       - 0, 0
       X-Timer:
-      - S1483910054.549227,VS0,VE198
+      - S1488860234.599616,VS0,VE179
       Vary:
       - X-DM-EC-Geo-Country
       X-Dm-Cache-Status:
@@ -89,5 +89,5 @@ http_interactions:
       string: '{"error":{"more_info":"https:\/\/developer.dailymotion.com\/api#error-codes","code":404,"message":"Can''t
         find object video for `id'' parameter","type":"not_found","error_data":{"reason":"object_not_found"}}}'
     http_version: 
-  recorded_at: Sun, 08 Jan 2017 21:14:14 GMT
+  recorded_at: Tue, 07 Mar 2017 04:17:14 GMT
 recorded_with: VCR 3.0.3

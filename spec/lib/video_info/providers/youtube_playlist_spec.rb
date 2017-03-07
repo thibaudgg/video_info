@@ -34,7 +34,7 @@ require 'spec_helper'
     describe '#available?' do
       context 'with valid playlist', :vcr do
         playlist_url = 'http://www.youtube.com/playlist?p=PLA575C81A1FBC04CF'
-        subject { VideoInfo.new(playlist_url) }
+        subject { VideoInfo.new(playlist_url.freeze) }
 
         describe '#available?' do
           subject { super().available? }

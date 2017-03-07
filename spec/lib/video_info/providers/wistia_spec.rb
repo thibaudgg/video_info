@@ -19,7 +19,7 @@ describe VideoInfo::Providers::Wistia do
   describe '#available?' do
     context 'with valid video', :vcr do
       video_url = 'http://fast.wistia.net/embed/iframe/rs1me54mpw'
-      subject { VideoInfo.new(video_url) }
+      subject { VideoInfo.new(video_url.freeze) }
 
       describe '#available?' do
         subject { super().available? }

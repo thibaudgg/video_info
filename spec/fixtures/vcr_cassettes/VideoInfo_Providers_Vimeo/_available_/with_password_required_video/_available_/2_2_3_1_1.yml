@@ -8,7 +8,7 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - VideoInfo/2.6.1
+      - VideoInfo/2.7
       Authorization:
       - bearer 6b66b015a3504793b4f541d878f46ff6
       Accept:
@@ -29,11 +29,11 @@ http_interactions:
       X-Ratelimit-Limit:
       - '500'
       X-Ratelimit-Remaining:
-      - '497'
+      - '409'
       X-Ratelimit-Reset:
-      - '2017-01-07T19:13:29+00:00'
+      - '2017-03-07T04:32:38+00:00'
       Expires:
-      - Tue, 05 Jan 2027 18:58:29 GMT
+      - Fri, 05 Mar 2027 04:17:38 GMT
       Via:
       - 1.1 varnish
       - 1.1 varnish
@@ -44,22 +44,22 @@ http_interactions:
       Accept-Ranges:
       - bytes
       Date:
-      - Sat, 07 Jan 2017 18:58:29 GMT
+      - Tue, 07 Mar 2017 04:17:38 GMT
       Connection:
       - keep-alive
       X-Served-By:
-      - cache-iad2125-IAD, cache-sjc3139-SJC
+      - cache-iad2139-IAD, cache-lax8624-LAX
       X-Cache:
       - MISS, MISS
       X-Cache-Hits:
       - 0, 0
       X-Timer:
-      - S1483815509.015918,VS0,VE112
+      - S1488860258.422084,VS0,VE100
       Vary:
       - Accept,Vimeo-Client-Id,Accept-Encoding
     body:
       encoding: UTF-8
       string: ''
     http_version: 
-  recorded_at: Sat, 07 Jan 2017 18:58:29 GMT
+  recorded_at: Tue, 07 Mar 2017 04:17:38 GMT
 recorded_with: VCR 3.0.3

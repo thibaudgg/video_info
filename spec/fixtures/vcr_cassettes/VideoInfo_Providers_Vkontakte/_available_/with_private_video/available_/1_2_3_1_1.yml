@@ -491,7 +491,7 @@ http_interactions:
     uri: https://vk.com/al_video.php
     body:
       encoding: US-ASCII
-      string: User-Agent=VideoInfo%2F2.6.1&act=show&al=1&autoplay=0&module=profile&video=39576223_166315543
+      string: User-Agent=VideoInfo%2F2.7&act=show&al=1&autoplay=0&module=profile&video=39576223_166315543
     headers:
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
@@ -508,26 +508,28 @@ http_interactions:
       Server:
       - Apache
       Date:
-      - Sun, 08 Jan 2017 21:14:21 GMT
+      - Tue, 07 Mar 2017 04:18:48 GMT
       Content-Type:
       - text/html; charset=windows-1251
       Content-Length:
-      - '98'
+      - '96'
       Connection:
       - keep-alive
       X-Powered-By:
-      - PHP/3.9330
+      - PHP/3.11450
       Set-Cookie:
-      - remixlang=3; expires=Thu, 04 Jan 2018 16:45:13 GMT; path=/; domain=.vk.com
+      - remixlang=3; expires=Mon, 05 Mar 2018 05:09:51 GMT; path=/; domain=.vk.com
       Pragma:
       - no-cache
       Cache-Control:
       - no-store
+      Strict-Transport-Security:
+      - max-age=0
     body:
       encoding: ASCII-8BIT
-      string: "<!--853108225443<!><!>3<!>3692<!>8<!>Access denied (5)<!><!>56212671<!><!pageview_candidate>"
+      string: "<!--3280788607847<!><!>3<!>3701<!>8<!>Access denied (5)<!><!>55966701<!><!pageview_candidate>"
     http_version: 
-  recorded_at: Sun, 08 Jan 2017 21:14:21 GMT
+  recorded_at: Tue, 07 Mar 2017 04:18:48 GMT
 - request:
     method: get
     uri: http://vk.com/video39576223_166315543
@@ -552,7 +554,7 @@ http_interactions:
       Server:
       - Apache
       Date:
-      - Mon, 09 Jan 2017 23:10:57 GMT
+      - Tue, 07 Mar 2017 04:19:13 GMT
       Content-Type:
       - text/html; charset=windows-1251
       Content-Length:
@@ -560,9 +562,9 @@ http_interactions:
       Connection:
       - keep-alive
       X-Powered-By:
-      - PHP/3.9363
+      - PHP/3.11450
       Set-Cookie:
-      - remixlang=3; expires=Wed, 03 Jan 2018 19:28:35 GMT; path=/; domain=.vk.com
+      - remixlang=3; expires=Fri, 16 Mar 2018 17:20:09 GMT; path=/; domain=.vk.com
       Pragma:
       - no-cache
       Cache-Control:
@@ -573,7 +575,7 @@ http_interactions:
       encoding: ASCII-8BIT
       string: ''
     http_version: 
-  recorded_at: Mon, 09 Jan 2017 23:10:57 GMT
+  recorded_at: Tue, 07 Mar 2017 04:19:13 GMT
 - request:
     method: get
     uri: http://vk.com:443/video39576223_166315543
@@ -598,7 +600,7 @@ http_interactions:
       Server:
       - Apache
       Date:
-      - Mon, 09 Jan 2017 23:10:58 GMT
+      - Tue, 07 Mar 2017 04:19:14 GMT
       Content-Type:
       - text/html
       Content-Length:
@@ -612,13 +614,13 @@ http_interactions:
         plain HTTP request was sent to HTTPS port</center>\r\n<hr><center> Apache
         </center>\r\n</body>\r\n</html>\r\n"
     http_version: 
-  recorded_at: Mon, 09 Jan 2017 23:10:58 GMT
+  recorded_at: Tue, 07 Mar 2017 04:19:14 GMT
 - request:
     method: post
     uri: https://vk.com/al_video.php
     body:
       encoding: US-ASCII
-      string: User-Agent=VideoInfo%2F2.6.1&act=show&al=1&autoplay=0&module=profile&video=39576223_166315543
+      string: User-Agent=VideoInfo%2F2.7&act=show&al=1&autoplay=0&module=profile&video=39576223_166315543
     headers:
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
@@ -635,24 +637,26 @@ http_interactions:
       Server:
       - Apache
       Date:
-      - Mon, 09 Jan 2017 23:10:59 GMT
+      - Tue, 07 Mar 2017 04:19:14 GMT
       Content-Type:
       - text/html; charset=windows-1251
       Content-Length:
-      - '98'
+      - '96'
       Connection:
       - keep-alive
       X-Powered-By:
-      - PHP/3.9363
+      - PHP/3.11450
       Set-Cookie:
-      - remixlang=3; expires=Sat, 13 Jan 2018 04:18:43 GMT; path=/; domain=.vk.com
+      - remixlang=3; expires=Thu, 08 Mar 2018 02:38:15 GMT; path=/; domain=.vk.com
       Pragma:
       - no-cache
       Cache-Control:
       - no-store
+      Strict-Transport-Security:
+      - max-age=0
     body:
       encoding: ASCII-8BIT
-      string: "<!--850935152977<!><!>3<!>3692<!>8<!>Access denied (5)<!><!>56225723<!><!pageview_candidate>"
+      string: "<!--3280788607847<!><!>3<!>3701<!>8<!>Access denied (5)<!><!>55966701<!><!pageview_candidate>"
     http_version: 
-  recorded_at: Mon, 09 Jan 2017 23:10:59 GMT
+  recorded_at: Tue, 07 Mar 2017 04:19:15 GMT
 recorded_with: VCR 3.0.3

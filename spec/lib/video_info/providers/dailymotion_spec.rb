@@ -23,7 +23,7 @@ describe VideoInfo::Providers::Dailymotion do
 
   describe '#available?' do
     context 'with valid video', :vcr do
-      subject { VideoInfo.new('http://www.dailymotion.com/video/x7lni3') }
+      subject { VideoInfo.new('http://www.dailymotion.com/video/x7lni3'.freeze) }
 
       describe '#available?' do
         subject { super().available? }

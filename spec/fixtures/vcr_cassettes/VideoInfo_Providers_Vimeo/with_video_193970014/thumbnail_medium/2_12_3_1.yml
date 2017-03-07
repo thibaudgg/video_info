@@ -8,7 +8,7 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - VideoInfo/2.6.1
+      - VideoInfo/2.7
       Authorization:
       - bearer 6b66b015a3504793b4f541d878f46ff6
       Accept:
@@ -31,34 +31,34 @@ http_interactions:
       X-Ratelimit-Limit:
       - '500'
       X-Ratelimit-Remaining:
-      - '499'
+      - '391'
       X-Ratelimit-Reset:
-      - '2017-01-08T21:54:16+00:00'
+      - '2017-03-07T04:32:42+00:00'
       Expires:
-      - Wed, 06 Jan 2027 21:39:16 GMT
+      - Fri, 05 Mar 2027 04:17:42 GMT
       Via:
       - 1.1 varnish
       - 1.1 varnish
       Fastly-Debug-Digest:
       - 3a9c2fa134ca353f2e91b32fde678202db24c84367cbf962c270ad644ca6482b
       Content-Length:
-      - '1855'
+      - '1853'
       Accept-Ranges:
       - bytes
       Date:
-      - Sun, 08 Jan 2017 21:39:16 GMT
+      - Tue, 07 Mar 2017 04:17:42 GMT
       Age:
       - '0'
       Connection:
       - keep-alive
       X-Served-By:
-      - cache-iad2122-IAD, cache-sjc3634-SJC
+      - cache-iad2144-IAD, cache-lax8627-LAX
       X-Cache:
       - MISS, MISS
       X-Cache-Hits:
       - 0, 0
       X-Timer:
-      - S1483911555.999057,VS0,VE178
+      - S1488860262.660516,VS0,VE239
       Vary:
       - Accept,Vimeo-Client-Id,Accept-Encoding
     body:
@@ -76,7 +76,7 @@ http_interactions:
         c1wiIHdlYmtpdGFsbG93ZnVsbHNjcmVlbiBtb3phbGxvd2Z1bGxzY3JlZW4g
         YWxsb3dmdWxsc2NyZWVuPjwvaWZyYW1lPiJ9LCJjcmVhdGVkX3RpbWUiOiIy
         MDE2LTEyLTAyVDAwOjA4OjE2KzAwOjAwIiwibW9kaWZpZWRfdGltZSI6IjIw
-        MTctMDEtMDRUMDQ6MDY6NTErMDA6MDAiLCJyZWxlYXNlX3RpbWUiOiIyMDE2
+        MTctMDMtMDVUMjA6MDU6NTUrMDA6MDAiLCJyZWxlYXNlX3RpbWUiOiIyMDE2
         LTEyLTAyVDAwOjA4OjE2KzAwOjAwIiwiY29udGVudF9yYXRpbmciOlsidW5y
         YXRlZCJdLCJsaWNlbnNlIjpudWxsLCJwcml2YWN5Ijp7InZpZXciOiJhbnli
         b2R5IiwiZW1iZWQiOiJwdWJsaWMiLCJkb3dubG9hZCI6ZmFsc2UsImFkZCI6
@@ -127,30 +127,30 @@ http_interactions:
         ZGVhZGtlbm5lZHlzIiwiY2Fub25pY2FsIjoiZGVhZGtlbm5lZHlzIiwibWV0
         YWRhdGEiOnsiY29ubmVjdGlvbnMiOnsidmlkZW9zIjp7InVyaSI6Ii90YWdz
         L2RlYWRrZW5uZWR5cy92aWRlb3MiLCJvcHRpb25zIjpbIkdFVCJdLCJ0b3Rh
-        bCI6MTQ3fX19LCJyZXNvdXJjZV9rZXkiOiI2YzQ3MmVmODk1ODEyYjE5MWRi
+        bCI6MTQ5fX19LCJyZXNvdXJjZV9rZXkiOiI2YzQ3MmVmODk1ODEyYjE5MWRi
         NWRjNDQ5YjVlYjYxNDM4MTMwYWUyIn0seyJ1cmkiOiIvdGFncy9wdXNodXBz
         IiwibmFtZSI6InB1c2h1cHMiLCJ0YWciOiJwdXNodXBzIiwiY2Fub25pY2Fs
         IjoicHVzaHVwcyIsIm1ldGFkYXRhIjp7ImNvbm5lY3Rpb25zIjp7InZpZGVv
         cyI6eyJ1cmkiOiIvdGFncy9wdXNodXBzL3ZpZGVvcyIsIm9wdGlvbnMiOlsi
-        R0VUIl0sInRvdGFsIjo5Mzh9fX0sInJlc291cmNlX2tleSI6ImVlZmI3M2Yz
+        R0VUIl0sInRvdGFsIjo5NTl9fX0sInJlc291cmNlX2tleSI6ImVlZmI3M2Yz
         NjAxMGZkZjM0ZWM1ODFhYzgyODYzZDYyMjlhMTEyMTMifSx7InVyaSI6Ii90
         YWdzL21hcnRpYWxhcnRzIiwibmFtZSI6Im1hcnRpYWxhcnRzIiwidGFnIjoi
         bWFydGlhbGFydHMiLCJjYW5vbmljYWwiOiJtYXJ0aWFsYXJ0cyIsIm1ldGFk
         YXRhIjp7ImNvbm5lY3Rpb25zIjp7InZpZGVvcyI6eyJ1cmkiOiIvdGFncy9t
         YXJ0aWFsYXJ0cy92aWRlb3MiLCJvcHRpb25zIjpbIkdFVCJdLCJ0b3RhbCI6
-        MTc4NTN9fX0sInJlc291cmNlX2tleSI6ImQ0ZDg3YTBhOGQwYTNlNGE2YWFk
+        MTg0MDh9fX0sInJlc291cmNlX2tleSI6ImQ0ZDg3YTBhOGQwYTNlNGE2YWFk
         YmU4Y2Y2YTQ4NmVhY2QxZjY1OWMifSx7InVyaSI6Ii90YWdzL2t1bmdmdSIs
         Im5hbWUiOiJrdW5nZnUiLCJ0YWciOiJrdW5nZnUiLCJjYW5vbmljYWwiOiJr
         dW5nZnUiLCJtZXRhZGF0YSI6eyJjb25uZWN0aW9ucyI6eyJ2aWRlb3MiOnsi
         dXJpIjoiL3RhZ3Mva3VuZ2Z1L3ZpZGVvcyIsIm9wdGlvbnMiOlsiR0VUIl0s
-        InRvdGFsIjo3MTY0fX19LCJyZXNvdXJjZV9rZXkiOiJlMTI2MWY2ZTgwYTI2
+        InRvdGFsIjo3MjkwfX19LCJyZXNvdXJjZV9rZXkiOiJlMTI2MWY2ZTgwYTI2
         YjE4ZDhhNjYzNDA4MzBkMjJkNzQ3NjE0ZDgzIn0seyJ1cmkiOiIvdGFncy90
         cmFpbmluZyIsIm5hbWUiOiJ0cmFpbmluZyIsInRhZyI6InRyYWluaW5nIiwi
         Y2Fub25pY2FsIjoidHJhaW5pbmciLCJtZXRhZGF0YSI6eyJjb25uZWN0aW9u
         cyI6eyJ2aWRlb3MiOnsidXJpIjoiL3RhZ3MvdHJhaW5pbmcvdmlkZW9zIiwi
-        b3B0aW9ucyI6WyJHRVQiXSwidG90YWwiOjg4OTM4fX19LCJyZXNvdXJjZV9r
+        b3B0aW9ucyI6WyJHRVQiXSwidG90YWwiOjkxNDc5fX19LCJyZXNvdXJjZV9r
         ZXkiOiJmZTkwZWZlNDg4NjAyODkyN2ZhMzFkNGEwYjQ2NWVmZmNiMmVhNjky
-        In1dLCJzdGF0cyI6eyJwbGF5cyI6Mjd9LCJtZXRhZGF0YSI6eyJjb25uZWN0
+        In1dLCJzdGF0cyI6eyJwbGF5cyI6NDR9LCJtZXRhZGF0YSI6eyJjb25uZWN0
         aW9ucyI6eyJjb21tZW50cyI6eyJ1cmkiOiIvdmlkZW9zLzE5Mzk3MDAxNC9j
         b21tZW50cyIsIm9wdGlvbnMiOlsiR0VUIiwiUE9TVCJdLCJ0b3RhbCI6MH0s
         ImNyZWRpdHMiOnsidXJpIjoiL3ZpZGVvcy8xOTM5NzAwMTQvY3JlZGl0cyIs
@@ -218,5 +218,5 @@ http_interactions:
         YzVjOWE2NmE0YzMwYjA3MmIyNzczNWViMiIsImVtYmVkX3ByZXNldHMiOm51
         bGx9
     http_version: 
-  recorded_at: Sun, 08 Jan 2017 21:39:16 GMT
+  recorded_at: Tue, 07 Mar 2017 04:17:42 GMT
 recorded_with: VCR 3.0.3
