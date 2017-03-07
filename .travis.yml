@@ -5,6 +5,7 @@ cache: bundler
 rvm:
   - 2.2.5
   - 2.3.1
+  - 2.4.0
   - jruby-head
   - rbx-2
 matrix:
