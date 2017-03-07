@@ -38198,7 +38198,7 @@ http_interactions:
       Server:
       - Apache
       Date:
-      - Tue, 07 Mar 2017 04:18:51 GMT
+      - Tue, 07 Mar 2017 04:19:18 GMT
       Content-Type:
       - text/html; charset=windows-1251
       Content-Length:
@@ -38208,7 +38208,7 @@ http_interactions:
       X-Powered-By:
       - PHP/3.11450
       Set-Cookie:
-      - remixlang=3; expires=Wed, 14 Mar 2018 07:46:07 GMT; path=/; domain=.vk.com
+      - remixlang=3; expires=Sat, 17 Mar 2018 08:39:02 GMT; path=/; domain=.vk.com
       Pragma:
       - no-cache
       Cache-Control:
@@ -38219,7 +38219,7 @@ http_interactions:
       encoding: ASCII-8BIT
       string: "<!--3280788607847<!><!>3<!>3701<!>8<!>Access denied (5)<!><!>55966701<!><!pageview_candidate>"
     http_version: 
-  recorded_at: Tue, 07 Mar 2017 04:18:51 GMT
+  recorded_at: Tue, 07 Mar 2017 04:19:18 GMT
 - request:
     method: get
     uri: http://vk.com:443/video?z=video39576223_166315543/pl_cat_updates
@@ -38244,7 +38244,7 @@ http_interactions:
       Server:
       - Apache
       Date:
-      - Tue, 07 Mar 2017 04:19:17 GMT
+      - Tue, 07 Mar 2017 04:21:59 GMT
       Content-Type:
       - text/html
       Content-Length:
@@ -38257,7 +38257,7 @@ http_interactions:
         port</title></head>\r\n<body bgcolor=\"white\">\r\n<center><h1>400 Bad Request</h1></center>\r\n<center>The
         plain HTTP request was sent to HTTPS port</center>\r\n<hr><center>Apache</center>\r\n</body>\r\n</html>\r\n"
     http_version: 
-  recorded_at: Tue, 07 Mar 2017 04:19:17 GMT
+  recorded_at: Tue, 07 Mar 2017 04:21:59 GMT
 - request:
     method: post
     uri: https://vk.com/al_video.php
@@ -38280,7 +38280,7 @@ http_interactions:
       Server:
       - Apache
       Date:
-      - Tue, 07 Mar 2017 04:19:18 GMT
+      - Tue, 07 Mar 2017 04:22:00 GMT
       Content-Type:
       - text/html; charset=windows-1251
       Content-Length:
@@ -38290,7 +38290,7 @@ http_interactions:
       X-Powered-By:
       - PHP/3.11450
       Set-Cookie:
-      - remixlang=3; expires=Sat, 17 Mar 2018 08:39:02 GMT; path=/; domain=.vk.com
+      - remixlang=3; expires=Sun, 04 Mar 2018 03:36:00 GMT; path=/; domain=.vk.com
       Pragma:
       - no-cache
       Cache-Control:
@@ -38301,5 +38301,5 @@ http_interactions:
       encoding: ASCII-8BIT
       string: "<!--3280788607847<!><!>3<!>3701<!>8<!>Access denied (5)<!><!>55966701<!><!pageview_candidate>"
     http_version: 
-  recorded_at: Tue, 07 Mar 2017 04:19:18 GMT
+  recorded_at: Tue, 07 Mar 2017 04:22:00 GMT
 recorded_with: VCR 3.0.3

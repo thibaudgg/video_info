@@ -508,7 +508,7 @@ http_interactions:
       Server:
       - Apache
       Date:
-      - Tue, 07 Mar 2017 04:18:48 GMT
+      - Tue, 07 Mar 2017 04:19:14 GMT
       Content-Type:
       - text/html; charset=windows-1251
       Content-Length:
@@ -518,7 +518,7 @@ http_interactions:
       X-Powered-By:
       - PHP/3.11450
       Set-Cookie:
-      - remixlang=3; expires=Mon, 05 Mar 2018 05:09:51 GMT; path=/; domain=.vk.com
+      - remixlang=3; expires=Thu, 08 Mar 2018 02:38:15 GMT; path=/; domain=.vk.com
       Pragma:
       - no-cache
       Cache-Control:
@@ -529,7 +529,7 @@ http_interactions:
       encoding: ASCII-8BIT
       string: "<!--3280788607847<!><!>3<!>3701<!>8<!>Access denied (5)<!><!>55966701<!><!pageview_candidate>"
     http_version: 
-  recorded_at: Tue, 07 Mar 2017 04:18:48 GMT
+  recorded_at: Tue, 07 Mar 2017 04:19:15 GMT
 - request:
     method: get
     uri: http://vk.com/video39576223_166315543
@@ -554,7 +554,7 @@ http_interactions:
       Server:
       - Apache
       Date:
-      - Tue, 07 Mar 2017 04:19:13 GMT
+      - Tue, 07 Mar 2017 04:21:55 GMT
       Content-Type:
       - text/html; charset=windows-1251
       Content-Length:
@@ -564,7 +564,7 @@ http_interactions:
       X-Powered-By:
       - PHP/3.11450
       Set-Cookie:
-      - remixlang=3; expires=Fri, 16 Mar 2018 17:20:09 GMT; path=/; domain=.vk.com
+      - remixlang=3; expires=Thu, 01 Mar 2018 05:10:23 GMT; path=/; domain=.vk.com
       Pragma:
       - no-cache
       Cache-Control:
@@ -575,7 +575,7 @@ http_interactions:
       encoding: ASCII-8BIT
       string: ''
     http_version: 
-  recorded_at: Tue, 07 Mar 2017 04:19:13 GMT
+  recorded_at: Tue, 07 Mar 2017 04:21:55 GMT
 - request:
     method: get
     uri: http://vk.com:443/video39576223_166315543
@@ -600,7 +600,7 @@ http_interactions:
       Server:
       - Apache
       Date:
-      - Tue, 07 Mar 2017 04:19:14 GMT
+      - Tue, 07 Mar 2017 04:21:56 GMT
       Content-Type:
       - text/html
       Content-Length:
@@ -614,7 +614,7 @@ http_interactions:
         plain HTTP request was sent to HTTPS port</center>\r\n<hr><center> Apache
         </center>\r\n</body>\r\n</html>\r\n"
     http_version: 
-  recorded_at: Tue, 07 Mar 2017 04:19:14 GMT
+  recorded_at: Tue, 07 Mar 2017 04:21:56 GMT
 - request:
     method: post
     uri: https://vk.com/al_video.php
@@ -637,7 +637,7 @@ http_interactions:
       Server:
       - Apache
       Date:
-      - Tue, 07 Mar 2017 04:19:14 GMT
+      - Tue, 07 Mar 2017 04:21:56 GMT
       Content-Type:
       - text/html; charset=windows-1251
       Content-Length:
@@ -647,7 +647,7 @@ http_interactions:
       X-Powered-By:
       - PHP/3.11450
       Set-Cookie:
-      - remixlang=3; expires=Thu, 08 Mar 2018 02:38:15 GMT; path=/; domain=.vk.com
+      - remixlang=3; expires=Wed, 28 Feb 2018 09:48:30 GMT; path=/; domain=.vk.com
       Pragma:
       - no-cache
       Cache-Control:
@@ -658,5 +658,5 @@ http_interactions:
       encoding: ASCII-8BIT
       string: "<!--3280788607847<!><!>3<!>3701<!>8<!>Access denied (5)<!><!>55966701<!><!pageview_candidate>"
     http_version: 
-  recorded_at: Tue, 07 Mar 2017 04:19:15 GMT
+  recorded_at: Tue, 07 Mar 2017 04:21:57 GMT
 recorded_with: VCR 3.0.3

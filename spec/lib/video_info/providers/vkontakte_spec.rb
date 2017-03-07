@@ -109,8 +109,7 @@ describe VideoInfo::Providers::Vkontakte do
     video_url = 'https://vk.com/videos43640822#/video43640822_168790809'
     subject { VideoInfo.new(video_url) }
 
-    author_thumbnail = 'https://pp.vk.me/c837422/v837422822' \
-                       '/93c8/00oqd-3BS9U.jpg'
+    author_thumbnail = 'https://pp.userapi.com/c837422/v837422822/93c8/00oqd-3BS9U.jpg'
     video_title = 'UDC open cup 2014/ 3 place / Saley Daria (solo)'
 
     its(:provider)         { should eq 'Vkontakte' }
@@ -128,9 +127,8 @@ describe VideoInfo::Providers::Vkontakte do
                 'z=video2152699_168591741%2F56fd229a9dfe2dcdbe'
     subject { VideoInfo.new(video_url) }
 
-    author_thumbnail = 'https://pp.vk.me/c623824/v623824699' \
-                       '/55575/CCQZ29l0B9k.jpg'
-    thumbnail_small = 'https://pp.vk.me/c617831/u96123303/video/l_27e4ff5c.jpg'
+    author_thumbnail = 'https://pp.userapi.com/c623824/v623824699/55575/CCQZ29l0B9k.jpg'
+    thumbnail_small = 'https://pp.userapi.com/c617831/u96123303/video/l_27e4ff5c.jpg'
     description_text = 'BEAT SOUL STEP ★ Project818 Russian ' \
                        'Dance Championship ★ 1-2 мая, Москва 2014'
     video_title = 'BEAT SOUL STEP — RDC14 Project818 Russian ' \
