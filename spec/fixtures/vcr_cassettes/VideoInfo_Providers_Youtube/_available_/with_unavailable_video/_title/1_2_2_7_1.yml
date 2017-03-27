@@ -18,31 +18,31 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      Content-Type:
-      - text/html; charset=utf-8
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Frame-Options:
+      - SAMEORIGIN
       Cache-Control:
       - no-cache
+      Content-Type:
+      - text/html; charset=utf-8
+      X-Xss-Protection:
+      - 1; mode=block; report=https://www.google.com/appserve/security-bugs/log/youtube
       P3p:
       - CP="This is not a P3P policy! See http://support.google.com/accounts/answer/151657?hl=en
         for more info."
-      Expires:
-      - Tue, 27 Apr 1971 19:44:06 EST
-      X-Frame-Options:
-      - SAMEORIGIN
       X-Content-Type-Options:
       - nosniff
-      Strict-Transport-Security:
-      - max-age=31536000
-      X-Xss-Protection:
-      - 1; mode=block; report=https://www.google.com/appserve/security-bugs/log/youtube
+      Expires:
+      - Tue, 27 Apr 1971 19:44:06 EST
       Date:
-      - Mon, 27 Mar 2017 20:25:09 GMT
+      - Mon, 27 Mar 2017 21:01:59 GMT
       Server:
       - YouTubeFrontEnd
       Set-Cookie:
-      - VISITOR_INFO1_LIVE=CBmW_vUaTRc; path=/; domain=.youtube.com; expires=Sun,
-        26-Nov-2017 08:18:09 GMT; httponly
-      - YSC=_MHQ-3bSPT4; path=/; domain=.youtube.com; httponly
+      - VISITOR_INFO1_LIVE=Ldum9UJMc90; path=/; domain=.youtube.com; expires=Sun,
+        26-Nov-2017 08:54:59 GMT; httponly
+      - YSC=WZMVwjnYXLg; path=/; domain=.youtube.com; httponly
       Alt-Svc:
       - quic=":443"; ma=2592000; v="37,36,35"
       Transfer-Encoding:
@@ -51,10 +51,10 @@ http_interactions:
       encoding: ASCII-8BIT
       string: "<!DOCTYPE html><html lang=\"en\" data-cast-api-enabled=\"true\"><head><style
         name=\"www-roboto\">@font-face{font-family:'Roboto';font-style:normal;font-weight:400;src:local('Roboto
-        Regular'),local('Roboto-Regular'),url(//fonts.gstatic.com/s/roboto/v15/zN7GBFwfMP4uA6AR0HCoLQ.ttf)format('truetype');}@font-face{font-family:'Roboto';font-style:italic;font-weight:400;src:local('Roboto
+        Regular'),local('Roboto-Regular'),url(//fonts.gstatic.com/s/roboto/v15/zN7GBFwfMP4uA6AR0HCoLQ.ttf)format('truetype');}@font-face{font-family:'Roboto';font-style:normal;font-weight:500;src:local('Roboto
+        Medium'),local('Roboto-Medium'),url(//fonts.gstatic.com/s/roboto/v15/RxZJdnzeo3R5zSexge8UUaCWcynf_cDxXwCLxiixG1c.ttf)format('truetype');}@font-face{font-family:'Roboto';font-style:italic;font-weight:400;src:local('Roboto
         Italic'),local('Roboto-Italic'),url(//fonts.gstatic.com/s/roboto/v15/W4wDsBUluyw0tK3tykhXEfesZW2xOQ-xsNqO47m55DA.ttf)format('truetype');}@font-face{font-family:'Roboto';font-style:italic;font-weight:500;src:local('Roboto
-        Medium Italic'),local('Roboto-MediumItalic'),url(//fonts.gstatic.com/s/roboto/v15/OLffGBTaF0XFOW1gnuHF0Z0EAVxt0G0biEntp43Qt6E.ttf)format('truetype');}@font-face{font-family:'Roboto';font-style:normal;font-weight:500;src:local('Roboto
-        Medium'),local('Roboto-Medium'),url(//fonts.gstatic.com/s/roboto/v15/RxZJdnzeo3R5zSexge8UUaCWcynf_cDxXwCLxiixG1c.ttf)format('truetype');}</style><script
+        Medium Italic'),local('Roboto-MediumItalic'),url(//fonts.gstatic.com/s/roboto/v15/OLffGBTaF0XFOW1gnuHF0Z0EAVxt0G0biEntp43Qt6E.ttf)format('truetype');}</style><script
         name=\"www-roboto\">if (document.fonts && document.fonts.load) {document.fonts.load(\"400
         10pt Roboto\", \"E\");document.fonts.load(\"500 10pt Roboto\", \"E\");}</script><script>var
         ytcsi = {gt: function(n) {n = (n || '') + 'data_';return ytcsi[n] || (ytcsi[n]
@@ -129,30 +129,30 @@ http_interactions:
         navigation\n  </button>\n<div id=\"yt-masthead\"><div class=\"yt-masthead-logo-container
         \">  <button class=\"yt-uix-button yt-uix-button-size-default yt-uix-button-text
         yt-uix-button-empty yt-uix-button-has-icon appbar-guide-toggle appbar-guide-clickable-ancestor\"
-        type=\"button\" onclick=\";return false;\" aria-controls=\"appbar-guide-menu\"
-        id=\"appbar-guide-button\" aria-label=\"Guide\"><span class=\"yt-uix-button-icon-wrapper\"><span
+        type=\"button\" onclick=\";return false;\" aria-label=\"Guide\" aria-controls=\"appbar-guide-menu\"
+        id=\"appbar-guide-button\"><span class=\"yt-uix-button-icon-wrapper\"><span
         class=\"yt-uix-button-icon yt-uix-button-icon-appbar-guide yt-sprite\"></span></span></button>\n
         \ <div id=\"appbar-main-guide-notification-container\"></div>\n<span id=\"yt-masthead-logo-fragment\"><a
         href=\"/\" class=\"masthead-logo-renderer yt-uix-sessionlink      spf-link
-        \" data-sessionlink=\"itct=CAUQsV4iEwiC2oeewvfSAhVJS34KHa19Dvgo-B0\"  id=\"logo-container\"
+        \" data-sessionlink=\"itct=CAUQsV4iEwinvOi7yvfSAhWIsH4KHeXhCxgo-B0\"  id=\"logo-container\"
         title=\"YouTube Home\">  <span title=\"YouTube Home\" class=\"logo masthead-logo-renderer-logo
         yt-sprite\"></span>\n</a></span></div><div id=\"yt-masthead-signin\"><a href=\"//www.youtube.com/upload\"
         class=\"yt-uix-button   yt-uix-sessionlink yt-uix-button-opacity yt-uix-button-size-default
-        yt-uix-button-has-icon yt-uix-tooltip yt-uix-button-empty\" data-sessionlink=\"ei=JXXZWMKzGMmW-QOt-7nADw&amp;feature=mhsb\"
+        yt-uix-button-has-icon yt-uix-tooltip yt-uix-button-empty\" data-sessionlink=\"ei=x33ZWOe8EYjh-gPlw6_AAQ&amp;feature=mhsb\"
         id=\"upload-btn\" title=\"Upload\"><span class=\"yt-uix-button-icon-wrapper\"><span
         class=\"yt-uix-button-icon yt-uix-button-icon-material-upload yt-sprite\"></span></span></a><div
         class=\"signin-container \"><button class=\"yt-uix-button yt-uix-button-size-default
         yt-uix-button-primary\" type=\"button\" onclick=\";window.location.href=this.getAttribute(&#39;href&#39;);return
-        false;\" href=\"https://accounts.google.com/ServiceLogin?service=youtube&amp;continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Fhl%3Den%26feature%3Dsign_in_button%26action_handle_signin%3Dtrue%26next%3D%252Fwatch%253Fv%253DSUkXvWn1m7Q%26app%3Ddesktop&amp;hl=en&amp;uilel=3&amp;passive=true\"
+        false;\" href=\"https://accounts.google.com/ServiceLogin?continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Ffeature%3Dsign_in_button%26hl%3Den%26app%3Ddesktop%26next%3D%252Fwatch%253Fv%253DSUkXvWn1m7Q%26action_handle_signin%3Dtrue&amp;hl=en&amp;service=youtube&amp;passive=true&amp;uilel=3\"
         role=\"link\"><span class=\"yt-uix-button-content\">Sign in</span></button></div></div><div
         id=\"yt-masthead-content\"><form id=\"masthead-search\" class=\"  search-form
         consolidated-form  vve-check\" action=\"/results\" onsubmit=\"if (document.getElementById(&#39;masthead-search-term&#39;).value
-        == &#39;&#39;) return false;\" data-clicktracking=\"CAIQ7VAiEwiC2oeewvfSAhVJS34KHa19Dvgo-B0\"
-        data-visibility-tracking=\"CAIQ7VAiEwiC2oeewvfSAhVJS34KHa19Dvgo-B0\"><button
+        == &#39;&#39;) return false;\" data-clicktracking=\"CAIQ7VAiEwinvOi7yvfSAhWIsH4KHeXhCxgo-B0\"
+        data-visibility-tracking=\"CAIQ7VAiEwinvOi7yvfSAhWIsH4KHeXhCxgo-B0\"><button
         class=\"yt-uix-button yt-uix-button-size-default yt-uix-button-default search-btn-component
         search-button\" type=\"submit\" onclick=\"if (document.getElementById(&#39;masthead-search-term&#39;).value
         == &#39;&#39;) return false; document.getElementById(&#39;masthead-search&#39;).submit();
-        return false;;return true;\" id=\"search-btn\" tabindex=\"2\" dir=\"ltr\"><span
+        return false;;return true;\" tabindex=\"2\" id=\"search-btn\" dir=\"ltr\"><span
         class=\"yt-uix-button-content\">Search</span></button><div id=\"masthead-search-terms\"
         class=\"masthead-search-terms-border\" dir=\"ltr\"><input id=\"masthead-search-term\"
         autocomplete=\"off\"  onkeydown=\"if (!this.value &amp;&amp; (event.keyCode
@@ -212,9 +212,9 @@ http_interactions:
         class=\"watch-queue-title-container\"><span class=\"watch-queue-count\"></span><span
         class=\"watch-queue-title\">Watch Queue</span><span class=\"tv-queue-title\">Queue</span></div></div>
         \ <span class=\"dark-overflow-action-menu\">\n    \n    \n    <button aria-haspopup=\"true\"
-        type=\"button\" aria-label=\"Actions for the queue\" class=\"flip control-bar-button
-        yt-uix-button yt-uix-button-dark-overflow-action-menu yt-uix-button-size-default
-        yt-uix-button-has-icon no-icon-markup yt-uix-button-empty\" aria-expanded=\"false\"
+        type=\"button\" aria-expanded=\"false\" aria-label=\"Actions for the queue\"
+        class=\"flip control-bar-button yt-uix-button yt-uix-button-dark-overflow-action-menu
+        yt-uix-button-size-default yt-uix-button-has-icon no-icon-markup yt-uix-button-empty\"
         onclick=\";return false;\" ><span class=\"yt-uix-button-arrow yt-sprite\"></span><ul
         class=\"watch-queue-menu yt-uix-button-menu yt-uix-button-menu-dark-overflow-action-menu
         hid\" role=\"menu\" aria-haspopup=\"true\"><li role=\"menuitem\"><span onclick=\";return
@@ -280,38 +280,38 @@ http_interactions:
         hidden;\">\n  </div>\n\n  </div>\n\n\n  </div>\n\n</div></div></div></div>
         \ <div id=\"footer-container\" class=\"yt-base-gutter force-layer\"><div id=\"footer\"><div
         id=\"footer-main\"><div id=\"footer-logo\"><a href=\"/\" id=\"footer-logo-link\"
-        title=\"YouTube home\" data-sessionlink=\"ei=JXXZWMKzGMmW-QOt-7nADw&amp;ved=CAEQpmEiEwiC2oeewvfSAhVJS34KHa19Dvgo-B0\"
+        title=\"YouTube home\" data-sessionlink=\"ei=x33ZWOe8EYjh-gPlw6_AAQ&amp;ved=CAEQpmEiEwinvOi7yvfSAhWIsH4KHeXhCxgo-B0\"
         class=\"yt-uix-sessionlink\"><span class=\"footer-logo-icon yt-sprite\"></span></a></div>
         \ <ul class=\"pickers yt-uix-button-group\" data-button-toggle-group=\"optional\">\n
         \     <li>\n            <button class=\"yt-uix-button yt-uix-button-size-default
         yt-uix-button-default yt-uix-button-has-icon\" type=\"button\" onclick=\";return
         false;\" id=\"yt-picker-language-button\" data-button-action=\"yt.www.picker.load\"
-        data-button-menu-id=\"arrow-display\" data-picker-position=\"footer\" data-picker-key=\"language\"
+        data-picker-position=\"footer\" data-picker-key=\"language\" data-button-menu-id=\"arrow-display\"
         data-button-toggle=\"true\"><span class=\"yt-uix-button-icon-wrapper\"><span
         class=\"yt-uix-button-icon yt-uix-button-icon-footer-language yt-sprite\"></span></span><span
         class=\"yt-uix-button-content\">  <span class=\"yt-picker-button-label\">\nLanguage:\n
         \ </span>\n  English\n</span><span class=\"yt-uix-button-arrow yt-sprite\"></span></button>\n\n\n
         \     </li>\n      <li>\n            <button class=\"yt-uix-button yt-uix-button-size-default
         yt-uix-button-default\" type=\"button\" onclick=\";return false;\" id=\"yt-picker-country-button\"
-        data-button-action=\"yt.www.picker.load\" data-button-menu-id=\"arrow-display\"
-        data-picker-position=\"footer\" data-picker-key=\"country\" data-button-toggle=\"true\"><span
+        data-button-action=\"yt.www.picker.load\" data-picker-position=\"footer\"
+        data-picker-key=\"country\" data-button-menu-id=\"arrow-display\" data-button-toggle=\"true\"><span
         class=\"yt-uix-button-content\">  <span class=\"yt-picker-button-label\">\nContent
         location:\n  </span>\n  United States\n</span><span class=\"yt-uix-button-arrow
         yt-sprite\"></span></button>\n\n\n      </li>\n      <li>\n            <button
         class=\"yt-uix-button yt-uix-button-size-default yt-uix-button-default\" type=\"button\"
         onclick=\";return false;\" id=\"yt-picker-safetymode-button\" data-button-action=\"yt.www.picker.load\"
-        data-button-menu-id=\"arrow-display\" data-picker-position=\"footer\" data-picker-key=\"safetymode\"
+        data-picker-position=\"footer\" data-picker-key=\"safetymode\" data-button-menu-id=\"arrow-display\"
         data-button-toggle=\"true\"><span class=\"yt-uix-button-content\">  <span
         class=\"yt-picker-button-label\">\nRestricted Mode:\n  </span>\nOff\n</span><span
         class=\"yt-uix-button-arrow yt-sprite\"></span></button>\n\n\n      </li>\n
         \ </ul>\n<a href=\"/feed/history\" class=\"yt-uix-button  footer-history yt-uix-sessionlink
         yt-uix-button-default yt-uix-button-size-default yt-uix-button-has-icon\"
-        data-sessionlink=\"ei=JXXZWMKzGMmW-QOt-7nADw\"><span class=\"yt-uix-button-icon-wrapper\"><span
+        data-sessionlink=\"ei=x33ZWOe8EYjh-gPlw6_AAQ\"><span class=\"yt-uix-button-icon-wrapper\"><span
         class=\"yt-uix-button-icon yt-uix-button-icon-footer-history yt-sprite\"></span></span><span
         class=\"yt-uix-button-content\">History</span></a>    <button class=\"yt-uix-button
         yt-uix-button-size-default yt-uix-button-default yt-uix-button-has-icon yt-uix-button-reverse
         yt-google-help-link inq-no-click \" type=\"button\" onclick=\";return false;\"
-        data-ghelp-anchor=\"google-help\" id=\"google-help\" data-ghelp-tracking-param=\"\"
+        data-ghelp-anchor=\"google-help\" data-ghelp-tracking-param=\"\" id=\"google-help\"
         data-feedback-product-id=\"59\" data-load-chat-support=\"\"><span class=\"yt-uix-button-icon-wrapper\"><span
         class=\"yt-uix-button-icon yt-uix-button-icon-questionmark yt-sprite\"></span></span><span
         class=\"yt-uix-button-content\">Help\n</span></button>\n      <div id=\"yt-picker-language-footer\"
@@ -352,7 +352,7 @@ http_interactions:
         \   </span>\n  </p>\n\n      </div>\n  </div>\n\n          </div>\n        </div>\n
         \       <div class=\"yt-dialog-focus-trap\" tabindex=\"0\"></div>\n      </div>\n
         \   </div>\n  </div>\n\n\n<div id=\"hidden-component-template-wrapper\" class=\"hid\">
-        \   <div id=\"shared-addto-watch-later-login\" class=\"hid\">\n      <a href=\"https://accounts.google.com/ServiceLogin?service=youtube&amp;continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Fhl%3Den%26feature%3Dplaylist%26action_handle_signin%3Dtrue%26next%3D%252Fwatch%253Fv%253DSUkXvWn1m7Q%26app%3Ddesktop&amp;hl=en&amp;uilel=3&amp;passive=true\"
+        \   <div id=\"shared-addto-watch-later-login\" class=\"hid\">\n      <a href=\"https://accounts.google.com/ServiceLogin?continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Ffeature%3Dplaylist%26hl%3Den%26app%3Ddesktop%26next%3D%252Fwatch%253Fv%253DSUkXvWn1m7Q%26action_handle_signin%3Dtrue&amp;hl=en&amp;service=youtube&amp;passive=true&amp;uilel=3\"
         class=\"sign-in-link\">Sign in</a> to add this to Watch Later\n\n    </div>\n<div
         id=\"yt-uix-videoactionmenu-menu\" class=\"yt-ui-menu-content\">  <div class=\"hide-on-create-pl-panel\">\n
         \   <h3>\nAdd to\n    </h3>\n  </div>\n  <div class=\"add-to-widget\">\n      <p
@@ -382,14 +382,14 @@ http_interactions:
         \"www/watch_promos\": \"www/watch\", \"www/watch_speedyg\": \"www/watch\",
         \"www/watch_transcript\": \"www/watch\", \"www/watch_videoshelf\": \"www/watch\",
         \"www/ct_advancedsearch\": \"www/videomanager\", \"www/my_videos\": \"www/videomanager\"};spf.script.declare(ytdepmap);</script><script>if
-        (window.ytcsi) {window.ytcsi.tick(\"je\", null, '');}</script><script>yt.setConfig({GAPI_HINT_PARAMS:
-        \"m;\\/_\\/scs\\/abc-static\\/_\\/js\\/k=gapi.gapi.en.DTPeBB_SvOA.O\\/m=__features__\\/rt=j\\/d=1\\/rs=AHpOoo-J3J0yqNDMPVrmQT6j-SBFfGx8oA\",APIARY_HOST_FIRSTPARTY:
-        \"\",INNERTUBE_CONTEXT_CLIENT_VERSION: \"1.20170322\",INNERTUBE_API_KEY: \"AIzaSyAO_FJ2SlqU8Q4STEHLGCilw_Y9_11qcW8\",INNERTUBE_CONTEXT_CLIENT_NAME:
-        1,INNERTUBE_API_VERSION: \"v1\",APIARY_HOST: \"\",'VISITOR_DATA': \"CgtDQm1XX3ZVYVRSYw%3D%3D\",'GAPI_HOST':
-        \"https:\\/\\/apis.google.com\",'GAPI_LOCALE': \"en_US\",'INNERTUBE_CONTEXT_HL':
-        \"en\",'INNERTUBE_CONTEXT_GL': \"US\",'XHR_APIARY_HOST': \"youtubei.youtube.com\"});yt.setConfig({'ROOT_VE_CHILDREN':
-        [\"CAEQpmEiEwiC2oeewvfSAhVJS34KHa19Dvgo-B0\",\"CAIQ7VAiEwiC2oeewvfSAhVJS34KHa19Dvgo-B0\"],'ROOT_VE_TYPE':
-        3832});yt.setConfig({'EVENT_ID': \"JXXZWMKzGMmW-QOt-7nADw\",'PAGE_NAME': \"watch\",'LOGGED_IN':
+        (window.ytcsi) {window.ytcsi.tick(\"je\", null, '');}</script><script>yt.setConfig({INNERTUBE_API_KEY:
+        \"AIzaSyAO_FJ2SlqU8Q4STEHLGCilw_Y9_11qcW8\",INNERTUBE_CONTEXT_CLIENT_VERSION:
+        \"1.20170322\",INNERTUBE_CONTEXT_CLIENT_NAME: 1,APIARY_HOST: \"\",INNERTUBE_API_VERSION:
+        \"v1\",APIARY_HOST_FIRSTPARTY: \"\",GAPI_HINT_PARAMS: \"m;\\/_\\/scs\\/abc-static\\/_\\/js\\/k=gapi.gapi.en.DTPeBB_SvOA.O\\/m=__features__\\/rt=j\\/d=1\\/rs=AHpOoo-J3J0yqNDMPVrmQT6j-SBFfGx8oA\",'VISITOR_DATA':
+        \"CgtMZHVtOVVKTWM5MA%3D%3D\",'GAPI_HOST': \"https:\\/\\/apis.google.com\",'GAPI_LOCALE':
+        \"en_US\",'INNERTUBE_CONTEXT_HL': \"en\",'INNERTUBE_CONTEXT_GL': \"US\",'XHR_APIARY_HOST':
+        \"youtubei.youtube.com\"});yt.setConfig({'ROOT_VE_CHILDREN': [\"CAEQpmEiEwinvOi7yvfSAhWIsH4KHeXhCxgo-B0\",\"CAIQ7VAiEwinvOi7yvfSAhWIsH4KHeXhCxgo-B0\"],'ROOT_VE_TYPE':
+        3832});yt.setConfig({'EVENT_ID': \"x33ZWOe8EYjh-gPlw6_AAQ\",'PAGE_NAME': \"watch\",'LOGGED_IN':
         false,'SESSION_INDEX': null,'VALID_SESSION_TEMPDATA_DOMAINS': [\"www.youtube.com\",\"gaming.youtube.com\"],'PARENT_TRACKING_PARAMS':
         \"\",'FORMATS_FILE_SIZE_JS': [\"%s B\",\"%s KB\",\"%s MB\",\"%s GB\",\"%s
         TB\"],'DELEGATED_SESSION_ID': null,'ONE_PICK_URL': \"\",'UNIVERSAL_HOVERCARDS':
@@ -397,7 +397,7 @@ http_interactions:
         \"\\/yts\\/jsbin\\/www-gapi-loader-vflNhfwHJ\\/www-gapi-loader.js\",'JS_COMMON_MODULE':
         \"\\/yts\\/jsbin\\/www-en_US-vflJLkLjx\\/common.js\",'PAGE_FRAME_DELAYLOADED_CSS':
         \"\\/yts\\/cssbin\\/www-pageframedelayloaded-vflyiAVoi.css\",'EXPERIMENT_FLAGS':
-        {\"enable_more_related_ve_logging\":true,\"web_logging_max_batch\":20,\"warm_load_nav_start_web\":true,\"chat_smoothing_animations\":0,\"player_swfcfg_cleanup\":true,\"service_worker_scope\":\"\\/\",\"log_window_onerror_fraction\":0.1,\"desktop_pyv_on_watch_via_valor\":true,\"autoescape_tempdata_url\":true,\"gfeedback_for_signed_out_users_enabled\":true,\"service_worker_push_enabled\":true,\"use_push_for_desktop_live_chat\":true,\"service_worker_enabled\":true,\"comment_deep_link\":true,\"block_spf_search_ads_impressions\":true,\"desktop_pyv_on_watch_missing_params\":true,\"autoplay_pause_sampling_fraction\":0.0,\"web_gel_lact\":true,\"service_worker_push_home_only\":true,\"clear_web_implicit_clicktracking\":true,\"same_domain_static_resources_desktop\":true,\"consent_url_override\":\"\",\"enable_server_side_search_pyv\":true,\"enable_youtubei_innertube\":true,\"watch_next_pause_autoplay_lact_sec\":0,\"navigation_only_csi_reset\":true,\"desktop_pyv_on_watch_override_lact\":true,\"service_worker_push_prompt_cap\":1,\"cold_load_nav_start_web\":true},'GUIDE_DELAY_LOAD':
+        {\"player_swfcfg_cleanup\":true,\"enable_server_side_search_pyv\":true,\"service_worker_scope\":\"\\/\",\"use_push_for_desktop_live_chat\":true,\"enable_youtubei_innertube\":true,\"web_logging_max_batch\":20,\"desktop_pyv_on_watch_via_valor\":true,\"same_domain_static_resources_desktop\":true,\"web_gel_lact\":true,\"service_worker_push_prompt_cap\":1,\"service_worker_enabled\":true,\"desktop_pyv_on_watch_override_lact\":true,\"chat_smoothing_animations\":0,\"comment_deep_link\":true,\"watch_next_pause_autoplay_lact_sec\":0,\"warm_load_nav_start_web\":true,\"autoescape_tempdata_url\":true,\"autoplay_pause_sampling_fraction\":0.0,\"clear_web_implicit_clicktracking\":true,\"desktop_pyv_on_watch_missing_params\":true,\"gfeedback_for_signed_out_users_enabled\":true,\"service_worker_push_home_only\":true,\"consent_url_override\":\"\",\"log_window_onerror_fraction\":0.1,\"block_spf_search_ads_impressions\":true,\"enable_more_related_ve_logging\":true,\"service_worker_push_enabled\":true,\"navigation_only_csi_reset\":true,\"cold_load_nav_start_web\":true},'GUIDE_DELAY_LOAD':
         true,'GUIDE_DELAYLOADED_CSS': \"\\/yts\\/cssbin\\/www-guide-vflzcam_P.css\",'GUIDED_HELP_PARAMS':
         {\"logged_in\":\"0\"},'HIGH_CONTRAST_MODE_CSS': \"\\/yts\\/cssbin\\/www-highcontrastmode-vflUxH5WH.css\",'PREFETCH_LINKS':
         false,'PREFETCH_LINKS_MAX': 1,'PREFETCH_AUTOPLAY': false,'PREFETCH_AUTOPLAY_TIME':
@@ -415,11 +415,11 @@ http_interactions:
         type=\\\"button\\\" onclick=\\\";return false;\\\" title=\\\"Queue\\\" data-video-ids=\\\"__VIDEO_ID__\\\"
         data-style=\\\"tv-queue\\\"\\u003e\\u003c\\/button\\u003e\\n\",'WATCH_QUEUE_MENU':
         \"  \\u003cspan class=\\\"thumb-menu dark-overflow-action-menu video-actions\\\"\\u003e\\n
-        \   \\u003cbutton aria-haspopup=\\\"true\\\" type=\\\"button\\\" aria-expanded=\\\"false\\\"
-        class=\\\"yt-uix-button-reverse flip addto-watch-queue-menu spf-nolink hide-until-delayloaded
-        yt-uix-button yt-uix-button-dark-overflow-action-menu yt-uix-button-size-default
-        yt-uix-button-has-icon no-icon-markup yt-uix-button-empty\\\" onclick=\\\";return
-        false;\\\" \\u003e\\u003cspan class=\\\"yt-uix-button-arrow yt-sprite\\\"\\u003e\\u003c\\/span\\u003e\\u003cul
+        \   \\u003cbutton onclick=\\\";return false;\\\" type=\\\"button\\\" class=\\\"yt-uix-button-reverse
+        flip addto-watch-queue-menu spf-nolink hide-until-delayloaded yt-uix-button
+        yt-uix-button-dark-overflow-action-menu yt-uix-button-size-default yt-uix-button-has-icon
+        no-icon-markup yt-uix-button-empty\\\" aria-haspopup=\\\"true\\\" aria-expanded=\\\"false\\\"
+        \\u003e\\u003cspan class=\\\"yt-uix-button-arrow yt-sprite\\\"\\u003e\\u003c\\/span\\u003e\\u003cul
         class=\\\"watch-queue-thumb-menu yt-uix-button-menu yt-uix-button-menu-dark-overflow-action-menu
         hid\\\"\\u003e\\u003cli role=\\\"menuitem\\\" class=\\\"overflow-menu-choice
         addto-watch-queue-menu-choice addto-watch-queue-play-next yt-uix-button-menu-item\\\"
@@ -430,16 +430,15 @@ http_interactions:
         onclick=\\\";return false;\\\"  data-video-ids=\\\"__VIDEO_ID__\\\"\\u003e\\u003cspan
         class=\\\"addto-watch-queue-menu-text\\\"\\u003ePlay now\\u003c\\/span\\u003e\\u003c\\/li\\u003e\\u003c\\/ul\\u003e\\u003c\\/button\\u003e\\n
         \ \\u003c\\/span\\u003e\\n\",'SAFETY_MODE_PENDING': false,'ZWIEBACK_PING_URLS':
-        [\"https:\\/\\/www.google.com\\/pagead\\/lvz?pg=watch\\u0026req_ts=1490646309\\u0026evtid=AJhsOujF3A47i45asNcg5Lw-iTsa1LtnAzKOYMEQEEqNputsJ3SzroK5Kj47hfxL1S3e5V5yzb3zBDghsyEzcoLvSsNeVmMeEQ\\u0026sigh=AIz_a88EyHNsddestkMAs8shdndferWP5A\"],'LOCAL_DATE_TIME_CONFIG':
-        {\"amPms\":[\"AM\",\"PM\"],\"formatShortTime\":\"h:mm a\",\"formatShortDate\":\"MMM
-        d, yyyy\",\"formatLongDate\":\"MMMM d, yyyy h:mm a\",\"shortMonths\":[\"Jan\",\"Feb\",\"Mar\",\"Apr\",\"May\",\"Jun\",\"Jul\",\"Aug\",\"Sep\",\"Oct\",\"Nov\",\"Dec\"],\"weekdays\":[\"Sunday\",\"Monday\",\"Tuesday\",\"Wednesday\",\"Thursday\",\"Friday\",\"Saturday\"],\"firstDayOfWeek\":0,\"formatLongDateOnly\":\"MMMM
-        d, yyyy\",\"shortWeekdays\":[\"Sun\",\"Mon\",\"Tue\",\"Wed\",\"Thu\",\"Fri\",\"Sat\"],\"firstWeekCutoffDay\":3,\"dateFormats\":[\"MMMM
-        d, yyyy h:mm a\",\"MMMM d, yyyy\",\"MMM d, yyyy\",\"MMM d, yyyy\"],\"formatWeekdayShortTime\":\"EE
-        h:mm a\",\"months\":[\"January\",\"February\",\"March\",\"April\",\"May\",\"June\",\"July\",\"August\",\"September\",\"October\",\"November\",\"December\"],\"weekendRange\":[6,5]},'PAGE_CL':
-        151286026,'PAGE_BUILD_LABEL': \"youtube_20170322_0_RC6_RC4\",'VARIANTS_CHECKSUM':
-        \"d1114e086848d149e472eb4f01cdde8c\",'CLIENT_PROTOCOL': \"HTTP\\/1.1\",'CLIENT_TRANSPORT':
+        [\"https:\\/\\/www.google.com\\/pagead\\/lvz?req_ts=1490648519\\u0026pg=watch\\u0026evtid=AJhsOug5WHJ1nTNs9Af-MiCCNlM9WnIqNg9SVcCPdkK8mvHQf-k-CivdqN0v8B-TIG6uHjCqVyLSKvAnUBxe6Z_Q0O8FaawX3g\\u0026sigh=AIz_a8992FHZwPKcY3uIpHD3R54QtIXSyQ\"],'LOCAL_DATE_TIME_CONFIG':
+        {\"shortWeekdays\":[\"Sun\",\"Mon\",\"Tue\",\"Wed\",\"Thu\",\"Fri\",\"Sat\"],\"shortMonths\":[\"Jan\",\"Feb\",\"Mar\",\"Apr\",\"May\",\"Jun\",\"Jul\",\"Aug\",\"Sep\",\"Oct\",\"Nov\",\"Dec\"],\"firstWeekCutoffDay\":3,\"formatLongDate\":\"MMMM
+        d, yyyy h:mm a\",\"dateFormats\":[\"MMMM d, yyyy h:mm a\",\"MMMM d, yyyy\",\"MMM
+        d, yyyy\",\"MMM d, yyyy\"],\"formatShortDate\":\"MMM d, yyyy\",\"formatWeekdayShortTime\":\"EE
+        h:mm a\",\"formatShortTime\":\"h:mm a\",\"weekendRange\":[6,5],\"weekdays\":[\"Sunday\",\"Monday\",\"Tuesday\",\"Wednesday\",\"Thursday\",\"Friday\",\"Saturday\"],\"months\":[\"January\",\"February\",\"March\",\"April\",\"May\",\"June\",\"July\",\"August\",\"September\",\"October\",\"November\",\"December\"],\"firstDayOfWeek\":0,\"amPms\":[\"AM\",\"PM\"],\"formatLongDateOnly\":\"MMMM
+        d, yyyy\"},'PAGE_CL': 151286026,'PAGE_BUILD_LABEL': \"youtube_20170322_0_RC6_RC4\",'VARIANTS_CHECKSUM':
+        \"cbbba52c74fed3739bb77d64a73d2d56\",'CLIENT_PROTOCOL': \"HTTP\\/1.1\",'CLIENT_TRANSPORT':
         \"tcp\",'MDX_ENABLE_CASTV2': true,'MDX_ENABLE_QUEUE': true,'FEEDBACK_BUCKET_ID':
-        \"Watch\",'FEEDBACK_LOCALE_LANGUAGE': \"en\",'FEEDBACK_LOCALE_EXTRAS': {\"is_partner\":\"\",\"experiments\":\"9405989,9415398,9416475,9417482,9419452,9419979,9420289,9422596,9423555,9428398,9431012,9432939,9433221,9433839,9433851,9433870,9434046,9434289,9434949,9438309,9439294,9439828,9440054,9441194,9441929,9442387,9442746,9443437,9444189,9444771,9445139,9446054,9446364,9448302,9449243,9449256,9450059,9450402,9450544,9451814,9451827,9451937,9452448,9452814,9452833,9452850,9453098,9453167,9453540,9453553,9453897,9454394,9454653,9454837,9454899,9454976,9455031,9455068,9455939,9456249,9456445,9456628,9456640,9456955,9457115,9457141,9457169,9457284,9457541,9457592,9457595,9457598,9457968,9458171,9458231,9458240,9458265,9458577,9458668,9458881,9458947,9459067,9459075,9459187,9459651,9459655,9459793,9459802,9460088,9460160,9460266,9460295,9460349,9460458,9460554,9460611,9460637,9460829,9461124,9461452,9461765,9461777,9461906,9461991,9462003,9462018,9462032,9462233,9462359,9462377,9462474,9462633,9462718,9462948,9462989,9463002,9463004,9463011,9463083,9463175,9463177,9463251,9463287,9463460,9463470,9463496,9463512,9463528,9463594,9463664,9463734,9463784,9463809,9463963,9463965,9464040,9464111,9464207,9464272,9464408,9464440,9464444,9464490,9464639,9464823,9464888,9464889,9464909,9465117,9465513,9465533,9465560,9465652,9465676,9465709,9465732,9466112,9466136,9466181,9466185,9466194,9466397,9466416,9466593,9466712,9466755,9466782,9466793,9466795,9466832,9466835,9466965,9467030,9467084,9467338,9467401,9467462,9467588,9467655,9467700,9467795,9467867,9467977,9468012,9468153,9468228,9468336,9468433,9468714\",\"accept_language\":null,\"logged_in\":false}});
+        \"Watch\",'FEEDBACK_LOCALE_LANGUAGE': \"en\",'FEEDBACK_LOCALE_EXTRAS': {\"is_partner\":\"\",\"logged_in\":false,\"experiments\":\"9415398,9416475,9417482,9419979,9420289,9422596,9423555,9428398,9431012,9432939,9433221,9433839,9433870,9434046,9434289,9434949,9437553,9438309,9438971,9439294,9439882,9440054,9441194,9441389,9441929,9442387,9442746,9444189,9444771,9445139,9446054,9446364,9448302,9449243,9449256,9450059,9450402,9450544,9450707,9451814,9451827,9451937,9452448,9452814,9452833,9452850,9453098,9453167,9453540,9453553,9453897,9454394,9454653,9454837,9454899,9454976,9455009,9455031,9455068,9455324,9455939,9456249,9456445,9456640,9456955,9457114,9457141,9457169,9457542,9457591,9457595,9457598,9457968,9458171,9458231,9458240,9458265,9458577,9458668,9458881,9458947,9459067,9459075,9459187,9459447,9459651,9459655,9459792,9459799,9460088,9460160,9460222,9460266,9460295,9460350,9460458,9460554,9460611,9460637,9460829,9461125,9461452,9461765,9461777,9461906,9462003,9462018,9462032,9462144,9462233,9462359,9462377,9462474,9462523,9462592,9462948,9463002,9463004,9463083,9463175,9463177,9463251,9463287,9463460,9463470,9463496,9463512,9463594,9463664,9463734,9463784,9463809,9463963,9463965,9464039,9464111,9464207,9464272,9464407,9464440,9464484,9464490,9464626,9464643,9464823,9464888,9464889,9464909,9465117,9465261,9465438,9465513,9465533,9465560,9465652,9465676,9465709,9465732,9465745,9465972,9466136,9466181,9466186,9466194,9466397,9466782,9466793,9466795,9466835,9467002,9467075,9467084,9467175,9467338,9467401,9467533,9467588,9467655,9467700,9467795,9467867,9467977,9468149,9468153,9468166,9468173,9468228,9468433,9468575\",\"accept_language\":null}});
         \  yt.setConfig({\n    'GUIDED_HELP_LOCALE': \"en_US\",\n    'GUIDED_HELP_ENVIRONMENT':
         \"prod\"\n  });\nyt.setConfig('SPF_SEARCH_BOX', true);yt.setMsg({'ADDTO_CREATE_NEW_PLAYLIST':
         \"Create new playlist\\n\",'ADDTO_CREATE_PLAYLIST_DYNAMIC_TITLE': \"  $dynamic_title_placeholder
@@ -448,20 +447,20 @@ http_interactions:
         Queue\",'ADDTO_WATCH_QUEUE_ADDED': \"Added\",'ADDTO_WATCH_QUEUE_ERROR': \"Error\",'ADDTO_TV_QUEUE':
         \"Queue\",'ADS_INSTREAM_FIRST_PLAY': \"A video ad is playing.\",'ADS_INSTREAM_SKIPPABLE':
         \"Video ad can be skipped.\",'ADS_OVERLAY_IMPRESSION': \"Ad displayed.\",'MASTHEAD_NOTIFICATIONS_LABEL':
-        {\"other\": \"# unread notifications.\", \"case0\": \"0 unread notifications.\",
-        \"case1\": \"1 unread notification.\"},'MASTHEAD_NOTIFICATIONS_COUNT_99PLUS':
+        {\"case0\": \"0 unread notifications.\", \"case1\": \"1 unread notification.\",
+        \"other\": \"# unread notifications.\"},'MASTHEAD_NOTIFICATIONS_COUNT_99PLUS':
         \"99+\",'MDX_AUTOPLAY_OFF': 'Autoplay is off','MDX_AUTOPLAY_ON': 'Autoplay
         is on'});  yt.setConfig('FEED_PRIVACY_CSS_URL', \"\\/yts\\/cssbin\\/www-feedprivacydialog-vflW29Bds.css\");\n\n
         \ yt.setConfig('FEED_PRIVACY_LIGHTBOX_ENABLED', true);\nyt.setConfig({'SBOX_JS_URL':
         \"\\/yts\\/jsbin\\/www-searchbox-legacy-vflYjU91s\\/www-searchbox-legacy.js\",'SBOX_SETTINGS':
-        {\"SESSION_INDEX\":null,\"REQUEST_LANGUAGE\":\"en\",\"SUGG_EXP_ID\":\"ytd4_arm_4\",\"HAS_ON_SCREEN_KEYBOARD\":false,\"IS_FUSION\":false,\"PSUGGEST_TOKEN\":null,\"REQUEST_DOMAIN\":\"us\",\"PQ\":\"\"},'SBOX_LABELS':
+        {\"REQUEST_LANGUAGE\":\"en\",\"HAS_ON_SCREEN_KEYBOARD\":false,\"IS_FUSION\":false,\"PSUGGEST_TOKEN\":null,\"SUGG_EXP_ID\":\"ytd_arm_7\",\"REQUEST_DOMAIN\":\"us\",\"PQ\":\"\",\"SESSION_INDEX\":null},'SBOX_LABELS':
         {\"SUGGESTION_DISMISS_LABEL\":\"Remove\",\"SUGGESTION_DISMISSED_LABEL\":\"Suggestion
         dismissed\"}});  yt.setConfig({\n    'YPC_LOADER_JS': \"\\/yts\\/jsbin\\/www-ypc-vflEWOCqz\\/www-ypc.js\",\n
         \   'YPC_LOADER_CSS': \"\\/yts\\/cssbin\\/www-ypc-vfl_wOJp6.css\",\n    'YPC_SIGNIN_URL':
-        \"https:\\/\\/accounts.google.com\\/ServiceLogin?service=youtube\\u0026continue=http%3A%2F%2Fwww.youtube.com%2Fsignin%3Fhl%3Den%26action_handle_signin%3Dtrue%26next%3D%252F%26app%3Ddesktop\\u0026hl=en\\u0026uilel=3\\u0026passive=true\",\n
+        \"https:\\/\\/accounts.google.com\\/ServiceLogin?continue=http%3A%2F%2Fwww.youtube.com%2Fsignin%3Fhl%3Den%26app%3Ddesktop%26next%3D%252F%26action_handle_signin%3Dtrue\\u0026hl=en\\u0026service=youtube\\u0026passive=true\\u0026uilel=3\",\n
         \   'DBLCLK_ADVERTISER_ID': \"2542116\",\n    'DBLCLK_YPC_ACTIVITY_GROUP':
         \"youtu444\",\n    'SUBSCRIPTION_URL': \"\\/subscription_ajax\",\n    'YPC_SWITCH_URL':
-        \"\\/signin?next=%2F\\u0026skip_identity_prompt=True\\u0026feature=purchases\\u0026action_handle_signin=true\",\n
+        \"\\/signin?next=%2F\\u0026feature=purchases\\u0026skip_identity_prompt=True\\u0026action_handle_signin=true\",\n
         \   'YPC_GB_LANGUAGE': \"en_US\",\n    'YPC_MB_URL': \"https:\\/\\/payments.google.com\\/payments\\/v4\\/js\\/integrator.js?ss=md\",\n
         \   'YPC_TRANSACTION_URL': \"\\/transaction_handler\",\n    'YPC_SUBSCRIPTION_URL':
         \"\\/ypc_subscription_ajax\",\n    'YPC_POST_PURCHASE_URL': \"\\/ypc_post_purchase_ajax\",\n
@@ -471,12 +470,12 @@ http_interactions:
         '1'},\n    'YTO_GTM_2_BUTTON_CLICK_DATA': {'event': 'landingButtonClick',
         'buttonPosition': '2'}\n  });\n  yt.setMsg({\n    'YPC_OFFER_OVERLAY': \"
         \ \\n\",\n    'YPC_UNSUBSCRIBE_OVERLAY': \"  \\n\"\n  });\n  yt.setConfig('GOOGLE_HELP_CONTEXT',
-        \"watch\");\nytcsi.info('st', 166);ytcfg.set({\"CSI_VIEWPORT\":true,\"CSI_SERVICE_NAME\":\"youtube\",\"TIMING_ACTION\":\"watch,watch7_html5\",\"TIMING_INFO\":{\"GetWatchNext_rid\":\"0x6ac57a5cbbc11cf4\",\"yt_pl\":0,\"yt_li\":\"0\",\"yt_lt\":\"cold\",\"GetPlayer_rid\":\"0x6ac57a5cbbc11cf4\",\"c\":\"WEB\",\"cver\":\"1.20170322\"}});;
-        \ yt.setConfig({\n      'XSRF_TOKEN': \"QUFFLUhqbkV3SVNKcE0yb0ZIbU5ieDNvVTZ3VG5fYk95Z3xBQ3Jtc0tueXN4TWk1OG9XT1M3ZDJPUG01TEVHdnZ1bHZzV1oya3R0WDcydk9ybERwT2tLbnczVEhpMC0zWG5rUThCSzk1OEZ0Uk05Y3lDRk12U2pUa29jSHRpN2Nvc1YzZGRGVjJ4b2hGWE83T1pfNS1NOW8taklnU0t3SWgtVlYyZVpOcndjNy1nS1MtUW14am83YThxazMzSlhTSmFhZFE=\",\n
+        \"watch\");\nytcsi.info('st', 74);ytcfg.set({\"CSI_SERVICE_NAME\":\"youtube\",\"CSI_VIEWPORT\":true,\"TIMING_INFO\":{\"GetWatchNext_rid\":\"0x532f221cf6c75371\",\"yt_li\":\"0\",\"GetPlayer_rid\":\"0x532f221cf6c75371\",\"cver\":\"1.20170322\",\"yt_pl\":0,\"c\":\"WEB\",\"yt_lt\":\"cold\"},\"TIMING_ACTION\":\"watch,watch7_html5\"});;
+        \ yt.setConfig({\n      'XSRF_TOKEN': \"QUFFLUhqbHNTMTN4UkxWeUFnd0IxMFJiUUtQczlmanlMZ3xBQ3Jtc0ttS0p5d2xtME5aemxLbGNER1Q2V2NrSkZIRWZSMklYXzBoYW9zdjJyM3d1WEY3STk0alF4b0JuZzJKeG4zV21sT1BraGIzR3c1bmZCdGd2VEotanJRN1lRZUxGbFBfTUlZc1Mxek5TZEdpeUJiZ1BvdzhqRkNuSDR1ZmRGaGYzTzRPS1Zub1NWRlEzbHIySGtBZmR0cGZHY1ZyUUE=\",\n
         \     'XSRF_FIELD_NAME': \"session_token\",\n\n      'XSRF_REDIRECT_TOKEN':
-        \"pEspXTxxh32cQFBXKChvyKUCBmZ8MTQ5MDczMjcwOUAxNDkwNjQ2MzA5\"  });\nyt.setConfig('ID_TOKEN',
+        \"RkYuCqvrWKbaD2Q0rkDVgGX7AVZ8MTQ5MDczNDkxOUAxNDkwNjQ4NTE5\"  });\nyt.setConfig('ID_TOKEN',
         null);window.ytcfg.set('SERVICE_WORKER_KILLSWITCH', false);  yt.setConfig('THUMB_DELAY_LOAD_BUFFER',
         0);\nif (window.ytcsi) {window.ytcsi.tick(\"jl\", null, '');}</script>\n</body></html>"
     http_version: 
-  recorded_at: Mon, 27 Mar 2017 20:25:09 GMT
+  recorded_at: Mon, 27 Mar 2017 21:01:59 GMT
 recorded_with: VCR 3.0.3
