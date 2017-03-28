@@ -1,6 +1,17 @@
 class VideoInfo
   module Providers
     module YoutubeAPI
+      def available?
+        if !data['items'].empty?
+          upload_status = data['items'][0]['status']['uploadStatus']
+          'rejected' != upload_status
+        else
+          false
+        end
+      rescue VideoInfo::HttpError
+        false
+      end
+
       def api_key
         VideoInfo.provider_api_keys[:youtube]
       end
@@ -45,17 +56,6 @@ class VideoInfo
       end
 
       private
-
-      def available?
-        if !data['items'].empty?
-          upload_status = data['items'][0]['status']['uploadStatus']
-          'rejected' != upload_status
-        else
-          false
-        end
-      rescue VideoInfo::HttpError
-        false
-      end
 
       def _api_base
         'www.googleapis.com'

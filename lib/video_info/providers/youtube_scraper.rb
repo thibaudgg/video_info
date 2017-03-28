@@ -5,6 +5,10 @@ require 'net_http_timeout_errors'
 class VideoInfo
   module Providers
     module YoutubeScraper
+      def available?
+        data.css('div#unavailable-submessage').text.strip.empty?
+      end
+
       def date
         date = itemprop_node_value('datePublished')
 
@@ -76,10 +80,6 @@ class VideoInfo
 
           node.attr('content').value
         end
-      end
-
-      def available?
-        data.css('div#unavailable-submessage').text.strip.empty?
       end
 
       def _set_data_from_api_impl(api_url)
