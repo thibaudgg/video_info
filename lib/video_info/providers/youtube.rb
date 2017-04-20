@@ -41,7 +41,7 @@ class VideoInfo
       end
 
       def thumbnail_large
-        "https://i.ytimg.com/vi/#{video_id}/hqdefault.jpg"
+        "https://i.ytimg.com/vi/#{video_id}/maxresdefault.jpg"
       end
 
       def thumbnail_maxres
