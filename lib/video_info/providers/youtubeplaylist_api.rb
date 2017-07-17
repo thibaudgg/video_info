@@ -56,7 +56,7 @@ class VideoInfo
 
     def _playlist_items_api_path
       '/youtube/v3/playlistItems?part=snippet&' \
-      "playlistId=#{playlist_id}&fields=items&key=#{api_key}"
+      "playlistId=#{playlist_id}&fields=items&key=#{api_key}&maxResults=50"
     end
 
     def _playlist_items_api_url
