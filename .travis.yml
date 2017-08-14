@@ -3,8 +3,9 @@ sudo: false
 dist: trusty
 cache: bundler
 rvm:
-  - 2.2.5
-  - 2.3.1
+  - 2.2.7
+  - 2.3.4
+  - 2.4.1
   - jruby-head
   - rbx-2
   - ruby-head
