@@ -65,12 +65,10 @@ class VideoInfo
       def meta_node_value(name)
         if available?
           node = meta_nodes.detect do |n|
-            n.attr('name').present? && n.attr('name').value == name
+            n.attr('name') && n.attr('name').value == name
           end
 
-          return nil if node.attr('content').nil?
-
-          node.attr('content').value
+          node && node.attr('content') && node.attr('content').value
         end
       end
 
