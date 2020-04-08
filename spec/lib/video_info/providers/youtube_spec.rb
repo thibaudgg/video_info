@@ -192,9 +192,13 @@ require 'spec_helper'
       end
 
       describe '#author_url' do
-        subject { super().author_url }
         author_url = 'https://www.youtube.com/channel/UCzxQk-rZGowoqMBKxGD5jSA'
-        it { is_expected.to eql author_url }
+
+        it { expect(subject.author_url).to eql(author_url) }
+
+        it 'can be called twice and receive the same value' do
+          expect(subject.author_url).to eq(subject.author_url)
+        end
       end
 
       describe '#title' do
