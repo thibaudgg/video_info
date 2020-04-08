@@ -44,6 +44,10 @@ class VideoInfo
         "https://i.ytimg.com/vi/#{video_id}/hqdefault.jpg"
       end
 
+      def thumbnail_large_2x
+        "https://i.ytimg.com/vi/#{video_id}/sddefault.jpg"
+      end
+
       def thumbnail_maxres
         "https://i.ytimg.com/vi/#{video_id}/maxresdefault.jpg"
       end

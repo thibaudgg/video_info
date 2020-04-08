@@ -164,6 +164,16 @@ require 'spec_helper'
         it { is_expected.to eq thumbnail_url }
       end
 
+      describe '#thumbnail_large_2x' do
+        subject { super().thumbnail_large_2x }
+        it { is_expected.to be_nil }
+      end
+
+      describe '#thumbnail_maxres' do
+        subject { super().thumbnail_maxres }
+        it { is_expected.to be_nil }
+      end
+
       describe '#thumbnail' do
         subject { super().thumbnail }
         thumbnail_url = 'https://i.vimeocdn.com/video/531688239_640.jpg'

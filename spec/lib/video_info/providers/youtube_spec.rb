@@ -263,6 +263,12 @@ require 'spec_helper'
         it { is_expected.to eq thumbnail_url }
       end
 
+      describe '#thumbnail_large_2x' do
+        subject { super().thumbnail_large_2x }
+        thumbnail_url = 'https://i.ytimg.com/vi/mZqGqE0D0n4/sddefault.jpg'
+        it { is_expected.to eq thumbnail_url }
+      end
+
       describe '#thumbnail_maxres' do
         subject { super().thumbnail_maxres }
         thumbnail_url = 'https://i.ytimg.com/vi/mZqGqE0D0n4/maxresdefault.jpg'

@@ -42,6 +42,14 @@ class VideoInfo
       end
     end
 
+    def thumbnail_large_2x
+      nil
+    end
+
+    def thumbnail_maxres
+      nil
+    end
+
     private
 
     def _response_code
