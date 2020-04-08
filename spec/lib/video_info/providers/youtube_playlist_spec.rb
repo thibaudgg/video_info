@@ -3,6 +3,7 @@ require 'spec_helper'
 [nil, 'AIzaSyA6PYwSr1EnLFUFy1cZDk3Ifb0rxeJaeZ0'].each do |api_key|
   describe VideoInfo::Providers::YoutubePlaylist do
     before(:each) do
+      #TODO: I think this is unnecessary.  Should be removed?
       api_key = 'AIzaSyA6PYwSr1EnLFUFy1cZDk3Ifb0rxeJaeZ0'
       VideoInfo.provider_api_keys = { youtube: api_key }
     end
@@ -164,6 +165,20 @@ require 'spec_helper'
       describe '#thumbnail_large' do
         subject { super().thumbnail_large }
         thumbnail_url = 'https://i.ytimg.com/vi/Oi67QjrXy2w/hqdefault.jpg'
+        it { is_expected.to eq thumbnail_url }
+      end
+
+      describe '#thumbnail_large_2x' do
+        subject { super().thumbnail_large_2x }
+        thumbnail_url = 'https://i.ytimg.com/vi/SUkXvWn1m7Q/sddefault.jpg'
+        it do
+          is_expected.to eq thumbnail_url
+          end
+      end
+
+      describe '#thumbnail_maxres' do
+        subject { super().thumbnail_maxres }
+        thumbnail_url = 'https://i.ytimg.com/vi/SUkXvWn1m7Q/maxresdefault.jpg'
         it { is_expected.to eq thumbnail_url }
       end
 

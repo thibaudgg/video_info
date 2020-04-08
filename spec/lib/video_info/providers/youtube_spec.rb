@@ -119,6 +119,12 @@ require 'spec_helper'
           it { is_expected.to eq thumbnail_url }
         end
 
+        describe '#thumbnail_large_2x' do
+          subject { super().thumbnail_large_2x }
+          thumbnail_url = 'https://i.ytimg.com/vi/SUkXvWn1m7Q/sddefault.jpg'
+          it { is_expected.to eq thumbnail_url }
+        end
+
         describe '#thumbnail_maxres' do
           subject { super().thumbnail_maxres }
           thumbnail_url = 'https://i.ytimg.com/vi/SUkXvWn1m7Q/maxresdefault.jpg'
@@ -569,6 +575,12 @@ require 'spec_helper'
       describe '#thumbnail_large' do
         subject { super().thumbnail_large }
         thumbnail_url = 'https://i.ytimg.com/vi/mZqGqE0D0n4/hqdefault.jpg'
+        it { is_expected.to eq thumbnail_url }
+      end
+
+      describe '#thumbnail_large_2x' do
+        subject { super().thumbnail_large_2x }
+        thumbnail_url = 'https://i.ytimg.com/vi/mZqGqE0D0n4/sddefault.jpg'
         it { is_expected.to eq thumbnail_url }
       end
 
