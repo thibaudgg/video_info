@@ -83,7 +83,7 @@ class VideoInfo
 
       def _channel_info
         channel_url = _channel_api_url(_video_snippet['channelId'])
-        @channel_data ||=  JSON.load(open(channel_url).read)
+        @_channel_info ||=  JSON.load(open(channel_url).read)
       end
 
       def _channel_snippet
