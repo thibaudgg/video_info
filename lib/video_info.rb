@@ -51,6 +51,7 @@ class VideoInfo
                  :thumbnail_small,
                  :thumbnail_medium,
                  :thumbnail_large,
+                 :thumbnail_large_2x,
                  :thumbnail_maxres
   def_delegators :@provider, :embed_code, :embed_url
   def_delegators :@provider, :available?

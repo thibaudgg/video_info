@@ -111,6 +111,16 @@ describe VideoInfo::Providers::Wistia do
       it { is_expected.to eq thumbnail_url }
     end
 
+    describe '#thumbnail_large_2x' do
+      subject { super().thumbnail_large_2x }
+      it { is_expected.to be_nil }
+    end
+
+    describe '#thumbnail_maxres' do
+      subject { super().thumbnail_maxres }
+      it { is_expected.to be_nil }
+    end
+
     describe '#thumbnail' do
       subject { super().thumbnail }
       thumbnail_url = 'https://embed-ssl.wistia.com/deliveries/' \

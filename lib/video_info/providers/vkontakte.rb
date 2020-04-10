@@ -105,10 +105,6 @@ class VideoInfo
         nil
       end
 
-      def thumbnail_maxres
-        nil
-      end
-
       private
 
       def _make_request(url, options)
