@@ -1,6 +1,6 @@
 # VideoInfo
 
-[![Gem Version](https://badge.fury.io/rb/video_info.svg)](http://badge.fury.io/rb/video_info) [![Build Status](https://travis-ci.org/thibaudgg/video_info.svg?branch=master)](https://travis-ci.org/thibaudgg/video_info) [![Dependency Status](https://gemnasium.com/thibaudgg/video_info.svg)](https://gemnasium.com/thibaudgg/video_info) [![Code Climate](https://codeclimate.com/github/thibaudgg/video_info.svg)](https://codeclimate.com/github/thibaudgg/video_info) [![Coverage Status](https://coveralls.io/repos/thibaudgg/video_info/badge.svg?branch=master)](https://coveralls.io/r/thibaudgg/video_info) [![Reviewed by Hound](https://img.shields.io/badge/Reviewed_by-Hound-8E64B0.svg)](https://houndci.com)
+[![Gem Version](https://badge.fury.io/rb/video_info.svg)](http://badge.fury.io/rb/video_info) [![Build Status](https://travis-ci.org/thibaudgg/video_info.svg?branch=master)](https://travis-ci.org/thibaudgg/video_info) [![Code Climate](https://codeclimate.com/github/thibaudgg/video_info.svg)](https://codeclimate.com/github/thibaudgg/video_info) [![Coverage Status](https://coveralls.io/repos/thibaudgg/video_info/badge.svg?branch=master)](https://coveralls.io/r/thibaudgg/video_info) [![Reviewed by Hound](https://img.shields.io/badge/Reviewed_by-Hound-8E64B0.svg)](https://houndci.com)
 
 Simple Ruby Gem to get video info from Dailymotion, VK, Vimeo, Wistia and YouTube (with playlist).
 
