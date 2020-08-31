@@ -34,6 +34,8 @@ Scrapers has been implemented for both Youtube and Vimeo. However, the Youtube s
 
 To get a Youtube API key, [follow the instructions here](https://developers.google.com/youtube/registering_an_application)
 
+After generating a Youtube API key it is necessary to enable the YouTube Data API for the project which your API key was generated [enable Youtube Data API here](https://console.developers.google.com/apis/library/youtube.googleapis.com)
+
 To get a Vimeo API key, [follow the instructions here](https://developer.vimeo.com/api/start)
 
 To set the API keys, do the following:
