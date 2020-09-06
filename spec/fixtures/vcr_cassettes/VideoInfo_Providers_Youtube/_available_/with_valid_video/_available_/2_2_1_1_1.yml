@@ -2,13 +2,13 @@
 http_interactions:
 - request:
     method: get
-    uri: https://www.googleapis.com/youtube/v3/videos?fields=items(id,snippet,statistics,status,contentDetails)&id=mZqGqE0D0n4&key=AIzaSyA6PYwSr1EnLFUFy1cZDk3Ifb0rxeJaeZ0&part=snippet,statistics,status,contentDetails
+    uri: https://www.googleapis.com/youtube/v3/videos?fields=items(id,snippet,statistics,status,contentDetails)&id=mZqGqE0D0n4&key=api_key_123&part=snippet,statistics,status,contentDetails
     body:
       encoding: US-ASCII
       string: ''
     headers:
       User-Agent:
-      - VideoInfo/2.7
+      - VideoInfo/2.8.0
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -18,108 +18,109 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      Expires:
-      - Mon, 27 Mar 2017 21:02:07 GMT
-      Date:
-      - Mon, 27 Mar 2017 21:02:07 GMT
-      Cache-Control:
-      - private, max-age=0, must-revalidate, no-transform
-      Etag:
-      - '"uQc-MPTsstrHkQcRXL3IWLmeNsM/03veR8ZOqnlyUpF8SmguwPRCM9o"'
-      Vary:
-      - Origin
-      - X-Origin
       Content-Type:
       - application/json; charset=UTF-8
-      X-Content-Type-Options:
-      - nosniff
+      Vary:
+      - Origin
+      - Referer
+      - X-Origin
+      Date:
+      - Sun, 06 Sep 2020 01:05:30 GMT
+      Server:
+      - scaffolding on HTTPServer2
+      Cache-Control:
+      - private
+      X-Xss-Protection:
+      - '0'
       X-Frame-Options:
       - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      Content-Length:
-      - '1800'
-      Server:
-      - GSE
+      X-Content-Type-Options:
+      - nosniff
       Alt-Svc:
-      - quic=":443"; ma=2592000; v="37,36,35"
+      - h3-29=":443"; ma=2592000,h3-27=":443"; ma=2592000,h3-T051=":443"; ma=2592000,h3-T050=":443";
+        ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443";
+        ma=2592000,quic=":443"; ma=2592000; v="46,43"
+      Transfer-Encoding:
+      - chunked
     body:
-      encoding: UTF-8
+      encoding: ASCII-8BIT
       string: |
         {
-         "items": [
-          {
-           "id": "mZqGqE0D0n4",
-           "snippet": {
-            "publishedAt": "2008-04-12T22:25:35.000Z",
-            "channelId": "UCzxQk-rZGowoqMBKxGD5jSA",
-            "title": "Cherry Bloom - King Of The Knife",
-            "description": "The first video from the upcoming album Secret Sounds, to download in-stores April 14. Checkout http://www.cherrybloom.net",
-            "thumbnails": {
-             "default": {
-              "url": "https://i.ytimg.com/vi/mZqGqE0D0n4/default.jpg",
-              "width": 120,
-              "height": 90
-             },
-             "medium": {
-              "url": "https://i.ytimg.com/vi/mZqGqE0D0n4/mqdefault.jpg",
-              "width": 320,
-              "height": 180
-             },
-             "high": {
-              "url": "https://i.ytimg.com/vi/mZqGqE0D0n4/hqdefault.jpg",
-              "width": 480,
-              "height": 360
-             }
-            },
-            "channelTitle": "Cherry Bloom",
-            "tags": [
-             "cherry",
-             "bloom",
-             "king",
-             "of",
-             "the",
-             "knife",
-             "guitar",
-             "drum",
-             "clip",
-             "rock",
-             "alternative",
-             "tremplin",
-             "Paris-Forum"
-            ],
-            "categoryId": "10",
-            "liveBroadcastContent": "none",
-            "localized": {
-             "title": "Cherry Bloom - King Of The Knife",
-             "description": "The first video from the upcoming album Secret Sounds, to download in-stores April 14. Checkout http://www.cherrybloom.net"
+          "items": [
+            {
+              "id": "mZqGqE0D0n4",
+              "snippet": {
+                "publishedAt": "2008-04-12T22:34:48Z",
+                "channelId": "UCzxQk-rZGowoqMBKxGD5jSA",
+                "title": "Cherry Bloom - King Of The Knife",
+                "description": "The first video from the upcoming album Secret Sounds, to download in-stores April 14. Checkout http://www.cherrybloom.net",
+                "thumbnails": {
+                  "default": {
+                    "url": "https://i.ytimg.com/vi/mZqGqE0D0n4/default.jpg",
+                    "width": 120,
+                    "height": 90
+                  },
+                  "medium": {
+                    "url": "https://i.ytimg.com/vi/mZqGqE0D0n4/mqdefault.jpg",
+                    "width": 320,
+                    "height": 180
+                  },
+                  "high": {
+                    "url": "https://i.ytimg.com/vi/mZqGqE0D0n4/hqdefault.jpg",
+                    "width": 480,
+                    "height": 360
+                  }
+                },
+                "channelTitle": "Cherry Bloom",
+                "tags": [
+                  "cherry",
+                  "bloom",
+                  "king",
+                  "of",
+                  "the",
+                  "knife",
+                  "guitar",
+                  "drum",
+                  "clip",
+                  "rock",
+                  "alternative",
+                  "tremplin",
+                  "Paris-Forum"
+                ],
+                "categoryId": "10",
+                "liveBroadcastContent": "none",
+                "localized": {
+                  "title": "Cherry Bloom - King Of The Knife",
+                  "description": "The first video from the upcoming album Secret Sounds, to download in-stores April 14. Checkout http://www.cherrybloom.net"
+                }
+              },
+              "contentDetails": {
+                "duration": "PT2M56S",
+                "dimension": "2d",
+                "definition": "sd",
+                "caption": "false",
+                "licensedContent": false,
+                "contentRating": {},
+                "projection": "rectangular"
+              },
+              "status": {
+                "uploadStatus": "processed",
+                "privacyStatus": "public",
+                "license": "youtube",
+                "embeddable": true,
+                "publicStatsViewable": true,
+                "madeForKids": false
+              },
+              "statistics": {
+                "viewCount": "7944",
+                "likeCount": "61",
+                "dislikeCount": "2",
+                "favoriteCount": "0",
+                "commentCount": "5"
+              }
             }
-           },
-           "contentDetails": {
-            "duration": "PT2M56S",
-            "dimension": "2d",
-            "definition": "sd",
-            "caption": "false",
-            "licensedContent": false,
-            "projection": "rectangular"
-           },
-           "status": {
-            "uploadStatus": "processed",
-            "privacyStatus": "public",
-            "license": "youtube",
-            "embeddable": true,
-            "publicStatsViewable": true
-           },
-           "statistics": {
-            "viewCount": "7373",
-            "likeCount": "51",
-            "dislikeCount": "2",
-            "favoriteCount": "0",
-            "commentCount": "5"
-           }
-          }
-         ]
+          ]
         }
-    http_version: 
-  recorded_at: Mon, 27 Mar 2017 21:02:07 GMT
+    http_version:
+  recorded_at: Sun, 06 Sep 2020 01:05:30 GMT
 recorded_with: VCR 3.0.3

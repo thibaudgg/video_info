@@ -1,7 +1,7 @@
 require 'spec_helper'
 
-[nil, 'AIzaSyA6PYwSr1EnLFUFy1cZDk3Ifb0rxeJaeZ0'].each do |api_key|
-  describe VideoInfo::Providers::Youtube do
+[nil, 'api_key_123'].each do |api_key|
+  describe VideoInfo::Providers::Youtube, :vcr do
     before(:all) do
       VideoInfo.provider_api_keys = { youtube: api_key }
     end
