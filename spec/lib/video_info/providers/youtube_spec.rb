@@ -1,7 +1,7 @@
 require 'spec_helper'
 
-[nil, 'AIzaSyA6PYwSr1EnLFUFy1cZDk3Ifb0rxeJaeZ0'].each do |api_key|
-  describe VideoInfo::Providers::Youtube do
+[nil, 'api_key_123'].each do |api_key|
+  describe VideoInfo::Providers::Youtube, :vcr do
     before(:all) do
       VideoInfo.provider_api_keys = { youtube: api_key }
     end
@@ -31,7 +31,7 @@ require 'spec_helper'
     end
 
     describe '#available?' do
-      context 'with valid video', :vcr do
+      context 'with valid video' do
         subject { VideoInfo.new('http://www.youtube.com/watch?v=mZqGqE0D0n4'.freeze) }
 
         describe '#available?' do
@@ -40,7 +40,7 @@ require 'spec_helper'
         end
       end
 
-      context 'with unavailable video', :vcr do
+      context 'with unavailable video' do
         subject { VideoInfo.new('http://www.youtube.com/watch?v=SUkXvWn1m7Q') }
 
         describe '#available?' do
@@ -143,7 +143,7 @@ require 'spec_helper'
         end
       end
 
-      context 'with video removed because of copyright claim', :vcr do
+      context 'with video removed because of copyright claim' do
         subject { VideoInfo.new('http://www.youtube.com/watch?v=ffClNhwx0KU') }
 
         describe '#available?' do
@@ -153,7 +153,7 @@ require 'spec_helper'
       end
     end
 
-    context 'with video mZqGqE0D0n4', :vcr do
+    context 'with video mZqGqE0D0n4' do
       subject { VideoInfo.new('http://www.youtube.com/watch?v=mZqGqE0D0n4') }
 
       describe '#provider' do
@@ -191,9 +191,10 @@ require 'spec_helper'
 
       describe '#author_thumbnail' do
         subject { super().author_thumbnail }
-        author_thumbnail = 'https://yt3.ggpht.com/-7rhnfdQaI3k/AAAAAAAAAAI/' \
-                           'AAAAAAAAAAA/eMJZ5HBukCQ/s88-c-k-no-mo-rj-c0xffffff' \
-                           '/photo.jpg'
+        author_thumbnail = 'https://yt3.ggpht.com/a/' \
+                           'AATXAJyf5l8p3WQvOx-Q0o8ssGmIL-K5taxKHv5ZEEYc' \
+                           '=s88-c-k-c0xffffffff-no-rj-mo'
+
         it { is_expected.to eql author_thumbnail }
       end
 
@@ -249,7 +250,7 @@ require 'spec_helper'
           if api_key.nil?
             is_expected.to eq Time.parse('Sat Apr 12 2008', Time.now.utc)
           else
-            is_expected.to eq Time.parse('Sat Apr 12 22:25:35 UTC 2008',
+            is_expected.to eq Time.parse('Sat Apr 12 22:34:48 UTC 2008',
                                          Time.now.utc)
           end
         end
@@ -291,7 +292,7 @@ require 'spec_helper'
       end
     end
 
-    context 'with video oQ49W_xKzKA', :vcr do
+    context 'with video oQ49W_xKzKA' do
       subject { VideoInfo.new('http://www.youtube.com/watch?v=oQ49W_xKzKA') }
 
       it 'should properly apply arbitrary url attributes' do
@@ -300,7 +301,7 @@ require 'spec_helper'
       end
     end
 
-    context 'with video oQ49W_xKzKA', :vcr do
+    context 'with video oQ49W_xKzKA' do
       subject { VideoInfo.new('http://www.youtube.com/watch?v=oQ49W_xKzKA') }
 
       describe '#provider' do
@@ -314,7 +315,7 @@ require 'spec_helper'
       end
     end
 
-    context 'with video Xp6CXF-Cesg', :vcr do
+    context 'with video Xp6CXF-Cesg' do
       subject { VideoInfo.new('http://www.youtube.com/watch?v=Xp6CXF-Cesg') }
 
       describe '#provider' do
@@ -328,7 +329,7 @@ require 'spec_helper'
       end
     end
 
-    context 'with video VeasFckfMHY in user url', :vcr do
+    context 'with video VeasFckfMHY in user url' do
       video_url = 'http://www.youtube.com/user/EducatorVids3?v=VeasFckfMHY'
       subject { VideoInfo.new(video_url) }
 
@@ -348,7 +349,7 @@ require 'spec_helper'
       end
     end
 
-    context 'with video VeasFckfMHY after params', :vcr do
+    context 'with video VeasFckfMHY after params' do
       video_url = 'http://www.youtube.com/watch?feature=player_profilepage&v=VeasFckfMHY'
       subject { VideoInfo.new(video_url) }
 
@@ -368,7 +369,7 @@ require 'spec_helper'
       end
     end
 
-    context 'with video VeasFckfMHY in path', :vcr do
+    context 'with video VeasFckfMHY in path' do
       subject { VideoInfo.new('http://www.youtube.com/v/VeasFckfMHY') }
 
       describe '#provider' do
@@ -382,7 +383,7 @@ require 'spec_helper'
       end
     end
 
-    context 'with video VeasFckfMHY in e path', :vcr do
+    context 'with video VeasFckfMHY in e path' do
       subject { VideoInfo.new('http://www.youtube.com/e/VeasFckfMHY') }
 
       describe '#provider' do
@@ -396,7 +397,7 @@ require 'spec_helper'
       end
     end
 
-    context 'with video VeasFckfMHY in embed path', :vcr do
+    context 'with video VeasFckfMHY in embed path' do
       subject { VideoInfo.new('http://www.youtube.com/embed/VeasFckfMHY') }
 
       describe '#provider' do
@@ -410,7 +411,7 @@ require 'spec_helper'
       end
     end
 
-    context 'with video JM9NgvjjVng in youtu.be url', :vcr do
+    context 'with video JM9NgvjjVng in youtu.be url' do
       subject { VideoInfo.new('http://youtu.be/JM9NgvjjVng') }
 
       describe '#provider' do
@@ -424,7 +425,7 @@ require 'spec_helper'
       end
     end
 
-    context 'without http or www', :vcr do
+    context 'without http or www' do
       subject { VideoInfo.new('youtu.be/JM9NgvjjVng') }
 
       describe '#provider' do
@@ -438,7 +439,7 @@ require 'spec_helper'
       end
     end
 
-    context 'with video url in text', :vcr do
+    context 'with video url in text' do
       url_in_text = '<a href="http://www.youtube.com/watch?v=mZqGqE0D0n4">' \
                     'http://www.youtube.com/watch?v=mZqGqE0D0n4</a>'
       subject { VideoInfo.new(url_in_text) }
@@ -454,7 +455,7 @@ require 'spec_helper'
       end
     end
 
-    context 'with iframe attributes', :vcr do
+    context 'with iframe attributes' do
       subject { VideoInfo.new('http://www.youtube.com/watch?v=mZqGqE0D0n4') }
 
       describe '#provider' do
@@ -470,7 +471,7 @@ require 'spec_helper'
       end
     end
 
-    context 'with arbitrary iframe_attributes', :vcr do
+    context 'with arbitrary iframe_attributes' do
       subject { VideoInfo.new('http://www.youtube.com/watch?v=mZqGqE0D0n4') }
 
       describe '#provider' do
@@ -485,7 +486,7 @@ require 'spec_helper'
       end
     end
 
-    context 'with full screen video URLs', :vcr do
+    context 'with full screen video URLs' do
       subject { VideoInfo.new('http://www.youtube.com/v/mZqGqE0D0n4') }
 
       describe '#provider' do
@@ -558,7 +559,7 @@ require 'spec_helper'
           if api_key.nil?
             is_expected.to eq Time.parse('Sat Apr 12 2008', Time.now.utc)
           else
-            is_expected.to eq Time.parse('Sat Apr 12 22:25:35 UTC 2008',
+            is_expected.to eq Time.parse('Sat Apr 12 22:34:48 UTC 2008',
                                          Time.now.utc)
           end
         end
@@ -590,7 +591,8 @@ require 'spec_helper'
 
       describe '#view_count' do
         subject { super().view_count }
-        it { is_expected.to be > 4000 }
+
+        it { is_expected.to eq 7944 }
       end
     end
   end
