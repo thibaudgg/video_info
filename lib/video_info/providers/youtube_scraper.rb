@@ -53,7 +53,7 @@ class VideoInfo
       end
 
       def view_count
-        data.css('div.watch-view-count').text.gsub(/\D/, '').to_i
+        itemprop_node_value('interactionCount').to_i
       end
 
       private
