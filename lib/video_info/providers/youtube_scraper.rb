@@ -70,7 +70,7 @@ class VideoInfo
       private
 
       def video_meta_nodes
-        @meta_nodes ||= data.css('meta')
+        @video_meta_nodes ||= data.css('meta')
       end
 
       def channel_meta_nodes
