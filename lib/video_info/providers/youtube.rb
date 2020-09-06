@@ -66,6 +66,10 @@ class VideoInfo
       def _default_url_attributes
         {}
       end
+
+      def resize_thumb(url, size)
+        url.gsub(/(https:\/\/yt3.ggpht.com\/.*\/.*=s)([0-9]*)(.*)/, "\\1#{size}\\3")
+      end
     end
   end
 end

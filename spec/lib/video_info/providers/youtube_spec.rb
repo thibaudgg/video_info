@@ -191,9 +191,10 @@ require 'spec_helper'
 
       describe '#author_thumbnail' do
         subject { super().author_thumbnail }
-        author_thumbnail = 'https://yt3.ggpht.com/-7rhnfdQaI3k/AAAAAAAAAAI/' \
-                           'AAAAAAAAAAA/eMJZ5HBukCQ/s88-c-k-no-mo-rj-c0xffffff' \
-                           '/photo.jpg'
+        author_thumbnail = 'https://yt3.ggpht.com/a/' \
+        'AATXAJyf5l8p3WQvOx-Q0o8ssGmIL-K5taxKHv5ZEEYc' \
+        '=s88-c-k-c0xffffffff-no-rj-mo'
+
         it { is_expected.to eql author_thumbnail }
       end
 
@@ -249,7 +250,7 @@ require 'spec_helper'
           if api_key.nil?
             is_expected.to eq Time.parse('Sat Apr 12 2008', Time.now.utc)
           else
-            is_expected.to eq Time.parse('Sat Apr 12 22:25:35 UTC 2008',
+            is_expected.to eq Time.parse('Sat Apr 12 22:34:48 UTC 2008',
                                          Time.now.utc)
           end
         end
@@ -558,7 +559,7 @@ require 'spec_helper'
           if api_key.nil?
             is_expected.to eq Time.parse('Sat Apr 12 2008', Time.now.utc)
           else
-            is_expected.to eq Time.parse('Sat Apr 12 22:25:35 UTC 2008',
+            is_expected.to eq Time.parse('Sat Apr 12 22:34:48 UTC 2008',
                                          Time.now.utc)
           end
         end
@@ -590,7 +591,8 @@ require 'spec_helper'
 
       describe '#view_count' do
         subject { super().view_count }
-        it { is_expected.to be > 4000 }
+
+        it { is_expected.to eq 7944 }
       end
     end
   end

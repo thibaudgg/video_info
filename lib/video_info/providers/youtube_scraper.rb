@@ -5,8 +5,12 @@ require 'net_http_timeout_errors'
 class VideoInfo
   module Providers
     module YoutubeScraper
+      BASE_URL = "https://www.youtube.com"
+      CHANNEL_URL = "#{BASE_URL}/channel/"
+      THUMB_DEFAULT_SIZE = 88
+
       def available?
-        data.css('div#unavailable-submessage').text.strip.empty?
+        !!title
       end
 
       def date
@@ -16,20 +20,25 @@ class VideoInfo
       end
 
       def author
-        data.css('.yt-user-info')[0].css('a').text
+        meta_node_value(channel_meta_nodes, 'og:title')
       end
 
       def author_thumbnail
-        data.css('.yt-thumb-clip')[0].css('img').attr('data-thumb')[0].value
+        image_hq_url = meta_node_value(channel_meta_nodes, 'og:image')
+
+        resize_thumb(image_hq_url, THUMB_DEFAULT_SIZE)
+      end
+
+      def channel_id
+        itemprop_node_value('channelId')
       end
 
       def author_url
-        path = data.css('.yt-user-info')[0].css('a')[0].attr('href').value
-        'https://www.youtube.com' + path
+        URI.join(CHANNEL_URL, channel_id).to_s
       end
 
       def description
-        meta_node_value('description')
+        meta_node_value(video_meta_nodes, 'og:description')
       end
 
       def duration
@@ -43,7 +52,9 @@ class VideoInfo
       end
 
       def keywords
-        value = meta_node_value('keywords')
+        return unless available?
+
+        value = meta_node_value(video_meta_nodes, 'keywords')
 
         value.split(', ') if value
       end
@@ -58,30 +69,36 @@ class VideoInfo
 
       private
 
-      def meta_nodes
+      def video_meta_nodes
         @meta_nodes ||= data.css('meta')
       end
 
-      def meta_node_value(name)
-        if available?
-          node = meta_nodes.detect do |n|
-            n.attr('name') && n.attr('name').value == name
-          end
+      def channel_meta_nodes
+        @channel_meta_nodes ||= channel_data.css('meta')
+      end
 
-          node && node.attr('content') && node.attr('content').value
+      def channel_data
+        @channel_data ||= Oga.parse_html(open(author_url).read)
+      end
+
+      def meta_node_value(meta_nodes=video_meta_nodes, name)
+        node = meta_nodes.detect do |n|
+          n.attr('name')&.value == name || n.attr('property')&.value == name
         end
+
+        return unless node
+        node && node.attr('content') && node.attr('content').value
       end
 
       def itemprop_node_value(name)
-        if available?
-          node = meta_nodes.detect do |m|
-            itemprop_attr = m.attr('itemprop')
+        node = video_meta_nodes.detect do |m|
+          itemprop_attr = m.attr('itemprop')
 
-            itemprop_attr.value == name if itemprop_attr
-          end
-
-          node.attr('content').value
+          itemprop_attr.value == name if itemprop_attr
         end
+
+        return unless node
+        node.attr('content').value
       end
 
       def _set_data_from_api_impl(api_url)
