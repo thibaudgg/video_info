@@ -198,9 +198,9 @@ describe VideoInfo::Providers::YoutubePlaylist, :vcr do
 
     describe '#author_thumbnail' do
       subject { super().author_thumbnail }
-      author_thumbnail = 'https://yt3.ggpht.com/-ni_VaN38-AE/AAAAAAAAAAI/' \
-                         'AAAAAAAAAAA/bJCTTfihBl0/s88-c-k-no-mo-rj-c0xffffff' \
-                         '/photo.jpg'
+      author_thumbnail = 'https://yt3.ggpht.com/a/' \
+                         'AATXAJwyEv0uEyk3JLskjLiUCqSVzsGmpWw2icLfBOBzWg' \
+                         '=s88-c-k-c0xffffffff-no-rj-mo'
       it { is_expected.to eq author_thumbnail }
     end
 
