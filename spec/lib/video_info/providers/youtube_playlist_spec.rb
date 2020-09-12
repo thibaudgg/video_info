@@ -63,15 +63,10 @@ describe VideoInfo::Providers::YoutubePlaylist, :vcr do
     end
   end
 
-  context 'with playlist PL9hW1uS6HUftLdHI6RIsaf', :vcr do
-    let(:videos) do
+  context 'with playlist PL9hW1uS6HUftLdHI6RIsaf' do
+    let(:video_ids) do
       [
-        VideoInfo.new('http://www.youtube.com/watch?v=Oi67QjrXy2w'),
-        VideoInfo.new('http://www.youtube.com/watch?v=_Bt3-WsHfB0'),
-        VideoInfo.new('http://www.youtube.com/watch?v=9g2U12SsRns'),
-        VideoInfo.new('http://www.youtube.com/watch?v=8b0aEoxqqC0'),
-        VideoInfo.new('http://www.youtube.com/watch?v=6c3mHikRz0I'),
-        VideoInfo.new('http://www.youtube.com/watch?v=OQVHWsTHcoc')
+        "9g2U12SsRns", "AsqTAkLKb4M", "K681ILSXyUY", "OQVHWsTHcoc", "QtwplSG6VvM", "WK8qRNSmhEU", "XIoGq39abMk", "eKkv1C_O-QI", "lau14lhZpoU"
       ]
     end
 
@@ -185,10 +180,9 @@ describe VideoInfo::Providers::YoutubePlaylist, :vcr do
     end
 
     describe '#videos' do
-      subject { super().videos }
+      subject { super().videos.map(&:video_id) }
       it 'returns list of videos in playlist' do
-        pending('waiting for bug in Youtube API to be fixed')
-        is_expected.to match_array(videos)
+        is_expected.to match_array(video_ids)
       end
     end
 
