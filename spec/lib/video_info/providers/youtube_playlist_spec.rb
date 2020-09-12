@@ -163,7 +163,7 @@ describe VideoInfo::Providers::YoutubePlaylist, :vcr do
 
     describe '#thumbnail_large_2x' do
       subject { super().thumbnail_large_2x }
-      thumbnail_url = 'https://i.ytimg.com/vi/Oi67QjrXy2w/sddefault.jpg'
+      thumbnail_url = 'https://i.ytimg.com/vi/9g2U12SsRns/sddefault.jpg'
       it { is_expected.to eq thumbnail_url }
     end
 
