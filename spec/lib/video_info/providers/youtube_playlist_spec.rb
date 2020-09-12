@@ -1,8 +1,8 @@
 require 'spec_helper'
 
-describe VideoInfo::Providers::YoutubePlaylist do
+describe VideoInfo::Providers::YoutubePlaylist, :vcr do
   before(:each) do
-    api_key = 'AIzaSyA6PYwSr1EnLFUFy1cZDk3Ifb0rxeJaeZ0'
+    api_key = 'api_key_123'
     VideoInfo.provider_api_keys = { youtube: api_key }
   end
 

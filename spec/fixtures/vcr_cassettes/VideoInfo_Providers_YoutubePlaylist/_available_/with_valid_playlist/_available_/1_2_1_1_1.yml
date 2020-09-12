@@ -2,13 +2,13 @@
 http_interactions:
 - request:
     method: get
-    uri: https://www.googleapis.com/youtube/v3/playlists?id=PLA575C81A1FBC04CF&key=AIzaSyA6PYwSr1EnLFUFy1cZDk3Ifb0rxeJaeZ0&part=snippet
+    uri: https://www.googleapis.com/youtube/v3/playlists?id=PLA575C81A1FBC04CF&key=api_key_123&part=snippet
     body:
       encoding: US-ASCII
       string: ''
     headers:
       User-Agent:
-      - VideoInfo/2.7
+      - VideoInfo/2.8.0
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -18,77 +18,76 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      Expires:
-      - Mon, 27 Mar 2017 21:01:55 GMT
-      Date:
-      - Mon, 27 Mar 2017 21:01:55 GMT
-      Cache-Control:
-      - private, max-age=0, must-revalidate, no-transform
-      Etag:
-      - '"uQc-MPTsstrHkQcRXL3IWLmeNsM/z_k8MbxJ5FOjmqjXQ7ESbAQI-j4"'
-      Vary:
-      - Origin
-      - X-Origin
       Content-Type:
       - application/json; charset=UTF-8
-      X-Content-Type-Options:
-      - nosniff
+      Vary:
+      - Origin
+      - Referer
+      - X-Origin
+      Date:
+      - Sat, 12 Sep 2020 14:11:34 GMT
+      Server:
+      - scaffolding on HTTPServer2
+      Cache-Control:
+      - private
+      X-Xss-Protection:
+      - '0'
       X-Frame-Options:
       - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      Content-Length:
-      - '1060'
-      Server:
-      - GSE
+      X-Content-Type-Options:
+      - nosniff
       Alt-Svc:
-      - quic=":443"; ma=2592000; v="37,36,35"
+      - h3-29=":443"; ma=2592000,h3-27=":443"; ma=2592000,h3-T051=":443"; ma=2592000,h3-T050=":443";
+        ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443";
+        ma=2592000,quic=":443"; ma=2592000; v="46,43"
+      Transfer-Encoding:
+      - chunked
     body:
-      encoding: UTF-8
+      encoding: ASCII-8BIT
       string: |
         {
-         "kind": "youtube#playlistListResponse",
-         "etag": "\"uQc-MPTsstrHkQcRXL3IWLmeNsM/z_k8MbxJ5FOjmqjXQ7ESbAQI-j4\"",
-         "pageInfo": {
-          "totalResults": 1,
-          "resultsPerPage": 5
-         },
-         "items": [
-          {
-           "kind": "youtube#playlist",
-           "etag": "\"uQc-MPTsstrHkQcRXL3IWLmeNsM/i_2ge7Hsv6L3QpB2OQmIuTa6V5k\"",
-           "id": "PLA575C81A1FBC04CF",
-           "snippet": {
-            "publishedAt": "2010-01-07T22:20:45.000Z",
-            "channelId": "UC2y5oKUfkQJDKO7cM_OIc3w",
-            "title": "the century of self",
-            "description": "",
-            "thumbnails": {
-             "default": {
-              "url": "http://s.ytimg.com/yts/img/no_thumbnail-vfl4t3-4R.jpg",
-              "width": 120,
-              "height": 90
-             },
-             "medium": {
-              "url": "http://s.ytimg.com/yts/img/no_thumbnail-vfl4t3-4R.jpg",
-              "width": 320,
-              "height": 180
-             },
-             "high": {
-              "url": "http://s.ytimg.com/yts/img/no_thumbnail-vfl4t3-4R.jpg",
-              "width": 480,
-              "height": 360
-             }
-            },
-            "channelTitle": "Chris Szanto",
-            "localized": {
-             "title": "the century of self",
-             "description": ""
+          "kind": "youtube#playlistListResponse",
+          "etag": "WBxBYO4veHoETGbEHZvUen2E5Kg",
+          "pageInfo": {
+            "totalResults": 1,
+            "resultsPerPage": 5
+          },
+          "items": [
+            {
+              "kind": "youtube#playlist",
+              "etag": "ANK2cH_sOnAFxDjGeZDeBwg3i9U",
+              "id": "PLA575C81A1FBC04CF",
+              "snippet": {
+                "publishedAt": "2010-01-07T22:20:45Z",
+                "channelId": "UC2y5oKUfkQJDKO7cM_OIc3w",
+                "title": "the century of self",
+                "description": "",
+                "thumbnails": {
+                  "default": {
+                    "url": "http://s.ytimg.com/yts/img/no_thumbnail-vfl4t3-4R.jpg",
+                    "width": 120,
+                    "height": 90
+                  },
+                  "medium": {
+                    "url": "http://s.ytimg.com/yts/img/no_thumbnail-vfl4t3-4R.jpg",
+                    "width": 320,
+                    "height": 180
+                  },
+                  "high": {
+                    "url": "http://s.ytimg.com/yts/img/no_thumbnail-vfl4t3-4R.jpg",
+                    "width": 480,
+                    "height": 360
+                  }
+                },
+                "channelTitle": "Chris Szanto",
+                "localized": {
+                  "title": "the century of self",
+                  "description": ""
+                }
+              }
             }
-           }
-          }
-         ]
+          ]
         }
-    http_version: 
-  recorded_at: Mon, 27 Mar 2017 21:01:55 GMT
+    http_version:
+  recorded_at: Sat, 12 Sep 2020 14:11:33 GMT
 recorded_with: VCR 3.0.3
