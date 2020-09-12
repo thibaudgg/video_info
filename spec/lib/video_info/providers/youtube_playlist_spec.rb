@@ -193,7 +193,7 @@ describe VideoInfo::Providers::YoutubePlaylist, :vcr do
 
     describe '#author' do
       subject { super().author }
-      it { is_expected.to eq 'YouTube Help' }
+      it { is_expected.to eq 'TeamYouTube [Help]' }
     end
 
     describe '#author_thumbnail' do
