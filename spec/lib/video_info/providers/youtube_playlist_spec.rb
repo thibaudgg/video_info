@@ -169,13 +169,13 @@ describe VideoInfo::Providers::YoutubePlaylist, :vcr do
 
     describe '#thumbnail_maxres' do
       subject { super().thumbnail_maxres }
-      thumbnail_url = 'https://i.ytimg.com/vi/Oi67QjrXy2w/maxresdefault.jpg'
+      thumbnail_url = 'https://i.ytimg.com/vi/9g2U12SsRns/maxresdefault.jpg'
       it { is_expected.to eq thumbnail_url }
     end
 
     describe '#thumbnail' do
       subject { super().thumbnail }
-      thumbnail_url = 'https://i.ytimg.com/vi/Oi67QjrXy2w/hqdefault.jpg'
+      thumbnail_url = 'https://i.ytimg.com/vi/9g2U12SsRns/default.jpg'
       it { is_expected.to eq thumbnail_url }
     end
 
