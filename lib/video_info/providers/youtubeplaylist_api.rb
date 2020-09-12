@@ -28,6 +28,10 @@ class VideoInfo
       nil
     end
 
+    def thumbnail
+      thumbnail_small
+    end
+
     def thumbnail_small
       _video_snippet['thumbnails']['default']['url']
     end
