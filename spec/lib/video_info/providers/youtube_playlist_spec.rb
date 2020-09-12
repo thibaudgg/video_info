@@ -31,7 +31,7 @@ describe VideoInfo::Providers::YoutubePlaylist, :vcr do
   end
 
   describe '#available?' do
-    context 'with valid playlist', :vcr do
+    context 'with valid playlist' do
       playlist_url = 'http://www.youtube.com/playlist?p=PLA575C81A1FBC04CF'
       subject { VideoInfo.new(playlist_url.freeze) }
 
@@ -41,7 +41,7 @@ describe VideoInfo::Providers::YoutubePlaylist, :vcr do
       end
     end
 
-    context 'with invalid playlist', :vcr do
+    context 'with invalid playlist' do
       invalid_playlist_url = 'http://www.youtube.com/playlist?' \
                              'p=PLA575C81A1FBC04CF_invalid'
       subject { VideoInfo.new(invalid_playlist_url) }
@@ -52,7 +52,7 @@ describe VideoInfo::Providers::YoutubePlaylist, :vcr do
       end
     end
 
-    context 'with &list= url', :vcr do
+    context 'with &list= url' do
       playlist_url = 'http://www.youtube.com/playlist?list=PLA575C81A1FBC04CF'
       subject { VideoInfo.new(playlist_url) }
 
@@ -217,7 +217,7 @@ describe VideoInfo::Providers::YoutubePlaylist, :vcr do
     end
   end
 
-  context 'with playlist that does not exist in embed path', :vcr do
+  context 'with playlist that does not exist in embed path' do
     playlist_url = 'http://www.youtube.com/embed/videoseries?' \
                    'list=PL0E8117603D70E10A'
     subject { VideoInfo.new(playlist_url) }
@@ -233,7 +233,7 @@ describe VideoInfo::Providers::YoutubePlaylist, :vcr do
     end
   end
 
-  context 'with playlist valid playlist in embed path', :vcr do
+  context 'with playlist valid playlist in embed path' do
     playlist_url = 'http://www.youtube.com/embed/videoseries' \
                    '?list=PL9hW1uS6HUftLdHI6RIsaf-iXTm09qnEr'
     subject { VideoInfo.new(playlist_url) }
