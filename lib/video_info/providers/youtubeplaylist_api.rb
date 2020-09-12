@@ -1,5 +1,7 @@
 class VideoInfo
   module YoutubePlaylistAPI
+    ITEMS_MAX_RESULTS = 50
+
     def available?
       !data['items'].empty?
     rescue VideoInfo::HttpError
@@ -68,7 +70,7 @@ class VideoInfo
 
     def _playlist_items_api_path
       '/youtube/v3/playlistItems?part=snippet&' \
-      "playlistId=#{playlist_id}&fields=items&maxResults=50&key=#{api_key}"
+      "playlistId=#{playlist_id}&fields=items&maxResults=#{ITEMS_MAX_RESULTS}&key=#{api_key}"
     end
 
     def _playlist_items_api_url
