@@ -44,6 +44,14 @@ class VideoInfo
       _video_snippet['thumbnails']['high']['url']
     end
 
+    def thumbnail_large_2x
+      _video_snippet['thumbnails']['standard']['url']
+    end
+
+    def thumbnail_maxres
+      _video_snippet['thumbnails']['maxres']['url']
+    end
+
     private
 
     def _playlist_entry
