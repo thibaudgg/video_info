@@ -1,5 +1,7 @@
 class VideoInfo
   module YoutubePlaylistAPI
+    ITEMS_MAX_RESULTS = 50
+
     def available?
       !data['items'].empty?
     rescue VideoInfo::HttpError
@@ -28,6 +30,10 @@ class VideoInfo
       nil
     end
 
+    def thumbnail
+      thumbnail_small
+    end
+
     def thumbnail_small
       _video_snippet['thumbnails']['default']['url']
     end
@@ -38,6 +44,14 @@ class VideoInfo
 
     def thumbnail_large
       _video_snippet['thumbnails']['high']['url']
+    end
+
+    def thumbnail_large_2x
+      _video_snippet['thumbnails']['standard']['url']
+    end
+
+    def thumbnail_maxres
+      _video_snippet['thumbnails']['maxres']['url']
     end
 
     private
@@ -56,7 +70,7 @@ class VideoInfo
 
     def _playlist_items_api_path
       '/youtube/v3/playlistItems?part=snippet&' \
-      "playlistId=#{playlist_id}&fields=items&key=#{api_key}"
+      "playlistId=#{playlist_id}&fields=items&maxResults=#{ITEMS_MAX_RESULTS}&key=#{api_key}"
     end
 
     def _playlist_items_api_url
