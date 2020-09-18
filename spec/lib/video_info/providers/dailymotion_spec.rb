@@ -88,7 +88,7 @@ describe VideoInfo::Providers::Dailymotion do
 
     describe '#author_thumbnail' do
       subject { super().author_thumbnail }
-      it { is_expected.to eq 'http://s2.dmcdn.net/HN6TP/60x60-lEL.jpg' }
+      it { is_expected.to eq 'https://s2.dmcdn.net/u/US931VO3V-24wNr1/60x60' }
     end
 
     describe '#description' do
