@@ -141,7 +141,7 @@ describe VideoInfo::Providers::Dailymotion do
 
     describe '#thumbnail_large' do
       subject { super().thumbnail_large }
-      it { is_expected.to eq 'http://s2.dmcdn.net/BgWxI/x720-YcV.jpg' }
+      it { is_expected.to eq 'https://s1.dmcdn.net/v/mj4x1VKDs8EI6rnx/x720' }
     end
 
     describe '#thumbnail_large_2x' do
