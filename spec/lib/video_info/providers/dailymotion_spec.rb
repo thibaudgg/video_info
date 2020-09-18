@@ -131,7 +131,7 @@ describe VideoInfo::Providers::Dailymotion do
 
     describe '#thumbnail_small' do
       subject { super().thumbnail_small }
-      it { is_expected.to eq 'http://s2.dmcdn.net/BgWxI/x60-kbf.jpg' }
+      it { is_expected.to eq 'https://s2.dmcdn.net/v/mj4x1VKDs8zz5egS/x60' }
     end
 
     describe '#thumbnail_medium' do
