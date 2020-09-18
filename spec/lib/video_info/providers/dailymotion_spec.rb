@@ -83,7 +83,7 @@ describe VideoInfo::Providers::Dailymotion do
 
     describe '#author_url' do
       subject { super().author_url }
-      it { is_expected.to eq 'http://www.dailymotion.com/nqtv' }
+      it { is_expected.to eq 'https://www.dailymotion.com/nqtv' }
     end
 
     describe '#author_thumbnail' do
