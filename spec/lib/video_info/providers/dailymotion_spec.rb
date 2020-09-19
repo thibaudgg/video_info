@@ -88,7 +88,7 @@ describe VideoInfo::Providers::Dailymotion do
 
     describe '#author_thumbnail' do
       subject { super().author_thumbnail }
-      it { is_expected.to eq 'https://s2.dmcdn.net/u/US931VO3V-24wNr1/60x60' }
+      it { is_expected.to match /https:\/\/s[12].dmcdn.net\/u\/US931VO3V-24wNr1\/60x60/ }
     end
 
     describe '#description' do
@@ -131,17 +131,17 @@ describe VideoInfo::Providers::Dailymotion do
 
     describe '#thumbnail_small' do
       subject { super().thumbnail_small }
-      it { is_expected.to eq 'https://s2.dmcdn.net/v/mj4x1VKDs8zz5egS/x60' }
+      it { is_expected.to match /https:\/\/s[12].dmcdn.net\/v\/mj4x1VKDs8zz5egS\/x60/ }
     end
 
     describe '#thumbnail_medium' do
       subject { super().thumbnail_medium }
-      it { is_expected.to eq 'https://s1.dmcdn.net/v/mj4x1VKDs82hcOmJ/x240' }
+      it { is_expected.to match /https:\/\/s[12].dmcdn.net\/v\/mj4x1VKDs82hcOmJ\/x240/ }
     end
 
     describe '#thumbnail_large' do
       subject { super().thumbnail_large }
-      it { is_expected.to eq 'https://s1.dmcdn.net/v/mj4x1VKDs8EI6rnx/x720' }
+      it { is_expected.to match /https:\/\/s[12].dmcdn.net\/v\/mj4x1VKDs8EI6rnx\/x720/ }
     end
 
     describe '#thumbnail_large_2x' do
@@ -156,7 +156,7 @@ describe VideoInfo::Providers::Dailymotion do
 
     describe '#thumbnail' do
       subject { super().thumbnail }
-      it { is_expected.to eq 'https://s2.dmcdn.net/v/mj4x1VKDs8EI6rnx/x720' }
+      it { is_expected.to match /https:\/\/s[12].dmcdn.net\/v\/mj4x1VKDs8EI6rnx\/x720/ }
     end
 
     describe '#view_count' do
