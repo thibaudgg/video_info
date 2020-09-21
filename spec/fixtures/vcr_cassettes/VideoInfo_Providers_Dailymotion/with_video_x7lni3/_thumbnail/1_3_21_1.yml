@@ -8,7 +8,7 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - VideoInfo/2.7
+      - VideoInfo/2.8.0
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -18,12 +18,18 @@ http_interactions:
       code: 200
       message: OK
     headers:
+      Content-Security-Policy-Report-Only:
+      - 'default-src https: blob: wss: data: android-webview-video-poster: android-webview:
+        chrome-extension: safari-extension: ''unsafe-eval'' ''unsafe-inline''; report-uri
+        https://www.dailymotion.com/content_security_policy_report_uri'
       Server:
       - DMS/1.0.42
       X-Dm-Api-Object:
       - video
       X-Dm-Backnode:
-      - web-520.adm.dc3.dailymotion.com:80
+      - web-063.adm.ix7.dailymotion.com:80
+      Vary:
+      - X-DM-SSL,Accept-Encoding
       X-Dm-Api-Method:
       - info
       Cache-Control:
@@ -33,16 +39,24 @@ http_interactions:
       Access-Control-Expose-Headers:
       - Date, X-DM-BackNode-Response-Time, X-DM-Edge, X-DM-Cache-Status, X-Served-By,
         X-DM-BackNode-Response-Time
+      Content-Security-Policy:
+      - upgrade-insecure-requests
+      Date:
+      - Fri, 18 Sep 2020 01:27:34 GMT
+      Surrogate-Key:
+      - v-x7lni3
       X-Dm-Lb-Ip:
       - 195.8.215.129
       X-Dm-Tg:
       - v-x7lni3
       X-Dm-Lb-Name:
-      - lb-08
+      - lb-01
       X-Dm-Random-Number:
-      - '1238188'
+      - '3580777'
       Access-Control-Allow-Origin:
       - "*"
+      X-Dm-Backnode-Response-Time:
+      - '31'
       Etag:
       - W/"rQeFNlJ5iMPO8gmsSDhiVw-gzip"
       X-Robots-Tag:
@@ -51,50 +65,25 @@ http_interactions:
       - DENY
       Last-Modified:
       - Tue, 19 May 2015 07:03:39 GMT
+      Expect-Ct:
+      - max-age=0, report-uri="https://www.dailymotion.com/content_security_policy_report_uri"
+      X-Dm-Cache-Status:
+      - MISS
       Access-Control-Allow-Headers:
       - Content-Type, Authorization
       Access-Control-Allow-Methods:
       - GET, POST, DELETE
-      X-Dm-Page:
-      - us.rest.rest_api
-      Via:
-      - 1.1 varnish
-      - 1.1 varnish
-      Fastly-Debug-Digest:
-      - 2236e0b1525f3241d04a3a531508c8a4d9999d65c6c6ba13ee5490c0a21c6a5e
-      Content-Length:
-      - '492'
-      Accept-Ranges:
-      - bytes
-      Date:
-      - Mon, 27 Mar 2017 21:00:49 GMT
-      Age:
-      - '180'
-      Connection:
-      - keep-alive
-      X-Served-By:
-      - cache-fra1225-FRA, cache-lax8624-LAX
-      X-Cache:
-      - MISS, HIT
-      X-Cache-Hits:
-      - 0, 3
-      X-Timer:
-      - S1490648449.937251,VS0,VE0
-      Vary:
-      - X-DM-EC-Geo-Country, Accept-Encoding
-      X-Dm-Backnode-Response-Time:
-      - '0'
-      X-Dm-Cache-Status:
-      - HIT
       X-Dm-Edge:
-      - Fastly
+      - DMParis
+      Content-Length:
+      - '500'
     body:
       encoding: ASCII-8BIT
       string: '{"id":"x7lni3","title":"Mario Kart (R\u00e9mi Gaillard)","description":"Super
         R\u00e9mi Kart est un jeu vid\u00e9o de course d\u00e9velopp\u00e9 et \u00e9dit\u00e9
         par N''Importe Quoi TV. Sa principale originalit\u00e9 vient de sa r\u00e9alit\u00e9...<br
-        \/>L''aventure continue sur www.nimportequi.com","duration":136,"created_time":1228321771,"url":"http:\/\/www.dailymotion.com\/video\/x7lni3_mario-kart-remi-gaillard_fun","views_total":10318565,"tags":["r\u00e9mi","remi","gaillard","imposteur","imposture","mario","bros","kart","nintendo","jeux"],"thumbnail_url":"http:\/\/s2.dmcdn.net\/BgWxI.jpg","thumbnail_720_url":"http:\/\/s2.dmcdn.net\/BgWxI\/x720-YcV.jpg","owner.url":"http:\/\/www.dailymotion.com\/nqtv","owner.screenname":"R\u00e9mi
-        Gaillard","owner.avatar_60_url":"http:\/\/s2.dmcdn.net\/HN6TP\/60x60-lEL.jpg","thumbnail_240_url":"http:\/\/s2.dmcdn.net\/BgWxI\/x240-b83.jpg","thumbnail_60_url":"http:\/\/s2.dmcdn.net\/BgWxI\/x60-kbf.jpg"}'
-    http_version: 
-  recorded_at: Mon, 27 Mar 2017 21:00:49 GMT
+        \/>L''aventure continue sur www.nimportequi.com","duration":136,"created_time":1228321771,"url":"https:\/\/www.dailymotion.com\/video\/x7lni3","views_total":10339801,"tags":["r\u00e9mi","remi","gaillard","imposteur","imposture","mario","bros","kart","nintendo","jeux"],"thumbnail_url":"https:\/\/s2.dmcdn.net\/v\/mj4x1VKDs83SuVhS","thumbnail_720_url":"https:\/\/s2.dmcdn.net\/v\/mj4x1VKDs8EI6rnx\/x720","owner.url":"https:\/\/www.dailymotion.com\/nqtv","owner.screenname":"R\u00e9mi
+        Gaillard","owner.avatar_60_url":"https:\/\/s2.dmcdn.net\/u\/US931VO3V-24wNr1\/60x60","thumbnail_240_url":"https:\/\/s1.dmcdn.net\/v\/mj4x1VKDs82hcOmJ\/x240","thumbnail_60_url":"https:\/\/s2.dmcdn.net\/v\/mj4x1VKDs8zz5egS\/x60"}'
+    http_version:
+  recorded_at: Fri, 18 Sep 2020 01:27:34 GMT
 recorded_with: VCR 3.0.3
