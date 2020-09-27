@@ -301,14 +301,14 @@ require 'spec_helper'
       its(:video_id) { should eq '126641548' }
     end
 
-    context 'with video 193970014', :vcr do
-      video_url = 'https://vimeo.com/193970014'
+    context 'with video 141349194', :vcr do
+      video_url = 'https://vimeo.com/141349194'
       subject { VideoInfo.new(video_url) }
 
-      its(:thumbnail) { should eq 'https://i.vimeocdn.com/video/607241994_640.jpg' }
-      its(:thumbnail_large) { should eq 'https://i.vimeocdn.com/video/607241994_640.jpg' }
-      its(:thumbnail_medium) { should eq 'https://i.vimeocdn.com/video/607241994_200x150.jpg' }
-      its(:thumbnail_small) { should eq 'https://i.vimeocdn.com/video/607241994_100x75.jpg' }
+      its(:thumbnail) { should eq 'https://i.vimeocdn.com/video/538320894_640.jpg' }
+      its(:thumbnail_large) { should eq 'https://i.vimeocdn.com/video/538320894_640.jpg' }
+      its(:thumbnail_medium) { should eq 'https://i.vimeocdn.com/video/538320894_200x150.jpg' }
+      its(:thumbnail_small) { should eq 'https://i.vimeocdn.com/video/538320894_100x75.jpg' }
 
     end
 
