@@ -122,11 +122,21 @@ class VideoInfo
 
       def view_count
         if available?
-          json_info['interactionCount']
+          user_interaction_count(interaction_type: "http://schema.org/WatchAction")
         end
       end
 
       private
+
+      def user_interaction_count(interaction_type:)
+        interaction_statistic.find do |stat|
+          stat["interactionType"] == interaction_type
+        end["userInteractionCount"]
+      end
+
+      def interaction_statistic
+        json_info["interactionStatistic"]
+      end
 
       def json_info
         @json_info ||= JSON.parse(data.css('script').detect do |n|
