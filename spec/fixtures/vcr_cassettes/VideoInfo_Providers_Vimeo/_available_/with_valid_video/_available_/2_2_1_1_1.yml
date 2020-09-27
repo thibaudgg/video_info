@@ -8,9 +8,9 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - VideoInfo/2.7
+      - VideoInfo/2.8.0
       Authorization:
-      - bearer 6b66b015a3504793b4f541d878f46ff6
+      - bearer <vimeo_access_token>
       Accept:
       - application/vnd.vimeo.*+json;version=3.2
   response:
@@ -18,50 +18,52 @@ http_interactions:
       code: 200
       message: OK
     headers:
+      Connection:
+      - keep-alive
       Server:
       - nginx
       Content-Type:
       - application/vnd.vimeo.video+json
       Cache-Control:
-      - no-cache, max-age=315360000
+      - private, no-store, no-cache
       Strict-Transport-Security:
-      - max-age=15552000; includeSubDomains; preload
+      - max-age=31536000; includeSubDomains; preload
       X-Ratelimit-Limit:
-      - '500'
+      - '50'
       X-Ratelimit-Remaining:
-      - '499'
+      - '48'
       X-Ratelimit-Reset:
-      - '2017-03-27T21:16:13+00:00'
-      Expires:
-      - Thu, 25 Mar 2027 21:01:13 GMT
+      - '2020-09-27T20:07:59+00:00'
+      Request-Hash:
+      - 12703e31
+      X-Bapp-Server:
+      - api-v3515-kl975
+      X-Vimeo-Dc:
+      - ge
+      Accept-Ranges:
+      - bytes
+      - bytes
       Via:
       - 1.1 varnish
       - 1.1 varnish
-      Fastly-Debug-Digest:
-      - e1a6082c7056329c14f1d8da1dbc41c69e2a21b9c94e74b98a8cbf1b484af80a
-      Content-Length:
-      - '10745'
-      Accept-Ranges:
-      - bytes
-      Date:
-      - Mon, 27 Mar 2017 21:01:13 GMT
       Age:
       - '0'
-      Connection:
-      - keep-alive
+      - '0'
+      Date:
+      - Sun, 27 Sep 2020 20:06:59 GMT
       X-Served-By:
-      - cache-iad2133-IAD, cache-lax8643-LAX
+      - cache-bwi5133-BWI, cache-gru17149-GRU
       X-Cache:
       - MISS, MISS
       X-Cache-Hits:
       - 0, 0
       X-Timer:
-      - S1490648473.175310,VS0,VE176
+      - S1601237219.275248,VS0,VE257
       Vary:
-      - Accept,Vimeo-Client-Id,Accept-Encoding
+      - Accept,Vimeo-Client-Id
     body:
       encoding: UTF-8
       string: ''
-    http_version: 
-  recorded_at: Mon, 27 Mar 2017 21:01:13 GMT
+    http_version:
+  recorded_at: Sun, 27 Sep 2020 20:06:59 GMT
 recorded_with: VCR 3.0.3

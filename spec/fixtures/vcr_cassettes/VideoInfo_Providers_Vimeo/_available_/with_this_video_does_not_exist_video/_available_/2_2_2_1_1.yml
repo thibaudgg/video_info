@@ -8,9 +8,9 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - VideoInfo/2.7
+      - VideoInfo/2.8.0
       Authorization:
-      - bearer 6b66b015a3504793b4f541d878f46ff6
+      - bearer <vimeo_access_token>
       Accept:
       - application/vnd.vimeo.*+json;version=3.2
   response:
@@ -18,50 +18,54 @@ http_interactions:
       code: 404
       message: Not Found
     headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '50'
       Server:
       - nginx
       Content-Type:
       - application/vnd.vimeo.error+json
       Cache-Control:
-      - no-cache, max-age=315360000
+      - private, no-store, no-cache
       Strict-Transport-Security:
-      - max-age=15552000; includeSubDomains; preload
+      - max-age=31536000; includeSubDomains; preload
       X-Ratelimit-Limit:
-      - '500'
+      - '50'
       X-Ratelimit-Remaining:
-      - '498'
+      - '46'
       X-Ratelimit-Reset:
-      - '2017-03-27T21:16:13+00:00'
-      Expires:
-      - Thu, 25 Mar 2027 21:01:13 GMT
+      - '2020-09-27T20:07:59+00:00'
+      Request-Hash:
+      - d05124b1
+      X-Bapp-Server:
+      - api-v3516-rthdp
+      X-Vimeo-Dc:
+      - ge
+      Accept-Ranges:
+      - bytes
+      - bytes
       Via:
       - 1.1 varnish
       - 1.1 varnish
-      Fastly-Debug-Digest:
-      - fbfaf22e1f15c56ce649913552562d4904264cca46246316e7b373514c1b3c90
-      Content-Length:
-      - '50'
-      Accept-Ranges:
-      - bytes
-      Date:
-      - Mon, 27 Mar 2017 21:01:13 GMT
       Age:
       - '0'
-      Connection:
-      - keep-alive
+      - '0'
+      Date:
+      - Sun, 27 Sep 2020 20:06:59 GMT
       X-Served-By:
-      - cache-iad2120-IAD, cache-lax8630-LAX
+      - cache-bwi5136-BWI, cache-gru17129-GRU
       X-Cache:
       - MISS, MISS
       X-Cache-Hits:
       - 0, 0
       X-Timer:
-      - S1490648473.389055,VS0,VE107
+      - S1601237220.712627,VS0,VE152
       Vary:
-      - Accept,Vimeo-Client-Id,Accept-Encoding
+      - Accept,Vimeo-Client-Id
     body:
       encoding: UTF-8
       string: ''
-    http_version: 
-  recorded_at: Mon, 27 Mar 2017 21:01:13 GMT
+    http_version:
+  recorded_at: Sun, 27 Sep 2020 20:06:59 GMT
 recorded_with: VCR 3.0.3

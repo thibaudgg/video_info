@@ -33,13 +33,13 @@ http_interactions:
       X-Ratelimit-Limit:
       - '50'
       X-Ratelimit-Remaining:
-      - '42'
+      - '18'
       X-Ratelimit-Reset:
       - '2020-09-27T20:07:59+00:00'
       Request-Hash:
-      - aff6954e
+      - 6fbc6d53
       X-Bapp-Server:
-      - api-v3516-4jzgs
+      - api-v3516-bknrc
       X-Vimeo-Dc:
       - ge
       Accept-Ranges:
@@ -52,15 +52,15 @@ http_interactions:
       - '0'
       - '0'
       Date:
-      - Sun, 27 Sep 2020 20:07:00 GMT
+      - Sun, 27 Sep 2020 20:07:07 GMT
       X-Served-By:
-      - cache-bwi5143-BWI, cache-gru17134-GRU
+      - cache-bwi5136-BWI, cache-gru17151-GRU
       X-Cache:
       - MISS, MISS
       X-Cache-Hits:
       - 0, 0
       X-Timer:
-      - S1601237220.343099,VS0,VE247
+      - S1601237228.557456,VS0,VE278
       Vary:
       - Accept,Vimeo-Client-Id
       Transfer-Encoding:
@@ -82,5 +82,5 @@ http_interactions:
         avatar","spammy","bad videos","creepy","not playing nice","impersonation","inappropriate
         job post"]}}},"location_details":{"formatted_address":"Los Angeles, CA","latitude":null,"longitude":null,"city":null,"state":null,"neighborhood":null,"sub_locality":null,"state_iso_code":null,"country":null,"country_iso_code":null},"skills":[],"available_for_hire":false,"can_work_remotely":false,"resource_key":"e1d6212aaacbfb79302c5f750b44d5101a3f8a55","account":"pro","preferences":{"videos":{"privacy":null}}},"app":null,"status":"available","resource_key":"7c4542791d2267ed231d820afcfff7d6c840e688","upload":{"status":"complete","link":null,"upload_link":null,"complete_uri":null,"form":null,"approach":null,"size":null,"redirect_url":null},"transcode":{"status":"complete"},"review_link":"https://vimeo.com/antirecords/review/136971428/80891bf98f","embed_presets":null}'
     http_version:
-  recorded_at: Sun, 27 Sep 2020 20:07:00 GMT
+  recorded_at: Sun, 27 Sep 2020 20:07:07 GMT
 recorded_with: VCR 3.0.3
