@@ -47,7 +47,7 @@ require 'spec_helper'
     end
 
     describe '#available?' do
-      context 'with valid video', :vcr do
+      context 'with valid video' do
         subject { VideoInfo.new('http://vimeo.com/98605382'.freeze) }
 
         describe '#available?' do
@@ -55,7 +55,7 @@ require 'spec_helper'
         end
       end
 
-      context "with 'this video does not exist' video", :vcr do
+      context "with 'this video does not exist' video" do
         subject { VideoInfo.new('http://vimeo.com/59312311') }
 
         describe '#available?' do
@@ -63,7 +63,7 @@ require 'spec_helper'
         end
       end
 
-      context "with 'password required' video", :vcr do
+      context "with 'password required' video" do
         subject { VideoInfo.new('http://vimeo.com/74636562') }
 
         describe '#available?' do
@@ -72,7 +72,7 @@ require 'spec_helper'
       end
     end
 
-    context 'with video 136971428', :vcr do
+    context 'with video 136971428' do
       subject { VideoInfo.new('https://vimeo.com/136971428') }
 
       describe '#provider' do
@@ -213,7 +213,7 @@ require 'spec_helper'
       end
     end
 
-    context 'with video 898029 and url_attributes', :vcr do
+    context 'with video 898029 and url_attributes' do
       subject { VideoInfo.new('http://www.vimeo.com/898029') }
 
       it 'should add URL attribute' do
@@ -223,7 +223,7 @@ require 'spec_helper'
       end
     end
 
-    context 'with video 898029 and iframe_attributes', :vcr do
+    context 'with video 898029 and iframe_attributes' do
       subject { VideoInfo.new('http://www.vimeo.com/898029') }
 
       it 'should have proper dimensions' do
@@ -234,7 +234,7 @@ require 'spec_helper'
       end
     end
 
-    context 'with video 898029 in /group/ url', :vcr do
+    context 'with video 898029 in /group/ url' do
       subject { VideoInfo.new('http://vimeo.com/groups/1234/videos/898029') }
 
       describe '#provider' do
@@ -248,7 +248,7 @@ require 'spec_helper'
       end
     end
 
-    context 'with video 898029 in /group/ url', :vcr do
+    context 'with video 898029 in /group/ url' do
       subject { VideoInfo.new('http://player.vimeo.com/video/898029') }
 
       describe '#provider' do
@@ -262,7 +262,7 @@ require 'spec_helper'
       end
     end
 
-    context 'with video 898029 in text', :vcr do
+    context 'with video 898029 in text' do
       video_url_in_text = '<a href="http://www.vimeo.com/898029">' \
                           'http://www.vimeo.com/898029</a>'
       subject { VideoInfo.new(video_url_in_text) }
@@ -278,14 +278,14 @@ require 'spec_helper'
       end
     end
 
-    context 'with video 101677664 in /ondemand/ url', :vcr do
+    context 'with video 101677664 in /ondemand/ url' do
       subject { VideoInfo.new('https://vimeo.com/ondemand/less/101677664') }
 
       its(:provider) { should eq 'Vimeo' }
       its(:video_id) { should eq '101677664' }
     end
 
-    context 'with video 111431415 in /channels/*/ url', :vcr do
+    context 'with video 111431415 in /channels/*/ url' do
       video_url = 'https://vimeo.com/channels/some_channel1/111431415'
       subject { VideoInfo.new(video_url) }
 
@@ -293,7 +293,7 @@ require 'spec_helper'
       its(:video_id) { should eq '111431415' }
     end
 
-    context 'with video 126641548 in /user*/review/126641548/* url', :vcr do
+    context 'with video 126641548 in /user*/review/126641548/* url' do
       video_url = 'http://www.vimeo.com/user39798190/review/126641548/8a56234e32'
       subject { VideoInfo.new(video_url) }
 
@@ -301,7 +301,7 @@ require 'spec_helper'
       its(:video_id) { should eq '126641548' }
     end
 
-    context 'with video 141349194', :vcr do
+    context 'with video 141349194' do
       video_url = 'https://vimeo.com/141349194'
       subject { VideoInfo.new(video_url) }
 
@@ -312,7 +312,7 @@ require 'spec_helper'
 
     end
 
-    context 'with unavailable video', :vcr do
+    context 'with unavailable video' do
       if api_key.nil?
         video_url = 'https://vimeo.com/0812455'
         subject { VideoInfo.new(video_url) }
