@@ -1,7 +1,7 @@
 require 'spec_helper'
 
-[nil, '6b66b015a3504793b4f541d878f46ff6'].each do |api_key|
-  describe VideoInfo::Providers::Vimeo do
+[nil, '<vimeo_access_token>'].each do |api_key|
+  describe VideoInfo::Providers::Vimeo, :vcr do
     before(:all) do
       VideoInfo.provider_api_keys = { vimeo: api_key }
     end
