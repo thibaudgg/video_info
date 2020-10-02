@@ -8,7 +8,7 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - VideoInfo/2.7
+      - VideoInfo/2.8.0
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -18,60 +18,70 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      Server:
-      - nginx
       Content-Type:
       - application/json; charset=utf-8
-      Status:
-      - 200 OK
       X-Content-Type-Options:
       - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
       Access-Control-Allow-Origin:
+      - "*"
+      Timing-Allow-Origin:
       - "*"
       Cache-Control:
       - public, no-cache
+      Etag:
+      - W/"ef3c7225d67e05c6621139b3bde94fe0"
       P3p:
       - CP="CURi ADMa DEVa IVAa IVDa CONi OUR IND DSP CAO COR"
       X-Request-Id:
-      - 1428043b-7d8f-47f5-8173-685fc5cea945
+      - 188b8e783f5823139635c4ca34659d52
       X-Runtime:
-      - '0.120929'
+      - '0.031704'
       Via:
       - 1.1 varnish
       - 1.1 varnish
-      Fastly-Debug-Digest:
-      - 05317f3b6c4b18f379c581f5f2e8500ed43d4651f4f2ac28f3a5fc0797f7ad71
+      - 1.1 varnish (Varnish/6.0)
       Content-Length:
-      - '449'
+      - '461'
       Accept-Ranges:
       - bytes
       Date:
-      - Mon, 27 Mar 2017 21:01:55 GMT
+      - Fri, 02 Oct 2020 00:27:33 GMT
       Age:
-      - '2212'
+      - '57'
       Connection:
       - keep-alive
       X-Served-By:
-      - cache-ord1724-ORD, cache-lax8631-LAX
+      - cache-dca17752-DCA, cache-gru17122-GRU
       X-Cache:
-      - MISS, HIT
+      - HIT, HIT
       X-Cache-Hits:
-      - 0, 1
+      - 1, 1
       X-Timer:
-      - S1490648515.180197,VS0,VE0
+      - S1601598453.429682,VS0,VE1
       Vary:
-      - Accept-Encoding,X-Forwarded-Proto
+      - Accept-Encoding,X-Forwarded-Proto,X-ECMA-Override
       Strict-Transport-Security:
       - max-age=0
+      X-Ecma-V:
+      - es5
+      X-Browser:
+      - unknown
+      X-Browser-Version:
+      - '0'
     body:
       encoding: ASCII-8BIT
       string: '{"version":"1.0","type":"video","html":"\u003ciframe src=\"https://fast.wistia.net/embed/iframe/pxonqr42is\"
-        title=\"Wistia video player\" allowtransparency=\"true\" frameborder=\"0\"
-        scrolling=\"no\" class=\"wistia_embed\" name=\"wistia_embed\" allowfullscreen
-        mozallowfullscreen webkitallowfullscreen oallowfullscreen msallowfullscreen
-        width=\"960\" height=\"540\"\u003e\u003c/iframe\u003e\n\u003cscript src=\"https://fast.wistia.net/assets/external/E-v1.js\"
-        async\u003e\u003c/script\u003e","width":960,"height":540,"provider_name":"Wistia,
-        Inc.","provider_url":"https://wistia.com","title":"Understanding Analytics","thumbnail_url":"https://embed-ssl.wistia.com/deliveries/0fccbdc60ade35723f79f1c002bc61b135b610fa.jpg?image_crop_resized=960x540","thumbnail_width":960,"thumbnail_height":540,"duration":250.0}'
-    http_version: 
-  recorded_at: Mon, 27 Mar 2017 21:01:55 GMT
+        title=\"Understanding Analytics Video\" allow=\"autoplay; fullscreen\" allowtransparency=\"true\"
+        frameborder=\"0\" scrolling=\"no\" class=\"wistia_embed\" name=\"wistia_embed\"
+        allowfullscreen msallowfullscreen width=\"960\" height=\"540\"\u003e\u003c/iframe\u003e\n\u003cscript
+        src=\"https://fast.wistia.net/assets/external/E-v1.js\" async\u003e\u003c/script\u003e","width":960,"height":540,"provider_name":"Wistia,
+        Inc.","provider_url":"https://wistia.com","title":"Understanding Analytics","thumbnail_url":"https://embed-ssl.wistia.com/deliveries/0fccbdc60ade35723f79f1c002bc61b135b610fa.jpg?image_crop_resized=960x540","thumbnail_width":960,"thumbnail_height":540,"player_color":"63d0db","duration":250.428}'
+    http_version:
+  recorded_at: Fri, 02 Oct 2020 00:27:33 GMT
 recorded_with: VCR 3.0.3
