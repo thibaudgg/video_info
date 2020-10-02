@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://fast.wistia.com/oembed?url=http://home.wistia.com/medias/pxonqr42is
+    uri: http://fast.wistia.com/oembed?url=http://home.wistia.com/medias/rs1me54mpw
     body:
       encoding: US-ASCII
       string: ''
@@ -35,35 +35,35 @@ http_interactions:
       Cache-Control:
       - public, no-cache
       Etag:
-      - W/"ef3c7225d67e05c6621139b3bde94fe0"
+      - W/"d56fb6260875817389a2da541e59e2bc"
       P3p:
       - CP="CURi ADMa DEVa IVAa IVDa CONi OUR IND DSP CAO COR"
       X-Request-Id:
-      - 188b8e783f5823139635c4ca34659d52
+      - 4b45bea2f69fff5428b531d9c09d247e
       X-Runtime:
-      - '0.031704'
+      - '0.019586'
       Via:
       - 1.1 varnish
       - 1.1 varnish
       - 1.1 varnish (Varnish/6.0)
       Content-Length:
-      - '461'
+      - '470'
       Accept-Ranges:
       - bytes
       Date:
       - Fri, 02 Oct 2020 00:27:33 GMT
       Age:
-      - '57'
+      - '211'
       Connection:
       - keep-alive
       X-Served-By:
-      - cache-dca17752-DCA, cache-gru17144-GRU
+      - cache-dca17721-DCA, cache-gru17151-GRU
       X-Cache:
-      - HIT, HIT
+      - MISS, HIT
       X-Cache-Hits:
-      - 1, 1
+      - 0, 1
       X-Timer:
-      - S1601598453.364257,VS0,VE1
+      - S1601598453.233086,VS0,VE1
       Vary:
       - Accept-Encoding,X-Forwarded-Proto,X-ECMA-Override
       Strict-Transport-Security:
@@ -76,12 +76,12 @@ http_interactions:
       - '0'
     body:
       encoding: ASCII-8BIT
-      string: '{"version":"1.0","type":"video","html":"\u003ciframe src=\"https://fast.wistia.net/embed/iframe/pxonqr42is\"
-        title=\"Understanding Analytics Video\" allow=\"autoplay; fullscreen\" allowtransparency=\"true\"
-        frameborder=\"0\" scrolling=\"no\" class=\"wistia_embed\" name=\"wistia_embed\"
-        allowfullscreen msallowfullscreen width=\"960\" height=\"540\"\u003e\u003c/iframe\u003e\n\u003cscript
+      string: '{"version":"1.0","type":"video","html":"\u003ciframe src=\"https://fast.wistia.net/embed/iframe/rs1me54mpw\"
+        title=\"Lance Kalish - Yes To Group Video\" allow=\"autoplay; fullscreen\"
+        allowtransparency=\"true\" frameborder=\"0\" scrolling=\"no\" class=\"wistia_embed\"
+        name=\"wistia_embed\" allowfullscreen msallowfullscreen width=\"960\" height=\"540\"\u003e\u003c/iframe\u003e\n\u003cscript
         src=\"https://fast.wistia.net/assets/external/E-v1.js\" async\u003e\u003c/script\u003e","width":960,"height":540,"provider_name":"Wistia,
-        Inc.","provider_url":"https://wistia.com","title":"Understanding Analytics","thumbnail_url":"https://embed-ssl.wistia.com/deliveries/0fccbdc60ade35723f79f1c002bc61b135b610fa.jpg?image_crop_resized=960x540","thumbnail_width":960,"thumbnail_height":540,"player_color":"63d0db","duration":250.428}'
+        Inc.","provider_url":"https://wistia.com","title":"Lance Kalish - Yes To Group","thumbnail_url":"https://embed-ssl.wistia.com/deliveries/dc005e6a7583a25c4b7c284c08afc42fb67fdb95.jpg?image_crop_resized=960x540","thumbnail_width":960,"thumbnail_height":540,"player_color":"7b796a","duration":1214.83}'
     http_version:
   recorded_at: Fri, 02 Oct 2020 00:27:33 GMT
 recorded_with: VCR 3.0.3

@@ -1,7 +1,7 @@
 # encoding: UTF-8
 require 'spec_helper'
 
-describe VideoInfo::Providers::Wistia do
+describe VideoInfo::Providers::Wistia, :vcr do
   describe '.usable?' do
     subject { VideoInfo::Providers::Wistia.usable?(url) }
 
@@ -17,7 +17,7 @@ describe VideoInfo::Providers::Wistia do
   end
 
   describe '#available?' do
-    context 'with valid video', :vcr do
+    context 'with valid video' do
       video_url = 'http://fast.wistia.net/embed/iframe/rs1me54mpw'
       subject { VideoInfo.new(video_url.freeze) }
 
@@ -27,7 +27,7 @@ describe VideoInfo::Providers::Wistia do
       end
     end
 
-    context 'with invalid video', :vcr do
+    context 'with invalid video' do
       subject { VideoInfo.new('http://fast.wistia.net/embed/iframe/no_video') }
 
       describe '#available?' do
@@ -37,7 +37,7 @@ describe VideoInfo::Providers::Wistia do
     end
   end
 
-  context 'with video rs1me54mpw', :vcr do
+  context 'with video rs1me54mpw' do
     subject { VideoInfo.new('http://fast.wistia.net/embed/iframe/rs1me54mpw') }
 
     describe '#provider' do
@@ -130,7 +130,7 @@ describe VideoInfo::Providers::Wistia do
     end
   end
 
-  context 'with video pxonqr42is', :vcr do
+  context 'with video pxonqr42is' do
     subject { VideoInfo.new('http://fast.wistia.com/embed/medias/pxonqr42is') }
 
     describe '#provider' do
@@ -167,7 +167,7 @@ describe VideoInfo::Providers::Wistia do
 
     describe '#duration' do
       subject { super().duration }
-      it { is_expected.to eq 250.0 }
+      it { is_expected.to eq 250.428 }
     end
 
     describe '#width' do
