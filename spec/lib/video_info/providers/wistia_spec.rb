@@ -167,7 +167,7 @@ describe VideoInfo::Providers::Wistia, :vcr do
 
     describe '#duration' do
       subject { super().duration }
-      it { is_expected.to eq 250.0 }
+      it { is_expected.to eq 250.428 }
     end
 
     describe '#width' do
