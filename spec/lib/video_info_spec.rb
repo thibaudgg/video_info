@@ -8,7 +8,6 @@ describe VideoInfo do
 
     it 'uses the first usable provider' do
       allow(VideoInfo::Providers::Vimeo).to receive(:usable?) { false }
-      allow(VideoInfo::Providers::Vkontakte).to receive(:usable?) { false }
       allow(VideoInfo::Providers::Youtube).to receive(:usable?) { true }
       allow(VideoInfo::Providers::Youtube).to receive(:new) { provider }
 
@@ -17,7 +16,6 @@ describe VideoInfo do
 
     it 'raise when no providers are usable' do
       allow(VideoInfo::Providers::Vimeo).to receive(:usable?) { false }
-      allow(VideoInfo::Providers::Vkontakte).to receive(:usable?) { false }
       allow(VideoInfo::Providers::Youtube).to receive(:usable?) { false }
 
       expect { VideoInfo.new(url, options) }.to raise_error(VideoInfo::UrlError)
@@ -53,7 +51,6 @@ describe VideoInfo do
 
     it 'returns true when a provider is usable' do
       allow(VideoInfo::Providers::Vimeo).to receive(:usable?) { false }
-      allow(VideoInfo::Providers::Vkontakte).to receive(:usable?) { false }
       allow(VideoInfo::Providers::Youtube).to receive(:usable?) { true }
       allow(VideoInfo::Providers::Youtube).to receive(:new) { true }
 
@@ -62,7 +59,6 @@ describe VideoInfo do
 
     it 'returns false when no providers are usable' do
       allow(VideoInfo::Providers::Vimeo).to receive(:usable?) { false }
-      allow(VideoInfo::Providers::Vkontakte).to receive(:usable?) { false }
       allow(VideoInfo::Providers::Youtube).to receive(:usable?) { false }
 
       expect(VideoInfo.usable?(url)).to be_falsey
