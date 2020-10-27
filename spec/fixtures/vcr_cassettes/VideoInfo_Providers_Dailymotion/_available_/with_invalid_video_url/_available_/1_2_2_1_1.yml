@@ -27,7 +27,7 @@ http_interactions:
       X-Dm-Api-Object:
       - video
       X-Dm-Backnode:
-      - web-100.adm.ix7.dailymotion.com:80
+      - web-118.adm.ix7.dailymotion.com:80
       Vary:
       - X-DM-SSL
       X-Dm-Api-Method:
@@ -42,19 +42,19 @@ http_interactions:
       Content-Security-Policy:
       - upgrade-insecure-requests
       Date:
-      - Fri, 18 Sep 2020 01:27:19 GMT
+      - Tue, 27 Oct 2020 10:44:15 GMT
       X-Dm-Lb-Ip:
       - 195.8.215.129
       Expires:
       - Fri, 01 Jan 2010 05:00:00 GMT
       X-Dm-Lb-Name:
-      - lb-02
+      - lb-03
       X-Dm-Random-Number:
-      - '2868041'
+      - '8780791'
       Access-Control-Allow-Origin:
       - "*"
       X-Dm-Backnode-Response-Time:
-      - '32'
+      - '31'
       X-Robots-Tag:
       - noindex
       X-Frame-Options:
@@ -67,6 +67,8 @@ http_interactions:
       - Content-Type, Authorization
       Access-Control-Allow-Methods:
       - GET, POST, DELETE
+      Referrer-Policy:
+      - no-referrer-when-downgrade
       X-Dm-Edge:
       - DMParis
       Content-Length:
@@ -76,5 +78,5 @@ http_interactions:
       string: '{"error":{"more_info":"https:\/\/developer.dailymotion.com\/api#error-codes","code":404,"message":"Can''t
         find object video for `id'' parameter","type":"not_found","error_data":{"reason":"object_not_found","object_type":"video","object_id":"inValIdiD","param":"id"}}}'
     http_version:
-  recorded_at: Fri, 18 Sep 2020 01:27:19 GMT
+  recorded_at: Tue, 27 Oct 2020 10:44:15 GMT
 recorded_with: VCR 3.0.3

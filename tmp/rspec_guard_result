@@ -1,0 +1,25 @@
+104 examples, 24 failures in 42.5583 seconds
+./spec/lib/video_info/providers/dailymotion_spec.rb:134
+./spec/lib/video_info/providers/dailymotion_spec.rb:139
+./spec/lib/video_info/providers/dailymotion_spec.rb:144
+./spec/lib/video_info/providers/dailymotion_spec.rb:159
+./spec/lib/video_info/providers/vimeo_spec.rb:108
+./spec/lib/video_info/providers/vimeo_spec.rb:115
+./spec/lib/video_info/providers/vimeo_spec.rb:120
+./spec/lib/video_info/providers/vimeo_spec.rb:128
+./spec/lib/video_info/providers/vimeo_spec.rb:133
+./spec/lib/video_info/providers/vimeo_spec.rb:138
+./spec/lib/video_info/providers/vimeo_spec.rb:143
+./spec/lib/video_info/providers/vimeo_spec.rb:152
+./spec/lib/video_info/providers/vimeo_spec.rb:158
+./spec/lib/video_info/providers/vimeo_spec.rb:164
+./spec/lib/video_info/providers/vimeo_spec.rb:180
+./spec/lib/video_info/providers/vimeo_spec.rb:197
+./spec/lib/video_info/providers/vimeo_spec.rb:202
+./spec/lib/video_info/providers/vimeo_spec.rb:207
+./spec/lib/video_info/providers/vimeo_spec.rb:212
+./spec/lib/video_info/providers/vimeo_spec.rb:308
+./spec/lib/video_info/providers/vimeo_spec.rb:309
+./spec/lib/video_info/providers/vimeo_spec.rb:310
+./spec/lib/video_info/providers/vimeo_spec.rb:311
+./spec/lib/video_info/providers/vimeo_spec.rb:54

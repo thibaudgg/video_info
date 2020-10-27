@@ -2,7 +2,7 @@ require 'spec_helper'
 
 describe VideoInfo::Providers::YoutubePlaylist, :vcr do
   before(:each) do
-    api_key = 'api_key_123'
+    api_key = ENV["YOUTUBE_API_KEY"] || "youtube_api_key_123"
     VideoInfo.provider_api_keys = { youtube: api_key }
   end
 
@@ -66,7 +66,7 @@ describe VideoInfo::Providers::YoutubePlaylist, :vcr do
   context 'with playlist PL9hW1uS6HUftLdHI6RIsaf' do
     let(:video_ids) do
       [
-        "9g2U12SsRns", "AsqTAkLKb4M", "K681ILSXyUY", "OQVHWsTHcoc", "QtwplSG6VvM", "WK8qRNSmhEU", "XIoGq39abMk", "eKkv1C_O-QI", "lau14lhZpoU"
+        "9g2U12SsRns", "AsqTAkLKb4M", "K681ILSXyUY", "OQVHWsTHcoc", "QtwplSG6VvM", "WK8qRNSmhEU", "XIoGq39abMk", "eKkv1C_O-QI", "lau14lhZpoU", "HvplY9BPKG8", "mTdNi9Mqiu8", "qAVwpBZ1HYA"
       ]
     end
 
@@ -200,7 +200,7 @@ describe VideoInfo::Providers::YoutubePlaylist, :vcr do
       subject { super().author_thumbnail }
       author_thumbnail = 'https://yt3.ggpht.com/a/' \
                          'AATXAJwyEv0uEyk3JLskjLiUCqSVzsGmpWw2icLfBOBzWg' \
-                         '=s88-c-k-c0xffffffff-no-rj-mo'
+                         '=s88-c-k-c0x00ffffff-no-rj'
       it { is_expected.to eq author_thumbnail }
     end
 

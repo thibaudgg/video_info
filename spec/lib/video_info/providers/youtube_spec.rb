@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-[nil, 'api_key_123'].each do |api_key|
+[nil, ENV["YOUTUBE_API_KEY"] || "youtube_api_key_123"].each do |api_key|
   describe VideoInfo::Providers::Youtube, :vcr do
     before(:all) do
       VideoInfo.provider_api_keys = { youtube: api_key }
@@ -193,7 +193,7 @@ require 'spec_helper'
         subject { super().author_thumbnail }
         author_thumbnail = 'https://yt3.ggpht.com/a/' \
                            'AATXAJyf5l8p3WQvOx-Q0o8ssGmIL-K5taxKHv5ZEEYc' \
-                           '=s88-c-k-c0xffffffff-no-rj-mo'
+                           '=s88-c-k-c0x00ffffff-no-rj'
 
         it { is_expected.to eql author_thumbnail }
       end
@@ -592,7 +592,7 @@ require 'spec_helper'
       describe '#view_count' do
         subject { super().view_count }
 
-        it { is_expected.to eq 7944 }
+        it { is_expected.to eq 7962 }
       end
     end
   end

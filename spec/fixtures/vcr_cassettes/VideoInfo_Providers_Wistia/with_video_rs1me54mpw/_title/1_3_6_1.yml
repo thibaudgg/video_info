@@ -39,31 +39,29 @@ http_interactions:
       P3p:
       - CP="CURi ADMa DEVa IVAa IVDa CONi OUR IND DSP CAO COR"
       X-Request-Id:
-      - 4b45bea2f69fff5428b531d9c09d247e
+      - 29d7ed04937a1a7df6d0d66678c1ca82
       X-Runtime:
-      - '0.019586'
+      - '0.030630'
       Via:
-      - 1.1 varnish
-      - 1.1 varnish
-      - 1.1 varnish (Varnish/6.0)
+      - 1.1 varnish (Varnish/6.0), 1.1 varnish, 1.1 varnish
       Content-Length:
       - '470'
       Accept-Ranges:
       - bytes
       Date:
-      - Fri, 02 Oct 2020 00:27:32 GMT
+      - Tue, 27 Oct 2020 19:36:38 GMT
       Age:
-      - '210'
+      - '35455'
       Connection:
       - keep-alive
       X-Served-By:
-      - cache-dca17721-DCA, cache-gru17139-GRU
+      - cache-dca17725-DCA, cache-gru17133-GRU
       X-Cache:
       - MISS, HIT
       X-Cache-Hits:
-      - 0, 3
+      - 0, 1
       X-Timer:
-      - S1601598453.779655,VS0,VE0
+      - S1603827398.212477,VS0,VE1
       Vary:
       - Accept-Encoding,X-Forwarded-Proto,X-ECMA-Override
       Strict-Transport-Security:
@@ -83,5 +81,5 @@ http_interactions:
         src=\"https://fast.wistia.net/assets/external/E-v1.js\" async\u003e\u003c/script\u003e","width":960,"height":540,"provider_name":"Wistia,
         Inc.","provider_url":"https://wistia.com","title":"Lance Kalish - Yes To Group","thumbnail_url":"https://embed-ssl.wistia.com/deliveries/dc005e6a7583a25c4b7c284c08afc42fb67fdb95.jpg?image_crop_resized=960x540","thumbnail_width":960,"thumbnail_height":540,"player_color":"7b796a","duration":1214.83}'
     http_version:
-  recorded_at: Fri, 02 Oct 2020 00:27:32 GMT
+  recorded_at: Tue, 27 Oct 2020 19:36:38 GMT
 recorded_with: VCR 3.0.3
