@@ -131,17 +131,17 @@ describe VideoInfo::Providers::Dailymotion do
 
     describe '#thumbnail_small' do
       subject { super().thumbnail_small }
-      it { is_expected.to match /https:\/\/s[12].dmcdn.net\/v\/mj4x1VKDs8zz5egS\/x60/ }
+      it { is_expected.to match /https:\/\/s[12].dmcdn.net\/v\/mj4x1VaO59OF6TK6\/x60/ }
     end
 
     describe '#thumbnail_medium' do
       subject { super().thumbnail_medium }
-      it { is_expected.to match /https:\/\/s[12].dmcdn.net\/v\/mj4x1VKDs82hcOmJ\/x240/ }
+      it { is_expected.to match /https:\/\/s[12].dmcdn.net\/v\/mj4x1VaO59Vm42lt\/x240/ }
     end
 
     describe '#thumbnail_large' do
       subject { super().thumbnail_large }
-      it { is_expected.to match /https:\/\/s[12].dmcdn.net\/v\/mj4x1VKDs8EI6rnx\/x720/ }
+      it { is_expected.to match /https:\/\/s[12].dmcdn.net\/v\/mj4x1VaO59VyFzJt\/x720/ }
     end
 
     describe '#thumbnail_large_2x' do
@@ -156,7 +156,7 @@ describe VideoInfo::Providers::Dailymotion do
 
     describe '#thumbnail' do
       subject { super().thumbnail }
-      it { is_expected.to match /https:\/\/s[12].dmcdn.net\/v\/mj4x1VKDs8EI6rnx\/x720/ }
+      it { is_expected.to match /https:\/\/s[12].dmcdn.net\/v\/mj4x1VaO59VyFzJt\/x720/ }
     end
 
     describe '#view_count' do

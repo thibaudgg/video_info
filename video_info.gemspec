@@ -11,8 +11,8 @@ Gem::Specification.new do |s|
   s.author       = 'Thibaud Guillaume-Gentil'
   s.email        = 'thibaud@thibaud.gg'
   s.homepage     = 'https://rubygems.org/gems/video_info'
-  s.summary      = 'Dailymotion, Vimeo, VK and YouTube info parser.'
-  s.description  = 'Get video info from Dailymotion, Vimeo, VK and YouTube url.'
+  s.summary      = 'Dailymotion, Vimeo and YouTube info parser.'
+  s.description  = 'Get video info from Dailymotion, Vimeo and YouTube url.'
 
   s.files        = `git ls-files`.split($/)
   s.test_files   = s.files.grep(%r{^spec/})

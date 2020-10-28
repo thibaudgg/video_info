@@ -4,7 +4,7 @@
 
 :exclamation: VideoInfo is no more actively maintained, please [contact me](mailto:thibaud@thibaud.gg) if you're interested in helping.
 
-Simple Ruby Gem to get video info from Dailymotion, VK, Vimeo, Wistia and YouTube (with playlist).
+Simple Ruby Gem to get video info from Dailymotion, Vimeo, Wistia and YouTube (with playlist).
 
 Tested against Ruby 2.3.0, 2.2.4, and the latest versions of JRuby & Rubinius.
 
@@ -92,19 +92,6 @@ video = VideoInfo.new("http://fast.wistia.com/embed/medias/pxonqr42is")
 # video.thumbnail_large  => 'https://embed-ssl.wistia.com/deliveries/0fccbdc60ade35723f79f1c002bc61b135b610fa.jpg?image_crop_resized=960x540'
 # video.embed_url        => '//fast.wistia.net/embed/iframe/pxonqr42is'
 # video.embed_code       => "<iframe src='//fast.wistia.net/embed/iframe/pxonqr42is' frameborder='0'></iframe>"
-
-video = VideoInfo.new('http://vk.com/video39576223_108370515')
-# video.available?       => true
-# video.provider         => "Vkontakte"
-# video.video_id         => "108370515"
-# video.author           => "Alexander Maslov"
-# video.author_thumbnail => "https://pp.vk.me/c624521/v624521223/3c288/lVcVW7LNnrQ.jpg"
-# video.author_url       => "https://vk.com/videos39576223"
-# video.title            => "Я уточка)))))"
-# video.description      => "это ВЗРЫВ МОЗГА!!!<br>Просто отвал башки..."
-# video.duration         => 183 (in seconds)
-# video.embed_url        => "//vk.com/video_ext.php?oid=39576223&id=108370515&hash=15184dbd085c47af"
-# video.embed_code       => "<iframe src=\"//vk.com/video_ext.php?oid=39576223&id=108370515&hash=15184dbd085c47af\" frameborder=\"0\" allowfullscreen=\"allowfullscreen\"></iframe>"
 
 video = VideoInfo.new("http://www.youtube.com/watch?v=mZqGqE0D0n4")
 # video.available?       => true
