@@ -1,0 +1,39 @@
+name: Ruby Unit Tests
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        ruby: [ '2.5', '2.6', '2.7' ]
+
+    name: Ruby ${{ matrix.ruby }}
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-ruby@v1
+        with:
+          ruby-version: ${{ matrix.ruby }}
+      - name: Cache gems
+        uses: actions/cache@v2
+        env:
+          cache-name: cache-gems
+        with:
+          path: vendor/bundle
+          key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-gems-
+      - name: Set bundle config path
+        run: |
+          bundle config path vendor/bundle
+      - name: Install dependencies
+        run: |
+          bundle install
+      - name: Ruby Unit tests
+        run: |
+          bundle exec rspec
