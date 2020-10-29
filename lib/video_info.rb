@@ -10,8 +10,7 @@ class VideoInfo
   class HttpError < Error; end
 
   class << self
-    attr_writer :logger
-    attr_accessor :disable_providers, :provider_api_keys
+    attr_writer :logger, :disable_providers
 
     def disable_providers
       @disable_providers || []

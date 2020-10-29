@@ -4,7 +4,8 @@ require 'uri'
 
 class VideoInfo
   class Provider
-    attr_accessor :url, :options, :iframe_attributes, :video_id, :data
+    attr_accessor :url, :options, :iframe_attributes, :video_id
+    attr_writer :data
 
     def initialize(url, options = {})
       @options = _clean_options(options)
@@ -109,7 +110,7 @@ class VideoInfo
     end
 
     def _set_data_from_api_impl(api_url)
-      uri = open(api_url, options)
+      uri = URI.open(api_url, options)
       JSON.load(uri.read)
     end
 
