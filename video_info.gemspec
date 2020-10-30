@@ -18,7 +18,7 @@ Gem::Specification.new do |s|
   s.test_files   = s.files.grep(%r{^spec/})
   s.require_path = 'lib'
 
-  s.required_ruby_version = '>= 2.2.0'
+  s.required_ruby_version = '>= 2.5.0'
 
   s.add_dependency 'iso8601', '~> 0.9.1'
   s.add_dependency 'oga', '~> 3.0'
