@@ -2,8 +2,6 @@
 
 [![Gem Version](https://badge.fury.io/rb/video_info.svg)](http://badge.fury.io/rb/video_info) [![Build Status](https://github.com/thibaudgg/video_info/workflows/Ruby%20Unit%20Tests/badge.svg?branch=master)](https://github.com/thibaudgg/video_info/actions?query=workflow%3A%22Ruby+Unit+Tests%22) [![Code Climate](https://codeclimate.com/github/thibaudgg/video_info.svg)](https://codeclimate.com/github/thibaudgg/video_info) [![Coverage Status](https://coveralls.io/repos/thibaudgg/video_info/badge.svg?branch=master)](https://coveralls.io/r/thibaudgg/video_info) [![Reviewed by Hound](https://img.shields.io/badge/Reviewed_by-Hound-8E64B0.svg)](https://houndci.com)
 
-:exclamation: VideoInfo is no more actively maintained, please [contact me](mailto:thibaud@thibaud.gg) if you're interested in helping.
-
 Simple Ruby Gem to get video info from Dailymotion, Vimeo, Wistia and YouTube (with playlist).
 
 Tested against Ruby 2.5.x, 2.6.x and 2.7.x.
@@ -176,9 +174,9 @@ Author
 Maintainers
 -----------
 
-[Thibaud Guillaume-Gentil](https://github.com/thibaudgg) ([@thibaudgg](https://twitter.com/thibaudgg))
-
-[Vincent Heuken](https://github.com/vheuken) ([@vheuken](https://github.com/vheuken))
+- [Thibaud Guillaume-Gentil](https://github.com/thibaudgg) ([@thibaudgg](https://twitter.com/thibaudgg))
+- [Vincent Heuken](https://github.com/vheuken) ([@vheuken](https://github.com/vheuken))
+- [João Vieira](https://github.com/joaocv3) ([@joaocv3](https://github.com/joaocv3))
 
 Contributors
 ------------
