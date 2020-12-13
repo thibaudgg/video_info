@@ -191,8 +191,8 @@ require 'spec_helper'
 
       describe '#author_thumbnail' do
         subject { super().author_thumbnail }
-        author_thumbnail = 'https://yt3.ggpht.com/a/' \
-                           'AATXAJyf5l8p3WQvOx-Q0o8ssGmIL-K5taxKHv5ZEEYc' \
+        author_thumbnail = 'https://yt3.ggpht.com/ytc/' \
+                           'AAUvwngxSfemSkVNEPK0ePTsqgMdB1nwfLeHtRSokuKK' \
                            '=s88-c-k-c0x00ffffff-no-rj'
 
         it { is_expected.to eql author_thumbnail }
@@ -592,7 +592,7 @@ require 'spec_helper'
       describe '#view_count' do
         subject { super().view_count }
 
-        it { is_expected.to eq 7962 }
+        it { is_expected.to eq 7980 }
       end
     end
   end

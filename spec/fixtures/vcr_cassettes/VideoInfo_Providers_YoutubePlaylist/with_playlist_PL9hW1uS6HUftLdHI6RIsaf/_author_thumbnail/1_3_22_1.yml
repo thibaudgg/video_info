@@ -2,155 +2,6 @@
 http_interactions:
 - request:
     method: get
-    uri: https://www.googleapis.com/youtube/v3/playlists?id=PL9hW1uS6HUftLdHI6RIsaf-iXTm09qnEr&key=youtube_api_key_123&part=snippet
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - VideoInfo/2.8.0
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Content-Type:
-      - application/json; charset=UTF-8
-      Vary:
-      - Origin
-      - Referer
-      - X-Origin
-      Date:
-      - Tue, 27 Oct 2020 18:42:19 GMT
-      Server:
-      - scaffolding on HTTPServer2
-      Cache-Control:
-      - private
-      X-Xss-Protection:
-      - '0'
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Content-Type-Options:
-      - nosniff
-      Alt-Svc:
-      - h3-Q050=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-T051=":443"; ma=2592000,h3-T050=":443";
-        ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443";
-        ma=2592000; v="46,43"
-      Transfer-Encoding:
-      - chunked
-    body:
-      encoding: ASCII-8BIT
-      string: |
-        {
-          "kind": "youtube#playlistListResponse",
-          "etag": "Lhu7Yb-FnqA_Lgnvh7voheGMJR4",
-          "pageInfo": {
-            "totalResults": 1,
-            "resultsPerPage": 5
-          },
-          "items": [
-            {
-              "kind": "youtube#playlist",
-              "etag": "oJ_SZduyFDBmOtZabEKVkpJHohI",
-              "id": "PL9hW1uS6HUftLdHI6RIsaf-iXTm09qnEr",
-              "snippet": {
-                "publishedAt": "2013-08-09T05:09:51Z",
-                "channelId": "UCMDQxm7cUx3yXkfeHa5zJIQ",
-                "title": "YouTube Policy and Copyright",
-                "description": "Learn more about copyright basics, flagging, and the YouTube community.",
-                "thumbnails": {
-                  "default": {
-                    "url": "https://i.ytimg.com/vi/9g2U12SsRns/default.jpg",
-                    "width": 120,
-                    "height": 90
-                  },
-                  "medium": {
-                    "url": "https://i.ytimg.com/vi/9g2U12SsRns/mqdefault.jpg",
-                    "width": 320,
-                    "height": 180
-                  },
-                  "high": {
-                    "url": "https://i.ytimg.com/vi/9g2U12SsRns/hqdefault.jpg",
-                    "width": 480,
-                    "height": 360
-                  },
-                  "standard": {
-                    "url": "https://i.ytimg.com/vi/9g2U12SsRns/sddefault.jpg",
-                    "width": 640,
-                    "height": 480
-                  },
-                  "maxres": {
-                    "url": "https://i.ytimg.com/vi/9g2U12SsRns/maxresdefault.jpg",
-                    "width": 1280,
-                    "height": 720
-                  }
-                },
-                "channelTitle": "TeamYouTube [Help]",
-                "defaultLanguage": "en",
-                "localized": {
-                  "title": "YouTube Policy and Copyright",
-                  "description": "Learn more about copyright basics, flagging, and the YouTube community."
-                }
-              }
-            }
-          ]
-        }
-    http_version:
-  recorded_at: Tue, 27 Oct 2020 18:42:19 GMT
-- request:
-    method: get
-    uri: https://www.googleapis.com/youtube/v3/channels?id=UCMDQxm7cUx3yXkfeHa5zJIQ&key=youtube_api_key_123&part=snippet
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-      User-Agent:
-      - Ruby
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Content-Type:
-      - application/json; charset=UTF-8
-      Vary:
-      - Origin
-      - Referer
-      - X-Origin
-      Date:
-      - Tue, 27 Oct 2020 18:42:20 GMT
-      Server:
-      - scaffolding on HTTPServer2
-      Cache-Control:
-      - private
-      X-Xss-Protection:
-      - '0'
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Content-Type-Options:
-      - nosniff
-      Alt-Svc:
-      - h3-Q050=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-T051=":443"; ma=2592000,h3-T050=":443";
-        ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443";
-        ma=2592000; v="46,43"
-      Transfer-Encoding:
-      - chunked
-    body:
-      encoding: ASCII-8BIT
-      string: !binary |-
-        ewogICJraW5kIjogInlvdXR1YmUjY2hhbm5lbExpc3RSZXNwb25zZSIsCiAgImV0YWciOiAiYjJuQXRCaEg5YXprVGZWRW1NdDNDZXF3ckxFIiwKICAicGFnZUluZm8iOiB7CiAgICAidG90YWxSZXN1bHRzIjogMSwKICAgICJyZXN1bHRzUGVyUGFnZSI6IDUKICB9LAogICJpdGVtcyI6IFsKICAgIHsKICAgICAgImtpbmQiOiAieW91dHViZSNjaGFubmVsIiwKICAgICAgImV0YWciOiAiNF9PQ3JYM3lDTW9qeTFWY1RLa1VuUWszRG1nIiwKICAgICAgImlkIjogIlVDTURReG03Y1V4M3lYa2ZlSGE1ekpJUSIsCiAgICAgICJzbmlwcGV0IjogewogICAgICAgICJ0aXRsZSI6ICJUZWFtWW91VHViZSBbSGVscF0iLAogICAgICAgICJkZXNjcmlwdGlvbiI6ICJXZSdyZSBoZXJlIHRvIGhlbHAuIElmIHlvdSdyZSBsb29raW5nIGZvciBwcm9kdWN0IHVwZGF0ZXMsIGFuc3dlcnMsIG9yIGhvdy10b+KAmXMsIHlvdSd2ZSBjb21lIHRvIHRoZSByaWdodCBwbGFjZSEgSGF2ZSBxdWVzdGlvbnM/IExlYXZlIHRoZW0gaW4gb3VyIHZpZGVvIGNvbW1lbnRzIGFuZCB3ZeKAmWxsIGdldCB0byBhcyBtYW55IGFzIHdlIGNhbiFcblxuSWYgeW91J3JlIGxvb2tpbmcgdG8gZ3JvdyB5b3VyIGNoYW5uZWwgYXMgYSBZb3VUdWJlciwgY2hlY2sgb3V0IHlvdXR1YmUuY29tL3lvdXR1YmVjcmVhdG9ycy4iLAogICAgICAgICJjdXN0b21VcmwiOiAidGVhbXlvdXR1YmUiLAogICAgICAgICJwdWJsaXNoZWRBdCI6ICIyMDA3LTA1LTAzVDIyOjU0OjEyWiIsCiAgICAgICAgInRodW1ibmFpbHMiOiB7CiAgICAgICAgICAiZGVmYXVsdCI6IHsKICAgICAgICAgICAgInVybCI6ICJodHRwczovL3l0My5nZ3BodC5jb20vYS9BQVRYQUp3eUV2MHVFeWszSkxza2pMaVVDcVNWenNHbXBXdzJpY0xmQk9CeldnPXM4OC1jLWstYzB4MDBmZmZmZmYtbm8tcmoiLAogICAgICAgICAgICAid2lkdGgiOiA4OCwKICAgICAgICAgICAgImhlaWdodCI6IDg4CiAgICAgICAgICB9LAogICAgICAgICAgIm1lZGl1bSI6IHsKICAgICAgICAgICAgInVybCI6ICJodHRwczovL3l0My5nZ3BodC5jb20vYS9BQVRYQUp3eUV2MHVFeWszSkxza2pMaVVDcVNWenNHbXBXdzJpY0xmQk9CeldnPXMyNDAtYy1rLWMweDAwZmZmZmZmLW5vLXJqIiwKICAgICAgICAgICAgIndpZHRoIjogMjQwLAogICAgICAgICAgICAiaGVpZ2h0IjogMjQwCiAgICAgICAgICB9LAogICAgICAgICAgImhpZ2giOiB7CiAgICAgICAgICAgICJ1cmwiOiAiaHR0cHM6Ly95dDMuZ2dwaHQuY29tL2EvQUFUWEFKd3lFdjB1RXlrM0pMc2tqTGlVQ3FTVnpzR21wV3cyaWNMZkJPQnpXZz1zODAwLWMtay1jMHgwMGZmZmZmZi1uby1yaiIsCiAgICAgICAgICAgICJ3aWR0aCI6IDgwMCwKICAgICAgICAgICAgImhlaWdodCI6IDgwMAogICAgICAgICAgfQogICAgICAgIH0sCiAgICAgICAgImRlZmF1bHRMYW5ndWFnZSI6ICJlbiIsCiAgICAgICAgImxvY2FsaXplZCI6IHsKICAgICAgICAgICJ0aXRsZSI6ICJUZWFtWW91VHViZSBbSGVscF0iLAogICAgICAgICAgImRlc2NyaXB0aW9uIjogIldlJ3JlIGhlcmUgdG8gaGVscC4gSWYgeW91J3JlIGxvb2tpbmcgZm9yIHByb2R1Y3QgdXBkYXRlcywgYW5zd2Vycywgb3IgaG93LXRv4oCZcywgeW91J3ZlIGNvbWUgdG8gdGhlIHJpZ2h0IHBsYWNlISBIYXZlIHF1ZXN0aW9ucz8gTGVhdmUgdGhlbSBpbiBvdXIgdmlkZW8gY29tbWVudHMgYW5kIHdl4oCZbGwgZ2V0IHRvIGFzIG1hbnkgYXMgd2UgY2FuIVxuXG5JZiB5b3UncmUgbG9va2luZyB0byBncm93IHlvdXIgY2hhbm5lbCBhcyBhIFlvdVR1YmVyLCBjaGVjayBvdXQgeW91dHViZS5jb20veW91dHViZWNyZWF0b3JzLiIKICAgICAgICB9LAogICAgICAgICJjb3VudHJ5IjogIlVTIgogICAgICB9CiAgICB9CiAgXQp9Cg==
-    http_version:
-  recorded_at: Tue, 27 Oct 2020 18:42:20 GMT
-- request:
-    method: get
     uri: https://www.googleapis.com/youtube/v3/playlists?id=PL9hW1uS6HUftLdHI6RIsaf-iXTm09qnEr&key=%3Cyoutube_api_key_123%3E&part=snippet
     body:
       encoding: US-ASCII
@@ -271,4 +122,211 @@ http_interactions:
         }
     http_version:
   recorded_at: Tue, 27 Oct 2020 18:44:54 GMT
+- request:
+    method: get
+    uri: https://www.googleapis.com/youtube/v3/channels?id=&key=youtube_api_key_123&part=snippet
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Vary:
+      - Origin
+      - Referer
+      - X-Origin
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Sun, 13 Dec 2020 17:56:42 GMT
+      Server:
+      - scaffolding on HTTPServer2
+      Cache-Control:
+      - private
+      X-Xss-Protection:
+      - '0'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Alt-Svc:
+      - h3-29=":443"; ma=2592000,h3-T051=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443";
+        ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: |
+        {
+          "error": {
+            "code": 400,
+            "message": "API key not valid. Please pass a valid API key.",
+            "errors": [
+              {
+                "message": "API key not valid. Please pass a valid API key.",
+                "domain": "global",
+                "reason": "badRequest"
+              }
+            ],
+            "status": "INVALID_ARGUMENT"
+          }
+        }
+    http_version:
+  recorded_at: Sun, 13 Dec 2020 17:56:41 GMT
+- request:
+    method: get
+    uri: https://www.googleapis.com/youtube/v3/playlists?id=PL9hW1uS6HUftLdHI6RIsaf-iXTm09qnEr&key=youtube_api_key_123&part=snippet
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - VideoInfo/3.0.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Vary:
+      - Origin
+      - Referer
+      - X-Origin
+      Date:
+      - Sun, 13 Dec 2020 17:58:42 GMT
+      Server:
+      - scaffolding on HTTPServer2
+      Cache-Control:
+      - private
+      X-Xss-Protection:
+      - '0'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Alt-Svc:
+      - h3-29=":443"; ma=2592000,h3-T051=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443";
+        ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: |
+        {
+          "kind": "youtube#playlistListResponse",
+          "etag": "8cu3DvQp_T4px3MPV_D82VwzT28",
+          "pageInfo": {
+            "totalResults": 1,
+            "resultsPerPage": 5
+          },
+          "items": [
+            {
+              "kind": "youtube#playlist",
+              "etag": "oJ_SZduyFDBmOtZabEKVkpJHohI",
+              "id": "PL9hW1uS6HUftLdHI6RIsaf-iXTm09qnEr",
+              "snippet": {
+                "publishedAt": "2013-08-09T05:09:51Z",
+                "channelId": "UCMDQxm7cUx3yXkfeHa5zJIQ",
+                "title": "YouTube Policy and Copyright",
+                "description": "Learn more about copyright basics, flagging, and the YouTube community.",
+                "thumbnails": {
+                  "default": {
+                    "url": "https://i.ytimg.com/vi/9g2U12SsRns/default.jpg",
+                    "width": 120,
+                    "height": 90
+                  },
+                  "medium": {
+                    "url": "https://i.ytimg.com/vi/9g2U12SsRns/mqdefault.jpg",
+                    "width": 320,
+                    "height": 180
+                  },
+                  "high": {
+                    "url": "https://i.ytimg.com/vi/9g2U12SsRns/hqdefault.jpg",
+                    "width": 480,
+                    "height": 360
+                  },
+                  "standard": {
+                    "url": "https://i.ytimg.com/vi/9g2U12SsRns/sddefault.jpg",
+                    "width": 640,
+                    "height": 480
+                  },
+                  "maxres": {
+                    "url": "https://i.ytimg.com/vi/9g2U12SsRns/maxresdefault.jpg",
+                    "width": 1280,
+                    "height": 720
+                  }
+                },
+                "channelTitle": "TeamYouTube [Help]",
+                "defaultLanguage": "en",
+                "localized": {
+                  "title": "YouTube Policy and Copyright",
+                  "description": "Learn more about copyright basics, flagging, and the YouTube community."
+                }
+              }
+            }
+          ]
+        }
+    http_version:
+  recorded_at: Sun, 13 Dec 2020 17:58:42 GMT
+- request:
+    method: get
+    uri: https://www.googleapis.com/youtube/v3/channels?id=UCMDQxm7cUx3yXkfeHa5zJIQ&key=youtube_api_key_123&part=snippet
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Vary:
+      - Origin
+      - Referer
+      - X-Origin
+      Date:
+      - Sun, 13 Dec 2020 17:58:43 GMT
+      Server:
+      - scaffolding on HTTPServer2
+      Cache-Control:
+      - private
+      X-Xss-Protection:
+      - '0'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Alt-Svc:
+      - h3-29=":443"; ma=2592000,h3-T051=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443";
+        ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        ewogICJraW5kIjogInlvdXR1YmUjY2hhbm5lbExpc3RSZXNwb25zZSIsCiAgImV0YWciOiAiWU1WQlZGZ0UxOXFEcldJMDI3d0VJQVZRTkdNIiwKICAicGFnZUluZm8iOiB7CiAgICAidG90YWxSZXN1bHRzIjogMSwKICAgICJyZXN1bHRzUGVyUGFnZSI6IDUKICB9LAogICJpdGVtcyI6IFsKICAgIHsKICAgICAgImtpbmQiOiAieW91dHViZSNjaGFubmVsIiwKICAgICAgImV0YWciOiAic05YbXcyM2RlMTRYSXczV3dTcWthSUNxb3E4IiwKICAgICAgImlkIjogIlVDTURReG03Y1V4M3lYa2ZlSGE1ekpJUSIsCiAgICAgICJzbmlwcGV0IjogewogICAgICAgICJ0aXRsZSI6ICJUZWFtWW91VHViZSBbSGVscF0iLAogICAgICAgICJkZXNjcmlwdGlvbiI6ICJXZSdyZSBoZXJlIHRvIGhlbHAuIElmIHlvdSdyZSBsb29raW5nIGZvciBwcm9kdWN0IHVwZGF0ZXMsIGFuc3dlcnMsIG9yIGhvdy10b+KAmXMsIHlvdSd2ZSBjb21lIHRvIHRoZSByaWdodCBwbGFjZSEgSGF2ZSBxdWVzdGlvbnM/IExlYXZlIHRoZW0gaW4gb3VyIHZpZGVvIGNvbW1lbnRzIGFuZCB3ZeKAmWxsIGdldCB0byBhcyBtYW55IGFzIHdlIGNhbiFcblxuSWYgeW91J3JlIGxvb2tpbmcgdG8gZ3JvdyB5b3VyIGNoYW5uZWwgYXMgYSBZb3VUdWJlciwgY2hlY2sgb3V0IHlvdXR1YmUuY29tL3lvdXR1YmVjcmVhdG9ycy4iLAogICAgICAgICJjdXN0b21VcmwiOiAidGVhbXlvdXR1YmUiLAogICAgICAgICJwdWJsaXNoZWRBdCI6ICIyMDA3LTA1LTAzVDIyOjU0OjEyWiIsCiAgICAgICAgInRodW1ibmFpbHMiOiB7CiAgICAgICAgICAiZGVmYXVsdCI6IHsKICAgICAgICAgICAgInVybCI6ICJodHRwczovL3l0My5nZ3BodC5jb20veXRjL0FBVXZ3bmlwR1Mxd1FyYmVxU2RISkNEUFE1YzN6dzVVY2xDUWtlSVEyZXVlT3c9czg4LWMtay1jMHgwMGZmZmZmZi1uby1yaiIsCiAgICAgICAgICAgICJ3aWR0aCI6IDg4LAogICAgICAgICAgICAiaGVpZ2h0IjogODgKICAgICAgICAgIH0sCiAgICAgICAgICAibWVkaXVtIjogewogICAgICAgICAgICAidXJsIjogImh0dHBzOi8veXQzLmdncGh0LmNvbS95dGMvQUFVdnduaXBHUzF3UXJiZXFTZEhKQ0RQUTVjM3p3NVVjbENRa2VJUTJldWVPdz1zMjQwLWMtay1jMHgwMGZmZmZmZi1uby1yaiIsCiAgICAgICAgICAgICJ3aWR0aCI6IDI0MCwKICAgICAgICAgICAgImhlaWdodCI6IDI0MAogICAgICAgICAgfSwKICAgICAgICAgICJoaWdoIjogewogICAgICAgICAgICAidXJsIjogImh0dHBzOi8veXQzLmdncGh0LmNvbS95dGMvQUFVdnduaXBHUzF3UXJiZXFTZEhKQ0RQUTVjM3p3NVVjbENRa2VJUTJldWVPdz1zODAwLWMtay1jMHgwMGZmZmZmZi1uby1yaiIsCiAgICAgICAgICAgICJ3aWR0aCI6IDgwMCwKICAgICAgICAgICAgImhlaWdodCI6IDgwMAogICAgICAgICAgfQogICAgICAgIH0sCiAgICAgICAgImRlZmF1bHRMYW5ndWFnZSI6ICJlbiIsCiAgICAgICAgImxvY2FsaXplZCI6IHsKICAgICAgICAgICJ0aXRsZSI6ICJUZWFtWW91VHViZSBbSGVscF0iLAogICAgICAgICAgImRlc2NyaXB0aW9uIjogIldlJ3JlIGhlcmUgdG8gaGVscC4gSWYgeW91J3JlIGxvb2tpbmcgZm9yIHByb2R1Y3QgdXBkYXRlcywgYW5zd2Vycywgb3IgaG93LXRv4oCZcywgeW91J3ZlIGNvbWUgdG8gdGhlIHJpZ2h0IHBsYWNlISBIYXZlIHF1ZXN0aW9ucz8gTGVhdmUgdGhlbSBpbiBvdXIgdmlkZW8gY29tbWVudHMgYW5kIHdl4oCZbGwgZ2V0IHRvIGFzIG1hbnkgYXMgd2UgY2FuIVxuXG5JZiB5b3UncmUgbG9va2luZyB0byBncm93IHlvdXIgY2hhbm5lbCBhcyBhIFlvdVR1YmVyLCBjaGVjayBvdXQgeW91dHViZS5jb20veW91dHViZWNyZWF0b3JzLiIKICAgICAgICB9LAogICAgICAgICJjb3VudHJ5IjogIlVTIgogICAgICB9CiAgICB9CiAgXQp9Cg==
+    http_version:
+  recorded_at: Sun, 13 Dec 2020 17:58:43 GMT
 recorded_with: VCR 3.0.3

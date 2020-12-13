@@ -8,7 +8,7 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - VideoInfo/2.8.0
+      - VideoInfo/3.0.0
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -25,7 +25,7 @@ http_interactions:
       - Referer
       - X-Origin
       Date:
-      - Tue, 27 Oct 2020 18:39:52 GMT
+      - Sun, 13 Dec 2020 17:53:04 GMT
       Server:
       - scaffolding on HTTPServer2
       Cache-Control:
@@ -37,9 +37,8 @@ http_interactions:
       X-Content-Type-Options:
       - nosniff
       Alt-Svc:
-      - h3-Q050=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-T051=":443"; ma=2592000,h3-T050=":443";
-        ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443";
-        ma=2592000; v="46,43"
+      - h3-29=":443"; ma=2592000,h3-T051=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443";
+        ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
       Transfer-Encoding:
       - chunked
     body:
@@ -98,7 +97,7 @@ http_interactions:
                 "duration": "PT2M56S",
                 "dimension": "2d",
                 "definition": "sd",
-                "caption": "false",
+                "caption": "true",
                 "licensedContent": false,
                 "contentRating": {},
                 "projection": "rectangular"
@@ -112,8 +111,8 @@ http_interactions:
                 "madeForKids": false
               },
               "statistics": {
-                "viewCount": "7963",
-                "likeCount": "62",
+                "viewCount": "7980",
+                "likeCount": "63",
                 "dislikeCount": "2",
                 "favoriteCount": "0",
                 "commentCount": "5"
@@ -122,7 +121,7 @@ http_interactions:
           ]
         }
     http_version:
-  recorded_at: Tue, 27 Oct 2020 18:39:52 GMT
+  recorded_at: Sun, 13 Dec 2020 17:53:04 GMT
 - request:
     method: get
     uri: https://www.googleapis.com/youtube/v3/channels?id=UCzxQk-rZGowoqMBKxGD5jSA&key=youtube_api_key_123&part=snippet
@@ -148,7 +147,7 @@ http_interactions:
       - Referer
       - X-Origin
       Date:
-      - Tue, 27 Oct 2020 18:39:52 GMT
+      - Sun, 13 Dec 2020 17:53:04 GMT
       Server:
       - scaffolding on HTTPServer2
       Cache-Control:
@@ -160,9 +159,8 @@ http_interactions:
       X-Content-Type-Options:
       - nosniff
       Alt-Svc:
-      - h3-Q050=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-T051=":443"; ma=2592000,h3-T050=":443";
-        ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443";
-        ma=2592000; v="46,43"
+      - h3-29=":443"; ma=2592000,h3-T051=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443";
+        ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
       Transfer-Encoding:
       - chunked
     body:
@@ -170,14 +168,15 @@ http_interactions:
       string: |
         {
           "kind": "youtube#channelListResponse",
-          "etag": "Hzw2v-J5GZwKI6RJldPeFaPOeu0",
+          "etag": "iJ2hRbCMb8svLsgUJTsSRWWXR-M",
           "pageInfo": {
-            "resultsPerPage": 1
+            "totalResults": 1,
+            "resultsPerPage": 5
           },
           "items": [
             {
               "kind": "youtube#channel",
-              "etag": "glrrjJY23_hldonORzINbIHalqI",
+              "etag": "BxNIbScZ5j3HI0TBIdpY8qYFPZs",
               "id": "UCzxQk-rZGowoqMBKxGD5jSA",
               "snippet": {
                 "title": "Cherry Bloom",
@@ -185,17 +184,17 @@ http_interactions:
                 "publishedAt": "2008-04-12T20:47:30Z",
                 "thumbnails": {
                   "default": {
-                    "url": "https://yt3.ggpht.com/a/AATXAJyf5l8p3WQvOx-Q0o8ssGmIL-K5taxKHv5ZEEYc=s88-c-k-c0xffffffff-no-rj-mo",
+                    "url": "https://yt3.ggpht.com/ytc/AAUvwngxSfemSkVNEPK0ePTsqgMdB1nwfLeHtRSokuKK=s88-c-k-c0x00ffffff-no-rj",
                     "width": 88,
                     "height": 88
                   },
                   "medium": {
-                    "url": "https://yt3.ggpht.com/a/AATXAJyf5l8p3WQvOx-Q0o8ssGmIL-K5taxKHv5ZEEYc=s240-c-k-c0xffffffff-no-rj-mo",
+                    "url": "https://yt3.ggpht.com/ytc/AAUvwngxSfemSkVNEPK0ePTsqgMdB1nwfLeHtRSokuKK=s240-c-k-c0x00ffffff-no-rj",
                     "width": 240,
                     "height": 240
                   },
                   "high": {
-                    "url": "https://yt3.ggpht.com/a/AATXAJyf5l8p3WQvOx-Q0o8ssGmIL-K5taxKHv5ZEEYc=s800-c-k-c0xffffffff-no-rj-mo",
+                    "url": "https://yt3.ggpht.com/ytc/AAUvwngxSfemSkVNEPK0ePTsqgMdB1nwfLeHtRSokuKK=s800-c-k-c0x00ffffff-no-rj",
                     "width": 800,
                     "height": 800
                   }
@@ -209,127 +208,5 @@ http_interactions:
           ]
         }
     http_version:
-  recorded_at: Tue, 27 Oct 2020 18:39:52 GMT
-- request:
-    method: get
-    uri: https://www.googleapis.com/youtube/v3/videos?fields=items(id,snippet,statistics,status,contentDetails)&id=mZqGqE0D0n4&key=%3Cyoutube_api_key_123%3E&part=snippet,statistics,status,contentDetails
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - VideoInfo/2.8.0
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 400
-      message: Bad Request
-    headers:
-      Vary:
-      - Origin
-      - Referer
-      - X-Origin
-      Content-Type:
-      - application/json; charset=UTF-8
-      Date:
-      - Tue, 27 Oct 2020 18:45:00 GMT
-      Server:
-      - scaffolding on HTTPServer2
-      Cache-Control:
-      - private
-      X-Xss-Protection:
-      - '0'
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Content-Type-Options:
-      - nosniff
-      Alt-Svc:
-      - h3-Q050=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-T051=":443"; ma=2592000,h3-T050=":443";
-        ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443";
-        ma=2592000; v="46,43"
-      Transfer-Encoding:
-      - chunked
-    body:
-      encoding: ASCII-8BIT
-      string: |
-        {
-          "error": {
-            "code": 400,
-            "message": "API key not valid. Please pass a valid API key.",
-            "errors": [
-              {
-                "message": "API key not valid. Please pass a valid API key.",
-                "domain": "global",
-                "reason": "badRequest"
-              }
-            ],
-            "status": "INVALID_ARGUMENT"
-          }
-        }
-    http_version:
-  recorded_at: Tue, 27 Oct 2020 18:45:00 GMT
-- request:
-    method: get
-    uri: https://www.googleapis.com/youtube/v3/channels?id=&key=%3Cyoutube_api_key_123%3E&part=snippet
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-      User-Agent:
-      - Ruby
-  response:
-    status:
-      code: 400
-      message: Bad Request
-    headers:
-      Vary:
-      - Origin
-      - Referer
-      - X-Origin
-      Content-Type:
-      - application/json; charset=UTF-8
-      Date:
-      - Tue, 27 Oct 2020 18:45:00 GMT
-      Server:
-      - scaffolding on HTTPServer2
-      Cache-Control:
-      - private
-      X-Xss-Protection:
-      - '0'
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Content-Type-Options:
-      - nosniff
-      Alt-Svc:
-      - h3-Q050=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-T051=":443"; ma=2592000,h3-T050=":443";
-        ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443";
-        ma=2592000; v="46,43"
-      Transfer-Encoding:
-      - chunked
-    body:
-      encoding: ASCII-8BIT
-      string: |
-        {
-          "error": {
-            "code": 400,
-            "message": "API key not valid. Please pass a valid API key.",
-            "errors": [
-              {
-                "message": "API key not valid. Please pass a valid API key.",
-                "domain": "global",
-                "reason": "badRequest"
-              }
-            ],
-            "status": "INVALID_ARGUMENT"
-          }
-        }
-    http_version:
-  recorded_at: Tue, 27 Oct 2020 18:45:00 GMT
+  recorded_at: Sun, 13 Dec 2020 17:53:04 GMT
 recorded_with: VCR 3.0.3

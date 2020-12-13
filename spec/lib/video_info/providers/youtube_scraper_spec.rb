@@ -8,7 +8,7 @@ describe VideoInfo::Providers::Youtube do
 
     describe '#description' do
       subject { super().description }
-      it { is_expected.to eq " " }
+      it { is_expected.to eq "" }
     end
   end
 end

@@ -2,107 +2,6 @@
 http_interactions:
 - request:
     method: get
-    uri: https://www.googleapis.com/youtube/v3/playlists?id=PL9hW1uS6HUftLdHI6RIsaf-iXTm09qnEr&key=youtube_api_key_123&part=snippet
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - VideoInfo/2.8.0
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Content-Type:
-      - application/json; charset=UTF-8
-      Vary:
-      - Origin
-      - Referer
-      - X-Origin
-      Date:
-      - Tue, 27 Oct 2020 18:42:15 GMT
-      Server:
-      - scaffolding on HTTPServer2
-      Cache-Control:
-      - private
-      X-Xss-Protection:
-      - '0'
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Content-Type-Options:
-      - nosniff
-      Alt-Svc:
-      - h3-Q050=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-T051=":443"; ma=2592000,h3-T050=":443";
-        ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443";
-        ma=2592000; v="46,43"
-      Transfer-Encoding:
-      - chunked
-    body:
-      encoding: ASCII-8BIT
-      string: |
-        {
-          "kind": "youtube#playlistListResponse",
-          "etag": "Lhu7Yb-FnqA_Lgnvh7voheGMJR4",
-          "pageInfo": {
-            "totalResults": 1,
-            "resultsPerPage": 5
-          },
-          "items": [
-            {
-              "kind": "youtube#playlist",
-              "etag": "oJ_SZduyFDBmOtZabEKVkpJHohI",
-              "id": "PL9hW1uS6HUftLdHI6RIsaf-iXTm09qnEr",
-              "snippet": {
-                "publishedAt": "2013-08-09T05:09:51Z",
-                "channelId": "UCMDQxm7cUx3yXkfeHa5zJIQ",
-                "title": "YouTube Policy and Copyright",
-                "description": "Learn more about copyright basics, flagging, and the YouTube community.",
-                "thumbnails": {
-                  "default": {
-                    "url": "https://i.ytimg.com/vi/9g2U12SsRns/default.jpg",
-                    "width": 120,
-                    "height": 90
-                  },
-                  "medium": {
-                    "url": "https://i.ytimg.com/vi/9g2U12SsRns/mqdefault.jpg",
-                    "width": 320,
-                    "height": 180
-                  },
-                  "high": {
-                    "url": "https://i.ytimg.com/vi/9g2U12SsRns/hqdefault.jpg",
-                    "width": 480,
-                    "height": 360
-                  },
-                  "standard": {
-                    "url": "https://i.ytimg.com/vi/9g2U12SsRns/sddefault.jpg",
-                    "width": 640,
-                    "height": 480
-                  },
-                  "maxres": {
-                    "url": "https://i.ytimg.com/vi/9g2U12SsRns/maxresdefault.jpg",
-                    "width": 1280,
-                    "height": 720
-                  }
-                },
-                "channelTitle": "TeamYouTube [Help]",
-                "defaultLanguage": "en",
-                "localized": {
-                  "title": "YouTube Policy and Copyright",
-                  "description": "Learn more about copyright basics, flagging, and the YouTube community."
-                }
-              }
-            }
-          ]
-        }
-    http_version:
-  recorded_at: Tue, 27 Oct 2020 18:42:15 GMT
-- request:
-    method: get
     uri: https://www.googleapis.com/youtube/v3/playlists?id=PL9hW1uS6HUftLdHI6RIsaf-iXTm09qnEr&key=%3Cyoutube_api_key_123%3E&part=snippet
     body:
       encoding: US-ASCII
@@ -162,4 +61,104 @@ http_interactions:
         }
     http_version:
   recorded_at: Tue, 27 Oct 2020 18:44:51 GMT
+- request:
+    method: get
+    uri: https://www.googleapis.com/youtube/v3/playlists?id=PL9hW1uS6HUftLdHI6RIsaf-iXTm09qnEr&key=youtube_api_key_123&part=snippet
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - VideoInfo/3.0.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Vary:
+      - Origin
+      - Referer
+      - X-Origin
+      Date:
+      - Sun, 13 Dec 2020 17:58:38 GMT
+      Server:
+      - scaffolding on HTTPServer2
+      Cache-Control:
+      - private
+      X-Xss-Protection:
+      - '0'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Alt-Svc:
+      - h3-29=":443"; ma=2592000,h3-T051=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443";
+        ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: |
+        {
+          "kind": "youtube#playlistListResponse",
+          "etag": "O2QGpGdz5boIknwL3qLOuKCjDMs",
+          "pageInfo": {
+            "totalResults": 1,
+            "resultsPerPage": 5
+          },
+          "items": [
+            {
+              "kind": "youtube#playlist",
+              "etag": "oJ_SZduyFDBmOtZabEKVkpJHohI",
+              "id": "PL9hW1uS6HUftLdHI6RIsaf-iXTm09qnEr",
+              "snippet": {
+                "publishedAt": "2013-08-09T05:09:51Z",
+                "channelId": "UCMDQxm7cUx3yXkfeHa5zJIQ",
+                "title": "YouTube Policy and Copyright",
+                "description": "Learn more about copyright basics, flagging, and the YouTube community.",
+                "thumbnails": {
+                  "default": {
+                    "url": "https://i.ytimg.com/vi/9g2U12SsRns/default.jpg",
+                    "width": 120,
+                    "height": 90
+                  },
+                  "medium": {
+                    "url": "https://i.ytimg.com/vi/9g2U12SsRns/mqdefault.jpg",
+                    "width": 320,
+                    "height": 180
+                  },
+                  "high": {
+                    "url": "https://i.ytimg.com/vi/9g2U12SsRns/hqdefault.jpg",
+                    "width": 480,
+                    "height": 360
+                  },
+                  "standard": {
+                    "url": "https://i.ytimg.com/vi/9g2U12SsRns/sddefault.jpg",
+                    "width": 640,
+                    "height": 480
+                  },
+                  "maxres": {
+                    "url": "https://i.ytimg.com/vi/9g2U12SsRns/maxresdefault.jpg",
+                    "width": 1280,
+                    "height": 720
+                  }
+                },
+                "channelTitle": "TeamYouTube [Help]",
+                "defaultLanguage": "en",
+                "localized": {
+                  "title": "YouTube Policy and Copyright",
+                  "description": "Learn more about copyright basics, flagging, and the YouTube community."
+                }
+              }
+            }
+          ]
+        }
+    http_version:
+  recorded_at: Sun, 13 Dec 2020 17:58:38 GMT
 recorded_with: VCR 3.0.3

@@ -60,6 +60,7 @@ class VideoInfo
       end
 
       def title
+        return if meta_node_value('title').empty?
         meta_node_value('title')
       end
 
