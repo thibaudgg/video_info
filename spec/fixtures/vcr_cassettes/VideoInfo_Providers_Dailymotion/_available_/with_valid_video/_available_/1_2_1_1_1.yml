@@ -27,7 +27,7 @@ http_interactions:
       X-Dm-Api-Object:
       - video
       X-Dm-Backnode:
-      - web-106.adm.ix7.dailymotion.com:80
+      - web-012.adm.ix7.dailymotion.com:80
       Vary:
       - X-DM-SSL,Accept-Encoding
       X-Dm-Api-Method:
@@ -42,7 +42,7 @@ http_interactions:
       Content-Security-Policy:
       - upgrade-insecure-requests
       Date:
-      - Tue, 27 Oct 2020 10:44:14 GMT
+      - Sun, 13 Dec 2020 13:02:23 GMT
       Surrogate-Key:
       - v-x7lni3
       X-Dm-Lb-Ip:
@@ -50,13 +50,13 @@ http_interactions:
       X-Dm-Tg:
       - v-x7lni3
       X-Dm-Lb-Name:
-      - lb-02
+      - lb-03
       X-Dm-Random-Number:
-      - '9659844'
+      - '3732914'
       Access-Control-Allow-Origin:
       - "*"
       X-Dm-Backnode-Response-Time:
-      - '30'
+      - '26'
       Etag:
       - W/"rQeFNlJ5iMPO8gmsSDhiVw-gzip"
       X-Robots-Tag:
@@ -83,5 +83,5 @@ http_interactions:
       encoding: ASCII-8BIT
       string: '{"id":"x7lni3","title":"Mario Kart (R\u00e9mi Gaillard)","channel":"fun","owner":"x4r137"}'
     http_version:
-  recorded_at: Tue, 27 Oct 2020 10:44:14 GMT
+  recorded_at: Sun, 13 Dec 2020 13:02:23 GMT
 recorded_with: VCR 3.0.3

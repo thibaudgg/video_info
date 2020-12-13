@@ -8,7 +8,7 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - VideoInfo/2.8.0
+      - VideoInfo/3.0.0
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -27,7 +27,7 @@ http_interactions:
       X-Dm-Api-Object:
       - video
       X-Dm-Backnode:
-      - web-020.adm.ix7.dailymotion.com:80
+      - web-037.adm.ix7.dailymotion.com:80
       Vary:
       - X-DM-SSL,Accept-Encoding
       X-Dm-Api-Method:
@@ -42,7 +42,7 @@ http_interactions:
       Content-Security-Policy:
       - upgrade-insecure-requests
       Date:
-      - Tue, 27 Oct 2020 10:44:23 GMT
+      - Sun, 13 Dec 2020 13:02:33 GMT
       Surrogate-Key:
       - v-x7lni3
       X-Dm-Lb-Ip:
@@ -50,13 +50,13 @@ http_interactions:
       X-Dm-Tg:
       - v-x7lni3
       X-Dm-Lb-Name:
-      - lb-03
+      - lb-01
       X-Dm-Random-Number:
-      - '4723074'
+      - '6087376'
       Access-Control-Allow-Origin:
       - "*"
       X-Dm-Backnode-Response-Time:
-      - '29'
+      - '30'
       Etag:
       - W/"rQeFNlJ5iMPO8gmsSDhiVw-gzip"
       X-Robots-Tag:
@@ -78,14 +78,14 @@ http_interactions:
       X-Dm-Edge:
       - DMParis
       Content-Length:
-      - '502'
+      - '500'
     body:
       encoding: ASCII-8BIT
       string: '{"id":"x7lni3","title":"Mario Kart (R\u00e9mi Gaillard)","description":"Super
         R\u00e9mi Kart est un jeu vid\u00e9o de course d\u00e9velopp\u00e9 et \u00e9dit\u00e9
         par N''Importe Quoi TV. Sa principale originalit\u00e9 vient de sa r\u00e9alit\u00e9...<br
-        \/>L''aventure continue sur www.nimportequi.com","duration":136,"created_time":1228321771,"url":"https:\/\/www.dailymotion.com\/video\/x7lni3","views_total":10339941,"tags":["r\u00e9mi","remi","gaillard","imposteur","imposture","mario","bros","kart","nintendo","jeux"],"thumbnail_url":"https:\/\/s1.dmcdn.net\/v\/mj4x1VaO59zYd5Qm","thumbnail_720_url":"https:\/\/s1.dmcdn.net\/v\/mj4x1VaO59VyFzJt\/x720","owner.url":"https:\/\/www.dailymotion.com\/nqtv","owner.screenname":"R\u00e9mi
-        Gaillard","owner.avatar_60_url":"https:\/\/s2.dmcdn.net\/u\/US931VO3V-24wNr1\/60x60","thumbnail_240_url":"https:\/\/s2.dmcdn.net\/v\/mj4x1VaO59Vm42lt\/x240","thumbnail_60_url":"https:\/\/s2.dmcdn.net\/v\/mj4x1VaO59OF6TK6\/x60"}'
+        \/>L''aventure continue sur www.nimportequi.com","duration":136,"created_time":1228321771,"url":"https:\/\/www.dailymotion.com\/video\/x7lni3","views_total":10340157,"tags":["r\u00e9mi","remi","gaillard","imposteur","imposture","mario","bros","kart","nintendo","jeux"],"thumbnail_url":"https:\/\/s1.dmcdn.net\/v\/mj4x1Vr0aEenbqwV","thumbnail_720_url":"https:\/\/s1.dmcdn.net\/v\/mj4x1Vr0aEfy_Ij_\/x720","owner.url":"https:\/\/www.dailymotion.com\/nqtv","owner.screenname":"R\u00e9mi
+        Gaillard","owner.avatar_60_url":"https:\/\/s1.dmcdn.net\/u\/US931VqzCfSTgGbS\/60x60","thumbnail_240_url":"https:\/\/s2.dmcdn.net\/v\/mj4x1Vr0aECM9nwo\/x240","thumbnail_60_url":"https:\/\/s1.dmcdn.net\/v\/mj4x1Vr0aEe-ed6o\/x60"}'
     http_version:
-  recorded_at: Tue, 27 Oct 2020 10:44:23 GMT
+  recorded_at: Sun, 13 Dec 2020 13:02:33 GMT
 recorded_with: VCR 3.0.3
