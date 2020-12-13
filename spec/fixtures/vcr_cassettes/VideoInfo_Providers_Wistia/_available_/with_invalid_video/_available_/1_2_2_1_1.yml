@@ -8,7 +8,7 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - VideoInfo/2.8.0
+      - VideoInfo/3.0.0
       Accept:
       - "*/*"
   response:
@@ -35,30 +35,29 @@ http_interactions:
       P3p:
       - CP="CURi ADMa DEVa IVAa IVDa CONi OUR IND DSP CAO COR"
       X-Request-Id:
-      - 4506a17e3112c6e5cfba3c7634ee6e04
+      - cd1754e5123d4164581e3bdb6f67cfbf
       X-Runtime:
-      - '0.004831'
+      - '0.007167'
       Via:
-      - 1.1 varnish
-      - 1.1 varnish (Varnish/6.0), 1.1 varnish
+      - 1.1 varnish (Varnish/6.0), 1.1 varnish, 1.1 varnish
       Content-Length:
       - '0'
       Accept-Ranges:
       - bytes
       Date:
-      - Tue, 27 Oct 2020 19:36:38 GMT
+      - Sun, 13 Dec 2020 13:09:12 GMT
       Age:
-      - '35456'
+      - '0'
       Connection:
       - keep-alive
       X-Served-By:
-      - cache-dca17776-DCA, cache-gru17134-GRU
+      - cache-dca17740-DCA, cache-gru17136-GRU
       X-Cache:
-      - MISS, HIT
+      - MISS, MISS
       X-Cache-Hits:
-      - 0, 1
+      - 0, 0
       X-Timer:
-      - S1603827398.122185,VS0,VE1
+      - S1607864953.552417,VS0,VE141
       Strict-Transport-Security:
       - max-age=0
       X-Ecma-V:
@@ -71,5 +70,5 @@ http_interactions:
       encoding: UTF-8
       string: ''
     http_version:
-  recorded_at: Tue, 27 Oct 2020 19:36:38 GMT
+  recorded_at: Sun, 13 Dec 2020 13:09:12 GMT
 recorded_with: VCR 3.0.3
