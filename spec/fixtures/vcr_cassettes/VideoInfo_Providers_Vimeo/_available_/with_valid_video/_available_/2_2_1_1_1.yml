@@ -8,7 +8,7 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - VideoInfo/2.8.0
+      - VideoInfo/3.0.0
       Authorization:
       - bearer vimeo_access_token
       Accept:
@@ -33,36 +33,32 @@ http_interactions:
       X-Ratelimit-Remaining:
       - '48'
       X-Ratelimit-Reset:
-      - '2020-10-27T18:24:07+00:00'
+      - '2020-12-13T13:10:00+00:00'
       Request-Hash:
-      - 12385b1f
+      - f4d74477
       X-Bapp-Server:
-      - api-v4924-dv6rv
+      - api-v6495-bx7jq
       X-Vimeo-Dc:
       - ge
       Accept-Ranges:
       - bytes
-      - bytes
       Via:
-      - 1.1 varnish
-      - 1.1 varnish
+      - 1.1 varnish, 1.1 varnish
       Date:
-      - Tue, 27 Oct 2020 18:23:08 GMT
-      Age:
-      - '0'
+      - Sun, 13 Dec 2020 13:09:01 GMT
       X-Served-By:
-      - cache-bwi5124-BWI, cache-cwb20525-CWB
+      - cache-bwi5122-BWI, cache-gru17137-GRU
       X-Cache:
       - MISS, MISS
       X-Cache-Hits:
       - 0, 0
       X-Timer:
-      - S1603822988.720412,VS0,VE397
+      - S1607864941.827527,VS0,VE384
       Vary:
       - Accept,Vimeo-Client-Id
     body:
       encoding: UTF-8
       string: ''
     http_version:
-  recorded_at: Tue, 27 Oct 2020 18:23:08 GMT
+  recorded_at: Sun, 13 Dec 2020 13:09:01 GMT
 recorded_with: VCR 3.0.3
