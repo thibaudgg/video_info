@@ -14,8 +14,7 @@ Gem::Specification.new do |s|
   s.summary      = 'Dailymotion, Vimeo and YouTube info parser.'
   s.description  = 'Get video info from Dailymotion, Vimeo and YouTube url.'
 
-  s.files        = `git ls-files`.split($/)
-  s.test_files   = s.files.grep(%r{^spec/})
+  s.files        = `git ls-files`.split($/).reject { |x| x.match?(%r{^spec/}) }
   s.require_path = 'lib'
 
   s.required_ruby_version = '>= 2.5.0'
