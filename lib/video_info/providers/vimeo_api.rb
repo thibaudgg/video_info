@@ -1,6 +1,8 @@
 class VideoInfo
   module Providers
     module VimeoAPI
+      THUMBNAIL_LINK_REGEX = /.*\/(\d+\-[^_]+)/
+
       def api_key
         VideoInfo.provider_api_keys[:vimeo]
       end
@@ -23,7 +25,7 @@ class VideoInfo
 
       def author_thumbnail_id
         author_uri = _video['user']['pictures']['uri']
-        @author_thumbnail_id ||= _parse_picture_id(author_uri)
+        @author_thumbnail_id ||= parse_picture_id_from_user(author_uri)
       end
 
       def author_url
@@ -36,7 +38,7 @@ class VideoInfo
       end
 
       def thumbnail_id
-        @thumbnail_id ||= _parse_picture_id(_video['pictures']['uri'])
+        @thumbnail_id ||= parse_picture_id(_video.dig("pictures", "sizes").first["link"])
       end
 
       def thumbnail_small
@@ -111,8 +113,12 @@ class VideoInfo
         "https://#{_api_base}#{_api_path}"
       end
 
-      def _parse_picture_id(uri)
+      def parse_picture_id_from_user (uri)
         %r{\/pictures\/(\d+)}.match(uri)[1]
+      end
+
+      def parse_picture_id(uri)
+        uri.match(THUMBNAIL_LINK_REGEX)[1]
       end
     end
   end

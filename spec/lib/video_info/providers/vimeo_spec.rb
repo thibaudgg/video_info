@@ -148,19 +148,19 @@ require 'spec_helper'
 
       describe '#thumbnail_small' do
         subject { super().thumbnail_small }
-        thumbnail_url = 'https://i.vimeocdn.com/video/531688239_100x75.jpg'
+        thumbnail_url = 'https://i.vimeocdn.com/video/531688239-17d856b48d059b4c39ec5c94ea0ddc24ccf759d49173aadd900cf0f0fe50336d-d_100x75.jpg'
         it { is_expected.to eq thumbnail_url }
       end
 
       describe '#thumbnail_medium' do
         subject { super().thumbnail_medium }
-        thumbnail_url = 'https://i.vimeocdn.com/video/531688239_200x150.jpg'
+        thumbnail_url = 'https://i.vimeocdn.com/video/531688239-17d856b48d059b4c39ec5c94ea0ddc24ccf759d49173aadd900cf0f0fe50336d-d_200x150.jpg'
         it { is_expected.to eq thumbnail_url }
       end
 
       describe '#thumbnail_large' do
         subject { super().thumbnail_large }
-        thumbnail_url = 'https://i.vimeocdn.com/video/531688239_640.jpg'
+        thumbnail_url = 'https://i.vimeocdn.com/video/531688239-17d856b48d059b4c39ec5c94ea0ddc24ccf759d49173aadd900cf0f0fe50336d-d_640.jpg'
         it { is_expected.to eq thumbnail_url }
       end
 
@@ -176,7 +176,7 @@ require 'spec_helper'
 
       describe '#thumbnail' do
         subject { super().thumbnail }
-        thumbnail_url = 'https://i.vimeocdn.com/video/531688239_640.jpg'
+        thumbnail_url = 'https://i.vimeocdn.com/video/531688239-17d856b48d059b4c39ec5c94ea0ddc24ccf759d49173aadd900cf0f0fe50336d-d_640.jpg'
         it { is_expected.to eq thumbnail_url }
       end
 
@@ -301,14 +301,14 @@ require 'spec_helper'
       its(:video_id) { should eq '126641548' }
     end
 
-    context 'with video 141349194' do
-      video_url = 'https://vimeo.com/141349194'
+    context 'with video 642263700' do
+      video_url = 'https://vimeo.com/642263700'
       subject { VideoInfo.new(video_url) }
 
-      its(:thumbnail) { should eq 'https://i.vimeocdn.com/video/538320894_640.jpg' }
-      its(:thumbnail_large) { should eq 'https://i.vimeocdn.com/video/538320894_640.jpg' }
-      its(:thumbnail_medium) { should eq 'https://i.vimeocdn.com/video/538320894_200x150.jpg' }
-      its(:thumbnail_small) { should eq 'https://i.vimeocdn.com/video/538320894_100x75.jpg' }
+      its(:thumbnail) { should eq 'https://i.vimeocdn.com/video/1291917478-2522170a8cfe68dc920e5031deac9bc5ff4d6699c96341fbe_640.jpg' }
+      its(:thumbnail_large) { should eq 'https://i.vimeocdn.com/video/1291917478-2522170a8cfe68dc920e5031deac9bc5ff4d6699c96341fbe_640.jpg' }
+      its(:thumbnail_medium) { should eq 'https://i.vimeocdn.com/video/1291917478-2522170a8cfe68dc920e5031deac9bc5ff4d6699c96341fbe_200x150.jpg' }
+      its(:thumbnail_small) { should eq 'https://i.vimeocdn.com/video/1291917478-2522170a8cfe68dc920e5031deac9bc5ff4d6699c96341fbe_100x75.jpg' }
 
     end
 
