@@ -81,6 +81,17 @@ describe VideoInfo do
     end
   end
 
+  describe '.valid_url?' do
+    it 'checks if passed url is usable in some of the enabled providers' do
+      allow(VideoInfo::Providers::Dailymotion).to receive(:usable?) { false }
+
+      expect(VideoInfo.valid_url?('http://www.youtube.com/watch?v=AT_5xOGh6Ko')).to be_truthy
+      expect(VideoInfo.valid_url?('http://vimeo.com/86701482')).to be_truthy
+      expect(VideoInfo.valid_url?('http://www.dailymotion.com/video/x7lni3')).to be_falsey
+      expect(VideoInfo.valid_url?('http://example.com/video/ABC123456')).to be_falsey
+    end
+  end
+
   describe '#==' do
     let(:vi_a) { VideoInfo.new('http://www.youtube.com/watch?v=AT_5xOGh6Ko') }
     let(:vi_b) { VideoInfo.new('http://www.youtube.com/watch?v=AT_5xOGh6Ko') }

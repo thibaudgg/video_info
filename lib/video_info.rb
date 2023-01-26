@@ -81,6 +81,13 @@ class VideoInfo
     disable_providers.map(&:downcase).include?(provider.downcase)
   end
 
+  def self.valid_url?(url)
+    PROVIDERS.select { |p| !disabled_provider?(p) }.any? do |provider|
+      provider_const = Providers.const_get(provider)
+      return true if provider_const.usable?(url)
+    end
+  end
+
   private
 
   def _select_provider(url, options)
