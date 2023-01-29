@@ -124,6 +124,17 @@ playlist = VideoInfo.new("http://www.youtube.com/playlist?p=PL9hW1uS6HUftLdHI6RI
 # playlist.videos              => [VideoInfo.new('http://www.youtube.com/watch?v=_Bt3-WsHfB0'), VideoInfo.new('http://www.youtube.com/watch?v=9g2U12SsRns'), VideoInfo.new('http://www.youtube.com/watch?v=8b0aEoxqqC0'), VideoInfo.new('http://www.youtube.com/watch?v=6c3mHikRz0I'), VideoInfo.new('http://www.youtube.com/watch?v=OQVHWsTHcoc')]
 ```
 
+You can also use the `valid_url?` helper to check if a given url is valid in some of the _enabled_ providers:
+
+```ruby
+> VideoInfo.valid_url?('http://www.youtube.com/watch?v=AT_5xOGh6Ko')
+=> true
+> VideoInfo.valid_url?('http://vimeo.com/898029')
+=> true
+> VideoInfo.valid_url?('http://www.example.com/video/12345')
+=> false
+```
+
 Options
 -------
 
