@@ -15,7 +15,7 @@ class VideoInfo
       end
 
       def self.usable?(url)
-        url =~ %r{(vimeo\.com\/(?!album|hubnut\/album).*)}
+        url.match? /(vimeo\.com\/(?!album|hubnut\/album).*)/
       end
 
       def provider

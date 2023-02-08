@@ -2,7 +2,7 @@ class VideoInfo
   module Providers
     class Wistia < Provider
       def self.usable?(url)
-        url =~ /(.*)(wistia.com|wistia.net|wi.st)/
+        url.match? /(.*)(wistia.com|wistia.net|wi.st)/
       end
 
       def provider
