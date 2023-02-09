@@ -18,8 +18,7 @@ class VideoInfo
       end
 
       def self.usable?(url)
-        url =~ %r{((youtube\.com)\/playlist)|
-                  ((youtube\.com)\/embed\/videoseries)}x
+        url.match? /((youtube\.com)\/playlist)|((youtube\.com)\/embed\/videoseries)/
       end
 
       def date

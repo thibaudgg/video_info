@@ -16,8 +16,7 @@ class VideoInfo
       end
 
       def self.usable?(url)
-        url =~ %r{(youtube\.com\/(?!playlist|embed\/videoseries).*)|
-                  (youtu\.be)}x
+        url.match? /(youtube\.com\/(?!playlist|embed\/videoseries).*)|(youtu\.be)/
       end
 
       def provider

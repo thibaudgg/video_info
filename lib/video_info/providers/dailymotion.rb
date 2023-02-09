@@ -2,7 +2,7 @@ class VideoInfo
   module Providers
     class Dailymotion < Provider
       def self.usable?(url)
-        url =~ /(dai(?:\.ly|lymotion\.com))/
+        url.match? /(dai(?:\.ly|lymotion\.com))/
       end
 
       def provider

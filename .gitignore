@@ -19,10 +19,10 @@ rdoc
 pkg
 Gemfile.lock
 *.gem
+tmp/*
 
 ## PROJECT::SPECIFIC
 .bundle/config
 vendor/bundle/
-
 .ruby-version
 bin
