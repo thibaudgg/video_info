@@ -1,5 +1,3 @@
-require 'spec_helper'
-
 describe VideoInfo::Providers::Youtube do
   before { VideoInfo.provider_api_keys = {} }
 

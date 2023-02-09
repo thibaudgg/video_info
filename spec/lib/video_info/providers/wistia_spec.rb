@@ -1,6 +1,3 @@
-# encoding: UTF-8
-require 'spec_helper'
-
 describe VideoInfo::Providers::Wistia, :vcr do
   describe '.usable?' do
     subject { VideoInfo::Providers::Wistia.usable?(url) }
@@ -19,7 +16,7 @@ describe VideoInfo::Providers::Wistia, :vcr do
   describe '#available?' do
     context 'with valid video' do
       video_url = 'http://fast.wistia.net/embed/iframe/rs1me54mpw'
-      subject { VideoInfo.new(video_url.freeze) }
+      subject { VideoInfo.new(video_url) }
 
       describe '#available?' do
         subject { super().available? }
@@ -167,7 +164,7 @@ describe VideoInfo::Providers::Wistia, :vcr do
 
     describe '#duration' do
       subject { super().duration }
-      it { is_expected.to eq 250.428 }
+      it { is_expected.to eq 250.376 }
     end
 
     describe '#width' do

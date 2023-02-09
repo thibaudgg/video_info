@@ -18,70 +18,51 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      Content-Security-Policy-Report-Only:
-      - 'default-src https: blob: wss: data: android-webview-video-poster: android-webview:
-        chrome-extension: safari-extension: ''unsafe-eval'' ''unsafe-inline''; report-uri
-        https://www.dailymotion.com/content_security_policy_report_uri'
-      Server:
-      - DMS/1.0.42
-      X-Dm-Api-Object:
-      - video
-      X-Dm-Backnode:
-      - web-012.adm.ix7.dailymotion.com:80
-      Vary:
-      - X-DM-SSL,Accept-Encoding
-      X-Dm-Api-Method:
-      - info
-      Cache-Control:
-      - public, max-age=900, stale-if-error=900
-      Content-Type:
-      - application/json; charset=UTF-8
-      Access-Control-Expose-Headers:
-      - Date, X-DM-BackNode-Response-Time, X-DM-Edge, X-DM-Cache-Status, X-Served-By,
-        X-DM-BackNode-Response-Time
-      Content-Security-Policy:
-      - upgrade-insecure-requests
-      Date:
-      - Sun, 13 Dec 2020 13:02:23 GMT
-      Surrogate-Key:
-      - v-x7lni3
-      X-Dm-Lb-Ip:
-      - 195.8.215.129
-      X-Dm-Tg:
-      - v-x7lni3
-      X-Dm-Lb-Name:
-      - lb-03
-      X-Dm-Random-Number:
-      - '3732914'
-      Access-Control-Allow-Origin:
-      - "*"
-      X-Dm-Backnode-Response-Time:
-      - '26'
-      Etag:
-      - W/"rQeFNlJ5iMPO8gmsSDhiVw-gzip"
-      X-Robots-Tag:
-      - noindex
-      X-Frame-Options:
-      - DENY
-      Last-Modified:
-      - Tue, 19 May 2015 07:03:39 GMT
-      Expect-Ct:
-      - max-age=0, report-uri="https://www.dailymotion.com/content_security_policy_report_uri"
-      X-Dm-Cache-Status:
-      - MISS
       Access-Control-Allow-Headers:
       - Content-Type, Authorization
       Access-Control-Allow-Methods:
       - GET, POST, DELETE
-      Referrer-Policy:
-      - no-referrer-when-downgrade
-      X-Dm-Edge:
-      - DMParis
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - Date, X-DM-BackNode-Response-Time, X-DM-Edge, X-DM-Cache-Status, X-Served-By
+      Cache-Control:
+      - public, max-age=900
       Content-Length:
       - '103'
+      Content-Security-Policy:
+      - upgrade-insecure-requests
+      Content-Security-Policy-Report-Only:
+      - 'default-src https: blob: wss: data: android-webview-video-poster: android-webview:
+        chrome-extension: safari-extension: ''unsafe-eval'' ''unsafe-inline''; report-uri
+        https://www.dailymotion.com/content_security_policy_report_uri'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Thu, 09 Feb 2023 21:07:10 GMT
+      Etag:
+      - W/"rQeFNlJ5iMPO8gmsSDhiVw-gzip"
+      Expect-Ct:
+      - max-age=0, report-uri="https://www.dailymotion.com/content_security_policy_report_uri"
+      Last-Modified:
+      - Tue, 19 May 2015 07:03:39 GMT
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+      Server:
+      - DMS/1.0.42
+      Server-Timing:
+      - total;dur=44, dc;desc="dc3"
+      Timing-Allow-Origin:
+      - "*"
+      Vary:
+      - X-DM-SSL,Accept-Encoding
+      X-Frame-Options:
+      - DENY
+      X-Robots-Tag:
+      - noindex
     body:
       encoding: ASCII-8BIT
       string: '{"id":"x7lni3","title":"Mario Kart (R\u00e9mi Gaillard)","channel":"fun","owner":"x4r137"}'
     http_version:
-  recorded_at: Sun, 13 Dec 2020 13:02:23 GMT
+  recorded_at: Thu, 09 Feb 2023 21:07:10 GMT
 recorded_with: VCR 3.0.3

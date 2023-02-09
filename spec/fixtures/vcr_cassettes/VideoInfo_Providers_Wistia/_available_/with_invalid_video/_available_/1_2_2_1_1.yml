@@ -8,7 +8,7 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - VideoInfo/3.0.0
+      - VideoInfo/3.1.0
       Accept:
       - "*/*"
   response:
@@ -16,48 +16,50 @@ http_interactions:
       code: 404
       message: Not Found
     headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, no-cache
       Content-Type:
       - application/json
+      P3p:
+      - CP="CURi ADMa DEVa IVAa IVDa CONi OUR IND DSP CAO COR"
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Timing-Allow-Origin:
+      - "*"
       X-Content-Type-Options:
       - nosniff
       X-Download-Options:
       - noopen
       X-Permitted-Cross-Domain-Policies:
       - none
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Access-Control-Allow-Origin:
-      - "*"
-      Timing-Allow-Origin:
-      - "*"
-      Cache-Control:
-      - public, no-cache
-      P3p:
-      - CP="CURi ADMa DEVa IVAa IVDa CONi OUR IND DSP CAO COR"
       X-Request-Id:
-      - cd1754e5123d4164581e3bdb6f67cfbf
+      - 49a9d3c2e8e3d9f4e7c932f8f5efc81e
       X-Runtime:
-      - '0.007167'
+      - '0.008067'
       Via:
-      - 1.1 varnish (Varnish/6.0), 1.1 varnish, 1.1 varnish
-      Content-Length:
-      - '0'
+      - 1.1 varnish, 1.1 varnish
       Accept-Ranges:
       - bytes
       Date:
-      - Sun, 13 Dec 2020 13:09:12 GMT
+      - Thu, 09 Feb 2023 21:07:50 GMT
       Age:
       - '0'
-      Connection:
-      - keep-alive
       X-Served-By:
-      - cache-dca17740-DCA, cache-gru17136-GRU
+      - cache-iad-kiad7000072-IAD, cache-mad22076-MAD
       X-Cache:
       - MISS, MISS
       X-Cache-Hits:
       - 0, 0
       X-Timer:
-      - S1607864953.552417,VS0,VE141
+      - S1675976870.937753,VS0,VE93
+      Vary:
+      - Accept-Encoding
       Strict-Transport-Security:
       - max-age=0
       X-Ecma-V:
@@ -70,5 +72,5 @@ http_interactions:
       encoding: UTF-8
       string: ''
     http_version:
-  recorded_at: Sun, 13 Dec 2020 13:09:12 GMT
+  recorded_at: Thu, 09 Feb 2023 21:07:50 GMT
 recorded_with: VCR 3.0.3

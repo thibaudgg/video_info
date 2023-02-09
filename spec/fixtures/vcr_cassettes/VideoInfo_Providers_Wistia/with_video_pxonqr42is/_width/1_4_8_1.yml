@@ -8,7 +8,7 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - VideoInfo/3.0.0
+      - VideoInfo/3.1.0
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -18,50 +18,50 @@ http_interactions:
       code: 200
       message: OK
     headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '458'
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, no-cache
       Content-Type:
       - application/json; charset=utf-8
+      Etag:
+      - W/"a61024ecded175c4fd74dc15cf8280fd"
+      P3p:
+      - CP="CURi ADMa DEVa IVAa IVDa CONi OUR IND DSP CAO COR"
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Timing-Allow-Origin:
+      - "*"
       X-Content-Type-Options:
       - nosniff
       X-Download-Options:
       - noopen
       X-Permitted-Cross-Domain-Policies:
       - none
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Access-Control-Allow-Origin:
-      - "*"
-      Timing-Allow-Origin:
-      - "*"
-      Cache-Control:
-      - public, no-cache
-      Etag:
-      - W/"ef3c7225d67e05c6621139b3bde94fe0"
-      P3p:
-      - CP="CURi ADMa DEVa IVAa IVDa CONi OUR IND DSP CAO COR"
       X-Request-Id:
-      - 836a4cd2c7ba053a135b8a2b150906dd
+      - 122e4604965fe296cae7f5e00dcb6096
       X-Runtime:
-      - '0.027216'
+      - '0.040879'
       Via:
-      - 1.1 varnish (Varnish/6.0), 1.1 varnish, 1.1 varnish
-      Content-Length:
-      - '461'
+      - 1.1 varnish, 1.1 varnish
       Accept-Ranges:
       - bytes
       Date:
-      - Sun, 13 Dec 2020 13:09:14 GMT
+      - Thu, 09 Feb 2023 21:07:51 GMT
       Age:
       - '0'
-      Connection:
-      - keep-alive
       X-Served-By:
-      - cache-dca17747-DCA, cache-gru17136-GRU
+      - cache-iad-kjyo7100077-IAD, cache-mad22077-MAD
       X-Cache:
-      - MISS, HIT
+      - HIT, HIT
       X-Cache-Hits:
-      - 0, 1
+      - 60, 1
       X-Timer:
-      - S1607864954.391281,VS0,VE1
+      - S1675976871.094503,VS0,VE1
       Vary:
       - Accept-Encoding,X-Forwarded-Proto,X-ECMA-Override
       Strict-Transport-Security:
@@ -77,9 +77,9 @@ http_interactions:
       string: '{"version":"1.0","type":"video","html":"\u003ciframe src=\"https://fast.wistia.net/embed/iframe/pxonqr42is\"
         title=\"Understanding Analytics Video\" allow=\"autoplay; fullscreen\" allowtransparency=\"true\"
         frameborder=\"0\" scrolling=\"no\" class=\"wistia_embed\" name=\"wistia_embed\"
-        allowfullscreen msallowfullscreen width=\"960\" height=\"540\"\u003e\u003c/iframe\u003e\n\u003cscript
+        msallowfullscreen width=\"960\" height=\"540\"\u003e\u003c/iframe\u003e\n\u003cscript
         src=\"https://fast.wistia.net/assets/external/E-v1.js\" async\u003e\u003c/script\u003e","width":960,"height":540,"provider_name":"Wistia,
-        Inc.","provider_url":"https://wistia.com","title":"Understanding Analytics","thumbnail_url":"https://embed-ssl.wistia.com/deliveries/0fccbdc60ade35723f79f1c002bc61b135b610fa.jpg?image_crop_resized=960x540","thumbnail_width":960,"thumbnail_height":540,"player_color":"63d0db","duration":250.428}'
+        Inc.","provider_url":"https://wistia.com","title":"Understanding Analytics","thumbnail_url":"https://embed-ssl.wistia.com/deliveries/0fccbdc60ade35723f79f1c002bc61b135b610fa.jpg?image_crop_resized=960x540","thumbnail_width":960,"thumbnail_height":540,"player_color":"63d0db","duration":250.376}'
     http_version:
-  recorded_at: Sun, 13 Dec 2020 13:09:14 GMT
+  recorded_at: Thu, 09 Feb 2023 21:07:51 GMT
 recorded_with: VCR 3.0.3

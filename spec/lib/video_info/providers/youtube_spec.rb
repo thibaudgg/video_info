@@ -1,5 +1,3 @@
-require 'spec_helper'
-
 [nil, ENV["YOUTUBE_API_KEY"] || "youtube_api_key_123"].each do |api_key|
   describe VideoInfo::Providers::Youtube, :vcr do
     before(:all) do
@@ -32,7 +30,7 @@ require 'spec_helper'
 
     describe '#available?' do
       context 'with valid video' do
-        subject { VideoInfo.new('http://www.youtube.com/watch?v=mZqGqE0D0n4'.freeze) }
+        subject { VideoInfo.new('http://www.youtube.com/watch?v=mZqGqE0D0n4') }
 
         describe '#available?' do
           subject { super().available? }
@@ -592,7 +590,7 @@ require 'spec_helper'
       describe '#view_count' do
         subject { super().view_count }
 
-        it { is_expected.to eq 7980 }
+        it { is_expected.to eq 8288 }
       end
     end
   end

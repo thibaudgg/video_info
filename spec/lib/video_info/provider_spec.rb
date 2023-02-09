@@ -1,5 +1,3 @@
-require 'spec_helper'
-
 describe VideoInfo::Provider do
   class ProviderFu < VideoInfo::Provider
     def _url_regex

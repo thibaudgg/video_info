@@ -1,5 +1,3 @@
-require 'spec_helper'
-
 describe VideoInfo::Providers::YoutubePlaylist, :vcr do
   before(:each) do
     api_key = ENV["YOUTUBE_API_KEY"] || "youtube_api_key_123"
@@ -33,7 +31,7 @@ describe VideoInfo::Providers::YoutubePlaylist, :vcr do
   describe '#available?' do
     context 'with valid playlist' do
       playlist_url = 'http://www.youtube.com/playlist?p=PLA575C81A1FBC04CF'
-      subject { VideoInfo.new(playlist_url.freeze) }
+      subject { VideoInfo.new(playlist_url) }
 
       describe '#available?' do
         subject { super().available? }

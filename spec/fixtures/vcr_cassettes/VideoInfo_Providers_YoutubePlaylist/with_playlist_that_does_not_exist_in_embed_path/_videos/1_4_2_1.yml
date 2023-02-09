@@ -8,24 +8,24 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - VideoInfo/3.0.0
+      - VideoInfo/3.1.0
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
       - "*/*"
   response:
     status:
-      code: 200
-      message: OK
+      code: 400
+      message: Bad Request
     headers:
-      Content-Type:
-      - application/json; charset=UTF-8
       Vary:
       - Origin
       - Referer
       - X-Origin
+      Content-Type:
+      - application/json; charset=UTF-8
       Date:
-      - Sun, 13 Dec 2020 18:31:11 GMT
+      - Thu, 09 Feb 2023 21:07:53 GMT
       Server:
       - scaffolding on HTTPServer2
       Cache-Control:
@@ -37,16 +37,36 @@ http_interactions:
       X-Content-Type-Options:
       - nosniff
       Alt-Svc:
-      - h3-29=":443"; ma=2592000,h3-T051=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443";
-        ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
       Transfer-Encoding:
       - chunked
     body:
       encoding: ASCII-8BIT
       string: |
         {
-          "items": []
+          "error": {
+            "code": 400,
+            "message": "API key not valid. Please pass a valid API key.",
+            "errors": [
+              {
+                "message": "API key not valid. Please pass a valid API key.",
+                "domain": "global",
+                "reason": "badRequest"
+              }
+            ],
+            "status": "INVALID_ARGUMENT",
+            "details": [
+              {
+                "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+                "reason": "API_KEY_INVALID",
+                "domain": "googleapis.com",
+                "metadata": {
+                  "service": "youtube.googleapis.com"
+                }
+              }
+            ]
+          }
         }
     http_version:
-  recorded_at: Sun, 13 Dec 2020 18:31:11 GMT
+  recorded_at: Thu, 09 Feb 2023 21:07:53 GMT
 recorded_with: VCR 3.0.3
