@@ -19,7 +19,7 @@ http_interactions:
       message: Unauthorized
     headers:
       Date:
-      - Thu, 09 Feb 2023 21:07:44 GMT
+      - Wed, 15 Feb 2023 00:46:54 GMT
       Content-Type:
       - application/vnd.vimeo.error+json
       Content-Length:
@@ -33,11 +33,11 @@ http_interactions:
       Cache-Control:
       - no-store, no-cache, max-age=0
       Request-Hash:
-      - 38ac3e05
+      - 9cd89618
       X-Vimeo-Error:
       - 'true'
       X-Bapp-Server:
-      - api-5b968f8897-3824-0-baseline-8s586
+      - api-9fd4bd9b5-ch5mz
       X-Backend-Server:
       - api-k8s
       Accept-Ranges:
@@ -45,26 +45,26 @@ http_interactions:
       Via:
       - 1.1 varnish, 1.1 varnish
       X-Served-By:
-      - cache-iad-kjyo7100023-IAD, cache-mrs10543-MRS
+      - cache-iad-kjyo7100023-IAD, cache-mrs10558-MRS
       X-Cache:
       - MISS, MISS
       X-Cache-Hits:
       - 0, 0
       X-Timer:
-      - S1675976864.441761,VS0,VE127
+      - S1676422014.882559,VS0,VE127
       Cf-Cache-Status:
       - DYNAMIC
       Set-Cookie:
-      - __cf_bm=gU_knbjiIPovxV5rMDFrZLGoGocZ9dUr6u_AlwbUvZ8-1675976864-0-Aazx4XwnvZOcyUEayIhpTtw5CJXcvcxkut7A7VHNOjT4n6Y4cFkwqAE82BvxIbvaXbKMbR3DUrNg/5pOe4+L1xw=;
-        path=/; expires=Thu, 09-Feb-23 21:37:44 GMT; domain=.vimeo.com; HttpOnly;
+      - __cf_bm=i72PyCn8YUGrl0z1Cd8w4BaghdFziNzG5i4gKKwCjBw-1676422014-0-ARKILGmnbXO4lWOtuhEEN3UoIV5cxtXkwBdVYBoiICi1KRTTR+1N68KJxPVowK9UFcPy6YUhFeVja8Xz4xqTP28=;
+        path=/; expires=Wed, 15-Feb-23 01:16:54 GMT; domain=.vimeo.com; HttpOnly;
         Secure; SameSite=None
       Server:
       - cloudflare
       Cf-Ray:
-      - 796f938a5b91194c-BCN
+      - 799a0772aa7a28de-BCN
     body:
       encoding: UTF-8
       string: ''
     http_version:
-  recorded_at: Thu, 09 Feb 2023 21:07:44 GMT
+  recorded_at: Wed, 15 Feb 2023 00:46:54 GMT
 recorded_with: VCR 3.0.3

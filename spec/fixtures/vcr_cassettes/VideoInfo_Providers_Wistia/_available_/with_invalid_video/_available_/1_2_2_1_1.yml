@@ -39,25 +39,25 @@ http_interactions:
       X-Permitted-Cross-Domain-Policies:
       - none
       X-Request-Id:
-      - 49a9d3c2e8e3d9f4e7c932f8f5efc81e
+      - 85fe1883f26547c43cc1ac60b79e9557
       X-Runtime:
-      - '0.008067'
+      - '0.008585'
       Via:
       - 1.1 varnish, 1.1 varnish
       Accept-Ranges:
       - bytes
       Date:
-      - Thu, 09 Feb 2023 21:07:50 GMT
+      - Wed, 15 Feb 2023 00:46:59 GMT
       Age:
-      - '0'
+      - '6666'
       X-Served-By:
-      - cache-iad-kiad7000072-IAD, cache-mad22076-MAD
+      - cache-iad-kiad7000072-IAD, cache-mad22042-MAD
       X-Cache:
-      - MISS, MISS
+      - HIT, HIT
       X-Cache-Hits:
-      - 0, 0
+      - 1, 1
       X-Timer:
-      - S1675976870.937753,VS0,VE93
+      - S1676422019.244611,VS0,VE1
       Vary:
       - Accept-Encoding
       Strict-Transport-Security:
@@ -72,5 +72,5 @@ http_interactions:
       encoding: UTF-8
       string: ''
     http_version:
-  recorded_at: Thu, 09 Feb 2023 21:07:50 GMT
+  recorded_at: Wed, 15 Feb 2023 00:46:59 GMT
 recorded_with: VCR 3.0.3

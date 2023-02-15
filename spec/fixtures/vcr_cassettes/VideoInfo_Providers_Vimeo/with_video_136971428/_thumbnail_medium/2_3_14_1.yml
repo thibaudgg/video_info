@@ -21,7 +21,7 @@ http_interactions:
       message: Unauthorized
     headers:
       Date:
-      - Thu, 09 Feb 2023 21:07:47 GMT
+      - Wed, 15 Feb 2023 00:46:56 GMT
       Content-Type:
       - application/vnd.vimeo.error+json
       Content-Length:
@@ -35,11 +35,11 @@ http_interactions:
       Cache-Control:
       - no-store, no-cache, max-age=0
       Request-Hash:
-      - ab2b3631
+      - b16756ac
       X-Vimeo-Error:
       - 'true'
       X-Bapp-Server:
-      - api-6676fb9bff-zdnv7
+      - api-9fd4bd9b5-9r9k4
       X-Backend-Server:
       - api-k8s
       Accept-Ranges:
@@ -47,27 +47,27 @@ http_interactions:
       Via:
       - 1.1 varnish, 1.1 varnish
       X-Served-By:
-      - cache-iad-kiad7000172-IAD, cache-mad22042-MAD
+      - cache-iad-kiad7000172-IAD, cache-mrs10571-MRS
       X-Cache:
       - MISS, MISS
       X-Cache-Hits:
       - 0, 0
       X-Timer:
-      - S1675976867.153232,VS0,VE218
+      - S1676422016.211511,VS0,VE141
       Cf-Cache-Status:
       - DYNAMIC
       Set-Cookie:
-      - __cf_bm=w9KuOYa_EApiT0XKZyy4fqx1RuXmP1hLsmUT3opIUJk-1675976867-0-AScPst61vRKGSPmDTRvdKDduWUsy3rcVVHPsMf1CdIkStKJ8yyrcasY1zWuqg7o+BMZkOKGokqRuI2oXvAqARCg=;
-        path=/; expires=Thu, 09-Feb-23 21:37:47 GMT; domain=.vimeo.com; HttpOnly;
+      - __cf_bm=oX6PRne2Y2OHbGg7f5fPJ1KRoIzuISz7iULFa_sWDN4-1676422016-0-ATGRPib7i4K4l5kzwzvODVGlIe7dqp++9gRhhjMUoKZAfzqs+B3bGJmduamUXjPuKpLu2vOtAim2akjbLFh1sug=;
+        path=/; expires=Wed, 15-Feb-23 01:16:56 GMT; domain=.vimeo.com; HttpOnly;
         Secure; SameSite=None
       Server:
       - cloudflare
       Cf-Ray:
-      - 796f939b8c6128de-BCN
+      - 799a07812d691940-BCN
     body:
       encoding: UTF-8
       string: '{"error":"Something strange occurred. Please contact the app owners.","link":null,"developer_message":"No
         user credentials were provided.","error_code":8003}'
     http_version:
-  recorded_at: Thu, 09 Feb 2023 21:07:47 GMT
+  recorded_at: Wed, 15 Feb 2023 00:46:56 GMT
 recorded_with: VCR 3.0.3

@@ -43,25 +43,25 @@ http_interactions:
       X-Permitted-Cross-Domain-Policies:
       - none
       X-Request-Id:
-      - c1ebdf760bbc334b77dea2457644f105
+      - ca534aa4a5a4d096bb50aa7a2c3938a3
       X-Runtime:
-      - '0.041648'
+      - '0.036110'
       Via:
       - 1.1 varnish, 1.1 varnish
       Accept-Ranges:
       - bytes
       Date:
-      - Thu, 09 Feb 2023 21:07:50 GMT
+      - Wed, 15 Feb 2023 00:46:59 GMT
       Age:
-      - '0'
+      - '6666'
       X-Served-By:
-      - cache-iad-kjyo7100166-IAD, cache-mad22030-MAD
+      - cache-iad-kjyo7100166-IAD, cache-mad22074-MAD
       X-Cache:
       - HIT, HIT
       X-Cache-Hits:
-      - 66, 1
+      - 1, 1
       X-Timer:
-      - S1675976870.275636,VS0,VE1
+      - S1676422019.321348,VS0,VE6
       Vary:
       - Accept-Encoding,X-Forwarded-Proto,X-ECMA-Override
       Strict-Transport-Security:
@@ -81,5 +81,5 @@ http_interactions:
         src=\"https://fast.wistia.net/assets/external/E-v1.js\" async\u003e\u003c/script\u003e","width":960,"height":540,"provider_name":"Wistia,
         Inc.","provider_url":"https://wistia.com","title":"Lance Kalish - Yes To Group","thumbnail_url":"https://embed-ssl.wistia.com/deliveries/dc005e6a7583a25c4b7c284c08afc42fb67fdb95.jpg?image_crop_resized=960x540","thumbnail_width":960,"thumbnail_height":540,"player_color":"7b796a","duration":1214.83}'
     http_version:
-  recorded_at: Thu, 09 Feb 2023 21:07:50 GMT
+  recorded_at: Wed, 15 Feb 2023 00:46:59 GMT
 recorded_with: VCR 3.0.3

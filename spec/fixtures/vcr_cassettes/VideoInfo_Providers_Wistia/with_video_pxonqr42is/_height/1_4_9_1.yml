@@ -43,25 +43,25 @@ http_interactions:
       X-Permitted-Cross-Domain-Policies:
       - none
       X-Request-Id:
-      - 122e4604965fe296cae7f5e00dcb6096
+      - '08f0a328cbfc9d3ab2e615b0a2698a0f'
       X-Runtime:
-      - '0.040879'
+      - '0.034135'
       Via:
       - 1.1 varnish, 1.1 varnish
       Accept-Ranges:
       - bytes
       Date:
-      - Thu, 09 Feb 2023 21:07:51 GMT
+      - Wed, 15 Feb 2023 00:46:59 GMT
       Age:
-      - '0'
+      - '6666'
       X-Served-By:
-      - cache-iad-kjyo7100077-IAD, cache-mad22064-MAD
+      - cache-iad-kjyo7100077-IAD, cache-mad22080-MAD
       X-Cache:
       - HIT, HIT
       X-Cache-Hits:
-      - 60, 1
+      - 1, 2
       X-Timer:
-      - S1675976871.142200,VS0,VE5
+      - S1676422020.788386,VS0,VE0
       Vary:
       - Accept-Encoding,X-Forwarded-Proto,X-ECMA-Override
       Strict-Transport-Security:
@@ -81,5 +81,5 @@ http_interactions:
         src=\"https://fast.wistia.net/assets/external/E-v1.js\" async\u003e\u003c/script\u003e","width":960,"height":540,"provider_name":"Wistia,
         Inc.","provider_url":"https://wistia.com","title":"Understanding Analytics","thumbnail_url":"https://embed-ssl.wistia.com/deliveries/0fccbdc60ade35723f79f1c002bc61b135b610fa.jpg?image_crop_resized=960x540","thumbnail_width":960,"thumbnail_height":540,"player_color":"63d0db","duration":250.376}'
     http_version:
-  recorded_at: Thu, 09 Feb 2023 21:07:51 GMT
+  recorded_at: Wed, 15 Feb 2023 00:46:59 GMT
 recorded_with: VCR 3.0.3

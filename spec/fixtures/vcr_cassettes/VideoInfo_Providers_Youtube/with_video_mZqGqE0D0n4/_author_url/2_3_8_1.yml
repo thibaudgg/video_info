@@ -2,6 +2,93 @@
 http_interactions:
 - request:
     method: get
+    uri: https://www.googleapis.com/youtube/v3/channels?id=UCzxQk-rZGowoqMBKxGD5jSA&key=youtube_api_key_123&part=snippet
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Vary:
+      - Origin
+      - Referer
+      - X-Origin
+      Date:
+      - Sun, 13 Dec 2020 17:53:04 GMT
+      Server:
+      - scaffolding on HTTPServer2
+      Cache-Control:
+      - private
+      X-Xss-Protection:
+      - '0'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Alt-Svc:
+      - h3-29=":443"; ma=2592000,h3-T051=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443";
+        ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: |
+        {
+          "kind": "youtube#channelListResponse",
+          "etag": "iJ2hRbCMb8svLsgUJTsSRWWXR-M",
+          "pageInfo": {
+            "totalResults": 1,
+            "resultsPerPage": 5
+          },
+          "items": [
+            {
+              "kind": "youtube#channel",
+              "etag": "BxNIbScZ5j3HI0TBIdpY8qYFPZs",
+              "id": "UCzxQk-rZGowoqMBKxGD5jSA",
+              "snippet": {
+                "title": "Cherry Bloom",
+                "description": "Alternative rock band with two guys from Paris, France.",
+                "publishedAt": "2008-04-12T20:47:30Z",
+                "thumbnails": {
+                  "default": {
+                    "url": "https://yt3.ggpht.com/ytc/AAUvwngxSfemSkVNEPK0ePTsqgMdB1nwfLeHtRSokuKK=s88-c-k-c0x00ffffff-no-rj",
+                    "width": 88,
+                    "height": 88
+                  },
+                  "medium": {
+                    "url": "https://yt3.ggpht.com/ytc/AAUvwngxSfemSkVNEPK0ePTsqgMdB1nwfLeHtRSokuKK=s240-c-k-c0x00ffffff-no-rj",
+                    "width": 240,
+                    "height": 240
+                  },
+                  "high": {
+                    "url": "https://yt3.ggpht.com/ytc/AAUvwngxSfemSkVNEPK0ePTsqgMdB1nwfLeHtRSokuKK=s800-c-k-c0x00ffffff-no-rj",
+                    "width": 800,
+                    "height": 800
+                  }
+                },
+                "localized": {
+                  "title": "Cherry Bloom",
+                  "description": "Alternative rock band with two guys from Paris, France."
+                }
+              }
+            }
+          ]
+        }
+    http_version:
+  recorded_at: Sun, 13 Dec 2020 17:53:04 GMT
+- request:
+    method: get
     uri: https://www.googleapis.com/youtube/v3/videos?fields=items(id,snippet,statistics,status,contentDetails)&id=mZqGqE0D0n4&key=youtube_api_key_123&part=snippet,statistics,status,contentDetails
     body:
       encoding: US-ASCII
@@ -25,7 +112,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Thu, 09 Feb 2023 21:08:11 GMT
+      - Wed, 15 Feb 2023 00:47:15 GMT
       Server:
       - scaffolding on HTTPServer2
       Cache-Control:
@@ -68,7 +155,7 @@ http_interactions:
           }
         }
     http_version:
-  recorded_at: Thu, 09 Feb 2023 21:08:11 GMT
+  recorded_at: Wed, 15 Feb 2023 00:47:15 GMT
 - request:
     method: get
     uri: https://www.googleapis.com/youtube/v3/channels?id=&key=youtube_api_key_123&part=snippet
@@ -94,7 +181,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Thu, 09 Feb 2023 21:08:11 GMT
+      - Wed, 15 Feb 2023 00:47:15 GMT
       Server:
       - scaffolding on HTTPServer2
       Cache-Control:
@@ -137,5 +224,5 @@ http_interactions:
           }
         }
     http_version:
-  recorded_at: Thu, 09 Feb 2023 21:08:11 GMT
+  recorded_at: Wed, 15 Feb 2023 00:47:15 GMT
 recorded_with: VCR 3.0.3
