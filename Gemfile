@@ -9,5 +9,3 @@ group :tool do
   gem 'ruby_gntp'
   gem 'guard-rspec'
 end
-
-gem 'byebug'
