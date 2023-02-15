@@ -2,6 +2,126 @@
 http_interactions:
 - request:
     method: get
+    uri: https://www.googleapis.com/youtube/v3/videos?fields=items(id,snippet,statistics,status,contentDetails)&id=mZqGqE0D0n4&key=youtube_api_key_123&part=snippet,statistics,status,contentDetails
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - VideoInfo/3.1.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Vary:
+      - Origin
+      - Referer
+      - X-Origin
+      Date:
+      - Wed, 15 Feb 2023 20:29:56 GMT
+      Server:
+      - scaffolding on HTTPServer2
+      Cache-Control:
+      - private
+      X-Xss-Protection:
+      - '0'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: |
+        {
+          "items": [
+            {
+              "id": "mZqGqE0D0n4",
+              "snippet": {
+                "publishedAt": "2008-04-12T22:34:48Z",
+                "channelId": "UCzxQk-rZGowoqMBKxGD5jSA",
+                "title": "Cherry Bloom - King Of The Knife",
+                "description": "The first video from the upcoming album Secret Sounds, to download in-stores April 14. Checkout http://www.cherrybloom.net",
+                "thumbnails": {
+                  "default": {
+                    "url": "https://i.ytimg.com/vi/mZqGqE0D0n4/default.jpg",
+                    "width": 120,
+                    "height": 90
+                  },
+                  "medium": {
+                    "url": "https://i.ytimg.com/vi/mZqGqE0D0n4/mqdefault.jpg",
+                    "width": 320,
+                    "height": 180
+                  },
+                  "high": {
+                    "url": "https://i.ytimg.com/vi/mZqGqE0D0n4/hqdefault.jpg",
+                    "width": 480,
+                    "height": 360
+                  }
+                },
+                "channelTitle": "Cherry Bloom",
+                "tags": [
+                  "cherry",
+                  "bloom",
+                  "king",
+                  "of",
+                  "the",
+                  "knife",
+                  "guitar",
+                  "drum",
+                  "clip",
+                  "rock",
+                  "alternative",
+                  "tremplin",
+                  "Paris-Forum"
+                ],
+                "categoryId": "10",
+                "liveBroadcastContent": "none",
+                "localized": {
+                  "title": "Cherry Bloom - King Of The Knife",
+                  "description": "The first video from the upcoming album Secret Sounds, to download in-stores April 14. Checkout http://www.cherrybloom.net"
+                }
+              },
+              "contentDetails": {
+                "duration": "PT2M56S",
+                "dimension": "2d",
+                "definition": "sd",
+                "caption": "false",
+                "licensedContent": false,
+                "contentRating": {},
+                "projection": "rectangular"
+              },
+              "status": {
+                "uploadStatus": "processed",
+                "privacyStatus": "public",
+                "license": "youtube",
+                "embeddable": true,
+                "publicStatsViewable": true,
+                "madeForKids": false
+              },
+              "statistics": {
+                "viewCount": "8291",
+                "likeCount": "66",
+                "favoriteCount": "0",
+                "commentCount": "5"
+              }
+            }
+          ]
+        }
+    http_version:
+  recorded_at: Wed, 15 Feb 2023 20:29:56 GMT
+- request:
+    method: get
     uri: https://www.googleapis.com/youtube/v3/channels?id=UCzxQk-rZGowoqMBKxGD5jSA&key=youtube_api_key_123&part=snippet
     body:
       encoding: US-ASCII
@@ -25,7 +145,7 @@ http_interactions:
       - Referer
       - X-Origin
       Date:
-      - Sun, 13 Dec 2020 17:53:04 GMT
+      - Wed, 15 Feb 2023 20:29:56 GMT
       Server:
       - scaffolding on HTTPServer2
       Cache-Control:
@@ -37,8 +157,7 @@ http_interactions:
       X-Content-Type-Options:
       - nosniff
       Alt-Svc:
-      - h3-29=":443"; ma=2592000,h3-T051=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443";
-        ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
       Transfer-Encoding:
       - chunked
     body:
@@ -46,7 +165,7 @@ http_interactions:
       string: |
         {
           "kind": "youtube#channelListResponse",
-          "etag": "iJ2hRbCMb8svLsgUJTsSRWWXR-M",
+          "etag": "b6PsK5mhKL_AuFRJz3h7iwEwhiE",
           "pageInfo": {
             "totalResults": 1,
             "resultsPerPage": 5
@@ -54,25 +173,26 @@ http_interactions:
           "items": [
             {
               "kind": "youtube#channel",
-              "etag": "BxNIbScZ5j3HI0TBIdpY8qYFPZs",
+              "etag": "AOorBbBhS-gWD_iBKIJyJ0dIqV0",
               "id": "UCzxQk-rZGowoqMBKxGD5jSA",
               "snippet": {
                 "title": "Cherry Bloom",
                 "description": "Alternative rock band with two guys from Paris, France.",
+                "customUrl": "@cherrybloomband",
                 "publishedAt": "2008-04-12T20:47:30Z",
                 "thumbnails": {
                   "default": {
-                    "url": "https://yt3.ggpht.com/ytc/AAUvwngxSfemSkVNEPK0ePTsqgMdB1nwfLeHtRSokuKK=s88-c-k-c0x00ffffff-no-rj",
+                    "url": "https://yt3.ggpht.com/ytc/AL5GRJXbalTdHiTioC9wlrBz3GukwrYp1Q6EXcBYbugs=s88-c-k-c0x00ffffff-no-rj",
                     "width": 88,
                     "height": 88
                   },
                   "medium": {
-                    "url": "https://yt3.ggpht.com/ytc/AAUvwngxSfemSkVNEPK0ePTsqgMdB1nwfLeHtRSokuKK=s240-c-k-c0x00ffffff-no-rj",
+                    "url": "https://yt3.ggpht.com/ytc/AL5GRJXbalTdHiTioC9wlrBz3GukwrYp1Q6EXcBYbugs=s240-c-k-c0x00ffffff-no-rj",
                     "width": 240,
                     "height": 240
                   },
                   "high": {
-                    "url": "https://yt3.ggpht.com/ytc/AAUvwngxSfemSkVNEPK0ePTsqgMdB1nwfLeHtRSokuKK=s800-c-k-c0x00ffffff-no-rj",
+                    "url": "https://yt3.ggpht.com/ytc/AL5GRJXbalTdHiTioC9wlrBz3GukwrYp1Q6EXcBYbugs=s800-c-k-c0x00ffffff-no-rj",
                     "width": 800,
                     "height": 800
                   }
@@ -86,143 +206,5 @@ http_interactions:
           ]
         }
     http_version:
-  recorded_at: Sun, 13 Dec 2020 17:53:04 GMT
-- request:
-    method: get
-    uri: https://www.googleapis.com/youtube/v3/videos?fields=items(id,snippet,statistics,status,contentDetails)&id=mZqGqE0D0n4&key=youtube_api_key_123&part=snippet,statistics,status,contentDetails
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - VideoInfo/3.1.0
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 400
-      message: Bad Request
-    headers:
-      Vary:
-      - Origin
-      - Referer
-      - X-Origin
-      Content-Type:
-      - application/json; charset=UTF-8
-      Date:
-      - Wed, 15 Feb 2023 00:47:15 GMT
-      Server:
-      - scaffolding on HTTPServer2
-      Cache-Control:
-      - private
-      X-Xss-Protection:
-      - '0'
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Content-Type-Options:
-      - nosniff
-      Alt-Svc:
-      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
-      Transfer-Encoding:
-      - chunked
-    body:
-      encoding: ASCII-8BIT
-      string: |
-        {
-          "error": {
-            "code": 400,
-            "message": "API key not valid. Please pass a valid API key.",
-            "errors": [
-              {
-                "message": "API key not valid. Please pass a valid API key.",
-                "domain": "global",
-                "reason": "badRequest"
-              }
-            ],
-            "status": "INVALID_ARGUMENT",
-            "details": [
-              {
-                "@type": "type.googleapis.com/google.rpc.ErrorInfo",
-                "reason": "API_KEY_INVALID",
-                "domain": "googleapis.com",
-                "metadata": {
-                  "service": "youtube.googleapis.com"
-                }
-              }
-            ]
-          }
-        }
-    http_version:
-  recorded_at: Wed, 15 Feb 2023 00:47:15 GMT
-- request:
-    method: get
-    uri: https://www.googleapis.com/youtube/v3/channels?id=&key=youtube_api_key_123&part=snippet
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-      User-Agent:
-      - Ruby
-  response:
-    status:
-      code: 400
-      message: Bad Request
-    headers:
-      Vary:
-      - Origin
-      - Referer
-      - X-Origin
-      Content-Type:
-      - application/json; charset=UTF-8
-      Date:
-      - Wed, 15 Feb 2023 00:47:15 GMT
-      Server:
-      - scaffolding on HTTPServer2
-      Cache-Control:
-      - private
-      X-Xss-Protection:
-      - '0'
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Content-Type-Options:
-      - nosniff
-      Alt-Svc:
-      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
-      Transfer-Encoding:
-      - chunked
-    body:
-      encoding: ASCII-8BIT
-      string: |
-        {
-          "error": {
-            "code": 400,
-            "message": "API key not valid. Please pass a valid API key.",
-            "errors": [
-              {
-                "message": "API key not valid. Please pass a valid API key.",
-                "domain": "global",
-                "reason": "badRequest"
-              }
-            ],
-            "status": "INVALID_ARGUMENT",
-            "details": [
-              {
-                "@type": "type.googleapis.com/google.rpc.ErrorInfo",
-                "reason": "API_KEY_INVALID",
-                "domain": "googleapis.com",
-                "metadata": {
-                  "service": "youtube.googleapis.com"
-                }
-              }
-            ]
-          }
-        }
-    http_version:
-  recorded_at: Wed, 15 Feb 2023 00:47:15 GMT
+  recorded_at: Wed, 15 Feb 2023 20:29:56 GMT
 recorded_with: VCR 3.0.3

@@ -15,17 +15,17 @@ http_interactions:
       - "*/*"
   response:
     status:
-      code: 400
-      message: Bad Request
+      code: 200
+      message: OK
     headers:
+      Content-Type:
+      - application/json; charset=UTF-8
       Vary:
       - Origin
       - Referer
       - X-Origin
-      Content-Type:
-      - application/json; charset=UTF-8
       Date:
-      - Wed, 15 Feb 2023 00:47:13 GMT
+      - Wed, 15 Feb 2023 20:29:55 GMT
       Server:
       - scaffolding on HTTPServer2
       Cache-Control:
@@ -44,29 +44,8 @@ http_interactions:
       encoding: ASCII-8BIT
       string: |
         {
-          "error": {
-            "code": 400,
-            "message": "API key not valid. Please pass a valid API key.",
-            "errors": [
-              {
-                "message": "API key not valid. Please pass a valid API key.",
-                "domain": "global",
-                "reason": "badRequest"
-              }
-            ],
-            "status": "INVALID_ARGUMENT",
-            "details": [
-              {
-                "@type": "type.googleapis.com/google.rpc.ErrorInfo",
-                "reason": "API_KEY_INVALID",
-                "domain": "googleapis.com",
-                "metadata": {
-                  "service": "youtube.googleapis.com"
-                }
-              }
-            ]
-          }
+          "items": []
         }
     http_version:
-  recorded_at: Wed, 15 Feb 2023 00:47:14 GMT
+  recorded_at: Wed, 15 Feb 2023 20:29:55 GMT
 recorded_with: VCR 3.0.3

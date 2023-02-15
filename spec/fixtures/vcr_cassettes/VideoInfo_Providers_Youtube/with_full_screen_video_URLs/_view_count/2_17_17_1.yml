@@ -15,17 +15,17 @@ http_interactions:
       - "*/*"
   response:
     status:
-      code: 400
-      message: Bad Request
+      code: 200
+      message: OK
     headers:
+      Content-Type:
+      - application/json; charset=UTF-8
       Vary:
       - Origin
       - Referer
       - X-Origin
-      Content-Type:
-      - application/json; charset=UTF-8
       Date:
-      - Wed, 15 Feb 2023 00:47:17 GMT
+      - Wed, 15 Feb 2023 20:29:58 GMT
       Server:
       - scaffolding on HTTPServer2
       Cache-Control:
@@ -44,29 +44,80 @@ http_interactions:
       encoding: ASCII-8BIT
       string: |
         {
-          "error": {
-            "code": 400,
-            "message": "API key not valid. Please pass a valid API key.",
-            "errors": [
-              {
-                "message": "API key not valid. Please pass a valid API key.",
-                "domain": "global",
-                "reason": "badRequest"
-              }
-            ],
-            "status": "INVALID_ARGUMENT",
-            "details": [
-              {
-                "@type": "type.googleapis.com/google.rpc.ErrorInfo",
-                "reason": "API_KEY_INVALID",
-                "domain": "googleapis.com",
-                "metadata": {
-                  "service": "youtube.googleapis.com"
+          "items": [
+            {
+              "id": "mZqGqE0D0n4",
+              "snippet": {
+                "publishedAt": "2008-04-12T22:34:48Z",
+                "channelId": "UCzxQk-rZGowoqMBKxGD5jSA",
+                "title": "Cherry Bloom - King Of The Knife",
+                "description": "The first video from the upcoming album Secret Sounds, to download in-stores April 14. Checkout http://www.cherrybloom.net",
+                "thumbnails": {
+                  "default": {
+                    "url": "https://i.ytimg.com/vi/mZqGqE0D0n4/default.jpg",
+                    "width": 120,
+                    "height": 90
+                  },
+                  "medium": {
+                    "url": "https://i.ytimg.com/vi/mZqGqE0D0n4/mqdefault.jpg",
+                    "width": 320,
+                    "height": 180
+                  },
+                  "high": {
+                    "url": "https://i.ytimg.com/vi/mZqGqE0D0n4/hqdefault.jpg",
+                    "width": 480,
+                    "height": 360
+                  }
+                },
+                "channelTitle": "Cherry Bloom",
+                "tags": [
+                  "cherry",
+                  "bloom",
+                  "king",
+                  "of",
+                  "the",
+                  "knife",
+                  "guitar",
+                  "drum",
+                  "clip",
+                  "rock",
+                  "alternative",
+                  "tremplin",
+                  "Paris-Forum"
+                ],
+                "categoryId": "10",
+                "liveBroadcastContent": "none",
+                "localized": {
+                  "title": "Cherry Bloom - King Of The Knife",
+                  "description": "The first video from the upcoming album Secret Sounds, to download in-stores April 14. Checkout http://www.cherrybloom.net"
                 }
+              },
+              "contentDetails": {
+                "duration": "PT2M56S",
+                "dimension": "2d",
+                "definition": "sd",
+                "caption": "false",
+                "licensedContent": false,
+                "contentRating": {},
+                "projection": "rectangular"
+              },
+              "status": {
+                "uploadStatus": "processed",
+                "privacyStatus": "public",
+                "license": "youtube",
+                "embeddable": true,
+                "publicStatsViewable": true,
+                "madeForKids": false
+              },
+              "statistics": {
+                "viewCount": "8291",
+                "likeCount": "66",
+                "favoriteCount": "0",
+                "commentCount": "5"
               }
-            ]
-          }
+            }
+          ]
         }
     http_version:
-  recorded_at: Wed, 15 Feb 2023 00:47:17 GMT
+  recorded_at: Wed, 15 Feb 2023 20:29:58 GMT
 recorded_with: VCR 3.0.3

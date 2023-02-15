@@ -51,17 +51,17 @@ http_interactions:
       Accept-Ranges:
       - bytes
       Date:
-      - Wed, 15 Feb 2023 00:46:59 GMT
+      - Wed, 15 Feb 2023 20:29:34 GMT
       Age:
-      - '6666'
+      - '77621'
       X-Served-By:
-      - cache-iad-kjyo7100077-IAD, cache-mad22067-MAD
+      - cache-iad-kjyo7100077-IAD, cache-mad22051-MAD
       X-Cache:
       - HIT, HIT
       X-Cache-Hits:
       - 1, 1
       X-Timer:
-      - S1676422020.751852,VS0,VE1
+      - S1676492975.715068,VS0,VE2
       Vary:
       - Accept-Encoding,X-Forwarded-Proto,X-ECMA-Override
       Strict-Transport-Security:
@@ -81,5 +81,5 @@ http_interactions:
         src=\"https://fast.wistia.net/assets/external/E-v1.js\" async\u003e\u003c/script\u003e","width":960,"height":540,"provider_name":"Wistia,
         Inc.","provider_url":"https://wistia.com","title":"Understanding Analytics","thumbnail_url":"https://embed-ssl.wistia.com/deliveries/0fccbdc60ade35723f79f1c002bc61b135b610fa.jpg?image_crop_resized=960x540","thumbnail_width":960,"thumbnail_height":540,"player_color":"63d0db","duration":250.376}'
     http_version:
-  recorded_at: Wed, 15 Feb 2023 00:46:59 GMT
+  recorded_at: Wed, 15 Feb 2023 20:29:34 GMT
 recorded_with: VCR 3.0.3
