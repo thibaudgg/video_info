@@ -8,61 +8,59 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - VideoInfo/3.1.0
+      - VideoInfo/3.0.1
       Authorization:
       - bearer vimeo_access_token
       Accept:
       - application/vnd.vimeo.*+json;version=3.2
   response:
     status:
-      code: 429
-      message: Too Many Requests
+      code: 400
+      message: Bad Request
     headers:
-      Date:
-      - Wed, 15 Feb 2023 20:29:29 GMT
-      Content-Type:
-      - text/html; charset=UTF-8
       Connection:
       - keep-alive
-      Expires:
-      - Wed, 15 Feb 2023 08:29:29 GMT
+      Content-Length:
+      - '468'
+      Server:
+      - nginx
+      Content-Type:
+      - application/vnd.vimeo.error+json
       Cache-Control:
-      - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
-      X-Vimeo-Device:
-      - d
-      X-Varnish-Esi:
-      - '0'
-      X-Frame-Options:
-      - sameorigin
+      - private, no-store, no-cache
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      X-Ratelimit-Limit:
+      - '50'
+      X-Ratelimit-Remaining:
+      - '44'
+      X-Ratelimit-Reset:
+      - '2021-11-15T10:30:16+00:00'
+      Request-Hash:
+      - f86a596d
       X-Bapp-Server:
-      - api-676bc5c47-m9d86
-      X-Backend-Server:
-      - api-k8s
+      - api-v17386-4xr6v
+      X-Vimeo-Dc:
+      - ge
       Accept-Ranges:
       - bytes
       Via:
       - 1.1 varnish, 1.1 varnish
+      Date:
+      - Mon, 15 Nov 2021 10:29:17 GMT
       X-Served-By:
-      - cache-iad-kcgs7200105-IAD, cache-mrs10563-MRS
+      - cache-bwi5161-BWI, cache-cgh11168-CGH
       X-Cache:
       - MISS, MISS
       X-Cache-Hits:
       - 0, 0
       X-Timer:
-      - S1676492969.091721,VS0,VE130
-      Cf-Cache-Status:
-      - DYNAMIC
-      Set-Cookie:
-      - __cf_bm=mtt_3bdZkWalQzAto3qY84rB0bFH41.ucJlhQaLZhAI-1676492969-0-AZ9NAEEvdvQQnboAOxcVOsA0CsheicVh4iBehbFvgEFj/XdGsvcta4zuVX7qdDpD0m0QPP5eOuDTBHRgG4SkSOg=;
-        path=/; expires=Wed, 15-Feb-23 20:59:29 GMT; domain=.vimeo.com; HttpOnly;
-        Secure; SameSite=None
-      Server:
-      - cloudflare
-      Cf-Ray:
-      - 79a0cbc0be20194a-BCN
+      - S1636972157.070093,VS0,VE171
+      Vary:
+      - Accept,Vimeo-Client-Id
     body:
       encoding: UTF-8
       string: ''
     http_version:
-  recorded_at: Wed, 15 Feb 2023 20:29:29 GMT
+  recorded_at: Mon, 15 Nov 2021 10:29:17 GMT
 recorded_with: VCR 3.0.3

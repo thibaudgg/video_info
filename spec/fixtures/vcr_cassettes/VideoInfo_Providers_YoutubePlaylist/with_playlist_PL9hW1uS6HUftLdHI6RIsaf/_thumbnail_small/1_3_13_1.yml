@@ -8,7 +8,7 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - VideoInfo/3.1.0
+      - VideoInfo/3.0.0
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -25,7 +25,7 @@ http_interactions:
       - Referer
       - X-Origin
       Date:
-      - Wed, 15 Feb 2023 20:29:36 GMT
+      - Sun, 13 Dec 2020 18:31:05 GMT
       Server:
       - scaffolding on HTTPServer2
       Cache-Control:
@@ -37,7 +37,8 @@ http_interactions:
       X-Content-Type-Options:
       - nosniff
       Alt-Svc:
-      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      - h3-29=":443"; ma=2592000,h3-T051=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443";
+        ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
       Transfer-Encoding:
       - chunked
     body:
@@ -45,7 +46,7 @@ http_interactions:
       string: |
         {
           "kind": "youtube#playlistListResponse",
-          "etag": "LVKAl5bAKCI5378jTswHTPxl_Bs",
+          "etag": "8cu3DvQp_T4px3MPV_D82VwzT28",
           "pageInfo": {
             "totalResults": 1,
             "resultsPerPage": 5
@@ -53,7 +54,7 @@ http_interactions:
           "items": [
             {
               "kind": "youtube#playlist",
-              "etag": "mV21kAo4_X5e3pIGZlJFRcu5dhA",
+              "etag": "oJ_SZduyFDBmOtZabEKVkpJHohI",
               "id": "PL9hW1uS6HUftLdHI6RIsaf-iXTm09qnEr",
               "snippet": {
                 "publishedAt": "2013-08-09T05:09:51Z",
@@ -87,7 +88,7 @@ http_interactions:
                     "height": 720
                   }
                 },
-                "channelTitle": "YouTube Viewers",
+                "channelTitle": "TeamYouTube [Help]",
                 "defaultLanguage": "en",
                 "localized": {
                   "title": "YouTube Policy and Copyright",
@@ -98,5 +99,5 @@ http_interactions:
           ]
         }
     http_version:
-  recorded_at: Wed, 15 Feb 2023 20:29:36 GMT
+  recorded_at: Sun, 13 Dec 2020 18:31:05 GMT
 recorded_with: VCR 3.0.3

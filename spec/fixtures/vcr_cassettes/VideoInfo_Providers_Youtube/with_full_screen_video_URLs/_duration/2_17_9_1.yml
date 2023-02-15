@@ -8,7 +8,7 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - VideoInfo/3.1.0
+      - VideoInfo/3.0.0
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -25,7 +25,7 @@ http_interactions:
       - Referer
       - X-Origin
       Date:
-      - Wed, 15 Feb 2023 20:29:58 GMT
+      - Sun, 13 Dec 2020 17:53:10 GMT
       Server:
       - scaffolding on HTTPServer2
       Cache-Control:
@@ -37,7 +37,8 @@ http_interactions:
       X-Content-Type-Options:
       - nosniff
       Alt-Svc:
-      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      - h3-29=":443"; ma=2592000,h3-T051=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443";
+        ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
       Transfer-Encoding:
       - chunked
     body:
@@ -96,7 +97,7 @@ http_interactions:
                 "duration": "PT2M56S",
                 "dimension": "2d",
                 "definition": "sd",
-                "caption": "false",
+                "caption": "true",
                 "licensedContent": false,
                 "contentRating": {},
                 "projection": "rectangular"
@@ -110,8 +111,9 @@ http_interactions:
                 "madeForKids": false
               },
               "statistics": {
-                "viewCount": "8291",
-                "likeCount": "66",
+                "viewCount": "7980",
+                "likeCount": "63",
+                "dislikeCount": "2",
                 "favoriteCount": "0",
                 "commentCount": "5"
               }
@@ -119,5 +121,5 @@ http_interactions:
           ]
         }
     http_version:
-  recorded_at: Wed, 15 Feb 2023 20:29:58 GMT
+  recorded_at: Sun, 13 Dec 2020 17:53:10 GMT
 recorded_with: VCR 3.0.3

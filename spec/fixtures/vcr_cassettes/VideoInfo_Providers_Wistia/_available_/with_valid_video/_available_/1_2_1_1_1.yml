@@ -8,7 +8,7 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - VideoInfo/3.1.0
+      - VideoInfo/3.0.0
       Accept:
       - "*/*"
   response:
@@ -16,50 +16,50 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '813'
-      Access-Control-Allow-Origin:
-      - "*"
-      Cache-Control:
-      - public, no-cache
       Content-Type:
       - application/json; charset=utf-8
-      Etag:
-      - W/"99ea8bfd17798457553c25f60cac1818"
-      P3p:
-      - CP="CURi ADMa DEVa IVAa IVDa CONi OUR IND DSP CAO COR"
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Timing-Allow-Origin:
-      - "*"
       X-Content-Type-Options:
       - nosniff
       X-Download-Options:
       - noopen
       X-Permitted-Cross-Domain-Policies:
       - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Access-Control-Allow-Origin:
+      - "*"
+      Timing-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, no-cache
+      Etag:
+      - W/"d56fb6260875817389a2da541e59e2bc"
+      P3p:
+      - CP="CURi ADMa DEVa IVAa IVDa CONi OUR IND DSP CAO COR"
       X-Request-Id:
-      - 12e4e1e5e3c2ec7dfb0ec1d117f00c73
+      - 04ab6091ec24a1a7750f7623f8e6bbf8
       X-Runtime:
-      - '0.039517'
+      - '0.029617'
       Via:
-      - 1.1 varnish, 1.1 varnish
+      - 1.1 varnish (Varnish/6.0), 1.1 varnish, 1.1 varnish
+      Content-Length:
+      - '829'
       Accept-Ranges:
       - bytes
       Date:
-      - Wed, 15 Feb 2023 20:29:34 GMT
+      - Sun, 13 Dec 2020 13:09:12 GMT
       Age:
-      - '77621'
+      - '0'
+      Connection:
+      - keep-alive
       X-Served-By:
-      - cache-iad-kjyo7100166-IAD, cache-mad22037-MAD
+      - cache-dca17738-DCA, cache-gru17141-GRU
       X-Cache:
-      - HIT, HIT
+      - MISS, MISS
       X-Cache-Hits:
-      - 1, 1
+      - 0, 0
       X-Timer:
-      - S1676492974.099760,VS0,VE2
+      - S1607864952.230378,VS0,VE153
       Vary:
       - Accept-Encoding, Accept-Encoding,X-Forwarded-Proto,X-ECMA-Override
       Strict-Transport-Security:
@@ -74,5 +74,5 @@ http_interactions:
       encoding: UTF-8
       string: ''
     http_version:
-  recorded_at: Wed, 15 Feb 2023 20:29:34 GMT
+  recorded_at: Sun, 13 Dec 2020 13:09:12 GMT
 recorded_with: VCR 3.0.3
