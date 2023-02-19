@@ -8,59 +8,50 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - VideoInfo/3.0.1
+      - VideoInfo/3.1.0
       Authorization:
       - bearer vimeo_access_token
       Accept:
       - application/vnd.vimeo.*+json;version=3.2
   response:
     status:
-      code: 404
-      message: Not Found
+      code: 403
+      message: Forbidden
     headers:
+      Date:
+      - Sun, 19 Feb 2023 18:43:58 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '271'
       Connection:
       - keep-alive
-      Content-Length:
-      - '50'
-      Server:
-      - nginx
-      Content-Type:
-      - application/vnd.vimeo.error+json
-      Cache-Control:
-      - private, no-store, no-cache
-      Strict-Transport-Security:
-      - max-age=31536000; includeSubDomains; preload
-      X-Ratelimit-Limit:
-      - '50'
-      X-Ratelimit-Remaining:
-      - '46'
-      X-Ratelimit-Reset:
-      - '2021-11-15T10:30:16+00:00'
-      Request-Hash:
-      - 80f44f97
-      X-Bapp-Server:
-      - api-v17385-rzlqc
-      X-Vimeo-Dc:
-      - ge
+      X-Banned-Ip:
+      - 139.47.41.140
       Accept-Ranges:
       - bytes
       Via:
       - 1.1 varnish, 1.1 varnish
-      Date:
-      - Mon, 15 Nov 2021 10:29:16 GMT
       X-Served-By:
-      - cache-bwi5177-BWI, cache-cgh11151-CGH
+      - cache-iad-kjyo7100023-IAD, cache-mrs10523-MRS
       X-Cache:
       - MISS, MISS
       X-Cache-Hits:
       - 0, 0
       X-Timer:
-      - S1636972157.710843,VS0,VE179
-      Vary:
-      - Accept,Vimeo-Client-Id
+      - S1676832239.800908,VS0,VE100
+      Cf-Cache-Status:
+      - DYNAMIC
+      Set-Cookie:
+      - __cf_bm=2.PgXxTE1AsICs117owtysupOyKE4znmtS3ywGJcmb0-1676832238-0-Ach9YgJHel2i7VxTO6Mb5vat+IRvp1HXJc+fIefurEFJo+b64BUkhLcGGo/CLRN8VQS+IA2SsCjACxhN2NRzdBw=;
+        path=/; expires=Sun, 19-Feb-23 19:13:58 GMT; domain=.vimeo.com; HttpOnly;
+        Secure; SameSite=None
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 79c126b46dab28de-BCN
     body:
       encoding: UTF-8
       string: ''
-    http_version:
-  recorded_at: Mon, 15 Nov 2021 10:29:16 GMT
-recorded_with: VCR 3.0.3
+  recorded_at: Sun, 19 Feb 2023 18:43:58 GMT
+recorded_with: VCR 6.1.0

@@ -8,7 +8,7 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - VideoInfo/3.0.0
+      - VideoInfo/3.1.0
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -25,7 +25,7 @@ http_interactions:
       - Referer
       - X-Origin
       Date:
-      - Sun, 13 Dec 2020 17:53:04 GMT
+      - Sun, 19 Feb 2023 18:44:22 GMT
       Server:
       - scaffolding on HTTPServer2
       Cache-Control:
@@ -37,8 +37,7 @@ http_interactions:
       X-Content-Type-Options:
       - nosniff
       Alt-Svc:
-      - h3-29=":443"; ma=2592000,h3-T051=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443";
-        ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
       Transfer-Encoding:
       - chunked
     body:
@@ -97,7 +96,7 @@ http_interactions:
                 "duration": "PT2M56S",
                 "dimension": "2d",
                 "definition": "sd",
-                "caption": "true",
+                "caption": "false",
                 "licensedContent": false,
                 "contentRating": {},
                 "projection": "rectangular"
@@ -111,17 +110,15 @@ http_interactions:
                 "madeForKids": false
               },
               "statistics": {
-                "viewCount": "7980",
-                "likeCount": "63",
-                "dislikeCount": "2",
+                "viewCount": "8292",
+                "likeCount": "66",
                 "favoriteCount": "0",
                 "commentCount": "5"
               }
             }
           ]
         }
-    http_version:
-  recorded_at: Sun, 13 Dec 2020 17:53:04 GMT
+  recorded_at: Sun, 19 Feb 2023 18:44:22 GMT
 - request:
     method: get
     uri: https://www.googleapis.com/youtube/v3/channels?id=UCzxQk-rZGowoqMBKxGD5jSA&key=youtube_api_key_123&part=snippet
@@ -147,7 +144,7 @@ http_interactions:
       - Referer
       - X-Origin
       Date:
-      - Sun, 13 Dec 2020 17:53:04 GMT
+      - Sun, 19 Feb 2023 18:44:22 GMT
       Server:
       - scaffolding on HTTPServer2
       Cache-Control:
@@ -159,8 +156,7 @@ http_interactions:
       X-Content-Type-Options:
       - nosniff
       Alt-Svc:
-      - h3-29=":443"; ma=2592000,h3-T051=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443";
-        ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
       Transfer-Encoding:
       - chunked
     body:
@@ -168,7 +164,7 @@ http_interactions:
       string: |
         {
           "kind": "youtube#channelListResponse",
-          "etag": "iJ2hRbCMb8svLsgUJTsSRWWXR-M",
+          "etag": "b6PsK5mhKL_AuFRJz3h7iwEwhiE",
           "pageInfo": {
             "totalResults": 1,
             "resultsPerPage": 5
@@ -176,25 +172,26 @@ http_interactions:
           "items": [
             {
               "kind": "youtube#channel",
-              "etag": "BxNIbScZ5j3HI0TBIdpY8qYFPZs",
+              "etag": "AOorBbBhS-gWD_iBKIJyJ0dIqV0",
               "id": "UCzxQk-rZGowoqMBKxGD5jSA",
               "snippet": {
                 "title": "Cherry Bloom",
                 "description": "Alternative rock band with two guys from Paris, France.",
+                "customUrl": "@cherrybloomband",
                 "publishedAt": "2008-04-12T20:47:30Z",
                 "thumbnails": {
                   "default": {
-                    "url": "https://yt3.ggpht.com/ytc/AAUvwngxSfemSkVNEPK0ePTsqgMdB1nwfLeHtRSokuKK=s88-c-k-c0x00ffffff-no-rj",
+                    "url": "https://yt3.ggpht.com/ytc/AL5GRJXbalTdHiTioC9wlrBz3GukwrYp1Q6EXcBYbugs=s88-c-k-c0x00ffffff-no-rj",
                     "width": 88,
                     "height": 88
                   },
                   "medium": {
-                    "url": "https://yt3.ggpht.com/ytc/AAUvwngxSfemSkVNEPK0ePTsqgMdB1nwfLeHtRSokuKK=s240-c-k-c0x00ffffff-no-rj",
+                    "url": "https://yt3.ggpht.com/ytc/AL5GRJXbalTdHiTioC9wlrBz3GukwrYp1Q6EXcBYbugs=s240-c-k-c0x00ffffff-no-rj",
                     "width": 240,
                     "height": 240
                   },
                   "high": {
-                    "url": "https://yt3.ggpht.com/ytc/AAUvwngxSfemSkVNEPK0ePTsqgMdB1nwfLeHtRSokuKK=s800-c-k-c0x00ffffff-no-rj",
+                    "url": "https://yt3.ggpht.com/ytc/AL5GRJXbalTdHiTioC9wlrBz3GukwrYp1Q6EXcBYbugs=s800-c-k-c0x00ffffff-no-rj",
                     "width": 800,
                     "height": 800
                   }
@@ -207,6 +204,5 @@ http_interactions:
             }
           ]
         }
-    http_version:
-  recorded_at: Sun, 13 Dec 2020 17:53:04 GMT
-recorded_with: VCR 3.0.3
+  recorded_at: Sun, 19 Feb 2023 18:44:22 GMT
+recorded_with: VCR 6.1.0

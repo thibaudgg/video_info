@@ -590,7 +590,7 @@
       describe '#view_count' do
         subject { super().view_count }
 
-        it { is_expected.to eq 8291 }
+        it { is_expected.to eq 8292 }
       end
     end
   end
