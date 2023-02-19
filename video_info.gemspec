@@ -16,9 +16,9 @@ Gem::Specification.new do |s|
 
   s.required_ruby_version = '>= 2.5.0'
 
-  s.add_dependency 'iso8601', '~> 0.9.1'
-  s.add_dependency 'oga', '~> 3.0'
-  s.add_dependency 'net_http_timeout_errors', '~> 0.3.0'
+  s.add_dependency 'iso8601', '~> 0.13.0'
+  s.add_dependency 'oga', '~> 3.4'
+  s.add_dependency 'net_http_timeout_errors', '~> 1.0.0'
 
   s.add_development_dependency 'bundler', '>= 1.3.5'
   s.add_development_dependency 'rake', '>= 12.3.3'

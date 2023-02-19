@@ -1,6 +1,3 @@
-# encoding: utf-8
-require 'spec_helper'
-
 describe VideoInfo::Providers::Dailymotion do
   describe '.usable?' do
     subject { VideoInfo::Providers::Dailymotion.usable?(url) }
