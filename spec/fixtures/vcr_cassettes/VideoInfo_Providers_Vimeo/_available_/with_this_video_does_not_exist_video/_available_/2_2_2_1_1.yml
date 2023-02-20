@@ -13,45 +13,65 @@ http_interactions:
       - bearer vimeo_access_token
       Accept:
       - application/vnd.vimeo.*+json;version=3.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
   response:
     status:
-      code: 403
-      message: Forbidden
+      code: 404
+      message: Not Found
     headers:
       Date:
-      - Sun, 19 Feb 2023 18:43:58 GMT
+      - Mon, 20 Feb 2023 18:33:20 GMT
       Content-Type:
-      - application/json
+      - application/vnd.vimeo.error+json
       Content-Length:
-      - '271'
+      - '50'
       Connection:
       - keep-alive
-      X-Banned-Ip:
-      - 139.47.41.140
-      Accept-Ranges:
-      - bytes
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      X-Ratelimit-Limit:
+      - '50'
+      X-Ratelimit-Remaining:
+      - '46'
+      X-Ratelimit-Reset:
+      - '2023-02-20T18:34:20+00:00'
+      Cache-Control:
+      - no-store, no-cache, max-age=0
+      Request-Hash:
+      - 381a69e5
+      X-Vimeo-Error:
+      - 'true'
+      X-Bapp-Server:
+      - api-6f659c9d95-9dl7j
+      X-Backend-Server:
+      - api-k8s
       Via:
       - 1.1 varnish, 1.1 varnish
+      Accept-Ranges:
+      - bytes
+      Age:
+      - '0'
       X-Served-By:
-      - cache-iad-kjyo7100023-IAD, cache-mrs10523-MRS
+      - cache-iad-kjyo7100023-IAD, cache-mad22083-MAD
       X-Cache:
       - MISS, MISS
       X-Cache-Hits:
       - 0, 0
       X-Timer:
-      - S1676832239.800908,VS0,VE100
+      - S1676918001.782070,VS0,VE137
       Cf-Cache-Status:
       - DYNAMIC
       Set-Cookie:
-      - __cf_bm=2.PgXxTE1AsICs117owtysupOyKE4znmtS3ywGJcmb0-1676832238-0-Ach9YgJHel2i7VxTO6Mb5vat+IRvp1HXJc+fIefurEFJo+b64BUkhLcGGo/CLRN8VQS+IA2SsCjACxhN2NRzdBw=;
-        path=/; expires=Sun, 19-Feb-23 19:13:58 GMT; domain=.vimeo.com; HttpOnly;
+      - __cf_bm=gtVQJ.rHVRHWzREQhHkT57Lc1EnNfUjcgWu7kZjvjjo-1676918000-0-AURhvCLiuTorvorRnHPG4LRtUBdTVwLAScbQTJOiKy/SCc0ATm0MyJUhC5NxUR92JqBBfTIGrXrCCwWTMXXuXGM=;
+        path=/; expires=Mon, 20-Feb-23 19:03:20 GMT; domain=.vimeo.com; HttpOnly;
         Secure; SameSite=None
       Server:
       - cloudflare
       Cf-Ray:
-      - 79c126b46dab28de-BCN
+      - 79c95480bdda11b3-BCN
     body:
       encoding: UTF-8
       string: ''
-  recorded_at: Sun, 19 Feb 2023 18:43:58 GMT
+  recorded_at: Mon, 20 Feb 2023 18:33:20 GMT
 recorded_with: VCR 6.1.0

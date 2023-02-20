@@ -13,45 +13,63 @@ http_interactions:
       - bearer vimeo_access_token
       Accept:
       - application/vnd.vimeo.*+json;version=3.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
   response:
     status:
-      code: 403
-      message: Forbidden
+      code: 200
+      message: OK
     headers:
       Date:
-      - Sun, 19 Feb 2023 18:43:58 GMT
+      - Mon, 20 Feb 2023 18:33:20 GMT
       Content-Type:
-      - application/json
+      - application/vnd.vimeo.video+json
       Content-Length:
-      - '271'
+      - '14727'
       Connection:
       - keep-alive
-      X-Banned-Ip:
-      - 139.47.41.140
-      Accept-Ranges:
-      - bytes
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      X-Ratelimit-Limit:
+      - '50'
+      X-Ratelimit-Remaining:
+      - '48'
+      X-Ratelimit-Reset:
+      - '2023-02-20T18:34:20+00:00'
+      Cache-Control:
+      - no-store, no-cache, max-age=0
+      Request-Hash:
+      - 0e563b49
+      X-Bapp-Server:
+      - api-6f659c9d95-lhsp2
+      X-Backend-Server:
+      - api-k8s
       Via:
       - 1.1 varnish, 1.1 varnish
+      Accept-Ranges:
+      - bytes
+      Age:
+      - '0'
       X-Served-By:
-      - cache-iad-kiad7000088-IAD, cache-mad22092-MAD
+      - cache-iad-kiad7000088-IAD, cache-mad22042-MAD
       X-Cache:
       - MISS, MISS
       X-Cache-Hits:
       - 0, 0
       X-Timer:
-      - S1676832239.621589,VS0,VE99
+      - S1676918000.012822,VS0,VE585
       Cf-Cache-Status:
       - DYNAMIC
       Set-Cookie:
-      - __cf_bm=0EqidKE0BTNdfAVp8MQ3ZDw2Snt_oFmwwwOmtDSowyk-1676832238-0-AaONcZ0aMqAzAxNRNvOjAHvjR0cXJVmYa5jWGoqAcb6lUlIYnrmidZ5B3SCYYtVyUQdNhfyPtZKXcAWsp9AsdFk=;
-        path=/; expires=Sun, 19-Feb-23 19:13:58 GMT; domain=.vimeo.com; HttpOnly;
+      - __cf_bm=kHKYaq3lllcXDKd6QyusEStiw9agN1Le6J.8NtDO7lo-1676918000-0-AX64ufjxznpIpcaIDgo/ENGfQTG9lPy0wblp6lWJ6D5j5qqPxcCoAe0eJGJNxDx1JJhf7WY+EBY8y1+66ic2VeU=;
+        path=/; expires=Mon, 20-Feb-23 19:03:20 GMT; domain=.vimeo.com; HttpOnly;
         Secure; SameSite=None
       Server:
       - cloudflare
       Cf-Ray:
-      - 79c126b32d5111bb-BCN
+      - 79c9547bfb20193e-BCN
     body:
       encoding: UTF-8
       string: ''
-  recorded_at: Sun, 19 Feb 2023 18:43:58 GMT
+  recorded_at: Mon, 20 Feb 2023 18:33:20 GMT
 recorded_with: VCR 6.1.0
