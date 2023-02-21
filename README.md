@@ -35,9 +35,12 @@ After generating a Youtube API key it is necessary to enable the YouTube Data AP
 To get a Vimeo API key, [follow the instructions here](https://developer.vimeo.com/api/start)
 
 To set the API keys, do the following:
+
 ```ruby
 VideoInfo.provider_api_keys = { youtube: 'YOUR_YOUTUBE_API_KEY', vimeo: 'YOUR_VIMEO_API_KEY' }
 ```
+
+### Basic Usage
 
 ```ruby
 video = VideoInfo.new('http://www.dailymotion.com/video/x7lni3')

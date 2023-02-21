@@ -19,19 +19,19 @@ http_interactions:
       message: Unavailable For Legal Reasons
     headers:
       Date:
-      - Mon, 20 Feb 2023 18:32:47 GMT
+      - Tue, 21 Feb 2023 20:11:00 GMT
       Content-Type:
       - text/html; charset=UTF-8
       Connection:
       - keep-alive
       Expires:
-      - Mon, 20 Feb 2023 06:32:47 GMT
+      - Tue, 21 Feb 2023 08:11:00 GMT
       X-Vimeo-Device:
       - d
       X-Frame-Options:
       - sameorigin
       X-Bapp-Server:
-      - pweb-77d86cb599-kvwql
+      - pweb-5db4c54949-78sdt
       Accept-Ranges:
       - bytes
       Age:
@@ -47,27 +47,27 @@ http_interactions:
       X-Backend-Proxy:
       - webproxy2
       X-Served-By:
-      - cache-iad-kiad7000142-IAD, cache-mrs10549-MRS
+      - cache-iad-kiad7000142-IAD, cache-mrs10568-MRS
       X-Cache:
       - MISS, MISS
       X-Cache-Hits:
       - 0, 0
       X-Timer:
-      - S1676917967.003038,VS0,VE429
+      - S1677010260.160720,VS0,VE410
       Cf-Cache-Status:
       - DYNAMIC
       Set-Cookie:
-      - __cf_bm=kcTAIRRY.We_kL82jY4BiQaUVTxOyBp9VhxEZjp6GH0-1676917967-0-AbGbr+Qu2QrNFNL44ktNNFCh7kmUlaLcupHhnRWc0i5zjyhPQ2pFdEJbEMNaqUQqzyCJPY263W/D6DRNT0qnHG8=;
-        path=/; expires=Mon, 20-Feb-23 19:02:47 GMT; domain=.vimeo.com; HttpOnly;
+      - __cf_bm=Bf.ysi6.4NhOGWX2MdSKEfhQctr8uX0Gp0KMKqykRrY-1677010260-0-AWJhFnWPBPQi1gS5Gav67tpEHZR5KUnt35FMWNJgR19tqRcfC9pqLW/cWqFT7OUrNUqTqen1A/pdz0vBStQkdUo=;
+        path=/; expires=Tue, 21-Feb-23 20:41:00 GMT; domain=.vimeo.com; HttpOnly;
         Secure; SameSite=None
       Server:
       - cloudflare
       Cf-Ray:
-      - 79c953ada870193a-BCN
+      - 79d220edd92f1946-BCN
     body:
       encoding: UTF-8
       string: ''
-  recorded_at: Mon, 20 Feb 2023 18:32:47 GMT
+  recorded_at: Tue, 21 Feb 2023 20:11:00 GMT
 - request:
     method: get
     uri: https://vimeo.com/59312311
@@ -87,7 +87,7 @@ http_interactions:
       message: Unavailable For Legal Reasons
     headers:
       Date:
-      - Mon, 20 Feb 2023 18:32:47 GMT
+      - Tue, 21 Feb 2023 20:11:01 GMT
       Content-Type:
       - text/html; charset=UTF-8
       Transfer-Encoding:
@@ -95,13 +95,13 @@ http_interactions:
       Connection:
       - keep-alive
       Expires:
-      - Mon, 20 Feb 2023 06:32:47 GMT
+      - Tue, 21 Feb 2023 08:11:01 GMT
       X-Vimeo-Device:
       - d
       X-Frame-Options:
       - sameorigin
       X-Bapp-Server:
-      - pweb-77d86cb599-gjfbj
+      - pweb-5db4c54949-d6pbr
       Accept-Ranges:
       - bytes
       Age:
@@ -113,27 +113,27 @@ http_interactions:
       X-Varnish-Cache:
       - '0'
       X-Vserver:
-      - webproxy-rollout-prod-varnish-6
+      - webproxy-rollout-prod-varnish-1
       X-Backend-Proxy:
-      - webproxy7
+      - webproxy2
       X-Served-By:
-      - cache-iad-kiad7000142-IAD, cache-mrs10556-MRS
+      - cache-iad-kiad7000142-IAD, cache-mrs10535-MRS
       X-Cache:
       - MISS, MISS
       X-Cache-Hits:
       - 0, 0
       X-Timer:
-      - S1676917968.661289,VS0,VE211
+      - S1677010261.900102,VS0,VE413
       Cf-Cache-Status:
       - DYNAMIC
       Set-Cookie:
-      - __cf_bm=Zc6gAFG69sioL9..ASAE9Yg3QKjy8d7BVH5v57Zv30E-1676917967-0-AYOzEZc9GlPyVnDN7OKU4hOXYjJ89KV65WXg13xKjGsqWHTVKyUx/VKPKRmEjcVdO3nXV5SD1dfIKtMUfCWugd0=;
-        path=/; expires=Mon, 20-Feb-23 19:02:47 GMT; domain=.vimeo.com; HttpOnly;
+      - __cf_bm=B5rMzxprKQE.8ZKSN9pMMyV34UTasYp8BOS_KpP4uPw-1677010261-0-Aav0u62PodFO+nhjk4af0L1QXGHXLbWYnli6tmKbRUY9sW7w3JMNluwWLO0x1Ks4Ox3kyacWT08yDD6VQZ13Mio=;
+        path=/; expires=Tue, 21-Feb-23 20:41:01 GMT; domain=.vimeo.com; HttpOnly;
         Secure; SameSite=None
       Server:
       - cloudflare
       Cf-Ray:
-      - 79c953b1bcf5193e-BCN
+      - 79d220f1ecac193a-BCN
     body:
       encoding: UTF-8
       string: "<!DOCTYPE html>\n<html lang=\"en\">\n    <head>\n        \n<meta charset=\"utf-8\">\n<meta
@@ -146,8 +146,8 @@ http_interactions:
         \   \n\n        <meta name=\"description\" content=\"Sorry, this video is
         unavailable\">\n        <meta name=\"robots\" content=\"noindex\">\n\n\n\n\n
         \   <link rel=\"apple-touch-icon-precomposed\" href=\"https://i.vimeocdn.com/favicon/main-touch_180\">\n\n<link
-        rel=\"mask-icon\" href=\"https://f.vimeocdn.com/svg/legacy_view_support/iris_icon_v_64.svg?be8194fc06dae772ecde6172edf3c5cd880b3c2e\"
-        color=\"#17272e\">\n\n    <link rel=\"shortcut icon\" href=\"https://f.vimeocdn.com/images_v6/favicon.ico?be8194fc06dae772ecde6172edf3c5cd880b3c2e\"
+        rel=\"mask-icon\" href=\"https://f.vimeocdn.com/svg/legacy_view_support/iris_icon_v_64.svg?121c40e2424627a4abac4b417cde62e961f5b5da\"
+        color=\"#17272e\">\n\n    <link rel=\"shortcut icon\" href=\"https://f.vimeocdn.com/images_v6/favicon.ico?121c40e2424627a4abac4b417cde62e961f5b5da\"
         data-play=\"https://i.vimeocdn.com/favicon/play_32\" data-pause=\"https://i.vimeocdn.com/favicon/pause_32\">\n\n<meta
         name=\"msapplication-TileImage\" content=\"https://i.vimeocdn.com/favicon/main-touch_144\">\n<meta
         name=\"msapplication-TileColor\" content=\"#00adef\">\n        <title>VimeUhOh</title>\n
@@ -396,192 +396,66 @@ http_interactions:
         \                           <link rel=\"stylesheet\" href=\"https://f.vimeocdn.com/styles/css_opt/global/icon_fonts_68eff39472980630c5a0832a2d4396c6.min.css\">\n\n
         \   <link rel=\"stylesheet\" href=\"https://f.vimeocdn.com/styles/css_opt/exception_combined_3ff0d55b8d371cfb7f690c97c641d494.min.css\">\n
         \   <link rel=\"stylesheet\" href=\"https://f.vimeocdn.com/styles/css_opt/topnav_cart_button_4760bb91710116922566dc50fb816bcd.min.css\">\n\n\n\n
-        \       <script>\n        \n        var playerAssetUrls = {\"barebone_js\":\"https:\\/\\/f.vimeocdn.com\\/p\\/4.21.1\\/js\\/barebone.js\",\"chromeless_css\":\"https:\\/\\/f.vimeocdn.com\\/p\\/4.21.1\\/css\\/chromeless.css\",\"chromeless_js\":\"https:\\/\\/f.vimeocdn.com\\/p\\/4.21.1\\/js\\/chromeless.js\",\"js\":\"https:\\/\\/f.vimeocdn.com\\/p\\/4.21.1\\/js\\/player.js\",\"css\":\"https:\\/\\/f.vimeocdn.com\\/p\\/4.21.1\\/css\\/player.css\",\"player_url\":\"player.vimeo.com\"};\n\n
+        \       <script>\n        \n        var playerAssetUrls = {\"barebone_js\":\"https:\\/\\/f.vimeocdn.com\\/p\\/4.21.2\\/js\\/barebone.js\",\"chromeless_css\":\"https:\\/\\/f.vimeocdn.com\\/p\\/4.21.2\\/css\\/chromeless.css\",\"chromeless_js\":\"https:\\/\\/f.vimeocdn.com\\/p\\/4.21.2\\/js\\/chromeless.js\",\"js\":\"https:\\/\\/f.vimeocdn.com\\/p\\/4.21.2\\/js\\/player.js\",\"css\":\"https:\\/\\/f.vimeocdn.com\\/p\\/4.21.2\\/css\\/player.css\",\"player_url\":\"player.vimeo.com\"};\n\n
         \       var _extend = function(){for(var r=arguments[0],n=1,e=arguments.length;e>n;n++){var
         t=arguments[n];for(var a in t)t.hasOwnProperty(a)&&(r[a]=t[a])}return r};\n\n
         \           window = _extend(window, {\"vimeo_esi\":{\"config\":{\"route\":\"Vimeo\\\\Controller\\\\ClipController:main\",\"controller\":\"Vimeo\\\\Controller\\\\ClipController\",\"autocomplete_enabled\":true,\"onsite_referrer\":false}},\"ablincoln_config\":[],\"vimeo\":{\"config\":{\"cart\":{\"cart_content\":{\"stock\":{\"store\":\"stock\",\"version\":1,\"quantities\":[],\"items\":[],\"attributes\":[],\"currency\":\"EUR\",\"items_sorted_by_index\":[],\"items_count\":0}}}}}});\n</script>\n\n<script>\n
         \   (function() {\n        \n    if (document.cookie.match(/^(.*;)?\\s*vimeo_gdpr_optin\\s*=\\s*[^;]+(.*)?$/))
         {\n        return;\n    }\n}());\n</script>\n        \n    <script>\n        var
         ablincoln_config = ablincoln_config || {};\n        ablincoln_config.tests
-        = {\"JS.Checkout.ApplePayDefaultSelected\":{\"id\":613,\"name\":\"JS.Checkout.ApplePayDefaultSelected\",\"buckets\":1000,\"input\":\"vuid\",\"url\":\"pro,
-        premium, plus, business checkout pages\",\"experiments\":[{\"id\":1618,\"name\":\"Apple
-        pay selected by default\",\"buckets\":100,\"state\":1,\"published_on\":\"2021-03-30
-        11:15:26\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"0000-00-00
-        00:00:00\",\"parameters\":[{\"id\":2827,\"name\":\"select_apple_pay_by_default\",\"choice\":\"control\",\"weight\":1},{\"id\":2828,\"name\":\"select_apple_pay_by_default\",\"choice\":\"variant\",\"weight\":1}],\"segments\":[]},{\"id\":1699,\"name\":\"+90%
-        - Apple pay selected by default\",\"buckets\":900,\"state\":1,\"published_on\":\"2021-04-05
-        17:38:05\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"0000-00-00
-        00:00:00\",\"parameters\":[{\"id\":2958,\"name\":\"select_apple_pay_by_default\",\"choice\":\"control\",\"weight\":1},{\"id\":2959,\"name\":\"select_apple_pay_by_default\",\"choice\":\"variant\",\"weight\":1}],\"segments\":[]}]},\"JS.Review.RegisterToComment\":{\"id\":601,\"name\":\"JS.Review.RegisterToComment\",\"buckets\":1000,\"input\":\"vuid\",\"url\":\"\\/:username\\/review\\/:clipId\\/:clipHash\",\"experiments\":[{\"id\":1589,\"name\":\"Register
-        to Comment 10%\",\"buckets\":100,\"state\":3,\"published_on\":\"2021-02-11
-        11:18:41\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"2021-03-01
-        11:51:10\",\"parameters\":[{\"id\":2787,\"name\":\"require_registration\",\"choice\":\"true\",\"weight\":1}],\"segments\":[]},{\"id\":1623,\"name\":\"Register
-        to Comment #2\",\"buckets\":100,\"state\":1,\"published_on\":\"2021-03-01
-        11:53:55\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"0000-00-00
-        00:00:00\",\"parameters\":[{\"id\":2837,\"name\":\"require_registration\",\"choice\":\"true\",\"weight\":1},{\"id\":2838,\"name\":\"require_registration\",\"choice\":\"false\",\"weight\":1}],\"segments\":[]}]},\"JS.ClipPageEUBlock\":{\"id\":672,\"name\":\"JS.ClipPageEUBlock\",\"buckets\":1000,\"input\":\"vuid\",\"url\":\"\\/\",\"experiments\":[{\"id\":1810,\"name\":\"Initial
-        sampling of OFCOM population\",\"buckets\":100,\"state\":3,\"published_on\":\"2021-07-07
-        15:18:39\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"2021-08-10
-        15:04:14\",\"parameters\":[{\"id\":3149,\"name\":\"should_block\",\"choice\":\"control\",\"weight\":1},{\"id\":3150,\"name\":\"should_block\",\"choice\":\"variant\",\"weight\":1}],\"segments\":[]},{\"id\":1866,\"name\":\"90%
-        of EU\\/UK users see blocker\",\"buckets\":900,\"state\":1,\"published_on\":\"2021-08-16
-        11:19:56\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"0000-00-00
-        00:00:00\",\"parameters\":[{\"id\":3227,\"name\":\"should_block\",\"choice\":\"control\",\"weight\":1}],\"segments\":[]},{\"id\":1867,\"name\":\"10%
-        Experiment\",\"buckets\":100,\"state\":3,\"published_on\":\"2021-08-16 11:20:01\",\"paused_on\":\"0000-00-00
-        00:00:00\",\"stopped_on\":\"2022-04-06 16:39:46\",\"parameters\":[{\"id\":3228,\"name\":\"should_block\",\"choice\":\"control\",\"weight\":1},{\"id\":3229,\"name\":\"should_block\",\"choice\":\"variant\",\"weight\":1}],\"segments\":[]},{\"id\":2273,\"name\":\"the
-        remaining 10% of EU\\/UK users see blocker\",\"buckets\":100,\"state\":1,\"published_on\":\"2022-04-06
-        16:40:07\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"0000-00-00
-        00:00:00\",\"parameters\":[{\"id\":3841,\"name\":\"should_block\",\"choice\":\"control\",\"weight\":1}],\"segments\":[]}]},\"JS.Webinar.RegistrantCapForPremium\":{\"id\":820,\"name\":\"JS.Webinar.RegistrantCapForPremium\",\"buckets\":1000,\"input\":\"vuid\",\"url\":\"upgrade,
-        checkout and marketing pages\",\"experiments\":[{\"id\":2243,\"name\":\"Rollout
-        to 10% traffic\",\"buckets\":100,\"state\":2,\"published_on\":\"2022-06-01
-        05:27:17\",\"paused_on\":\"2022-07-01 14:31:45\",\"stopped_on\":\"0000-00-00
-        00:00:00\",\"parameters\":[{\"id\":3803,\"name\":\"show_premium_registrant_cap\",\"choice\":\"control\",\"weight\":1},{\"id\":3804,\"name\":\"show_premium_registrant_cap\",\"choice\":\"variant\",\"weight\":1}],\"segments\":[]},{\"id\":2438,\"name\":\"*
-        Rollout to 40% traffic\",\"buckets\":400,\"state\":2,\"published_on\":\"2022-06-06
-        11:14:01\",\"paused_on\":\"2022-07-01 14:31:58\",\"stopped_on\":\"0000-00-00
-        00:00:00\",\"parameters\":[{\"id\":4058,\"name\":\"show_premium_registrant_cap\",\"choice\":\"control\",\"weight\":1},{\"id\":4059,\"name\":\"show_premium_registrant_cap\",\"choice\":\"variant\",\"weight\":1}],\"segments\":[]},{\"id\":2444,\"name\":\"*
-        * Rollout to 50% traffic\",\"buckets\":500,\"state\":2,\"published_on\":\"2022-06-08
-        00:05:31\",\"paused_on\":\"2022-07-01 14:32:04\",\"stopped_on\":\"0000-00-00
-        00:00:00\",\"parameters\":[{\"id\":4069,\"name\":\"show_premium_registrant_cap\",\"choice\":\"control\",\"weight\":1},{\"id\":4070,\"name\":\"show_premium_registrant_cap\",\"choice\":\"variant\",\"weight\":1}],\"segments\":[]}]},\"JS.VideoManager.LeftNewVideo.SkipEventCreationModal\":{\"id\":837,\"name\":\"JS.VideoManager.LeftNewVideo.SkipEventCreationModal\",\"buckets\":1000,\"input\":\"cuid\",\"url\":\"\\/\",\"experiments\":[{\"id\":2283,\"name\":\"Show
-        OLE Deprecation Modal\",\"buckets\":100,\"state\":1,\"published_on\":\"2022-04-12
-        12:07:50\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"0000-00-00
-        00:00:00\",\"parameters\":[{\"id\":3858,\"name\":\"vm_skip_event_creation_modal\",\"choice\":\"variant\",\"weight\":1},{\"id\":3859,\"name\":\"vm_skip_event_creation_modal\",\"choice\":\"control\",\"weight\":1}],\"segments\":[]},{\"id\":2285,\"name\":\"*
-        Show OLE Deprecation Modal\",\"buckets\":100,\"state\":1,\"published_on\":\"2022-04-13
-        14:14:30\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"0000-00-00
-        00:00:00\",\"parameters\":[{\"id\":3861,\"name\":\"vm_skip_event_creation_modal\",\"choice\":\"variant\",\"weight\":1},{\"id\":3862,\"name\":\"vm_skip_event_creation_modal\",\"choice\":\"control\",\"weight\":1}],\"segments\":[]},{\"id\":2323,\"name\":\"*
-        * Show OLE Deprecation Modal\",\"buckets\":800,\"state\":1,\"published_on\":\"2022-04-18
-        17:27:53\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"0000-00-00
-        00:00:00\",\"parameters\":[{\"id\":3908,\"name\":\"vm_skip_event_creation_modal\",\"choice\":\"variant\",\"weight\":1},{\"id\":3909,\"name\":\"vm_skip_event_creation_modal\",\"choice\":\"control\",\"weight\":1}],\"segments\":[]}]},\"JS.Editor.MasksGradualRelease\":{\"id\":807,\"name\":\"JS.Editor.MasksGradualRelease\",\"buckets\":1000,\"input\":\"cuid\",\"url\":\"https:\\/\\/vimeo.com\\/create\\/customize\",\"experiments\":[{\"id\":2164,\"name\":\"MasksGradualRelease\",\"buckets\":200,\"state\":3,\"published_on\":\"2022-03-30
-        02:29:07\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"2022-04-26
-        08:08:43\",\"parameters\":[{\"id\":3707,\"name\":\"support_masks\",\"choice\":\"variant\",\"weight\":1},{\"id\":3708,\"name\":\"support_masks\",\"choice\":\"control\",\"weight\":1}],\"segments\":[]},{\"id\":2268,\"name\":\"_MasksGradualRelease\",\"buckets\":800,\"state\":3,\"published_on\":\"2022-04-05
-        08:41:27\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"2022-04-26
-        08:08:33\",\"parameters\":[{\"id\":3833,\"name\":\"support_masks\",\"choice\":\"variant\",\"weight\":1},{\"id\":3834,\"name\":\"support_masks\",\"choice\":\"control\",\"weight\":1}],\"segments\":[]},{\"id\":2339,\"name\":\"___MasksGradualRelease\",\"buckets\":1000,\"state\":1,\"published_on\":\"2022-04-26
-        14:57:15\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"0000-00-00
-        00:00:00\",\"parameters\":[{\"id\":3928,\"name\":\"support_masks\",\"choice\":\"variant\",\"weight\":1}],\"segments\":[]}]},\"JS.Editor.PreviewWithoutSave\":{\"id\":787,\"name\":\"JS.Editor.PreviewWithoutSave\",\"buckets\":1000,\"input\":\"cuid\",\"url\":\"vimeo.com\\/create\\/customize\",\"experiments\":[{\"id\":2137,\"name\":\"Show
-        preview modal\",\"buckets\":10,\"state\":3,\"published_on\":\"2022-04-27 04:21:52\",\"paused_on\":\"0000-00-00
-        00:00:00\",\"stopped_on\":\"2022-05-31 04:14:53\",\"parameters\":[{\"id\":3656,\"name\":\"enable_preview_modal\",\"choice\":\"control\",\"weight\":1},{\"id\":3657,\"name\":\"enable_preview_modal\",\"choice\":\"variant\",\"weight\":1}],\"segments\":[]},{\"id\":2347,\"name\":\"Show
-        preview modal (205)\",\"buckets\":190,\"state\":3,\"published_on\":\"2022-04-27
-        04:39:52\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"2022-05-31
-        04:15:00\",\"parameters\":[{\"id\":3933,\"name\":\"enable_preview_modal\",\"choice\":\"control\",\"weight\":1},{\"id\":3934,\"name\":\"enable_preview_modal\",\"choice\":\"variant\",\"weight\":1}],\"segments\":[]},{\"id\":2355,\"name\":\"Show
-        preview modal (40%)\",\"buckets\":200,\"state\":3,\"published_on\":\"2022-05-02
-        07:05:49\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"2022-05-31
-        04:15:08\",\"parameters\":[{\"id\":3944,\"name\":\"enable_preview_modal\",\"choice\":\"control\",\"weight\":1},{\"id\":3945,\"name\":\"enable_preview_modal\",\"choice\":\"variant\",\"weight\":1}],\"segments\":[]},{\"id\":2359,\"name\":\"Show
-        preview modal (100%)\",\"buckets\":600,\"state\":3,\"published_on\":\"2022-05-03
-        11:22:59\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"2022-05-31
-        04:15:40\",\"parameters\":[{\"id\":3952,\"name\":\"enable_preview_modal\",\"choice\":\"control\",\"weight\":1},{\"id\":3953,\"name\":\"enable_preview_modal\",\"choice\":\"variant\",\"weight\":1}],\"segments\":[]},{\"id\":2435,\"name\":\"*
-        Show preview modal (100%)\",\"buckets\":1000,\"state\":1,\"published_on\":\"2022-05-31
-        04:21:58\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"0000-00-00
-        00:00:00\",\"parameters\":[{\"id\":4054,\"name\":\"enable_preview_modal\",\"choice\":\"variant\",\"weight\":1}],\"segments\":[]}]},\"JS.RecordExtension.Notifications\":{\"id\":883,\"name\":\"JS.RecordExtension.Notifications\",\"buckets\":1000,\"input\":\"vuid\",\"url\":\"\\/\",\"experiments\":[{\"id\":2469,\"name\":\"*
-        Notifications V1 2\",\"buckets\":1000,\"state\":3,\"published_on\":\"2022-06-19
-        16:04:06\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"2022-06-19
-        16:10:54\",\"parameters\":[{\"id\":4100,\"name\":\"show_notifications\",\"choice\":\"variant\",\"weight\":0},{\"id\":4101,\"name\":\"show_notifications\",\"choice\":\"control\",\"weight\":1}],\"segments\":[]},{\"id\":2471,\"name\":\"*
-        * * Notifications V1 4\",\"buckets\":1000,\"state\":3,\"published_on\":\"2022-06-19
-        16:11:36\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"2022-06-23
-        04:29:15\",\"parameters\":[{\"id\":4104,\"name\":\"show_notifications\",\"choice\":\"variant\",\"weight\":1},{\"id\":4105,\"name\":\"show_notifications\",\"choice\":\"control\",\"weight\":0}],\"segments\":[]},{\"id\":2490,\"name\":\"*
-        * * * Notifications V1 5\",\"buckets\":1000,\"state\":3,\"published_on\":\"2022-07-01
-        07:38:29\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"2022-07-01
-        07:47:44\",\"parameters\":[{\"id\":4134,\"name\":\"show_notifications\",\"choice\":\"variant\",\"weight\":1},{\"id\":4135,\"name\":\"show_notifications\",\"choice\":\"control\",\"weight\":0}],\"segments\":[]}]},\"JS.Settings.Cancellation.Germany\":{\"id\":895,\"name\":\"JS.Settings.Cancellation.Germany\",\"buckets\":1000,\"input\":\"cuid\",\"url\":\"\\/settings\\/billing\\/membership_plan\",\"experiments\":[{\"id\":2487,\"name\":\"Germany
-        Region\",\"buckets\":1000,\"state\":1,\"published_on\":\"2022-07-01 09:38:18\",\"paused_on\":\"0000-00-00
-        00:00:00\",\"stopped_on\":\"0000-00-00 00:00:00\",\"parameters\":[{\"id\":4129,\"name\":\"cancel_in_survey\",\"choice\":\"control\",\"weight\":0},{\"id\":4130,\"name\":\"cancel_in_survey\",\"choice\":\"variant\",\"weight\":1}],\"segments\":[{\"id\":286,\"type\":\"location\",\"include\":1,\"values\":[\"DE\"]}]}]},\"JS.Editor.BlankEditor\":{\"id\":811,\"name\":\"JS.Editor.BlankEditor\",\"buckets\":1000,\"input\":\"cuid\",\"url\":\"https:\\/\\/vimeo.com\\/create\\/customize\",\"experiments\":[{\"id\":2176,\"name\":\"BlankEditor\",\"buckets\":100,\"state\":3,\"published_on\":\"2022-04-27
-        04:31:24\",\"paused_on\":\"2022-07-04 00:58:53\",\"stopped_on\":\"2022-07-04
-        01:00:04\",\"parameters\":[{\"id\":3728,\"name\":\"show_blank_editor\",\"choice\":\"control\",\"weight\":1},{\"id\":3729,\"name\":\"show_blank_editor\",\"choice\":\"variant\",\"weight\":1}],\"segments\":[]},{\"id\":2346,\"name\":\"BlankEditor
-        (20%)\",\"buckets\":100,\"state\":3,\"published_on\":\"2022-04-27 04:38:05\",\"paused_on\":\"2022-07-04
-        00:58:48\",\"stopped_on\":\"2022-07-04 00:59:58\",\"parameters\":[{\"id\":3931,\"name\":\"show_blank_editor\",\"choice\":\"control\",\"weight\":1},{\"id\":3932,\"name\":\"show_blank_editor\",\"choice\":\"variant\",\"weight\":1}],\"segments\":[]},{\"id\":2386,\"name\":\"BlankEditor
-        (100%)\",\"buckets\":800,\"state\":3,\"published_on\":\"2022-05-12 05:31:09\",\"paused_on\":\"2022-07-04
-        00:58:40\",\"stopped_on\":\"2022-07-04 00:59:52\",\"parameters\":[{\"id\":3986,\"name\":\"show_blank_editor\",\"choice\":\"control\",\"weight\":1},{\"id\":3987,\"name\":\"show_blank_editor\",\"choice\":\"variant\",\"weight\":1}],\"segments\":[]},{\"id\":2491,\"name\":\"BlankEditor
-        (1000%)\",\"buckets\":1000,\"state\":1,\"published_on\":\"2022-07-04 01:00:59\",\"paused_on\":\"0000-00-00
-        00:00:00\",\"stopped_on\":\"0000-00-00 00:00:00\",\"parameters\":[{\"id\":4136,\"name\":\"show_blank_editor\",\"choice\":\"variant\",\"weight\":1}],\"segments\":[]}]},\"JS.Create.Record\":{\"id\":890,\"name\":\"JS.Create.Record\",\"buckets\":1000,\"input\":\"cuid\",\"url\":\"\\/create\\/templates\",\"experiments\":[{\"id\":2474,\"name\":\"CreateRecord\",\"buckets\":200,\"state\":3,\"published_on\":\"2022-06-21
-        09:44:03\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"2022-07-17
-        10:22:20\",\"parameters\":[{\"id\":4110,\"name\":\"create_record_test\",\"choice\":\"control\",\"weight\":1},{\"id\":4111,\"name\":\"create_record_test\",\"choice\":\"variant\",\"weight\":1}],\"segments\":[]},{\"id\":2481,\"name\":\"CreateRecord
-        100%\",\"buckets\":800,\"state\":3,\"published_on\":\"2022-06-27 05:26:22\",\"paused_on\":\"0000-00-00
-        00:00:00\",\"stopped_on\":\"2022-07-17 10:22:28\",\"parameters\":[{\"id\":4120,\"name\":\"create_record_test\",\"choice\":\"
-        control\",\"weight\":1},{\"id\":4121,\"name\":\"create_record_test\",\"choice\":\"
-        variant\",\"weight\":1}],\"segments\":[]},{\"id\":2524,\"name\":\"Create_Record
-        100%\",\"buckets\":1000,\"state\":1,\"published_on\":\"2022-07-17 10:24:30\",\"paused_on\":\"0000-00-00
-        00:00:00\",\"stopped_on\":\"0000-00-00 00:00:00\",\"parameters\":[{\"id\":4184,\"name\":\"create_record_test\",\"choice\":\"variant\",\"weight\":1}],\"segments\":[]}]},\"JS.Editor.showToolbar\":{\"id\":897,\"name\":\"JS.Editor.showToolbar\",\"buckets\":1000,\"input\":\"cuid\",\"url\":\"vimeo.com\\/create\\/customize\",\"experiments\":[{\"id\":2514,\"name\":\"Show
-        tool bar (10%)\",\"buckets\":100,\"state\":3,\"published_on\":\"2022-07-11
-        15:16:45\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"2022-07-24
-        03:58:18\",\"parameters\":[{\"id\":4167,\"name\":\"show_toolbar\",\"choice\":\"control\",\"weight\":1},{\"id\":4168,\"name\":\"show_toolbar\",\"choice\":\"variant\",\"weight\":1}],\"segments\":[]},{\"id\":2516,\"name\":\"Show
-        tool bar (90%)\",\"buckets\":900,\"state\":3,\"published_on\":\"2022-07-13
-        04:19:20\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"2022-07-24
-        03:58:28\",\"parameters\":[{\"id\":4171,\"name\":\"show_toolbar\",\"choice\":\"control\",\"weight\":1},{\"id\":4172,\"name\":\"show_toolbar\",\"choice\":\"variant\",\"weight\":1}],\"segments\":[]}]},\"JS.Editor.dragonfly\":{\"id\":908,\"name\":\"JS.Editor.dragonfly\",\"buckets\":1000,\"input\":\"cuid\",\"url\":\"\\/manage\\/videos\\/create\\/customize\",\"experiments\":[{\"id\":2532,\"name\":\"show_dragonfly\",\"buckets\":1000,\"state\":3,\"published_on\":\"2022-07-26
-        08:53:25\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"2022-07-28
-        02:22:23\",\"parameters\":[{\"id\":4197,\"name\":\"show_dragonfly\",\"choice\":\"variant\",\"weight\":1},{\"id\":4198,\"name\":\"show_dragonfly\",\"choice\":\"control\",\"weight\":1}],\"segments\":[]},{\"id\":2544,\"name\":\"show_dragonfly
-        100%\",\"buckets\":1000,\"state\":1,\"published_on\":\"2022-07-28 02:24:08\",\"paused_on\":\"0000-00-00
-        00:00:00\",\"stopped_on\":\"0000-00-00 00:00:00\",\"parameters\":[{\"id\":4215,\"name\":\"show_dragonfly\",\"choice\":\"variant\",\"weight\":1}],\"segments\":[]}]},\"JS.RecordExtension.Checklist\":{\"id\":868,\"name\":\"JS.RecordExtension.Checklist\",\"buckets\":1000,\"input\":\"vuid\",\"url\":\"\\/\",\"experiments\":[{\"id\":2393,\"name\":\"CLS1\",\"buckets\":1000,\"state\":3,\"published_on\":\"2022-05-24
-        06:11:07\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"2022-05-24
-        06:18:08\",\"parameters\":[{\"id\":3998,\"name\":\"show_checklist\",\"choice\":\"variant\",\"weight\":1},{\"id\":3999,\"name\":\"show_checklist\",\"choice\":\"control\",\"weight\":1}],\"segments\":[]},{\"id\":2415,\"name\":\"*
-        CLS1\",\"buckets\":1000,\"state\":3,\"published_on\":\"2022-05-24 06:18:57\",\"paused_on\":\"0000-00-00
-        00:00:00\",\"stopped_on\":\"2022-05-24 06:52:27\",\"parameters\":[{\"id\":4028,\"name\":\"show_checklist\",\"choice\":\"variant\",\"weight\":1}],\"segments\":[]},{\"id\":2416,\"name\":\"*
-        * CLS1\",\"buckets\":1000,\"state\":3,\"published_on\":\"2022-05-24 06:53:01\",\"paused_on\":\"0000-00-00
-        00:00:00\",\"stopped_on\":\"2022-05-30 09:42:21\",\"parameters\":[{\"id\":4029,\"name\":\"show_checklist\",\"choice\":\"variant\",\"weight\":1}],\"segments\":[]},{\"id\":2436,\"name\":\"*
-        * * CLS1\",\"buckets\":1000,\"state\":3,\"published_on\":\"2022-05-31 08:40:44\",\"paused_on\":\"0000-00-00
-        00:00:00\",\"stopped_on\":\"2022-06-01 04:39:01\",\"parameters\":[{\"id\":4055,\"name\":\"show_checklist\",\"choice\":\"variant\",\"weight\":1}],\"segments\":[]},{\"id\":2442,\"name\":\"Checklist
-        v1\",\"buckets\":500,\"state\":3,\"published_on\":\"2022-06-07 05:27:24\",\"paused_on\":\"0000-00-00
-        00:00:00\",\"stopped_on\":\"2022-07-29 10:15:31\",\"parameters\":[{\"id\":4066,\"name\":\"show_checklist\",\"choice\":\"variant\",\"weight\":1},{\"id\":4067,\"name\":\"show_checklist\",\"choice\":\"control\",\"weight\":1}],\"segments\":[]},{\"id\":2546,\"name\":\"Checklist
-        v1 - rollout\",\"buckets\":1000,\"state\":1,\"published_on\":\"2022-07-29
-        10:16:00\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"0000-00-00
-        00:00:00\",\"parameters\":[{\"id\":4219,\"name\":\"show_checklist\",\"choice\":\"variant\",\"weight\":1}],\"segments\":[]}]},\"JS.Editor.TranscriptionVideoEditor\":{\"id\":911,\"name\":\"JS.Editor.TranscriptionVideoEditor\",\"buckets\":1000,\"input\":\"cuid\",\"url\":\"\\/manage\\/videos\",\"experiments\":[{\"id\":2547,\"name\":\"transcription_video_editor\",\"buckets\":1,\"state\":1,\"published_on\":\"2022-09-28
-        07:00:56\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"0000-00-00
-        00:00:00\",\"parameters\":[{\"id\":4220,\"name\":\"transcription_video_editor\",\"choice\":\"variant\",\"weight\":1},{\"id\":4221,\"name\":\"transcription_video_editor\",\"choice\":\"control\",\"weight\":1000000000}],\"segments\":[]},{\"id\":2778,\"name\":\"transcription_video_editor_release\",\"buckets\":999,\"state\":1,\"published_on\":\"2022-12-15
-        05:01:21\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"0000-00-00
-        00:00:00\",\"parameters\":[{\"id\":4571,\"name\":\"transcription_video_editor\",\"choice\":\"variant\",\"weight\":1},{\"id\":4572,\"name\":\"transcription_video_editor\",\"choice\":\"control\",\"weight\":0}],\"segments\":[]}]},\"JS.LOHP.FullPageRedesign\":{\"id\":882,\"name\":\"JS.LOHP.FullPageRedesign\",\"buckets\":1000,\"input\":\"vuid\",\"url\":\"https:\\/\\/vimeo.com\\/\",\"experiments\":[{\"id\":2456,\"name\":\"Home
-        page - New Version - All Users\",\"buckets\":1000,\"state\":3,\"published_on\":\"2022-06-14
-        16:21:30\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"2022-06-28
-        01:19:38\",\"parameters\":[{\"id\":4085,\"name\":\"show_page\",\"choice\":\"variant\",\"weight\":1}],\"segments\":[]},{\"id\":2483,\"name\":\"Home
-        page Mobile Test\",\"buckets\":1000,\"state\":3,\"published_on\":\"2022-06-28
-        01:20:42\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"2022-08-12
-        09:43:58\",\"parameters\":[{\"id\":4123,\"name\":\"show_page\",\"choice\":\"control\",\"weight\":1},{\"id\":4124,\"name\":\"show_page\",\"choice\":\"variant\",\"weight\":1}],\"segments\":[]},{\"id\":2561,\"name\":\"Variant
-        to 100% users\",\"buckets\":1000,\"state\":1,\"published_on\":\"2022-08-12
-        09:45:07\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"0000-00-00
-        00:00:00\",\"parameters\":[{\"id\":4248,\"name\":\"show_page\",\"choice\":\"variant\",\"weight\":1}],\"segments\":[]}]},\"JS.Editor.hideStyles\":{\"id\":915,\"name\":\"JS.Editor.hideStyles\",\"buckets\":1000,\"input\":\"cuid\",\"url\":\"\\/create\\/customize\\/\",\"experiments\":[{\"id\":2560,\"name\":\"hideStyles\",\"buckets\":100,\"state\":3,\"published_on\":\"2022-08-14
-        02:50:11\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"2023-02-16
-        06:52:36\",\"parameters\":[{\"id\":4246,\"name\":\"hide_styles\",\"choice\":\"variant\",\"weight\":1},{\"id\":4247,\"name\":\"hide_styles\",\"choice\":\"control\",\"weight\":1}],\"segments\":[]},{\"id\":2563,\"name\":\"hideStyles
-        200\",\"buckets\":100,\"state\":3,\"published_on\":\"2022-08-14 13:02:46\",\"paused_on\":\"0000-00-00
-        00:00:00\",\"stopped_on\":\"2023-02-16 06:52:46\",\"parameters\":[{\"id\":4251,\"name\":\"hide_styles\",\"choice\":\"variant\",\"weight\":1},{\"id\":4252,\"name\":\"hide_styles\",\"choice\":\"control\",\"weight\":1}],\"segments\":[]},{\"id\":2564,\"name\":\"hideStyles
-        500\",\"buckets\":300,\"state\":3,\"published_on\":\"2022-09-06 03:06:41\",\"paused_on\":\"0000-00-00
-        00:00:00\",\"stopped_on\":\"2023-02-16 06:52:54\",\"parameters\":[{\"id\":4253,\"name\":\"hide_styles\",\"choice\":\"variant\",\"weight\":1},{\"id\":4254,\"name\":\"hide_styles\",\"choice\":\"control\",\"weight\":1}],\"segments\":[]},{\"id\":2572,\"name\":\"hideStyles
-        1000\",\"buckets\":500,\"state\":1,\"published_on\":\"2022-09-06 05:58:14\",\"paused_on\":\"0000-00-00
-        00:00:00\",\"stopped_on\":\"0000-00-00 00:00:00\",\"parameters\":[{\"id\":4265,\"name\":\"hide_styles\",\"choice\":\"variant\",\"weight\":1},{\"id\":4266,\"name\":\"hide_styles\",\"choice\":\"control\",\"weight\":1}],\"segments\":[]}]},\"JS.SVV.Chapters\":{\"id\":920,\"name\":\"JS.SVV.Chapters\",\"buckets\":1000,\"input\":\"cuid\",\"url\":\"\\/manage\\/videos\",\"experiments\":[{\"id\":2581,\"name\":\"SVV
-        Chapters Rollout 10%\",\"buckets\":100,\"state\":1,\"published_on\":\"2022-10-12
-        11:36:45\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"0000-00-00
-        00:00:00\",\"parameters\":[{\"id\":4277,\"name\":\"svv_chapter_rollout\",\"choice\":\"variant\",\"weight\":1}],\"segments\":[]},{\"id\":2674,\"name\":\"SVV
-        Chapters Rollout 40%\",\"buckets\":300,\"state\":1,\"published_on\":\"2022-10-13
-        07:27:04\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"0000-00-00
-        00:00:00\",\"parameters\":[{\"id\":4424,\"name\":\"svv_chapter_rollout\",\"choice\":\"variant\",\"weight\":1}],\"segments\":[]},{\"id\":2680,\"name\":\"SVV
-        Chapters Rollout 75%\",\"buckets\":250,\"state\":1,\"published_on\":\"2022-10-17
-        10:53:59\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"0000-00-00
-        00:00:00\",\"parameters\":[{\"id\":4436,\"name\":\"svv_chapter_rollout\",\"choice\":\"variant\",\"weight\":1}],\"segments\":[]},{\"id\":2682,\"name\":\"SVV
-        Chapters Rollout 100%\",\"buckets\":250,\"state\":1,\"published_on\":\"2022-10-17
-        12:14:23\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"0000-00-00
-        00:00:00\",\"parameters\":[{\"id\":4437,\"name\":\"svv_chapter_rollout\",\"choice\":\"variant\",\"weight\":1}],\"segments\":[]},{\"id\":2691,\"name\":\"SVV
-        Chapters Rollout 100% (2nd)\",\"buckets\":250,\"state\":1,\"published_on\":\"2022-10-21
-        12:22:45\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"0000-00-00
-        00:00:00\",\"parameters\":[{\"id\":4450,\"name\":\"svv_chapter_rollout\",\"choice\":\"variant\",\"weight\":1}],\"segments\":[]}]},\"JS.RecordExtension.OverlayIntegrationsSeptember\":{\"id\":921,\"name\":\"JS.RecordExtension.OverlayIntegrationsSeptember\",\"buckets\":1000,\"input\":\"vuid\",\"url\":\"\\/\",\"experiments\":[{\"id\":2590,\"name\":\"OIS1\",\"buckets\":1000,\"state\":3,\"published_on\":\"2022-09-06
-        06:55:00\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"2022-09-12
-        08:09:14\",\"parameters\":[{\"id\":4287,\"name\":\"are_overlay_integrations_enabled\",\"choice\":\"variant\",\"weight\":1}],\"segments\":[]},{\"id\":2634,\"name\":\"Integrations
-        set v3\",\"buckets\":1000,\"state\":1,\"published_on\":\"2022-09-22 08:02:24\",\"paused_on\":\"0000-00-00
-        00:00:00\",\"stopped_on\":\"0000-00-00 00:00:00\",\"parameters\":[{\"id\":4355,\"name\":\"are_overlay_integrations_enabled\",\"choice\":\"control\",\"weight\":1},{\"id\":4356,\"name\":\"are_overlay_integrations_enabled\",\"choice\":\"variant\",\"weight\":1}],\"segments\":[]}]},\"JS.RecordExtension.SignUpWall\":{\"id\":849,\"name\":\"JS.RecordExtension.SignUpWall\",\"buckets\":1000,\"input\":\"vuid\",\"url\":\"\\/\",\"experiments\":[{\"id\":2325,\"name\":\"Record
-        Extension SignUp Wall\",\"buckets\":0,\"state\":3,\"published_on\":\"2022-04-28
-        08:53:50\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"2022-04-28
-        08:55:56\",\"parameters\":[{\"id\":3912,\"name\":\"force_sign_up_wall\",\"choice\":\"variant\",\"weight\":1},{\"id\":3913,\"name\":\"force_sign_up_wall\",\"choice\":\"control\",\"weight\":1}],\"segments\":[]},{\"id\":2352,\"name\":\"*
-        Record Extension SignUp Wall\",\"buckets\":1000,\"state\":3,\"published_on\":\"2022-04-28
-        08:56:29\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"2022-04-29
-        10:37:52\",\"parameters\":[{\"id\":3939,\"name\":\"force_sign_up_wall\",\"choice\":\"variant\",\"weight\":1},{\"id\":3940,\"name\":\"force_sign_up_wall\",\"choice\":\"control\",\"weight\":0}],\"segments\":[]},{\"id\":2486,\"name\":\"Record
-        Extension SignUp Wall \\u043c2 - prod\",\"buckets\":1000,\"state\":3,\"published_on\":\"2022-06-29
-        11:06:04\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"2022-07-04
-        11:45:47\",\"parameters\":[{\"id\":4127,\"name\":\"force_sign_up_wall\",\"choice\":\"variant\",\"weight\":1},{\"id\":4128,\"name\":\"force_sign_up_wall\",\"choice\":\"control\",\"weight\":1}],\"segments\":[]},{\"id\":2556,\"name\":\"Record
-        Extension SignUp Wall v2 - prod (A\\/A\\/B\\/B)\",\"buckets\":1000,\"state\":3,\"published_on\":\"2022-08-09
-        08:03:46\",\"paused_on\":\"2022-08-09 08:03:57\",\"stopped_on\":\"2022-08-09
-        08:04:57\",\"parameters\":[{\"id\":4237,\"name\":\"force_sign_up_wall\",\"choice\":\"variant\",\"weight\":1},{\"id\":4238,\"name\":\"force_sign_up_wall\",\"choice\":\"control\",\"weight\":1}],\"segments\":[]},{\"id\":2557,\"name\":\"Record
-        Extension SignUp Wall v2 - prod (A\\/A\\/B\\/B) I\",\"buckets\":500,\"state\":3,\"published_on\":\"2022-08-09
-        08:51:06\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"2022-09-22
-        07:49:32\",\"parameters\":[{\"id\":4240,\"name\":\"force_sign_up_wall\",\"choice\":\"variant\",\"weight\":1},{\"id\":4241,\"name\":\"force_sign_up_wall\",\"choice\":\"control\",\"weight\":1}],\"segments\":[]},{\"id\":2632,\"name\":\"Record
-        Extension SignUp Wall - Rollout\",\"buckets\":1000,\"state\":3,\"published_on\":\"2022-09-22
-        07:50:08\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"2022-09-22
-        08:51:51\",\"parameters\":[],\"segments\":[]},{\"id\":2635,\"name\":\"* Record
-        Extension SignUp Wall - Rollout\",\"buckets\":1000,\"state\":1,\"published_on\":\"2022-09-22
-        08:52:14\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"0000-00-00
-        00:00:00\",\"parameters\":[{\"id\":4357,\"name\":\"force_sign_up_wall\",\"choice\":\"variant\",\"weight\":1}],\"segments\":[]}]},\"JS.RecordExtension.LandingPageNonChromeCallToSDK\":{\"id\":923,\"name\":\"JS.RecordExtension.LandingPageNonChromeCallToSDK\",\"buckets\":1000,\"input\":\"vuid\",\"url\":\"\\/features\\/screen-recorder\",\"experiments\":[{\"id\":2600,\"name\":\"CallToSDK\",\"buckets\":1000,\"state\":3,\"published_on\":\"2022-09-22
-        09:42:21\",\"paused_on\":\"2022-10-03 09:47:11\",\"stopped_on\":\"2022-10-03
-        09:50:56\",\"parameters\":[{\"id\":4295,\"name\":\"landing_non_chrome_to_sdk\",\"choice\":\"control\",\"weight\":0},{\"id\":4296,\"name\":\"landing_non_chrome_to_sdk\",\"choice\":\"variant\",\"weight\":1}],\"segments\":[]},{\"id\":2654,\"name\":\"CallToSDK
-        - prod\",\"buckets\":1000,\"state\":1,\"published_on\":\"2022-10-03 09:52:09\",\"paused_on\":\"0000-00-00
-        00:00:00\",\"stopped_on\":\"0000-00-00 00:00:00\",\"parameters\":[{\"id\":4387,\"name\":\"landing_non_chrome_to_sdk\",\"choice\":\"control\",\"weight\":1},{\"id\":4388,\"name\":\"landing_non_chrome_to_sdk\",\"choice\":\"variant\",\"weight\":1}],\"segments\":[]}]},\"JS.VM.InviteInEmptyState\":{\"id\":943,\"name\":\"JS.VM.InviteInEmptyState\",\"buckets\":1000,\"input\":\"cuid\",\"url\":\"\\/manage\\/videos\",\"experiments\":[{\"id\":2656,\"name\":\"Invite
+        = {\"JS.Checkout.VodSalesTax.Enabled\":{\"id\":986,\"name\":\"JS.Checkout.VodSalesTax.Enabled\",\"buckets\":1000,\"input\":\"vuid\",\"url\":\"\\/*\",\"experiments\":[{\"id\":2803,\"name\":\"VOD
+        Sales Tax Feature Flag for Precalc\",\"buckets\":1000,\"state\":1,\"published_on\":\"2023-02-07
+        10:08:55\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"0000-00-00
+        00:00:00\",\"parameters\":[{\"id\":4620,\"name\":\"vod_sales_tax_enabled\",\"choice\":\"1\",\"weight\":1}],\"segments\":[]}]},\"JS.RecordExtension.DesktopRollout\":{\"id\":985,\"name\":\"JS.RecordExtension.DesktopRollout\",\"buckets\":1000,\"input\":\"vuid\",\"url\":\"\\/features\\/screen-recorder\",\"experiments\":[{\"id\":2802,\"name\":\"DesktopRollout\",\"buckets\":1000,\"state\":1,\"published_on\":\"2023-02-20
+        14:57:17\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"0000-00-00
+        00:00:00\",\"parameters\":[{\"id\":4618,\"name\":\"desktop_rollout\",\"choice\":\"variant\",\"weight\":1},{\"id\":4619,\"name\":\"desktop_rollout\",\"choice\":\"control\",\"weight\":1}],\"segments\":[]}]},\"JS.Create.FacebookCCMTagsTest\":{\"id\":984,\"name\":\"JS.Create.FacebookCCMTagsTest\",\"buckets\":1000,\"input\":\"vuid\",\"url\":\"\\/apps\\/237719\\/create\\/\",\"experiments\":[{\"id\":2801,\"name\":\"Show
+        custom tags list to Facebook CCM users\",\"buckets\":1000,\"state\":1,\"published_on\":\"2023-02-05
+        07:01:48\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"0000-00-00
+        00:00:00\",\"parameters\":[{\"id\":4616,\"name\":\"facebook_ccm_tags_list\",\"choice\":\"control\",\"weight\":1},{\"id\":4617,\"name\":\"facebook_ccm_tags_list\",\"choice\":\"variant\",\"weight\":1}],\"segments\":[]}]},\"JS.Editor.SmartCrop\":{\"id\":982,\"name\":\"JS.Editor.SmartCrop\",\"buckets\":1000,\"input\":\"cuid\",\"url\":\"\\/create\\/customize\\/\",\"experiments\":[{\"id\":2798,\"name\":\"smart_crop\",\"buckets\":200,\"state\":1,\"published_on\":\"2023-02-16
+        02:34:38\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"0000-00-00
+        00:00:00\",\"parameters\":[{\"id\":4610,\"name\":\"smart_crop\",\"choice\":\"variant\",\"weight\":100},{\"id\":4611,\"name\":\"smart_crop\",\"choice\":\"control\",\"weight\":100}],\"segments\":[{\"id\":329,\"type\":\"location\",\"include\":0,\"values\":[\"US\"]}]}]},\"JS.PurchaseSeatsOnboarding\":{\"id\":981,\"name\":\"JS.PurchaseSeatsOnboarding\",\"buckets\":1000,\"input\":\"cuid\",\"url\":\"\\/store\\/receipt\\/seat_subscription\",\"experiments\":[{\"id\":2811,\"name\":\"10
+        rollout\",\"buckets\":100,\"state\":2,\"published_on\":\"2023-02-13 16:52:26\",\"paused_on\":\"2023-02-14
+        15:25:49\",\"stopped_on\":\"0000-00-00 00:00:00\",\"parameters\":[{\"id\":4627,\"name\":\"can_purchase_seats\",\"choice\":\"control\",\"weight\":1},{\"id\":4628,\"name\":\"can_purchase_seats\",\"choice\":\"variant\",\"weight\":1}],\"segments\":[]}]},\"JS.Editor.DisableTVE\":{\"id\":976,\"name\":\"JS.Editor.DisableTVE\",\"buckets\":1000,\"input\":\"cuid\",\"url\":\"\\/manage\\/videos\",\"experiments\":[{\"id\":2771,\"name\":\"disable_tve\",\"buckets\":1,\"state\":1,\"published_on\":\"2022-12-13
+        09:01:18\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"0000-00-00
+        00:00:00\",\"parameters\":[{\"id\":4564,\"name\":\"disable_tve\",\"choice\":\"variant\",\"weight\":1},{\"id\":4565,\"name\":\"disable_tve\",\"choice\":\"control\",\"weight\":1000000000}],\"segments\":[]}]},\"JS.Editor.AddTextSidePanel\":{\"id\":973,\"name\":\"JS.Editor.AddTextSidePanel\",\"buckets\":1000,\"input\":\"cuid\",\"url\":\"\\/create\\/customize\\/\",\"experiments\":[{\"id\":2762,\"name\":\"show_add_text_side_panel\",\"buckets\":1,\"state\":3,\"published_on\":\"2022-12-11
+        10:19:34\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"2022-12-12
+        03:04:13\",\"parameters\":[{\"id\":4548,\"name\":\"show_add_text_side_panel\",\"choice\":\"control\",\"weight\":1},{\"id\":4549,\"name\":\"show_add_text_side_panel\",\"choice\":\"variant\",\"weight\":0}],\"segments\":[]},{\"id\":2770,\"name\":\"4
+        default text size 200\",\"buckets\":200,\"state\":3,\"published_on\":\"2022-12-12
+        03:05:24\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"2022-12-26
+        02:33:19\",\"parameters\":[{\"id\":4562,\"name\":\"show_add_text_side_panel\",\"choice\":\"control\",\"weight\":1},{\"id\":4563,\"name\":\"show_add_text_side_panel\",\"choice\":\"variant\",\"weight\":1}],\"segments\":[]},{\"id\":2779,\"name\":\"4
+        default text size 1000\",\"buckets\":800,\"state\":3,\"published_on\":\"2022-12-20
+        06:49:59\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"2022-12-26
+        02:33:14\",\"parameters\":[{\"id\":4573,\"name\":\"show_add_text_side_panel\",\"choice\":\"control\",\"weight\":1},{\"id\":4574,\"name\":\"show_add_text_side_panel\",\"choice\":\"variant\",\"weight\":1}],\"segments\":[]},{\"id\":2784,\"name\":\"4
+        default text size 1000 variant\",\"buckets\":1000,\"state\":1,\"published_on\":\"2022-12-26
+        02:35:27\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"0000-00-00
+        00:00:00\",\"parameters\":[{\"id\":4576,\"name\":\"show_add_text_side_panel\",\"choice\":\"variant\",\"weight\":1}],\"segments\":[]}]},\"JS.Builderio.AbTest\":{\"id\":971,\"name\":\"JS.Builderio.AbTest\",\"buckets\":1000,\"input\":\"vuid\",\"url\":\"\\/cms-abtest\",\"experiments\":[{\"id\":2759,\"name\":\"Data
+        flow CMS A\\/B test\",\"buckets\":500,\"state\":1,\"published_on\":\"2022-12-05
+        00:14:43\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"0000-00-00
+        00:00:00\",\"parameters\":[{\"id\":4542,\"name\":\"show_page\",\"choice\":\"control\",\"weight\":1},{\"id\":4543,\"name\":\"show_page\",\"choice\":\"variant\",\"weight\":1}],\"segments\":[]}]},\"JS.Editor.TemplatesInspector\":{\"id\":966,\"name\":\"JS.Editor.TemplatesInspector\",\"buckets\":1000,\"input\":\"cuid\",\"url\":\"\\/create\\/customize\\/\",\"experiments\":[{\"id\":2720,\"name\":\"show_templates_inspector\",\"buckets\":1000,\"state\":3,\"published_on\":\"2022-11-13
+        06:39:11\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"2023-01-03
+        09:03:15\",\"parameters\":[{\"id\":4498,\"name\":\"show_templates_inspector\",\"choice\":\"control\",\"weight\":1},{\"id\":4499,\"name\":\"show_templates_inspector\",\"choice\":\"variant\",\"weight\":0}],\"segments\":[]},{\"id\":2786,\"name\":\"show_templates_inspector_2\",\"buckets\":1000,\"state\":3,\"published_on\":\"2023-01-03
+        09:07:22\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"2023-01-08
+        04:18:17\",\"parameters\":[{\"id\":4579,\"name\":\"show_templates_inspector\",\"choice\":\"variant\",\"weight\":0},{\"id\":4580,\"name\":\"show_templates_inspector\",\"choice\":\"control\",\"weight\":1}],\"segments\":[]},{\"id\":2787,\"name\":\"show_templates_inspector_200\",\"buckets\":200,\"state\":3,\"published_on\":\"2023-01-08
+        04:19:44\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"2023-02-13
+        02:17:42\",\"parameters\":[{\"id\":4581,\"name\":\"show_templates_inspector\",\"choice\":\"variant\",\"weight\":1},{\"id\":4582,\"name\":\"show_templates_inspector\",\"choice\":\"control\",\"weight\":1}],\"segments\":[]},{\"id\":2788,\"name\":\"show_templates_inspector_400\",\"buckets\":200,\"state\":3,\"published_on\":\"2023-01-10
+        05:29:49\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"2023-02-13
+        02:17:33\",\"parameters\":[{\"id\":4583,\"name\":\"show_templates_inspector\",\"choice\":\"variant\",\"weight\":1},{\"id\":4584,\"name\":\"show_templates_inspector\",\"choice\":\"control\",\"weight\":1}],\"segments\":[]},{\"id\":2789,\"name\":\"show_templates_inspector_1000\",\"buckets\":600,\"state\":3,\"published_on\":\"2023-01-11
+        03:31:21\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"2023-02-13
+        02:17:25\",\"parameters\":[{\"id\":4585,\"name\":\"show_templates_inspector\",\"choice\":\"variant\",\"weight\":1},{\"id\":4586,\"name\":\"show_templates_inspector\",\"choice\":\"control\",\"weight\":1}],\"segments\":[]},{\"id\":2813,\"name\":\"show_templates_inspector_clode
+        on variant \",\"buckets\":1000,\"state\":1,\"published_on\":\"2023-02-13 02:18:30\",\"paused_on\":\"0000-00-00
+        00:00:00\",\"stopped_on\":\"0000-00-00 00:00:00\",\"parameters\":[{\"id\":4631,\"name\":\"show_templates_inspector\",\"choice\":\"variant\",\"weight\":1}],\"segments\":[]}]},\"JS.Settings.MembershipPlan.DisableAutoRenewRedesign\":{\"id\":955,\"name\":\"JS.Settings.MembershipPlan.DisableAutoRenewRedesign\",\"buckets\":1000,\"input\":\"cuid\",\"url\":\"\\/settings\\/billing\\/membership_plan\",\"experiments\":[{\"id\":2697,\"name\":\"Show
+        redesigned Disable auto renew modal\",\"buckets\":200,\"state\":2,\"published_on\":\"2022-11-01
+        15:35:37\",\"paused_on\":\"2023-02-17 13:15:10\",\"stopped_on\":\"0000-00-00
+        00:00:00\",\"parameters\":[{\"id\":4460,\"name\":\"disable_auto_renew_redesign\",\"choice\":\"control\",\"weight\":1},{\"id\":4461,\"name\":\"disable_auto_renew_redesign\",\"choice\":\"variant\",\"weight\":1}],\"segments\":[{\"id\":307,\"type\":\"location\",\"include\":0,\"values\":[\"DE\"]}]}]},\"JS.SVV.VersionHistory\":{\"id\":951,\"name\":\"JS.SVV.VersionHistory\",\"buckets\":1000,\"input\":\"cuid\",\"url\":\"\\/manage\\/videos\",\"experiments\":[{\"id\":2678,\"name\":\"10%
+        rollout - Version History on SVV\",\"buckets\":200,\"state\":3,\"published_on\":\"2022-12-14
+        16:25:15\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"2023-02-01
+        10:28:40\",\"parameters\":[{\"id\":4432,\"name\":\"version_history\",\"choice\":\"control\",\"weight\":1},{\"id\":4433,\"name\":\"version_history\",\"choice\":\"variant\",\"weight\":1}],\"segments\":[]},{\"id\":2790,\"name\":\"50%
+        rollout - Version History on SVV\",\"buckets\":800,\"state\":3,\"published_on\":\"2023-01-17
+        09:20:20\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"2023-02-01
+        10:28:48\",\"parameters\":[{\"id\":4587,\"name\":\"version_history\",\"choice\":\"control\",\"weight\":1},{\"id\":4588,\"name\":\"version_history\",\"choice\":\"variant\",\"weight\":1}],\"segments\":[]},{\"id\":2799,\"name\":\"*
+        100% rollout - Version History on SVV\",\"buckets\":1000,\"state\":1,\"published_on\":\"2023-02-01
+        10:28:59\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"0000-00-00
+        00:00:00\",\"parameters\":[{\"id\":4612,\"name\":\"version_history\",\"choice\":\"variant\",\"weight\":1}],\"segments\":[]}]},\"JS.VM.InviteInEmptyState\":{\"id\":943,\"name\":\"JS.VM.InviteInEmptyState\",\"buckets\":1000,\"input\":\"cuid\",\"url\":\"\\/manage\\/videos\",\"experiments\":[{\"id\":2656,\"name\":\"Invite
         in Empty State Rollout to 10%\",\"buckets\":100,\"state\":1,\"published_on\":\"2022-10-20
         12:40:52\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"0000-00-00
         00:00:00\",\"parameters\":[{\"id\":4391,\"name\":\"invite_in_empty_state\",\"choice\":\"control\",\"weight\":1},{\"id\":4392,\"name\":\"invite_in_empty_state\",\"choice\":\"variant1\",\"weight\":1}],\"segments\":[]},{\"id\":2700,\"name\":\"Invite
@@ -605,18 +479,7 @@ http_interactions:
         11:21:54\",\"parameters\":[{\"id\":4372,\"name\":\"migrate_privacy_svv\",\"choice\":\"control\",\"weight\":1},{\"id\":4373,\"name\":\"migrate_privacy_svv\",\"choice\":\"variant\",\"weight\":1}],\"segments\":[]},{\"id\":2692,\"name\":\"100%
         ramp - AVS Privacy Migration\",\"buckets\":900,\"state\":1,\"published_on\":\"2022-10-24
         11:21:49\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"0000-00-00
-        00:00:00\",\"parameters\":[{\"id\":4451,\"name\":\"migrate_privacy_svv\",\"choice\":\"control\",\"weight\":1},{\"id\":4452,\"name\":\"migrate_privacy_svv\",\"choice\":\"variant\",\"weight\":1}],\"segments\":[]}]},\"JS.Settings.MembershipPlan.DisableAutoRenewRedesign\":{\"id\":955,\"name\":\"JS.Settings.MembershipPlan.DisableAutoRenewRedesign\",\"buckets\":1000,\"input\":\"cuid\",\"url\":\"\\/settings\\/billing\\/membership_plan\",\"experiments\":[{\"id\":2697,\"name\":\"Show
-        redesigned Disable auto renew modal\",\"buckets\":200,\"state\":2,\"published_on\":\"2022-11-01
-        15:35:37\",\"paused_on\":\"2023-02-17 13:15:10\",\"stopped_on\":\"0000-00-00
-        00:00:00\",\"parameters\":[{\"id\":4460,\"name\":\"disable_auto_renew_redesign\",\"choice\":\"control\",\"weight\":1},{\"id\":4461,\"name\":\"disable_auto_renew_redesign\",\"choice\":\"variant\",\"weight\":1}],\"segments\":[{\"id\":307,\"type\":\"location\",\"include\":0,\"values\":[\"DE\"]}]}]},\"JS.Settings.MembershipPlan.ShowContactSupportLink\":{\"id\":918,\"name\":\"JS.Settings.MembershipPlan.ShowContactSupportLink\",\"buckets\":1000,\"input\":\"cuid\",\"url\":\"\\/settings\\/billing\\/membership_plan\",\"experiments\":[{\"id\":2621,\"name\":\"Offer
-        a downgrade option\",\"buckets\":1000,\"state\":3,\"published_on\":\"2022-09-22
-        07:54:02\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"2022-09-22
-        07:54:32\",\"parameters\":[{\"id\":4331,\"name\":\"ab_show_contact_support_link\",\"choice\":\"control\",\"weight\":1},{\"id\":4332,\"name\":\"ab_show_contact_support_link\",\"choice\":\"variant\",\"weight\":1}],\"segments\":[]},{\"id\":2633,\"name\":\"*
-        Offer a downgrade option\",\"buckets\":200,\"state\":3,\"published_on\":\"2022-09-22
-        07:54:56\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"2022-10-28
-        11:46:25\",\"parameters\":[{\"id\":4353,\"name\":\"ab_show_contact_support_link\",\"choice\":\"control\",\"weight\":1},{\"id\":4354,\"name\":\"ab_show_contact_support_link\",\"choice\":\"variant\",\"weight\":1}],\"segments\":[]},{\"id\":2701,\"name\":\"Downgrade
-        CTA\",\"buckets\":200,\"state\":1,\"published_on\":\"2022-10-28 11:47:03\",\"paused_on\":\"0000-00-00
-        00:00:00\",\"stopped_on\":\"0000-00-00 00:00:00\",\"parameters\":[{\"id\":4466,\"name\":\"show_contact_support_link\",\"choice\":\"control\",\"weight\":1},{\"id\":4467,\"name\":\"show_contact_support_link\",\"choice\":\"variant\",\"weight\":1}],\"segments\":[]}]},\"JS.Editor.MediaInspector\":{\"id\":928,\"name\":\"JS.Editor.MediaInspector\",\"buckets\":1000,\"input\":\"cuid\",\"url\":\"\\/create\\/customize\\/\",\"experiments\":[{\"id\":2622,\"name\":\"show_media_inspector
+        00:00:00\",\"parameters\":[{\"id\":4451,\"name\":\"migrate_privacy_svv\",\"choice\":\"control\",\"weight\":1},{\"id\":4452,\"name\":\"migrate_privacy_svv\",\"choice\":\"variant\",\"weight\":1}],\"segments\":[]}]},\"JS.Editor.MediaInspector\":{\"id\":928,\"name\":\"JS.Editor.MediaInspector\",\"buckets\":1000,\"input\":\"cuid\",\"url\":\"\\/create\\/customize\\/\",\"experiments\":[{\"id\":2622,\"name\":\"show_media_inspector
         (100)\",\"buckets\":100,\"state\":3,\"published_on\":\"2022-09-18 13:09:32\",\"paused_on\":\"0000-00-00
         00:00:00\",\"stopped_on\":\"2022-09-21 06:25:45\",\"parameters\":[{\"id\":4334,\"name\":\"show_media_inspector\",\"choice\":\"control\",\"weight\":1}],\"segments\":[]},{\"id\":2628,\"name\":\"show_media_inspector
         (200)\",\"buckets\":200,\"state\":3,\"published_on\":\"2022-09-21 06:26:40\",\"paused_on\":\"0000-00-00
@@ -628,26 +491,65 @@ http_interactions:
         (variant) \",\"buckets\":1000,\"state\":1,\"published_on\":\"2022-11-27 06:06:31\",\"paused_on\":\"0000-00-00
         00:00:00\",\"stopped_on\":\"0000-00-00 00:00:00\",\"parameters\":[{\"id\":4527,\"name\":\"show_media_inspector\",\"choice\":\"variant\",\"weight\":1}],\"segments\":[]},{\"id\":2785,\"name\":\"show_media_inspector_new2\",\"buckets\":1000,\"state\":1,\"published_on\":\"2022-12-28
         04:31:36\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"0000-00-00
-        00:00:00\",\"parameters\":[{\"id\":4577,\"name\":\"show_media_inspector\",\"choice\":\"control\",\"weight\":0},{\"id\":4578,\"name\":\"show_media_inspector\",\"choice\":\"variant\",\"weight\":1}],\"segments\":[]}]},\"JS.Builderio.AbTest\":{\"id\":971,\"name\":\"JS.Builderio.AbTest\",\"buckets\":1000,\"input\":\"vuid\",\"url\":\"\\/cms-abtest\",\"experiments\":[{\"id\":2759,\"name\":\"Data
-        flow CMS A\\/B test\",\"buckets\":500,\"state\":1,\"published_on\":\"2022-12-05
-        00:14:43\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"0000-00-00
-        00:00:00\",\"parameters\":[{\"id\":4542,\"name\":\"show_page\",\"choice\":\"control\",\"weight\":1},{\"id\":4543,\"name\":\"show_page\",\"choice\":\"variant\",\"weight\":1}],\"segments\":[]}]},\"JS.Editor.DisableTVE\":{\"id\":976,\"name\":\"JS.Editor.DisableTVE\",\"buckets\":1000,\"input\":\"cuid\",\"url\":\"\\/manage\\/videos\",\"experiments\":[{\"id\":2771,\"name\":\"disable_tve\",\"buckets\":1,\"state\":1,\"published_on\":\"2022-12-13
-        09:01:18\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"0000-00-00
-        00:00:00\",\"parameters\":[{\"id\":4564,\"name\":\"disable_tve\",\"choice\":\"variant\",\"weight\":1},{\"id\":4565,\"name\":\"disable_tve\",\"choice\":\"control\",\"weight\":1000000000}],\"segments\":[]}]},\"JS.SVV.Omnisearch\":{\"id\":864,\"name\":\"JS.SVV.Omnisearch\",\"buckets\":1000,\"input\":\"cuid\",\"url\":\"\\/manage\\/videos\\/:videoId,
-        \\/:videoId\",\"experiments\":[{\"id\":2384,\"name\":\"Omnisearch in SVV\",\"buckets\":1000,\"state\":3,\"published_on\":\"2022-05-24
-        13:45:47\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"2022-12-14
-        17:10:32\",\"parameters\":[{\"id\":3983,\"name\":\"show_omnisearch\",\"choice\":\"variant\",\"weight\":1},{\"id\":3984,\"name\":\"show_omnisearch\",\"choice\":\"control\",\"weight\":1}],\"segments\":[]},{\"id\":2776,\"name\":\"100%
-        roll - Omnisearch in SVV\",\"buckets\":1000,\"state\":1,\"published_on\":\"2022-12-14
-        17:11:00\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"0000-00-00
-        00:00:00\",\"parameters\":[{\"id\":4570,\"name\":\"show_omnisearch\",\"choice\":\"variant\",\"weight\":1}],\"segments\":[]}]},\"JS.Editor.AddTextSidePanel\":{\"id\":973,\"name\":\"JS.Editor.AddTextSidePanel\",\"buckets\":1000,\"input\":\"cuid\",\"url\":\"\\/create\\/customize\\/\",\"experiments\":[{\"id\":2762,\"name\":\"show_add_text_side_panel\",\"buckets\":1,\"state\":3,\"published_on\":\"2022-12-11
-        10:19:34\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"2022-12-12
-        03:04:13\",\"parameters\":[{\"id\":4548,\"name\":\"show_add_text_side_panel\",\"choice\":\"control\",\"weight\":1},{\"id\":4549,\"name\":\"show_add_text_side_panel\",\"choice\":\"variant\",\"weight\":0}],\"segments\":[]},{\"id\":2770,\"name\":\"4
-        default text size 200\",\"buckets\":200,\"state\":3,\"published_on\":\"2022-12-12
-        03:05:24\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"2022-12-26
-        02:33:19\",\"parameters\":[{\"id\":4562,\"name\":\"show_add_text_side_panel\",\"choice\":\"control\",\"weight\":1},{\"id\":4563,\"name\":\"show_add_text_side_panel\",\"choice\":\"variant\",\"weight\":1}],\"segments\":[]},{\"id\":2779,\"name\":\"4
-        default text size 1000\",\"buckets\":800,\"state\":3,\"published_on\":\"2022-12-20
-        06:49:59\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"2022-12-26
-        02:33:14\",\"parameters\":[{\"id\":4573,\"name\":\"show_add_text_side_panel\",\"choice\":\"control\",\"weight\":1},{\"id\":4574,\"name\":\"show_add_text_side_panel\",\"choice\":\"variant\",\"weight\":1}],\"segments\":[]}]},\"JS.SVV.TagVideosOnDownload\":{\"id\":910,\"name\":\"JS.SVV.TagVideosOnDownload\",\"buckets\":1000,\"input\":\"vuid\",\"url\":\"*\",\"experiments\":[{\"id\":2536,\"name\":\"Tag
+        00:00:00\",\"parameters\":[{\"id\":4577,\"name\":\"show_media_inspector\",\"choice\":\"control\",\"weight\":0},{\"id\":4578,\"name\":\"show_media_inspector\",\"choice\":\"variant\",\"weight\":1}],\"segments\":[]}]},\"JS.RecordExtension.LandingPageNonChromeCallToSDK\":{\"id\":923,\"name\":\"JS.RecordExtension.LandingPageNonChromeCallToSDK\",\"buckets\":1000,\"input\":\"vuid\",\"url\":\"\\/features\\/screen-recorder\",\"experiments\":[{\"id\":2600,\"name\":\"CallToSDK\",\"buckets\":1000,\"state\":3,\"published_on\":\"2022-09-22
+        09:42:21\",\"paused_on\":\"2022-10-03 09:47:11\",\"stopped_on\":\"2022-10-03
+        09:50:56\",\"parameters\":[{\"id\":4295,\"name\":\"landing_non_chrome_to_sdk\",\"choice\":\"control\",\"weight\":0},{\"id\":4296,\"name\":\"landing_non_chrome_to_sdk\",\"choice\":\"variant\",\"weight\":1}],\"segments\":[]},{\"id\":2654,\"name\":\"CallToSDK
+        - prod\",\"buckets\":1000,\"state\":1,\"published_on\":\"2022-10-03 09:52:09\",\"paused_on\":\"0000-00-00
+        00:00:00\",\"stopped_on\":\"0000-00-00 00:00:00\",\"parameters\":[{\"id\":4387,\"name\":\"landing_non_chrome_to_sdk\",\"choice\":\"control\",\"weight\":1},{\"id\":4388,\"name\":\"landing_non_chrome_to_sdk\",\"choice\":\"variant\",\"weight\":1}],\"segments\":[]}]},\"JS.RecordExtension.DirectToSVV\":{\"id\":922,\"name\":\"JS.RecordExtension.DirectToSVV\",\"buckets\":1000,\"input\":\"vuid\",\"url\":\"\\/\",\"experiments\":[{\"id\":2599,\"name\":\"DTS1\",\"buckets\":1000,\"state\":3,\"published_on\":\"2022-09-09
+        04:37:29\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"2022-09-16
+        02:41:37\",\"parameters\":[{\"id\":4294,\"name\":\"should_direct_to_svv\",\"choice\":\"variant\",\"weight\":1}],\"segments\":[]},{\"id\":2619,\"name\":\"*
+        DTS1_2\",\"buckets\":1000,\"state\":3,\"published_on\":\"2022-09-16 02:43:05\",\"paused_on\":\"0000-00-00
+        00:00:00\",\"stopped_on\":\"2022-09-16 02:52:55\",\"parameters\":[{\"id\":4328,\"name\":\"should_direct_to_svv\",\"choice\":\"variant\",\"weight\":0}],\"segments\":[]},{\"id\":2620,\"name\":\"DTS2\",\"buckets\":1000,\"state\":3,\"published_on\":\"2022-09-16
+        02:53:44\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"2022-09-26
+        12:09:11\",\"parameters\":[{\"id\":4329,\"name\":\"should_direct_to_svv\",\"choice\":\"variant\",\"weight\":0},{\"id\":4330,\"name\":\"should_direct_to_svv\",\"choice\":\"control\",\"weight\":1}],\"segments\":[]},{\"id\":2640,\"name\":\"Direct-to-SVV\",\"buckets\":1000,\"state\":3,\"published_on\":\"2022-09-26
+        12:12:44\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"2023-02-08
+        13:44:23\",\"parameters\":[{\"id\":4364,\"name\":\"should_direct_to_svv\",\"choice\":\"variant\",\"weight\":1},{\"id\":4365,\"name\":\"should_direct_to_svv\",\"choice\":\"control\",\"weight\":1}],\"segments\":[]},{\"id\":2685,\"name\":\"Dirtect_to_SVV\",\"buckets\":1000,\"state\":3,\"published_on\":\"2022-10-19
+        07:33:44\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"2023-02-08
+        13:44:17\",\"parameters\":[{\"id\":4442,\"name\":\"should_direct_to_svv\",\"choice\":\"variant\",\"weight\":1},{\"id\":4443,\"name\":\"should_direct_to_svv\",\"choice\":\"control\",\"weight\":1}],\"segments\":[]},{\"id\":2806,\"name\":\"DTS_6\",\"buckets\":1000,\"state\":1,\"published_on\":\"2023-02-13
+        11:32:46\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"0000-00-00
+        00:00:00\",\"parameters\":[{\"id\":4623,\"name\":\"should_direct_to_svv\",\"choice\":\"variant\",\"weight\":1},{\"id\":4624,\"name\":\"should_direct_to_svv\",\"choice\":\"control\",\"weight\":1}],\"segments\":[]}]},\"JS.RecordExtension.OverlayIntegrationsSeptember\":{\"id\":921,\"name\":\"JS.RecordExtension.OverlayIntegrationsSeptember\",\"buckets\":1000,\"input\":\"vuid\",\"url\":\"\\/\",\"experiments\":[{\"id\":2590,\"name\":\"OIS1\",\"buckets\":1000,\"state\":3,\"published_on\":\"2022-09-06
+        06:55:00\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"2022-09-12
+        08:09:14\",\"parameters\":[{\"id\":4287,\"name\":\"are_overlay_integrations_enabled\",\"choice\":\"variant\",\"weight\":1}],\"segments\":[]},{\"id\":2634,\"name\":\"Integrations
+        set v3\",\"buckets\":1000,\"state\":1,\"published_on\":\"2022-09-22 08:02:24\",\"paused_on\":\"0000-00-00
+        00:00:00\",\"stopped_on\":\"0000-00-00 00:00:00\",\"parameters\":[{\"id\":4355,\"name\":\"are_overlay_integrations_enabled\",\"choice\":\"control\",\"weight\":1},{\"id\":4356,\"name\":\"are_overlay_integrations_enabled\",\"choice\":\"variant\",\"weight\":1}],\"segments\":[]}]},\"JS.SVV.Chapters\":{\"id\":920,\"name\":\"JS.SVV.Chapters\",\"buckets\":1000,\"input\":\"cuid\",\"url\":\"\\/manage\\/videos\",\"experiments\":[{\"id\":2581,\"name\":\"SVV
+        Chapters Rollout 10%\",\"buckets\":100,\"state\":1,\"published_on\":\"2022-10-12
+        11:36:45\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"0000-00-00
+        00:00:00\",\"parameters\":[{\"id\":4277,\"name\":\"svv_chapter_rollout\",\"choice\":\"variant\",\"weight\":1}],\"segments\":[]},{\"id\":2674,\"name\":\"SVV
+        Chapters Rollout 40%\",\"buckets\":300,\"state\":1,\"published_on\":\"2022-10-13
+        07:27:04\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"0000-00-00
+        00:00:00\",\"parameters\":[{\"id\":4424,\"name\":\"svv_chapter_rollout\",\"choice\":\"variant\",\"weight\":1}],\"segments\":[]},{\"id\":2676,\"name\":\"SVV
+        Chapters Rollout 50%\",\"buckets\":100,\"state\":1,\"published_on\":\"2022-10-14
+        11:58:13\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"0000-00-00
+        00:00:00\",\"parameters\":[{\"id\":4427,\"name\":\"svv_chapter_rollout\",\"choice\":\"variant\",\"weight\":1}],\"segments\":[]},{\"id\":2680,\"name\":\"SVV
+        Chapters Rollout 75%\",\"buckets\":250,\"state\":1,\"published_on\":\"2022-10-17
+        10:53:59\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"0000-00-00
+        00:00:00\",\"parameters\":[{\"id\":4436,\"name\":\"svv_chapter_rollout\",\"choice\":\"variant\",\"weight\":1}],\"segments\":[]},{\"id\":2682,\"name\":\"SVV
+        Chapters Rollout 100%\",\"buckets\":250,\"state\":1,\"published_on\":\"2022-10-17
+        12:14:23\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"0000-00-00
+        00:00:00\",\"parameters\":[{\"id\":4437,\"name\":\"svv_chapter_rollout\",\"choice\":\"variant\",\"weight\":1}],\"segments\":[]},{\"id\":2691,\"name\":\"SVV
+        Chapters Rollout 100% (2nd)\",\"buckets\":250,\"state\":1,\"published_on\":\"2022-10-21
+        12:22:45\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"0000-00-00
+        00:00:00\",\"parameters\":[{\"id\":4450,\"name\":\"svv_chapter_rollout\",\"choice\":\"variant\",\"weight\":1}],\"segments\":[]}]},\"JS.Settings.MembershipPlan.ShowContactSupportLink\":{\"id\":918,\"name\":\"JS.Settings.MembershipPlan.ShowContactSupportLink\",\"buckets\":1000,\"input\":\"cuid\",\"url\":\"\\/settings\\/billing\\/membership_plan\",\"experiments\":[{\"id\":2621,\"name\":\"Offer
+        a downgrade option\",\"buckets\":1000,\"state\":3,\"published_on\":\"2022-09-22
+        07:54:02\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"2022-09-22
+        07:54:32\",\"parameters\":[{\"id\":4331,\"name\":\"ab_show_contact_support_link\",\"choice\":\"control\",\"weight\":1},{\"id\":4332,\"name\":\"ab_show_contact_support_link\",\"choice\":\"variant\",\"weight\":1}],\"segments\":[]},{\"id\":2633,\"name\":\"*
+        Offer a downgrade option\",\"buckets\":200,\"state\":3,\"published_on\":\"2022-09-22
+        07:54:56\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"2022-10-28
+        11:46:25\",\"parameters\":[{\"id\":4353,\"name\":\"ab_show_contact_support_link\",\"choice\":\"control\",\"weight\":1},{\"id\":4354,\"name\":\"ab_show_contact_support_link\",\"choice\":\"variant\",\"weight\":1}],\"segments\":[]},{\"id\":2701,\"name\":\"Downgrade
+        CTA\",\"buckets\":200,\"state\":1,\"published_on\":\"2022-10-28 11:47:03\",\"paused_on\":\"0000-00-00
+        00:00:00\",\"stopped_on\":\"0000-00-00 00:00:00\",\"parameters\":[{\"id\":4466,\"name\":\"show_contact_support_link\",\"choice\":\"control\",\"weight\":1},{\"id\":4467,\"name\":\"show_contact_support_link\",\"choice\":\"variant\",\"weight\":1}],\"segments\":[]}]},\"JS.Editor.hideStyles\":{\"id\":915,\"name\":\"JS.Editor.hideStyles\",\"buckets\":1000,\"input\":\"cuid\",\"url\":\"\\/create\\/customize\\/\",\"experiments\":[{\"id\":2560,\"name\":\"hideStyles\",\"buckets\":100,\"state\":3,\"published_on\":\"2022-08-14
+        02:50:11\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"2023-02-16
+        06:52:36\",\"parameters\":[{\"id\":4246,\"name\":\"hide_styles\",\"choice\":\"variant\",\"weight\":1},{\"id\":4247,\"name\":\"hide_styles\",\"choice\":\"control\",\"weight\":1}],\"segments\":[]},{\"id\":2563,\"name\":\"hideStyles
+        200\",\"buckets\":100,\"state\":3,\"published_on\":\"2022-08-14 13:02:46\",\"paused_on\":\"0000-00-00
+        00:00:00\",\"stopped_on\":\"2023-02-16 06:52:46\",\"parameters\":[{\"id\":4251,\"name\":\"hide_styles\",\"choice\":\"variant\",\"weight\":1},{\"id\":4252,\"name\":\"hide_styles\",\"choice\":\"control\",\"weight\":1}],\"segments\":[]},{\"id\":2564,\"name\":\"hideStyles
+        500\",\"buckets\":300,\"state\":3,\"published_on\":\"2022-09-06 03:06:41\",\"paused_on\":\"0000-00-00
+        00:00:00\",\"stopped_on\":\"2023-02-16 06:52:54\",\"parameters\":[{\"id\":4253,\"name\":\"hide_styles\",\"choice\":\"variant\",\"weight\":1},{\"id\":4254,\"name\":\"hide_styles\",\"choice\":\"control\",\"weight\":1}],\"segments\":[]},{\"id\":2572,\"name\":\"hideStyles
+        1000\",\"buckets\":500,\"state\":1,\"published_on\":\"2022-09-06 05:58:14\",\"paused_on\":\"0000-00-00
+        00:00:00\",\"stopped_on\":\"0000-00-00 00:00:00\",\"parameters\":[{\"id\":4265,\"name\":\"hide_styles\",\"choice\":\"variant\",\"weight\":1},{\"id\":4266,\"name\":\"hide_styles\",\"choice\":\"control\",\"weight\":1}],\"segments\":[]}]},\"JS.Editor.TranscriptionVideoEditor\":{\"id\":911,\"name\":\"JS.Editor.TranscriptionVideoEditor\",\"buckets\":1000,\"input\":\"cuid\",\"url\":\"\\/manage\\/videos\",\"experiments\":[{\"id\":2547,\"name\":\"transcription_video_editor\",\"buckets\":1,\"state\":1,\"published_on\":\"2022-09-28
+        07:00:56\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"0000-00-00
+        00:00:00\",\"parameters\":[{\"id\":4220,\"name\":\"transcription_video_editor\",\"choice\":\"variant\",\"weight\":1},{\"id\":4221,\"name\":\"transcription_video_editor\",\"choice\":\"control\",\"weight\":1000000000}],\"segments\":[]},{\"id\":2778,\"name\":\"transcription_video_editor_release\",\"buckets\":999,\"state\":1,\"published_on\":\"2022-12-15
+        05:01:21\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"0000-00-00
+        00:00:00\",\"parameters\":[{\"id\":4571,\"name\":\"transcription_video_editor\",\"choice\":\"variant\",\"weight\":1},{\"id\":4572,\"name\":\"transcription_video_editor\",\"choice\":\"control\",\"weight\":0}],\"segments\":[]}]},\"JS.SVV.TagVideosOnDownload\":{\"id\":910,\"name\":\"JS.SVV.TagVideosOnDownload\",\"buckets\":1000,\"input\":\"vuid\",\"url\":\"*\",\"experiments\":[{\"id\":2536,\"name\":\"Tag
         videos on download to 25%\",\"buckets\":500,\"state\":3,\"published_on\":\"2022-07-25
         09:49:55\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"2022-10-11
         04:52:39\",\"parameters\":[{\"id\":4204,\"name\":\"tag_videos_on_download\",\"choice\":\"true\",\"weight\":1},{\"id\":4205,\"name\":\"tag_videos_on_download\",\"choice\":\"false\",\"weight\":1}],\"segments\":[]},{\"id\":2669,\"name\":\"Tag
@@ -659,46 +561,173 @@ http_interactions:
         09:37:31\",\"parameters\":[{\"id\":4468,\"name\":\"tag_videos_on_download\",\"choice\":\"true\",\"weight\":3},{\"id\":4469,\"name\":\"tag_videos_on_download\",\"choice\":\"false\",\"weight\":1}],\"segments\":[]},{\"id\":2793,\"name\":\"*
         Tag videos on download to 100%\",\"buckets\":1000,\"state\":1,\"published_on\":\"2023-01-19
         09:37:58\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"0000-00-00
-        00:00:00\",\"parameters\":[{\"id\":4595,\"name\":\"tag_videos_on_download\",\"choice\":\"true\",\"weight\":1},{\"id\":4596,\"name\":\"tag_videos_on_download\",\"choice\":\"false\",\"weight\":0}],\"segments\":[]}]},\"JS.Editor.SmartCrop\":{\"id\":982,\"name\":\"JS.Editor.SmartCrop\",\"buckets\":1000,\"input\":\"cuid\",\"url\":\"\\/create\\/customize\\/\",\"experiments\":[{\"id\":2798,\"name\":\"smart_crop\",\"buckets\":200,\"state\":1,\"published_on\":\"2023-02-16
-        02:34:38\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"0000-00-00
-        00:00:00\",\"parameters\":[{\"id\":4610,\"name\":\"smart_crop\",\"choice\":\"variant\",\"weight\":100},{\"id\":4611,\"name\":\"smart_crop\",\"choice\":\"control\",\"weight\":100}],\"segments\":[{\"id\":329,\"type\":\"location\",\"include\":0,\"values\":[\"US\"]}]}]},\"JS.SVV.VersionHistory\":{\"id\":951,\"name\":\"JS.SVV.VersionHistory\",\"buckets\":1000,\"input\":\"cuid\",\"url\":\"\\/manage\\/videos\",\"experiments\":[{\"id\":2678,\"name\":\"10%
-        rollout - Version History on SVV\",\"buckets\":200,\"state\":3,\"published_on\":\"2022-12-14
-        16:25:15\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"2023-02-01
-        10:28:40\",\"parameters\":[{\"id\":4432,\"name\":\"version_history\",\"choice\":\"control\",\"weight\":1},{\"id\":4433,\"name\":\"version_history\",\"choice\":\"variant\",\"weight\":1}],\"segments\":[]},{\"id\":2790,\"name\":\"50%
-        rollout - Version History on SVV\",\"buckets\":800,\"state\":3,\"published_on\":\"2023-01-17
-        09:20:20\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"2023-02-01
-        10:28:48\",\"parameters\":[{\"id\":4587,\"name\":\"version_history\",\"choice\":\"control\",\"weight\":1},{\"id\":4588,\"name\":\"version_history\",\"choice\":\"variant\",\"weight\":1}],\"segments\":[]},{\"id\":2799,\"name\":\"*
-        100% rollout - Version History on SVV\",\"buckets\":1000,\"state\":1,\"published_on\":\"2023-02-01
-        10:28:59\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"0000-00-00
-        00:00:00\",\"parameters\":[{\"id\":4612,\"name\":\"version_history\",\"choice\":\"variant\",\"weight\":1}],\"segments\":[]}]},\"JS.Create.FacebookCCMTagsTest\":{\"id\":984,\"name\":\"JS.Create.FacebookCCMTagsTest\",\"buckets\":1000,\"input\":\"vuid\",\"url\":\"\\/apps\\/237719\\/create\\/\",\"experiments\":[{\"id\":2801,\"name\":\"Show
-        custom tags list to Facebook CCM users\",\"buckets\":1000,\"state\":1,\"published_on\":\"2023-02-05
-        07:01:48\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"0000-00-00
-        00:00:00\",\"parameters\":[{\"id\":4616,\"name\":\"facebook_ccm_tags_list\",\"choice\":\"control\",\"weight\":1},{\"id\":4617,\"name\":\"facebook_ccm_tags_list\",\"choice\":\"variant\",\"weight\":1}],\"segments\":[]}]},\"JS.Checkout.VodSalesTax.Enabled\":{\"id\":986,\"name\":\"JS.Checkout.VodSalesTax.Enabled\",\"buckets\":1000,\"input\":\"vuid\",\"url\":\"\\/*\",\"experiments\":[{\"id\":2803,\"name\":\"VOD
-        Sales Tax Feature Flag for Precalc\",\"buckets\":1000,\"state\":1,\"published_on\":\"2023-02-07
-        10:08:55\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"0000-00-00
-        00:00:00\",\"parameters\":[{\"id\":4620,\"name\":\"vod_sales_tax_enabled\",\"choice\":\"1\",\"weight\":1}],\"segments\":[]}]},\"JS.RecordExtension.DirectToSVV\":{\"id\":922,\"name\":\"JS.RecordExtension.DirectToSVV\",\"buckets\":1000,\"input\":\"vuid\",\"url\":\"\\/\",\"experiments\":[{\"id\":2619,\"name\":\"*
-        DTS1_2\",\"buckets\":1000,\"state\":3,\"published_on\":\"2022-09-16 02:43:05\",\"paused_on\":\"0000-00-00
-        00:00:00\",\"stopped_on\":\"2022-09-16 02:52:55\",\"parameters\":[{\"id\":4328,\"name\":\"should_direct_to_svv\",\"choice\":\"variant\",\"weight\":0}],\"segments\":[]},{\"id\":2620,\"name\":\"DTS2\",\"buckets\":1000,\"state\":3,\"published_on\":\"2022-09-16
-        02:53:44\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"2022-09-26
-        12:09:11\",\"parameters\":[{\"id\":4329,\"name\":\"should_direct_to_svv\",\"choice\":\"variant\",\"weight\":0},{\"id\":4330,\"name\":\"should_direct_to_svv\",\"choice\":\"control\",\"weight\":1}],\"segments\":[]},{\"id\":2640,\"name\":\"Direct-to-SVV\",\"buckets\":1000,\"state\":3,\"published_on\":\"2022-09-26
-        12:12:44\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"2023-02-08
-        13:44:23\",\"parameters\":[{\"id\":4364,\"name\":\"should_direct_to_svv\",\"choice\":\"variant\",\"weight\":1},{\"id\":4365,\"name\":\"should_direct_to_svv\",\"choice\":\"control\",\"weight\":1}],\"segments\":[]},{\"id\":2685,\"name\":\"Dirtect_to_SVV\",\"buckets\":1000,\"state\":3,\"published_on\":\"2022-10-19
-        07:33:44\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"2023-02-08
-        13:44:17\",\"parameters\":[{\"id\":4442,\"name\":\"should_direct_to_svv\",\"choice\":\"variant\",\"weight\":1},{\"id\":4443,\"name\":\"should_direct_to_svv\",\"choice\":\"control\",\"weight\":1}],\"segments\":[]}]},\"JS.PurchaseSeatsOnboarding\":{\"id\":981,\"name\":\"JS.PurchaseSeatsOnboarding\",\"buckets\":1000,\"input\":\"cuid\",\"url\":\"\\/store\\/receipt\\/seat_subscription\",\"experiments\":[{\"id\":2811,\"name\":\"10
-        rollout\",\"buckets\":100,\"state\":2,\"published_on\":\"2023-02-13 16:52:26\",\"paused_on\":\"2023-02-14
-        15:25:49\",\"stopped_on\":\"0000-00-00 00:00:00\",\"parameters\":[{\"id\":4627,\"name\":\"can_purchase_seats\",\"choice\":\"control\",\"weight\":1},{\"id\":4628,\"name\":\"can_purchase_seats\",\"choice\":\"variant\",\"weight\":1}],\"segments\":[]}]},\"JS.Editor.TemplatesInspector\":{\"id\":966,\"name\":\"JS.Editor.TemplatesInspector\",\"buckets\":1000,\"input\":\"cuid\",\"url\":\"\\/create\\/customize\\/\",\"experiments\":[{\"id\":2720,\"name\":\"show_templates_inspector\",\"buckets\":1000,\"state\":3,\"published_on\":\"2022-11-13
-        06:39:11\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"2023-01-03
-        09:03:15\",\"parameters\":[{\"id\":4498,\"name\":\"show_templates_inspector\",\"choice\":\"control\",\"weight\":1},{\"id\":4499,\"name\":\"show_templates_inspector\",\"choice\":\"variant\",\"weight\":0}],\"segments\":[]},{\"id\":2786,\"name\":\"show_templates_inspector_2\",\"buckets\":1000,\"state\":3,\"published_on\":\"2023-01-03
-        09:07:22\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"2023-01-08
-        04:18:17\",\"parameters\":[{\"id\":4579,\"name\":\"show_templates_inspector\",\"choice\":\"variant\",\"weight\":0},{\"id\":4580,\"name\":\"show_templates_inspector\",\"choice\":\"control\",\"weight\":1}],\"segments\":[]},{\"id\":2787,\"name\":\"show_templates_inspector_200\",\"buckets\":200,\"state\":3,\"published_on\":\"2023-01-08
-        04:19:44\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"2023-02-13
-        02:17:42\",\"parameters\":[{\"id\":4581,\"name\":\"show_templates_inspector\",\"choice\":\"variant\",\"weight\":1},{\"id\":4582,\"name\":\"show_templates_inspector\",\"choice\":\"control\",\"weight\":1}],\"segments\":[]},{\"id\":2788,\"name\":\"show_templates_inspector_400\",\"buckets\":200,\"state\":3,\"published_on\":\"2023-01-10
-        05:29:49\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"2023-02-13
-        02:17:33\",\"parameters\":[{\"id\":4583,\"name\":\"show_templates_inspector\",\"choice\":\"variant\",\"weight\":1},{\"id\":4584,\"name\":\"show_templates_inspector\",\"choice\":\"control\",\"weight\":1}],\"segments\":[]},{\"id\":2789,\"name\":\"show_templates_inspector_1000\",\"buckets\":600,\"state\":3,\"published_on\":\"2023-01-11
-        03:31:21\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"2023-02-13
-        02:17:25\",\"parameters\":[{\"id\":4585,\"name\":\"show_templates_inspector\",\"choice\":\"variant\",\"weight\":1},{\"id\":4586,\"name\":\"show_templates_inspector\",\"choice\":\"control\",\"weight\":1}],\"segments\":[]},{\"id\":2813,\"name\":\"show_templates_inspector_clode
-        on variant \",\"buckets\":1000,\"state\":1,\"published_on\":\"2023-02-13 02:18:30\",\"paused_on\":\"0000-00-00
-        00:00:00\",\"stopped_on\":\"0000-00-00 00:00:00\",\"parameters\":[{\"id\":4631,\"name\":\"show_templates_inspector\",\"choice\":\"variant\",\"weight\":1}],\"segments\":[]}]}};\n
+        00:00:00\",\"parameters\":[{\"id\":4595,\"name\":\"tag_videos_on_download\",\"choice\":\"true\",\"weight\":1},{\"id\":4596,\"name\":\"tag_videos_on_download\",\"choice\":\"false\",\"weight\":0}],\"segments\":[]}]},\"JS.Editor.dragonfly\":{\"id\":908,\"name\":\"JS.Editor.dragonfly\",\"buckets\":1000,\"input\":\"cuid\",\"url\":\"\\/manage\\/videos\\/create\\/customize\",\"experiments\":[{\"id\":2532,\"name\":\"show_dragonfly\",\"buckets\":1000,\"state\":3,\"published_on\":\"2022-07-26
+        08:53:25\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"2022-07-28
+        02:22:23\",\"parameters\":[{\"id\":4197,\"name\":\"show_dragonfly\",\"choice\":\"variant\",\"weight\":1},{\"id\":4198,\"name\":\"show_dragonfly\",\"choice\":\"control\",\"weight\":1}],\"segments\":[]},{\"id\":2544,\"name\":\"show_dragonfly
+        100%\",\"buckets\":1000,\"state\":1,\"published_on\":\"2022-07-28 02:24:08\",\"paused_on\":\"0000-00-00
+        00:00:00\",\"stopped_on\":\"0000-00-00 00:00:00\",\"parameters\":[{\"id\":4215,\"name\":\"show_dragonfly\",\"choice\":\"variant\",\"weight\":1}],\"segments\":[]}]},\"JS.Editor.showToolbar\":{\"id\":897,\"name\":\"JS.Editor.showToolbar\",\"buckets\":1000,\"input\":\"cuid\",\"url\":\"vimeo.com\\/create\\/customize\",\"experiments\":[{\"id\":2514,\"name\":\"Show
+        tool bar (10%)\",\"buckets\":100,\"state\":3,\"published_on\":\"2022-07-11
+        15:16:45\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"2022-07-24
+        03:58:18\",\"parameters\":[{\"id\":4167,\"name\":\"show_toolbar\",\"choice\":\"control\",\"weight\":1},{\"id\":4168,\"name\":\"show_toolbar\",\"choice\":\"variant\",\"weight\":1}],\"segments\":[]},{\"id\":2516,\"name\":\"Show
+        tool bar (90%)\",\"buckets\":900,\"state\":3,\"published_on\":\"2022-07-13
+        04:19:20\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"2022-07-24
+        03:58:28\",\"parameters\":[{\"id\":4171,\"name\":\"show_toolbar\",\"choice\":\"control\",\"weight\":1},{\"id\":4172,\"name\":\"show_toolbar\",\"choice\":\"variant\",\"weight\":1}],\"segments\":[]},{\"id\":2535,\"name\":\"Show
+        tool bar (close test)\",\"buckets\":1000,\"state\":1,\"published_on\":\"2022-07-24
+        03:59:28\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"0000-00-00
+        00:00:00\",\"parameters\":[{\"id\":4203,\"name\":\"show_toolbar\",\"choice\":\"variant\",\"weight\":1}],\"segments\":[]}]},\"JS.Settings.Cancellation.Germany\":{\"id\":895,\"name\":\"JS.Settings.Cancellation.Germany\",\"buckets\":1000,\"input\":\"cuid\",\"url\":\"\\/settings\\/billing\\/membership_plan\",\"experiments\":[{\"id\":2487,\"name\":\"Germany
+        Region\",\"buckets\":1000,\"state\":1,\"published_on\":\"2022-07-01 09:38:18\",\"paused_on\":\"0000-00-00
+        00:00:00\",\"stopped_on\":\"0000-00-00 00:00:00\",\"parameters\":[{\"id\":4129,\"name\":\"cancel_in_survey\",\"choice\":\"control\",\"weight\":0},{\"id\":4130,\"name\":\"cancel_in_survey\",\"choice\":\"variant\",\"weight\":1}],\"segments\":[{\"id\":286,\"type\":\"location\",\"include\":1,\"values\":[\"DE\"]}]}]},\"JS.Create.Record\":{\"id\":890,\"name\":\"JS.Create.Record\",\"buckets\":1000,\"input\":\"cuid\",\"url\":\"\\/create\\/templates\",\"experiments\":[{\"id\":2474,\"name\":\"CreateRecord\",\"buckets\":200,\"state\":3,\"published_on\":\"2022-06-21
+        09:44:03\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"2022-07-17
+        10:22:20\",\"parameters\":[{\"id\":4110,\"name\":\"create_record_test\",\"choice\":\"control\",\"weight\":1},{\"id\":4111,\"name\":\"create_record_test\",\"choice\":\"variant\",\"weight\":1}],\"segments\":[]},{\"id\":2481,\"name\":\"CreateRecord
+        100%\",\"buckets\":800,\"state\":3,\"published_on\":\"2022-06-27 05:26:22\",\"paused_on\":\"0000-00-00
+        00:00:00\",\"stopped_on\":\"2022-07-17 10:22:28\",\"parameters\":[{\"id\":4120,\"name\":\"create_record_test\",\"choice\":\"
+        control\",\"weight\":1},{\"id\":4121,\"name\":\"create_record_test\",\"choice\":\"
+        variant\",\"weight\":1}],\"segments\":[]},{\"id\":2524,\"name\":\"Create_Record
+        100%\",\"buckets\":1000,\"state\":1,\"published_on\":\"2022-07-17 10:24:30\",\"paused_on\":\"0000-00-00
+        00:00:00\",\"stopped_on\":\"0000-00-00 00:00:00\",\"parameters\":[{\"id\":4184,\"name\":\"create_record_test\",\"choice\":\"variant\",\"weight\":1}],\"segments\":[]}]},\"JS.RecordExtension.Notifications\":{\"id\":883,\"name\":\"JS.RecordExtension.Notifications\",\"buckets\":1000,\"input\":\"vuid\",\"url\":\"\\/\",\"experiments\":[{\"id\":2470,\"name\":\"*
+        * Notifications V1 3\",\"buckets\":1000,\"state\":3,\"published_on\":\"2022-06-19
+        16:01:57\",\"paused_on\":\"2022-06-19 16:03:30\",\"stopped_on\":\"2022-06-19
+        16:03:55\",\"parameters\":[{\"id\":4102,\"name\":\"show_notifications\",\"choice\":\"variant\",\"weight\":1},{\"id\":4103,\"name\":\"show_notifications\",\"choice\":\"control\",\"weight\":0}],\"segments\":[]},{\"id\":2469,\"name\":\"*
+        Notifications V1 2\",\"buckets\":1000,\"state\":3,\"published_on\":\"2022-06-19
+        16:04:06\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"2022-06-19
+        16:10:54\",\"parameters\":[{\"id\":4100,\"name\":\"show_notifications\",\"choice\":\"variant\",\"weight\":0},{\"id\":4101,\"name\":\"show_notifications\",\"choice\":\"control\",\"weight\":1}],\"segments\":[]},{\"id\":2471,\"name\":\"*
+        * * Notifications V1 4\",\"buckets\":1000,\"state\":3,\"published_on\":\"2022-06-19
+        16:11:36\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"2022-06-23
+        04:29:15\",\"parameters\":[{\"id\":4104,\"name\":\"show_notifications\",\"choice\":\"variant\",\"weight\":1},{\"id\":4105,\"name\":\"show_notifications\",\"choice\":\"control\",\"weight\":0}],\"segments\":[]},{\"id\":2490,\"name\":\"*
+        * * * Notifications V1 5\",\"buckets\":1000,\"state\":3,\"published_on\":\"2022-07-01
+        07:38:29\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"2022-07-01
+        07:47:44\",\"parameters\":[{\"id\":4134,\"name\":\"show_notifications\",\"choice\":\"variant\",\"weight\":1},{\"id\":4135,\"name\":\"show_notifications\",\"choice\":\"control\",\"weight\":0}],\"segments\":[]},{\"id\":2459,\"name\":\"Notifications
+        V1\",\"buckets\":1000,\"state\":1,\"published_on\":\"2022-07-06 10:22:48\",\"paused_on\":\"0000-00-00
+        00:00:00\",\"stopped_on\":\"0000-00-00 00:00:00\",\"parameters\":[{\"id\":4090,\"name\":\"show_notifications\",\"choice\":\"variant\",\"weight\":1},{\"id\":4091,\"name\":\"show_notifications\",\"choice\":\"control\",\"weight\":1}],\"segments\":[]}]},\"JS.LOHP.FullPageRedesign\":{\"id\":882,\"name\":\"JS.LOHP.FullPageRedesign\",\"buckets\":1000,\"input\":\"vuid\",\"url\":\"https:\\/\\/vimeo.com\\/\",\"experiments\":[{\"id\":2456,\"name\":\"Home
+        page - New Version - All Users\",\"buckets\":1000,\"state\":3,\"published_on\":\"2022-06-14
+        16:21:30\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"2022-06-28
+        01:19:38\",\"parameters\":[{\"id\":4085,\"name\":\"show_page\",\"choice\":\"variant\",\"weight\":1}],\"segments\":[]},{\"id\":2483,\"name\":\"Home
+        page Mobile Test\",\"buckets\":1000,\"state\":3,\"published_on\":\"2022-06-28
+        01:20:42\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"2022-08-12
+        09:43:58\",\"parameters\":[{\"id\":4123,\"name\":\"show_page\",\"choice\":\"control\",\"weight\":1},{\"id\":4124,\"name\":\"show_page\",\"choice\":\"variant\",\"weight\":1}],\"segments\":[]},{\"id\":2561,\"name\":\"Variant
+        to 100% users\",\"buckets\":1000,\"state\":1,\"published_on\":\"2022-08-12
+        09:45:07\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"0000-00-00
+        00:00:00\",\"parameters\":[{\"id\":4248,\"name\":\"show_page\",\"choice\":\"variant\",\"weight\":1}],\"segments\":[]}]},\"JS.RecordExtension.Checklist\":{\"id\":868,\"name\":\"JS.RecordExtension.Checklist\",\"buckets\":1000,\"input\":\"vuid\",\"url\":\"\\/\",\"experiments\":[{\"id\":2393,\"name\":\"CLS1\",\"buckets\":1000,\"state\":3,\"published_on\":\"2022-05-24
+        06:11:07\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"2022-05-24
+        06:18:08\",\"parameters\":[{\"id\":3998,\"name\":\"show_checklist\",\"choice\":\"variant\",\"weight\":1},{\"id\":3999,\"name\":\"show_checklist\",\"choice\":\"control\",\"weight\":1}],\"segments\":[]},{\"id\":2415,\"name\":\"*
+        CLS1\",\"buckets\":1000,\"state\":3,\"published_on\":\"2022-05-24 06:18:57\",\"paused_on\":\"0000-00-00
+        00:00:00\",\"stopped_on\":\"2022-05-24 06:52:27\",\"parameters\":[{\"id\":4028,\"name\":\"show_checklist\",\"choice\":\"variant\",\"weight\":1}],\"segments\":[]},{\"id\":2416,\"name\":\"*
+        * CLS1\",\"buckets\":1000,\"state\":3,\"published_on\":\"2022-05-24 06:53:01\",\"paused_on\":\"0000-00-00
+        00:00:00\",\"stopped_on\":\"2022-05-30 09:42:21\",\"parameters\":[{\"id\":4029,\"name\":\"show_checklist\",\"choice\":\"variant\",\"weight\":1}],\"segments\":[]},{\"id\":2436,\"name\":\"*
+        * * CLS1\",\"buckets\":1000,\"state\":3,\"published_on\":\"2022-05-31 08:40:44\",\"paused_on\":\"0000-00-00
+        00:00:00\",\"stopped_on\":\"2022-06-01 04:39:01\",\"parameters\":[{\"id\":4055,\"name\":\"show_checklist\",\"choice\":\"variant\",\"weight\":1}],\"segments\":[]},{\"id\":2442,\"name\":\"Checklist
+        v1\",\"buckets\":500,\"state\":3,\"published_on\":\"2022-06-07 05:27:24\",\"paused_on\":\"0000-00-00
+        00:00:00\",\"stopped_on\":\"2022-07-29 10:15:31\",\"parameters\":[{\"id\":4066,\"name\":\"show_checklist\",\"choice\":\"variant\",\"weight\":1},{\"id\":4067,\"name\":\"show_checklist\",\"choice\":\"control\",\"weight\":1}],\"segments\":[]},{\"id\":2546,\"name\":\"Checklist
+        v1 - rollout\",\"buckets\":1000,\"state\":1,\"published_on\":\"2022-07-29
+        10:16:00\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"0000-00-00
+        00:00:00\",\"parameters\":[{\"id\":4219,\"name\":\"show_checklist\",\"choice\":\"variant\",\"weight\":1}],\"segments\":[]}]},\"JS.SVV.Omnisearch\":{\"id\":864,\"name\":\"JS.SVV.Omnisearch\",\"buckets\":1000,\"input\":\"cuid\",\"url\":\"\\/manage\\/videos\\/:videoId,
+        \\/:videoId\",\"experiments\":[{\"id\":2384,\"name\":\"Omnisearch in SVV\",\"buckets\":1000,\"state\":3,\"published_on\":\"2022-05-24
+        13:45:47\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"2022-12-14
+        17:10:32\",\"parameters\":[{\"id\":3983,\"name\":\"show_omnisearch\",\"choice\":\"variant\",\"weight\":1},{\"id\":3984,\"name\":\"show_omnisearch\",\"choice\":\"control\",\"weight\":1}],\"segments\":[]},{\"id\":2776,\"name\":\"100%
+        roll - Omnisearch in SVV\",\"buckets\":1000,\"state\":1,\"published_on\":\"2022-12-14
+        17:11:00\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"0000-00-00
+        00:00:00\",\"parameters\":[{\"id\":4570,\"name\":\"show_omnisearch\",\"choice\":\"variant\",\"weight\":1}],\"segments\":[]}]},\"JS.RecordExtension.SignUpWall\":{\"id\":849,\"name\":\"JS.RecordExtension.SignUpWall\",\"buckets\":1000,\"input\":\"vuid\",\"url\":\"\\/\",\"experiments\":[{\"id\":2325,\"name\":\"Record
+        Extension SignUp Wall\",\"buckets\":0,\"state\":3,\"published_on\":\"2022-04-28
+        08:53:50\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"2022-04-28
+        08:55:56\",\"parameters\":[{\"id\":3912,\"name\":\"force_sign_up_wall\",\"choice\":\"variant\",\"weight\":1},{\"id\":3913,\"name\":\"force_sign_up_wall\",\"choice\":\"control\",\"weight\":1}],\"segments\":[]},{\"id\":2352,\"name\":\"*
+        Record Extension SignUp Wall\",\"buckets\":1000,\"state\":3,\"published_on\":\"2022-04-28
+        08:56:29\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"2022-04-29
+        10:37:52\",\"parameters\":[{\"id\":3939,\"name\":\"force_sign_up_wall\",\"choice\":\"variant\",\"weight\":1},{\"id\":3940,\"name\":\"force_sign_up_wall\",\"choice\":\"control\",\"weight\":0}],\"segments\":[]},{\"id\":2439,\"name\":\"Record
+        Extension SignUp Wall - prod\",\"buckets\":500,\"state\":3,\"published_on\":\"2022-06-07
+        05:20:10\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"2022-06-29
+        11:03:57\",\"parameters\":[{\"id\":4060,\"name\":\"force_sign_up_wall\",\"choice\":\"variant\",\"weight\":1},{\"id\":4061,\"name\":\"force_sign_up_wall\",\"choice\":\"control\",\"weight\":1}],\"segments\":[]},{\"id\":2486,\"name\":\"Record
+        Extension SignUp Wall \\u043c2 - prod\",\"buckets\":1000,\"state\":3,\"published_on\":\"2022-06-29
+        11:06:04\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"2022-07-04
+        11:45:47\",\"parameters\":[{\"id\":4127,\"name\":\"force_sign_up_wall\",\"choice\":\"variant\",\"weight\":1},{\"id\":4128,\"name\":\"force_sign_up_wall\",\"choice\":\"control\",\"weight\":1}],\"segments\":[]},{\"id\":2500,\"name\":\"Record
+        Extension SignUp Wall v2 - prod\",\"buckets\":1000,\"state\":3,\"published_on\":\"2022-07-06
+        10:25:18\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"2022-08-09
+        08:02:41\",\"parameters\":[{\"id\":4147,\"name\":\"force_sign_up_wall\",\"choice\":\"variant\",\"weight\":1},{\"id\":4148,\"name\":\"force_sign_up_wall\",\"choice\":\"control\",\"weight\":1}],\"segments\":[]},{\"id\":2556,\"name\":\"Record
+        Extension SignUp Wall v2 - prod (A\\/A\\/B\\/B)\",\"buckets\":1000,\"state\":3,\"published_on\":\"2022-08-09
+        08:03:46\",\"paused_on\":\"2022-08-09 08:03:57\",\"stopped_on\":\"2022-08-09
+        08:04:57\",\"parameters\":[{\"id\":4237,\"name\":\"force_sign_up_wall\",\"choice\":\"variant\",\"weight\":1},{\"id\":4238,\"name\":\"force_sign_up_wall\",\"choice\":\"control\",\"weight\":1}],\"segments\":[]},{\"id\":2557,\"name\":\"Record
+        Extension SignUp Wall v2 - prod (A\\/A\\/B\\/B) I\",\"buckets\":500,\"state\":3,\"published_on\":\"2022-08-09
+        08:51:06\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"2022-09-22
+        07:49:32\",\"parameters\":[{\"id\":4240,\"name\":\"force_sign_up_wall\",\"choice\":\"variant\",\"weight\":1},{\"id\":4241,\"name\":\"force_sign_up_wall\",\"choice\":\"control\",\"weight\":1}],\"segments\":[]},{\"id\":2558,\"name\":\"Record
+        Extension SignUp Wall v2 - prod (A\\/A\\/B\\/B) II\",\"buckets\":500,\"state\":3,\"published_on\":\"2022-08-09
+        08:51:12\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"2022-09-22
+        07:49:27\",\"parameters\":[{\"id\":4242,\"name\":\"force_sign_up_wall\",\"choice\":\"variant\",\"weight\":1},{\"id\":4243,\"name\":\"force_sign_up_wall\",\"choice\":\"control\",\"weight\":1}],\"segments\":[]},{\"id\":2632,\"name\":\"Record
+        Extension SignUp Wall - Rollout\",\"buckets\":1000,\"state\":3,\"published_on\":\"2022-09-22
+        07:50:08\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"2022-09-22
+        08:51:51\",\"parameters\":[],\"segments\":[]},{\"id\":2635,\"name\":\"* Record
+        Extension SignUp Wall - Rollout\",\"buckets\":1000,\"state\":1,\"published_on\":\"2022-09-22
+        08:52:14\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"0000-00-00
+        00:00:00\",\"parameters\":[{\"id\":4357,\"name\":\"force_sign_up_wall\",\"choice\":\"variant\",\"weight\":1}],\"segments\":[]}]},\"JS.VideoManager.LeftNewVideo.SkipEventCreationModal\":{\"id\":837,\"name\":\"JS.VideoManager.LeftNewVideo.SkipEventCreationModal\",\"buckets\":1000,\"input\":\"cuid\",\"url\":\"\\/\",\"experiments\":[{\"id\":2283,\"name\":\"Show
+        OLE Deprecation Modal\",\"buckets\":100,\"state\":1,\"published_on\":\"2022-04-12
+        12:07:50\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"0000-00-00
+        00:00:00\",\"parameters\":[{\"id\":3858,\"name\":\"vm_skip_event_creation_modal\",\"choice\":\"variant\",\"weight\":1},{\"id\":3859,\"name\":\"vm_skip_event_creation_modal\",\"choice\":\"control\",\"weight\":1}],\"segments\":[]},{\"id\":2285,\"name\":\"*
+        Show OLE Deprecation Modal\",\"buckets\":100,\"state\":1,\"published_on\":\"2022-04-13
+        14:14:30\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"0000-00-00
+        00:00:00\",\"parameters\":[{\"id\":3861,\"name\":\"vm_skip_event_creation_modal\",\"choice\":\"variant\",\"weight\":1},{\"id\":3862,\"name\":\"vm_skip_event_creation_modal\",\"choice\":\"control\",\"weight\":1}],\"segments\":[]},{\"id\":2323,\"name\":\"*
+        * Show OLE Deprecation Modal\",\"buckets\":800,\"state\":1,\"published_on\":\"2022-04-18
+        17:27:53\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"0000-00-00
+        00:00:00\",\"parameters\":[{\"id\":3908,\"name\":\"vm_skip_event_creation_modal\",\"choice\":\"variant\",\"weight\":1},{\"id\":3909,\"name\":\"vm_skip_event_creation_modal\",\"choice\":\"control\",\"weight\":1}],\"segments\":[]}]},\"JS.Webinar.RegistrantCapForPremium\":{\"id\":820,\"name\":\"JS.Webinar.RegistrantCapForPremium\",\"buckets\":1000,\"input\":\"vuid\",\"url\":\"upgrade,
+        checkout and marketing pages\",\"experiments\":[{\"id\":2243,\"name\":\"Rollout
+        to 10% traffic\",\"buckets\":100,\"state\":2,\"published_on\":\"2022-06-01
+        05:27:17\",\"paused_on\":\"2022-07-01 14:31:45\",\"stopped_on\":\"0000-00-00
+        00:00:00\",\"parameters\":[{\"id\":3803,\"name\":\"show_premium_registrant_cap\",\"choice\":\"control\",\"weight\":1},{\"id\":3804,\"name\":\"show_premium_registrant_cap\",\"choice\":\"variant\",\"weight\":1}],\"segments\":[]},{\"id\":2438,\"name\":\"*
+        Rollout to 40% traffic\",\"buckets\":400,\"state\":2,\"published_on\":\"2022-06-06
+        11:14:01\",\"paused_on\":\"2022-07-01 14:31:58\",\"stopped_on\":\"0000-00-00
+        00:00:00\",\"parameters\":[{\"id\":4058,\"name\":\"show_premium_registrant_cap\",\"choice\":\"control\",\"weight\":1},{\"id\":4059,\"name\":\"show_premium_registrant_cap\",\"choice\":\"variant\",\"weight\":1}],\"segments\":[]},{\"id\":2444,\"name\":\"*
+        * Rollout to 50% traffic\",\"buckets\":500,\"state\":2,\"published_on\":\"2022-06-08
+        00:05:31\",\"paused_on\":\"2022-07-01 14:32:04\",\"stopped_on\":\"0000-00-00
+        00:00:00\",\"parameters\":[{\"id\":4069,\"name\":\"show_premium_registrant_cap\",\"choice\":\"control\",\"weight\":1},{\"id\":4070,\"name\":\"show_premium_registrant_cap\",\"choice\":\"variant\",\"weight\":1}],\"segments\":[]}]},\"JS.Editor.BlankEditor\":{\"id\":811,\"name\":\"JS.Editor.BlankEditor\",\"buckets\":1000,\"input\":\"cuid\",\"url\":\"https:\\/\\/vimeo.com\\/create\\/customize\",\"experiments\":[{\"id\":2176,\"name\":\"BlankEditor\",\"buckets\":100,\"state\":3,\"published_on\":\"2022-04-27
+        04:31:24\",\"paused_on\":\"2022-07-04 00:58:53\",\"stopped_on\":\"2022-07-04
+        01:00:04\",\"parameters\":[{\"id\":3728,\"name\":\"show_blank_editor\",\"choice\":\"control\",\"weight\":1},{\"id\":3729,\"name\":\"show_blank_editor\",\"choice\":\"variant\",\"weight\":1}],\"segments\":[]},{\"id\":2346,\"name\":\"BlankEditor
+        (20%)\",\"buckets\":100,\"state\":3,\"published_on\":\"2022-04-27 04:38:05\",\"paused_on\":\"2022-07-04
+        00:58:48\",\"stopped_on\":\"2022-07-04 00:59:58\",\"parameters\":[{\"id\":3931,\"name\":\"show_blank_editor\",\"choice\":\"control\",\"weight\":1},{\"id\":3932,\"name\":\"show_blank_editor\",\"choice\":\"variant\",\"weight\":1}],\"segments\":[]},{\"id\":2386,\"name\":\"BlankEditor
+        (100%)\",\"buckets\":800,\"state\":3,\"published_on\":\"2022-05-12 05:31:09\",\"paused_on\":\"2022-07-04
+        00:58:40\",\"stopped_on\":\"2022-07-04 00:59:52\",\"parameters\":[{\"id\":3986,\"name\":\"show_blank_editor\",\"choice\":\"control\",\"weight\":1},{\"id\":3987,\"name\":\"show_blank_editor\",\"choice\":\"variant\",\"weight\":1}],\"segments\":[]},{\"id\":2491,\"name\":\"BlankEditor
+        (1000%)\",\"buckets\":1000,\"state\":1,\"published_on\":\"2022-07-04 01:00:59\",\"paused_on\":\"0000-00-00
+        00:00:00\",\"stopped_on\":\"0000-00-00 00:00:00\",\"parameters\":[{\"id\":4136,\"name\":\"show_blank_editor\",\"choice\":\"variant\",\"weight\":1}],\"segments\":[]}]},\"JS.Editor.MasksGradualRelease\":{\"id\":807,\"name\":\"JS.Editor.MasksGradualRelease\",\"buckets\":1000,\"input\":\"cuid\",\"url\":\"https:\\/\\/vimeo.com\\/create\\/customize\",\"experiments\":[{\"id\":2164,\"name\":\"MasksGradualRelease\",\"buckets\":200,\"state\":3,\"published_on\":\"2022-03-30
+        02:29:07\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"2022-04-26
+        08:08:43\",\"parameters\":[{\"id\":3707,\"name\":\"support_masks\",\"choice\":\"variant\",\"weight\":1},{\"id\":3708,\"name\":\"support_masks\",\"choice\":\"control\",\"weight\":1}],\"segments\":[]},{\"id\":2268,\"name\":\"_MasksGradualRelease\",\"buckets\":800,\"state\":3,\"published_on\":\"2022-04-05
+        08:41:27\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"2022-04-26
+        08:08:33\",\"parameters\":[{\"id\":3833,\"name\":\"support_masks\",\"choice\":\"variant\",\"weight\":1},{\"id\":3834,\"name\":\"support_masks\",\"choice\":\"control\",\"weight\":1}],\"segments\":[]},{\"id\":2339,\"name\":\"___MasksGradualRelease\",\"buckets\":1000,\"state\":1,\"published_on\":\"2022-04-26
+        14:57:15\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"0000-00-00
+        00:00:00\",\"parameters\":[{\"id\":3928,\"name\":\"support_masks\",\"choice\":\"variant\",\"weight\":1}],\"segments\":[]}]},\"JS.Editor.PreviewWithoutSave\":{\"id\":787,\"name\":\"JS.Editor.PreviewWithoutSave\",\"buckets\":1000,\"input\":\"cuid\",\"url\":\"vimeo.com\\/create\\/customize\",\"experiments\":[{\"id\":2137,\"name\":\"Show
+        preview modal\",\"buckets\":10,\"state\":3,\"published_on\":\"2022-04-27 04:21:52\",\"paused_on\":\"0000-00-00
+        00:00:00\",\"stopped_on\":\"2022-05-31 04:14:53\",\"parameters\":[{\"id\":3656,\"name\":\"enable_preview_modal\",\"choice\":\"control\",\"weight\":1},{\"id\":3657,\"name\":\"enable_preview_modal\",\"choice\":\"variant\",\"weight\":1}],\"segments\":[]},{\"id\":2347,\"name\":\"Show
+        preview modal (205)\",\"buckets\":190,\"state\":3,\"published_on\":\"2022-04-27
+        04:39:52\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"2022-05-31
+        04:15:00\",\"parameters\":[{\"id\":3933,\"name\":\"enable_preview_modal\",\"choice\":\"control\",\"weight\":1},{\"id\":3934,\"name\":\"enable_preview_modal\",\"choice\":\"variant\",\"weight\":1}],\"segments\":[]},{\"id\":2355,\"name\":\"Show
+        preview modal (40%)\",\"buckets\":200,\"state\":3,\"published_on\":\"2022-05-02
+        07:05:49\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"2022-05-31
+        04:15:08\",\"parameters\":[{\"id\":3944,\"name\":\"enable_preview_modal\",\"choice\":\"control\",\"weight\":1},{\"id\":3945,\"name\":\"enable_preview_modal\",\"choice\":\"variant\",\"weight\":1}],\"segments\":[]},{\"id\":2359,\"name\":\"Show
+        preview modal (100%)\",\"buckets\":600,\"state\":3,\"published_on\":\"2022-05-03
+        11:22:59\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"2022-05-31
+        04:15:40\",\"parameters\":[{\"id\":3952,\"name\":\"enable_preview_modal\",\"choice\":\"control\",\"weight\":1},{\"id\":3953,\"name\":\"enable_preview_modal\",\"choice\":\"variant\",\"weight\":1}],\"segments\":[]},{\"id\":2435,\"name\":\"*
+        Show preview modal (100%)\",\"buckets\":1000,\"state\":1,\"published_on\":\"2022-05-31
+        04:21:58\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"0000-00-00
+        00:00:00\",\"parameters\":[{\"id\":4054,\"name\":\"enable_preview_modal\",\"choice\":\"variant\",\"weight\":1}],\"segments\":[]}]},\"JS.ClipPageEUBlock\":{\"id\":672,\"name\":\"JS.ClipPageEUBlock\",\"buckets\":1000,\"input\":\"vuid\",\"url\":\"\\/\",\"experiments\":[{\"id\":1810,\"name\":\"Initial
+        sampling of OFCOM population\",\"buckets\":100,\"state\":3,\"published_on\":\"2021-07-07
+        15:18:39\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"2021-08-10
+        15:04:14\",\"parameters\":[{\"id\":3149,\"name\":\"should_block\",\"choice\":\"control\",\"weight\":1},{\"id\":3150,\"name\":\"should_block\",\"choice\":\"variant\",\"weight\":1}],\"segments\":[]},{\"id\":1866,\"name\":\"90%
+        of EU\\/UK users see blocker\",\"buckets\":900,\"state\":1,\"published_on\":\"2021-08-16
+        11:19:56\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"0000-00-00
+        00:00:00\",\"parameters\":[{\"id\":3227,\"name\":\"should_block\",\"choice\":\"control\",\"weight\":1}],\"segments\":[]},{\"id\":1867,\"name\":\"10%
+        Experiment\",\"buckets\":100,\"state\":3,\"published_on\":\"2021-08-16 11:20:01\",\"paused_on\":\"0000-00-00
+        00:00:00\",\"stopped_on\":\"2022-04-06 16:39:46\",\"parameters\":[{\"id\":3228,\"name\":\"should_block\",\"choice\":\"control\",\"weight\":1},{\"id\":3229,\"name\":\"should_block\",\"choice\":\"variant\",\"weight\":1}],\"segments\":[]},{\"id\":2273,\"name\":\"the
+        remaining 10% of EU\\/UK users see blocker\",\"buckets\":100,\"state\":1,\"published_on\":\"2022-04-06
+        16:40:07\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"0000-00-00
+        00:00:00\",\"parameters\":[{\"id\":3841,\"name\":\"should_block\",\"choice\":\"control\",\"weight\":1}],\"segments\":[]}]},\"JS.Checkout.ApplePayDefaultSelected\":{\"id\":613,\"name\":\"JS.Checkout.ApplePayDefaultSelected\",\"buckets\":1000,\"input\":\"vuid\",\"url\":\"pro,
+        premium, plus, business checkout pages\",\"experiments\":[{\"id\":1618,\"name\":\"Apple
+        pay selected by default\",\"buckets\":100,\"state\":1,\"published_on\":\"2021-03-30
+        11:15:26\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"0000-00-00
+        00:00:00\",\"parameters\":[{\"id\":2827,\"name\":\"select_apple_pay_by_default\",\"choice\":\"control\",\"weight\":1},{\"id\":2828,\"name\":\"select_apple_pay_by_default\",\"choice\":\"variant\",\"weight\":1}],\"segments\":[]},{\"id\":1699,\"name\":\"+90%
+        - Apple pay selected by default\",\"buckets\":900,\"state\":1,\"published_on\":\"2021-04-05
+        17:38:05\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"0000-00-00
+        00:00:00\",\"parameters\":[{\"id\":2958,\"name\":\"select_apple_pay_by_default\",\"choice\":\"control\",\"weight\":1},{\"id\":2959,\"name\":\"select_apple_pay_by_default\",\"choice\":\"variant\",\"weight\":1}],\"segments\":[]}]},\"JS.Review.RegisterToComment\":{\"id\":601,\"name\":\"JS.Review.RegisterToComment\",\"buckets\":1000,\"input\":\"vuid\",\"url\":\"\\/:username\\/review\\/:clipId\\/:clipHash\",\"experiments\":[{\"id\":1589,\"name\":\"Register
+        to Comment 10%\",\"buckets\":100,\"state\":3,\"published_on\":\"2021-02-11
+        11:18:41\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"2021-03-01
+        11:51:10\",\"parameters\":[{\"id\":2787,\"name\":\"require_registration\",\"choice\":\"true\",\"weight\":1}],\"segments\":[]},{\"id\":1623,\"name\":\"Register
+        to Comment #2\",\"buckets\":100,\"state\":1,\"published_on\":\"2021-03-01
+        11:53:55\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"0000-00-00
+        00:00:00\",\"parameters\":[{\"id\":2837,\"name\":\"require_registration\",\"choice\":\"true\",\"weight\":1},{\"id\":2838,\"name\":\"require_registration\",\"choice\":\"false\",\"weight\":1}],\"segments\":[]}]}};\n
         \   </script>\n<script>\n(function() {\n    window._gtm = [{\"exception_http_code\":451,\"language\":\"en\",\"user_status\":\"logged_out\",\"user_type\":\"none\",\"ga_universal_id\":\"UA-76641-8\",\"comscore_site_id\":10348289}];\n\n
         \       var gdprCookie = (document.cookie.match(/^(?:.*;)?\\s*vimeo_gdpr_optin\\s*=\\s*([^;]+)(?:.*)?$/)||[,null])[1];\n
         \   if (gdprCookie === '-1') {\n        return;\n    }\n\n        window._gtm.push({\n
@@ -2272,9 +2301,9 @@ http_interactions:
         \       var CSS_DIR = 'https://f.vimeocdn.com/styles/css_opt/',\n        JS_DIR
         = 'https://f.vimeocdn.com/js_opt/',\n        IMAGE_DIR = 'https://f.vimeocdn.com/images_v6/',\n
         \       FONT_DIR = 'https://f.vimeocdn.com/fonts/',\n        SVG_DIR = 'https://f.vimeocdn.com/svg/',\n
-        \               BUILD_HASH = 'b3341';\n\n    \n        var vimeo = _extend((window.vimeo
+        \               BUILD_HASH = 'f32b3';\n\n    \n        var vimeo = _extend((window.vimeo
         || {}), {\"app_version\":\"v6\",\"domain\":\"vimeo.com\",\"url\":\"vimeo.com\",\"cur_user\":false,\"origin_user_id\":null,\"origin_user\":false,\"is_mobile\":false,\"is_record_tool_supported\":false});\n
-        \   vimeo.config = _extend((vimeo.config || {}), {\"sticky_topnav\":{\"excluded_pages\":[\"Vimeo\\\\Controller\\\\AboutController:main\",\"Vimeo\\\\Controller\\\\AboutController:professionals\",\"Vimeo\\\\Controller\\\\HomeController:upgrade\",\"Vimeo\\\\Controller\\\\StoreController:main\",\"Vimeo\\\\Controller\\\\User\\\\Settings2Controller:main\",\"Vimeo\\\\Controller\\\\User\\\\Settings2Controller:team_members\",\"Vimeo\\\\Controller\\\\User\\\\Settings2Controller:password\",\"Vimeo\\\\Controller\\\\ProfileController:main\",\"Vimeo\\\\Controller\\\\ClipStatsController:main\",\"Vimeo\\\\Controller\\\\Clip\\\\Settings\\\\EmbedController:embed\",\"Vimeo\\\\Controller\\\\VideoManagerController\",\"Vimeo\\\\Controller\\\\VideoReviewController\",\"Vimeo\\\\Controller\\\\MessagesController\",\"Vimeo\\\\Controller\\\\StatsController\",\"Vimeo\\\\Controller\\\\UploadController\",\"Vimeo\\\\Controller\\\\OnDemand\\\\SettingsController\",\"Vimeo\\\\Controller\\\\Clip\\\\SettingsController\"],\"sticky_included_pages\":[\"Vimeo\\\\Controller\\\\Stock\\\\StockHomePageController\",\"Vimeo\\\\Controller\\\\Stock\\\\StockFootageController\",\"Vimeo\\\\Controller\\\\Stock\\\\StockSearchController\",\"Vimeo\\\\Controller\\\\Stock\\\\StockCollectionsController\",\"Vimeo\\\\Controller\\\\AlbumController\"],\"topnav_wrap_selector\":\"#topnav_outer_wrap\",\"content_wrap_selector\":\".wrap_content\"},\"locale\":\"en\",\"omnisearch_jwt\":\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NzY5MTg4ODAsInVzZXJfaWQiOm51bGwsImFwcF9pZCI6NTg0NzksInNjb3BlcyI6InB1YmxpYyBwcml2YXRlIGRlbGV0ZSIsInRlYW1fdXNlcl9pZCI6bnVsbH0.-D7PJsIzGINgurZlbG73mcMeCU3tVX2OwoB2bFQJWHg\",\"omnisearch_user\":null,\"api_url\":\"api.vimeo.com\",\"has_video_library_search\":false,\"magisto_api_host\":\"vimeo.magisto.com\",\"has_public_search_disabled\":false,\"has_no_vls_on_enter\":false,\"has_auto_closed_captions\":false,\"has_ocr_search\":false});\n\n
+        \   vimeo.config = _extend((vimeo.config || {}), {\"sticky_topnav\":{\"excluded_pages\":[\"Vimeo\\\\Controller\\\\AboutController:main\",\"Vimeo\\\\Controller\\\\AboutController:professionals\",\"Vimeo\\\\Controller\\\\HomeController:upgrade\",\"Vimeo\\\\Controller\\\\StoreController:main\",\"Vimeo\\\\Controller\\\\User\\\\Settings2Controller:main\",\"Vimeo\\\\Controller\\\\User\\\\Settings2Controller:team_members\",\"Vimeo\\\\Controller\\\\User\\\\Settings2Controller:password\",\"Vimeo\\\\Controller\\\\ProfileController:main\",\"Vimeo\\\\Controller\\\\ClipStatsController:main\",\"Vimeo\\\\Controller\\\\Clip\\\\Settings\\\\EmbedController:embed\",\"Vimeo\\\\Controller\\\\VideoManagerController\",\"Vimeo\\\\Controller\\\\VideoReviewController\",\"Vimeo\\\\Controller\\\\MessagesController\",\"Vimeo\\\\Controller\\\\StatsController\",\"Vimeo\\\\Controller\\\\UploadController\",\"Vimeo\\\\Controller\\\\OnDemand\\\\SettingsController\",\"Vimeo\\\\Controller\\\\Clip\\\\SettingsController\"],\"sticky_included_pages\":[\"Vimeo\\\\Controller\\\\Stock\\\\StockHomePageController\",\"Vimeo\\\\Controller\\\\Stock\\\\StockFootageController\",\"Vimeo\\\\Controller\\\\Stock\\\\StockSearchController\",\"Vimeo\\\\Controller\\\\Stock\\\\StockCollectionsController\",\"Vimeo\\\\Controller\\\\AlbumController\"],\"topnav_wrap_selector\":\"#topnav_outer_wrap\",\"content_wrap_selector\":\".wrap_content\"},\"locale\":\"en\",\"omnisearch_jwt\":\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NzcwMTEyMjAsInVzZXJfaWQiOm51bGwsImFwcF9pZCI6NTg0NzksInNjb3BlcyI6InB1YmxpYyBwcml2YXRlIGRlbGV0ZSIsInRlYW1fdXNlcl9pZCI6bnVsbH0.AONJWL8LECuTHYkk73Oo5rYVEMewRrpBM6wZfZuJgs0\",\"omnisearch_user\":null,\"api_url\":\"api.vimeo.com\",\"has_video_library_search\":false,\"magisto_api_host\":\"vimeo.magisto.com\",\"has_public_search_disabled\":false,\"has_no_vls_on_enter\":false,\"has_auto_closed_captions\":false,\"has_ocr_search\":false});\n\n
         \       var __i18nLocale = 'en';\n    var localeConfig = {\n        lang:
         'en',\n        'Date': {\n            months: [\"January\",\"February\",\"March\",\"April\",\"May\",\"June\",\"July\",\"August\",\"September\",\"October\",\"November\",\"December\"],\n
         \           months_abbr: [\"Jan\",\"Feb\",\"Mar\",\"Apr\",\"May\",\"Jun\",\"Jul\",\"Aug\",\"Sep\",\"Oct\",\"Nov\",\"Dec\"],\n
@@ -2325,7 +2354,7 @@ http_interactions:
         \   <script src=\"https://f.vimeocdn.com/js_opt/topnav_cart_button_38844ae109d985f810e29a4e8b741826.min.js\"></script>\n
         \   <script src=\"https://f.vimeocdn.com/js_opt/_bundles/topnav_desktop.e19a1a4a204a5c5f5b98.bundle.min.js\"></script>\n
         \   <script src=\"https://f.vimeocdn.com/js_opt/_bundles/bp_tracking.422cc7f713b4335ba0fe.bundle.min.js\"></script>\n
-        \   <script src=\"https://f.vimeocdn.com/js_opt/global/do_not_sell_d5fcd26daea99f64c2aff42d22a5d0fa.min.js\"></script>\n\n
+        \   <script src=\"https://f.vimeocdn.com/js_opt/global/do_not_sell_4ea61859c1cd1de7767778c8014d1f73.min.js\"></script>\n\n
         \   <script async src=\"https://f.vimeocdn.com/js_opt/_bundles/create_facebook_header.d2acaa7a16f67aa2bc3d.bundle.min.js\"></script>\n
         \   <script>\n        function onVimeoDomReady(e) {\n                                                \n
         \     window.vimeo = window.vimeo || {};\n      window.vimeo.exception_data
@@ -2344,5 +2373,5 @@ http_interactions:
         \     new window.Exception();\n                            \n            \n
         \                   }\n\n                    $(document).ready(onVimeoDomReady);\n
         \           </script>\n\n    </body>\n</html>\n"
-  recorded_at: Mon, 20 Feb 2023 18:32:47 GMT
+  recorded_at: Tue, 21 Feb 2023 20:11:01 GMT
 recorded_with: VCR 6.1.0
