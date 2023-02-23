@@ -2,11 +2,11 @@ class VideoInfo
   module Providers
     class Wistia < Provider
       def self.usable?(url)
-        url.match? /(.*)(wistia.com|wistia.net|wi.st)/
+        url.match?(/(.*)(wistia.com|wistia.net|wi.st)/)
       end
 
       def provider
-        'Wistia'
+        "Wistia"
       end
 
       %w[title duration width height].each do |method|
@@ -22,26 +22,26 @@ class VideoInfo
       end
 
       def thumbnail_small
-        data['thumbnail_url']
+        data["thumbnail_url"]
       end
 
       def thumbnail_medium
-        data['thumbnail_url']
+        data["thumbnail_url"]
       end
 
       def thumbnail_large
-        data['thumbnail_url']
+        data["thumbnail_url"]
       end
 
       private
 
       def _url_regex
         %r{(?:.*)(?:wistia.com|wi.st|wistia.net)
-           \/(?:embed\/)?(?:medias\/)?(?:iframe\/)?(.+)}x
+           /(?:embed/)?(?:medias/)?(?:iframe/)?(.+)}x
       end
 
       def _api_base
-        'fast.wistia.com'
+        "fast.wistia.com"
       end
 
       def _api_path

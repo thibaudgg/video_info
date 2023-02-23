@@ -1,5 +1,5 @@
-require_relative 'youtubeplaylist_api'
-require_relative 'youtubeplaylist_scraper'
+require_relative "youtubeplaylist_api"
+require_relative "youtubeplaylist_scraper"
 
 class VideoInfo
   module Providers
@@ -18,7 +18,7 @@ class VideoInfo
       end
 
       def self.usable?(url)
-        url.match? /((youtube\.com)\/playlist)|((youtube\.com)\/embed\/videoseries)/
+        url.match?(/((youtube\.com)\/playlist)|((youtube\.com)\/embed\/videoseries)/)
       end
 
       def date
@@ -48,9 +48,9 @@ class VideoInfo
       private
 
       def _url_regex
-        %r{youtube.com\/playlist\?p=(\S*)|
-          youtube.com\/playlist\?list=(\S*)|
-          youtube.com\/embed\/videoseries\?list=([a-zA-Z0-9-]*)}x
+        %r{youtube.com/playlist\?p=(\S*)|
+          youtube.com/playlist\?list=(\S*)|
+          youtube.com/embed/videoseries\?list=([a-zA-Z0-9-]*)}x
       end
     end
   end

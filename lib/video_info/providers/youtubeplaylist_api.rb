@@ -3,13 +3,13 @@ class VideoInfo
     ITEMS_MAX_RESULTS = 50
 
     def available?
-      !data['items'].empty?
+      !data["items"].empty?
     rescue VideoInfo::HttpError
       false
     end
 
     def description
-      data['items'][0]['snippet']['description']
+      data["items"][0]["snippet"]["description"]
     end
 
     def date
@@ -35,33 +35,33 @@ class VideoInfo
     end
 
     def thumbnail_small
-      _video_snippet['thumbnails']['default']['url']
+      _video_snippet["thumbnails"]["default"]["url"]
     end
 
     def thumbnail_medium
-      _video_snippet['thumbnails']['medium']['url']
+      _video_snippet["thumbnails"]["medium"]["url"]
     end
 
     def thumbnail_large
-      _video_snippet['thumbnails']['high']['url']
+      _video_snippet["thumbnails"]["high"]["url"]
     end
 
     def thumbnail_large_2x
-      _video_snippet['thumbnails']['standard']['url']
+      _video_snippet["thumbnails"]["standard"]["url"]
     end
 
     def thumbnail_maxres
-      _video_snippet['thumbnails']['maxres']['url']
+      _video_snippet["thumbnails"]["maxres"]["url"]
     end
 
     private
 
     def _playlist_entry
-      data['items']
+      data["items"]
     end
 
     def _playlist_items
-      data['items']
+      data["items"]
     end
 
     def _api_path
@@ -69,7 +69,7 @@ class VideoInfo
     end
 
     def _playlist_items_api_path
-      '/youtube/v3/playlistItems?part=snippet&' \
+      "/youtube/v3/playlistItems?part=snippet&" \
       "playlistId=#{playlist_id}&fields=items&maxResults=#{ITEMS_MAX_RESULTS}&key=#{api_key}"
     end
 
@@ -82,8 +82,8 @@ class VideoInfo
     end
 
     def _playlist_video_ids
-      _playlist_items_data['items'].map do |item|
-        item['snippet']['resourceId']['videoId']
+      _playlist_items_data["items"].map do |item|
+        item["snippet"]["resourceId"]["videoId"]
       end
     end
   end

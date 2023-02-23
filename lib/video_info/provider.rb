@@ -1,6 +1,6 @@
-require 'open-uri'
-require 'json'
-require 'uri'
+require "open-uri"
+require "json"
+require "uri"
 
 class VideoInfo
   class Provider
@@ -15,7 +15,7 @@ class VideoInfo
 
     def self.usable?(_url)
       raise NotImplementedError.new(
-        'Provider class must implement .usable? public method'
+        "Provider class must implement .usable? public method"
       )
     end
 
@@ -26,7 +26,7 @@ class VideoInfo
         _default_iframe_attributes.merge(iframe_attributes)
       )
 
-      "<iframe #{iframe_attrs.reject(&:empty?).join(' ')}></iframe>"
+      "<iframe #{iframe_attrs.reject(&:empty?).join(" ")}></iframe>"
     end
 
     def data
@@ -57,7 +57,7 @@ class VideoInfo
       uri = URI.parse(_api_url)
       http = Net::HTTP.new(uri.host, uri.port)
 
-      if uri.scheme == 'https'
+      if uri.scheme == "https"
         _https_response_code(http)
       else
         _http_response_code(http)
@@ -78,7 +78,7 @@ class VideoInfo
 
     def _clean_options(options)
       options =
-        { 'User-Agent' => "VideoInfo/#{VideoInfo::VERSION}" }.merge(options)
+        {"User-Agent" => "VideoInfo/#{VideoInfo::VERSION}"}.merge(options)
       options.dup.each do |key, value|
         if _not_openuri_option_symbol?(key)
           options[_http_header_field(key)] = value
@@ -92,11 +92,11 @@ class VideoInfo
       _set_data_from_api_impl(api_url)
     rescue OpenURI::HTTPError, *NetHttpTimeoutErrors.all => e
       if e.instance_of?(OpenURI::HTTPError) &&
-         e.respond_to?(:io) &&
-         e.io.respond_to?(:status)
+          e.respond_to?(:io) &&
+          e.io.respond_to?(:status)
         response_code = e.io.status[0]
-        if response_code == '400'
-          log_warn('your API key is probably invalid. Please verify it.')
+        if response_code == "400"
+          log_warn("your API key is probably invalid. Please verify it.")
         end
       end
 
@@ -115,11 +115,11 @@ class VideoInfo
     end
 
     def _not_openuri_option_symbol?(key)
-      key.is_a?(Symbol) && !OpenURI::Options.keys.include?(key)
+      key.is_a?(Symbol) && !OpenURI::Options.key?(key)
     end
 
     def _http_header_field(key)
-      key.to_s.split(/[^a-z]/i).map(&:capitalize).join('-')
+      key.to_s.split(/[^a-z]/i).map(&:capitalize).join("-")
     end
 
     def _set_video_id_from_url
@@ -135,13 +135,13 @@ class VideoInfo
 
     def _url_regex
       raise NotImplementedError.new(
-        'Provider class must implement #_url_regex private method'
+        "Provider class must implement #_url_regex private method"
       )
     end
 
     def _api_url
       raise NotImplementedError.new(
-        'Provider class must implement #_api_url private method'
+        "Provider class must implement #_api_url private method"
       )
     end
 
@@ -156,7 +156,7 @@ class VideoInfo
 
     def _hash_to_attributes(hash)
       return unless hash.is_a?(Hash)
-      hash.map { |k, v| "#{k}=\"#{v}\"" }.join(' ')
+      hash.map { |k, v| "#{k}=\"#{v}\"" }.join(" ")
     end
 
     def _hash_to_params(hash)
