@@ -8,7 +8,7 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - VideoInfo/3.0.1
+      - VideoInfo/3.1.0
       Authorization:
       - bearer vimeo_access_token
       Accept:
@@ -20,14 +20,14 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      Connection:
-      - keep-alive
-      Server:
-      - nginx
+      Date:
+      - Tue, 21 Feb 2023 20:11:37 GMT
       Content-Type:
       - application/vnd.vimeo.video+json
-      Cache-Control:
-      - private, no-store, no-cache
+      Content-Length:
+      - '11494'
+      Connection:
+      - keep-alive
       Strict-Transport-Security:
       - max-age=31536000; includeSubDomains; preload
       X-Ratelimit-Limit:
@@ -35,47 +35,55 @@ http_interactions:
       X-Ratelimit-Remaining:
       - '36'
       X-Ratelimit-Reset:
-      - '2021-11-15T10:30:16+00:00'
+      - '2023-02-21T20:12:32+00:00'
+      Cache-Control:
+      - no-store, no-cache, max-age=0
       Request-Hash:
-      - 6cea92c0
+      - 1bb1c5f3
       X-Bapp-Server:
-      - api-v17386-ctmmn
-      X-Vimeo-Dc:
-      - ge
-      Accept-Ranges:
-      - bytes
+      - api-5468cbdff8-3985-0-baseline-v4j6r
+      X-Backend-Server:
+      - api-k8s
       Via:
       - 1.1 varnish, 1.1 varnish
-      Date:
-      - Mon, 15 Nov 2021 10:29:19 GMT
+      Accept-Ranges:
+      - bytes
+      Age:
+      - '0'
       X-Served-By:
-      - cache-bwi5172-BWI, cache-cgh11172-CGH
+      - cache-iad-kiad7000172-IAD, cache-mrs10532-MRS
       X-Cache:
       - MISS, MISS
       X-Cache-Hits:
       - 0, 0
       X-Timer:
-      - S1636972159.958532,VS0,VE227
-      Vary:
-      - Accept,Vimeo-Client-Id
-      Transfer-Encoding:
-      - chunked
+      - S1677010297.222720,VS0,VE494
+      Cf-Cache-Status:
+      - DYNAMIC
+      Set-Cookie:
+      - __cf_bm=EWjiYsQCHKjEiPNuygdmf5aCA4GXB6kCX0h6pjgh178-1677010297-0-AVK5O+fVnW0xXbl/DG/XPunqCKtrLNrOPluHzeHwiU3Mmx5qIX+9UC+fRms6jw0lEbl7Q6PctZC7KlTVENxF62I=;
+        path=/; expires=Tue, 21-Feb-23 20:41:37 GMT; domain=.vimeo.com; HttpOnly;
+        Secure; SameSite=None
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 79d221d57cd31946-BCN
     body:
       encoding: UTF-8
       string: '{"uri":"/videos/136971428","name":"Deafheaven - ''New Bermuda'' Trailer","description":"''New
-        Bermuda,'' the upcoming album from Deafheaven, is available October 2nd","type":"video","link":"https://vimeo.com/136971428","duration":59,"width":1280,"language":"en","height":720,"embed":{"html":"<iframe
-        src=\"https://player.vimeo.com/video/136971428?h=b646dcf635&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=193197\"
-        width=\"1280\" height=\"720\" frameborder=\"0\" allow=\"autoplay; fullscreen;
+        Bermuda,'' the upcoming album from Deafheaven, is available October 2nd","type":"video","link":"https://vimeo.com/136971428","player_embed_url":"https://player.vimeo.com/video/136971428?h=b646dcf635","duration":59,"width":1920,"language":"en","height":1080,"embed":{"html":"<iframe
+        src=\"https://player.vimeo.com/video/136971428?h=b646dcf635&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=190037\"
+        width=\"1920\" height=\"1080\" frameborder=\"0\" allow=\"autoplay; fullscreen;
         picture-in-picture\" allowfullscreen title=\"Deafheaven - &amp;#039;New Bermuda&amp;#039;
-        Trailer\"></iframe>","badges":{"hdr":false,"live":{"streaming":false,"archived":false},"staff_pick":{"normal":false,"best_of_the_month":false,"best_of_the_year":false,"premiere":false},"vod":false,"weekend_challenge":false}},"created_time":"2015-08-21T21:37:43+00:00","modified_time":"2021-10-29T17:54:17+00:00","release_time":"2015-08-21T21:37:43+00:00","content_rating":["safe"],"content_rating_class":"safe","rating_mod_locked":false,"license":null,"privacy":{"view":"anybody","embed":"public","download":false,"add":true,"comments":"anybody"},"pictures":{"uri":"/videos/136971428/pictures/531688239","active":true,"type":"custom","base_link":"https://i.vimeocdn.com/video/531688239-17d856b48d059b4c39ec5c94ea0ddc24ccf759d49173aadd900cf0f0fe50336d-d","sizes":[{"width":100,"height":75,"link":"https://i.vimeocdn.com/video/531688239-17d856b48d059b4c39ec5c94ea0ddc24ccf759d49173aadd900cf0f0fe50336d-d_100x75?r=pad","link_with_play_button":"https://i.vimeocdn.com/filter/overlay?src0=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F531688239-17d856b48d059b4c39ec5c94ea0ddc24ccf759d49173aadd900cf0f0fe50336d-d_100x75&src1=http%3A%2F%2Ff.vimeocdn.com%2Fp%2Fimages%2Fcrawler_play.png"},{"width":200,"height":150,"link":"https://i.vimeocdn.com/video/531688239-17d856b48d059b4c39ec5c94ea0ddc24ccf759d49173aadd900cf0f0fe50336d-d_200x150?r=pad","link_with_play_button":"https://i.vimeocdn.com/filter/overlay?src0=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F531688239-17d856b48d059b4c39ec5c94ea0ddc24ccf759d49173aadd900cf0f0fe50336d-d_200x150&src1=http%3A%2F%2Ff.vimeocdn.com%2Fp%2Fimages%2Fcrawler_play.png"},{"width":295,"height":166,"link":"https://i.vimeocdn.com/video/531688239-17d856b48d059b4c39ec5c94ea0ddc24ccf759d49173aadd900cf0f0fe50336d-d_295x166?r=pad","link_with_play_button":"https://i.vimeocdn.com/filter/overlay?src0=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F531688239-17d856b48d059b4c39ec5c94ea0ddc24ccf759d49173aadd900cf0f0fe50336d-d_295x166&src1=http%3A%2F%2Ff.vimeocdn.com%2Fp%2Fimages%2Fcrawler_play.png"},{"width":640,"height":360,"link":"https://i.vimeocdn.com/video/531688239-17d856b48d059b4c39ec5c94ea0ddc24ccf759d49173aadd900cf0f0fe50336d-d_640x360?r=pad","link_with_play_button":"https://i.vimeocdn.com/filter/overlay?src0=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F531688239-17d856b48d059b4c39ec5c94ea0ddc24ccf759d49173aadd900cf0f0fe50336d-d_640x360&src1=http%3A%2F%2Ff.vimeocdn.com%2Fp%2Fimages%2Fcrawler_play.png"},{"width":960,"height":540,"link":"https://i.vimeocdn.com/video/531688239-17d856b48d059b4c39ec5c94ea0ddc24ccf759d49173aadd900cf0f0fe50336d-d_960x540?r=pad","link_with_play_button":"https://i.vimeocdn.com/filter/overlay?src0=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F531688239-17d856b48d059b4c39ec5c94ea0ddc24ccf759d49173aadd900cf0f0fe50336d-d_960x540&src1=http%3A%2F%2Ff.vimeocdn.com%2Fp%2Fimages%2Fcrawler_play.png"},{"width":1280,"height":720,"link":"https://i.vimeocdn.com/video/531688239-17d856b48d059b4c39ec5c94ea0ddc24ccf759d49173aadd900cf0f0fe50336d-d_1280x720?r=pad","link_with_play_button":"https://i.vimeocdn.com/filter/overlay?src0=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F531688239-17d856b48d059b4c39ec5c94ea0ddc24ccf759d49173aadd900cf0f0fe50336d-d_1280x720&src1=http%3A%2F%2Ff.vimeocdn.com%2Fp%2Fimages%2Fcrawler_play.png"},{"width":1920,"height":1080,"link":"https://i.vimeocdn.com/video/531688239-17d856b48d059b4c39ec5c94ea0ddc24ccf759d49173aadd900cf0f0fe50336d-d_1920x1080?r=pad","link_with_play_button":"https://i.vimeocdn.com/filter/overlay?src0=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F531688239-17d856b48d059b4c39ec5c94ea0ddc24ccf759d49173aadd900cf0f0fe50336d-d_1920x1080&src1=http%3A%2F%2Ff.vimeocdn.com%2Fp%2Fimages%2Fcrawler_play.png"}],"resource_key":"d02759c29fd9734d3100d5c1f04f06b2dc74a90b","default_picture":false},"tags":[],"stats":{"plays":null},"uploader":{"pictures":{"uri":"/users/814311/pictures/14790276","active":true,"type":"custom","base_link":"https://i.vimeocdn.com/portrait/14790276","sizes":[{"width":30,"height":30,"link":"https://i.vimeocdn.com/portrait/14790276_30x30"},{"width":72,"height":72,"link":"https://i.vimeocdn.com/portrait/14790276_72x72"},{"width":75,"height":75,"link":"https://i.vimeocdn.com/portrait/14790276_75x75"},{"width":100,"height":100,"link":"https://i.vimeocdn.com/portrait/14790276_100x100"},{"width":144,"height":144,"link":"https://i.vimeocdn.com/portrait/14790276_144x144"},{"width":216,"height":216,"link":"https://i.vimeocdn.com/portrait/14790276_216x216"},{"width":288,"height":288,"link":"https://i.vimeocdn.com/portrait/14790276_288x288"},{"width":300,"height":300,"link":"https://i.vimeocdn.com/portrait/14790276_300x300"},{"width":360,"height":360,"link":"https://i.vimeocdn.com/portrait/14790276_360x360"}],"resource_key":"e61a33d865c9349dc7ee051232fb30d1492ee1fc","default_picture":false}},"metadata":{"connections":{"comments":{"uri":"/videos/136971428/comments","options":["GET"],"total":0},"credits":{"uri":"/videos/136971428/credits","options":["GET","POST"],"total":0},"likes":{"uri":"/videos/136971428/likes","options":["GET"],"total":3},"pictures":{"uri":"/videos/136971428/pictures","options":["GET","POST"],"total":1},"texttracks":{"uri":"/videos/136971428/texttracks","options":["GET","POST"],"total":0},"related":null},"interactions":{"report":{"uri":"/videos/136971428/report","options":["POST"],"reason":["pornographic","harassment","ripoff","incorrect
-        rating","spam","causes harm","csam"]}},"is_vimeo_create":false,"is_screen_record":false},"user":{"uri":"/users/814311","name":"Anti
-        Records","link":"https://vimeo.com/antirecords","capabilities":{"hasLiveSubscription":false,"hasEnterpriseLihp":false,"hasSvvTimecodedComments":false},"location":"Los
+        Trailer\"></iframe>","badges":{"hdr":false,"live":{"streaming":false,"archived":false},"staff_pick":{"normal":false,"best_of_the_month":false,"best_of_the_year":false,"premiere":false},"vod":false,"weekend_challenge":false}},"created_time":"2015-08-21T21:37:43+00:00","modified_time":"2022-11-17T00:51:00+00:00","release_time":"2015-08-21T21:37:43+00:00","content_rating":["safe"],"content_rating_class":"safe","rating_mod_locked":false,"license":null,"privacy":{"view":"anybody","embed":"public","download":false,"add":true,"comments":"anybody"},"pictures":{"uri":"/videos/136971428/pictures/531688239","active":true,"type":"custom","base_link":"https://i.vimeocdn.com/video/531688239-17d856b48d059b4c39ec5c94ea0ddc24ccf759d49173aadd900cf0f0fe50336d-d","sizes":[{"width":100,"height":75,"link":"https://i.vimeocdn.com/video/531688239-17d856b48d059b4c39ec5c94ea0ddc24ccf759d49173aadd900cf0f0fe50336d-d_100x75?r=pad","link_with_play_button":"https://i.vimeocdn.com/filter/overlay?src0=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F531688239-17d856b48d059b4c39ec5c94ea0ddc24ccf759d49173aadd900cf0f0fe50336d-d_100x75&src1=http%3A%2F%2Ff.vimeocdn.com%2Fp%2Fimages%2Fcrawler_play.png"},{"width":200,"height":150,"link":"https://i.vimeocdn.com/video/531688239-17d856b48d059b4c39ec5c94ea0ddc24ccf759d49173aadd900cf0f0fe50336d-d_200x150?r=pad","link_with_play_button":"https://i.vimeocdn.com/filter/overlay?src0=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F531688239-17d856b48d059b4c39ec5c94ea0ddc24ccf759d49173aadd900cf0f0fe50336d-d_200x150&src1=http%3A%2F%2Ff.vimeocdn.com%2Fp%2Fimages%2Fcrawler_play.png"},{"width":295,"height":166,"link":"https://i.vimeocdn.com/video/531688239-17d856b48d059b4c39ec5c94ea0ddc24ccf759d49173aadd900cf0f0fe50336d-d_295x166?r=pad","link_with_play_button":"https://i.vimeocdn.com/filter/overlay?src0=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F531688239-17d856b48d059b4c39ec5c94ea0ddc24ccf759d49173aadd900cf0f0fe50336d-d_295x166&src1=http%3A%2F%2Ff.vimeocdn.com%2Fp%2Fimages%2Fcrawler_play.png"},{"width":640,"height":360,"link":"https://i.vimeocdn.com/video/531688239-17d856b48d059b4c39ec5c94ea0ddc24ccf759d49173aadd900cf0f0fe50336d-d_640x360?r=pad","link_with_play_button":"https://i.vimeocdn.com/filter/overlay?src0=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F531688239-17d856b48d059b4c39ec5c94ea0ddc24ccf759d49173aadd900cf0f0fe50336d-d_640x360&src1=http%3A%2F%2Ff.vimeocdn.com%2Fp%2Fimages%2Fcrawler_play.png"},{"width":960,"height":540,"link":"https://i.vimeocdn.com/video/531688239-17d856b48d059b4c39ec5c94ea0ddc24ccf759d49173aadd900cf0f0fe50336d-d_960x540?r=pad","link_with_play_button":"https://i.vimeocdn.com/filter/overlay?src0=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F531688239-17d856b48d059b4c39ec5c94ea0ddc24ccf759d49173aadd900cf0f0fe50336d-d_960x540&src1=http%3A%2F%2Ff.vimeocdn.com%2Fp%2Fimages%2Fcrawler_play.png"},{"width":1280,"height":720,"link":"https://i.vimeocdn.com/video/531688239-17d856b48d059b4c39ec5c94ea0ddc24ccf759d49173aadd900cf0f0fe50336d-d_1280x720?r=pad","link_with_play_button":"https://i.vimeocdn.com/filter/overlay?src0=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F531688239-17d856b48d059b4c39ec5c94ea0ddc24ccf759d49173aadd900cf0f0fe50336d-d_1280x720&src1=http%3A%2F%2Ff.vimeocdn.com%2Fp%2Fimages%2Fcrawler_play.png"},{"width":1920,"height":1080,"link":"https://i.vimeocdn.com/video/531688239-17d856b48d059b4c39ec5c94ea0ddc24ccf759d49173aadd900cf0f0fe50336d-d_1920x1080?r=pad","link_with_play_button":"https://i.vimeocdn.com/filter/overlay?src0=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F531688239-17d856b48d059b4c39ec5c94ea0ddc24ccf759d49173aadd900cf0f0fe50336d-d_1920x1080&src1=http%3A%2F%2Ff.vimeocdn.com%2Fp%2Fimages%2Fcrawler_play.png"}],"resource_key":"d02759c29fd9734d3100d5c1f04f06b2dc74a90b","default_picture":false},"tags":[],"stats":{"plays":630},"uploader":{"pictures":{"uri":"/users/814311/pictures/14790276","active":true,"type":"custom","base_link":"https://i.vimeocdn.com/portrait/14790276","sizes":[{"width":30,"height":30,"link":"https://i.vimeocdn.com/portrait/14790276_30x30"},{"width":72,"height":72,"link":"https://i.vimeocdn.com/portrait/14790276_72x72"},{"width":75,"height":75,"link":"https://i.vimeocdn.com/portrait/14790276_75x75"},{"width":100,"height":100,"link":"https://i.vimeocdn.com/portrait/14790276_100x100"},{"width":144,"height":144,"link":"https://i.vimeocdn.com/portrait/14790276_144x144"},{"width":216,"height":216,"link":"https://i.vimeocdn.com/portrait/14790276_216x216"},{"width":288,"height":288,"link":"https://i.vimeocdn.com/portrait/14790276_288x288"},{"width":300,"height":300,"link":"https://i.vimeocdn.com/portrait/14790276_300x300"},{"width":360,"height":360,"link":"https://i.vimeocdn.com/portrait/14790276_360x360"}],"resource_key":"e61a33d865c9349dc7ee051232fb30d1492ee1fc","default_picture":false}},"metadata":{"connections":{"comments":{"uri":"/videos/136971428/comments","options":["GET","POST"],"total":0},"credits":{"uri":"/videos/136971428/credits","options":["GET","POST"],"total":0},"likes":{"uri":"/videos/136971428/likes","options":["GET"],"total":3},"pictures":{"uri":"/videos/136971428/pictures","options":["GET","POST"],"total":1},"texttracks":{"uri":"/videos/136971428/texttracks","options":["GET","POST"],"total":0},"related":null,"albums":{"uri":"/videos/136971428/albums","options":["GET","PATCH"],"total":0},"available_albums":{"uri":"/videos/136971428/available_albums","options":["GET"],"total":0},"available_channels":{"uri":"/videos/136971428/available_channels","options":["GET"],"total":0}},"interactions":{"watchlater":{"uri":"/users/105561138/watchlater/136971428","options":["GET","PUT","DELETE"],"added":false,"added_time":null},"like":{"uri":"/users/105561138/likes/136971428","options":["GET","PUT","DELETE"],"added":false,"added_time":null},"report":{"uri":"/videos/136971428/report","options":["POST"],"reason":["pornographic","harassment","ripoff","incorrect
+        rating","spam","causes harm","csam"]},"can_update_privacy_to_public":{"uri":"/videos/136971428","options":["PATCH"]},"validate":{"uri":"/videos/136971428/validate","options":["PUT"]}},"is_vimeo_create":false,"is_screen_record":false},"user":{"uri":"/users/814311","name":"ANTI-
+        Records","link":"https://vimeo.com/antirecords","capabilities":{"hasLiveSubscription":false,"hasEnterpriseLihp":false,"hasSvvTimecodedComments":false,"hasSimplifiedEnterpriseAccount":false},"location":"Los
         Angeles, CA","gender":"n","bio":"Home to Tom Waits, Wilco, Neko Case, Mavis
         Staples, Deafheaven, Daniel Lanois, Xenia Rubinos, Cass McCombs, The Antlers,
         Title Fight, Son Little, Andy Shauf, and more.","short_bio":null,"created_time":"2008-10-06T20:33:11+00:00","pictures":{"uri":"/users/814311/pictures/14790276","active":true,"type":"custom","base_link":"https://i.vimeocdn.com/portrait/14790276","sizes":[{"width":30,"height":30,"link":"https://i.vimeocdn.com/portrait/14790276_30x30"},{"width":72,"height":72,"link":"https://i.vimeocdn.com/portrait/14790276_72x72"},{"width":75,"height":75,"link":"https://i.vimeocdn.com/portrait/14790276_75x75"},{"width":100,"height":100,"link":"https://i.vimeocdn.com/portrait/14790276_100x100"},{"width":144,"height":144,"link":"https://i.vimeocdn.com/portrait/14790276_144x144"},{"width":216,"height":216,"link":"https://i.vimeocdn.com/portrait/14790276_216x216"},{"width":288,"height":288,"link":"https://i.vimeocdn.com/portrait/14790276_288x288"},{"width":300,"height":300,"link":"https://i.vimeocdn.com/portrait/14790276_300x300"},{"width":360,"height":360,"link":"https://i.vimeocdn.com/portrait/14790276_360x360"}],"resource_key":"e61a33d865c9349dc7ee051232fb30d1492ee1fc","default_picture":false},"websites":[{"uri":"/users/814311/links/4501404","name":"Official
         Site","link":"www.anti.com","type":"link","description":null},{"uri":"/users/814311/links/4501405","name":"Twitter","link":"twitter.com/antirecords","type":"twitter","description":null},{"uri":"/users/814311/links/4501406","name":"Facebook","link":"www.facebook.com/antirecords","type":"facebook","description":null},{"uri":"/users/814311/links/4501407","name":"Instagram","link":"www.instagram.com/antirecords/","type":"instagram","description":null},{"uri":"/users/814311/links/4501408","name":"Online
-        Store","link":"www.anti.com/store","type":"link","description":null}],"metadata":{"connections":{"activities":{"uri":"/users/814311/activities","options":["GET"]},"albums":{"uri":"/users/814311/albums","options":["GET"],"total":1},"appearances":{"uri":"/users/814311/appearances","options":["GET"],"total":1},"channels":{"uri":"/users/814311/channels","options":["GET"],"total":1},"feed":{"uri":"/users/814311/feed","options":["GET"]},"followers":{"uri":"/users/814311/followers","options":["GET"],"total":990},"following":{"uri":"/users/814311/following","options":["GET"],"total":2},"groups":{"uri":"/users/814311/groups","options":["GET"],"total":0},"likes":{"uri":"/users/814311/likes","options":["GET"],"total":1},"membership":{"uri":"/users/814311/membership/","options":["PATCH"]},"moderated_channels":{"uri":"/users/814311/channels?filter=moderated","options":["GET"],"total":1},"portfolios":{"uri":"/users/814311/portfolios","options":["GET"],"total":0},"videos":{"uri":"/users/814311/videos","options":["GET"],"total":60},"shared":{"uri":"/users/814311/shared/videos","options":["GET"],"total":166},"pictures":{"uri":"/users/814311/pictures","options":["GET","POST"],"total":1},"folders_root":{"uri":"/users/814311/folders/root","options":["GET"]},"teams":{"uri":"/users/814311/teams","options":["GET"],"total":2}}},"location_details":{"formatted_address":"Los
-        Angeles, CA","latitude":null,"longitude":null,"city":null,"state":null,"neighborhood":null,"sub_locality":null,"state_iso_code":null,"country":null,"country_iso_code":null},"skills":[],"available_for_hire":false,"can_work_remotely":false,"resource_key":"e1d6212aaacbfb79302c5f750b44d5101a3f8a55","account":"pro","preferences":{"videos":{"privacy":null}}},"app":null,"status":"available","resource_key":"7c4542791d2267ed231d820afcfff7d6c840e688","upload":null,"transcode":null,"is_playable":true,"has_audio":true,"review_link":"https://vimeo.com/antirecords/review/136971428/80891bf98f","embed_presets":null}'
-    http_version:
-  recorded_at: Mon, 15 Nov 2021 10:29:19 GMT
-recorded_with: VCR 3.0.3
+        Store","link":"www.anti.com/store","type":"link","description":null}],"metadata":{"connections":{"activities":{"uri":"/users/814311/activities","options":["GET"]},"albums":{"uri":"/users/814311/albums","options":["GET"],"total":1},"appearances":{"uri":"/users/814311/appearances","options":["GET"],"total":1},"channels":{"uri":"/users/814311/channels","options":["GET"],"total":1},"feed":{"uri":"/users/814311/feed","options":["GET"]},"followers":{"uri":"/users/814311/followers","options":["GET"],"total":997},"following":{"uri":"/users/814311/following","options":["GET"],"total":2},"groups":{"uri":"/users/814311/groups","options":["GET"],"total":0},"likes":{"uri":"/users/814311/likes","options":["GET"],"total":1},"membership":{"uri":"/users/814311/membership/","options":["PATCH"]},"moderated_channels":{"uri":"/users/814311/channels?filter=moderated","options":["GET"],"total":1},"portfolios":{"uri":"/users/814311/portfolios","options":["GET"],"total":0},"videos":{"uri":"/users/814311/videos","options":["GET"],"total":60},"shared":{"uri":"/users/814311/shared/videos","options":["GET"],"total":151},"pictures":{"uri":"/users/814311/pictures","options":["GET","POST"],"total":1},"folders_root":{"uri":"/users/814311/folders/root","options":["GET"]},"teams":{"uri":"/users/814311/teams","options":["GET"],"total":2},"permission_policies":{"uri":"/users/814311/permission_policies","options":["GET"],"total":6}},"interactions":{"follow":{"added":false,"added_time":null,"uri":"/users/105561138/following/814311","options":["GET","PUT","DELETE"]},"block":{"uri":"/me/block/814311","options":["PUT","DELETE"],"added":false,"added_time":null},"report":{"uri":"/users/814311/report","options":["POST"],"reason":["inappropriate
+        avatar","spammy","bad videos","creepy","not playing nice","impersonation","inappropriate
+        job post"]}}},"location_details":{"formatted_address":"Los Angeles, CA","latitude":null,"longitude":null,"city":null,"state":null,"neighborhood":null,"sub_locality":null,"state_iso_code":null,"country":null,"country_iso_code":null},"skills":[],"available_for_hire":false,"can_work_remotely":false,"resource_key":"e1d6212aaacbfb79302c5f750b44d5101a3f8a55","account":"pro","preferences":{"videos":{"privacy":null}}},"play":{"status":"playable"},"app":null,"status":"available","resource_key":"7c4542791d2267ed231d820afcfff7d6c840e688","upload":{"status":"complete","link":null,"upload_link":null,"complete_uri":null,"form":null,"approach":null,"size":null,"redirect_url":null},"transcode":{"status":"complete"},"is_playable":true,"has_audio":true,"review_link":"https://vimeo.com/antirecords/review/136971428/80891bf98f","embed_presets":null}'
+  recorded_at: Tue, 21 Feb 2023 20:11:37 GMT
+recorded_with: VCR 6.1.0

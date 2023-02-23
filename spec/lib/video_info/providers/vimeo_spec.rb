@@ -1,5 +1,3 @@
-require 'spec_helper'
-
 [nil, ENV["VIMEO_ACCESS_TOKEN"] || 'vimeo_access_token'].each do |api_key|
   describe VideoInfo::Providers::Vimeo, :vcr do
     before(:all) do
@@ -48,7 +46,7 @@ require 'spec_helper'
 
     describe '#available?' do
       context 'with valid video' do
-        subject { VideoInfo.new('http://vimeo.com/98605382'.freeze) }
+        subject { VideoInfo.new('http://vimeo.com/98605382') }
 
         describe '#available?' do
           it { is_expected.to be_available }
@@ -130,12 +128,12 @@ require 'spec_helper'
 
       describe '#width' do
         subject { super().width }
-        it { is_expected.to eq 1280 }
+        it { is_expected.to eq 1920 }
       end
 
       describe '#height' do
         subject { super().height }
-        it { is_expected.to eq 720 }
+        it { is_expected.to eq 1080 }
       end
 
       describe '#date' do
@@ -199,7 +197,7 @@ require 'spec_helper'
 
       describe '#author' do
         subject { super().author }
-        it { is_expected.to eq 'Anti Records' }
+        it { is_expected.to eq 'ANTI- Records' }
       end
 
       describe '#author_url' do

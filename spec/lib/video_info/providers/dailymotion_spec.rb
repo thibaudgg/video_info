@@ -1,6 +1,3 @@
-# encoding: utf-8
-require 'spec_helper'
-
 describe VideoInfo::Providers::Dailymotion do
   describe '.usable?' do
     subject { VideoInfo::Providers::Dailymotion.usable?(url) }
@@ -23,7 +20,7 @@ describe VideoInfo::Providers::Dailymotion do
 
   describe '#available?' do
     context 'with valid video', :vcr do
-      subject { VideoInfo.new('http://www.dailymotion.com/video/x7lni3'.freeze) }
+      subject { VideoInfo.new('http://www.dailymotion.com/video/x7lni3') }
 
       describe '#available?' do
         subject { super().available? }
@@ -88,7 +85,7 @@ describe VideoInfo::Providers::Dailymotion do
 
     describe '#author_thumbnail' do
       subject { super().author_thumbnail }
-      it { is_expected.to match /https:\/\/s[12].dmcdn.net\/u\/US931VqzCfSTgGbS\/60x60/ }
+      it { is_expected.to match /https:\/\/s[12].dmcdn.net\/u\/US931Zxdtf3KFwsR\/60x60/ }
     end
 
     describe '#description' do
@@ -131,17 +128,17 @@ describe VideoInfo::Providers::Dailymotion do
 
     describe '#thumbnail_small' do
       subject { super().thumbnail_small }
-      it { is_expected.to match /https:\/\/s[12].dmcdn.net\/v\/mj4x1Vr0aEe-ed6o\/x60/ }
+      it { is_expected.to match /https:\/\/s[12].dmcdn.net\/v\/mj4x1Zl1hgGUsnDE\/x60/ }
     end
 
     describe '#thumbnail_medium' do
       subject { super().thumbnail_medium }
-      it { is_expected.to match /https:\/\/s[12].dmcdn.net\/v\/mj4x1Vr0aECM9nwo\/x240/ }
+      it { is_expected.to match /https:\/\/s[12].dmcdn.net\/v\/mj4x1Zl1hgr4cHq0\/x240/ }
     end
 
     describe '#thumbnail_large' do
       subject { super().thumbnail_large }
-      it { is_expected.to match /https:\/\/s[12].dmcdn.net\/v\/mj4x1Vr0aEfy_Ij_\/x720/ }
+      it { is_expected.to match /https:\/\/s[12].dmcdn.net\/v\/mj4x1Zl1hg19_KBk\/x720/ }
     end
 
     describe '#thumbnail_large_2x' do
@@ -156,7 +153,7 @@ describe VideoInfo::Providers::Dailymotion do
 
     describe '#thumbnail' do
       subject { super().thumbnail }
-      it { is_expected.to match /https:\/\/s[12].dmcdn.net\/v\/mj4x1Vr0aEfy_Ij_\/x720/ }
+      it { is_expected.to match /https:\/\/s[12].dmcdn.net\/v\/mj4x1Zl1hg19_KBk\/x720/ }
     end
 
     describe '#view_count' do

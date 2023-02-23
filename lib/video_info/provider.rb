@@ -34,7 +34,7 @@ class VideoInfo
     end
 
     def available?
-      !%w[403 404 400].include?(_response_code)
+      !%w[403 404 400 451 401].include?(_response_code)
     end
 
     def thumbnail

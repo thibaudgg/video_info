@@ -1,5 +1,3 @@
-require 'spec_helper'
-
 describe VideoInfo::Providers::YoutubePlaylist, :vcr do
   before(:each) do
     api_key = ENV["YOUTUBE_API_KEY"] || "youtube_api_key_123"
@@ -33,7 +31,7 @@ describe VideoInfo::Providers::YoutubePlaylist, :vcr do
   describe '#available?' do
     context 'with valid playlist' do
       playlist_url = 'http://www.youtube.com/playlist?p=PLA575C81A1FBC04CF'
-      subject { VideoInfo.new(playlist_url.freeze) }
+      subject { VideoInfo.new(playlist_url) }
 
       describe '#available?' do
         subject { super().available? }
@@ -193,13 +191,13 @@ describe VideoInfo::Providers::YoutubePlaylist, :vcr do
 
     describe '#author' do
       subject { super().author }
-      it { is_expected.to eq 'TeamYouTube [Help]' }
+      it { is_expected.to eq 'YouTube Viewers' }
     end
 
     describe '#author_thumbnail' do
       subject { super().author_thumbnail }
-      author_thumbnail = 'https://yt3.ggpht.com/ytc/' \
-                         'AAUvwnipGS1wQrbeqSdHJCDPQ5c3zw5UclCQkeIQ2eueOw' \
+      author_thumbnail = 'https://yt3.ggpht.com/' \
+                         'ccPr80rfkOgsE0TMP8S8vEfP85gl12XzUGtySPFFYNMhxlQ62W7ijksmUIXv6fCBC1jBmoEqaA' \
                          '=s88-c-k-c0x00ffffff-no-rj'
       it { is_expected.to eq author_thumbnail }
     end

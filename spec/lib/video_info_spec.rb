@@ -1,5 +1,3 @@
-require 'spec_helper'
-
 describe VideoInfo do
   describe '#initialize' do
     let(:url) { 'url' }

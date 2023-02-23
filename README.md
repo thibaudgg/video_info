@@ -4,25 +4,23 @@
 
 Simple Ruby Gem to get video info from Dailymotion, Vimeo, Wistia and YouTube (with playlist).
 
-Tested against Ruby 2.5.x, 2.6.x and 2.7.x.
+Tested against Ruby 2.6, 2.7, 3.0, 3.1 and 3.2.
 
-Features
---------
+## Features
+
 * Simple, single-function API that returns a simple data structure
 * Has a mere three gem dependencies
 * Automatic fallback to scrapers when required API keys aren't provided
 * Fetches metadata on the video, including title, duration, upload date, description, keywords, thumbnail, and dimensions
 * Fetches metadata on the author, including name, thumbnail, and channel/profile URL
 
-Install
---------
+## Install
 
-``` bash
+```bash
 gem install video_info
 ```
 
-Usage
------
+## Usage
 
 ### Note for YouTube and Vimeo usage!
 
@@ -37,12 +35,14 @@ After generating a Youtube API key it is necessary to enable the YouTube Data AP
 To get a Vimeo API key, [follow the instructions here](https://developer.vimeo.com/api/start)
 
 To set the API keys, do the following:
-``` ruby
+
+```ruby
 VideoInfo.provider_api_keys = { youtube: 'YOUR_YOUTUBE_API_KEY', vimeo: 'YOUR_VIMEO_API_KEY' }
 ```
 
+### Basic Usage
 
-``` ruby
+```ruby
 video = VideoInfo.new('http://www.dailymotion.com/video/x7lni3')
 # video.available?       => true
 # video.video_id         => 'x7lni3'
@@ -135,18 +135,18 @@ You can also use the `valid_url?` helper to check if a given url is valid in som
 => false
 ```
 
-Options
--------
+### Options
 
-``` ruby
+```ruby
 video = VideoInfo.new('http://www.youtube.com/watch?v=mZqGqE0D0n4', 'User-Agent' => 'My YouTube Mashup Robot/1.0')
 video = VideoInfo.new('http://www.youtube.com/watch?v=mZqGqE0D0n4', 'Referer'    => 'http://my-youtube-mashup.com/')
 video = VideoInfo.new('http://www.youtube.com/watch?v=mZqGqE0D0n4', 'Referer'    => 'http://my-youtube-mashup.com/',
                                                                     'User-Agent' => 'My YouTube Mashup Robot/1.0')
 ```
+
 You can also use **symbols** instead of strings (any non-word (`/[^a-z]/i`) character would be converted to hyphen).
 
-``` ruby
+```ruby
 video = VideoInfo.new('http://www.youtube.com/watch?v=mZqGqE0D0n4', referer: 'http://my-youtube-mashup.com/',
                                                                     user_agent: 'My YouTube Mashup Robot/1.0')
 ```
@@ -157,7 +157,7 @@ It supports all openURI header fields (options), for more information see: [open
 
 You can also include an `iframe_attributes` or `url_attributes` hash to the `embed_code` method to include arbitrary attributes in the iframe embed code or as additional URL params:
 
-``` ruby
+```ruby
 VideoInfo.new('http://www.youtube.com/watch?v=mZqGqE0D0n4').embed_code(iframe_attributes: { width: 800, height: 600, 'data-key' => 'value' })
 => '<iframe src="//www.youtube.com/embed/mZqGqE0D0n4" frameborder="0" allowfullscreen="allowfullscreen" width="800" height="600" data-key="value"></iframe>'
 
@@ -167,29 +167,24 @@ VideoInfo.new('http://www.youtube.com/watch?v=mZqGqE0D0n4').embed_code(url_attri
 
 If you would like to disable certain providers, you can do so by modifying the class variable `disable_providers`:
 
-``` ruby
+```ruby
 VideoInfo.disable_providers = %w[YouTube] # disable YouTube
 VideoInfo.disable_providers = %w[Vimeo YouTube] # disable Vimeo and Youtube
 VideoInfo.disable_providers = [] # enable all providers
 ```
-
 Note: `disable_providers` is case-insensitive. Attempting to use a disabled provider will raise a UrlError, just like attempting to use a
 non-video URL.
 
-
-Author
-------
+## Author
 
 [Thibaud Guillaume-Gentil](https://github.com/thibaudgg) ([@thibaudgg](https://twitter.com/thibaudgg))
 
-Maintainers
------------
+## Maintainers
 
 - [Thibaud Guillaume-Gentil](https://github.com/thibaudgg) ([@thibaudgg](https://twitter.com/thibaudgg))
 - [Vincent Heuken](https://github.com/vheuken) ([@vheuken](https://github.com/vheuken))
 - [João Vieira](https://github.com/joaocv3) ([@joaocv3](https://github.com/joaocv3))
 
-Contributors
-------------
+## Contributors
 
 [https://github.com/thibaudgg/video_info/graphs/contributors](https://github.com/thibaudgg/video_info/graphs/contributors)
