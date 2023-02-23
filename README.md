@@ -1,7 +1,7 @@
 # VideoInfo
 
 [![Gem Version](https://badge.fury.io/rb/video_info.svg)](http://badge.fury.io/rb/video_info)
-[![Build Status](https://github.com/thibaudgg/video_info/workflows/Ruby%20Unit%20Tests/badge.svg?branch=master)](https://github.com/thibaudgg/video_info/actions?query=workflow%3A%22Ruby+Unit+Tests%22)
+[![CI](https://github.com/thibaudgg/video_info/actions/workflows/ci.yml/badge.svg)](https://github.com/thibaudgg/video_info/actions/workflows/ci.yml)
 [![Code Climate](https://codeclimate.com/github/thibaudgg/video_info.svg)](https://codeclimate.com/github/thibaudgg/video_info)
 [![Coverage Status](https://coveralls.io/repos/thibaudgg/video_info/badge.svg?branch=master)](https://coveralls.io/r/thibaudgg/video_info)
 [![Ruby Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://github.com/testdouble/standard)

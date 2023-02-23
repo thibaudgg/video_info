@@ -1,4 +1,4 @@
-name: Ruby Unit Tests
+name: CI
 
 on: [push, pull_request]
 
@@ -7,7 +7,7 @@ env:
   VIMEO_ACCESS_TOKEN: ${{ secrets.VIMEO_ACCESS_TOKEN }}
 
 jobs:
-  test:
+  specs:
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
@@ -21,3 +21,10 @@ jobs:
           ruby-version: ${{ matrix.ruby }}
           bundler-cache: true
       - run: bundle exec rspec
+  linter:
+    runs-on: ubuntu-latest
+    steps:
+      - name: standardrb
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        uses: amoeba/standardrb-action@v2
