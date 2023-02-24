@@ -110,8 +110,8 @@ class VideoInfo
     end
 
     def _set_data_from_api_impl(api_url)
-      uri = URI.open(api_url, options)
-      JSON.parse(uri.read)
+      uri = URI.parse(api_url)
+      JSON.parse(uri.read(options))
     end
 
     def _not_openuri_option_symbol?(key)

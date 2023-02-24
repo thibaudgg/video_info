@@ -60,8 +60,8 @@ class VideoInfo
       end
 
       def title
-        return if meta_node_value("title").empty?
-        meta_node_value("title")
+        return if meta_node_value(video_meta_nodes, "title").empty?
+        meta_node_value(video_meta_nodes, "title")
       end
 
       def view_count
@@ -82,7 +82,7 @@ class VideoInfo
         @channel_data ||= Oga.parse_html(URI.parse(author_url).read)
       end
 
-      def meta_node_value(meta_nodes = video_meta_nodes, name)
+      def meta_node_value(meta_nodes, name)
         node = meta_nodes.detect do |n|
           n.attr("name")&.value == name || n.attr("property")&.value == name
         end
