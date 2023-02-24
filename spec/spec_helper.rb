@@ -1,15 +1,15 @@
-require 'rspec'
-require 'rspec/its'
-require 'video_info'
-require 'vcr'
+require "rspec"
+require "rspec/its"
+require "video_info"
+require "vcr"
 
-if ENV['CI']
-  require 'coveralls'
+if ENV["CI"]
+  require "coveralls"
   Coveralls.wear!
 end
 
 VCR.configure do |config|
-  config.cassette_library_dir = 'spec/fixtures/vcr_cassettes'
+  config.cassette_library_dir = "spec/fixtures/vcr_cassettes"
   config.default_cassette_options = {
     record: :new_episodes,
     re_record_interval: 28 * 24 * 60 * 60
@@ -17,8 +17,8 @@ VCR.configure do |config|
 
   # When re-recording VCR cassetes, the necessary keys can be set as env variables:
   # YOUTUBE_API_KEY=<valid_youtube_key> VIMEO_ACCESS_TOKEN=<valid_vimeo_key> bundle exec rspec
-  config.filter_sensitive_data('youtube_api_key_123') { ENV["YOUTUBE_API_KEY"] } if ENV["YOUTUBE_API_KEY"]
-  config.filter_sensitive_data('vimeo_access_token') { ENV["VIMEO_ACCESS_TOKEN"] } if ENV["VIMEO_ACCESS_TOKEN"]
+  config.filter_sensitive_data("youtube_api_key_123") { ENV["YOUTUBE_API_KEY"] } if ENV["YOUTUBE_API_KEY"]
+  config.filter_sensitive_data("vimeo_access_token") { ENV["VIMEO_ACCESS_TOKEN"] } if ENV["VIMEO_ACCESS_TOKEN"]
 
   config.allow_http_connections_when_no_cassette = true
   config.hook_into :webmock

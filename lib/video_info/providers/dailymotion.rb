@@ -2,11 +2,11 @@ class VideoInfo
   module Providers
     class Dailymotion < Provider
       def self.usable?(url)
-        url.match? /(dai(?:\.ly|lymotion\.com))/
+        url.match?(/(dai(?:\.ly|lymotion\.com))/)
       end
 
       def provider
-        'Dailymotion'
+        "Dailymotion"
       end
 
       %w[title description duration].each do |method|
@@ -18,19 +18,19 @@ class VideoInfo
       end
 
       def author
-        data['owner.screenname']
+        data["owner.screenname"]
       end
 
       def author_url
-        data['owner.url']
+        data["owner.url"]
       end
 
       def author_thumbnail
-        data['owner.avatar_60_url']
+        data["owner.avatar_60_url"]
       end
 
       def keywords
-        data['tags']
+        data["tags"]
       end
 
       def embed_url
@@ -38,23 +38,23 @@ class VideoInfo
       end
 
       def date
-        Time.at(data['created_time']).utc
+        Time.at(data["created_time"]).utc
       end
 
       def thumbnail_small
-        data['thumbnail_60_url']
+        data["thumbnail_60_url"]
       end
 
       def thumbnail_medium
-        data['thumbnail_240_url']
+        data["thumbnail_240_url"]
       end
 
       def thumbnail_large
-        data['thumbnail_720_url']
+        data["thumbnail_720_url"]
       end
 
       def view_count
-        data['views_total'].to_i
+        data["views_total"].to_i
       end
 
       private
@@ -68,11 +68,11 @@ class VideoInfo
       end
 
       def _url_regex
-        %r{dai(?:\.ly|lymotion\.com\/(?:embed\/)?video)\/([a-zA-Z0-9]*)}
+        %r{dai(?:\.ly|lymotion\.com/(?:embed/)?video)/([a-zA-Z0-9]*)}
       end
 
       def _api_base
-        'api.dailymotion.com'
+        "api.dailymotion.com"
       end
 
       def _api_path
@@ -81,10 +81,10 @@ class VideoInfo
 
       def _api_url
         "https://#{_api_base}#{_api_path}?" \
-        'fields=id,title,description,duration,created_time,' \
-        'url,views_total,tags,thumbnail_url,thumbnail_720_url,' \
-        'owner.url,owner.screenname,owner.avatar_60_url,' \
-        'thumbnail_240_url,thumbnail_60_url'
+        "fields=id,title,description,duration,created_time," \
+        "url,views_total,tags,thumbnail_url,thumbnail_720_url," \
+        "owner.url,owner.screenname,owner.avatar_60_url," \
+        "thumbnail_240_url,thumbnail_60_url"
       end
 
       def _default_iframe_attributes
@@ -92,7 +92,7 @@ class VideoInfo
       end
 
       def _default_url_attributes
-        { autoplay: 0 }
+        {autoplay: 0}
       end
     end
   end

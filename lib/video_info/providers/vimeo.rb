@@ -1,5 +1,5 @@
-require_relative 'vimeo_api'
-require_relative 'vimeo_scraper'
+require_relative "vimeo_api"
+require_relative "vimeo_scraper"
 
 class VideoInfo
   module Providers
@@ -15,11 +15,11 @@ class VideoInfo
       end
 
       def self.usable?(url)
-        url.match? /(vimeo\.com\/(?!album|hubnut\/album).*)/
+        url.match?(/(vimeo\.com\/(?!album|hubnut\/album).*)/)
       end
 
       def provider
-        'Vimeo'
+        "Vimeo"
       end
 
       def embed_url
@@ -30,10 +30,10 @@ class VideoInfo
 
       def _url_regex
         %r{.*\.com&&
-        |\/(?:(?:groups\/[^\/]+\/videos\/)
-        |(?:ondemand|channels)(?:(?:\/less\/)
-        |(?:user[0-9]+\/review\/)?([0-9]+).*
-        |(?:\/\w*\/))|(?:video\/))?([0-9]+).*$
+        |/(?:(?:groups/[^/]+/videos/)
+        |(?:ondemand|channels)(?:(?:/less/)
+        |(?:user[0-9]+/review/)?([0-9]+).*
+        |(?:/\w*/))|(?:video/))?([0-9]+).*$
         }x
       end
 
@@ -42,10 +42,10 @@ class VideoInfo
       end
 
       def _default_url_attributes
-        { title: 0,
-          byline: 0,
-          portrait: 0,
-          autoplay: 0 }
+        {title: 0,
+         byline: 0,
+         portrait: 0,
+         autoplay: 0}
       end
     end
   end

@@ -1,12 +1,14 @@
-require 'video_info/version'
-require 'video_info/provider'
-require 'forwardable'
-require 'net/http'
-require 'logger'
+require "video_info/version"
+require "video_info/provider"
+require "forwardable"
+require "net/http"
+require "logger"
 
 class VideoInfo
   class Error < StandardError; end
+
   class UrlError < Error; end
+
   class HttpError < Error; end
 
   class << self
@@ -22,7 +24,7 @@ class VideoInfo
 
     def provider_api_keys=(api_keys)
       api_keys.keys.each do |key|
-        raise ArgumentError, 'Key must be a symbol!' unless key.is_a?(Symbol)
+        raise ArgumentError, "Key must be a symbol!" unless key.is_a?(Symbol)
       end
       @provider_api_keys = api_keys
     end
@@ -47,11 +49,11 @@ class VideoInfo
   def_delegators :@provider, :date, :duration, :width, :height
   def_delegators :@provider, :thumbnail
   def_delegators :@provider,
-                 :thumbnail_small,
-                 :thumbnail_medium,
-                 :thumbnail_large,
-                 :thumbnail_large_2x,
-                 :thumbnail_maxres
+    :thumbnail_small,
+    :thumbnail_medium,
+    :thumbnail_large,
+    :thumbnail_large_2x,
+    :thumbnail_maxres
   def_delegators :@provider, :embed_code, :embed_url
   def_delegators :@provider, :available?
   def_delegators :@provider, :playlist_id, :videos
@@ -94,7 +96,7 @@ class VideoInfo
   private
 
   def _select_provider(url, options)
-    if provider_const = _providers_const.detect { |p| p.usable?(url) }
+    if (provider_const = _providers_const.detect { |p| p.usable?(url) })
       const_provider = provider_const.new(url, options)
 
       if defined?(const_provider.provider) && const_provider.provider

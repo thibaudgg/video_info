@@ -1,7 +1,7 @@
 class VideoInfo
   module Providers
     module VimeoAPI
-      THUMBNAIL_LINK_REGEX = /.*\/(\d+\-[^_]+)/
+      THUMBNAIL_LINK_REGEX = /.*\/(\d+-[^_]+)/
 
       def api_key
         VideoInfo.provider_api_keys[:vimeo]
@@ -16,24 +16,24 @@ class VideoInfo
       end
 
       def title
-        _video['name']
+        _video["name"]
       end
 
       def author
-        _video['user']['name']
+        _video["user"]["name"]
       end
 
       def author_thumbnail_id
-        author_uri = _video['user']['pictures']['uri']
+        author_uri = _video["user"]["pictures"]["uri"]
         @author_thumbnail_id ||= parse_picture_id_from_user(author_uri)
       end
 
       def author_url
-        _video['user']['link']
+        _video["user"]["link"]
       end
 
       def author_thumbnail(width = 75)
-        'https://i.vimeocdn.com/portrait/' \
+        "https://i.vimeocdn.com/portrait/" \
         "#{author_thumbnail_id}_#{width}x#{width}.jpg"
       end
 
@@ -58,15 +58,15 @@ class VideoInfo
       end
 
       def keywords_array
-        _video['tags'].map { |t| t['tag'] }
+        _video["tags"].map { |t| t["tag"] }
       end
 
       def date
-        Time.parse(_video['created_time'], Time.now.utc).utc
+        Time.parse(_video["created_time"], Time.now.utc).utc
       end
 
       def view_count
-        _video['stats']['plays'].to_i
+        _video["stats"]["plays"].to_i
       end
 
       private
@@ -86,15 +86,15 @@ class VideoInfo
       end
 
       def _api_version
-        '3.2'
+        "3.2"
       end
 
       def _authorization_headers
-        { 'Authorization' => "bearer #{api_key}" }
+        {"Authorization" => "bearer #{api_key}"}
       end
 
       def _api_version_headers
-        { 'Accept' => "application/vnd.vimeo.*+json;version=#{_api_version}" }
+        {"Accept" => "application/vnd.vimeo.*+json;version=#{_api_version}"}
       end
 
       def _video
@@ -102,7 +102,7 @@ class VideoInfo
       end
 
       def _api_base
-        'api.vimeo.com'
+        "api.vimeo.com"
       end
 
       def _api_path
@@ -113,8 +113,8 @@ class VideoInfo
         "https://#{_api_base}#{_api_path}"
       end
 
-      def parse_picture_id_from_user (uri)
-        %r{\/pictures\/(\d+)}.match(uri)[1]
+      def parse_picture_id_from_user(uri)
+        %r{/pictures/(\d+)}.match(uri)[1]
       end
 
       def parse_picture_id(uri)
