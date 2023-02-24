@@ -47,7 +47,7 @@ class VideoInfo
       end
 
       def date
-        return unless published_at = _video_snippet["publishedAt"]
+        return unless (published_at = _video_snippet["publishedAt"])
         Time.parse(published_at, Time.now.utc)
       end
 
@@ -83,7 +83,7 @@ class VideoInfo
 
       def _channel_info
         channel_url = _channel_api_url(_video_snippet["channelId"])
-        @_channel_info ||= JSON.load(URI.open(channel_url).read)
+        @_channel_info ||= JSON.parse(URI.parse(channel_url).read)
       end
 
       def _channel_snippet

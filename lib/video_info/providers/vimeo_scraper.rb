@@ -181,7 +181,7 @@ class VideoInfo
       end
 
       def _set_data_from_api_impl(api_url)
-        Oga.parse_html(URI.open(api_url.to_s).read)
+        Oga.parse_html(URI.parse(api_url.to_s).read)
       rescue OpenURI::HTTPError
         nil
       end

@@ -1,17 +1,22 @@
-describe VideoInfo::Provider do
-  class ProviderFu < VideoInfo::Provider
-    def _url_regex
-      %r{foo/(\d)}
-    end
-
-    def embed_url
-      "//foo.com"
-    end
-
-    def _default_url_attributes = {}
-
-    def _default_iframe_attributes = {}
+class ProviderFu < VideoInfo::Provider
+  def _url_regex
+    %r{foo/(\d)}
   end
+
+  def embed_url
+    "//foo.com"
+  end
+
+  def _default_url_attributes
+    {}
+  end
+
+  def _default_iframe_attributes
+    {}
+  end
+end
+
+describe VideoInfo::Provider do
   let(:url) { "url" }
   let(:options) { {} }
   let(:provider) { ProviderFu.new("foo/1", options) }

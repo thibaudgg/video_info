@@ -79,7 +79,7 @@ class VideoInfo
       end
 
       def channel_data
-        @channel_data ||= Oga.parse_html(URI.open(author_url).read)
+        @channel_data ||= Oga.parse_html(URI.parse(author_url).read)
       end
 
       def meta_node_value(meta_nodes = video_meta_nodes, name)
@@ -107,9 +107,9 @@ class VideoInfo
         if url.include?(".com/v/")
           video_id = url.split("/v/")[1].split("?")[0]
           new_url = "https://www.youtube.com/watch?v=" + video_id
-          Oga.parse_html(URI.open(new_url).read)
+          Oga.parse_html(URI.parse(new_url).read)
         else
-          Oga.parse_html(URI.open(api_url).read)
+          Oga.parse_html(URI.parse(api_url).read)
         end
       end
 

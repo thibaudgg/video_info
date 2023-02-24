@@ -24,7 +24,7 @@ jobs:
   linter:
     runs-on: ubuntu-latest
     steps:
-      - name: standardrb
+      - name: StandardRB Linter
+        uses: amoeba/standardrb-action@v2
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        uses: amoeba/standardrb-action@v2
