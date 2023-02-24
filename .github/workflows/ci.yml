@@ -20,11 +20,7 @@ jobs:
         with:
           ruby-version: ${{ matrix.ruby }}
           bundler-cache: true
-      - run: bundle exec rspec
-  linter:
-    runs-on: ubuntu-latest
-    steps:
-      - name: StandardRB Linter
-        uses: amoeba/standardrb-action@v2
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Run specs
+        run: bundle exec rspec
+      - name: Run StandardRB Linter
+        run: bundle exec standardrb
