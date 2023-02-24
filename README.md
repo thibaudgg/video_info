@@ -190,8 +190,9 @@ Please read [the contributing guidelines](CONTRIBUTING.md).
 ### Maintainers
 
 - [Thibaud Guillaume-Gentil](https://github.com/thibaudgg) ([@thibaudgg](https://twitter.com/thibaudgg))
-- [Vincent Heuken](https://github.com/vheuken) ([@vheuken](https://github.com/vheuken))
-- [João Vieira](https://github.com/joaocv3) ([@joaocv3](https://github.com/joaocv3))
+- [Vincent Heuken](https://github.com/vheuken)
+- [João Vieira](https://github.com/joaocv3)
+- [Marc Anguera](https://github.com/markets)
 
 ### Contributors
 
