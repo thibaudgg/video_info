@@ -2,9 +2,9 @@ class VideoInfo
   module Providers
     module YoutubeAPI
       def available?
-        if !data['items'].empty?
-          upload_status = data['items'][0]['status']['uploadStatus']
-          'rejected' != upload_status
+        if !data["items"].empty?
+          upload_status = data["items"][0]["status"]["uploadStatus"]
+          upload_status != "rejected"
         else
           false
         end
@@ -17,53 +17,53 @@ class VideoInfo
       end
 
       def author
-        _video_snippet['channelTitle']
+        _video_snippet["channelTitle"]
       end
 
       def author_thumbnail
-        _channel_snippet['thumbnails']['default']['url']
+        _channel_snippet["thumbnails"]["default"]["url"]
       end
 
       def author_url
-        channel_id = _channel_info['items'][0]['id']
-        'https://www.youtube.com/channel/' + channel_id
+        channel_id = _channel_info["items"][0]["id"]
+        "https://www.youtube.com/channel/" + channel_id
       end
 
       def title
-        _video_snippet['title']
+        _video_snippet["title"]
       end
 
       def description
-        _video_snippet['description']
+        _video_snippet["description"]
       end
 
       def keywords
-        _video_snippet['tags']
+        _video_snippet["tags"]
       end
 
       def duration
-        video_duration = _video_content_details['duration'] || 0
+        video_duration = _video_content_details["duration"] || 0
         ISO8601::Duration.new(video_duration).to_seconds.to_i
       end
 
       def date
-        return unless published_at = _video_snippet['publishedAt']
+        return unless (published_at = _video_snippet["publishedAt"])
         Time.parse(published_at, Time.now.utc)
       end
 
       def view_count
-        _video_statistics['viewCount'].to_i
+        _video_statistics["viewCount"].to_i
       end
 
       private
 
       def _api_base
-        'www.googleapis.com'
+        "www.googleapis.com"
       end
 
       def _api_path
         "/youtube/v3/videos?id=#{video_id}" \
-        '&part=snippet,statistics,status,contentDetails&fields=' \
+        "&part=snippet,statistics,status,contentDetails&fields=" \
         "items(id,snippet,statistics,status,contentDetails)&key=#{api_key}"
       end
 
@@ -73,7 +73,7 @@ class VideoInfo
 
       def _video_snippet
         return {} unless available?
-        data['items'][0]['snippet']
+        data["items"][0]["snippet"]
       end
 
       def _channel_api_url(channel_id)
@@ -82,26 +82,26 @@ class VideoInfo
       end
 
       def _channel_info
-        channel_url = _channel_api_url(_video_snippet['channelId'])
-        @_channel_info ||=  JSON.load(URI.open(channel_url).read)
+        channel_url = _channel_api_url(_video_snippet["channelId"])
+        @_channel_info ||= JSON.parse(URI.parse(channel_url).read)
       end
 
       def _channel_snippet
-        _channel_info['items'][0]['snippet']
+        _channel_info["items"][0]["snippet"]
       end
 
       def _video_content_details
         return {} unless available?
-        data['items'][0]['contentDetails']
+        data["items"][0]["contentDetails"]
       end
 
       def _video_statistics
         return {} unless available?
-        data['items'][0]['statistics']
+        data["items"][0]["statistics"]
       end
 
       def _video_thumbnail(id)
-        _video_entry['media$group']['media$thumbnail'][id]['url']
+        _video_entry["media$group"]["media$thumbnail"][id]["url"]
       end
     end
   end

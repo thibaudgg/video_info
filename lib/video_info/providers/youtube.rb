@@ -1,6 +1,6 @@
-require 'iso8601'
-require_relative 'youtube_api'
-require_relative 'youtube_scraper'
+require "iso8601"
+require_relative "youtube_api"
+require_relative "youtube_scraper"
 
 class VideoInfo
   module Providers
@@ -16,11 +16,11 @@ class VideoInfo
       end
 
       def self.usable?(url)
-        url.match? /(youtube\.com\/(?!playlist|embed\/videoseries).*)|(youtu\.be)/
+        url.match?(/(youtube\.com\/(?!playlist|embed\/videoseries).*)|(youtu\.be)/)
       end
 
       def provider
-        'YouTube'
+        "YouTube"
       end
 
       %w[width height].each do |method|
@@ -54,12 +54,12 @@ class VideoInfo
       private
 
       def _url_regex
-        %r{(?:youtube(?:-nocookie)?\.com\/(?:[^\/]+\/.+\/|(?:v|e(?:mbed)?)\/|
-           .*[?&]v=)|youtu\.be\/)([^"&?\/ ]{11})}x
+        %r{(?:youtube(?:-nocookie)?\.com/(?:[^/]+/.+/|(?:v|e(?:mbed)?)/|
+           .*[?&]v=)|youtu\.be/)([^"&?/ ]{11})}x
       end
 
       def _default_iframe_attributes
-        { allowfullscreen: 'allowfullscreen' }
+        {allowfullscreen: "allowfullscreen"}
       end
 
       def _default_url_attributes

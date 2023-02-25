@@ -1,18 +1,18 @@
 describe VideoInfo do
-  describe '#initialize' do
-    let(:url) { 'url' }
-    let(:options) { { foo: :bar } }
-    let(:provider) { double('provider', provider: 'Provider') }
+  describe "#initialize" do
+    let(:url) { "url" }
+    let(:options) { {foo: :bar} }
+    let(:provider) { double("provider", provider: "Provider") }
 
-    it 'uses the first usable provider' do
+    it "uses the first usable provider" do
       allow(VideoInfo::Providers::Vimeo).to receive(:usable?) { false }
       allow(VideoInfo::Providers::Youtube).to receive(:usable?) { true }
       allow(VideoInfo::Providers::Youtube).to receive(:new) { provider }
 
-      expect(VideoInfo.new(url, options).provider).to eq 'Provider'
+      expect(VideoInfo.new(url, options).provider).to eq "Provider"
     end
 
-    it 'raise when no providers are usable' do
+    it "raise when no providers are usable" do
       allow(VideoInfo::Providers::Vimeo).to receive(:usable?) { false }
       allow(VideoInfo::Providers::Youtube).to receive(:usable?) { false }
 
@@ -20,11 +20,11 @@ describe VideoInfo do
     end
   end
 
-  describe '.disable_providers' do
-    let(:youtube_url) { 'https://www.youtube.com/watch?v=mZqGqE0D0n4' }
-    let(:vimeo_url) { 'http://vimeo.com/86701482' }
+  describe ".disable_providers" do
+    let(:youtube_url) { "https://www.youtube.com/watch?v=mZqGqE0D0n4" }
+    let(:vimeo_url) { "http://vimeo.com/86701482" }
 
-    it 'does not attempt to use a provider marked as disabled' do
+    it "does not attempt to use a provider marked as disabled" do
       VideoInfo.disable_providers = %w[YouTube Vimeo]
 
       expect { VideoInfo.new(youtube_url) }.to raise_error(VideoInfo::UrlError)
@@ -33,7 +33,7 @@ describe VideoInfo do
       VideoInfo.disable_providers = []
     end
 
-    it 'is case insensitive' do
+    it "is case insensitive" do
       VideoInfo.disable_providers = %w[youTUBe VIMEO]
 
       expect { VideoInfo.new(youtube_url) }.to raise_error(VideoInfo::UrlError)
@@ -43,11 +43,11 @@ describe VideoInfo do
     end
   end
 
-  describe '.usable?' do
-    let(:url) { 'url' }
-    let(:provider) { double('provider', new: true) }
+  describe ".usable?" do
+    let(:url) { "url" }
+    let(:provider) { double("provider", new: true) }
 
-    it 'returns true when a provider is usable' do
+    it "returns true when a provider is usable" do
       allow(VideoInfo::Providers::Vimeo).to receive(:usable?) { false }
       allow(VideoInfo::Providers::Youtube).to receive(:usable?) { true }
       allow(VideoInfo::Providers::Youtube).to receive(:new) { true }
@@ -55,7 +55,7 @@ describe VideoInfo do
       expect(VideoInfo.usable?(url)).to be_truthy
     end
 
-    it 'returns false when no providers are usable' do
+    it "returns false when no providers are usable" do
       allow(VideoInfo::Providers::Vimeo).to receive(:usable?) { false }
       allow(VideoInfo::Providers::Youtube).to receive(:usable?) { false }
 
@@ -63,46 +63,46 @@ describe VideoInfo do
     end
   end
 
-  describe '.provider_api_keys' do
-    it 'raises an error if key is not a symbol' do
+  describe ".provider_api_keys" do
+    it "raises an error if key is not a symbol" do
       expected_error = expect do
-        VideoInfo.provider_api_keys = { 'Youtube' => 'key' }
+        VideoInfo.provider_api_keys = {"Youtube" => "key"}
       end
 
       expected_error.to raise_error(ArgumentError)
 
       expected = expect do
-        VideoInfo.provider_api_keys = { youtube: 'key' }
+        VideoInfo.provider_api_keys = {youtube: "key"}
       end
 
       expected.to_not raise_error
     end
   end
 
-  describe '.valid_url?' do
-    it 'checks if passed url is usable in some of the enabled providers' do
+  describe ".valid_url?" do
+    it "checks if passed url is usable in some of the enabled providers" do
       allow(VideoInfo::Providers::Dailymotion).to receive(:usable?) { false }
 
-      expect(VideoInfo.valid_url?('http://www.youtube.com/watch?v=AT_5xOGh6Ko')).to be_truthy
-      expect(VideoInfo.valid_url?('http://vimeo.com/86701482')).to be_truthy
-      expect(VideoInfo.valid_url?('http://www.dailymotion.com/video/x7lni3')).to be_falsey
-      expect(VideoInfo.valid_url?('http://example.com/video/ABC123456')).to be_falsey
+      expect(VideoInfo.valid_url?("http://www.youtube.com/watch?v=AT_5xOGh6Ko")).to be_truthy
+      expect(VideoInfo.valid_url?("http://vimeo.com/86701482")).to be_truthy
+      expect(VideoInfo.valid_url?("http://www.dailymotion.com/video/x7lni3")).to be_falsey
+      expect(VideoInfo.valid_url?("http://example.com/video/ABC123456")).to be_falsey
     end
   end
 
-  describe '#==' do
-    let(:vi_a) { VideoInfo.new('http://www.youtube.com/watch?v=AT_5xOGh6Ko') }
-    let(:vi_b) { VideoInfo.new('http://www.youtube.com/watch?v=AT_5xOGh6Ko') }
-    let(:vi_c) { VideoInfo.new('http://vimeo.com/86701482') }
+  describe "#==" do
+    let(:vi_a) { VideoInfo.new("http://www.youtube.com/watch?v=AT_5xOGh6Ko") }
+    let(:vi_b) { VideoInfo.new("http://www.youtube.com/watch?v=AT_5xOGh6Ko") }
+    let(:vi_c) { VideoInfo.new("http://vimeo.com/86701482") }
 
-    context 'matching' do
-      it 'returns true' do
+    context "matching" do
+      it "returns true" do
         expect(vi_a == vi_b).to be_truthy
       end
     end
 
-    context 'not matching' do
-      it 'returns false' do
+    context "not matching" do
+      it "returns false" do
         expect(vi_a == vi_c).to be_falsey
         expect(vi_b == vi_c).to be_falsey
       end

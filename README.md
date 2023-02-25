@@ -1,6 +1,10 @@
 # VideoInfo
 
-[![Gem Version](https://badge.fury.io/rb/video_info.svg)](http://badge.fury.io/rb/video_info) [![Build Status](https://github.com/thibaudgg/video_info/workflows/Ruby%20Unit%20Tests/badge.svg?branch=master)](https://github.com/thibaudgg/video_info/actions?query=workflow%3A%22Ruby+Unit+Tests%22) [![Code Climate](https://codeclimate.com/github/thibaudgg/video_info.svg)](https://codeclimate.com/github/thibaudgg/video_info) [![Coverage Status](https://coveralls.io/repos/thibaudgg/video_info/badge.svg?branch=master)](https://coveralls.io/r/thibaudgg/video_info) [![Reviewed by Hound](https://img.shields.io/badge/Reviewed_by-Hound-8E64B0.svg)](https://houndci.com)
+[![Gem Version](https://badge.fury.io/rb/video_info.svg)](http://badge.fury.io/rb/video_info)
+[![CI](https://github.com/thibaudgg/video_info/actions/workflows/ci.yml/badge.svg)](https://github.com/thibaudgg/video_info/actions/workflows/ci.yml)
+[![Code Climate](https://codeclimate.com/github/thibaudgg/video_info.svg)](https://codeclimate.com/github/thibaudgg/video_info)
+[![Coverage Status](https://coveralls.io/repos/thibaudgg/video_info/badge.svg?branch=master)](https://coveralls.io/r/thibaudgg/video_info)
+[![Ruby Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://github.com/testdouble/standard)
 
 Simple Ruby Gem to get video info from Dailymotion, Vimeo, Wistia and YouTube (with playlist).
 
@@ -175,16 +179,21 @@ VideoInfo.disable_providers = [] # enable all providers
 Note: `disable_providers` is case-insensitive. Attempting to use a disabled provider will raise a UrlError, just like attempting to use a
 non-video URL.
 
-## Author
+## Contributing
+
+Please read [the contributing guidelines](CONTRIBUTING.md).
+
+### Author
 
 [Thibaud Guillaume-Gentil](https://github.com/thibaudgg) ([@thibaudgg](https://twitter.com/thibaudgg))
 
-## Maintainers
+### Maintainers
 
 - [Thibaud Guillaume-Gentil](https://github.com/thibaudgg) ([@thibaudgg](https://twitter.com/thibaudgg))
-- [Vincent Heuken](https://github.com/vheuken) ([@vheuken](https://github.com/vheuken))
-- [João Vieira](https://github.com/joaocv3) ([@joaocv3](https://github.com/joaocv3))
+- [Vincent Heuken](https://github.com/vheuken)
+- [João Vieira](https://github.com/joaocv3)
+- [Marc Anguera](https://github.com/markets)
 
-## Contributors
+### Contributors
 
 [https://github.com/thibaudgg/video_info/graphs/contributors](https://github.com/thibaudgg/video_info/graphs/contributors)
