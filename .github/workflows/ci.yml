@@ -2,6 +2,10 @@ name: CI
 
 on: [push, pull_request]
 
+permissions:
+  checks: write
+  contents: read
+
 env:
   YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
   VIMEO_ACCESS_TOKEN: ${{ secrets.VIMEO_ACCESS_TOKEN }}
@@ -20,7 +24,11 @@ jobs:
         with:
           ruby-version: ${{ matrix.ruby }}
           bundler-cache: true
-      - name: Run specs
-        run: bundle exec rspec
-      - name: Run StandardRB Linter
-        run: bundle exec standardrb
+      - run: bundle exec rspec
+  linter:
+    runs-on: ubuntu-latest
+    steps:
+      - name: StandardRB Linter
+        uses: amoeba/standardrb-action@v4
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
