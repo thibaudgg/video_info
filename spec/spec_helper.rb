@@ -1,10 +1,11 @@
 require "simplecov"
-require "simplecov_json_formatter"
 
-SimpleCov.formatters = SimpleCov::Formatter::MultiFormatter.new([
-  SimpleCov::Formatter::HTMLFormatter,
+SimpleCov.formatter = if ENV["CI"]
+  require "simplecov_json_formatter"
   SimpleCov::Formatter::JSONFormatter
-])
+else
+  SimpleCov::Formatter::HTMLFormatter
+end
 SimpleCov.start
 
 require "rspec"
