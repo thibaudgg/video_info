@@ -189,11 +189,13 @@
 
       describe "#author_thumbnail" do
         subject { super().author_thumbnail }
-        author_thumbnail = "https://yt3.googleusercontent.com/ytc/" \
-                           "AL5GRJXbalTdHiTioC9wlrBz3GukwrYp1Q6EXcBYbugs" \
-                           "=s88-c-k-c0x00ffffff-no-rj"
 
-        xit { is_expected.to eql author_thumbnail }
+        author_thumbnails = [
+          "https://yt3.googleusercontent.com/ytc/AL5GRJXbalTdHiTioC9wlrBz3GukwrYp1Q6EXcBYbugs=s900-c-k-c0x00ffffff-no-rj",
+          "https://yt3.ggpht.com/ytc/AL5GRJXbalTdHiTioC9wlrBz3GukwrYp1Q6EXcBYbugs=s88-c-k-c0x00ffffff-no-rj"
+        ]
+
+        it { expect(author_thumbnails).to include subject }
       end
 
       describe "#author_url" do
