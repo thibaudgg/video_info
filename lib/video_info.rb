@@ -44,21 +44,11 @@ class VideoInfo
   ].freeze
   PROVIDERS.each { |p| require "video_info/providers/#{p.downcase}" }
 
-  def_delegators :@provider, :provider, :video_id, :video_owner, :url, :data
-  def_delegators :@provider, :title, :description, :keywords, :view_count
-  def_delegators :@provider, :date, :duration, :width, :height
-  def_delegators :@provider, :thumbnail
   def_delegators :@provider,
-    :thumbnail_small,
-    :thumbnail_medium,
-    :thumbnail_large,
-    :thumbnail_large_2x,
-    :thumbnail_maxres
-  def_delegators :@provider, :embed_code, :embed_url
-  def_delegators :@provider, :available?
-  def_delegators :@provider, :playlist_id, :videos
-  def_delegators :@provider, :author, :author_thumbnail, :author_url
-  def_delegators :@provider, :data=
+    :available?, :provider, :video_id, :video_owner, :url, :data, :data=,
+    :title, :description, :keywords, :view_count, :date, :duration, :width, :height,
+    :thumbnail, :thumbnail_small, :thumbnail_medium, :thumbnail_large, :thumbnail_large_2x, :thumbnail_maxres,
+    :embed_code, :embed_url, :author, :author_thumbnail, :author_url, :playlist_id, :videos
 
   def initialize(url, options = {})
     @provider = _select_provider(url, options)
