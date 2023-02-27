@@ -1,12 +1,17 @@
+require "simplecov"
+
+SimpleCov.formatter = if ENV["CI"]
+  require "simplecov_json_formatter"
+  SimpleCov::Formatter::JSONFormatter
+else
+  SimpleCov::Formatter::HTMLFormatter
+end
+SimpleCov.start
+
 require "rspec"
 require "rspec/its"
 require "video_info"
 require "vcr"
-
-if ENV["CI"]
-  require "coveralls"
-  Coveralls.wear!
-end
 
 VCR.configure do |config|
   config.cassette_library_dir = "spec/fixtures/vcr_cassettes"

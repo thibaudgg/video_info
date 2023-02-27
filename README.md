@@ -2,8 +2,8 @@
 
 [![Gem Version](https://badge.fury.io/rb/video_info.svg)](http://badge.fury.io/rb/video_info)
 [![CI](https://github.com/thibaudgg/video_info/actions/workflows/ci.yml/badge.svg)](https://github.com/thibaudgg/video_info/actions/workflows/ci.yml)
-[![Code Climate](https://codeclimate.com/github/thibaudgg/video_info.svg)](https://codeclimate.com/github/thibaudgg/video_info)
-[![Coverage Status](https://coveralls.io/repos/thibaudgg/video_info/badge.svg?branch=master)](https://coveralls.io/r/thibaudgg/video_info)
+[![Maintainability](https://api.codeclimate.com/v1/badges/1f03474bdb81e735002c/maintainability)](https://codeclimate.com/github/thibaudgg/video_info/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/1f03474bdb81e735002c/test_coverage)](https://codeclimate.com/github/thibaudgg/video_info/test_coverage)
 [![Ruby Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://github.com/testdouble/standard)
 
 Simple Ruby Gem to get video info from Dailymotion, Vimeo, Wistia and YouTube (with playlist).
@@ -32,11 +32,10 @@ Youtube and Vimeo have recently updated their APIs to require API keys.
 
 Scrapers has been implemented for both Youtube and Vimeo. However, the Youtube scraper can only get the date the video was posted, while the API is able to get the date and the exact time the video was posted. You may also wish to use the API to protect against potential HTML changes that could break the scrapers.
 
-To get a Youtube API key, [follow the instructions here](https://developers.google.com/youtube/registering_an_application)
+**How to get these API keys**
 
-After generating a Youtube API key it is necessary to enable the YouTube Data API for the project which your API key was generated [enable Youtube Data API here](https://console.developers.google.com/apis/library/youtube.googleapis.com)
-
-To get a Vimeo API key, [follow the instructions here](https://developer.vimeo.com/api/start)
+- To get a Youtube API key, [follow the instructions here](https://developers.google.com/youtube/registering_an_application). After generating a Youtube API key it is necessary to enable the YouTube Data API for the project which your API key was generated [enable Youtube Data API here](https://console.developers.google.com/apis/library/youtube.googleapis.com).
+- To get a Vimeo API key, [follow the instructions here](https://developer.vimeo.com/api/start).
 
 To set the API keys, do the following:
 
