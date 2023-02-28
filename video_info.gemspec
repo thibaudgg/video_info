@@ -14,7 +14,7 @@ Gem::Specification.new do |s|
   s.files = `git ls-files`.split($/).reject { |x| x.match?(%r{^spec/}) }
   s.require_path = "lib"
 
-  s.required_ruby_version = ">= 2.5.0"
+  s.required_ruby_version = ">= 2.7.0"
 
   s.add_dependency "iso8601", "~> 0.13.0"
   s.add_dependency "oga", "~> 3.4"
