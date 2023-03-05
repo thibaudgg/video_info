@@ -1,7 +1,4 @@
 require "oga"
-require "open-uri"
-require "json"
-require "openssl"
 require "cgi"
 
 class VideoInfo

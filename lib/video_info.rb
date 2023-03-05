@@ -1,7 +1,6 @@
 require "video_info/version"
 require "video_info/provider"
 require "forwardable"
-require "net/http"
 require "logger"
 
 class VideoInfo
