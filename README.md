@@ -156,7 +156,7 @@ video = VideoInfo.new('http://www.youtube.com/watch?v=mZqGqE0D0n4', referer: 'ht
 
 User-Agent when empty defaults to "VideoInfo/VERSION" - where version is current VideoInfo version, e.g. **"VideoInfo/0.2.7"**.
 
-It supports all openURI header fields (options), for more information see: [openURI DOCS](http://www.ruby-doc.org/stdlib-1.9.3/libdoc/open-uri/rdoc/OpenURI.html)
+It supports all `OpenURI` header fields (options), for more information see: [OpenURI docs](https://ruby-doc.org/3.2.0/stdlibs/open-uri/OpenURI.html).
 
 You can also include an `iframe_attributes` or `url_attributes` hash to the `embed_code` method to include arbitrary attributes in the iframe embed code or as additional URL params:
 
@@ -175,8 +175,8 @@ VideoInfo.disable_providers = %w[YouTube] # disable YouTube
 VideoInfo.disable_providers = %w[Vimeo YouTube] # disable Vimeo and Youtube
 VideoInfo.disable_providers = [] # enable all providers
 ```
-Note: `disable_providers` is case-insensitive. Attempting to use a disabled provider will raise a UrlError, just like attempting to use a
-non-video URL.
+
+**NOTE:** `disable_providers` is case-insensitive. Attempting to use a disabled provider will raise a UrlError, just like attempting to use a non-video URL.
 
 ## Contributing
 

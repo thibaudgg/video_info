@@ -38,8 +38,11 @@ class VideoInfo
   extend Forwardable
 
   PROVIDERS = %w[
-    Dailymotion Wistia
-    Vimeo Youtube YoutubePlaylist
+    Dailymotion
+    Wistia
+    Vimeo
+    Youtube
+    YoutubePlaylist
   ].freeze
   PROVIDERS.each { |p| require "video_info/providers/#{p.downcase}" }
 
