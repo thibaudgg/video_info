@@ -1,6 +1,8 @@
 require "open-uri"
 require "json"
 require "uri"
+require "net/http"
+require "openssl"
 
 class VideoInfo
   class Provider

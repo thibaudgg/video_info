@@ -1,5 +1,3 @@
-require "oga"
-
 class VideoInfo
   module Providers
     module YoutubePlaylistScraper

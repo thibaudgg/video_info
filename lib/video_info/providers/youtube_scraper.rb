@@ -1,5 +1,4 @@
 require "oga"
-require "open-uri"
 require "net_http_timeout_errors"
 
 class VideoInfo
