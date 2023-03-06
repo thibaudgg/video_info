@@ -207,7 +207,7 @@
 
       describe "#view_count" do
         subject { super().view_count }
-        it { is_expected.to be > 80 }
+        it { is_expected.to be > 600 }
       end
     end
 
