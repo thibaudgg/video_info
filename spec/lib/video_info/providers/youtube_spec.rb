@@ -288,7 +288,7 @@
 
       describe "#view_count" do
         subject { super().view_count }
-        it { is_expected.to be > 4000 }
+        it { is_expected.to be > 8000 }
       end
     end
 
@@ -591,7 +591,7 @@
 
       describe "#view_count" do
         subject { super().view_count }
-        it { is_expected.to be > 80 }
+        it { is_expected.to be > 8000 }
       end
     end
   end
