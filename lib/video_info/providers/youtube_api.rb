@@ -52,7 +52,12 @@ class VideoInfo
       end
 
       def view_count
-        _video_statistics["viewCount"].to_i
+        stats["viewCount"].to_i
+      end
+
+      def stats
+        return {} unless available?
+        data["items"][0]["statistics"]
       end
 
       private
@@ -93,11 +98,6 @@ class VideoInfo
       def _video_content_details
         return {} unless available?
         data["items"][0]["contentDetails"]
-      end
-
-      def _video_statistics
-        return {} unless available?
-        data["items"][0]["statistics"]
       end
 
       def _video_thumbnail(id)

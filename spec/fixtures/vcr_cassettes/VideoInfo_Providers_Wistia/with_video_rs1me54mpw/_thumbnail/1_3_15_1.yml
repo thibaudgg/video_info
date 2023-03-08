@@ -21,7 +21,7 @@ http_interactions:
       Connection:
       - keep-alive
       Content-Length:
-      - '466'
+      - '813'
       Access-Control-Allow-Origin:
       - "*"
       Cache-Control:
@@ -43,25 +43,25 @@ http_interactions:
       X-Permitted-Cross-Domain-Policies:
       - none
       X-Request-Id:
-      - ca534aa4a5a4d096bb50aa7a2c3938a3
+      - 4bd3334117cd3b8f09fc0754d6847d31
       X-Runtime:
-      - '0.036110'
+      - '0.033471'
       Via:
       - 1.1 varnish, 1.1 varnish
       Accept-Ranges:
       - bytes
       Date:
-      - Sun, 19 Feb 2023 18:44:03 GMT
+      - Wed, 08 Mar 2023 00:34:06 GMT
       Age:
-      - '0'
+      - '1'
       X-Served-By:
-      - cache-iad-kjyo7100166-IAD, cache-mad22080-MAD
+      - cache-iad-kjyo7100166-IAD, cache-mad22068-MAD
       X-Cache:
-      - HIT, HIT
+      - MISS, HIT
       X-Cache-Hits:
-      - 1, 1
+      - 0, 1
       X-Timer:
-      - S1676832243.365403,VS0,VE1
+      - S1678235646.272695,VS0,VE1
       Vary:
       - Accept-Encoding,X-Forwarded-Proto,X-ECMA-Override
       Strict-Transport-Security:
@@ -80,5 +80,5 @@ http_interactions:
         name=\"wistia_embed\" msallowfullscreen width=\"960\" height=\"540\"\u003e\u003c/iframe\u003e\n\u003cscript
         src=\"https://fast.wistia.net/assets/external/E-v1.js\" async\u003e\u003c/script\u003e","width":960,"height":540,"provider_name":"Wistia,
         Inc.","provider_url":"https://wistia.com","title":"Lance Kalish - Yes To Group","thumbnail_url":"https://embed-ssl.wistia.com/deliveries/dc005e6a7583a25c4b7c284c08afc42fb67fdb95.jpg?image_crop_resized=960x540","thumbnail_width":960,"thumbnail_height":540,"player_color":"7b796a","duration":1214.83}'
-  recorded_at: Sun, 19 Feb 2023 18:44:03 GMT
+  recorded_at: Wed, 08 Mar 2023 00:34:06 GMT
 recorded_with: VCR 6.1.0

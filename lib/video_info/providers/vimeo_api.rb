@@ -66,7 +66,11 @@ class VideoInfo
       end
 
       def view_count
-        _video["stats"]["plays"].to_i
+        stats["plays"].to_i
+      end
+
+      def stats
+        _video["stats"]
       end
 
       private

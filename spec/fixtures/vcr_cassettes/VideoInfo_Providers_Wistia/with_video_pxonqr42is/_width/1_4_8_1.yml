@@ -21,7 +21,7 @@ http_interactions:
       Connection:
       - keep-alive
       Content-Length:
-      - '458'
+      - '805'
       Access-Control-Allow-Origin:
       - "*"
       Cache-Control:
@@ -43,25 +43,25 @@ http_interactions:
       X-Permitted-Cross-Domain-Policies:
       - none
       X-Request-Id:
-      - 85ae1360c044e06ebab2e6467da963d6
+      - d2de78ed5eaeb3f26ddbd3cc305e846f
       X-Runtime:
-      - '0.037311'
+      - '0.040551'
       Via:
       - 1.1 varnish, 1.1 varnish
       Accept-Ranges:
       - bytes
       Date:
-      - Sun, 19 Feb 2023 18:44:03 GMT
+      - Wed, 08 Mar 2023 00:34:06 GMT
       Age:
       - '0'
       X-Served-By:
-      - cache-iad-kjyo7100077-IAD, cache-mad22039-MAD
+      - cache-iad-kjyo7100077-IAD, cache-mad22042-MAD
       X-Cache:
       - MISS, HIT
       X-Cache-Hits:
       - 0, 1
       X-Timer:
-      - S1676832244.642354,VS0,VE1
+      - S1678235647.560836,VS0,VE1
       Vary:
       - Accept-Encoding,X-Forwarded-Proto,X-ECMA-Override
       Strict-Transport-Security:
@@ -80,5 +80,5 @@ http_interactions:
         msallowfullscreen width=\"960\" height=\"540\"\u003e\u003c/iframe\u003e\n\u003cscript
         src=\"https://fast.wistia.net/assets/external/E-v1.js\" async\u003e\u003c/script\u003e","width":960,"height":540,"provider_name":"Wistia,
         Inc.","provider_url":"https://wistia.com","title":"Understanding Analytics","thumbnail_url":"https://embed-ssl.wistia.com/deliveries/0fccbdc60ade35723f79f1c002bc61b135b610fa.jpg?image_crop_resized=960x540","thumbnail_width":960,"thumbnail_height":540,"player_color":"63d0db","duration":250.376}'
-  recorded_at: Sun, 19 Feb 2023 18:44:03 GMT
+  recorded_at: Wed, 08 Mar 2023 00:34:06 GMT
 recorded_with: VCR 6.1.0

@@ -57,6 +57,13 @@ class VideoInfo
         data["views_total"].to_i
       end
 
+      def stats
+        {
+          "views_total" => view_count,
+          "likes_total" => data["likes_total"].to_i
+        }
+      end
+
       private
 
       def _response_code
@@ -84,7 +91,7 @@ class VideoInfo
         "fields=id,title,description,duration,created_time," \
         "url,views_total,tags,thumbnail_url,thumbnail_720_url," \
         "owner.url,owner.screenname,owner.avatar_60_url," \
-        "thumbnail_240_url,thumbnail_60_url"
+        "thumbnail_240_url,thumbnail_60_url,likes_total"
       end
 
       def _default_iframe_attributes

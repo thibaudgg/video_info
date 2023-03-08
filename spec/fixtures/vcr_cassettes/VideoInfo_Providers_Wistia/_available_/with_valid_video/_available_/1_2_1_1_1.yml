@@ -9,6 +9,8 @@ http_interactions:
     headers:
       User-Agent:
       - VideoInfo/3.1.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
       - "*/*"
   response:
@@ -19,11 +21,13 @@ http_interactions:
       Connection:
       - keep-alive
       Content-Length:
-      - '813'
+      - '466'
       Access-Control-Allow-Origin:
       - "*"
       Cache-Control:
       - public, no-cache
+      Content-Encoding:
+      - gzip
       Content-Type:
       - application/json; charset=utf-8
       Etag:
@@ -41,27 +45,27 @@ http_interactions:
       X-Permitted-Cross-Domain-Policies:
       - none
       X-Request-Id:
-      - 12e4e1e5e3c2ec7dfb0ec1d117f00c73
+      - 4bd3334117cd3b8f09fc0754d6847d31
       X-Runtime:
-      - '0.039517'
+      - '0.033471'
       Via:
       - 1.1 varnish, 1.1 varnish
       Accept-Ranges:
       - bytes
       Date:
-      - Sun, 19 Feb 2023 18:44:02 GMT
+      - Wed, 08 Mar 2023 00:34:05 GMT
       Age:
       - '0'
       X-Served-By:
-      - cache-iad-kjyo7100166-IAD, cache-mad22071-MAD
+      - cache-iad-kjyo7100166-IAD, cache-mad22036-MAD
       X-Cache:
-      - HIT, MISS
+      - MISS, HIT
       X-Cache-Hits:
-      - 1, 0
+      - 0, 1
       X-Timer:
-      - S1676832243.579794,VS0,VE128
+      - S1678235646.569519,VS0,VE122
       Vary:
-      - Accept-Encoding, Accept-Encoding,X-Forwarded-Proto,X-ECMA-Override
+      - Accept-Encoding,X-Forwarded-Proto,X-ECMA-Override
       Strict-Transport-Security:
       - max-age=0
       X-Ecma-V:
@@ -73,5 +77,5 @@ http_interactions:
     body:
       encoding: UTF-8
       string: ''
-  recorded_at: Sun, 19 Feb 2023 18:44:02 GMT
+  recorded_at: Wed, 08 Mar 2023 00:34:05 GMT
 recorded_with: VCR 6.1.0

@@ -25,7 +25,7 @@ http_interactions:
       - Referer
       - X-Origin
       Date:
-      - Mon, 20 Feb 2023 19:00:29 GMT
+      - Wed, 08 Mar 2023 00:34:26 GMT
       Server:
       - scaffolding on HTTPServer2
       Cache-Control:
@@ -110,7 +110,7 @@ http_interactions:
                 "madeForKids": false
               },
               "statistics": {
-                "viewCount": "8292",
+                "viewCount": "8296",
                 "likeCount": "66",
                 "favoriteCount": "0",
                 "commentCount": "5"
@@ -118,7 +118,7 @@ http_interactions:
             }
           ]
         }
-  recorded_at: Mon, 20 Feb 2023 19:00:29 GMT
+  recorded_at: Wed, 08 Mar 2023 00:34:26 GMT
 - request:
     method: get
     uri: https://www.googleapis.com/youtube/v3/channels?id=UCzxQk-rZGowoqMBKxGD5jSA&key=youtube_api_key_123&part=snippet
@@ -144,7 +144,7 @@ http_interactions:
       - Referer
       - X-Origin
       Date:
-      - Mon, 20 Feb 2023 19:00:30 GMT
+      - Wed, 08 Mar 2023 00:34:26 GMT
       Server:
       - scaffolding on HTTPServer2
       Cache-Control:
@@ -204,5 +204,5 @@ http_interactions:
             }
           ]
         }
-  recorded_at: Mon, 20 Feb 2023 19:00:30 GMT
+  recorded_at: Wed, 08 Mar 2023 00:34:26 GMT
 recorded_with: VCR 6.1.0
