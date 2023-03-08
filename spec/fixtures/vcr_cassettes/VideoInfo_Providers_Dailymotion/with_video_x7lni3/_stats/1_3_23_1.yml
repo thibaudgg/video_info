@@ -1,0 +1,71 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.dailymotion.com/video/x7lni3?fields=id,title,description,duration,created_time,url,views_total,tags,thumbnail_url,thumbnail_720_url,owner.url,owner.screenname,owner.avatar_60_url,thumbnail_240_url,thumbnail_60_url,likes_total
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - VideoInfo/3.1.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Headers:
+      - Content-Type, Authorization
+      Access-Control-Allow-Methods:
+      - GET, POST, DELETE
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - Date, X-DM-BackNode-Response-Time, X-DM-Edge, X-DM-Cache-Status, X-Served-By
+      Cache-Control:
+      - public, max-age=900
+      Content-Length:
+      - '982'
+      Content-Security-Policy:
+      - upgrade-insecure-requests
+      Content-Security-Policy-Report-Only:
+      - 'default-src https: blob: wss: data: android-webview-video-poster: android-webview:
+        chrome-extension: safari-extension: ''unsafe-eval'' ''unsafe-inline''; report-uri
+        https://www.dailymotion.com/content_security_policy_report_uri'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Wed, 08 Mar 2023 00:33:23 GMT
+      Etag:
+      - W/"rQeFNlJ5iMPO8gmsSDhiVw-gzip"
+      Expect-Ct:
+      - max-age=0, report-uri="https://www.dailymotion.com/content_security_policy_report_uri"
+      Last-Modified:
+      - Tue, 19 May 2015 07:03:39 GMT
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+      Server:
+      - DMS/1.0.42
+      Server-Timing:
+      - total;dur=37, dc;desc="dc3"
+      Timing-Allow-Origin:
+      - "*"
+      Vary:
+      - X-DM-SSL,Accept-Encoding
+      X-Frame-Options:
+      - DENY
+      X-Robots-Tag:
+      - noindex
+    body:
+      encoding: ASCII-8BIT
+      string: '{"id":"x7lni3","title":"Mario Kart (R\u00e9mi Gaillard)","description":"Super
+        R\u00e9mi Kart est un jeu vid\u00e9o de course d\u00e9velopp\u00e9 et \u00e9dit\u00e9
+        par N''Importe Quoi TV. Sa principale originalit\u00e9 vient de sa r\u00e9alit\u00e9...<br
+        \/>L''aventure continue sur www.nimportequi.com","duration":136,"created_time":1228321771,"url":"https:\/\/www.dailymotion.com\/video\/x7lni3","views_total":10342795,"tags":["r\u00e9mi","remi","gaillard","imposteur","imposture","mario","bros","kart","nintendo","jeux"],"thumbnail_url":"https:\/\/s1.dmcdn.net\/v\/mj4x1Zl1hgYHZOy5","thumbnail_720_url":"https:\/\/s2.dmcdn.net\/v\/mj4x1Zl1hg19_KBk\/x720","owner.url":"https:\/\/www.dailymotion.com\/nqtv","owner.screenname":"R\u00e9mi
+        Gaillard","owner.avatar_60_url":"https:\/\/s1.dmcdn.net\/u\/US931a1d_oQFw_dX\/60x60","thumbnail_240_url":"https:\/\/s2.dmcdn.net\/v\/mj4x1Zl1hgr4cHq0\/x240","thumbnail_60_url":"https:\/\/s2.dmcdn.net\/v\/mj4x1Zl1hgGUsnDE\/x60","likes_total":3850}'
+  recorded_at: Wed, 08 Mar 2023 00:33:23 GMT
+recorded_with: VCR 6.1.0
