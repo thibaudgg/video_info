@@ -102,12 +102,12 @@ class VideoInfo
           e.io.respond_to?(:status)
         response_code = e.io.status[0]
         if response_code == "400"
-          log_warn("your API key is probably invalid. Please verify it.")
+          log_warn("Your API key is probably invalid. Please verify it.")
         end
       end
 
-      msg = 'unexpected network error while
-            fetching information about the video'
+      msg = "Unexpected network error while fetching information about the video"
+      msg << " (response code: #{response_code})" if defined?(response_code)
       raise VideoInfo::HttpError.new(msg)
     end
 
