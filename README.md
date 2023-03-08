@@ -59,6 +59,7 @@ video = VideoInfo.new('http://www.dailymotion.com/video/x7lni3')
 # video.thumbnail_large  => 'http://s2.dmcdn.net/BgWxI/x720-YcV.jpg'
 # video.embed_url        => 'http://www.dailymotion.com/embed/video/x7lni3'
 # video.embed_code       => "<iframe src='//www.dailymotion.com/embed/video/x7lni3' frameborder='0' allowfullscreen='allowfullscreen'></iframe>"
+# video.stats            => {"views_total"=>10342797, "likes_total"=>3850}
 
 video = VideoInfo.new("http://vimeo.com/898029")
 # video.available?       => true
@@ -79,6 +80,7 @@ video = VideoInfo.new("http://vimeo.com/898029")
 # video.thumbnail_large  => 'http://b.vimeocdn.com/ts/343/731/34373130_640.jpg'
 # video.embed_url        => 'http://player.vimeo.com/video/898029'
 # video.embed_code       => "<iframe src='//player.vimeo.com/video/898029?title=0&amp;byline=0&amp;portrait=0&amp;autoplay=0' frameborder='0'></iframe>"
+# video.stats            => {"plays"=>630, "likes"=>3, "comments"=>0}
 
 video = VideoInfo.new("http://fast.wistia.com/embed/medias/pxonqr42is")
 # video.available?       => true
@@ -110,6 +112,7 @@ video = VideoInfo.new("http://www.youtube.com/watch?v=mZqGqE0D0n4")
 # video.thumbnail_large  => 'http://i.ytimg.com/vi/mZqGqE0D0n4/hqdefault.jpg'
 # video.embed_url        => 'http://www.youtube.com/embed/mZqGqE0D0n4'
 # video.embed_code       => "<iframe src='//www.youtube.com/embed/mZqGqE0D0n4' frameborder='0' allowfullscreen='allowfullscreen'></iframe>"
+# video.stats            => {"viewCount"=>"8297", "likeCount"=>"66", "favoriteCount"=>"0", "commentCount"=>"5"}
 
 playlist = VideoInfo.new("http://www.youtube.com/playlist?p=PL9hW1uS6HUftLdHI6RIsaf-iXTm09qnEr")
 # playlist.available?          => true
