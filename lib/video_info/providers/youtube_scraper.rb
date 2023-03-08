@@ -67,6 +67,12 @@ class VideoInfo
         itemprop_node_value("interactionCount").to_i
       end
 
+      def stats
+        {
+          "viewCount" => view_count
+        }
+      end
+
       private
 
       def video_meta_nodes
