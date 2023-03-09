@@ -593,6 +593,11 @@
         subject { super().view_count }
         it { is_expected.to be > 8000 }
       end
+
+      describe "#stats" do
+        subject { super().stats.keys }
+        it { is_expected.to match(api_key ? %w[viewCount likeCount favoriteCount commentCount] : %w[viewCount]) }
+      end
     end
   end
 end

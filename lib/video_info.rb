@@ -50,7 +50,7 @@ class VideoInfo
     :available?, :provider, :video_id, :video_owner, :url, :data, :data=,
     :title, :description, :keywords, :view_count, :date, :duration, :width, :height,
     :thumbnail, :thumbnail_small, :thumbnail_medium, :thumbnail_large, :thumbnail_large_2x, :thumbnail_maxres,
-    :embed_code, :embed_url, :author, :author_thumbnail, :author_url, :playlist_id, :videos
+    :embed_code, :embed_url, :author, :author_thumbnail, :author_url, :playlist_id, :videos, :stats
 
   def initialize(url, options = {})
     @provider = _select_provider(url, options)

@@ -6,7 +6,7 @@ require "openssl"
 
 class VideoInfo
   class Provider
-    attr_accessor :url, :options, :iframe_attributes, :video_id
+    attr_accessor :url, :options, :video_id
     attr_writer :data
 
     def initialize(url, options = {})
@@ -51,6 +51,10 @@ class VideoInfo
 
     def thumbnail_maxres
       nil
+    end
+
+    def stats
+      {}
     end
 
     private

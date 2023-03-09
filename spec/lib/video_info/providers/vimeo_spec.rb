@@ -209,6 +209,11 @@
         subject { super().view_count }
         it { is_expected.to be > 600 }
       end
+
+      describe "#stats" do
+        subject { super().stats.keys }
+        it { is_expected.to match(api_key ? %w[plays] : %w[plays likes comments]) }
+      end
     end
 
     context "with video 898029 and url_attributes" do

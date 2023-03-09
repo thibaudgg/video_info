@@ -115,15 +115,24 @@ class VideoInfo
 
       def view_count
         if available?
-          user_interaction_count(interaction_type: "http://schema.org/WatchAction")
+          user_interaction_count(interaction_type: "WatchAction")
         end
+      end
+
+      def stats
+        return {} unless available?
+        {
+          "plays" => view_count,
+          "likes" => user_interaction_count(interaction_type: "LikeAction"),
+          "comments" => user_interaction_count(interaction_type: "CommentAction")
+        }
       end
 
       private
 
       def user_interaction_count(interaction_type:)
         interaction_statistic.find do |stat|
-          stat["interactionType"] == interaction_type
+          stat["interactionType"] == "http://schema.org/#{interaction_type}"
         end["userInteractionCount"]
       end
 

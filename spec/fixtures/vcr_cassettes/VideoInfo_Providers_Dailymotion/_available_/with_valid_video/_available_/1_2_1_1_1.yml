@@ -29,7 +29,7 @@ http_interactions:
       Cache-Control:
       - public, max-age=900
       Content-Length:
-      - '103'
+      - '90'
       Content-Security-Policy:
       - upgrade-insecure-requests
       Content-Security-Policy-Report-Only:
@@ -39,7 +39,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Sun, 19 Feb 2023 18:43:42 GMT
+      - Wed, 08 Mar 2023 00:33:20 GMT
       Etag:
       - W/"rQeFNlJ5iMPO8gmsSDhiVw-gzip"
       Expect-Ct:
@@ -51,7 +51,7 @@ http_interactions:
       Server:
       - DMS/1.0.42
       Server-Timing:
-      - total;dur=33, dc;desc="dc3"
+      - total;dur=30, dc;desc="dc3"
       Timing-Allow-Origin:
       - "*"
       Vary:
@@ -63,5 +63,5 @@ http_interactions:
     body:
       encoding: ASCII-8BIT
       string: '{"id":"x7lni3","title":"Mario Kart (R\u00e9mi Gaillard)","channel":"fun","owner":"x4r137"}'
-  recorded_at: Sun, 19 Feb 2023 18:43:42 GMT
+  recorded_at: Wed, 08 Mar 2023 00:33:20 GMT
 recorded_with: VCR 6.1.0

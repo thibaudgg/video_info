@@ -21,7 +21,7 @@ http_interactions:
       message: Bad Request
     headers:
       Date:
-      - Tue, 21 Feb 2023 20:11:34 GMT
+      - Wed, 08 Mar 2023 00:33:55 GMT
       Content-Type:
       - application/vnd.vimeo.error+json
       Content-Length:
@@ -35,15 +35,15 @@ http_interactions:
       X-Ratelimit-Remaining:
       - '44'
       X-Ratelimit-Reset:
-      - '2023-02-21T20:12:32+00:00'
+      - '2023-03-08T00:34:54+00:00'
       Cache-Control:
       - no-store, no-cache, max-age=0
       Request-Hash:
-      - 5bae94ad
+      - 30b1bd36
       X-Vimeo-Error:
       - 'true'
       X-Bapp-Server:
-      - api-5468cbdff8-3985-0-canary-wns88
+      - api-59dfd9c866-44qxb
       X-Backend-Server:
       - api-k8s
       Accept-Ranges:
@@ -51,25 +51,25 @@ http_interactions:
       Via:
       - 1.1 varnish, 1.1 varnish
       X-Served-By:
-      - cache-iad-kcgs7200105-IAD, cache-mrs10557-MRS
+      - cache-iad-kcgs7200105-IAD, cache-mad22054-MAD
       X-Cache:
       - MISS, MISS
       X-Cache-Hits:
       - 0, 0
       X-Timer:
-      - S1677010294.991810,VS0,VE264
+      - S1678235635.286307,VS0,VE147
       Cf-Cache-Status:
       - DYNAMIC
       Set-Cookie:
-      - __cf_bm=gzeQpBnuwH7JalEbT_PCUAInq.ZDaEuig5HR642wHP8-1677010294-0-AbZai4SiSyby6qlm3sbxr8Ccnb3BPsvzM2XRr7OBdAF2jcy+Zp//PCPFaYAWCEO9wPkpQfuVXrKAAFFsznRvq1U=;
-        path=/; expires=Tue, 21-Feb-23 20:41:34 GMT; domain=.vimeo.com; HttpOnly;
+      - __cf_bm=XJ2FQenQaJuUqnltmi7QvdwKdhC9R2QmuRPflAssXo8-1678235635-0-AeM/qnUf2gQgvHHh3KdgHRwv5k1j1eVdbhNhsqJ/ZShqtib1bd+CmrPA/j0cuqfE8lJk/QsHb8ckDCGpN9XZgxw=;
+        path=/; expires=Wed, 08-Mar-23 01:03:55 GMT; domain=.vimeo.com; HttpOnly;
         Secure; SameSite=None
       Server:
       - cloudflare
       Cf-Ray:
-      - 79d221c15d0c1946-BCN
+      - 7a46fd507e4911b3-BCN
     body:
       encoding: UTF-8
       string: ''
-  recorded_at: Tue, 21 Feb 2023 20:11:34 GMT
+  recorded_at: Wed, 08 Mar 2023 00:33:55 GMT
 recorded_with: VCR 6.1.0

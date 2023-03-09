@@ -85,7 +85,7 @@ describe VideoInfo::Providers::Dailymotion do
 
     describe "#author_thumbnail" do
       subject { super().author_thumbnail }
-      it { is_expected.to match(/https:\/\/s[12].dmcdn.net\/u\/US931Zxdtf3KFwsR\/60x60/) }
+      it { is_expected.to match(/https:\/\/s[12].dmcdn.net\/u\/US931a1d_oQFw_dX\/60x60/) }
     end
 
     describe "#description" do
@@ -159,6 +159,11 @@ describe VideoInfo::Providers::Dailymotion do
     describe "#view_count" do
       subject { super().view_count }
       it { is_expected.to be > 10_000_000 }
+    end
+
+    describe "#stats" do
+      subject { super().stats.keys }
+      it { is_expected.to match(%w[views_total likes_total]) }
     end
   end
 
