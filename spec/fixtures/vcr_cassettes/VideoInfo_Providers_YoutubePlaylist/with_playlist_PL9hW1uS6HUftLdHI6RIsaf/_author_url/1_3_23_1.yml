@@ -8,7 +8,7 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - VideoInfo/3.1.0
+      - VideoInfo/4.0.0
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -25,7 +25,7 @@ http_interactions:
       - Referer
       - X-Origin
       Date:
-      - Wed, 08 Mar 2023 00:34:11 GMT
+      - Sun, 30 Apr 2023 20:00:28 GMT
       Server:
       - scaffolding on HTTPServer2
       Cache-Control:
@@ -97,7 +97,7 @@ http_interactions:
             }
           ]
         }
-  recorded_at: Wed, 08 Mar 2023 00:34:11 GMT
+  recorded_at: Sun, 30 Apr 2023 20:00:28 GMT
 - request:
     method: get
     uri: https://www.googleapis.com/youtube/v3/channels?id=UCMDQxm7cUx3yXkfeHa5zJIQ&key=youtube_api_key_123&part=snippet
@@ -123,7 +123,7 @@ http_interactions:
       - Referer
       - X-Origin
       Date:
-      - Wed, 08 Mar 2023 00:34:11 GMT
+      - Sun, 30 Apr 2023 20:00:28 GMT
       Server:
       - scaffolding on HTTPServer2
       Cache-Control:
@@ -142,5 +142,5 @@ http_interactions:
       encoding: ASCII-8BIT
       string: !binary |-
         ewogICJraW5kIjogInlvdXR1YmUjY2hhbm5lbExpc3RSZXNwb25zZSIsCiAgImV0YWciOiAiOXdOOXdOdUJCc3lxT2ZxWmxEbENXb2ZWc0pFIiwKICAicGFnZUluZm8iOiB7CiAgICAidG90YWxSZXN1bHRzIjogMSwKICAgICJyZXN1bHRzUGVyUGFnZSI6IDUKICB9LAogICJpdGVtcyI6IFsKICAgIHsKICAgICAgImtpbmQiOiAieW91dHViZSNjaGFubmVsIiwKICAgICAgImV0YWciOiAiem85NFJvZmxKLU12TzlCOHdHdkswTEFraTNJIiwKICAgICAgImlkIjogIlVDTURReG03Y1V4M3lYa2ZlSGE1ekpJUSIsCiAgICAgICJzbmlwcGV0IjogewogICAgICAgICJ0aXRsZSI6ICJZb3VUdWJlIFZpZXdlcnMiLAogICAgICAgICJkZXNjcmlwdGlvbiI6ICJXZWxjb21lIHRvIHRoZSBZb3VUdWJlIFZpZXdlcnMgY2hhbm5lbCEgXG5cbldhbnQgdXBkYXRlcyBvbiBuZXcgZmVhdHVyZXMgYW5kIHByb2R1Y3RzIGZvciB2aWV3ZXJzPyBOZWVkIGhlbHAgd2l0aCBvbmUgb2Ygb3VyIHNlcnZpY2VzIGxpa2UgWW91VHViZSBUViwgWW91VHViZSBQcmVtaXVtLCBZb3VUdWJlIEtpZHMgb3IgWW91VHViZSBNdXNpYz8gWW914oCZdmUgY29tZSB0byB0aGUgcmlnaHQgcGxhY2UhIFxuXG5UdW5lIGluIGZvciBvZmZpY2lhbCB1cGRhdGVzIGFuZCB3YWxrdGhyb3VnaHMgZm9yIHZpZXdlcnMuIERvbuKAmXQgZm9yZ2V0IHRvIHN1YnNjcmliZSBhbmQgdGFwIHRoZSBiZWxsIVxuXG5Gb2xsb3cgQFRlYW1Zb3VUdWJlIG9uIFR3aXR0ZXIgdG8gZ2V0IG9mZmljaWFsIHVwZGF0ZXMgYW5kIGFuc3dlcnMgdG8geW91ciBZb3VUdWJlIHF1ZXN0aW9ucy4gQXZhaWxhYmxlIGluIHRoZSBmb2xsb3dpbmcgbGFuZ3VhZ2VzIC0gRW5nbGlzaCwgRXNwYcOxb2wsIFBvcnR1Z3XDqnMsIERldXRzY2gsIEZyYW7Dp2FpcywgUNGD0YHRgdC60LjQuSwg5pel5pys6KqeLCBCYWhhc2EuXG5cbiIsCiAgICAgICAgImN1c3RvbVVybCI6ICJAeW91dHViZXZpZXdlcnMiLAogICAgICAgICJwdWJsaXNoZWRBdCI6ICIyMDA3LTA1LTAzVDIyOjU0OjEyWiIsCiAgICAgICAgInRodW1ibmFpbHMiOiB7CiAgICAgICAgICAiZGVmYXVsdCI6IHsKICAgICAgICAgICAgInVybCI6ICJodHRwczovL3l0My5nZ3BodC5jb20vY2NQcjgwcmZrT2dzRTBUTVA4Uzh2RWZQODVnbDEyWHpVR3R5U1BGRllOTWh4bFE2Mlc3aWprc21VSVh2NmZDQkMxakJtb0VxYUE9czg4LWMtay1jMHgwMGZmZmZmZi1uby1yaiIsCiAgICAgICAgICAgICJ3aWR0aCI6IDg4LAogICAgICAgICAgICAiaGVpZ2h0IjogODgKICAgICAgICAgIH0sCiAgICAgICAgICAibWVkaXVtIjogewogICAgICAgICAgICAidXJsIjogImh0dHBzOi8veXQzLmdncGh0LmNvbS9jY1ByODByZmtPZ3NFMFRNUDhTOHZFZlA4NWdsMTJYelVHdHlTUEZGWU5NaHhsUTYyVzdpamtzbVVJWHY2ZkNCQzFqQm1vRXFhQT1zMjQwLWMtay1jMHgwMGZmZmZmZi1uby1yaiIsCiAgICAgICAgICAgICJ3aWR0aCI6IDI0MCwKICAgICAgICAgICAgImhlaWdodCI6IDI0MAogICAgICAgICAgfSwKICAgICAgICAgICJoaWdoIjogewogICAgICAgICAgICAidXJsIjogImh0dHBzOi8veXQzLmdncGh0LmNvbS9jY1ByODByZmtPZ3NFMFRNUDhTOHZFZlA4NWdsMTJYelVHdHlTUEZGWU5NaHhsUTYyVzdpamtzbVVJWHY2ZkNCQzFqQm1vRXFhQT1zODAwLWMtay1jMHgwMGZmZmZmZi1uby1yaiIsCiAgICAgICAgICAgICJ3aWR0aCI6IDgwMCwKICAgICAgICAgICAgImhlaWdodCI6IDgwMAogICAgICAgICAgfQogICAgICAgIH0sCiAgICAgICAgImRlZmF1bHRMYW5ndWFnZSI6ICJlbiIsCiAgICAgICAgImxvY2FsaXplZCI6IHsKICAgICAgICAgICJ0aXRsZSI6ICJZb3VUdWJlIFZpZXdlcnMiLAogICAgICAgICAgImRlc2NyaXB0aW9uIjogIldlbGNvbWUgdG8gdGhlIFlvdVR1YmUgVmlld2VycyBjaGFubmVsISBcblxuV2FudCB1cGRhdGVzIG9uIG5ldyBmZWF0dXJlcyBhbmQgcHJvZHVjdHMgZm9yIHZpZXdlcnM/IE5lZWQgaGVscCB3aXRoIG9uZSBvZiBvdXIgc2VydmljZXMgbGlrZSBZb3VUdWJlIFRWLCBZb3VUdWJlIFByZW1pdW0sIFlvdVR1YmUgS2lkcyBvciBZb3VUdWJlIE11c2ljPyBZb3XigJl2ZSBjb21lIHRvIHRoZSByaWdodCBwbGFjZSEgXG5cblR1bmUgaW4gZm9yIG9mZmljaWFsIHVwZGF0ZXMgYW5kIHdhbGt0aHJvdWdocyBmb3Igdmlld2Vycy4gRG9u4oCZdCBmb3JnZXQgdG8gc3Vic2NyaWJlIGFuZCB0YXAgdGhlIGJlbGwhXG5cbkZvbGxvdyBAVGVhbVlvdVR1YmUgb24gVHdpdHRlciB0byBnZXQgb2ZmaWNpYWwgdXBkYXRlcyBhbmQgYW5zd2VycyB0byB5b3VyIFlvdVR1YmUgcXVlc3Rpb25zLiBBdmFpbGFibGUgaW4gdGhlIGZvbGxvd2luZyBsYW5ndWFnZXMgLSBFbmdsaXNoLCBFc3Bhw7FvbCwgUG9ydHVndcOqcywgRGV1dHNjaCwgRnJhbsOnYWlzLCBQ0YPRgdGB0LrQuNC5LCDml6XmnKzoqp4sIEJhaGFzYS5cblxuIgogICAgICAgIH0sCiAgICAgICAgImNvdW50cnkiOiAiVVMiCiAgICAgIH0KICAgIH0KICBdCn0K
-  recorded_at: Wed, 08 Mar 2023 00:34:11 GMT
+  recorded_at: Sun, 30 Apr 2023 20:00:28 GMT
 recorded_with: VCR 6.1.0

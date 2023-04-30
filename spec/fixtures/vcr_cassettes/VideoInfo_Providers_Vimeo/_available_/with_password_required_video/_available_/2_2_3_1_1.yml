@@ -8,7 +8,7 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - VideoInfo/3.1.0
+      - VideoInfo/4.0.0
       Authorization:
       - bearer vimeo_access_token
       Accept:
@@ -21,7 +21,7 @@ http_interactions:
       message: Bad Request
     headers:
       Date:
-      - Wed, 08 Mar 2023 00:33:55 GMT
+      - Sun, 30 Apr 2023 20:00:09 GMT
       Content-Type:
       - application/vnd.vimeo.error+json
       Content-Length:
@@ -35,15 +35,15 @@ http_interactions:
       X-Ratelimit-Remaining:
       - '44'
       X-Ratelimit-Reset:
-      - '2023-03-08T00:34:54+00:00'
+      - '2023-04-30T20:01:08+00:00'
       Cache-Control:
       - no-store, no-cache, max-age=0
       Request-Hash:
-      - 30b1bd36
+      - 0c214cf9
       X-Vimeo-Error:
       - 'true'
       X-Bapp-Server:
-      - api-59dfd9c866-44qxb
+      - api-c857cdd96-kl79z
       X-Backend-Server:
       - api-k8s
       Accept-Ranges:
@@ -51,25 +51,25 @@ http_interactions:
       Via:
       - 1.1 varnish, 1.1 varnish
       X-Served-By:
-      - cache-iad-kcgs7200105-IAD, cache-mad22054-MAD
+      - cache-iad-kcgs7200105-IAD, cache-mad2200120-MAD
       X-Cache:
       - MISS, MISS
       X-Cache-Hits:
       - 0, 0
       X-Timer:
-      - S1678235635.286307,VS0,VE147
+      - S1682884809.026452,VS0,VE155
       Cf-Cache-Status:
       - DYNAMIC
       Set-Cookie:
-      - __cf_bm=XJ2FQenQaJuUqnltmi7QvdwKdhC9R2QmuRPflAssXo8-1678235635-0-AeM/qnUf2gQgvHHh3KdgHRwv5k1j1eVdbhNhsqJ/ZShqtib1bd+CmrPA/j0cuqfE8lJk/QsHb8ckDCGpN9XZgxw=;
-        path=/; expires=Wed, 08-Mar-23 01:03:55 GMT; domain=.vimeo.com; HttpOnly;
+      - __cf_bm=zK3fSBr3hNWLJRSy.yG3Kk6ZYM_2BeniWM2NPJYKeq0-1682884809-0-AVoScp/BfQIesjbyFJzYTROtru76nu/Rlabg3WN1QD02m9ohbqopPm+99xxxE6/Oq9RmkhLdyrpF3MuyZvj8oO4=;
+        path=/; expires=Sun, 30-Apr-23 20:30:09 GMT; domain=.vimeo.com; HttpOnly;
         Secure; SameSite=None
       Server:
       - cloudflare
       Cf-Ray:
-      - 7a46fd507e4911b3-BCN
+      - 7c025e884dd828de-BCN
     body:
       encoding: UTF-8
       string: ''
-  recorded_at: Wed, 08 Mar 2023 00:33:55 GMT
+  recorded_at: Sun, 30 Apr 2023 20:00:09 GMT
 recorded_with: VCR 6.1.0

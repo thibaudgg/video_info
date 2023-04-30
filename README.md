@@ -23,10 +23,13 @@ Tested against Ruby 2.7, 3.0, 3.1 and 3.2.
 ```bash
 gem install video_info
 ```
-Or add to the Gemfile
+
+Or add to the Gemfile:
+
 ```bash
 gem 'video_info'
 ```
+
 ## Usage
 
 ### Note for YouTube and Vimeo usage!

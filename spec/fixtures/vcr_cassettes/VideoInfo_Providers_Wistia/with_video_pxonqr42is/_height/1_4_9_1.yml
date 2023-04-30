@@ -8,7 +8,7 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - VideoInfo/3.1.0
+      - VideoInfo/4.0.0
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -20,48 +20,54 @@ http_interactions:
     headers:
       Connection:
       - keep-alive
-      Content-Length:
-      - '805'
-      Access-Control-Allow-Origin:
-      - "*"
-      Cache-Control:
-      - public, no-cache
+      Server:
+      - envoy
       Content-Type:
       - application/json; charset=utf-8
-      Etag:
-      - W/"a61024ecded175c4fd74dc15cf8280fd"
-      P3p:
-      - CP="CURi ADMa DEVa IVAa IVDa CONi OUR IND DSP CAO COR"
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Timing-Allow-Origin:
-      - "*"
       X-Content-Type-Options:
       - nosniff
       X-Download-Options:
       - noopen
       X-Permitted-Cross-Domain-Policies:
       - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Access-Control-Allow-Origin:
+      - "*"
+      Timing-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, no-cache
+      Etag:
+      - W/"a61024ecded175c4fd74dc15cf8280fd"
+      P3p:
+      - CP="CURi ADMa DEVa IVAa IVDa CONi OUR IND DSP CAO COR"
+      Set-Cookie:
+      - _w_session=311Dd4oLcHPpbaX9Z8U7bYitNFsmoYiKWHQ5FePMClHPTsd2LfziB2GpC2Mv%2BJzDmrbfynqs2z3fCeXPQRZkWbUeRqLGFHqVEiNSq31cje9O2EZ6pharwJOKPz%2FYxAenp3sWAgeCmJJyYrydrpSVLJex%2FoR8QozeZcC%2BfwoLq0WG4bHWbRWU29BxXxLRt4c2z2JpnHIrkjdxr%2FHoQFmbamDJtkZ%2BLUI8aqFc%2F6FGARg%2BFNHkVEKrKRJzncX5DC41oL1E072BWhcVAwmPnUzMd8esYsvJPGR0r5laW0QD1uxYRIlvjeKL3w%3D%3D--nvf%2F3TFzA13kw5aJ--XBijT6TuagxSAv%2ByXvOrAg%3D%3D;
+        domain=.wistia.com; path=/; expires=Sun, 14 May 2023 20:00:22 GMT; secure;
+        HttpOnly; SameSite=None
+      - authenticity_token=5cFfTg7xBRx2IWjWRqsZjFasaNzMr7wObk7yMtcqzRrV2kVGy68kx1PjAKpjSGQg9R6u_sWrz3utD2tNLlosIA;
+        path=/; secure; SameSite=Lax
       X-Request-Id:
-      - d2de78ed5eaeb3f26ddbd3cc305e846f
+      - ef2b8966-f27a-49c6-b535-78f22bf45c69
       X-Runtime:
-      - '0.040551'
-      Via:
-      - 1.1 varnish, 1.1 varnish
+      - '0.031023'
+      X-Envoy-Upstream-Service-Time:
+      - '32'
       Accept-Ranges:
       - bytes
+      Via:
+      - 1.1 varnish, 1.1 varnish
       Date:
-      - Wed, 08 Mar 2023 00:34:06 GMT
-      Age:
-      - '0'
+      - Sun, 30 Apr 2023 20:00:22 GMT
       X-Served-By:
-      - cache-iad-kjyo7100077-IAD, cache-mad22048-MAD
+      - cache-iad-kcgs7200021-IAD, cache-mad22079-MAD
       X-Cache:
-      - MISS, HIT
+      - MISS, MISS
       X-Cache-Hits:
-      - 0, 1
+      - 0, 0
       X-Timer:
-      - S1678235647.611472,VS0,VE2
+      - S1682884823.843722,VS0,VE117
       Vary:
       - Accept-Encoding,X-Forwarded-Proto,X-ECMA-Override
       Strict-Transport-Security:
@@ -72,6 +78,8 @@ http_interactions:
       - unknown
       X-Browser-Version:
       - '0'
+      Transfer-Encoding:
+      - chunked
     body:
       encoding: ASCII-8BIT
       string: '{"version":"1.0","type":"video","html":"\u003ciframe src=\"https://fast.wistia.net/embed/iframe/pxonqr42is\"
@@ -80,5 +88,5 @@ http_interactions:
         msallowfullscreen width=\"960\" height=\"540\"\u003e\u003c/iframe\u003e\n\u003cscript
         src=\"https://fast.wistia.net/assets/external/E-v1.js\" async\u003e\u003c/script\u003e","width":960,"height":540,"provider_name":"Wistia,
         Inc.","provider_url":"https://wistia.com","title":"Understanding Analytics","thumbnail_url":"https://embed-ssl.wistia.com/deliveries/0fccbdc60ade35723f79f1c002bc61b135b610fa.jpg?image_crop_resized=960x540","thumbnail_width":960,"thumbnail_height":540,"player_color":"63d0db","duration":250.376}'
-  recorded_at: Wed, 08 Mar 2023 00:34:06 GMT
+  recorded_at: Sun, 30 Apr 2023 20:00:22 GMT
 recorded_with: VCR 6.1.0

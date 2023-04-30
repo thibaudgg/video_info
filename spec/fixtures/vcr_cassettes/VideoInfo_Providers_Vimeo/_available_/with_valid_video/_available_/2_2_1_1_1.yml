@@ -8,7 +8,7 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - VideoInfo/3.1.0
+      - VideoInfo/4.0.0
       Authorization:
       - bearer vimeo_access_token
       Accept:
@@ -21,7 +21,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Wed, 08 Mar 2023 00:33:54 GMT
+      - Sun, 30 Apr 2023 20:00:08 GMT
       Content-Type:
       - application/vnd.vimeo.video+json
       Content-Length:
@@ -35,13 +35,13 @@ http_interactions:
       X-Ratelimit-Remaining:
       - '48'
       X-Ratelimit-Reset:
-      - '2023-03-08T00:34:54+00:00'
+      - '2023-04-30T20:01:08+00:00'
       Cache-Control:
       - no-store, no-cache, max-age=0
       Request-Hash:
-      - 0b0148b4
+      - 99c79e8f
       X-Bapp-Server:
-      - api-59dfd9c866-dlqjj
+      - api-c857cdd96-5rzd2
       X-Backend-Server:
       - api-k8s
       Via:
@@ -51,25 +51,25 @@ http_interactions:
       Age:
       - '0'
       X-Served-By:
-      - cache-iad-kiad7000088-IAD, cache-mad22029-MAD
+      - cache-iad-kcgs7200068-IAD, cache-mrs10582-MRS
       X-Cache:
       - MISS, MISS
       X-Cache-Hits:
       - 0, 0
       X-Timer:
-      - S1678235634.295562,VS0,VE517
+      - S1682884808.017593,VS0,VE679
       Cf-Cache-Status:
       - DYNAMIC
       Set-Cookie:
-      - __cf_bm=rmIpVCW30P.__rTBEa.vy0mswgseYjnb3lNyZxQxxqM-1678235634-0-ASJnweMLE6hL8oHKODH872QyT2fggKZSDCk72VjEZy4sob+wRDIiP3HAqmPimVYgyLmegOh+xNo9aNX2Y7dh+Nc=;
-        path=/; expires=Wed, 08-Mar-23 01:03:54 GMT; domain=.vimeo.com; HttpOnly;
+      - __cf_bm=nJ5JGFVrLeV3kfTWYpEYUjSFZ7S6uZZ07vsaJZOze3c-1682884808-0-AezgrS+AKPjXMH3a+pcpOMry/UrJ6Gytd4piZQ6b5v6kbx9F/5M2fPnvO3FVWZxNbnFo3c6FMAGNlC7ZniHtgh0=;
+        path=/; expires=Sun, 30-Apr-23 20:30:08 GMT; domain=.vimeo.com; HttpOnly;
         Secure; SameSite=None
       Server:
       - cloudflare
       Cf-Ray:
-      - 7a46fd4a4f651940-BCN
+      - 7c025e81fe87193e-BCN
     body:
       encoding: UTF-8
       string: ''
-  recorded_at: Wed, 08 Mar 2023 00:33:54 GMT
+  recorded_at: Sun, 30 Apr 2023 20:00:08 GMT
 recorded_with: VCR 6.1.0

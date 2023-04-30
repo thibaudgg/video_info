@@ -85,7 +85,7 @@ describe VideoInfo::Providers::Dailymotion do
 
     describe "#author_thumbnail" do
       subject { super().author_thumbnail }
-      it { is_expected.to match(/https:\/\/s[12].dmcdn.net\/u\/US931a1d_oQFw_dX\/60x60/) }
+      it { is_expected.to match(/https:\/\/s[12].dmcdn.net\/u\/US931aJNmd_aeHz5\/60x60/) }
     end
 
     describe "#description" do

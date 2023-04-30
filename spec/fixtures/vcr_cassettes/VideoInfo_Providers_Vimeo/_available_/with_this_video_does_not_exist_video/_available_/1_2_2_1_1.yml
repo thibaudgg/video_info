@@ -8,7 +8,7 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - VideoInfo/3.1.0
+      - VideoInfo/4.0.0
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -19,55 +19,57 @@ http_interactions:
       message: Unavailable For Legal Reasons
     headers:
       Date:
-      - Wed, 08 Mar 2023 00:33:24 GMT
+      - Sun, 30 Apr 2023 19:59:27 GMT
       Content-Type:
       - text/html; charset=UTF-8
       Connection:
       - keep-alive
       Expires:
-      - Tue, 07 Mar 2023 12:33:24 GMT
+      - Sun, 30 Apr 2023 07:59:27 GMT
       X-Vimeo-Device:
       - d
       X-Frame-Options:
       - sameorigin
+      Set-Cookie:
+      - __cf_bm=SDkHmLGnqNPiu4OaHpRnv0NOrUi4sLiRoMB_fzVG_jg-1682884767-0-AUut/aItOGNEngf0EaEku9gbloL/+uiq9/8LQR6tRo3cWbdZUhT0UtuDPh4AiGsptirSI3grJH1m9QWHGeUMKQc=;
+        path=/; expires=Sun, 30-Apr-23 20:29:27 GMT; domain=.vimeo.com; HttpOnly;
+        Secure; SameSite=None
+      - vuid=128093383.921152986; expires=Wed, 27-Apr-2033 19:59:27 GMT; Max-Age=315360000;
+        path=/; domain=.vimeo.com; secure; SameSite=None
       X-Bapp-Server:
-      - pweb-765c769cf8-tl4cn
-      Accept-Ranges:
-      - bytes
+      - pweb-957867d47-prddc
       Age:
       - '0'
       Via:
-      - 1.1 varnish, 1.1 varnish, 1.1 varnish
+      - 1.1 varnish (Varnish/6.0), 1.1 varnish, 1.1 varnish
       Cache-Control:
       - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
       X-Varnish-Cache:
       - '0'
       X-Vserver:
-      - webproxy-rollout-prod-varnish-1
+      - web-varnish-prod-test-varnish-12
       X-Backend-Proxy:
-      - webproxy2
+      - webproxy43
+      Accept-Ranges:
+      - bytes
       X-Served-By:
-      - cache-iad-kiad7000142-IAD, cache-mrs10539-MRS
+      - cache-iad-kiad7000142-IAD, cache-mad22078-MAD
       X-Cache:
       - MISS, MISS
       X-Cache-Hits:
       - 0, 0
       X-Timer:
-      - S1678235604.419083,VS0,VE563
+      - S1682884767.005042,VS0,VE451
       Cf-Cache-Status:
       - DYNAMIC
-      Set-Cookie:
-      - __cf_bm=omJbGxuRgbvMMAXS0gIU8DvkIM1.XSlNSkr8fjcRoH8-1678235604-0-AQ1vKYyWiA1l5fXvK7yizkgzgUco423gjJO+yj0lJWX0aL5B3XKWflpmeXRtq4+p0LyehSDB1qxKGUs2STL9QQg=;
-        path=/; expires=Wed, 08-Mar-23 01:03:24 GMT; domain=.vimeo.com; HttpOnly;
-        Secure; SameSite=None
       Server:
       - cloudflare
       Cf-Ray:
-      - 7a46fc8f8e0c1946-BCN
+      - 7c025d819ff728de-BCN
     body:
       encoding: UTF-8
       string: ''
-  recorded_at: Wed, 08 Mar 2023 00:33:24 GMT
+  recorded_at: Sun, 30 Apr 2023 19:59:27 GMT
 - request:
     method: get
     uri: https://vimeo.com/59312311
@@ -87,7 +89,7 @@ http_interactions:
       message: Unavailable For Legal Reasons
     headers:
       Date:
-      - Wed, 08 Mar 2023 00:33:25 GMT
+      - Sun, 30 Apr 2023 19:59:27 GMT
       Content-Type:
       - text/html; charset=UTF-8
       Transfer-Encoding:
@@ -95,45 +97,47 @@ http_interactions:
       Connection:
       - keep-alive
       Expires:
-      - Tue, 07 Mar 2023 12:33:25 GMT
+      - Sun, 30 Apr 2023 07:59:27 GMT
       X-Vimeo-Device:
       - d
       X-Frame-Options:
       - sameorigin
+      Set-Cookie:
+      - __cf_bm=LxxWIaanW4eF9ptV9BuF4njxEDW29NJWhOyB.IoFGQI-1682884767-0-ARED63CMqUx9NDVj0LzUwn8GjeFM+W6Z6vtI/JolaxllnDD6QcYh5sXfS5Sikk9RfMPKbLFSDW/EnRmFTWUuSfw=;
+        path=/; expires=Sun, 30-Apr-23 20:29:27 GMT; domain=.vimeo.com; HttpOnly;
+        Secure; SameSite=None
+      - vuid=1705523121.1172627412; expires=Wed, 27-Apr-2033 19:59:27 GMT; Max-Age=315360000;
+        path=/; domain=.vimeo.com; secure; SameSite=None
       X-Bapp-Server:
-      - pweb-765c769cf8-6875n
-      Accept-Ranges:
-      - bytes
+      - pweb-957867d47-xw2lt
       Age:
       - '0'
       Via:
-      - 1.1 varnish, 1.1 varnish, 1.1 varnish
+      - 1.1 varnish (Varnish/6.0), 1.1 varnish, 1.1 varnish
       Cache-Control:
       - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
       X-Varnish-Cache:
       - '0'
       X-Vserver:
-      - webproxy-rollout-prod-varnish-1
+      - web-varnish-prod-test-varnish-12
       X-Backend-Proxy:
-      - webproxy2
+      - webproxy43
+      Accept-Ranges:
+      - bytes
       X-Served-By:
-      - cache-iad-kiad7000142-IAD, cache-mad22088-MAD
+      - cache-iad-kiad7000142-IAD, cache-mrs10541-MRS
       X-Cache:
       - MISS, MISS
       X-Cache-Hits:
       - 0, 0
       X-Timer:
-      - S1678235605.091944,VS0,VE284
+      - S1682884768.649847,VS0,VE233
       Cf-Cache-Status:
       - DYNAMIC
-      Set-Cookie:
-      - __cf_bm=Csxh_ycauflf3eppfcISFTfFI7hiYo6LWhgndqUPyMg-1678235605-0-AQNMR5J72DNYl5QK7s2rvOYSvov7+SqXgRHGQHPzlFV8RYABBK65Cmtl9mo0eI3LNOhP0RTmFyLhVgs4NfWr6f4=;
-        path=/; expires=Wed, 08-Mar-23 01:03:25 GMT; domain=.vimeo.com; HttpOnly;
-        Secure; SameSite=None
       Server:
       - cloudflare
       Cf-Ray:
-      - 7a46fc93babd11b7-BCN
+      - 7c025d85bd35194a-BCN
     body:
       encoding: UTF-8
       string: "<!DOCTYPE html>\n<html lang=\"en\">\n    <head>\n        \n<meta charset=\"utf-8\">\n<meta
@@ -146,8 +150,8 @@ http_interactions:
         \   \n\n        <meta name=\"description\" content=\"Sorry, this video is
         unavailable\">\n        <meta name=\"robots\" content=\"noindex\">\n\n\n\n\n
         \   <link rel=\"apple-touch-icon-precomposed\" href=\"https://i.vimeocdn.com/favicon/main-touch_180\">\n\n<link
-        rel=\"mask-icon\" href=\"https://f.vimeocdn.com/svg/legacy_view_support/iris_icon_v_64.svg?f4d57efea569383c46f01187373f499d9ee49d13\"
-        color=\"#17272e\">\n\n    <link rel=\"shortcut icon\" href=\"https://f.vimeocdn.com/images_v6/favicon.ico?f4d57efea569383c46f01187373f499d9ee49d13\"
+        rel=\"mask-icon\" href=\"https://f.vimeocdn.com/svg/legacy_view_support/iris_icon_v_64.svg?c2c1bc339517c3c3833d145312febc8dc4c9800e\"
+        color=\"#17272e\">\n\n    <link rel=\"shortcut icon\" href=\"https://f.vimeocdn.com/images_v6/favicon.ico?c2c1bc339517c3c3833d145312febc8dc4c9800e\"
         data-play=\"https://i.vimeocdn.com/favicon/play_32\" data-pause=\"https://i.vimeocdn.com/favicon/pause_32\">\n\n<meta
         name=\"msapplication-TileImage\" content=\"https://i.vimeocdn.com/favicon/main-touch_144\">\n<meta
         name=\"msapplication-TileColor\" content=\"#00adef\">\n        <title>VimeUhOh</title>\n
@@ -394,43 +398,79 @@ http_interactions:
         '0');window.newrelic.setCustomAttribute('accountType', 'UNKNOWN');window.newrelic.setCustomAttribute('teamOwnerId',
         '0');window.newrelic.setCustomAttribute('teamOwnerAccountType', 'UNKNOWN');};\n</script>\n
         \                           <link rel=\"stylesheet\" href=\"https://f.vimeocdn.com/styles/css_opt/global/icon_fonts_68eff39472980630c5a0832a2d4396c6.min.css\">\n\n
-        \   <link rel=\"stylesheet\" href=\"https://f.vimeocdn.com/styles/css_opt/exception_combined_3ff0d55b8d371cfb7f690c97c641d494.min.css\">\n
+        \   <link rel=\"stylesheet\" href=\"https://f.vimeocdn.com/styles/css_opt/exception_combined_1e4b694ff109f9c1bd252a05627e8b9f.min.css\">\n
         \   <link rel=\"stylesheet\" href=\"https://f.vimeocdn.com/styles/css_opt/topnav_cart_button_fdda5bef1a116f0878d8b21fda1d5815.min.css\">\n\n\n\n
-        \       <script>\n        \n        var playerAssetUrls = {\"barebone_js\":\"https:\\/\\/f.vimeocdn.com\\/p\\/4.21.11\\/js\\/barebone.js\",\"chromeless_css\":\"https:\\/\\/f.vimeocdn.com\\/p\\/4.21.11\\/css\\/chromeless.css\",\"chromeless_js\":\"https:\\/\\/f.vimeocdn.com\\/p\\/4.21.11\\/js\\/chromeless.js\",\"js\":\"https:\\/\\/f.vimeocdn.com\\/p\\/4.21.11\\/js\\/player.js\",\"css\":\"https:\\/\\/f.vimeocdn.com\\/p\\/4.21.11\\/css\\/player.css\",\"player_url\":\"player.vimeo.com\"};\n\n
+        \       <script>\n        \n        var playerAssetUrls = {\"barebone_js\":\"https:\\/\\/f.vimeocdn.com\\/p\\/4.23.13\\/js\\/barebone.js\",\"chromeless_css\":\"https:\\/\\/f.vimeocdn.com\\/p\\/4.23.13\\/css\\/chromeless.css\",\"chromeless_js\":\"https:\\/\\/f.vimeocdn.com\\/p\\/4.23.13\\/js\\/chromeless.js\",\"js\":\"https:\\/\\/f.vimeocdn.com\\/p\\/4.23.13\\/js\\/player.js\",\"css\":\"https:\\/\\/f.vimeocdn.com\\/p\\/4.23.13\\/css\\/player.css\",\"player_url\":\"player.vimeo.com\"};\n\n
         \       var _extend = function(){for(var r=arguments[0],n=1,e=arguments.length;e>n;n++){var
         t=arguments[n];for(var a in t)t.hasOwnProperty(a)&&(r[a]=t[a])}return r};\n\n
         \           window = _extend(window, {\"vimeo_esi\":{\"config\":{\"route\":\"Vimeo\\\\Controller\\\\ClipController:main\",\"controller\":\"Vimeo\\\\Controller\\\\ClipController\",\"autocomplete_enabled\":true,\"onsite_referrer\":false}},\"ablincoln_config\":[],\"vimeo\":{\"config\":{\"cart\":{\"cart_content\":{\"stock\":{\"store\":\"stock\",\"version\":1,\"quantities\":[],\"items\":[],\"attributes\":[],\"currency\":\"EUR\",\"items_sorted_by_index\":[],\"items_count\":0}}}}}});\n</script>\n\n<script>\n
         \   (function() {\n        \n    if (document.cookie.match(/^(.*;)?\\s*vimeo_gdpr_optin\\s*=\\s*[^;]+(.*)?$/))
         {\n        return;\n    }\n}());\n</script>\n        \n    <script>\n        var
         ablincoln_config = ablincoln_config || {};\n        ablincoln_config.tests
-        = {\"JS.RecordExtension.OverlayVsInlineIntegrations\":{\"id\":995,\"name\":\"JS.RecordExtension.OverlayVsInlineIntegrations\",\"buckets\":1000,\"input\":\"vuid\",\"url\":\"\\/\",\"experiments\":[{\"id\":2818,\"name\":\"Record
+        = {\"JS.Omnisearch.Serp\":{\"id\":1013,\"name\":\"JS.Omnisearch.Serp\",\"buckets\":1000,\"input\":\"cuid\",\"url\":\"\\/\",\"experiments\":[{\"id\":2884,\"name\":\"10%
+        rollout - move SERP link to the top of Omnisearch\",\"buckets\":200,\"state\":1,\"published_on\":\"2023-04-24
+        13:23:07\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"0000-00-00
+        00:00:00\",\"parameters\":[{\"id\":4740,\"name\":\"has_serp_on_top\",\"choice\":\"variant\",\"weight\":1},{\"id\":4741,\"name\":\"has_serp_on_top\",\"choice\":\"control\",\"weight\":1}],\"segments\":[]}]},\"JS.test.onboardingteamwallash\":{\"id\":1012,\"name\":\"JS.test.onboardingteamwallash\",\"buckets\":1000,\"input\":\"cuid\",\"url\":\"\\/team\\/[userId]\\/wall\",\"experiments\":[{\"id\":2881,\"name\":\"JS.test.onboardingteamwallashexp1\",\"buckets\":500,\"state\":3,\"published_on\":\"2023-04-19
+        04:42:15\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"2023-04-19
+        04:50:34\",\"parameters\":[{\"id\":4734,\"name\":\"button_color\",\"choice\":\"control\",\"weight\":50},{\"id\":4735,\"name\":\"button_color\",\"choice\":\"variant\",\"weight\":50}],\"segments\":[]},{\"id\":2888,\"name\":\"JS.test.onboardingteamwallashexp2\",\"buckets\":500,\"state\":1,\"published_on\":\"2023-04-19
+        04:55:06\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"0000-00-00
+        00:00:00\",\"parameters\":[{\"id\":4742,\"name\":\"button_color\",\"choice\":\"control\",\"weight\":50},{\"id\":4743,\"name\":\"button_color\",\"choice\":\"variant\",\"weight\":50}],\"segments\":[]}]},\"JS.Builder.Test.2023.V1\":{\"id\":1010,\"name\":\"JS.Builder.Test.2023.V1\",\"buckets\":1000,\"input\":\"vuid\",\"url\":\"https:\\/\\/vimeo.com\\/staging-test\\/ablincoln-locales\",\"experiments\":[{\"id\":2878,\"name\":\"BuilderSegmentTest\",\"buckets\":1000,\"state\":3,\"published_on\":\"2023-04-13
+        13:14:48\",\"paused_on\":\"2023-04-13 14:08:16\",\"stopped_on\":\"2023-04-13
+        14:08:26\",\"parameters\":[],\"segments\":[]},{\"id\":2880,\"name\":\"BuilderSegmentTest2\",\"buckets\":1000,\"state\":1,\"published_on\":\"2023-04-13
+        14:29:29\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"0000-00-00
+        00:00:00\",\"parameters\":[{\"id\":4732,\"name\":\"show_module\",\"choice\":\"control\",\"weight\":0},{\"id\":4733,\"name\":\"show_module\",\"choice\":\"variant\",\"weight\":1}],\"segments\":[]}]},\"JS.RecordExtension.OverlayVsInlineIntegrations\":{\"id\":995,\"name\":\"JS.RecordExtension.OverlayVsInlineIntegrations\",\"buckets\":1000,\"input\":\"vuid\",\"url\":\"\\/\",\"experiments\":[{\"id\":2818,\"name\":\"Record
         Extension Inline vs Overlay Integrations test\",\"buckets\":1000,\"state\":3,\"published_on\":\"2023-02-27
         07:51:25\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"2023-02-27
         07:59:44\",\"parameters\":[{\"id\":4641,\"name\":\"override_with_overlay\",\"choice\":\"control\",\"weight\":1},{\"id\":4642,\"name\":\"override_with_overlay\",\"choice\":\"variant\",\"weight\":0}],\"segments\":[]},{\"id\":2819,\"name\":\"*
-        Record Extension Inline vs Overlay Integrations test\",\"buckets\":1000,\"state\":1,\"published_on\":\"2023-02-27
-        08:00:03\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"0000-00-00
-        00:00:00\",\"parameters\":[{\"id\":4643,\"name\":\"override_with_overlay\",\"choice\":\"control\",\"weight\":0},{\"id\":4644,\"name\":\"override_with_overlay\",\"choice\":\"variant\",\"weight\":1}],\"segments\":[]}]},\"JS.RecordExtension.PhotoAvatar\":{\"id\":992,\"name\":\"JS.RecordExtension.PhotoAvatar\",\"buckets\":1000,\"input\":\"vuid\",\"url\":\"\\/\",\"experiments\":[{\"id\":2817,\"name\":\"PA\",\"buckets\":1000,\"state\":3,\"published_on\":\"2023-02-27
+        Record Extension Inline vs Overlay Integrations test\",\"buckets\":1000,\"state\":3,\"published_on\":\"2023-02-27
+        08:00:03\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"2023-03-15
+        05:04:52\",\"parameters\":[{\"id\":4643,\"name\":\"override_with_overlay\",\"choice\":\"control\",\"weight\":0},{\"id\":4644,\"name\":\"override_with_overlay\",\"choice\":\"variant\",\"weight\":1}],\"segments\":[]},{\"id\":2853,\"name\":\"*
+        * Record Extension Inline vs Overlay Integrations test\",\"buckets\":1000,\"state\":1,\"published_on\":\"2023-03-23
+        18:09:55\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"0000-00-00
+        00:00:00\",\"parameters\":[{\"id\":4697,\"name\":\"override_with_overlay\",\"choice\":\"control\",\"weight\":1},{\"id\":4698,\"name\":\"override_with_overlay\",\"choice\":\"variant\",\"weight\":1}],\"segments\":[]}]},\"JS.RecordExtension.PhotoAvatar\":{\"id\":992,\"name\":\"JS.RecordExtension.PhotoAvatar\",\"buckets\":1000,\"input\":\"vuid\",\"url\":\"\\/\",\"experiments\":[{\"id\":2817,\"name\":\"PA\",\"buckets\":1000,\"state\":3,\"published_on\":\"2023-02-27
         08:35:48\",\"paused_on\":\"2023-02-27 08:36:54\",\"stopped_on\":\"2023-02-27
         08:37:28\",\"parameters\":[{\"id\":4639,\"name\":\"photo_avatar\",\"choice\":\"variant\",\"weight\":1},{\"id\":4640,\"name\":\"photo_avatar\",\"choice\":\"control\",\"weight\":1}],\"segments\":[]},{\"id\":2820,\"name\":\"*
         PA\",\"buckets\":1000,\"state\":3,\"published_on\":\"2023-02-27 09:09:31\",\"paused_on\":\"0000-00-00
         00:00:00\",\"stopped_on\":\"2023-02-27 09:11:46\",\"parameters\":[{\"id\":4645,\"name\":\"photo_avatar\",\"choice\":\"variant\",\"weight\":1},{\"id\":4646,\"name\":\"photo_avatar\",\"choice\":\"control\",\"weight\":1}],\"segments\":[]},{\"id\":2821,\"name\":\"*
-        * PA\",\"buckets\":1000,\"state\":1,\"published_on\":\"2023-03-06 09:08:08\",\"paused_on\":\"0000-00-00
-        00:00:00\",\"stopped_on\":\"0000-00-00 00:00:00\",\"parameters\":[{\"id\":4647,\"name\":\"photo_avatar\",\"choice\":\"variant\",\"weight\":1}],\"segments\":[]}]},\"JS.Omnisearch.Actions\":{\"id\":988,\"name\":\"JS.Omnisearch.Actions\",\"buckets\":1000,\"input\":\"cuid\",\"url\":\"\\/\",\"experiments\":[{\"id\":2810,\"name\":\"50%
-        roll - `copy link` in Omnisearch\",\"buckets\":500,\"state\":1,\"published_on\":\"2023-02-27
-        11:46:42\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"0000-00-00
-        00:00:00\",\"parameters\":[{\"id\":4625,\"name\":\"copy_link\",\"choice\":\"variant\",\"weight\":1},{\"id\":4626,\"name\":\"copy_link\",\"choice\":\"control\",\"weight\":1}],\"segments\":[]}]},\"JS.Checkout.VodSalesTax.Enabled\":{\"id\":986,\"name\":\"JS.Checkout.VodSalesTax.Enabled\",\"buckets\":1000,\"input\":\"vuid\",\"url\":\"\\/*\",\"experiments\":[{\"id\":2803,\"name\":\"VOD
-        Sales Tax Feature Flag for Precalc\",\"buckets\":1000,\"state\":2,\"published_on\":\"2023-02-07
-        10:08:55\",\"paused_on\":\"2023-03-07 16:45:39\",\"stopped_on\":\"0000-00-00
-        00:00:00\",\"parameters\":[{\"id\":4620,\"name\":\"vod_sales_tax_enabled\",\"choice\":\"1\",\"weight\":1}],\"segments\":[]}]},\"JS.RecordExtension.DesktopRollout\":{\"id\":985,\"name\":\"JS.RecordExtension.DesktopRollout\",\"buckets\":1000,\"input\":\"vuid\",\"url\":\"\\/record\\/auth-complete\",\"experiments\":[{\"id\":2802,\"name\":\"DesktopRollout\",\"buckets\":1000,\"state\":1,\"published_on\":\"2023-02-20
-        14:57:17\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"0000-00-00
-        00:00:00\",\"parameters\":[{\"id\":4618,\"name\":\"desktop_rollout\",\"choice\":\"variant\",\"weight\":1},{\"id\":4619,\"name\":\"desktop_rollout\",\"choice\":\"control\",\"weight\":1}],\"segments\":[]}]},\"JS.Create.FacebookCCMTagsTest\":{\"id\":984,\"name\":\"JS.Create.FacebookCCMTagsTest\",\"buckets\":1000,\"input\":\"vuid\",\"url\":\"\\/apps\\/237719\\/create\\/\",\"experiments\":[{\"id\":2801,\"name\":\"Show
-        custom tags list to Facebook CCM users\",\"buckets\":1000,\"state\":1,\"published_on\":\"2023-02-05
-        07:01:48\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"0000-00-00
-        00:00:00\",\"parameters\":[{\"id\":4616,\"name\":\"facebook_ccm_tags_list\",\"choice\":\"control\",\"weight\":1},{\"id\":4617,\"name\":\"facebook_ccm_tags_list\",\"choice\":\"variant\",\"weight\":1}],\"segments\":[]}]},\"JS.Editor.SmartCrop\":{\"id\":982,\"name\":\"JS.Editor.SmartCrop\",\"buckets\":1000,\"input\":\"cuid\",\"url\":\"\\/create\\/customize\\/\",\"experiments\":[{\"id\":2798,\"name\":\"smart_crop\",\"buckets\":200,\"state\":2,\"published_on\":\"2023-02-16
-        02:34:38\",\"paused_on\":\"2023-02-26 07:28:43\",\"stopped_on\":\"0000-00-00
-        00:00:00\",\"parameters\":[{\"id\":4610,\"name\":\"smart_crop\",\"choice\":\"variant\",\"weight\":100},{\"id\":4611,\"name\":\"smart_crop\",\"choice\":\"control\",\"weight\":100}],\"segments\":[{\"id\":329,\"type\":\"location\",\"include\":0,\"values\":[\"US\"]}]}]},\"JS.PurchaseSeatsOnboarding\":{\"id\":981,\"name\":\"JS.PurchaseSeatsOnboarding\",\"buckets\":1000,\"input\":\"cuid\",\"url\":\"\\/store\\/receipt\\/seat_subscription\",\"experiments\":[{\"id\":2811,\"name\":\"10
-        rollout\",\"buckets\":100,\"state\":2,\"published_on\":\"2023-02-13 16:52:26\",\"paused_on\":\"2023-02-14
-        15:25:49\",\"stopped_on\":\"0000-00-00 00:00:00\",\"parameters\":[{\"id\":4627,\"name\":\"can_purchase_seats\",\"choice\":\"control\",\"weight\":1},{\"id\":4628,\"name\":\"can_purchase_seats\",\"choice\":\"variant\",\"weight\":1}],\"segments\":[]}]},\"JS.Editor.DisableTVE\":{\"id\":976,\"name\":\"JS.Editor.DisableTVE\",\"buckets\":1000,\"input\":\"cuid\",\"url\":\"\\/manage\\/videos\",\"experiments\":[{\"id\":2771,\"name\":\"disable_tve\",\"buckets\":1,\"state\":1,\"published_on\":\"2022-12-13
+        * PA\",\"buckets\":1000,\"state\":3,\"published_on\":\"2023-03-06 09:08:08\",\"paused_on\":\"0000-00-00
+        00:00:00\",\"stopped_on\":\"2023-03-10 04:13:08\",\"parameters\":[{\"id\":4647,\"name\":\"photo_avatar\",\"choice\":\"variant\",\"weight\":1}],\"segments\":[]},{\"id\":2856,\"name\":\"*
+        * * PA\",\"buckets\":1000,\"state\":1,\"published_on\":\"2023-03-23 18:11:33\",\"paused_on\":\"0000-00-00
+        00:00:00\",\"stopped_on\":\"0000-00-00 00:00:00\",\"parameters\":[{\"id\":4699,\"name\":\"photo_avatar\",\"choice\":\"variant\",\"weight\":1},{\"id\":4700,\"name\":\"photo_avatar\",\"choice\":\"control\",\"weight\":1}],\"segments\":[]}]},\"JS.RecordExtension.DesktopRollout\":{\"id\":985,\"name\":\"JS.RecordExtension.DesktopRollout\",\"buckets\":1000,\"input\":\"vuid\",\"url\":\"\\/record\\/auth-complete\",\"experiments\":[{\"id\":2802,\"name\":\"DesktopRollout\",\"buckets\":1000,\"state\":3,\"published_on\":\"2023-02-20
+        14:57:17\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"2023-04-21
+        14:00:28\",\"parameters\":[{\"id\":4618,\"name\":\"desktop_rollout\",\"choice\":\"variant\",\"weight\":1},{\"id\":4619,\"name\":\"desktop_rollout\",\"choice\":\"control\",\"weight\":1}],\"segments\":[]},{\"id\":2889,\"name\":\"DesktopRollout_100\",\"buckets\":1000,\"state\":1,\"published_on\":\"2023-04-21
+        14:01:40\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"0000-00-00
+        00:00:00\",\"parameters\":[{\"id\":4744,\"name\":\"desktop_rollout\",\"choice\":\"variant\",\"weight\":1},{\"id\":4745,\"name\":\"desktop_rollout\",\"choice\":\"control\",\"weight\":0}],\"segments\":[]}]},\"JS.Editor.SmartCrop\":{\"id\":982,\"name\":\"JS.Editor.SmartCrop\",\"buckets\":1000,\"input\":\"cuid\",\"url\":\"\\/create\\/customize\\/\",\"experiments\":[{\"id\":2798,\"name\":\"smart_crop\",\"buckets\":200,\"state\":1,\"published_on\":\"2023-02-16
+        02:34:38\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"0000-00-00
+        00:00:00\",\"parameters\":[{\"id\":4610,\"name\":\"smart_crop\",\"choice\":\"variant\",\"weight\":100},{\"id\":4611,\"name\":\"smart_crop\",\"choice\":\"control\",\"weight\":100}],\"segments\":[{\"id\":329,\"type\":\"location\",\"include\":0,\"values\":[\"US\"]}]},{\"id\":2882,\"name\":\"*
+        smart_crop\",\"buckets\":800,\"state\":1,\"published_on\":\"2023-04-16 08:39:18\",\"paused_on\":\"0000-00-00
+        00:00:00\",\"stopped_on\":\"0000-00-00 00:00:00\",\"parameters\":[{\"id\":4736,\"name\":\"smart_crop\",\"choice\":\"variant\",\"weight\":400},{\"id\":4737,\"name\":\"smart_crop\",\"choice\":\"control\",\"weight\":400}],\"segments\":[]}]},\"JS.Marketing.Pricing.Module.2023.V1\":{\"id\":978,\"name\":\"JS.Marketing.Pricing.Module.2023.V1\",\"buckets\":1000,\"input\":\"vuid\",\"url\":\"https:\\/\\/vimeo.com\\/\",\"experiments\":[{\"id\":2795,\"name\":\"50\\/50
+        Marketing Pricing Module Test\",\"buckets\":0,\"state\":3,\"published_on\":\"2023-03-15
+        16:20:28\",\"paused_on\":\"2023-03-15 17:02:48\",\"stopped_on\":\"2023-03-15
+        17:02:57\",\"parameters\":[{\"id\":4601,\"name\":\"show_module\",\"choice\":\"control\",\"weight\":1},{\"id\":4602,\"name\":\"show_module\",\"choice\":\"variant_pricing_module\",\"weight\":1}],\"segments\":[]},{\"id\":2842,\"name\":\"50\\/50
+        Marketing Pricing Module Test.V1\",\"buckets\":10,\"state\":3,\"published_on\":\"2023-03-15
+        17:04:51\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"2023-03-16
+        15:49:30\",\"parameters\":[{\"id\":4677,\"name\":\"show_module\",\"choice\":\"control\",\"weight\":1},{\"id\":4678,\"name\":\"show_module\",\"choice\":\"variant_pricing_module\",\"weight\":1}],\"segments\":[]},{\"id\":2845,\"name\":\"50\\/50
+        Marketing Pricing Module Test.V2\",\"buckets\":100,\"state\":3,\"published_on\":\"2023-03-17
+        08:44:40\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"2023-03-17
+        13:12:57\",\"parameters\":[{\"id\":4683,\"name\":\"show_module\",\"choice\":\"control\",\"weight\":1},{\"id\":4684,\"name\":\"show_module\",\"choice\":\"variant_pricing_module\",\"weight\":1}],\"segments\":[{\"id\":335,\"type\":\"language\",\"include\":0,\"values\":[\"es\",\"de-DE\",\"fr-FR\",\"ja-JP\",\"pt-BR\",\"ko-KR\"]}]},{\"id\":2847,\"name\":\"50\\/50
+        Marketing Pricing Module Test.V3\",\"buckets\":100,\"state\":3,\"published_on\":\"2023-03-17
+        13:18:24\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"2023-03-17
+        13:21:05\",\"parameters\":[{\"id\":4685,\"name\":\"show_module\",\"choice\":\"control\",\"weight\":1},{\"id\":4686,\"name\":\"show_module\",\"choice\":\"variant_pricing_module\",\"weight\":1}],\"segments\":[{\"id\":336,\"type\":\"language\",\"include\":1,\"values\":[\"en\"]}]},{\"id\":2861,\"name\":\"Pricing
+        Module - H1 2023\",\"buckets\":100,\"state\":3,\"published_on\":\"2023-04-10
+        13:55:18\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"2023-04-10
+        16:07:41\",\"parameters\":[{\"id\":4708,\"name\":\"show_module\",\"choice\":\"control\",\"weight\":1},{\"id\":4709,\"name\":\"show_module\",\"choice\":\"variant_pricing_module\",\"weight\":1}],\"segments\":[{\"id\":339,\"type\":\"location\",\"include\":1,\"values\":[\"AU\",\"GB\",\"US\"]}]},{\"id\":2868,\"name\":\"Pricing
+        Module - H1 2023 - v2\",\"buckets\":900,\"state\":3,\"published_on\":\"2023-04-10
+        15:23:33\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"2023-04-10
+        16:07:32\",\"parameters\":[{\"id\":4718,\"name\":\"show_module\",\"choice\":\"control\",\"weight\":1},{\"id\":4719,\"name\":\"show_module\",\"choice\":\"variant_pricing_module\",\"weight\":1}],\"segments\":[{\"id\":340,\"type\":\"location\",\"include\":1,\"values\":[\"AU\",\"GB\",\"US\"]}]},{\"id\":2869,\"name\":\"Pricing
+        Module - H1 2023 - v3\",\"buckets\":1000,\"state\":3,\"published_on\":\"2023-04-10
+        16:09:48\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"2023-04-10
+        16:18:06\",\"parameters\":[{\"id\":4720,\"name\":\"show_module\",\"choice\":\"control\",\"weight\":1},{\"id\":4721,\"name\":\"show_module\",\"choice\":\"variant_pricing_module\",\"weight\":1}],\"segments\":[]},{\"id\":2874,\"name\":\"Pricing
+        Module - H1 2023 - v4\",\"buckets\":100,\"state\":1,\"published_on\":\"2023-04-12
+        15:05:40\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"0000-00-00
+        00:00:00\",\"parameters\":[{\"id\":4728,\"name\":\"show_module\",\"choice\":\"control\",\"weight\":1},{\"id\":4729,\"name\":\"show_module\",\"choice\":\"variant_pricing_module\",\"weight\":1}],\"segments\":[]},{\"id\":2876,\"name\":\"Pricing
+        Module - H1 2023 - v5\",\"buckets\":900,\"state\":1,\"published_on\":\"2023-04-13
+        11:17:48\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"0000-00-00
+        00:00:00\",\"parameters\":[{\"id\":4730,\"name\":\"show_module\",\"choice\":\"control\",\"weight\":1},{\"id\":4731,\"name\":\"show_module\",\"choice\":\"variant_pricing_module\",\"weight\":1}],\"segments\":[]}]},\"JS.Editor.DisableTVE\":{\"id\":976,\"name\":\"JS.Editor.DisableTVE\",\"buckets\":1000,\"input\":\"cuid\",\"url\":\"\\/manage\\/videos\",\"experiments\":[{\"id\":2771,\"name\":\"disable_tve\",\"buckets\":1,\"state\":1,\"published_on\":\"2022-12-13
         09:01:18\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"0000-00-00
         00:00:00\",\"parameters\":[{\"id\":4564,\"name\":\"disable_tve\",\"choice\":\"variant\",\"weight\":1},{\"id\":4565,\"name\":\"disable_tve\",\"choice\":\"control\",\"weight\":1000000000}],\"segments\":[]}]},\"JS.Editor.AddTextSidePanel\":{\"id\":973,\"name\":\"JS.Editor.AddTextSidePanel\",\"buckets\":1000,\"input\":\"cuid\",\"url\":\"\\/create\\/customize\\/\",\"experiments\":[{\"id\":2762,\"name\":\"show_add_text_side_panel\",\"buckets\":1,\"state\":3,\"published_on\":\"2022-12-11
         10:19:34\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"2022-12-12
@@ -497,11 +537,7 @@ http_interactions:
         (variant) \",\"buckets\":1000,\"state\":1,\"published_on\":\"2022-11-27 06:06:31\",\"paused_on\":\"0000-00-00
         00:00:00\",\"stopped_on\":\"0000-00-00 00:00:00\",\"parameters\":[{\"id\":4527,\"name\":\"show_media_inspector\",\"choice\":\"variant\",\"weight\":1}],\"segments\":[]},{\"id\":2785,\"name\":\"show_media_inspector_new2\",\"buckets\":1000,\"state\":1,\"published_on\":\"2022-12-28
         04:31:36\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"0000-00-00
-        00:00:00\",\"parameters\":[{\"id\":4577,\"name\":\"show_media_inspector\",\"choice\":\"control\",\"weight\":0},{\"id\":4578,\"name\":\"show_media_inspector\",\"choice\":\"variant\",\"weight\":1}],\"segments\":[]}]},\"JS.RecordExtension.LandingPageNonChromeCallToSDK\":{\"id\":923,\"name\":\"JS.RecordExtension.LandingPageNonChromeCallToSDK\",\"buckets\":1000,\"input\":\"vuid\",\"url\":\"\\/features\\/screen-recorder\",\"experiments\":[{\"id\":2600,\"name\":\"CallToSDK\",\"buckets\":1000,\"state\":3,\"published_on\":\"2022-09-22
-        09:42:21\",\"paused_on\":\"2022-10-03 09:47:11\",\"stopped_on\":\"2022-10-03
-        09:50:56\",\"parameters\":[{\"id\":4295,\"name\":\"landing_non_chrome_to_sdk\",\"choice\":\"control\",\"weight\":0},{\"id\":4296,\"name\":\"landing_non_chrome_to_sdk\",\"choice\":\"variant\",\"weight\":1}],\"segments\":[]},{\"id\":2654,\"name\":\"CallToSDK
-        - prod\",\"buckets\":1000,\"state\":1,\"published_on\":\"2022-10-03 09:52:09\",\"paused_on\":\"0000-00-00
-        00:00:00\",\"stopped_on\":\"0000-00-00 00:00:00\",\"parameters\":[{\"id\":4387,\"name\":\"landing_non_chrome_to_sdk\",\"choice\":\"control\",\"weight\":1},{\"id\":4388,\"name\":\"landing_non_chrome_to_sdk\",\"choice\":\"variant\",\"weight\":1}],\"segments\":[]}]},\"JS.RecordExtension.DirectToSVV\":{\"id\":922,\"name\":\"JS.RecordExtension.DirectToSVV\",\"buckets\":1000,\"input\":\"vuid\",\"url\":\"\\/\",\"experiments\":[{\"id\":2599,\"name\":\"DTS1\",\"buckets\":1000,\"state\":3,\"published_on\":\"2022-09-09
+        00:00:00\",\"parameters\":[{\"id\":4577,\"name\":\"show_media_inspector\",\"choice\":\"control\",\"weight\":0},{\"id\":4578,\"name\":\"show_media_inspector\",\"choice\":\"variant\",\"weight\":1}],\"segments\":[]}]},\"JS.RecordExtension.DirectToSVV\":{\"id\":922,\"name\":\"JS.RecordExtension.DirectToSVV\",\"buckets\":1000,\"input\":\"vuid\",\"url\":\"\\/\",\"experiments\":[{\"id\":2599,\"name\":\"DTS1\",\"buckets\":1000,\"state\":3,\"published_on\":\"2022-09-09
         04:37:29\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"2022-09-16
         02:41:37\",\"parameters\":[{\"id\":4294,\"name\":\"should_direct_to_svv\",\"choice\":\"variant\",\"weight\":1}],\"segments\":[]},{\"id\":2619,\"name\":\"*
         DTS1_2\",\"buckets\":1000,\"state\":3,\"published_on\":\"2022-09-16 02:43:05\",\"paused_on\":\"0000-00-00
@@ -513,11 +549,7 @@ http_interactions:
         07:33:44\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"2023-02-08
         13:44:17\",\"parameters\":[{\"id\":4442,\"name\":\"should_direct_to_svv\",\"choice\":\"variant\",\"weight\":1},{\"id\":4443,\"name\":\"should_direct_to_svv\",\"choice\":\"control\",\"weight\":1}],\"segments\":[]},{\"id\":2806,\"name\":\"DTS_6\",\"buckets\":1000,\"state\":1,\"published_on\":\"2023-02-13
         11:32:46\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"0000-00-00
-        00:00:00\",\"parameters\":[{\"id\":4623,\"name\":\"should_direct_to_svv\",\"choice\":\"variant\",\"weight\":1},{\"id\":4624,\"name\":\"should_direct_to_svv\",\"choice\":\"control\",\"weight\":1}],\"segments\":[]}]},\"JS.RecordExtension.OverlayIntegrationsSeptember\":{\"id\":921,\"name\":\"JS.RecordExtension.OverlayIntegrationsSeptember\",\"buckets\":1000,\"input\":\"vuid\",\"url\":\"\\/\",\"experiments\":[{\"id\":2590,\"name\":\"OIS1\",\"buckets\":1000,\"state\":3,\"published_on\":\"2022-09-06
-        06:55:00\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"2022-09-12
-        08:09:14\",\"parameters\":[{\"id\":4287,\"name\":\"are_overlay_integrations_enabled\",\"choice\":\"variant\",\"weight\":1}],\"segments\":[]},{\"id\":2634,\"name\":\"Integrations
-        set v3\",\"buckets\":1000,\"state\":1,\"published_on\":\"2022-09-22 08:02:24\",\"paused_on\":\"0000-00-00
-        00:00:00\",\"stopped_on\":\"0000-00-00 00:00:00\",\"parameters\":[{\"id\":4355,\"name\":\"are_overlay_integrations_enabled\",\"choice\":\"control\",\"weight\":1},{\"id\":4356,\"name\":\"are_overlay_integrations_enabled\",\"choice\":\"variant\",\"weight\":1}],\"segments\":[]}]},\"JS.SVV.Chapters\":{\"id\":920,\"name\":\"JS.SVV.Chapters\",\"buckets\":1000,\"input\":\"cuid\",\"url\":\"\\/manage\\/videos\",\"experiments\":[{\"id\":2581,\"name\":\"SVV
+        00:00:00\",\"parameters\":[{\"id\":4623,\"name\":\"should_direct_to_svv\",\"choice\":\"variant\",\"weight\":1},{\"id\":4624,\"name\":\"should_direct_to_svv\",\"choice\":\"control\",\"weight\":1}],\"segments\":[]}]},\"JS.SVV.Chapters\":{\"id\":920,\"name\":\"JS.SVV.Chapters\",\"buckets\":1000,\"input\":\"cuid\",\"url\":\"\\/manage\\/videos\",\"experiments\":[{\"id\":2581,\"name\":\"SVV
         Chapters Rollout 10%\",\"buckets\":100,\"state\":1,\"published_on\":\"2022-10-12
         11:36:45\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"0000-00-00
         00:00:00\",\"parameters\":[{\"id\":4277,\"name\":\"svv_chapter_rollout\",\"choice\":\"variant\",\"weight\":1}],\"segments\":[]},{\"id\":2674,\"name\":\"SVV
@@ -555,19 +587,7 @@ http_interactions:
         07:00:56\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"0000-00-00
         00:00:00\",\"parameters\":[{\"id\":4220,\"name\":\"transcription_video_editor\",\"choice\":\"variant\",\"weight\":1},{\"id\":4221,\"name\":\"transcription_video_editor\",\"choice\":\"control\",\"weight\":1000000000}],\"segments\":[]},{\"id\":2778,\"name\":\"transcription_video_editor_release\",\"buckets\":999,\"state\":1,\"published_on\":\"2022-12-15
         05:01:21\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"0000-00-00
-        00:00:00\",\"parameters\":[{\"id\":4571,\"name\":\"transcription_video_editor\",\"choice\":\"variant\",\"weight\":1},{\"id\":4572,\"name\":\"transcription_video_editor\",\"choice\":\"control\",\"weight\":0}],\"segments\":[]}]},\"JS.SVV.TagVideosOnDownload\":{\"id\":910,\"name\":\"JS.SVV.TagVideosOnDownload\",\"buckets\":1000,\"input\":\"vuid\",\"url\":\"*\",\"experiments\":[{\"id\":2536,\"name\":\"Tag
-        videos on download to 25%\",\"buckets\":500,\"state\":3,\"published_on\":\"2022-07-25
-        09:49:55\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"2022-10-11
-        04:52:39\",\"parameters\":[{\"id\":4204,\"name\":\"tag_videos_on_download\",\"choice\":\"true\",\"weight\":1},{\"id\":4205,\"name\":\"tag_videos_on_download\",\"choice\":\"false\",\"weight\":1}],\"segments\":[]},{\"id\":2669,\"name\":\"Tag
-        videos on download to 50%\",\"buckets\":1000,\"state\":3,\"published_on\":\"2022-10-11
-        04:53:31\",\"paused_on\":\"2022-10-31 08:56:58\",\"stopped_on\":\"2022-10-31
-        08:57:08\",\"parameters\":[{\"id\":4415,\"name\":\"tag_videos_on_download\",\"choice\":\"true\",\"weight\":1},{\"id\":4416,\"name\":\"tag_videos_on_download\",\"choice\":\"false\",\"weight\":1}],\"segments\":[]},{\"id\":2702,\"name\":\"Tag
-        videos on download to 75%\",\"buckets\":1000,\"state\":3,\"published_on\":\"2022-10-31
-        08:57:39\",\"paused_on\":\"2023-01-19 09:37:22\",\"stopped_on\":\"2023-01-19
-        09:37:31\",\"parameters\":[{\"id\":4468,\"name\":\"tag_videos_on_download\",\"choice\":\"true\",\"weight\":3},{\"id\":4469,\"name\":\"tag_videos_on_download\",\"choice\":\"false\",\"weight\":1}],\"segments\":[]},{\"id\":2793,\"name\":\"*
-        Tag videos on download to 100%\",\"buckets\":1000,\"state\":1,\"published_on\":\"2023-01-19
-        09:37:58\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"0000-00-00
-        00:00:00\",\"parameters\":[{\"id\":4595,\"name\":\"tag_videos_on_download\",\"choice\":\"true\",\"weight\":1},{\"id\":4596,\"name\":\"tag_videos_on_download\",\"choice\":\"false\",\"weight\":0}],\"segments\":[]}]},\"JS.Editor.dragonfly\":{\"id\":908,\"name\":\"JS.Editor.dragonfly\",\"buckets\":1000,\"input\":\"cuid\",\"url\":\"\\/manage\\/videos\\/create\\/customize\",\"experiments\":[{\"id\":2532,\"name\":\"show_dragonfly\",\"buckets\":1000,\"state\":3,\"published_on\":\"2022-07-26
+        00:00:00\",\"parameters\":[{\"id\":4571,\"name\":\"transcription_video_editor\",\"choice\":\"variant\",\"weight\":1},{\"id\":4572,\"name\":\"transcription_video_editor\",\"choice\":\"control\",\"weight\":0}],\"segments\":[]}]},\"JS.Editor.dragonfly\":{\"id\":908,\"name\":\"JS.Editor.dragonfly\",\"buckets\":1000,\"input\":\"cuid\",\"url\":\"\\/manage\\/videos\\/create\\/customize\",\"experiments\":[{\"id\":2532,\"name\":\"show_dragonfly\",\"buckets\":1000,\"state\":3,\"published_on\":\"2022-07-26
         08:53:25\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"2022-07-28
         02:22:23\",\"parameters\":[{\"id\":4197,\"name\":\"show_dragonfly\",\"choice\":\"variant\",\"weight\":1},{\"id\":4198,\"name\":\"show_dragonfly\",\"choice\":\"control\",\"weight\":1}],\"segments\":[]},{\"id\":2544,\"name\":\"show_dragonfly
         100%\",\"buckets\":1000,\"state\":1,\"published_on\":\"2022-07-28 02:24:08\",\"paused_on\":\"0000-00-00
@@ -590,21 +610,7 @@ http_interactions:
         control\",\"weight\":1},{\"id\":4121,\"name\":\"create_record_test\",\"choice\":\"
         variant\",\"weight\":1}],\"segments\":[]},{\"id\":2524,\"name\":\"Create_Record
         100%\",\"buckets\":1000,\"state\":1,\"published_on\":\"2022-07-17 10:24:30\",\"paused_on\":\"0000-00-00
-        00:00:00\",\"stopped_on\":\"0000-00-00 00:00:00\",\"parameters\":[{\"id\":4184,\"name\":\"create_record_test\",\"choice\":\"variant\",\"weight\":1}],\"segments\":[]}]},\"JS.RecordExtension.Notifications\":{\"id\":883,\"name\":\"JS.RecordExtension.Notifications\",\"buckets\":1000,\"input\":\"vuid\",\"url\":\"\\/\",\"experiments\":[{\"id\":2470,\"name\":\"*
-        * Notifications V1 3\",\"buckets\":1000,\"state\":3,\"published_on\":\"2022-06-19
-        16:01:57\",\"paused_on\":\"2022-06-19 16:03:30\",\"stopped_on\":\"2022-06-19
-        16:03:55\",\"parameters\":[{\"id\":4102,\"name\":\"show_notifications\",\"choice\":\"variant\",\"weight\":1},{\"id\":4103,\"name\":\"show_notifications\",\"choice\":\"control\",\"weight\":0}],\"segments\":[]},{\"id\":2469,\"name\":\"*
-        Notifications V1 2\",\"buckets\":1000,\"state\":3,\"published_on\":\"2022-06-19
-        16:04:06\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"2022-06-19
-        16:10:54\",\"parameters\":[{\"id\":4100,\"name\":\"show_notifications\",\"choice\":\"variant\",\"weight\":0},{\"id\":4101,\"name\":\"show_notifications\",\"choice\":\"control\",\"weight\":1}],\"segments\":[]},{\"id\":2471,\"name\":\"*
-        * * Notifications V1 4\",\"buckets\":1000,\"state\":3,\"published_on\":\"2022-06-19
-        16:11:36\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"2022-06-23
-        04:29:15\",\"parameters\":[{\"id\":4104,\"name\":\"show_notifications\",\"choice\":\"variant\",\"weight\":1},{\"id\":4105,\"name\":\"show_notifications\",\"choice\":\"control\",\"weight\":0}],\"segments\":[]},{\"id\":2490,\"name\":\"*
-        * * * Notifications V1 5\",\"buckets\":1000,\"state\":3,\"published_on\":\"2022-07-01
-        07:38:29\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"2022-07-01
-        07:47:44\",\"parameters\":[{\"id\":4134,\"name\":\"show_notifications\",\"choice\":\"variant\",\"weight\":1},{\"id\":4135,\"name\":\"show_notifications\",\"choice\":\"control\",\"weight\":0}],\"segments\":[]},{\"id\":2459,\"name\":\"Notifications
-        V1\",\"buckets\":1000,\"state\":1,\"published_on\":\"2022-07-06 10:22:48\",\"paused_on\":\"0000-00-00
-        00:00:00\",\"stopped_on\":\"0000-00-00 00:00:00\",\"parameters\":[{\"id\":4090,\"name\":\"show_notifications\",\"choice\":\"variant\",\"weight\":1},{\"id\":4091,\"name\":\"show_notifications\",\"choice\":\"control\",\"weight\":1}],\"segments\":[]}]},\"JS.LOHP.FullPageRedesign\":{\"id\":882,\"name\":\"JS.LOHP.FullPageRedesign\",\"buckets\":1000,\"input\":\"vuid\",\"url\":\"https:\\/\\/vimeo.com\\/\",\"experiments\":[{\"id\":2456,\"name\":\"Home
+        00:00:00\",\"stopped_on\":\"0000-00-00 00:00:00\",\"parameters\":[{\"id\":4184,\"name\":\"create_record_test\",\"choice\":\"variant\",\"weight\":1}],\"segments\":[]}]},\"JS.LOHP.FullPageRedesign\":{\"id\":882,\"name\":\"JS.LOHP.FullPageRedesign\",\"buckets\":1000,\"input\":\"vuid\",\"url\":\"https:\\/\\/vimeo.com\\/\",\"experiments\":[{\"id\":2456,\"name\":\"Home
         page - New Version - All Users\",\"buckets\":1000,\"state\":3,\"published_on\":\"2022-06-14
         16:21:30\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"2022-06-28
         01:19:38\",\"parameters\":[{\"id\":4085,\"name\":\"show_page\",\"choice\":\"variant\",\"weight\":1}],\"segments\":[]},{\"id\":2483,\"name\":\"Home
@@ -613,20 +619,7 @@ http_interactions:
         09:43:58\",\"parameters\":[{\"id\":4123,\"name\":\"show_page\",\"choice\":\"control\",\"weight\":1},{\"id\":4124,\"name\":\"show_page\",\"choice\":\"variant\",\"weight\":1}],\"segments\":[]},{\"id\":2561,\"name\":\"Variant
         to 100% users\",\"buckets\":1000,\"state\":1,\"published_on\":\"2022-08-12
         09:45:07\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"0000-00-00
-        00:00:00\",\"parameters\":[{\"id\":4248,\"name\":\"show_page\",\"choice\":\"variant\",\"weight\":1}],\"segments\":[]}]},\"JS.RecordExtension.Checklist\":{\"id\":868,\"name\":\"JS.RecordExtension.Checklist\",\"buckets\":1000,\"input\":\"vuid\",\"url\":\"\\/\",\"experiments\":[{\"id\":2393,\"name\":\"CLS1\",\"buckets\":1000,\"state\":3,\"published_on\":\"2022-05-24
-        06:11:07\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"2022-05-24
-        06:18:08\",\"parameters\":[{\"id\":3998,\"name\":\"show_checklist\",\"choice\":\"variant\",\"weight\":1},{\"id\":3999,\"name\":\"show_checklist\",\"choice\":\"control\",\"weight\":1}],\"segments\":[]},{\"id\":2415,\"name\":\"*
-        CLS1\",\"buckets\":1000,\"state\":3,\"published_on\":\"2022-05-24 06:18:57\",\"paused_on\":\"0000-00-00
-        00:00:00\",\"stopped_on\":\"2022-05-24 06:52:27\",\"parameters\":[{\"id\":4028,\"name\":\"show_checklist\",\"choice\":\"variant\",\"weight\":1}],\"segments\":[]},{\"id\":2416,\"name\":\"*
-        * CLS1\",\"buckets\":1000,\"state\":3,\"published_on\":\"2022-05-24 06:53:01\",\"paused_on\":\"0000-00-00
-        00:00:00\",\"stopped_on\":\"2022-05-30 09:42:21\",\"parameters\":[{\"id\":4029,\"name\":\"show_checklist\",\"choice\":\"variant\",\"weight\":1}],\"segments\":[]},{\"id\":2436,\"name\":\"*
-        * * CLS1\",\"buckets\":1000,\"state\":3,\"published_on\":\"2022-05-31 08:40:44\",\"paused_on\":\"0000-00-00
-        00:00:00\",\"stopped_on\":\"2022-06-01 04:39:01\",\"parameters\":[{\"id\":4055,\"name\":\"show_checklist\",\"choice\":\"variant\",\"weight\":1}],\"segments\":[]},{\"id\":2442,\"name\":\"Checklist
-        v1\",\"buckets\":500,\"state\":3,\"published_on\":\"2022-06-07 05:27:24\",\"paused_on\":\"0000-00-00
-        00:00:00\",\"stopped_on\":\"2022-07-29 10:15:31\",\"parameters\":[{\"id\":4066,\"name\":\"show_checklist\",\"choice\":\"variant\",\"weight\":1},{\"id\":4067,\"name\":\"show_checklist\",\"choice\":\"control\",\"weight\":1}],\"segments\":[]},{\"id\":2546,\"name\":\"Checklist
-        v1 - rollout\",\"buckets\":1000,\"state\":1,\"published_on\":\"2022-07-29
-        10:16:00\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"0000-00-00
-        00:00:00\",\"parameters\":[{\"id\":4219,\"name\":\"show_checklist\",\"choice\":\"variant\",\"weight\":1}],\"segments\":[]}]},\"JS.SVV.Omnisearch\":{\"id\":864,\"name\":\"JS.SVV.Omnisearch\",\"buckets\":1000,\"input\":\"cuid\",\"url\":\"\\/manage\\/videos\\/:videoId,
+        00:00:00\",\"parameters\":[{\"id\":4248,\"name\":\"show_page\",\"choice\":\"variant\",\"weight\":1}],\"segments\":[]}]},\"JS.SVV.Omnisearch\":{\"id\":864,\"name\":\"JS.SVV.Omnisearch\",\"buckets\":1000,\"input\":\"cuid\",\"url\":\"\\/manage\\/videos\\/:videoId,
         \\/:videoId\",\"experiments\":[{\"id\":2384,\"name\":\"Omnisearch in SVV\",\"buckets\":1000,\"state\":3,\"published_on\":\"2022-05-24
         13:45:47\",\"paused_on\":\"0000-00-00 00:00:00\",\"stopped_on\":\"2022-12-14
         17:10:32\",\"parameters\":[{\"id\":3983,\"name\":\"show_omnisearch\",\"choice\":\"variant\",\"weight\":1},{\"id\":3984,\"name\":\"show_omnisearch\",\"choice\":\"control\",\"weight\":1}],\"segments\":[]},{\"id\":2776,\"name\":\"100%
@@ -1151,9 +1144,9 @@ http_interactions:
         \                                                                                                                   <li
         role=\"menuitem\" tabindex=\"-1\">\n                                                                <a
         data-fatal-attraction=\"container:top_nav|component:resources_connect|keyword:help_center\"
-        data-bp-click=\"location:global_nav_resources|name:select_global_nav_option|target:https://vimeo.zendesk.com/hc/en-us|copy:Help
-        center|feature:connect_help_center|target_path:https://vimeo.zendesk.com/hc/en-us\"
-        href=\"https://vimeo.zendesk.com/hc/en-us\">Help center</a>\n                                                            </li>\n
+        data-bp-click=\"location:global_nav_resources|name:select_global_nav_option|target:https://help.vimeo.com/|copy:Help
+        center|feature:connect_help_center|target_path:https://help.vimeo.com/\" href=\"https://help.vimeo.com/\">Help
+        center</a>\n                                                            </li>\n
         \                                                                                                           </ul>\n
         \                                               </li>\n                                                                                                                        </ul>\n
         \                                                                                                       </div>\n
@@ -1231,7 +1224,7 @@ http_interactions:
         \                                   </a>\n                                </li>\n
         \                                                           <li class=\"topnav_desktop_menu_items
         topnav_desktop_menu_items_right\" data-menu-id=\"join\">\n                                    <a
-        class=\"topnav_menu_join js-topnav_menu_auth\" onclick=\"event.preventDefault();vimeo.Modal.create({size:'xsmall',content:'/join?modal=new'}).then(completeUserLogin)\"
+        class=\"topnav_menu_join js-topnav_menu_auth\" onclick=event.preventDefault();vimeo.Modal.create({size:'xsmall',content:'/join?modal=new'}).then(completeUserLogin)
         data-ga-event-click=\"top_nav|join\" data-fatal-attraction=\"container:top_nav|component:join|target:/join\"
         data-gtm-click=\"top_nav_join_click\" href=\"/join\" rel=\"toggle\" role=\"button\"
         aria-owns=\"topnav_join\">\n                                        Join                                    </a>\n
@@ -1627,11 +1620,10 @@ http_interactions:
         \                           Creative community                        </a>\n
         \                   </li>\n                                    <li>\n                        <a
         data-fatal-attraction=\"container:top_nav|component:resources_connect|keyword:help_center\"
-        data-bp-click=\"location:global_nav_resources|name:select_global_nav_option|target:https://vimeo.zendesk.com/hc/en-us|copy:Help
-        center|feature:connect_help_center|target_path:https://vimeo.zendesk.com/hc/en-us\"
-        href=\"https://vimeo.zendesk.com/hc/en-us\">\n                            Help
-        center                        </a>\n                    </li>\n                            </ul>\n
-        \           </div>\n</div>\n                                                </li>\n
+        data-bp-click=\"location:global_nav_resources|name:select_global_nav_option|target:https://help.vimeo.com/|copy:Help
+        center|feature:connect_help_center|target_path:https://help.vimeo.com/\" href=\"https://help.vimeo.com/\">\n
+        \                           Help center                        </a>\n                    </li>\n
+        \                           </ul>\n            </div>\n</div>\n                                                </li>\n
         \                                                                   <li>\n
         \                                                   <div class=\"dropdown_list\">\n
         \   <button class=\"dropdown_toggle_button js-topnav_mobile_menu_toggle\">\n
@@ -2085,7 +2077,7 @@ http_interactions:
         0-1.414z\"/></svg>\n                </div>\n            </h4>\n            <ul
         class=\"footer_v2__link-list footer_v2_accordion__menu\">\n                                    <li
         class=\"footer_v2__link-item\">\n                        <a\n                            class=\"iris_link
-        iris_link--gray-0 iris_link--footer\"\n                            href=\"https://vimeo.zendesk.com/hc/\"\n
+        iris_link--gray-0 iris_link--footer\"\n                            href=\"https://help.vimeo.com/\"\n
         \                           data-gtm-click=\"footer_link_help_center_click\"\n
         \                           data-fatal-attraction=\"container:footer|component:resources|keyword:help_center\"\n
         \                       >\n                            Help Center                        </a>\n
@@ -2119,11 +2111,6 @@ http_interactions:
         \                           data-gtm-click=\"footer_link_developers_click\"\n
         \                           data-fatal-attraction=\"container:footer|component:resources|keyword:developers\"\n
         \                       >\n                            Developers                        </a>\n
-        \                   </li>\n                                    <li class=\"footer_v2__link-item\">\n
-        \                       <a\n                            class=\"iris_link
-        iris_link--gray-0 iris_link--footer\"\n                            href=\"/students\"\n
-        \                           data-gtm-click=\"footer_link_students\"\n                            data-fatal-attraction=\"container:footer|component:resources|keyword:students\"\n
-        \                       >\n                            Students                        </a>\n
         \                   </li>\n                                    <li class=\"footer_v2__link-item\">\n
         \                       <a\n                            class=\"iris_link
         iris_link--gray-0 iris_link--footer\"\n                            href=\"/partners\"\n
@@ -2250,7 +2237,7 @@ http_interactions:
         \                       >\n                        Press                        </a>\n
         \                   </li>\n                                    <li class=\"footer_v2__link-item\">\n
         \                       <a\n                            class=\"iris_link
-        iris_link--gray-0 iris_link--footer\"\n                            href=\"/jobs\"\n
+        iris_link--gray-0 iris_link--footer\"\n                            href=\"/careers\"\n
         \                           data-gtm-click=\"footer_link_jobs\"\n                            data-fatal-attraction=\"container:footer|component:vimeo|keyword:jobs\"\n
         \                       >\n                        Jobs                        </a>\n
         \                   </li>\n                            </ul>\n        </section>\n
@@ -2302,14 +2289,22 @@ http_interactions:
         preliminary pageview.\n     *\n     * The property is additive only, as to
         not affect existing pageviews.\n     */\n            __fa.push(['trackPageview']);\n
         \   \n    /**\n     * Add server side ABLincoln experiments to GTM data layer.\n
-        \    */\n    \n        var _extend = function(){for(var r=arguments[0],n=1,e=arguments.length;e>n;n++){var
-        t=arguments[n];for(var a in t)t.hasOwnProperty(a)&&(r[a]=t[a])}return r};\n\n
-        \       var CSS_DIR = 'https://f.vimeocdn.com/styles/css_opt/',\n        JS_DIR
-        = 'https://f.vimeocdn.com/js_opt/',\n        IMAGE_DIR = 'https://f.vimeocdn.com/images_v6/',\n
-        \       FONT_DIR = 'https://f.vimeocdn.com/fonts/',\n        SVG_DIR = 'https://f.vimeocdn.com/svg/',\n
-        \               BUILD_HASH = '662ca';\n\n    \n        var vimeo = _extend((window.vimeo
+        \    */\n            (function () {\n            if (window._gtm) {\n                var
+        ablincoln_assignments = JSON.parse('[{\"namespace_id\":1009,\"parameter_name\":\"reg_flow_test\",\"parameter_value\":\"control\",\"user_saw_experiment\":false}]');\n
+        \               var user_seen_assignments = ablincoln_assignments.filter(function(assignment)
+        {\n                    return assignment.user_saw_experiment;\n                });\n
+        \               window._gtm.push({\n                    'ablincoln_assignments':
+        user_seen_assignments,\n                });\n                window._gtm.push({\n
+        \                   event: 'ablincoln_assignments_complete',\n                });\n
+        \           }\n        })();\n    \n        var _extend = function(){for(var
+        r=arguments[0],n=1,e=arguments.length;e>n;n++){var t=arguments[n];for(var
+        a in t)t.hasOwnProperty(a)&&(r[a]=t[a])}return r};\n\n        var CSS_DIR
+        = 'https://f.vimeocdn.com/styles/css_opt/',\n        JS_DIR = 'https://f.vimeocdn.com/js_opt/',\n
+        \       IMAGE_DIR = 'https://f.vimeocdn.com/images_v6/',\n        FONT_DIR
+        = 'https://f.vimeocdn.com/fonts/',\n        SVG_DIR = 'https://f.vimeocdn.com/svg/',\n
+        \               BUILD_HASH = '1bdd5';\n\n    \n        var vimeo = _extend((window.vimeo
         || {}), {\"app_version\":\"v6\",\"domain\":\"vimeo.com\",\"url\":\"vimeo.com\",\"cur_user\":false,\"origin_user_id\":null,\"origin_user\":false,\"is_mobile\":false,\"is_record_tool_supported\":false});\n
-        \   vimeo.config = _extend((vimeo.config || {}), {\"sticky_topnav\":{\"excluded_pages\":[\"Vimeo\\\\Controller\\\\AboutController:main\",\"Vimeo\\\\Controller\\\\AboutController:professionals\",\"Vimeo\\\\Controller\\\\HomeController:upgrade\",\"Vimeo\\\\Controller\\\\StoreController:main\",\"Vimeo\\\\Controller\\\\User\\\\Settings2Controller:main\",\"Vimeo\\\\Controller\\\\User\\\\Settings2Controller:team_members\",\"Vimeo\\\\Controller\\\\User\\\\Settings2Controller:password\",\"Vimeo\\\\Controller\\\\ProfileController:main\",\"Vimeo\\\\Controller\\\\ClipStatsController:main\",\"Vimeo\\\\Controller\\\\Clip\\\\Settings\\\\EmbedController:embed\",\"Vimeo\\\\Controller\\\\VideoManagerController\",\"Vimeo\\\\Controller\\\\VideoReviewController\",\"Vimeo\\\\Controller\\\\MessagesController\",\"Vimeo\\\\Controller\\\\StatsController\",\"Vimeo\\\\Controller\\\\UploadController\",\"Vimeo\\\\Controller\\\\OnDemand\\\\SettingsController\",\"Vimeo\\\\Controller\\\\Clip\\\\SettingsController\"],\"sticky_included_pages\":[\"Vimeo\\\\Controller\\\\Stock\\\\StockHomePageController\",\"Vimeo\\\\Controller\\\\Stock\\\\StockFootageController\",\"Vimeo\\\\Controller\\\\Stock\\\\StockSearchController\",\"Vimeo\\\\Controller\\\\Stock\\\\StockCollectionsController\",\"Vimeo\\\\Controller\\\\AlbumController\"],\"topnav_wrap_selector\":\"#topnav_outer_wrap\",\"content_wrap_selector\":\".wrap_content\"},\"locale\":\"en\",\"omnisearch_jwt\":\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NzgyMzY1NDAsInVzZXJfaWQiOm51bGwsImFwcF9pZCI6NTg0NzksInNjb3BlcyI6InB1YmxpYyBwcml2YXRlIGRlbGV0ZSIsInRlYW1fdXNlcl9pZCI6bnVsbH0.jtl1MyPgJAHAn9YBnN73qlA4nQSrmNi7NisI0CEapzE\",\"omnisearch_user\":null,\"api_url\":\"api.vimeo.com\",\"has_video_library_search\":false,\"magisto_api_host\":\"vimeo.magisto.com\",\"has_public_search_disabled\":false,\"has_no_vls_on_enter\":false,\"has_auto_closed_captions\":false,\"has_ocr_search\":false});\n\n
+        \   vimeo.config = _extend((vimeo.config || {}), {\"sticky_topnav\":{\"excluded_pages\":[\"Vimeo\\\\Controller\\\\AboutController:main\",\"Vimeo\\\\Controller\\\\AboutController:professionals\",\"Vimeo\\\\Controller\\\\HomeController:upgrade\",\"Vimeo\\\\Controller\\\\StoreController:main\",\"Vimeo\\\\Controller\\\\User\\\\Settings2Controller:main\",\"Vimeo\\\\Controller\\\\User\\\\Settings2Controller:team_members\",\"Vimeo\\\\Controller\\\\User\\\\Settings2Controller:password\",\"Vimeo\\\\Controller\\\\ProfileController:main\",\"Vimeo\\\\Controller\\\\ClipStatsController:main\",\"Vimeo\\\\Controller\\\\Clip\\\\Settings\\\\EmbedController:embed\",\"Vimeo\\\\Controller\\\\VideoManagerController\",\"Vimeo\\\\Controller\\\\VideoReviewController\",\"Vimeo\\\\Controller\\\\MessagesController\",\"Vimeo\\\\Controller\\\\StatsController\",\"Vimeo\\\\Controller\\\\UploadController\",\"Vimeo\\\\Controller\\\\OnDemand\\\\SettingsController\",\"Vimeo\\\\Controller\\\\Clip\\\\SettingsController\"],\"sticky_included_pages\":[\"Vimeo\\\\Controller\\\\Stock\\\\StockHomePageController\",\"Vimeo\\\\Controller\\\\Stock\\\\StockFootageController\",\"Vimeo\\\\Controller\\\\Stock\\\\StockSearchController\",\"Vimeo\\\\Controller\\\\Stock\\\\StockCollectionsController\",\"Vimeo\\\\Controller\\\\AlbumController\"],\"topnav_wrap_selector\":\"#topnav_outer_wrap\",\"content_wrap_selector\":\".wrap_content\"},\"locale\":\"en\",\"omnisearch_jwt\":\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2ODI4ODU3MDAsInVzZXJfaWQiOm51bGwsImFwcF9pZCI6NTg0NzksInNjb3BlcyI6InB1YmxpYyBwcml2YXRlIGRlbGV0ZSIsInRlYW1fdXNlcl9pZCI6bnVsbH0.bKzyu7XecG5vTyBMS39_MmX4VwSFkoWKafuWfe-IAvQ\",\"omnisearch_user\":null,\"api_url\":\"api.vimeo.com\",\"has_video_library_search\":false,\"magisto_api_host\":\"vimeo.magisto.com\",\"has_public_search_disabled\":false,\"has_no_vls_on_enter\":false,\"has_auto_closed_captions\":false,\"has_ocr_search\":false,\"has_enterprise_lihp\":false});\n\n
         \       var __i18nLocale = 'en';\n    var localeConfig = {\n        lang:
         'en',\n        'Date': {\n            months: [\"January\",\"February\",\"March\",\"April\",\"May\",\"June\",\"July\",\"August\",\"September\",\"October\",\"November\",\"December\"],\n
         \           months_abbr: [\"Jan\",\"Feb\",\"Mar\",\"Apr\",\"May\",\"Jun\",\"Jul\",\"Aug\",\"Sep\",\"Oct\",\"Nov\",\"Dec\"],\n
@@ -2356,10 +2351,10 @@ http_interactions:
         password\",\"enter_valid_otp\":\"Please enter a valid code\"};\n</script>\n\n\n
         \   <script src=\"https://f.vimeocdn.com/js_opt/sticky_topnav_combined_901230d0a385db35fd5052fcb9922934.min.js\"></script>\n
         \   <script src=\"https://f.vimeocdn.com/js_opt/react_prod_combined_ccb7d5c4cff728ceadb9996f385b2d09.min.js\"></script>\n
-        \   <script src=\"https://f.vimeocdn.com/js_opt/exception_combined_20ef0ae038f41c1180974c543f19d6de.min.js\"></script>\n
-        \   <script src=\"https://f.vimeocdn.com/js_opt/topnav_cart_button_9ac00361c1c33a234a16ae01cffc0b20.min.js\"></script>\n
-        \   <script src=\"https://f.vimeocdn.com/js_opt/_bundles/topnav_desktop.e91619c6af2cab5346bf.bundle.min.js\"></script>\n
-        \   <script src=\"https://f.vimeocdn.com/js_opt/_bundles/bp_tracking.528fd6e9ce62b1530d8d.bundle.min.js\"></script>\n
+        \   <script src=\"https://f.vimeocdn.com/js_opt/exception_combined_72576ee2f6478a8eaeb36e676721d4ed.min.js\"></script>\n
+        \   <script src=\"https://f.vimeocdn.com/js_opt/topnav_cart_button_2cd101b97b9aca80e9d7584d4e2b4c3b.min.js\"></script>\n
+        \   <script src=\"https://f.vimeocdn.com/js_opt/_bundles/topnav_desktop.cd0f842aa38cfee9b9ec.bundle.min.js\"></script>\n
+        \   <script src=\"https://f.vimeocdn.com/js_opt/_bundles/bp_tracking.b193d262d7aff962e19c.bundle.min.js\"></script>\n
         \   <script src=\"https://f.vimeocdn.com/js_opt/global/do_not_sell_4ea61859c1cd1de7767778c8014d1f73.min.js\"></script>\n\n
         \   <script async src=\"https://f.vimeocdn.com/js_opt/_bundles/create_facebook_header.d2acaa7a16f67aa2bc3d.bundle.min.js\"></script>\n
         \   <script>\n        function onVimeoDomReady(e) {\n                                                \n
@@ -2379,5 +2374,5 @@ http_interactions:
         \     new window.Exception();\n                            \n            \n
         \                   }\n\n                    $(document).ready(onVimeoDomReady);\n
         \           </script>\n\n    </body>\n</html>\n"
-  recorded_at: Wed, 08 Mar 2023 00:33:25 GMT
+  recorded_at: Sun, 30 Apr 2023 19:59:27 GMT
 recorded_with: VCR 6.1.0

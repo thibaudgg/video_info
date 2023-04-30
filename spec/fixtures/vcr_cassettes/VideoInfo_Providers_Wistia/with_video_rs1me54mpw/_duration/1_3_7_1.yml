@@ -8,7 +8,7 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - VideoInfo/3.1.0
+      - VideoInfo/4.0.0
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -20,48 +20,54 @@ http_interactions:
     headers:
       Connection:
       - keep-alive
-      Content-Length:
-      - '813'
-      Access-Control-Allow-Origin:
-      - "*"
-      Cache-Control:
-      - public, no-cache
+      Server:
+      - envoy
       Content-Type:
       - application/json; charset=utf-8
-      Etag:
-      - W/"99ea8bfd17798457553c25f60cac1818"
-      P3p:
-      - CP="CURi ADMa DEVa IVAa IVDa CONi OUR IND DSP CAO COR"
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Timing-Allow-Origin:
-      - "*"
       X-Content-Type-Options:
       - nosniff
       X-Download-Options:
       - noopen
       X-Permitted-Cross-Domain-Policies:
       - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Access-Control-Allow-Origin:
+      - "*"
+      Timing-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, no-cache
+      Etag:
+      - W/"99ea8bfd17798457553c25f60cac1818"
+      P3p:
+      - CP="CURi ADMa DEVa IVAa IVDa CONi OUR IND DSP CAO COR"
+      Set-Cookie:
+      - _w_session=P2wYth9Xc2BLRwBR0ZpGjAeqGAM1wu98G53n7WTIAchIBwZvc%2Fye6LQ4E4R4hA2th%2FlLbRQoH7Ph6hux9OqzEiXvaNG1l%2FXgkGWqsLo1raIA%2By9D9g517GUmwVsoroUYg7jkeIlbH6VUs52%2B5dq4JPEG2UX%2FcYQLQ5vmI5RFe4FVDTtP6FWy6PKX8XN6N63uRXSPet8%2Fw%2F0O4mOify4%2B5HetABc8ZmNoxCF9Il0EwM4ZfdDUoqH3ILIGFnTYb4T06DtJWJtgW6OrscCIbnaek%2FK9fVH1pBsK0plbQLeyyIi7Y8c%2FNMP0tQ%3D%3D--TNGslzjhE6pyTkMt--VC6jc7FdsVVdQTeYDabzsg%3D%3D;
+        domain=.wistia.com; path=/; expires=Sun, 14 May 2023 20:00:21 GMT; secure;
+        HttpOnly; SameSite=None
+      - authenticity_token=vGJfH7cYWUB6cYD8WCVea1nb1mZlECwVTILJtJ_cl6nYeNkit5EmmCpAJawVQR-LhOkbXPvq3AzoEdxyC568Eg;
+        path=/; secure; SameSite=Lax
       X-Request-Id:
-      - 4bd3334117cd3b8f09fc0754d6847d31
+      - 9d17f5e9-46a6-4370-9326-a6fda9c564ad
       X-Runtime:
-      - '0.033471'
-      Via:
-      - 1.1 varnish, 1.1 varnish
+      - '0.028448'
+      X-Envoy-Upstream-Service-Time:
+      - '29'
       Accept-Ranges:
       - bytes
+      Via:
+      - 1.1 varnish, 1.1 varnish
       Date:
-      - Wed, 08 Mar 2023 00:34:05 GMT
-      Age:
-      - '0'
+      - Sun, 30 Apr 2023 20:00:21 GMT
       X-Served-By:
-      - cache-iad-kjyo7100166-IAD, cache-mad22042-MAD
+      - cache-iad-kiad7000080-IAD, cache-mad22081-MAD
       X-Cache:
-      - MISS, HIT
+      - MISS, MISS
       X-Cache-Hits:
-      - 0, 1
+      - 0, 0
       X-Timer:
-      - S1678235646.968746,VS0,VE1
+      - S1682884821.097714,VS0,VE141
       Vary:
       - Accept-Encoding,X-Forwarded-Proto,X-ECMA-Override
       Strict-Transport-Security:
@@ -72,6 +78,8 @@ http_interactions:
       - unknown
       X-Browser-Version:
       - '0'
+      Transfer-Encoding:
+      - chunked
     body:
       encoding: ASCII-8BIT
       string: '{"version":"1.0","type":"video","html":"\u003ciframe src=\"https://fast.wistia.net/embed/iframe/rs1me54mpw\"
@@ -80,5 +88,5 @@ http_interactions:
         name=\"wistia_embed\" msallowfullscreen width=\"960\" height=\"540\"\u003e\u003c/iframe\u003e\n\u003cscript
         src=\"https://fast.wistia.net/assets/external/E-v1.js\" async\u003e\u003c/script\u003e","width":960,"height":540,"provider_name":"Wistia,
         Inc.","provider_url":"https://wistia.com","title":"Lance Kalish - Yes To Group","thumbnail_url":"https://embed-ssl.wistia.com/deliveries/dc005e6a7583a25c4b7c284c08afc42fb67fdb95.jpg?image_crop_resized=960x540","thumbnail_width":960,"thumbnail_height":540,"player_color":"7b796a","duration":1214.83}'
-  recorded_at: Wed, 08 Mar 2023 00:34:05 GMT
+  recorded_at: Sun, 30 Apr 2023 20:00:21 GMT
 recorded_with: VCR 6.1.0
