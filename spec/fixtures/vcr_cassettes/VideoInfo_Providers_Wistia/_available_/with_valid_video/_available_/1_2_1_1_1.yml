@@ -8,7 +8,7 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - VideoInfo/3.1.0
+      - VideoInfo/4.0.0
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -20,50 +20,56 @@ http_interactions:
     headers:
       Connection:
       - keep-alive
-      Content-Length:
-      - '466'
-      Access-Control-Allow-Origin:
-      - "*"
-      Cache-Control:
-      - public, no-cache
-      Content-Encoding:
-      - gzip
+      Server:
+      - envoy
       Content-Type:
       - application/json; charset=utf-8
-      Etag:
-      - W/"99ea8bfd17798457553c25f60cac1818"
-      P3p:
-      - CP="CURi ADMa DEVa IVAa IVDa CONi OUR IND DSP CAO COR"
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Timing-Allow-Origin:
-      - "*"
       X-Content-Type-Options:
       - nosniff
       X-Download-Options:
       - noopen
       X-Permitted-Cross-Domain-Policies:
       - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Access-Control-Allow-Origin:
+      - "*"
+      Timing-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, no-cache
+      Etag:
+      - W/"99ea8bfd17798457553c25f60cac1818"
+      P3p:
+      - CP="CURi ADMa DEVa IVAa IVDa CONi OUR IND DSP CAO COR"
+      Set-Cookie:
+      - _w_session=mN1sYbSzQhqmbr%2B0b%2BWKFrrQGo0ZCshGy5oTgacDlXe7yRMZ%2FzqfEfKdRQHgBCjzQ7%2F2mcDguKgaKgOiejHhwWZnhK8vJtldY3YRlzavFTmGGeReXJ3BbG7L7zOvlfkFPKPuMHzdpkZKCxQmonXumjq7at%2F25LpU7xJgN29U5CpEwbiQjTrXjoaz2Tr8odhiDhDDRvRKGaqjIlxP%2BuFppksV%2FXWGYtc1xpN5SoSoDtRrQjt7Ad3hYFAlntR9y4Gru2hNzaD4tHyFnPM4wfa9p1jBYMCTTzuK14ZcLB9vAhrVQaS14mTnXA%3D%3D--KULurZrhXgd00xs1--X9l0qxyRCRaKxop93knNsQ%3D%3D;
+        domain=.wistia.com; path=/; expires=Sun, 14 May 2023 20:00:20 GMT; secure;
+        HttpOnly; SameSite=None
+      - authenticity_token=Q-FJ_cjANi9EdfOwoj3KLaFRQPHwiwuBR5TCwkek23CE2j12Oikigkbb__uNiEA9ilxavfKD_updBAYR_P0c4g;
+        path=/; secure; SameSite=Lax
       X-Request-Id:
-      - 4bd3334117cd3b8f09fc0754d6847d31
+      - 20ab0183-732f-4d45-9571-f73b97b237b8
       X-Runtime:
-      - '0.033471'
-      Via:
-      - 1.1 varnish, 1.1 varnish
+      - '0.036252'
+      Content-Encoding:
+      - gzip
+      X-Envoy-Upstream-Service-Time:
+      - '38'
       Accept-Ranges:
       - bytes
+      Via:
+      - 1.1 varnish, 1.1 varnish
       Date:
-      - Wed, 08 Mar 2023 00:34:05 GMT
-      Age:
-      - '0'
+      - Sun, 30 Apr 2023 20:00:20 GMT
       X-Served-By:
-      - cache-iad-kjyo7100166-IAD, cache-mad22036-MAD
+      - cache-iad-kjyo7100166-IAD, cache-mad2200130-MAD
       X-Cache:
-      - MISS, HIT
+      - MISS, MISS
       X-Cache-Hits:
-      - 0, 1
+      - 0, 0
       X-Timer:
-      - S1678235646.569519,VS0,VE122
+      - S1682884821.572718,VS0,VE129
       Vary:
       - Accept-Encoding,X-Forwarded-Proto,X-ECMA-Override
       Strict-Transport-Security:
@@ -77,5 +83,5 @@ http_interactions:
     body:
       encoding: UTF-8
       string: ''
-  recorded_at: Wed, 08 Mar 2023 00:34:05 GMT
+  recorded_at: Sun, 30 Apr 2023 20:00:20 GMT
 recorded_with: VCR 6.1.0

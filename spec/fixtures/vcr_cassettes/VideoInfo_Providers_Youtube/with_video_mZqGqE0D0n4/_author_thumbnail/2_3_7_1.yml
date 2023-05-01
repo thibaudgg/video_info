@@ -8,7 +8,7 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - VideoInfo/3.1.0
+      - VideoInfo/4.0.0
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -25,7 +25,7 @@ http_interactions:
       - Referer
       - X-Origin
       Date:
-      - Wed, 08 Mar 2023 00:34:26 GMT
+      - Sun, 30 Apr 2023 20:00:45 GMT
       Server:
       - scaffolding on HTTPServer2
       Cache-Control:
@@ -110,15 +110,15 @@ http_interactions:
                 "madeForKids": false
               },
               "statistics": {
-                "viewCount": "8296",
-                "likeCount": "66",
+                "viewCount": "8311",
+                "likeCount": "67",
                 "favoriteCount": "0",
                 "commentCount": "5"
               }
             }
           ]
         }
-  recorded_at: Wed, 08 Mar 2023 00:34:26 GMT
+  recorded_at: Sun, 30 Apr 2023 20:00:45 GMT
 - request:
     method: get
     uri: https://www.googleapis.com/youtube/v3/channels?id=UCzxQk-rZGowoqMBKxGD5jSA&key=youtube_api_key_123&part=snippet
@@ -144,7 +144,7 @@ http_interactions:
       - Referer
       - X-Origin
       Date:
-      - Wed, 08 Mar 2023 00:34:26 GMT
+      - Sun, 30 Apr 2023 20:00:45 GMT
       Server:
       - scaffolding on HTTPServer2
       Cache-Control:
@@ -164,7 +164,7 @@ http_interactions:
       string: |
         {
           "kind": "youtube#channelListResponse",
-          "etag": "b6PsK5mhKL_AuFRJz3h7iwEwhiE",
+          "etag": "YsoQ2AkrfkRZMqucn9e7Uo02sko",
           "pageInfo": {
             "totalResults": 1,
             "resultsPerPage": 5
@@ -172,7 +172,7 @@ http_interactions:
           "items": [
             {
               "kind": "youtube#channel",
-              "etag": "AOorBbBhS-gWD_iBKIJyJ0dIqV0",
+              "etag": "06nix23qmgolZkc9-5nr3acHp3g",
               "id": "UCzxQk-rZGowoqMBKxGD5jSA",
               "snippet": {
                 "title": "Cherry Bloom",
@@ -181,17 +181,17 @@ http_interactions:
                 "publishedAt": "2008-04-12T20:47:30Z",
                 "thumbnails": {
                   "default": {
-                    "url": "https://yt3.ggpht.com/ytc/AL5GRJXbalTdHiTioC9wlrBz3GukwrYp1Q6EXcBYbugs=s88-c-k-c0x00ffffff-no-rj",
+                    "url": "https://yt3.ggpht.com/ytc/AGIKgqMXRyqgBuDtKX-_PrsmQ6RNiZKSM1Z4iWvWEX7s=s88-c-k-c0x00ffffff-no-rj",
                     "width": 88,
                     "height": 88
                   },
                   "medium": {
-                    "url": "https://yt3.ggpht.com/ytc/AL5GRJXbalTdHiTioC9wlrBz3GukwrYp1Q6EXcBYbugs=s240-c-k-c0x00ffffff-no-rj",
+                    "url": "https://yt3.ggpht.com/ytc/AGIKgqMXRyqgBuDtKX-_PrsmQ6RNiZKSM1Z4iWvWEX7s=s240-c-k-c0x00ffffff-no-rj",
                     "width": 240,
                     "height": 240
                   },
                   "high": {
-                    "url": "https://yt3.ggpht.com/ytc/AL5GRJXbalTdHiTioC9wlrBz3GukwrYp1Q6EXcBYbugs=s800-c-k-c0x00ffffff-no-rj",
+                    "url": "https://yt3.ggpht.com/ytc/AGIKgqMXRyqgBuDtKX-_PrsmQ6RNiZKSM1Z4iWvWEX7s=s800-c-k-c0x00ffffff-no-rj",
                     "width": 800,
                     "height": 800
                   }
@@ -204,5 +204,5 @@ http_interactions:
             }
           ]
         }
-  recorded_at: Wed, 08 Mar 2023 00:34:26 GMT
+  recorded_at: Sun, 30 Apr 2023 20:00:45 GMT
 recorded_with: VCR 6.1.0

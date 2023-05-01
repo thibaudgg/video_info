@@ -39,7 +39,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Wed, 08 Mar 2023 00:33:20 GMT
+      - Sun, 30 Apr 2023 19:59:22 GMT
       Etag:
       - W/"rQeFNlJ5iMPO8gmsSDhiVw-gzip"
       Expect-Ct:
@@ -63,5 +63,5 @@ http_interactions:
     body:
       encoding: ASCII-8BIT
       string: '{"id":"x7lni3","title":"Mario Kart (R\u00e9mi Gaillard)","channel":"fun","owner":"x4r137"}'
-  recorded_at: Wed, 08 Mar 2023 00:33:20 GMT
+  recorded_at: Sun, 30 Apr 2023 19:59:22 GMT
 recorded_with: VCR 6.1.0

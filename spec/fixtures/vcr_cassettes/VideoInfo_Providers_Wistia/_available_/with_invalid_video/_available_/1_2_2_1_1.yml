@@ -8,7 +8,7 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - VideoInfo/3.1.0
+      - VideoInfo/4.0.0
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -20,48 +20,54 @@ http_interactions:
     headers:
       Connection:
       - keep-alive
-      Content-Length:
-      - '20'
-      Access-Control-Allow-Origin:
-      - "*"
-      Cache-Control:
-      - public, no-cache
-      Content-Encoding:
-      - gzip
+      Server:
+      - envoy
       Content-Type:
       - application/json
-      P3p:
-      - CP="CURi ADMa DEVa IVAa IVDa CONi OUR IND DSP CAO COR"
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Timing-Allow-Origin:
-      - "*"
       X-Content-Type-Options:
       - nosniff
       X-Download-Options:
       - noopen
       X-Permitted-Cross-Domain-Policies:
       - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Access-Control-Allow-Origin:
+      - "*"
+      Timing-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, no-cache
+      P3p:
+      - CP="CURi ADMa DEVa IVAa IVDa CONi OUR IND DSP CAO COR"
+      Set-Cookie:
+      - _w_session=9TuySYl0DHi5e%2F7jnQ9SpRPv6n9UKdoKUYocLudOL5rVaHxiT%2FFnVvdPwAFf3%2FH5xqLseF1WVEf0y3apCcpo1%2Fy1q%2Fqgo%2BJ63rMDCXPkzyhBjcGXtEhCZBmAEY9qbCaKK3NmjAppYWvgQ111%2FD6mcixasaoQjSPHhlPAKp0IgyZee7GstWGIL5cyzbTyH%2Fyi6tYnolw9NMf%2BS3ml42fDFOycGnNd%2Bf9wDHNpBpzWjaKVTnsfDcdm%2Fh3JkHnot9UVIZLjW6FnYM0AAZCOlcvgTZfL%2BA7eDdkvoKj68XURh3fw9JkmMWC9NQ%3D%3D--aaYAmVXz%2FmqW0rjs--CJFyNM%2BrZ%2F4PqqMcdXNScw%3D%3D;
+        domain=.wistia.com; path=/; expires=Sun, 14 May 2023 20:00:20 GMT; secure;
+        HttpOnly; SameSite=None
+      - authenticity_token=JZMC5MPNZ0ZGGU2tuPHCv2N69UWRBV77GipNj8BSc9G401yQEHKa6ZKvVXpTNw84lQI66lYpUl5qUgwMykl1XA;
+        path=/; secure; SameSite=Lax
       X-Request-Id:
-      - 1193b56ceeb6f7b554ffe5dd1ff436fe
+      - 3fbd4d5e-1e6f-48aa-ab59-2ad36d03c143
       X-Runtime:
-      - '0.008764'
-      Via:
-      - 1.1 varnish, 1.1 varnish
+      - '0.011537'
+      Content-Encoding:
+      - gzip
+      X-Envoy-Upstream-Service-Time:
+      - '13'
       Accept-Ranges:
       - bytes
+      Via:
+      - 1.1 varnish, 1.1 varnish
       Date:
-      - Wed, 08 Mar 2023 00:34:05 GMT
-      Age:
-      - '0'
+      - Sun, 30 Apr 2023 20:00:20 GMT
       X-Served-By:
-      - cache-iad-kiad7000072-IAD, cache-mad22037-MAD
+      - cache-iad-kiad7000072-IAD, cache-mad22086-MAD
       X-Cache:
       - MISS, MISS
       X-Cache-Hits:
       - 0, 0
       X-Timer:
-      - S1678235646.765345,VS0,VE92
+      - S1682884821.748119,VS0,VE131
       Strict-Transport-Security:
       - max-age=0
       X-Ecma-V:
@@ -73,5 +79,5 @@ http_interactions:
     body:
       encoding: UTF-8
       string: ''
-  recorded_at: Wed, 08 Mar 2023 00:34:05 GMT
+  recorded_at: Sun, 30 Apr 2023 20:00:20 GMT
 recorded_with: VCR 6.1.0
