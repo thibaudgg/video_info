@@ -314,6 +314,18 @@
       its(:thumbnail_small) { should eq "https://i.vimeocdn.com/video/1291917478-2522170a8cfe68dc920e5031deac9bc5ff4d6699c96341fbe_100x75.jpg" }
     end
 
+    context "with video 7848846" do
+      subject { VideoInfo.new("https://vimeo.com/7848846") }
+
+      its(:stats) {
+        should eq({
+          "plays" => nil,
+          "likes" => nil,
+          "comments" => nil
+        })
+      }
+    end
+
     context "with unavailable video" do
       if api_key.nil?
         video_url = "https://vimeo.com/0812455"
