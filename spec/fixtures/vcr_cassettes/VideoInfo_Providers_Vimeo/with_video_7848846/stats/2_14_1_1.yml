@@ -1,0 +1,74 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.vimeo.com/videos/7848846
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - VideoInfo/4.0.0
+      Authorization:
+      - bearer vimeo_access_token
+      Accept:
+      - application/vnd.vimeo.*+json;version=3.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 401
+      message: Unauthorized
+    headers:
+      Date:
+      - Thu, 26 Oct 2023 20:26:11 GMT
+      Content-Type:
+      - application/vnd.vimeo.error+json
+      Content-Length:
+      - '157'
+      Connection:
+      - keep-alive
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Www-Authenticate:
+      - Bearer error="invalid_token"
+      Cache-Control:
+      - no-store, no-cache, max-age=0
+      Request-Hash:
+      - '12632761'
+      X-Vimeo-Error:
+      - 'true'
+      X-Bapp-Server:
+      - api-8bf794994-jfkdx
+      X-Backend-Server:
+      - api-k8s
+      Accept-Ranges:
+      - bytes
+      Via:
+      - 1.1 varnish, 1.1 varnish
+      X-Served-By:
+      - cache-iad-kiad7000159-IAD, cache-mad2200094-MAD
+      X-Cache:
+      - MISS, MISS
+      X-Cache-Hits:
+      - 0, 0
+      X-Timer:
+      - S1698351971.935894,VS0,VE126
+      Vary:
+      - x-http-method-override
+      Cf-Cache-Status:
+      - DYNAMIC
+      Set-Cookie:
+      - __cf_bm=qSwSg7COASR1MztiS6EOEA7fblIyOGlr0OOPw.UYqwo-1698351971-0-AdPyYZck3LzqtcC0jS3ooL8Of1MIR2g1G/anKf3FIK8uC7a5BcLp57oNGRqK99Q/naMsJyfcrJD4NUzt373lHdc=;
+        path=/; expires=Thu, 26-Oct-23 20:56:11 GMT; domain=.vimeo.com; HttpOnly;
+        Secure; SameSite=None
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 81c56eca38be2a1c-CDG
+    body:
+      encoding: UTF-8
+      string: '{"error":"Something strange occurred. Please contact the app owners.","link":null,"developer_message":"No
+        user credentials were provided.","error_code":8003}'
+  recorded_at: Thu, 26 Oct 2023 20:26:11 GMT
+recorded_with: VCR 6.2.0
