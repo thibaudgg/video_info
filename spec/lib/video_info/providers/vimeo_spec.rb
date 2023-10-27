@@ -33,6 +33,11 @@
         it { is_expected.to be_falsey }
       end
 
+      context "with vimeo user url" do
+        let(:url) { "http://vimeo.com/user123456789" }
+        it { is_expected.to be_falsey }
+      end
+
       context "with vimeo hubnub embed url" do
         let(:url) { "http://player.vimeo.com/hubnut/album/2755718" }
         it { is_expected.to be_falsey }
