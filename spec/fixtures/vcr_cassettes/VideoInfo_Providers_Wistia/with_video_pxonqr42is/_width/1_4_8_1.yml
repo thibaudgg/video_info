@@ -20,18 +20,16 @@ http_interactions:
     headers:
       Connection:
       - keep-alive
-      Server:
-      - envoy
+      Content-Length:
+      - '805'
       Content-Type:
       - application/json; charset=utf-8
+      Server:
+      - envoy
       X-Content-Type-Options:
       - nosniff
-      X-Download-Options:
-      - noopen
       X-Permitted-Cross-Domain-Policies:
       - none
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
       Access-Control-Allow-Origin:
       - "*"
       Timing-Allow-Origin:
@@ -40,34 +38,33 @@ http_interactions:
       - public, no-cache
       Etag:
       - W/"a61024ecded175c4fd74dc15cf8280fd"
-      P3p:
-      - CP="CURi ADMa DEVa IVAa IVDa CONi OUR IND DSP CAO COR"
-      Set-Cookie:
-      - _w_session=rrfXYgGwhyMQ5GFRZ407kiF5KRq3vglhv8YHp0CBr7W1qjRkVzzs1%2Bmg9Z2uirxQd6QZFbQaq7NPapasLkH15IZXNXOTZWWdPkxtpjIVhI3kywJq6z5WCq%2BJhzaCn3ukj3uQUWXtu6dZ02sNxReJT13yf7k%2FIaN2XDaQjiIHJWQmD8sFOLkstX4kOexYbe3wtgScVbmX0BYbY8RP2dWbp6CmWUNzO78uMMR4CaOSi%2FbVEWGqpGZu%2BKTbnn40BnpCLzpJmyBxBpu7JpiB5ggEUAyBTT%2FPWHWiR0kHPMNiOclimr%2BBy1Vj0g%3D%3D--JXjhuKpupff2uC96--Oc1VA7Fy5%2B5TJCg1kdmyrw%3D%3D;
-        domain=.wistia.com; path=/; expires=Sun, 14 May 2023 20:00:22 GMT; secure;
-        HttpOnly; SameSite=None
-      - authenticity_token=adAwIYlpbEaN6SpcKcTkLPXiRktoNBQ0LVncDQu3MMi-uaeMuJBXR5ppmpftHFV-zpxKXYjoyDuDzUHoe1lHIw;
-        path=/; secure; SameSite=Lax
       X-Request-Id:
-      - fbbdc18a-d957-40f3-b09a-dc3d441e3c69
+      - aecf6b82-a203-4d20-a38a-e6cd5e8c52ed
       X-Runtime:
-      - '0.037435'
+      - '0.040516'
       X-Envoy-Upstream-Service-Time:
-      - '39'
+      - '43'
+      Via:
+      - 1.1 ab8bcd9c092f618064e495d01acbd726.cloudfront.net (CloudFront), 1.1 varnish,
+        1.1 varnish
+      X-Amz-Cf-Pop:
+      - JFK52-P2
+      X-Amz-Cf-Id:
+      - gwcpGcgSUxude4mEaXgECXaAG8QAyHaT4wu25TGKtdI-_R-whg1NaA==
       Accept-Ranges:
       - bytes
-      Via:
-      - 1.1 varnish, 1.1 varnish
       Date:
-      - Sun, 30 Apr 2023 20:00:22 GMT
+      - Fri, 27 Oct 2023 15:22:05 GMT
+      Age:
+      - '88801'
       X-Served-By:
-      - cache-iad-kcgs7200086-IAD, cache-mad2200131-MAD
+      - cache-iad-kiad7000041-IAD, cache-mad2200092-MAD
       X-Cache:
-      - MISS, MISS
+      - Miss from cloudfront, MISS, HIT
       X-Cache-Hits:
-      - 0, 0
+      - 0, 1
       X-Timer:
-      - S1682884823.668232,VS0,VE132
+      - S1698420126.915140,VS0,VE1
       Vary:
       - Accept-Encoding,X-Forwarded-Proto,X-ECMA-Override
       Strict-Transport-Security:
@@ -78,8 +75,6 @@ http_interactions:
       - unknown
       X-Browser-Version:
       - '0'
-      Transfer-Encoding:
-      - chunked
     body:
       encoding: ASCII-8BIT
       string: '{"version":"1.0","type":"video","html":"\u003ciframe src=\"https://fast.wistia.net/embed/iframe/pxonqr42is\"
@@ -88,5 +83,5 @@ http_interactions:
         msallowfullscreen width=\"960\" height=\"540\"\u003e\u003c/iframe\u003e\n\u003cscript
         src=\"https://fast.wistia.net/assets/external/E-v1.js\" async\u003e\u003c/script\u003e","width":960,"height":540,"provider_name":"Wistia,
         Inc.","provider_url":"https://wistia.com","title":"Understanding Analytics","thumbnail_url":"https://embed-ssl.wistia.com/deliveries/0fccbdc60ade35723f79f1c002bc61b135b610fa.jpg?image_crop_resized=960x540","thumbnail_width":960,"thumbnail_height":540,"player_color":"63d0db","duration":250.376}'
-  recorded_at: Sun, 30 Apr 2023 20:00:22 GMT
+  recorded_at: Fri, 27 Oct 2023 15:22:05 GMT
 recorded_with: VCR 6.1.0

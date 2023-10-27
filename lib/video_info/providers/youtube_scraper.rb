@@ -29,7 +29,11 @@ class VideoInfo
       end
 
       def channel_id
-        itemprop_node_value("channelId")
+        # NOTE the previous implementation, based on itemprop_node_value("channelId"),
+        # does not work well, probably due to some YouTube change
+        page_content = data.to_s
+        matches = page_content.match(/"channelId":"([a-zA-Z0-9_-]+)"/)
+        matches[1] if matches
       end
 
       def author_url

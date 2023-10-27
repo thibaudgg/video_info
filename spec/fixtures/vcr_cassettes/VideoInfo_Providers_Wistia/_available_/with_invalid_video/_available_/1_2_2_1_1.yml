@@ -20,54 +20,51 @@ http_interactions:
     headers:
       Connection:
       - keep-alive
-      Server:
-      - envoy
+      Content-Length:
+      - '20'
       Content-Type:
       - application/json
+      Server:
+      - envoy
       X-Content-Type-Options:
       - nosniff
-      X-Download-Options:
-      - noopen
       X-Permitted-Cross-Domain-Policies:
       - none
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
       Access-Control-Allow-Origin:
       - "*"
       Timing-Allow-Origin:
       - "*"
       Cache-Control:
       - public, no-cache
-      P3p:
-      - CP="CURi ADMa DEVa IVAa IVDa CONi OUR IND DSP CAO COR"
-      Set-Cookie:
-      - _w_session=9TuySYl0DHi5e%2F7jnQ9SpRPv6n9UKdoKUYocLudOL5rVaHxiT%2FFnVvdPwAFf3%2FH5xqLseF1WVEf0y3apCcpo1%2Fy1q%2Fqgo%2BJ63rMDCXPkzyhBjcGXtEhCZBmAEY9qbCaKK3NmjAppYWvgQ111%2FD6mcixasaoQjSPHhlPAKp0IgyZee7GstWGIL5cyzbTyH%2Fyi6tYnolw9NMf%2BS3ml42fDFOycGnNd%2Bf9wDHNpBpzWjaKVTnsfDcdm%2Fh3JkHnot9UVIZLjW6FnYM0AAZCOlcvgTZfL%2BA7eDdkvoKj68XURh3fw9JkmMWC9NQ%3D%3D--aaYAmVXz%2FmqW0rjs--CJFyNM%2BrZ%2F4PqqMcdXNScw%3D%3D;
-        domain=.wistia.com; path=/; expires=Sun, 14 May 2023 20:00:20 GMT; secure;
-        HttpOnly; SameSite=None
-      - authenticity_token=JZMC5MPNZ0ZGGU2tuPHCv2N69UWRBV77GipNj8BSc9G401yQEHKa6ZKvVXpTNw84lQI66lYpUl5qUgwMykl1XA;
-        path=/; secure; SameSite=Lax
       X-Request-Id:
-      - 3fbd4d5e-1e6f-48aa-ab59-2ad36d03c143
+      - deee5bdb-e716-4092-b7ad-7e95dd436bd6
       X-Runtime:
-      - '0.011537'
+      - '0.013417'
       Content-Encoding:
       - gzip
       X-Envoy-Upstream-Service-Time:
-      - '13'
+      - '15'
+      Via:
+      - 1.1 64924074212560e583e5c4823e606c04.cloudfront.net (CloudFront), 1.1 varnish,
+        1.1 varnish
+      X-Amz-Cf-Pop:
+      - MIA3-C4
+      X-Amz-Cf-Id:
+      - PH5gS9OHlhtnDeQpR_V6ZJpzdPabRcAiI1bhy5loEyXrQNsKwwZFCQ==
       Accept-Ranges:
       - bytes
-      Via:
-      - 1.1 varnish, 1.1 varnish
       Date:
-      - Sun, 30 Apr 2023 20:00:20 GMT
+      - Fri, 27 Oct 2023 15:22:05 GMT
+      Age:
+      - '88801'
       X-Served-By:
-      - cache-iad-kiad7000072-IAD, cache-mad22086-MAD
+      - cache-iad-kiad7000072-IAD, cache-mad22069-MAD
       X-Cache:
-      - MISS, MISS
+      - Error from cloudfront, MISS, HIT
       X-Cache-Hits:
-      - 0, 0
+      - 0, 1
       X-Timer:
-      - S1682884821.748119,VS0,VE131
+      - S1698420125.303874,VS0,VE1
       Strict-Transport-Security:
       - max-age=0
       X-Ecma-V:
@@ -79,5 +76,5 @@ http_interactions:
     body:
       encoding: UTF-8
       string: ''
-  recorded_at: Sun, 30 Apr 2023 20:00:20 GMT
+  recorded_at: Fri, 27 Oct 2023 15:22:05 GMT
 recorded_with: VCR 6.1.0

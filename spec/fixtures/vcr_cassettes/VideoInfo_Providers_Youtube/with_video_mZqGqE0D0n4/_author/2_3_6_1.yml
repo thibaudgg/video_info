@@ -25,7 +25,7 @@ http_interactions:
       - Referer
       - X-Origin
       Date:
-      - Sun, 30 Apr 2023 20:00:45 GMT
+      - Fri, 27 Oct 2023 16:33:52 GMT
       Server:
       - scaffolding on HTTPServer2
       Cache-Control:
@@ -110,13 +110,13 @@ http_interactions:
                 "madeForKids": false
               },
               "statistics": {
-                "viewCount": "8311",
-                "likeCount": "67",
+                "viewCount": "8357",
+                "likeCount": "68",
                 "favoriteCount": "0",
                 "commentCount": "5"
               }
             }
           ]
         }
-  recorded_at: Sun, 30 Apr 2023 20:00:45 GMT
+  recorded_at: Fri, 27 Oct 2023 16:33:52 GMT
 recorded_with: VCR 6.1.0
