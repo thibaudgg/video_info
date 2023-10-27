@@ -39,7 +39,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Sun, 30 Apr 2023 19:59:22 GMT
+      - Fri, 27 Oct 2023 15:20:13 GMT
       Expect-Ct:
       - max-age=0, report-uri="https://www.dailymotion.com/content_security_policy_report_uri"
       Expires:
@@ -49,7 +49,7 @@ http_interactions:
       Server:
       - DMS/1.0.42
       Server-Timing:
-      - total;dur=37, dc;desc="dc3"
+      - total;dur=25, dc;desc="dc3"
       Timing-Allow-Origin:
       - "*"
       Vary:
@@ -62,5 +62,5 @@ http_interactions:
       encoding: UTF-8
       string: '{"error":{"more_info":"https:\/\/developer.dailymotion.com\/api#error-codes","code":404,"message":"Can''t
         find object video for `id'' parameter","type":"not_found","error_data":{"reason":"object_not_found","object_type":"video","object_id":"inValIdiD","param":"id"}}}'
-  recorded_at: Sun, 30 Apr 2023 19:59:22 GMT
+  recorded_at: Fri, 27 Oct 2023 15:20:13 GMT
 recorded_with: VCR 6.1.0

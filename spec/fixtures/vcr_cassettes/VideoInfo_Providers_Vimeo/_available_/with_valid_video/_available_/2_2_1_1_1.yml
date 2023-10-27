@@ -21,11 +21,11 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sun, 30 Apr 2023 20:00:08 GMT
+      - Fri, 27 Oct 2023 15:21:52 GMT
       Content-Type:
       - application/vnd.vimeo.video+json
       Content-Length:
-      - '15941'
+      - '16069'
       Connection:
       - keep-alive
       Strict-Transport-Security:
@@ -35,13 +35,13 @@ http_interactions:
       X-Ratelimit-Remaining:
       - '48'
       X-Ratelimit-Reset:
-      - '2023-04-30T20:01:08+00:00'
+      - '2023-10-27T15:22:51+00:00'
       Cache-Control:
       - no-store, no-cache, max-age=0
       Request-Hash:
-      - 99c79e8f
+      - 89aaff2d
       X-Bapp-Server:
-      - api-c857cdd96-5rzd2
+      - api-8464b5896b-wpxg7
       X-Backend-Server:
       - api-k8s
       Via:
@@ -51,25 +51,27 @@ http_interactions:
       Age:
       - '0'
       X-Served-By:
-      - cache-iad-kcgs7200068-IAD, cache-mrs10582-MRS
+      - cache-iad-kcgs7200081-IAD, cache-mad2200099-MAD
       X-Cache:
       - MISS, MISS
       X-Cache-Hits:
       - 0, 0
       X-Timer:
-      - S1682884808.017593,VS0,VE679
+      - S1698420112.799485,VS0,VE518
+      Vary:
+      - x-http-method-override
       Cf-Cache-Status:
       - DYNAMIC
       Set-Cookie:
-      - __cf_bm=nJ5JGFVrLeV3kfTWYpEYUjSFZ7S6uZZ07vsaJZOze3c-1682884808-0-AezgrS+AKPjXMH3a+pcpOMry/UrJ6Gytd4piZQ6b5v6kbx9F/5M2fPnvO3FVWZxNbnFo3c6FMAGNlC7ZniHtgh0=;
-        path=/; expires=Sun, 30-Apr-23 20:30:08 GMT; domain=.vimeo.com; HttpOnly;
+      - __cf_bm=sqnhPTF5FmSqKR52CHJpap9BbHubesodkLlz0pp85U0-1698420112-0-AfdgGHpzdkAGdSZfaXmNta0vqaDkrQdZF3yLUK9dG8uFYfoffzDI/XrdyX1Vq9p340BZVPdDE6jsK67iNOn/7W4=;
+        path=/; expires=Fri, 27-Oct-23 15:51:52 GMT; domain=.vimeo.com; HttpOnly;
         Secure; SameSite=None
       Server:
       - cloudflare
       Cf-Ray:
-      - 7c025e81fe87193e-BCN
+      - 81cbee629c3828de-BCN
     body:
       encoding: UTF-8
       string: ''
-  recorded_at: Sun, 30 Apr 2023 20:00:08 GMT
+  recorded_at: Fri, 27 Oct 2023 15:21:52 GMT
 recorded_with: VCR 6.1.0
