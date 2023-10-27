@@ -336,5 +336,23 @@
         its(:view_count) { should be nil }
       end
     end
+
+    context "with video 7848846" do
+      subject { VideoInfo.new("https://vimeo.com/7848846") }
+
+      its(:stats) {
+        if api_key
+          should eq({
+            "plays" => nil,
+          })
+        else
+          should eq({
+            "plays" => nil,
+            "likes" => nil,
+            "comments" => nil
+          })
+        end
+      }
+    end
   end
 end

@@ -131,9 +131,9 @@ class VideoInfo
       private
 
       def user_interaction_count(interaction_type:)
-        interaction_statistic.find do |stat|
+        interaction_statistic&.find do |stat|
           stat["interactionType"] == "http://schema.org/#{interaction_type}"
-        end["userInteractionCount"]
+        end&.public_send(:[], "userInteractionCount")
       end
 
       def interaction_statistic

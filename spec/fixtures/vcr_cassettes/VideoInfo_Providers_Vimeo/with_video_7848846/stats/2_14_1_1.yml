@@ -1,0 +1,85 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.vimeo.com/videos/7848846
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - VideoInfo/4.0.0
+      Authorization:
+      - bearer vimeo_access_token
+      Accept:
+      - application/vnd.vimeo.*+json;version=3.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 27 Oct 2023 20:10:56 GMT
+      Content-Type:
+      - application/vnd.vimeo.video+json
+      Content-Length:
+      - '10572'
+      Connection:
+      - keep-alive
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      X-Ratelimit-Limit:
+      - '50'
+      X-Ratelimit-Remaining:
+      - '48'
+      X-Ratelimit-Reset:
+      - '2023-10-27T20:11:55+00:00'
+      Cache-Control:
+      - no-store, no-cache, max-age=0
+      Request-Hash:
+      - 3cd47982
+      X-Bapp-Server:
+      - api-7475d7c8b6-wfjtn
+      X-Backend-Server:
+      - api-k8s
+      Via:
+      - 1.1 varnish, 1.1 varnish
+      Accept-Ranges:
+      - bytes
+      Age:
+      - '0'
+      X-Served-By:
+      - cache-iad-kiad7000159-IAD, cache-mrs10581-MRS
+      X-Cache:
+      - MISS, MISS
+      X-Cache-Hits:
+      - 0, 0
+      X-Timer:
+      - S1698437456.607184,VS0,VE660
+      Vary:
+      - x-http-method-override
+      Cf-Cache-Status:
+      - DYNAMIC
+      Set-Cookie:
+      - __cf_bm=FCQKxyzPuHqJIQK99J2zPmfxePkITfksvmCW72Sjh.k-1698437456-0-AeXOh5li1kCmT1NUhDITAJ24bpOs5c1UlNK2IvXStAXUd1VrvzxU5Dyr13JpOT2qv4nwfNS5yKthB9HIY0HiSy0=;
+        path=/; expires=Fri, 27-Oct-23 20:40:56 GMT; domain=.vimeo.com; HttpOnly;
+        Secure; SameSite=None
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 81cd95d15cee11c0-MRS
+    body:
+      encoding: UTF-8
+      string: '{"uri":"/videos/7848846","name":"IKONS - SLOW LIGHT","description":"Artist:
+        IKONS.\nTitle: SLOW LIGHT.\nCreator: Patrik Johansson.\nLabel: SERVICE.\nwww.srvc.se\n\nAlbum
+        \"Ikons\" out now CD/LP/Stream from Service","type":"video","link":"https://vimeo.com/7848846","player_embed_url":"https://player.vimeo.com/video/7848846?h=466ebd2f33","duration":494,"width":640,"language":null,"height":480,"embed":{"html":"<iframe
+        src=\"https://player.vimeo.com/video/7848846?badge=0&amp;autopause=0&amp;quality_selector=1&amp;player_id=0&amp;app_id=190037\"
+        width=\"640\" height=\"480\" frameborder=\"0\" allow=\"autoplay; fullscreen;
+        picture-in-picture\" title=\"IKONS - SLOW LIGHT\"></iframe>","badges":{"hdr":false,"live":{"streaming":false,"archived":false},"staff_pick":{"normal":false,"best_of_the_month":false,"best_of_the_year":false,"premiere":false},"vod":false,"weekend_challenge":false},"interactive":false},"created_time":"2009-11-27T11:19:39+00:00","modified_time":"2022-07-01T10:05:10+00:00","release_time":"2009-11-27T11:19:39+00:00","content_rating":["unrated"],"content_rating_class":"unrated","rating_mod_locked":false,"license":null,"privacy":{"view":"anybody","embed":"public","download":false,"add":true,"comments":"anybody"},"pictures":{"uri":"/videos/7848846/pictures/35014584","active":true,"type":"custom","base_link":"https://i.vimeocdn.com/video/35014584-446656421a935f9f256375f1fae2dc8a2d5003030999a23561a76a4ad5ce1bf1-d","sizes":[{"width":100,"height":75,"link":"https://i.vimeocdn.com/video/35014584-446656421a935f9f256375f1fae2dc8a2d5003030999a23561a76a4ad5ce1bf1-d_100x75?r=pad","link_with_play_button":"https://i.vimeocdn.com/filter/overlay?src0=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F35014584-446656421a935f9f256375f1fae2dc8a2d5003030999a23561a76a4ad5ce1bf1-d_100x75&src1=http%3A%2F%2Ff.vimeocdn.com%2Fp%2Fimages%2Fcrawler_play.png"},{"width":200,"height":150,"link":"https://i.vimeocdn.com/video/35014584-446656421a935f9f256375f1fae2dc8a2d5003030999a23561a76a4ad5ce1bf1-d_200x150?r=pad","link_with_play_button":"https://i.vimeocdn.com/filter/overlay?src0=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F35014584-446656421a935f9f256375f1fae2dc8a2d5003030999a23561a76a4ad5ce1bf1-d_200x150&src1=http%3A%2F%2Ff.vimeocdn.com%2Fp%2Fimages%2Fcrawler_play.png"},{"width":295,"height":166,"link":"https://i.vimeocdn.com/video/35014584-446656421a935f9f256375f1fae2dc8a2d5003030999a23561a76a4ad5ce1bf1-d_295x166?r=pad","link_with_play_button":"https://i.vimeocdn.com/filter/overlay?src0=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F35014584-446656421a935f9f256375f1fae2dc8a2d5003030999a23561a76a4ad5ce1bf1-d_295x166&src1=http%3A%2F%2Ff.vimeocdn.com%2Fp%2Fimages%2Fcrawler_play.png"},{"width":640,"height":360,"link":"https://i.vimeocdn.com/video/35014584-446656421a935f9f256375f1fae2dc8a2d5003030999a23561a76a4ad5ce1bf1-d_640x360?r=pad","link_with_play_button":"https://i.vimeocdn.com/filter/overlay?src0=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F35014584-446656421a935f9f256375f1fae2dc8a2d5003030999a23561a76a4ad5ce1bf1-d_640x360&src1=http%3A%2F%2Ff.vimeocdn.com%2Fp%2Fimages%2Fcrawler_play.png"},{"width":960,"height":540,"link":"https://i.vimeocdn.com/video/35014584-446656421a935f9f256375f1fae2dc8a2d5003030999a23561a76a4ad5ce1bf1-d_960x540?r=pad","link_with_play_button":"https://i.vimeocdn.com/filter/overlay?src0=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F35014584-446656421a935f9f256375f1fae2dc8a2d5003030999a23561a76a4ad5ce1bf1-d_960x540&src1=http%3A%2F%2Ff.vimeocdn.com%2Fp%2Fimages%2Fcrawler_play.png"},{"width":1280,"height":720,"link":"https://i.vimeocdn.com/video/35014584-446656421a935f9f256375f1fae2dc8a2d5003030999a23561a76a4ad5ce1bf1-d_1280x720?r=pad","link_with_play_button":"https://i.vimeocdn.com/filter/overlay?src0=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F35014584-446656421a935f9f256375f1fae2dc8a2d5003030999a23561a76a4ad5ce1bf1-d_1280x720&src1=http%3A%2F%2Ff.vimeocdn.com%2Fp%2Fimages%2Fcrawler_play.png"},{"width":1920,"height":1080,"link":"https://i.vimeocdn.com/video/35014584-446656421a935f9f256375f1fae2dc8a2d5003030999a23561a76a4ad5ce1bf1-d_1920x1080?r=pad","link_with_play_button":"https://i.vimeocdn.com/filter/overlay?src0=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F35014584-446656421a935f9f256375f1fae2dc8a2d5003030999a23561a76a4ad5ce1bf1-d_1920x1080&src1=http%3A%2F%2Ff.vimeocdn.com%2Fp%2Fimages%2Fcrawler_play.png"}],"resource_key":"3a9299a824d2eb20f817bb10778905b1bcf1d4c0","default_picture":false},"tags":[],"stats":{"plays":null},"uploader":{"pictures":{"uri":"/users/195575/pictures/1051865","active":true,"type":"custom","base_link":"https://i.vimeocdn.com/portrait/1051865","sizes":[{"width":30,"height":30,"link":"https://i.vimeocdn.com/portrait/1051865_30x30"},{"width":72,"height":72,"link":"https://i.vimeocdn.com/portrait/1051865_72x72"},{"width":75,"height":75,"link":"https://i.vimeocdn.com/portrait/1051865_75x75"},{"width":100,"height":100,"link":"https://i.vimeocdn.com/portrait/1051865_100x100"},{"width":144,"height":144,"link":"https://i.vimeocdn.com/portrait/1051865_144x144"},{"width":216,"height":216,"link":"https://i.vimeocdn.com/portrait/1051865_216x216"},{"width":288,"height":288,"link":"https://i.vimeocdn.com/portrait/1051865_288x288"},{"width":300,"height":300,"link":"https://i.vimeocdn.com/portrait/1051865_300x300"},{"width":360,"height":360,"link":"https://i.vimeocdn.com/portrait/1051865_360x360"}],"resource_key":"c309e33692631ae18d6a7b27b217306c5939320f","default_picture":false}},"metadata":{"connections":{"comments":{"uri":"/videos/7848846/comments","options":["GET","POST"],"total":1},"credits":{"uri":"/videos/7848846/credits","options":["GET","POST"],"total":1},"likes":{"uri":"/videos/7848846/likes","options":["GET"],"total":44},"pictures":{"uri":"/videos/7848846/pictures","options":["GET","POST"],"total":1},"texttracks":{"uri":"/videos/7848846/texttracks","options":["GET","POST"],"total":0},"related":null,"albums":{"uri":"/videos/7848846/albums","options":["GET","PATCH"],"total":0},"available_albums":{"uri":"/videos/7848846/available_albums","options":["GET"],"total":0},"available_channels":{"uri":"/videos/7848846/available_channels","options":["GET"],"total":0}},"interactions":{"watchlater":{"uri":"/users/105561138/watchlater/7848846","options":["GET","PUT","DELETE"],"added":false,"added_time":null},"like":{"uri":"/users/105561138/likes/7848846","options":["GET","PUT","DELETE"],"added":false,"added_time":null},"report":{"uri":"/videos/7848846/report","options":["POST"],"reason":["pornographic","harassment","ripoff","incorrect
+        rating","spam","causes harm","csam"]},"can_update_privacy_to_public":{"uri":"/videos/7848846","options":["PATCH"]},"validate":{"uri":"/videos/7848846/validate","options":["PUT"]}},"is_vimeo_create":false,"is_screen_record":false},"user":{"uri":"/users/195575","name":"Service","link":"https://vimeo.com/service","capabilities":{"hasLiveSubscription":false,"hasEnterpriseLihp":false,"hasSvvTimecodedComments":false,"hasSimplifiedEnterpriseAccount":false},"location":"Sweden","gender":"f","bio":"http://www.srvc.se","short_bio":null,"created_time":"2007-05-18T12:12:35+00:00","pictures":{"uri":"/users/195575/pictures/1051865","active":true,"type":"custom","base_link":"https://i.vimeocdn.com/portrait/1051865","sizes":[{"width":30,"height":30,"link":"https://i.vimeocdn.com/portrait/1051865_30x30"},{"width":72,"height":72,"link":"https://i.vimeocdn.com/portrait/1051865_72x72"},{"width":75,"height":75,"link":"https://i.vimeocdn.com/portrait/1051865_75x75"},{"width":100,"height":100,"link":"https://i.vimeocdn.com/portrait/1051865_100x100"},{"width":144,"height":144,"link":"https://i.vimeocdn.com/portrait/1051865_144x144"},{"width":216,"height":216,"link":"https://i.vimeocdn.com/portrait/1051865_216x216"},{"width":288,"height":288,"link":"https://i.vimeocdn.com/portrait/1051865_288x288"},{"width":300,"height":300,"link":"https://i.vimeocdn.com/portrait/1051865_300x300"},{"width":360,"height":360,"link":"https://i.vimeocdn.com/portrait/1051865_360x360"}],"resource_key":"c309e33692631ae18d6a7b27b217306c5939320f","default_picture":false},"websites":[{"uri":"/users/195575/links/4603","name":null,"link":"http://www.srvc.se","type":"link","description":null}],"metadata":{"connections":{"activities":{"uri":"/users/195575/activities","options":["GET"]},"albums":{"uri":"/users/195575/albums","options":["GET"],"total":0},"appearances":{"uri":"/users/195575/appearances","options":["GET"],"total":0},"channels":{"uri":"/users/195575/channels","options":["GET"],"total":0},"feed":{"uri":"/users/195575/feed","options":["GET"]},"followers":{"uri":"/users/195575/followers","options":["GET"],"total":93},"following":{"uri":"/users/195575/following","options":["GET"],"total":0},"groups":{"uri":"/users/195575/groups","options":["GET"],"total":0},"likes":{"uri":"/users/195575/likes","options":["GET"],"total":0},"membership":{"uri":"/users/195575/membership/","options":["PATCH"]},"moderated_channels":{"uri":"/users/195575/channels?filter=moderated","options":["GET"],"total":0},"portfolios":{"uri":"/users/195575/portfolios","options":["GET"],"total":0},"videos":{"uri":"/users/195575/videos","options":["GET"],"total":20},"shared":{"uri":"/users/195575/shared/videos","options":["GET"],"total":61},"pictures":{"uri":"/users/195575/pictures","options":["GET","POST"],"total":1},"folders_root":{"uri":"/users/195575/folders/root","options":["GET"]},"teams":{"uri":"/users/195575/teams","options":["GET"],"total":1}},"interactions":{"follow":{"added":false,"added_time":null,"uri":"/users/105561138/following/195575","options":["GET","PUT","DELETE"]},"block":{"uri":"/me/block/195575","options":["PUT","DELETE"],"added":false,"added_time":null},"report":{"uri":"/users/195575/report","options":["POST"],"reason":["inappropriate
+        avatar","spammy","bad videos","creepy","not playing nice","impersonation","inappropriate
+        job post"]}}},"location_details":{"formatted_address":"Sweden","latitude":null,"longitude":null,"city":null,"state":null,"neighborhood":null,"sub_locality":null,"state_iso_code":null,"country":null,"country_iso_code":null},"skills":[],"available_for_hire":false,"can_work_remotely":false,"resource_key":"09a1089f005fa5924c94ec3cd495ec8ddd67b884","account":"basic","preferences":{"videos":{"privacy":null}}},"app":null,"play":{"status":"playable"},"status":"available","resource_key":"88d4a6ce576786d2f0a19f444f873f4fbc530d6f","upload":{"status":"complete","link":null,"upload_link":null,"form":null,"approach":null,"size":null,"redirect_url":null},"transcode":{"status":"complete"},"is_playable":true,"has_audio":false,"embed_presets":null}'
+  recorded_at: Fri, 27 Oct 2023 20:10:56 GMT
+recorded_with: VCR 6.2.0
