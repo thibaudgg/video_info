@@ -341,11 +341,17 @@
       subject { VideoInfo.new("https://vimeo.com/7848846") }
 
       its(:stats) {
-        should eq({
-          "plays" => nil,
-          "likes" => nil,
-          "comments" => nil
-        })
+        if api_key
+          should eq({
+            "plays" => nil,
+          })
+        else
+          should eq({
+            "plays" => nil,
+            "likes" => nil,
+            "comments" => nil
+          })
+        end
       }
     end
   end
