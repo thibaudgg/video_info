@@ -17,6 +17,21 @@
         it { is_expected.to be_truthy }
       end
 
+      context "with embed url" do
+        let(:url) { "https://www.youtube.com/embed/JM9NgvjjVng" }
+        it { is_expected.to be_truthy }
+      end
+
+      context "with live url" do
+        let(:url) { "https://www.youtube.com/live/SMhkA07Fbfs" }
+        it { is_expected.to be_truthy }
+      end
+
+      context "with shorts url" do
+        let(:url) { "https://youtube.com/shorts/MOcigdHkzhE" }
+        it { is_expected.to be_truthy }
+      end
+
       context "with other url" do
         let(:url) { "http://google.com/video1" }
         it { is_expected.to be_falsey }

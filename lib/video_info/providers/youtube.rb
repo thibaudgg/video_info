@@ -54,7 +54,7 @@ class VideoInfo
       private
 
       def _url_regex
-        %r{(?:youtube(?:-nocookie)?\.com/(?:[^/]+/.+/|(?:v|e(?:mbed)?)/|
+        %r{(?:youtube(?:-nocookie)?\.com/(?:[^/]+/.+/|(?:v|e(?:mbed)?|live|shorts)/|
            .*[?&]v=)|youtu\.be/)([^"&?/ ]{11})}x
       end
 
