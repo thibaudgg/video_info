@@ -17,7 +17,7 @@ VCR.configure do |config|
   config.cassette_library_dir = "spec/fixtures/vcr_cassettes"
   config.default_cassette_options = {
     record: :new_episodes,
-    re_record_interval: 3 * 30 * 24 * 60 * 60
+    re_record_interval: 6 * 30 * 24 * 60 * 60
   }
 
   # When re-recording VCR cassetes, the necessary keys can be set as env variables:

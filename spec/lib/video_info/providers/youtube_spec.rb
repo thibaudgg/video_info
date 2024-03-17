@@ -566,7 +566,7 @@
         subject { super().date }
 
         it "should return date video was posted" do
-          is_expected.to eq Time.parse("Sat Apr 12 22:34:48 UTC 2008",Time.now.utc)
+          is_expected.to eq Time.parse("Sat Apr 12 22:34:48 UTC 2008", Time.now.utc)
         end
       end
 

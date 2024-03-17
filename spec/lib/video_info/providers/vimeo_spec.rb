@@ -313,10 +313,10 @@
       video_url = "https://vimeo.com/642263700"
       subject { VideoInfo.new(video_url) }
 
-      its(:thumbnail) { should match /i.vimeocdn.com\/video\/1291917478-2522170a8cfe68dc920e5031deac9bc5ff4d6699c96341fbe.*_640.jpg/ }
-      its(:thumbnail_large) { should match /i.vimeocdn.com\/video\/1291917478-2522170a8cfe68dc920e5031deac9bc5ff4d6699c96341fbe.*_640.jpg/ }
-      its(:thumbnail_medium) { should match /i.vimeocdn.com\/video\/1291917478-2522170a8cfe68dc920e5031deac9bc5ff4d6699c96341fbe.*_200x150.jpg/ }
-      its(:thumbnail_small) { should match /i.vimeocdn.com\/video\/1291917478-2522170a8cfe68dc920e5031deac9bc5ff4d6699c96341fbe.*_100x75.jpg/ }
+      its(:thumbnail) { should match(/i.vimeocdn.com\/video\/1291917478-2522170a8cfe68dc920e5031deac9bc5ff4d6699c96341fbe.*_640.jpg/) }
+      its(:thumbnail_large) { should match(/i.vimeocdn.com\/video\/1291917478-2522170a8cfe68dc920e5031deac9bc5ff4d6699c96341fbe.*_640.jpg/) }
+      its(:thumbnail_medium) { should match(/i.vimeocdn.com\/video\/1291917478-2522170a8cfe68dc920e5031deac9bc5ff4d6699c96341fbe.*_200x150.jpg/) }
+      its(:thumbnail_small) { should match(/i.vimeocdn.com\/video\/1291917478-2522170a8cfe68dc920e5031deac9bc5ff4d6699c96341fbe.*_100x75.jpg/) }
     end
 
     context "with unavailable video" do
@@ -348,7 +348,7 @@
       its(:stats) {
         if api_key
           should eq({
-            "plays" => nil,
+            "plays" => nil
           })
         else
           should eq({
