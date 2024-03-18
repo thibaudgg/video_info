@@ -6,9 +6,12 @@
 [![Test Coverage](https://api.codeclimate.com/v1/badges/1f03474bdb81e735002c/test_coverage)](https://codeclimate.com/github/thibaudgg/video_info/test_coverage)
 [![Ruby Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://github.com/testdouble/standard)
 
-Simple Ruby Gem to get video info from Dailymotion, Vimeo, Wistia and YouTube (with playlist).
+Simple Ruby Gem to get video information from different providers. Supported providers:
 
-Tested against Ruby 2.7, 3.0, 3.1 and 3.2.
+- YouTube (with playlists)
+- Vimeo
+- Dailymotion
+- Wistia
 
 ## Features
 
@@ -204,4 +207,4 @@ Please read [the contributing guidelines](CONTRIBUTING.md).
 
 ### Contributors
 
-[https://github.com/thibaudgg/video_info/graphs/contributors](https://github.com/thibaudgg/video_info/graphs/contributors)
+Thanks to [all contributors](https://github.com/thibaudgg/video_info/graphs/contributors)!
