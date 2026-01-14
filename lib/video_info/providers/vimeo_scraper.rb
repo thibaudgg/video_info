@@ -145,7 +145,6 @@ class VideoInfo
         end
       end
 
-
       def thumbnail_url
         @thumbnail_url ||= remove_overlay(meta_node_value("og:image"))
       end

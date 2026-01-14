@@ -7,6 +7,7 @@ class VideoInfo
       BASE_URL = "https://www.youtube.com"
       CHANNEL_URL = "#{BASE_URL}/channel/"
       THUMB_DEFAULT_SIZE = 88
+      DEFAULT_YOUTUBE_DESCRIPTION = "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
 
       def available?
         !!title
@@ -41,7 +42,11 @@ class VideoInfo
       end
 
       def description
-        meta_node_value(video_meta_nodes, "og:description")
+        # NOTE: If a video has no description, YouTube will insert a generic message.
+        description = meta_node_value(video_meta_nodes, "og:description")
+        return "" if description == DEFAULT_YOUTUBE_DESCRIPTION
+
+        description
       end
 
       def duration
@@ -68,7 +73,7 @@ class VideoInfo
       end
 
       def view_count
-        itemprop_node_value("interactionCount").to_i
+        interaction_statistics["https://schema.org/WatchAction"]&.to_i || 0
       end
 
       def stats
@@ -97,7 +102,8 @@ class VideoInfo
         end
 
         return unless node
-        node&.attr("content") && node.attr("content").value
+
+        node.attr("content")&.value
       end
 
       def itemprop_node_value(name)
@@ -109,6 +115,32 @@ class VideoInfo
 
         return unless node
         node.attr("content").value
+      end
+
+      def interaction_statistics
+        @interaction_statistics ||= begin
+          stats = {}
+          # Find all divs with itemprop="interactionStatistic"
+          interaction_divs = data.css('div[itemprop="interactionStatistic"]')
+
+          interaction_divs.each do |div|
+            # Find meta tag with interactionType
+            interaction_type_meta = div.css('meta[itemprop="interactionType"]').first
+            interaction_type_attr = interaction_type_meta&.attr("content")
+            next unless interaction_type_attr
+
+            interaction_type = interaction_type_attr.value
+
+            # Get the userInteractionCount from the same div
+            count_meta = div.css('meta[itemprop="userInteractionCount"]').first
+            count_attr = count_meta&.attr("content")
+            next unless count_attr
+
+            stats[interaction_type] = count_attr.value
+          end
+
+          stats
+        end
       end
 
       def _set_data_from_api_impl(api_url)

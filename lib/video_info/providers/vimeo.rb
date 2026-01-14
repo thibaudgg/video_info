@@ -11,7 +11,7 @@ class VideoInfo
           extend VimeoAPI
         end
 
-        super(url, options)
+        super
       end
 
       def self.usable?(url)

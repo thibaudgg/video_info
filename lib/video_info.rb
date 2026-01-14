@@ -29,9 +29,7 @@ class VideoInfo
     end
 
     def logger
-      @logger ||= Logger.new($stdout).tap do |lgr|
-        lgr.progname = name
-      end
+      @logger ||= Logger.new($stdout, progname: name)
     end
   end
 
@@ -56,8 +54,8 @@ class VideoInfo
     @provider = _select_provider(url, options)
   end
 
-  def self.get(*args)
-    new(*args)
+  def self.get(*)
+    new(*)
   end
 
   def self.usable?(url)

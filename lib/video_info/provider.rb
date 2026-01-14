@@ -155,9 +155,13 @@ class VideoInfo
       url_attrs = options.fetch(:url_attributes, {})
       url_attrs = _default_url_attributes.merge(url_attrs)
 
-      url = embed_url
-      url += "?#{_hash_to_params(url_attrs)}" unless url_attrs.empty?
-      url
+      return embed_url if url_attrs.empty?
+
+      uri = URI.parse(embed_url)
+      existing_params = uri.query ? URI.decode_www_form(uri.query).to_h : {}
+      merged_params = existing_params.merge(url_attrs.transform_keys(&:to_s))
+      uri.query = URI.encode_www_form(merged_params)
+      uri.to_s
     end
 
     def _hash_to_attributes(hash)

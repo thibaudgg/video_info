@@ -101,14 +101,24 @@
 
       describe "#embed_url" do
         subject { super().embed_url }
-        it { is_expected.to eq "//player.vimeo.com/video/136971428" }
+        if api_key
+          it { is_expected.to eq "https://player.vimeo.com/video/136971428?h=b646dcf635" }
+        else
+          it { is_expected.to eq "//player.vimeo.com/video/136971428" }
+        end
       end
 
       describe "#embed_code" do
         subject { super().embed_code }
-        embed_code = '<iframe src="//player.vimeo.com/video/136971428?' \
-                     'title=0&byline=0&portrait=0&autoplay=0" ' \
-                     'frameborder="0"></iframe>'
+        embed_code = if api_key
+          '<iframe src="https://player.vimeo.com/video/136971428?' \
+                       'h=b646dcf635&title=0&byline=0&portrait=0&autoplay=0" ' \
+                       'frameborder="0"></iframe>'
+        else
+          '<iframe src="//player.vimeo.com/video/136971428?' \
+                       'title=0&byline=0&portrait=0&autoplay=0" ' \
+                       'frameborder="0"></iframe>'
+        end
         it { is_expected.to eq embed_code }
       end
 

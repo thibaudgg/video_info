@@ -206,8 +206,10 @@
         subject { super().author_thumbnail }
 
         author_thumbnails = [
-          "https://yt3.googleusercontent.com/ytc/APkrFKZ9ePMs_0PsvxZaTIUzOVK4aZC3z2vPwlO9brU9=s900-c-k-c0x00ffffff-no-rj",
-          "https://yt3.ggpht.com/ytc/APkrFKZ9ePMs_0PsvxZaTIUzOVK4aZC3z2vPwlO9brU9=s88-c-k-c0x00ffffff-no-rj"
+          "https://yt3.googleusercontent.com/ytc/AIdro_kBDTbVgkx0LTGGRk_a_l04Ij5T-tFDW0Wk5C2Y52fyEw=s900-c-k-c0x00ffffff-no-rj",
+          "https://yt3.ggpht.com/ytc/AIdro_kBDTbVgkx0LTGGRk_a_l04Ij5T-tFDW0Wk5C2Y52fyEw=s900-c-k-c0x00ffffff-no-rj",
+          "https://yt3.googleusercontent.com/ytc/AIdro_kBDTbVgkx0LTGGRk_a_l04Ij5T-tFDW0Wk5C2Y52fyEw=s88-c-k-c0x00ffffff-no-rj",
+          "https://yt3.ggpht.com/ytc/AIdro_kBDTbVgkx0LTGGRk_a_l04Ij5T-tFDW0Wk5C2Y52fyEw=s88-c-k-c0x00ffffff-no-rj"
         ]
 
         it { expect(author_thumbnails).to include subject }

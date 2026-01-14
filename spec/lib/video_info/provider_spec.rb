@@ -69,6 +69,28 @@ describe VideoInfo::Provider do
       expected = expect(provider.embed_code(iframe_attributes: {foo: "bar"}))
       expected.to eq embed_str
     end
+
+    context "when embed_url already has query parameters" do
+      let(:provider_with_query) do
+        Class.new(ProviderFu) do
+          def embed_url
+            "//foo.com?existing=param"
+          end
+        end.new("foo/1", options)
+      end
+
+      it "merges new query parameters with existing ones" do
+        embed_str = '<iframe src="//foo.com?existing=param&foo=bar" frameborder="0"></iframe>'
+        expected = expect(provider_with_query.embed_code(url_attributes: {foo: "bar"}))
+        expected.to eq embed_str
+      end
+
+      it "overwrites existing parameters when keys match" do
+        embed_str = '<iframe src="//foo.com?existing=newvalue" frameborder="0"></iframe>'
+        expected = expect(provider_with_query.embed_code(url_attributes: {existing: "newvalue"}))
+        expected.to eq embed_str
+      end
+    end
   end
 
   describe ".usable?" do

@@ -8,7 +8,7 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - VideoInfo/4.0.0
+      - VideoInfo/4.2.0
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -25,11 +25,9 @@ http_interactions:
       - Referer
       - X-Origin
       Date:
-      - Fri, 27 Oct 2023 15:22:06 GMT
+      - Wed, 14 Jan 2026 20:34:14 GMT
       Server:
       - scaffolding on HTTPServer2
-      Cache-Control:
-      - private
       X-Xss-Protection:
       - '0'
       X-Frame-Options:
@@ -45,7 +43,7 @@ http_interactions:
       string: |
         {
           "kind": "youtube#playlistListResponse",
-          "etag": "IBLzw9fYvu_t4v70r47Z6WhQR6E",
+          "etag": "Q5r9vQTUxTSFx4xeuno5OLPG6kY",
           "pageInfo": {
             "totalResults": 1,
             "resultsPerPage": 5
@@ -53,10 +51,10 @@ http_interactions:
           "items": [
             {
               "kind": "youtube#playlist",
-              "etag": "ct9J6jKZv4Wpn81Prp1WPJdJaL0",
+              "etag": "02-ibhoojY3I3ti2Sjtk6wnm4gU",
               "id": "PLA575C81A1FBC04CF",
               "snippet": {
-                "publishedAt": "2010-01-07T22:20:45Z",
+                "publishedAt": "2010-01-07T22:20:45.685499Z",
                 "channelId": "UC2y5oKUfkQJDKO7cM_OIc3w",
                 "title": "the century of self",
                 "description": "",
@@ -86,5 +84,5 @@ http_interactions:
             }
           ]
         }
-  recorded_at: Fri, 27 Oct 2023 15:22:06 GMT
-recorded_with: VCR 6.1.0
+  recorded_at: Wed, 14 Jan 2026 20:34:15 GMT
+recorded_with: VCR 6.4.0

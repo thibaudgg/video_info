@@ -8,7 +8,7 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - VideoInfo/4.0.0
+      - VideoInfo/4.2.0
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -24,8 +24,10 @@ http_interactions:
       - '813'
       Content-Type:
       - application/json; charset=utf-8
+      X-Envoy-Upstream-Service-Time:
+      - '63'
       Server:
-      - envoy
+      - istio-envoy
       X-Content-Type-Options:
       - nosniff
       X-Permitted-Cross-Domain-Policies:
@@ -39,49 +41,47 @@ http_interactions:
       Etag:
       - W/"99ea8bfd17798457553c25f60cac1818"
       X-Request-Id:
-      - 73651ccd-c976-4e4c-8546-0a04056eec2a
+      - dd6cb968-17be-9961-8355-2fc91a8a7707
       X-Runtime:
-      - '0.045165'
-      X-Envoy-Upstream-Service-Time:
-      - '46'
+      - '0.057824'
       Via:
-      - 1.1 156336391961f724345f6534c674b6ea.cloudfront.net (CloudFront), 1.1 varnish,
+      - 1.1 d0c7523233c2ce4a1a420cfda612235a.cloudfront.net (CloudFront), 1.1 varnish,
         1.1 varnish
       X-Amz-Cf-Pop:
-      - IAD89-C3
+      - IAD61-P4
       X-Amz-Cf-Id:
-      - qkou80Hhb-77UJ26-0-gUrhDIM0LZfIzE06sRwPneLaoYnsvI_b8Kw==
+      - ZoHgG-IYRf6V43Pkt0pE4tUl7NbGCc2HWkR6aWtQdvAyHsJvadEICA==
       Accept-Ranges:
       - bytes
       Date:
-      - Fri, 27 Oct 2023 15:22:05 GMT
+      - Wed, 14 Jan 2026 20:34:13 GMT
       Age:
-      - '0'
+      - '79693'
       X-Served-By:
-      - cache-iad-kjyo7100166-IAD, cache-mad2200123-MAD
+      - cache-iad-kiad7000157-IAD, cache-bos4665-BOS
       X-Cache:
-      - Miss from cloudfront, MISS, HIT
+      - Miss from cloudfront, HIT, HIT
       X-Cache-Hits:
-      - 0, 1
+      - 26, 1
       X-Timer:
-      - S1698420126.743089,VS0,VE1
+      - S1768422854.996474,VS0,VE1
       Vary:
       - Accept-Encoding,X-Forwarded-Proto,X-ECMA-Override
       Strict-Transport-Security:
       - max-age=0
       X-Ecma-V:
-      - es5
+      - modern
       X-Browser:
       - unknown
       X-Browser-Version:
       - '0'
     body:
-      encoding: ASCII-8BIT
+      encoding: UTF-8
       string: '{"version":"1.0","type":"video","html":"\u003ciframe src=\"https://fast.wistia.net/embed/iframe/rs1me54mpw\"
         title=\"Lance Kalish - Yes To Group Video\" allow=\"autoplay; fullscreen\"
         allowtransparency=\"true\" frameborder=\"0\" scrolling=\"no\" class=\"wistia_embed\"
         name=\"wistia_embed\" msallowfullscreen width=\"960\" height=\"540\"\u003e\u003c/iframe\u003e\n\u003cscript
         src=\"https://fast.wistia.net/assets/external/E-v1.js\" async\u003e\u003c/script\u003e","width":960,"height":540,"provider_name":"Wistia,
         Inc.","provider_url":"https://wistia.com","title":"Lance Kalish - Yes To Group","thumbnail_url":"https://embed-ssl.wistia.com/deliveries/dc005e6a7583a25c4b7c284c08afc42fb67fdb95.jpg?image_crop_resized=960x540","thumbnail_width":960,"thumbnail_height":540,"player_color":"7b796a","duration":1214.83}'
-  recorded_at: Fri, 27 Oct 2023 15:22:05 GMT
-recorded_with: VCR 6.1.0
+  recorded_at: Wed, 14 Jan 2026 20:34:14 GMT
+recorded_with: VCR 6.4.0

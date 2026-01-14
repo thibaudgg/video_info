@@ -92,6 +92,10 @@ class VideoInfo
         _video["stats"]
       end
 
+      def embed_url
+        _video["player_embed_url"]
+      end
+
       private
 
       def generate_thumbnail(width = 200, height = nil)

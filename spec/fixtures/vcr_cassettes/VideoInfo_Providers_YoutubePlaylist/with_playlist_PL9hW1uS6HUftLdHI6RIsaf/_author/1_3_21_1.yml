@@ -8,7 +8,7 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - VideoInfo/4.0.0
+      - VideoInfo/4.2.0
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -25,11 +25,9 @@ http_interactions:
       - Referer
       - X-Origin
       Date:
-      - Fri, 27 Oct 2023 15:22:10 GMT
+      - Wed, 14 Jan 2026 20:34:17 GMT
       Server:
       - scaffolding on HTTPServer2
-      Cache-Control:
-      - private
       X-Xss-Protection:
       - '0'
       X-Frame-Options:
@@ -45,7 +43,7 @@ http_interactions:
       string: |
         {
           "kind": "youtube#playlistListResponse",
-          "etag": "LVKAl5bAKCI5378jTswHTPxl_Bs",
+          "etag": "_-iBYtkGJitjZMjh1pvPFuUdPSI",
           "pageInfo": {
             "totalResults": 1,
             "resultsPerPage": 5
@@ -53,10 +51,10 @@ http_interactions:
           "items": [
             {
               "kind": "youtube#playlist",
-              "etag": "mV21kAo4_X5e3pIGZlJFRcu5dhA",
+              "etag": "Hho_kQ9DXGRIEq8K9TFAZTx3RjQ",
               "id": "PL9hW1uS6HUftLdHI6RIsaf-iXTm09qnEr",
               "snippet": {
-                "publishedAt": "2013-08-09T05:09:51Z",
+                "publishedAt": "2013-08-09T05:09:51.743198Z",
                 "channelId": "UCMDQxm7cUx3yXkfeHa5zJIQ",
                 "title": "YouTube Policy and Copyright",
                 "description": "Learn more about copyright basics, flagging, and the YouTube community.",
@@ -97,5 +95,5 @@ http_interactions:
             }
           ]
         }
-  recorded_at: Fri, 27 Oct 2023 15:22:10 GMT
-recorded_with: VCR 6.1.0
+  recorded_at: Wed, 14 Jan 2026 20:34:17 GMT
+recorded_with: VCR 6.4.0

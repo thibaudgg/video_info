@@ -8,7 +8,7 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - VideoInfo/4.0.0
+      - VideoInfo/4.2.0
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -25,11 +25,9 @@ http_interactions:
       - Referer
       - X-Origin
       Date:
-      - Fri, 27 Oct 2023 16:33:55 GMT
+      - Wed, 14 Jan 2026 20:34:46 GMT
       Server:
       - scaffolding on HTTPServer2
-      Cache-Control:
-      - private
       X-Xss-Protection:
       - '0'
       X-Frame-Options:
@@ -87,10 +85,12 @@ http_interactions:
                 ],
                 "categoryId": "10",
                 "liveBroadcastContent": "none",
+                "defaultLanguage": "en",
                 "localized": {
                   "title": "Cherry Bloom - King Of The Knife",
                   "description": "The first video from the upcoming album Secret Sounds, to download in-stores April 14. Checkout http://www.cherrybloom.net"
-                }
+                },
+                "defaultAudioLanguage": "en"
               },
               "contentDetails": {
                 "duration": "PT2M56S",
@@ -110,7 +110,7 @@ http_interactions:
                 "madeForKids": false
               },
               "statistics": {
-                "viewCount": "8357",
+                "viewCount": "8547",
                 "likeCount": "68",
                 "favoriteCount": "0",
                 "commentCount": "5"
@@ -118,5 +118,5 @@ http_interactions:
             }
           ]
         }
-  recorded_at: Fri, 27 Oct 2023 16:33:55 GMT
-recorded_with: VCR 6.1.0
+  recorded_at: Wed, 14 Jan 2026 20:34:47 GMT
+recorded_with: VCR 6.4.0

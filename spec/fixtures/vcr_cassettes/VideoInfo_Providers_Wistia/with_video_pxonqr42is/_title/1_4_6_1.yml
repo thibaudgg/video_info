@@ -8,7 +8,7 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - VideoInfo/4.0.0
+      - VideoInfo/4.2.0
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -24,8 +24,10 @@ http_interactions:
       - '805'
       Content-Type:
       - application/json; charset=utf-8
+      X-Envoy-Upstream-Service-Time:
+      - '38'
       Server:
-      - envoy
+      - istio-envoy
       X-Content-Type-Options:
       - nosniff
       X-Permitted-Cross-Domain-Policies:
@@ -39,49 +41,47 @@ http_interactions:
       Etag:
       - W/"a61024ecded175c4fd74dc15cf8280fd"
       X-Request-Id:
-      - aecf6b82-a203-4d20-a38a-e6cd5e8c52ed
+      - 8a20547d-e86d-42fc-a061-5b8976377eed
       X-Runtime:
-      - '0.040516'
-      X-Envoy-Upstream-Service-Time:
-      - '43'
+      - '0.036646'
       Via:
-      - 1.1 ab8bcd9c092f618064e495d01acbd726.cloudfront.net (CloudFront), 1.1 varnish,
+      - 1.1 7c10297c8f7f82a85e972a8fe3d90bfe.cloudfront.net (CloudFront), 1.1 varnish,
         1.1 varnish
       X-Amz-Cf-Pop:
-      - JFK52-P2
+      - PHL51-P3
       X-Amz-Cf-Id:
-      - gwcpGcgSUxude4mEaXgECXaAG8QAyHaT4wu25TGKtdI-_R-whg1NaA==
+      - qxtfyaqohMXEJwNZT5hlKlydswIbtSeZ1KekdNbVM32twoPDU0_v4Q==
       Accept-Ranges:
       - bytes
       Date:
-      - Fri, 27 Oct 2023 15:22:05 GMT
+      - Wed, 14 Jan 2026 20:34:14 GMT
       Age:
-      - '88801'
+      - '79694'
       X-Served-By:
-      - cache-iad-kiad7000041-IAD, cache-mad2200141-MAD
+      - cache-iad-kjyo7100069-IAD, cache-bos4682-BOS
       X-Cache:
-      - Miss from cloudfront, MISS, HIT
+      - Miss from cloudfront, HIT, HIT
       X-Cache-Hits:
-      - 0, 1
+      - 22, 2
       X-Timer:
-      - S1698420126.810326,VS0,VE5
+      - S1768422854.071198,VS0,VE0
       Vary:
       - Accept-Encoding,X-Forwarded-Proto,X-ECMA-Override
       Strict-Transport-Security:
       - max-age=0
       X-Ecma-V:
-      - es5
+      - modern
       X-Browser:
       - unknown
       X-Browser-Version:
       - '0'
     body:
-      encoding: ASCII-8BIT
+      encoding: UTF-8
       string: '{"version":"1.0","type":"video","html":"\u003ciframe src=\"https://fast.wistia.net/embed/iframe/pxonqr42is\"
         title=\"Understanding Analytics Video\" allow=\"autoplay; fullscreen\" allowtransparency=\"true\"
         frameborder=\"0\" scrolling=\"no\" class=\"wistia_embed\" name=\"wistia_embed\"
         msallowfullscreen width=\"960\" height=\"540\"\u003e\u003c/iframe\u003e\n\u003cscript
         src=\"https://fast.wistia.net/assets/external/E-v1.js\" async\u003e\u003c/script\u003e","width":960,"height":540,"provider_name":"Wistia,
         Inc.","provider_url":"https://wistia.com","title":"Understanding Analytics","thumbnail_url":"https://embed-ssl.wistia.com/deliveries/0fccbdc60ade35723f79f1c002bc61b135b610fa.jpg?image_crop_resized=960x540","thumbnail_width":960,"thumbnail_height":540,"player_color":"63d0db","duration":250.376}'
-  recorded_at: Fri, 27 Oct 2023 15:22:05 GMT
-recorded_with: VCR 6.1.0
+  recorded_at: Wed, 14 Jan 2026 20:34:14 GMT
+recorded_with: VCR 6.4.0

@@ -8,7 +8,7 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - VideoInfo/4.0.0
+      - VideoInfo/4.2.0
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -21,11 +21,13 @@ http_interactions:
       Connection:
       - keep-alive
       Content-Length:
-      - '466'
+      - '813'
       Content-Type:
       - application/json; charset=utf-8
+      X-Envoy-Upstream-Service-Time:
+      - '63'
       Server:
-      - envoy
+      - istio-envoy
       X-Content-Type-Options:
       - nosniff
       X-Permitted-Cross-Domain-Policies:
@@ -39,40 +41,36 @@ http_interactions:
       Etag:
       - W/"99ea8bfd17798457553c25f60cac1818"
       X-Request-Id:
-      - 73651ccd-c976-4e4c-8546-0a04056eec2a
+      - dd6cb968-17be-9961-8355-2fc91a8a7707
       X-Runtime:
-      - '0.045165'
-      Content-Encoding:
-      - gzip
-      X-Envoy-Upstream-Service-Time:
-      - '46'
+      - '0.057824'
       Via:
-      - 1.1 156336391961f724345f6534c674b6ea.cloudfront.net (CloudFront), 1.1 varnish,
+      - 1.1 d0c7523233c2ce4a1a420cfda612235a.cloudfront.net (CloudFront), 1.1 varnish,
         1.1 varnish
       X-Amz-Cf-Pop:
-      - IAD89-C3
+      - IAD61-P4
       X-Amz-Cf-Id:
-      - qkou80Hhb-77UJ26-0-gUrhDIM0LZfIzE06sRwPneLaoYnsvI_b8Kw==
+      - ZoHgG-IYRf6V43Pkt0pE4tUl7NbGCc2HWkR6aWtQdvAyHsJvadEICA==
       Accept-Ranges:
       - bytes
-      Date:
-      - Fri, 27 Oct 2023 15:22:05 GMT
       Age:
-      - '88801'
+      - '79692'
+      Date:
+      - Wed, 14 Jan 2026 20:34:13 GMT
       X-Served-By:
-      - cache-iad-kjyo7100166-IAD, cache-mad2200113-MAD
+      - cache-iad-kiad7000157-IAD, cache-bos4686-BOS
       X-Cache:
-      - Miss from cloudfront, MISS, HIT
+      - Miss from cloudfront, HIT, HIT
       X-Cache-Hits:
-      - 0, 1
+      - 26, 0
       X-Timer:
-      - S1698420125.244016,VS0,VE3
+      - S1768422853.176218,VS0,VE1
       Vary:
       - Accept-Encoding,X-Forwarded-Proto,X-ECMA-Override
       Strict-Transport-Security:
       - max-age=0
       X-Ecma-V:
-      - es5
+      - modern
       X-Browser:
       - unknown
       X-Browser-Version:
@@ -80,5 +78,5 @@ http_interactions:
     body:
       encoding: UTF-8
       string: ''
-  recorded_at: Fri, 27 Oct 2023 15:22:05 GMT
-recorded_with: VCR 6.1.0
+  recorded_at: Wed, 14 Jan 2026 20:34:13 GMT
+recorded_with: VCR 6.4.0

@@ -8,7 +8,7 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - VideoInfo/4.0.0
+      - VideoInfo/4.2.0
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -25,11 +25,9 @@ http_interactions:
       - Referer
       - X-Origin
       Date:
-      - Fri, 27 Oct 2023 15:22:11 GMT
+      - Wed, 14 Jan 2026 20:34:18 GMT
       Server:
       - scaffolding on HTTPServer2
-      Cache-Control:
-      - private
       X-Xss-Protection:
       - '0'
       X-Frame-Options:
@@ -45,7 +43,7 @@ http_interactions:
       string: |
         {
           "kind": "youtube#playlistListResponse",
-          "etag": "LVKAl5bAKCI5378jTswHTPxl_Bs",
+          "etag": "_-iBYtkGJitjZMjh1pvPFuUdPSI",
           "pageInfo": {
             "totalResults": 1,
             "resultsPerPage": 5
@@ -53,10 +51,10 @@ http_interactions:
           "items": [
             {
               "kind": "youtube#playlist",
-              "etag": "mV21kAo4_X5e3pIGZlJFRcu5dhA",
+              "etag": "Hho_kQ9DXGRIEq8K9TFAZTx3RjQ",
               "id": "PL9hW1uS6HUftLdHI6RIsaf-iXTm09qnEr",
               "snippet": {
-                "publishedAt": "2013-08-09T05:09:51Z",
+                "publishedAt": "2013-08-09T05:09:51.743198Z",
                 "channelId": "UCMDQxm7cUx3yXkfeHa5zJIQ",
                 "title": "YouTube Policy and Copyright",
                 "description": "Learn more about copyright basics, flagging, and the YouTube community.",
@@ -97,7 +95,7 @@ http_interactions:
             }
           ]
         }
-  recorded_at: Fri, 27 Oct 2023 15:22:11 GMT
+  recorded_at: Wed, 14 Jan 2026 20:34:18 GMT
 - request:
     method: get
     uri: https://www.googleapis.com/youtube/v3/channels?id=UCMDQxm7cUx3yXkfeHa5zJIQ&key=youtube_api_key_123&part=snippet
@@ -123,11 +121,9 @@ http_interactions:
       - Referer
       - X-Origin
       Date:
-      - Fri, 27 Oct 2023 15:22:11 GMT
+      - Wed, 14 Jan 2026 20:34:18 GMT
       Server:
       - scaffolding on HTTPServer2
-      Cache-Control:
-      - private
       X-Xss-Protection:
       - '0'
       X-Frame-Options:
@@ -141,6 +137,6 @@ http_interactions:
     body:
       encoding: ASCII-8BIT
       string: !binary |-
-        ewogICJraW5kIjogInlvdXR1YmUjY2hhbm5lbExpc3RSZXNwb25zZSIsCiAgImV0YWciOiAiOXdOOXdOdUJCc3lxT2ZxWmxEbENXb2ZWc0pFIiwKICAicGFnZUluZm8iOiB7CiAgICAidG90YWxSZXN1bHRzIjogMSwKICAgICJyZXN1bHRzUGVyUGFnZSI6IDUKICB9LAogICJpdGVtcyI6IFsKICAgIHsKICAgICAgImtpbmQiOiAieW91dHViZSNjaGFubmVsIiwKICAgICAgImV0YWciOiAiem85NFJvZmxKLU12TzlCOHdHdkswTEFraTNJIiwKICAgICAgImlkIjogIlVDTURReG03Y1V4M3lYa2ZlSGE1ekpJUSIsCiAgICAgICJzbmlwcGV0IjogewogICAgICAgICJ0aXRsZSI6ICJZb3VUdWJlIFZpZXdlcnMiLAogICAgICAgICJkZXNjcmlwdGlvbiI6ICJXZWxjb21lIHRvIHRoZSBZb3VUdWJlIFZpZXdlcnMgY2hhbm5lbCEgXG5cbldhbnQgdXBkYXRlcyBvbiBuZXcgZmVhdHVyZXMgYW5kIHByb2R1Y3RzIGZvciB2aWV3ZXJzPyBOZWVkIGhlbHAgd2l0aCBvbmUgb2Ygb3VyIHNlcnZpY2VzIGxpa2UgWW91VHViZSBUViwgWW91VHViZSBQcmVtaXVtLCBZb3VUdWJlIEtpZHMgb3IgWW91VHViZSBNdXNpYz8gWW914oCZdmUgY29tZSB0byB0aGUgcmlnaHQgcGxhY2UhIFxuXG5UdW5lIGluIGZvciBvZmZpY2lhbCB1cGRhdGVzIGFuZCB3YWxrdGhyb3VnaHMgZm9yIHZpZXdlcnMuIERvbuKAmXQgZm9yZ2V0IHRvIHN1YnNjcmliZSBhbmQgdGFwIHRoZSBiZWxsIVxuXG5Gb2xsb3cgQFRlYW1Zb3VUdWJlIG9uIFR3aXR0ZXIgdG8gZ2V0IG9mZmljaWFsIHVwZGF0ZXMgYW5kIGFuc3dlcnMgdG8geW91ciBZb3VUdWJlIHF1ZXN0aW9ucy4gQXZhaWxhYmxlIGluIHRoZSBmb2xsb3dpbmcgbGFuZ3VhZ2VzIC0gRW5nbGlzaCwgRXNwYcOxb2wsIFBvcnR1Z3XDqnMsIERldXRzY2gsIEZyYW7Dp2FpcywgUNGD0YHRgdC60LjQuSwg5pel5pys6KqeLCBCYWhhc2EuXG5cbiIsCiAgICAgICAgImN1c3RvbVVybCI6ICJAeW91dHViZXZpZXdlcnMiLAogICAgICAgICJwdWJsaXNoZWRBdCI6ICIyMDA3LTA1LTAzVDIyOjU0OjEyWiIsCiAgICAgICAgInRodW1ibmFpbHMiOiB7CiAgICAgICAgICAiZGVmYXVsdCI6IHsKICAgICAgICAgICAgInVybCI6ICJodHRwczovL3l0My5nZ3BodC5jb20vY2NQcjgwcmZrT2dzRTBUTVA4Uzh2RWZQODVnbDEyWHpVR3R5U1BGRllOTWh4bFE2Mlc3aWprc21VSVh2NmZDQkMxakJtb0VxYUE9czg4LWMtay1jMHgwMGZmZmZmZi1uby1yaiIsCiAgICAgICAgICAgICJ3aWR0aCI6IDg4LAogICAgICAgICAgICAiaGVpZ2h0IjogODgKICAgICAgICAgIH0sCiAgICAgICAgICAibWVkaXVtIjogewogICAgICAgICAgICAidXJsIjogImh0dHBzOi8veXQzLmdncGh0LmNvbS9jY1ByODByZmtPZ3NFMFRNUDhTOHZFZlA4NWdsMTJYelVHdHlTUEZGWU5NaHhsUTYyVzdpamtzbVVJWHY2ZkNCQzFqQm1vRXFhQT1zMjQwLWMtay1jMHgwMGZmZmZmZi1uby1yaiIsCiAgICAgICAgICAgICJ3aWR0aCI6IDI0MCwKICAgICAgICAgICAgImhlaWdodCI6IDI0MAogICAgICAgICAgfSwKICAgICAgICAgICJoaWdoIjogewogICAgICAgICAgICAidXJsIjogImh0dHBzOi8veXQzLmdncGh0LmNvbS9jY1ByODByZmtPZ3NFMFRNUDhTOHZFZlA4NWdsMTJYelVHdHlTUEZGWU5NaHhsUTYyVzdpamtzbVVJWHY2ZkNCQzFqQm1vRXFhQT1zODAwLWMtay1jMHgwMGZmZmZmZi1uby1yaiIsCiAgICAgICAgICAgICJ3aWR0aCI6IDgwMCwKICAgICAgICAgICAgImhlaWdodCI6IDgwMAogICAgICAgICAgfQogICAgICAgIH0sCiAgICAgICAgImRlZmF1bHRMYW5ndWFnZSI6ICJlbiIsCiAgICAgICAgImxvY2FsaXplZCI6IHsKICAgICAgICAgICJ0aXRsZSI6ICJZb3VUdWJlIFZpZXdlcnMiLAogICAgICAgICAgImRlc2NyaXB0aW9uIjogIldlbGNvbWUgdG8gdGhlIFlvdVR1YmUgVmlld2VycyBjaGFubmVsISBcblxuV2FudCB1cGRhdGVzIG9uIG5ldyBmZWF0dXJlcyBhbmQgcHJvZHVjdHMgZm9yIHZpZXdlcnM/IE5lZWQgaGVscCB3aXRoIG9uZSBvZiBvdXIgc2VydmljZXMgbGlrZSBZb3VUdWJlIFRWLCBZb3VUdWJlIFByZW1pdW0sIFlvdVR1YmUgS2lkcyBvciBZb3VUdWJlIE11c2ljPyBZb3XigJl2ZSBjb21lIHRvIHRoZSByaWdodCBwbGFjZSEgXG5cblR1bmUgaW4gZm9yIG9mZmljaWFsIHVwZGF0ZXMgYW5kIHdhbGt0aHJvdWdocyBmb3Igdmlld2Vycy4gRG9u4oCZdCBmb3JnZXQgdG8gc3Vic2NyaWJlIGFuZCB0YXAgdGhlIGJlbGwhXG5cbkZvbGxvdyBAVGVhbVlvdVR1YmUgb24gVHdpdHRlciB0byBnZXQgb2ZmaWNpYWwgdXBkYXRlcyBhbmQgYW5zd2VycyB0byB5b3VyIFlvdVR1YmUgcXVlc3Rpb25zLiBBdmFpbGFibGUgaW4gdGhlIGZvbGxvd2luZyBsYW5ndWFnZXMgLSBFbmdsaXNoLCBFc3Bhw7FvbCwgUG9ydHVndcOqcywgRGV1dHNjaCwgRnJhbsOnYWlzLCBQ0YPRgdGB0LrQuNC5LCDml6XmnKzoqp4sIEJhaGFzYS5cblxuIgogICAgICAgIH0sCiAgICAgICAgImNvdW50cnkiOiAiVVMiCiAgICAgIH0KICAgIH0KICBdCn0K
-  recorded_at: Fri, 27 Oct 2023 15:22:11 GMT
-recorded_with: VCR 6.1.0
+        ewogICJraW5kIjogInlvdXR1YmUjY2hhbm5lbExpc3RSZXNwb25zZSIsCiAgImV0YWciOiAiZkhuclN4c2FFSkpTX3ladmg4V1ZaMmZhRDQ4IiwKICAicGFnZUluZm8iOiB7CiAgICAidG90YWxSZXN1bHRzIjogMSwKICAgICJyZXN1bHRzUGVyUGFnZSI6IDUKICB9LAogICJpdGVtcyI6IFsKICAgIHsKICAgICAgImtpbmQiOiAieW91dHViZSNjaGFubmVsIiwKICAgICAgImV0YWciOiAieExDZUpfME9JZlZmRUxuekYxR2tXbVhrbjRBIiwKICAgICAgImlkIjogIlVDTURReG03Y1V4M3lYa2ZlSGE1ekpJUSIsCiAgICAgICJzbmlwcGV0IjogewogICAgICAgICJ0aXRsZSI6ICJZb3VUdWJlIFZpZXdlcnMiLAogICAgICAgICJkZXNjcmlwdGlvbiI6ICJXZWxjb21lIHRvIHRoZSBZb3VUdWJlIFZpZXdlcnMgY2hhbm5lbCEgXG5cbldhbnQgdXBkYXRlcyBvbiBuZXcgZmVhdHVyZXMgYW5kIHByb2R1Y3RzIGZvciB2aWV3ZXJzPyBOZWVkIGhlbHAgd2l0aCBvbmUgb2Ygb3VyIHNlcnZpY2VzIGxpa2UgWW91VHViZSBUViwgWW91VHViZSBQcmVtaXVtLCBZb3VUdWJlIEtpZHMgb3IgWW91VHViZSBNdXNpYz8gWW914oCZdmUgY29tZSB0byB0aGUgcmlnaHQgcGxhY2UhIFxuXG5UdW5lIGluIGZvciBvZmZpY2lhbCB1cGRhdGVzIGFuZCB3YWxrdGhyb3VnaHMgZm9yIHZpZXdlcnMuIERvbuKAmXQgZm9yZ2V0IHRvIHN1YnNjcmliZSBhbmQgdGFwIHRoZSBiZWxsIVxuXG5Gb2xsb3cgQFRlYW1Zb3VUdWJlIG9uIFR3aXR0ZXIgdG8gZ2V0IG9mZmljaWFsIHVwZGF0ZXMgYW5kIGFuc3dlcnMgdG8geW91ciBZb3VUdWJlIHF1ZXN0aW9ucy4gQXZhaWxhYmxlIGluIHRoZSBmb2xsb3dpbmcgbGFuZ3VhZ2VzIC0gRW5nbGlzaCwgRXNwYcOxb2wsIFBvcnR1Z3XDqnMsIERldXRzY2gsIEZyYW7Dp2FpcywgUNGD0YHRgdC60LjQuSwg5pel5pys6KqeLCBCYWhhc2EuXG5cbiIsCiAgICAgICAgImN1c3RvbVVybCI6ICJAeW91dHViZXZpZXdlcnMiLAogICAgICAgICJwdWJsaXNoZWRBdCI6ICIyMDA3LTA1LTAzVDIyOjU0OjEyWiIsCiAgICAgICAgInRodW1ibmFpbHMiOiB7CiAgICAgICAgICAiZGVmYXVsdCI6IHsKICAgICAgICAgICAgInVybCI6ICJodHRwczovL3l0My5nZ3BodC5jb20vMC1SdTc4Q3E3WG1xa2JpUWdCSjlxYUVFLVV2WG1rYXBFSXdCcTI2azVXZExfSUdtRkE2RmRTMHhlcy1jWkV0cjNPXzRMY1FGOERjPXM4OC1jLWstYzB4MDBmZmZmZmYtbm8tcmoiLAogICAgICAgICAgICAid2lkdGgiOiA4OCwKICAgICAgICAgICAgImhlaWdodCI6IDg4CiAgICAgICAgICB9LAogICAgICAgICAgIm1lZGl1bSI6IHsKICAgICAgICAgICAgInVybCI6ICJodHRwczovL3l0My5nZ3BodC5jb20vMC1SdTc4Q3E3WG1xa2JpUWdCSjlxYUVFLVV2WG1rYXBFSXdCcTI2azVXZExfSUdtRkE2RmRTMHhlcy1jWkV0cjNPXzRMY1FGOERjPXMyNDAtYy1rLWMweDAwZmZmZmZmLW5vLXJqIiwKICAgICAgICAgICAgIndpZHRoIjogMjQwLAogICAgICAgICAgICAiaGVpZ2h0IjogMjQwCiAgICAgICAgICB9LAogICAgICAgICAgImhpZ2giOiB7CiAgICAgICAgICAgICJ1cmwiOiAiaHR0cHM6Ly95dDMuZ2dwaHQuY29tLzAtUnU3OENxN1htcWtiaVFnQko5cWFFRS1Vdlhta2FwRUl3QnEyNms1V2RMX0lHbUZBNkZkUzB4ZXMtY1pFdHIzT180TGNRRjhEYz1zODAwLWMtay1jMHgwMGZmZmZmZi1uby1yaiIsCiAgICAgICAgICAgICJ3aWR0aCI6IDgwMCwKICAgICAgICAgICAgImhlaWdodCI6IDgwMAogICAgICAgICAgfQogICAgICAgIH0sCiAgICAgICAgImRlZmF1bHRMYW5ndWFnZSI6ICJlbiIsCiAgICAgICAgImxvY2FsaXplZCI6IHsKICAgICAgICAgICJ0aXRsZSI6ICJZb3VUdWJlIFZpZXdlcnMiLAogICAgICAgICAgImRlc2NyaXB0aW9uIjogIldlbGNvbWUgdG8gdGhlIFlvdVR1YmUgVmlld2VycyBjaGFubmVsISBcblxuV2FudCB1cGRhdGVzIG9uIG5ldyBmZWF0dXJlcyBhbmQgcHJvZHVjdHMgZm9yIHZpZXdlcnM/IE5lZWQgaGVscCB3aXRoIG9uZSBvZiBvdXIgc2VydmljZXMgbGlrZSBZb3VUdWJlIFRWLCBZb3VUdWJlIFByZW1pdW0sIFlvdVR1YmUgS2lkcyBvciBZb3VUdWJlIE11c2ljPyBZb3XigJl2ZSBjb21lIHRvIHRoZSByaWdodCBwbGFjZSEgXG5cblR1bmUgaW4gZm9yIG9mZmljaWFsIHVwZGF0ZXMgYW5kIHdhbGt0aHJvdWdocyBmb3Igdmlld2Vycy4gRG9u4oCZdCBmb3JnZXQgdG8gc3Vic2NyaWJlIGFuZCB0YXAgdGhlIGJlbGwhXG5cbkZvbGxvdyBAVGVhbVlvdVR1YmUgb24gVHdpdHRlciB0byBnZXQgb2ZmaWNpYWwgdXBkYXRlcyBhbmQgYW5zd2VycyB0byB5b3VyIFlvdVR1YmUgcXVlc3Rpb25zLiBBdmFpbGFibGUgaW4gdGhlIGZvbGxvd2luZyBsYW5ndWFnZXMgLSBFbmdsaXNoLCBFc3Bhw7FvbCwgUG9ydHVndcOqcywgRGV1dHNjaCwgRnJhbsOnYWlzLCBQ0YPRgdGB0LrQuNC5LCDml6XmnKzoqp4sIEJhaGFzYS5cblxuIgogICAgICAgIH0sCiAgICAgICAgImNvdW50cnkiOiAiVVMiCiAgICAgIH0KICAgIH0KICBdCn0K
+  recorded_at: Wed, 14 Jan 2026 20:34:18 GMT
+recorded_with: VCR 6.4.0

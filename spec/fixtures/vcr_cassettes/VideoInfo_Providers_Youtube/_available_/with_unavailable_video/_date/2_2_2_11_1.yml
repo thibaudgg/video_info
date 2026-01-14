@@ -8,7 +8,7 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - VideoInfo/4.0.0
+      - VideoInfo/4.2.0
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -25,11 +25,9 @@ http_interactions:
       - Referer
       - X-Origin
       Date:
-      - Fri, 27 Oct 2023 16:33:52 GMT
+      - Wed, 14 Jan 2026 20:34:42 GMT
       Server:
       - scaffolding on HTTPServer2
-      Cache-Control:
-      - private
       X-Xss-Protection:
       - '0'
       X-Frame-Options:
@@ -46,5 +44,5 @@ http_interactions:
         {
           "items": []
         }
-  recorded_at: Fri, 27 Oct 2023 16:33:52 GMT
-recorded_with: VCR 6.1.0
+  recorded_at: Wed, 14 Jan 2026 20:34:42 GMT
+recorded_with: VCR 6.4.0

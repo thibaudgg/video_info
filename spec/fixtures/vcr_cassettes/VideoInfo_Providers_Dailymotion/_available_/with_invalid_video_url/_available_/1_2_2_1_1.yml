@@ -18,49 +18,59 @@ http_interactions:
       code: 404
       message: Not Found
     headers:
-      Access-Control-Allow-Headers:
-      - Content-Type, Authorization
-      Access-Control-Allow-Methods:
-      - GET, POST, DELETE
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Expose-Headers:
-      - Date, X-DM-BackNode-Response-Time, X-DM-Edge, X-DM-Cache-Status, X-Served-By
-      Cache-Control:
-      - no-cache, must-revalidate
+      Content-Type:
+      - application/json; charset=UTF-8
       Content-Length:
       - '265'
-      Content-Security-Policy:
-      - upgrade-insecure-requests
+      Connection:
+      - keep-alive
       Content-Security-Policy-Report-Only:
       - 'default-src https: blob: wss: data: android-webview-video-poster: android-webview:
         chrome-extension: safari-extension: ''unsafe-eval'' ''unsafe-inline''; report-uri
         https://www.dailymotion.com/content_security_policy_report_uri'
-      Content-Type:
-      - application/json; charset=UTF-8
-      Date:
-      - Fri, 27 Oct 2023 15:20:13 GMT
-      Expect-Ct:
-      - max-age=0, report-uri="https://www.dailymotion.com/content_security_policy_report_uri"
-      Expires:
-      - Fri, 01 Jan 2010 05:00:00 GMT
-      Referrer-Policy:
-      - no-referrer-when-downgrade
       Server:
       - DMS/1.0.42
-      Server-Timing:
-      - total;dur=25, dc;desc="dc3"
-      Timing-Allow-Origin:
-      - "*"
       Vary:
       - X-DM-SSL
-      X-Frame-Options:
-      - DENY
+      Cache-Control:
+      - no-cache, must-revalidate
+      Access-Control-Expose-Headers:
+      - Date, X-DM-BackNode-Response-Time, X-DM-Edge, X-DM-Cache-Status, X-Served-By
+      Content-Security-Policy:
+      - upgrade-insecure-requests
+      Date:
+      - Wed, 14 Jan 2026 20:32:48 GMT
+      Server-Timing:
+      - total;dur=34, dc;desc="ix7"
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+      Expires:
+      - Fri, 01 Jan 2010 05:00:00 GMT
+      Timing-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Origin:
+      - "*"
       X-Robots-Tag:
       - noindex
+      X-Frame-Options:
+      - DENY
+      Access-Control-Allow-Headers:
+      - Content-Type, Authorization
+      Access-Control-Allow-Methods:
+      - GET, POST, DELETE
+      X-Cache:
+      - Error from cloudfront
+      Via:
+      - 1.1 fe7607851cd3efa2e4097f91d04ac700.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - JFK50-P15
+      Alt-Svc:
+      - h3=":443"; ma=86400
+      X-Amz-Cf-Id:
+      - 7K7scc5YKuiq8oXsS-5dB77BS1PNkVihipkzqc-scPVq3DkkBOMsfA==
     body:
       encoding: UTF-8
       string: '{"error":{"more_info":"https:\/\/developer.dailymotion.com\/api#error-codes","code":404,"message":"Can''t
         find object video for `id'' parameter","type":"not_found","error_data":{"reason":"object_not_found","object_type":"video","object_id":"inValIdiD","param":"id"}}}'
-  recorded_at: Fri, 27 Oct 2023 15:20:13 GMT
-recorded_with: VCR 6.1.0
+  recorded_at: Wed, 14 Jan 2026 20:32:49 GMT
+recorded_with: VCR 6.4.0

@@ -18,50 +18,60 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      Access-Control-Allow-Headers:
-      - Content-Type, Authorization
-      Access-Control-Allow-Methods:
-      - GET, POST, DELETE
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Expose-Headers:
-      - Date, X-DM-BackNode-Response-Time, X-DM-Edge, X-DM-Cache-Status, X-Served-By
-      Cache-Control:
-      - public, max-age=900
+      Content-Type:
+      - application/json; charset=UTF-8
       Content-Length:
       - '90'
-      Content-Security-Policy:
-      - upgrade-insecure-requests
+      Connection:
+      - keep-alive
       Content-Security-Policy-Report-Only:
       - 'default-src https: blob: wss: data: android-webview-video-poster: android-webview:
         chrome-extension: safari-extension: ''unsafe-eval'' ''unsafe-inline''; report-uri
         https://www.dailymotion.com/content_security_policy_report_uri'
-      Content-Type:
-      - application/json; charset=UTF-8
-      Date:
-      - Fri, 27 Oct 2023 15:20:12 GMT
-      Etag:
-      - W/"rQeFNlJ5iMPO8gmsSDhiVw-gzip"
-      Expect-Ct:
-      - max-age=0, report-uri="https://www.dailymotion.com/content_security_policy_report_uri"
-      Last-Modified:
-      - Tue, 19 May 2015 07:03:39 GMT
-      Referrer-Policy:
-      - no-referrer-when-downgrade
       Server:
       - DMS/1.0.42
-      Server-Timing:
-      - total;dur=29, dc;desc="dc3"
-      Timing-Allow-Origin:
-      - "*"
       Vary:
       - X-DM-SSL,Accept-Encoding
-      X-Frame-Options:
-      - DENY
+      Cache-Control:
+      - public, max-age=900
+      Access-Control-Expose-Headers:
+      - Date, X-DM-BackNode-Response-Time, X-DM-Edge, X-DM-Cache-Status, X-Served-By
+      Content-Security-Policy:
+      - upgrade-insecure-requests
+      Date:
+      - Wed, 14 Jan 2026 20:32:48 GMT
+      Server-Timing:
+      - total;dur=32, dc;desc="ix7"
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+      Timing-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Origin:
+      - "*"
+      Etag:
+      - W/"yIBdtbjxf0olR7RxS0jmIg-gzip"
       X-Robots-Tag:
       - noindex
+      X-Frame-Options:
+      - DENY
+      Last-Modified:
+      - Thu, 11 Sep 2025 21:14:36 GMT
+      Access-Control-Allow-Headers:
+      - Content-Type, Authorization
+      Access-Control-Allow-Methods:
+      - GET, POST, DELETE
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 fe7607851cd3efa2e4097f91d04ac700.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - JFK50-P15
+      Alt-Svc:
+      - h3=":443"; ma=86400
+      X-Amz-Cf-Id:
+      - Jj5gHUzZVB8sFTSNyaknwDn_tn_jBmTtKn_GlvjfUz2XnbDO58j6Xw==
     body:
       encoding: ASCII-8BIT
       string: '{"id":"x7lni3","title":"Mario Kart (R\u00e9mi Gaillard)","channel":"fun","owner":"x4r137"}'
-  recorded_at: Fri, 27 Oct 2023 15:20:13 GMT
-recorded_with: VCR 6.1.0
+  recorded_at: Wed, 14 Jan 2026 20:32:48 GMT
+recorded_with: VCR 6.4.0

@@ -12,7 +12,7 @@ class VideoInfo
           extend YoutubeAPI
         end
 
-        super(url, options)
+        super
       end
 
       def self.usable?(url)

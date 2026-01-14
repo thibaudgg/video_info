@@ -8,7 +8,7 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - VideoInfo/4.0.0
+      - VideoInfo/4.2.0
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -21,11 +21,13 @@ http_interactions:
       Connection:
       - keep-alive
       Content-Length:
-      - '20'
+      - '0'
       Content-Type:
       - application/json
+      X-Envoy-Upstream-Service-Time:
+      - '11'
       Server:
-      - envoy
+      - istio-envoy
       X-Content-Type-Options:
       - nosniff
       X-Permitted-Cross-Domain-Policies:
@@ -37,38 +39,34 @@ http_interactions:
       Cache-Control:
       - public, no-cache
       X-Request-Id:
-      - deee5bdb-e716-4092-b7ad-7e95dd436bd6
+      - 60d4509c-46f8-40a4-963b-5acf69dcbd69
       X-Runtime:
-      - '0.013417'
-      Content-Encoding:
-      - gzip
-      X-Envoy-Upstream-Service-Time:
-      - '15'
+      - '0.010046'
       Via:
-      - 1.1 64924074212560e583e5c4823e606c04.cloudfront.net (CloudFront), 1.1 varnish,
+      - 1.1 f2f0cb8191da3bf07a9ca31ece94ab68.cloudfront.net (CloudFront), 1.1 varnish,
         1.1 varnish
       X-Amz-Cf-Pop:
-      - MIA3-C4
+      - IAD61-P4
       X-Amz-Cf-Id:
-      - PH5gS9OHlhtnDeQpR_V6ZJpzdPabRcAiI1bhy5loEyXrQNsKwwZFCQ==
+      - 74YMGJJKu10BaxiAJ5a0DdexaEJFffTGC00Xm4_8iuW-tDhwXA1qkw==
       Accept-Ranges:
       - bytes
-      Date:
-      - Fri, 27 Oct 2023 15:22:05 GMT
       Age:
-      - '88801'
+      - '79692'
+      Date:
+      - Wed, 14 Jan 2026 20:34:13 GMT
       X-Served-By:
-      - cache-iad-kiad7000072-IAD, cache-mad22069-MAD
+      - cache-iad-kcgs7200099-IAD, cache-bos4657-BOS
       X-Cache:
-      - Error from cloudfront, MISS, HIT
+      - Error from cloudfront, HIT, HIT
       X-Cache-Hits:
-      - 0, 1
+      - 7, 0
       X-Timer:
-      - S1698420125.303874,VS0,VE1
+      - S1768422853.283168,VS0,VE1
       Strict-Transport-Security:
       - max-age=0
       X-Ecma-V:
-      - es5
+      - modern
       X-Browser:
       - unknown
       X-Browser-Version:
@@ -76,5 +74,5 @@ http_interactions:
     body:
       encoding: UTF-8
       string: ''
-  recorded_at: Fri, 27 Oct 2023 15:22:05 GMT
-recorded_with: VCR 6.1.0
+  recorded_at: Wed, 14 Jan 2026 20:34:13 GMT
+recorded_with: VCR 6.4.0
